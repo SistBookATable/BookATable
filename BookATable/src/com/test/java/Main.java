@@ -1,8 +1,10 @@
 package com.test.java;
 
-public class Test {
+public class Main {
+	
 	public static void main(String[] args) {
-		System.out.println("Hello Test");
+		
 		
 	}
+
 }

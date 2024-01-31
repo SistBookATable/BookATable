@@ -2,8 +2,6 @@ package com.test.java.model;
 
 public class Store {
 
-	//TODO menuList, operatingHours 작성 x
-	
 	private String storeName;
 	private String storeNumber;
 	private String licenseNumber;
@@ -17,6 +15,7 @@ public class Store {
 	private int reservationCount;
 	private int bookmarkedCount;
 	
+
 	public String getStoreName() {
 		return storeName;
 	}

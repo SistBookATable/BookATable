@@ -1,5 +1,6 @@
 package com.test.java.model;
 
+
 import java.util.Calendar;
 
 public class Reservation {
@@ -41,6 +42,4 @@ public class Reservation {
 	public boolean checkId(String id) {
 		return true;
 	}
-	
-
 }

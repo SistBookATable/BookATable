@@ -6,6 +6,7 @@ import com.test.java.model.Store;
 
 public class StoreView {
 	
+
 	public void show(Store store) {
 		
 	}

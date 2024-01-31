@@ -1,6 +1,7 @@
 package com.test.java.controller;
 
 import com.test.java.view.MainView;
+import com.test.java.view.StoreView;
 
 public class MainController {
 
@@ -33,8 +34,13 @@ public class MainController {
 			case 0:
 				loop = false;
 			}
-			
-		}
+		
+	}
+	
+	private static void searchMenu() {
+		StoreView storeView = new StoreView();
+		storeView.searchMenu();
+	
 		
 	}
 }

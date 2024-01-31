@@ -29,4 +29,7 @@ public class Data {
 	public static void save() {
 
 	}
+	public static String getUser() {
+		return USER;
+	}
 }

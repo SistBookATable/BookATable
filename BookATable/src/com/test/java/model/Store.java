@@ -6,14 +6,24 @@ public class Store {
 	private String storeName;
 	private String storeTelNumber;
 	private String menuCategory;
+	private String address;
 	private int score;
-	private int reservedDeposit;
-	private int exceptionSales;
 	private int distanceFrom;
-	private int reservationCount;
-	private int bookmarkedCount;
 	
 
+	public Store(String licenseNumber, String storeName, String storeTelNumber, String address) {
+		super();
+		this.licenseNumber = licenseNumber;
+		this.storeName = storeName;
+		this.storeTelNumber = storeTelNumber;
+		this.address = address;
+		
+		// TODO distanceFrom 주소 사용해서 구하기
+		this.score = 0;
+		this.menuCategory = null;
+		this.distanceFrom = 0;
+	}
+	
 	public String getStoreName() {
 		return storeName;
 	}
@@ -35,22 +45,9 @@ public class Store {
 //	public OperatingHours getOperatingHours() {
 //		return operatingHours;
 //	}
-	public int getReservedDeposit() {
-		return reservedDeposit;
-	}
-	public int getExceptionSales() {
-		return exceptionSales;
-	}
 	public int getDistanceFrom() {
 		return distanceFrom;
 	}
-	public int getReservationCount() {
-		return reservationCount;
-	}
-	public int getBookmarkedCount() {
-		return bookmarkedCount;
-	}
-	
 	
 	public boolean checkName(String storeName) {
 		return true;

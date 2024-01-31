@@ -10,7 +10,6 @@ public class Store {
 	private int score;
 	private int distanceFrom;
 	
-	private String address;
 	private String tablecount;
 	private boolean bookmark;
 	private double averageScore;
@@ -65,16 +64,5 @@ public class Store {
 				+ storeTelNumber + ", menuCategory=" + menuCategory + ", address=" + address + ", score=" + score
 				+ ", distanceFrom=" + distanceFrom + "]";
 	}
-	
-	@Override
-	public String toString() {
-		return "Store [licenseNumber=" + licenseNumber + ", storeName=" + storeName + ", storeTelNumber="
-				+ storeTelNumber + ", menuCategory=" + menuCategory + ", score=" + score + ", reservedDeposit="
-				+ reservedDeposit + ", exceptionSales=" + exceptionSales + ", distanceFrom=" + distanceFrom
-				+ ", reservationCount=" + reservationCount + ", bookmarkedCount=" + bookmarkedCount + ", address="
-				+ address + ", tablecount=" + tablecount + ", bookmark=" + bookmark + ", averageScore=" + averageScore
-				+ "]";
-	}
-	
 	
 }

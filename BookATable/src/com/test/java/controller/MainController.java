@@ -20,7 +20,7 @@ public class MainController {
 			break;
 		case 2:
 			LogInController logInController = new LogInController();
-			logInController.start();
+			logInController.logIn();
 			break;
 		case 3:
 			break;

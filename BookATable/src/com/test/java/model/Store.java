@@ -13,7 +13,15 @@ public class Store {
 	private int reservationCount;
 	private int bookmarkedCount;
 	
+	private String address;
+	private String tablecount;
+	private boolean bookmark;
+	private double averageScore;
+	
 
+	public Store(String storeName, String menuCategory, String address, String tablecount, double averageScore, String parts) {
+		
+	}
 	public String getStoreName() {
 		return storeName;
 	}
@@ -54,6 +62,16 @@ public class Store {
 	
 	public boolean checkName(String storeName) {
 		return true;
+	}
+	
+	@Override
+	public String toString() {
+		return "Store [licenseNumber=" + licenseNumber + ", storeName=" + storeName + ", storeTelNumber="
+				+ storeTelNumber + ", menuCategory=" + menuCategory + ", score=" + score + ", reservedDeposit="
+				+ reservedDeposit + ", exceptionSales=" + exceptionSales + ", distanceFrom=" + distanceFrom
+				+ ", reservationCount=" + reservationCount + ", bookmarkedCount=" + bookmarkedCount + ", address="
+				+ address + ", tablecount=" + tablecount + ", bookmark=" + bookmark + ", averageScore=" + averageScore
+				+ "]";
 	}
 	
 	

@@ -17,7 +17,7 @@ public class MainController {
 		switch(choice) {
 		case 1:
 			SignInController signInController = new SignInController();
-			signInController.start();
+			signInController.signIn();
 			break;
 		case 2:
 			break;

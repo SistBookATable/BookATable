@@ -4,6 +4,7 @@ import java.util.Calendar;
 
 public class User {
 	
+	private int userType = 1; //[1:일반회원,2,3]
 	private String id; 
 	private String pw; 
 	private String name; 

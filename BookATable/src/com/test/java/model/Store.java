@@ -52,6 +52,13 @@ public class Store {
 	public boolean checkName(String storeName) {
 		return true;
 	}
+
+	@Override
+	public String toString() {
+		return "Store [licenseNumber=" + licenseNumber + ", storeName=" + storeName + ", storeTelNumber="
+				+ storeTelNumber + ", menuCategory=" + menuCategory + ", address=" + address + ", score=" + score
+				+ ", distanceFrom=" + distanceFrom + "]";
+	}
 	
 	
 }

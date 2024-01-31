@@ -19,8 +19,8 @@ public class MainController {
 			signInController.signIn();
 			break;
 		case 2:
-			LogInController logInController = new LogInController();
-			logInController.logIn();
+			//LogInController logInController = new LogInController();
+			//logInController.logIn();
 			break;
 		case 3:
 			break;

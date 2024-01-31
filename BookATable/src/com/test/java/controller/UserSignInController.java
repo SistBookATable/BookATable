@@ -1,5 +1,6 @@
 package com.test.java.controller;
 
+import com.test.java.model.Member;
 import com.test.java.model.User;
 import com.test.java.repository.Data;
 import com.test.java.view.UserSignInView;
@@ -28,8 +29,8 @@ public class UserSignInController {
 //			return true;
 //		}
 		
-		Data.userList.add(user);
-		for(User u : Data.userList) {
+		Data.memberList.add(user);
+		for(Member u : Data.memberList) {
 			System.out.println(u);
 		}
 		

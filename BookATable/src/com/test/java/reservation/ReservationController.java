@@ -1,7 +1,5 @@
 package com.test.java.reservation;
 
-public class Reservation {
+public class ReservationController {
 
-
-		
 }

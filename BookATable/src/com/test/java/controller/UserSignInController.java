@@ -1,6 +1,7 @@
 package com.test.java.controller;
 
 import com.test.java.model.User;
+import com.test.java.repository.Data;
 import com.test.java.view.UserSignInView;
 
 public class UserSignInController {
@@ -26,6 +27,11 @@ public class UserSignInController {
 //		if(isValid(user)) {
 //			return true;
 //		}
+		
+		Data.userList.add(user);
+		for(User u : Data.userList) {
+			System.out.println(u);
+		}
 		
 		return false;
 	}

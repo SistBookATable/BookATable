@@ -23,6 +23,7 @@ public class User {
 	public User (String id, String pw, String name, String phoneNumber, String jumin, int noshowCount, int balance,
 			String account, Calendar signOut) {
 		super();
+		this.userType = 1;
 		this.id = id;
 		this.pw = pw;
 		this.name = name;
@@ -82,5 +83,11 @@ public class User {
 		return true;
 	}
 
+	@Override
+	public String toString() {
+		return "User [userType=" + userType + ", id=" + id + ", pw=" + pw + ", name=" + name + ", phoneNumber="
+				+ phoneNumber + ", jumin=" + jumin + ", noshowCount=" + noshowCount + ", balance=" + balance
+				+ ", account=" + account + ", signOut=" + signOut + "]";
+	}
 	
 }

@@ -8,12 +8,27 @@ public class User {
 	private String pw; 
 	private String name; 
 	private String phoneNumber;
-	private Calendar birth;
+	private String jumin;
 	private int noshowCount;
 	private int balance;
 	private String account; 
 	private Calendar signOut;
 	
+	
+	public User(String id, String pw, String name, String phoneNumber, String jumin, int noshowCount, int balance,
+			String account, Calendar signOut) {
+		super();
+		this.id = id;
+		this.pw = pw;
+		this.name = name;
+		this.phoneNumber = phoneNumber;
+		this.jumin = jumin;
+		this.noshowCount = noshowCount;
+		this.balance = balance;
+		this.account = account;
+		this.signOut = signOut;
+	}
+
 	public String getId() {
 		return id;
 	}
@@ -30,8 +45,8 @@ public class User {
 		return phoneNumber;
 	}
 
-	public Calendar getBirth() {
-		return birth;
+	public String getJumin() {
+		return jumin;
 	}
 
 	public int getNoshowCount() {

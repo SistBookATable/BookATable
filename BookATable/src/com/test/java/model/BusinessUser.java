@@ -2,7 +2,7 @@ package com.test.java.model;
 
 import java.util.Calendar;
 
-public class BusinessUser {
+public class BusinessUser extends Member{
 	
 	private int userType = 2;
 	private String id; 
@@ -29,6 +29,13 @@ public class BusinessUser {
 		
 		this.userType = 2;
 		this.signOut = null;
+	}
+
+	@Override
+	public String toString() {
+		return "BusinessUser [userType=" + userType + ", id=" + id + ", pw=" + pw + ", name=" + name
+				+ ", licenseNumber=" + licenseNumber + ", phoneNumber=" + phoneNumber + ", bank=" + bank + ", account="
+				+ account + ", signOut=" + signOut + "]";
 	}
 
 	public String getId() {

@@ -2,7 +2,7 @@ package com.test.java.model;
 
 import java.util.Calendar;
 
-public class User {
+public class User extends Member{
 	
 	private int userType = 1; //[1:일반회원,2,3]
 	private String id; 

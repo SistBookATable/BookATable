@@ -9,7 +9,7 @@ public class MainView {
 	 */
 	public static void logo() {
 		// TODO 로고 출력화면 만들기 
-		
+		System.out.println("logo");
 	}
 	
 

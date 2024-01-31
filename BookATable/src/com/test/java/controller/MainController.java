@@ -10,6 +10,7 @@ public class MainController {
 	 */
 	public static void start() {
 		
+		MainView.logo();
 		MainView.show();
 		int choice = MainView.get();
 		

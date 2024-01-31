@@ -2,13 +2,11 @@ package com.test.java.model;
 
 public class Store {
 
-	private String storeName;
-	private String storeNumber;
 	private String licenseNumber;
+	private String storeName;
+	private String storeTelNumber;
 	private String menuCategory;
-//	private Menu menuList;
 	private int score;
-//	private OperatingHours operatingHours;
 	private int reservedDeposit;
 	private int exceptionSales;
 	private int distanceFrom;
@@ -20,7 +18,7 @@ public class Store {
 		return storeName;
 	}
 	public String getStoreNumber() {
-		return storeNumber;
+		return storeTelNumber;
 	}
 	public String getLicenseNumber() {
 		return licenseNumber;

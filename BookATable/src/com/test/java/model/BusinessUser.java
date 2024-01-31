@@ -7,9 +7,9 @@ public class BusinessUser {
 	private String id; 
 	private String pw; 
 	private String name; 
-	private String storeName; 
 	private String licenseNumber;
 	private String phoneNumber;
+	private String bank; 
 	private String account; 
 	private Calendar signOut;
 	
@@ -25,9 +25,6 @@ public class BusinessUser {
 		return name;
 	}
 
-	public String getStoreName() {
-		return storeName;
-	}
 
 	public String getLicenseNumber() {
 		return licenseNumber;

@@ -10,6 +10,11 @@ public class Store {
 	private int score;
 	private int distanceFrom;
 	
+	private String tablecount;
+	private boolean bookmark;
+	private double averageScore;
+	
+
 
 	public Store(String licenseNumber, String storeName, String storeTelNumber, String address) {
 		super();
@@ -59,6 +64,5 @@ public class Store {
 				+ storeTelNumber + ", menuCategory=" + menuCategory + ", address=" + address + ", score=" + score
 				+ ", distanceFrom=" + distanceFrom + "]";
 	}
-	
 	
 }

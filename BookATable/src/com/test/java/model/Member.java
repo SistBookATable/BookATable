@@ -4,5 +4,9 @@ public abstract class Member {
 
 	public abstract int getUserType();
 	public abstract String toString();
+	public abstract String getName();
+	public abstract String getPhoneNumber();
 	public abstract String getId();
+	public abstract String getPw();
+
 }

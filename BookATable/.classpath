@@ -6,5 +6,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="lib/jfiglet-0.0.8.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

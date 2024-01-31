@@ -1,6 +1,7 @@
 package com.test.java.controller;
 
 import com.test.java.view.MainView;
+import com.test.java.view.StoreView;
 
 public class MainController {
 
@@ -9,24 +10,37 @@ public class MainController {
 	 */
 	public static void start() {
 		
-		MainView.logo();
-		MainView.show();
-		int choice = MainView.get();
 		
-		switch(choice) {
-		case 1:
-			SignInController signInController = new SignInController();
-			signInController.signIn();
-			break;
-		case 2:
-			//LogInController logInController = new LogInController();
-			//logInController.logIn();
-			break;
-		case 3:
-			break;
-		case 4:
-			break;
-		}
+		boolean loop = true;
+		while(loop) {
+
+			MainView.logo();
+			MainView.show();
+			int choice = MainView.get();
+			
+			switch(choice) {
+			case 1:
+				SignInController signInController = new SignInController();
+				signInController.signIn();
+				break;
+			case 2:
+				//LogInController logInController = new LogInController();
+				//logInController.logIn();
+				break;
+			case 3:
+				break;
+			case 4:
+				break;
+			case 0:
+				loop = false;
+			}
+		
+	}
+	
+	private static void searchMenu() {
+		StoreView storeView = new StoreView();
+		storeView.searchMenu();
+	
 		
 	}
 }

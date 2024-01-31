@@ -15,7 +15,7 @@ public class SignInController {
 	public void signIn() {
 		
 		boolean loop = true;
-		while(true) {
+		while(loop) {
 			SignInView.showSelectType();
 			int choice = SignInView.getSelectType();
 			
@@ -26,7 +26,7 @@ public class SignInController {
 			
 			switch(choice) {
 			case 1:
-				loop = !(UserSignInController.signIn()); 
+				loop = !(UserSignInController.signIn());
 				break;
 			case 2:
 				loop = !(BusinessUserSignInController.signIn());

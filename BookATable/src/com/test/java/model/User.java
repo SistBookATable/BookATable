@@ -12,6 +12,7 @@ public class User {
 	private String jumin;
 	private int noshowCount;
 	private int balance;
+	private String bank;
 	private String account; 
 	private Calendar signOut;
 	

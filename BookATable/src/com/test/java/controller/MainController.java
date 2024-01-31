@@ -4,7 +4,6 @@ import com.test.java.view.MainView;
 
 public class MainController {
 
-	
 	/**
 	 * 메인 화면 시작 
 	 */
@@ -20,6 +19,8 @@ public class MainController {
 			signInController.start();
 			break;
 		case 2:
+			LogInController logInController = new LogInController();
+			logInController.start();
 			break;
 		case 3:
 			break;

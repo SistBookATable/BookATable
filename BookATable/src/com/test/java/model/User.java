@@ -4,6 +4,7 @@ import java.util.Calendar;
 
 public class User {
 	
+	private int userType = 1;
 	private String id; 
 	private String pw; 
 	private String name; 
@@ -14,8 +15,11 @@ public class User {
 	private String account; 
 	private Calendar signOut;
 	
+	public User() {
+		
+	}
 	
-	public User(String id, String pw, String name, String phoneNumber, String jumin, int noshowCount, int balance,
+	public User (String id, String pw, String name, String phoneNumber, String jumin, int noshowCount, int balance,
 			String account, Calendar signOut) {
 		super();
 		this.id = id;
@@ -27,6 +31,10 @@ public class User {
 		this.balance = balance;
 		this.account = account;
 		this.signOut = signOut;
+	}
+	
+	public int getUserType() {
+		return userType;
 	}
 
 	public String getId() {
@@ -72,5 +80,6 @@ public class User {
 	public boolean checkSignOut(Calendar signOut) {
 		return true;
 	}
+
 	
 }

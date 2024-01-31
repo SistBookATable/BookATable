@@ -1,0 +1,2517 @@
+업체회원ID,상호명,주소,음식분야,음식점전화번호,사업자등록번호,테이블정보,메뉴정보,운영시간정보
+null,매콤촌,서울특별시 동대문구 용두동 235-2 1층 ,한식,null,null,null,null,null
+null,혜성,서울특별시 동대문구 청량리동 50-18 ,한식,null,null,null,null,null
+null,대성집,서울특별시 동대문구 용두동 754-9 (용머리길 57) ,한식,null,null,null,null,null
+null,일미기사식당,서울특별시 동대문구 회기동 60-267 ,한식,null,null,null,null,null
+null,허브영양족발,서울특별시 동대문구 용두동 127-18 ,한식,null,null,null,null,null
+null,홍능족발,서울특별시 동대문구 청량리동 311 ,한식,null,null,null,null,null
+null,별미 명태랑 낙지랑,서울특별시 동대문구 신설동 98-8 1층 ,한식,null,null,null,null,null
+null,홍능갈비본점,서울특별시 동대문구 청량리동 520-14 520-15,한식,null,null,null,null,null
+null,태능식당,서울특별시 동대문구 휘경동 112-49 (망우로 241) ,한식,null,null,null,null,null
+null,홍콩반점0410(경희대점),서울특별시 동대문구 회기동 16-46 ,중국식,null,null,null,null,null
+null,24시해장국,서울특별시 동대문구 이문동 305-59 ,한식,null,null,null,null,null
+null,한우리한방민물장어생삼겹,서울특별시 동대문구 청량리동 703 1층 ,탕류(보신용),null,null,null,null,null
+null,목화집,서울특별시 동대문구 전농동 295-48 (전농로147) ,한식,null,null,null,null,null
+null,지영식당,서울특별시 동대문구 전농동 295-52 ,한식,null,null,null,null,null
+null,미미식당,서울특별시 동대문구 용두동 90-2 (용두일길71) ,한식,null,null,null,null,null
+null,완도회집,서울특별시 동대문구 제기동 719-2 ,일식,null,null,null,null,null
+null,송정,서울특별시 동대문구 전농동 129-20 1층 ,한식,null,null,null,null,null
+null,홍파식당,서울특별시 동대문구 제기동 634-0 ,한식,null,null,null,null,null
+null,소양강메기매운탕,서울특별시 동대문구 신설동 103-6 (하정로 16) ,한식,null,null,null,null,null
+null,오복식당,서울특별시 동대문구 답십리동 469-2 ,한식,null,null,null,null,null
+null,후쿠라멘,서울특별시 동대문구 신설동 67-1 ,한식,null,null,null,null,null
+null,태화루앤도화 떳다철가방,서울특별시 동대문구 장안동 403-3 ,중국식,null,null,null,null,null
+null,중화호반닭갈비·막국수,서울특별시 동대문구 휘경동 321-14 1층 ,한식,null,null,null,null,null
+null,마포원보쌈,서울특별시 동대문구 신설동 98-12 ,탕류(보신용),null,null,null,null,null
+null,길식당,서울특별시 동대문구 용두동 252-159 (하정로54) ,한식,null,null,null,null,null
+null,우리식당,서울특별시 동대문구 용두동 39-628 ,한식,null,null,null,null,null
+null,세겹살,서울특별시 동대문구 답십리동 495-1 (천호대로 117) ,한식,null,null,null,null,null
+null,목포집,서울특별시 동대문구 휘경동 259 ,일식,null,null,null,null,null
+null,제일식당,서울특별시 동대문구 용두동 709-20 ,한식,null,null,null,null,null
+null,동해루,서울특별시 동대문구 전농동 103-286 (전농로235-1) ,중국식,null,null,null,null,null
+null,북경,서울특별시 동대문구 장안동 331-12 ,중국식,null,null,null,null,null
+null,북경 영빈관,서울특별시 동대문구 장안동 464-6 2층 ,중국식,null,null,null,null,null
+null,국가대표바지락손칼국수,서울특별시 동대문구 장안동 448-1 ,한식,null,null,null,null,null
+null,청년다방서울시립대점,서울특별시 동대문구 전농동 103-320 ,경양식,null,null,null,null,null
+null,강세호참치,서울특별시 동대문구 신설동 102-32 ,한식,null,null,null,null,null
+null,진미식당,서울특별시 동대문구 제기동 67-106 ,한식,null,null,null,null,null
+null,광주회관,서울특별시 동대문구 이문동 288-4 ,한식,null,null,null,null,null
+null,산촌버섯마을,서울특별시 동대문구 신설동 102-36 (신설길12) ,한식,null,null,null,null,null
+null,중국성,서울특별시 동대문구 신설동 102-36 (신설길 12) ,중국식,null,null,null,null,null
+null,신술동,서울특별시 동대문구 신설동 80-4 (한빛길5) ,한식,null,null,null,null,null
+null,보성장,서울특별시 동대문구 전농동 129-42 ,한식,null,null,null,null,null
+null,장수돌솥밥,서울특별시 동대문구 답십리동 4-259 ,한식,null,null,null,null,null
+null,오가네주먹고기,서울특별시 동대문구 장안동 285-3 (사가정길231) ,한식,null,null,null,null,null
+null,더 맛있는 족발보쌈 장한평점,서울특별시 동대문구 장안동 463-4 ,한식,null,null,null,null,null
+null,목포식당,서울특별시 동대문구 청량리동 284-4 (1층) ,한식,null,null,null,null,null
+null,진성각,서울특별시 동대문구 이문동 255-251 1층 ,횟집,null,null,null,null,null
+null,개화,서울특별시 동대문구 장안동 123-1 1층 ,중국식,null,null,null,null,null
+null,노바 이탈리아노,서울특별시 동대문구 회기동 33-1 (경희대길 36) ,경양식,null,null,null,null,null
+null,메이퀸,서울특별시 동대문구 이문동 289-1 ,한식,null,null,null,null,null
+null,또봉이통닭신설동점,서울특별시 동대문구 신설동 102-35 1층 ,한식,null,null,null,null,null
+null,황제코다리&족발,서울특별시 동대문구 신설동 102-37 ,한식,null,null,null,null,null
+null,팔도빈대떡앤보쌈,서울특별시 동대문구 신설동 97-34 (신설길13) ,한식,null,null,null,null,null
+null,용화장,서울특별시 동대문구 용두동 112-42 ,한식,null,null,null,null,null
+null,용두똥돼지,서울특별시 동대문구 용두동 118-86 ,한식,null,null,null,null,null
+null,용두옥,서울특별시 동대문구 용두동 129-486 (풍인길9) ,한식,null,null,null,null,null
+null,오돌이,서울특별시 동대문구 용두동 235-23 (무학로90) ,한식,null,null,null,null,null
+null,태백숯불갈비,서울특별시 동대문구 용두동 36-7 (하정로 130) ,한식,null,null,null,null,null
+null,토성옥,서울특별시 동대문구 제기동 892-12 (약령서길 38) ,한식,null,null,null,null,null
+null,삼보기사식당,서울특별시 동대문구 제기동 1203-0 (방아다리길 43) ,한식,null,null,null,null,null
+null,전농칼국수,서울특별시 동대문구 전농동 38-59 (사가정길138) ,한식,null,null,null,null,null
+null,안흥갈비 본점,서울특별시 동대문구 장안동 306-1 1층 ,한식,null,null,null,null,null
+null,정원갈비,서울특별시 동대문구 장안동 433-8 (장평1길5) ,한식,null,null,null,null,null
+null,진주식당,서울특별시 동대문구 청량리동 235-6 지하1층 (망우로 33) ,한식,null,null,null,null,null
+null,팔각도 경희대점,서울특별시 동대문구 회기동 60-66 1층 ,한식,null,null,null,null,null
+null,이조해장국,서울특별시 동대문구 휘경동 256-0 257 (휘경일길 14) ,한식,null,null,null,null,null
+null,고흥식당,서울특별시 동대문구 이문동 305-3 ,한식,null,null,null,null,null
+null,아사원,서울특별시 동대문구 이문동 175-20 ,한식,null,null,null,null,null
+null,동해해물탕,서울특별시 동대문구 신설동 102-37 (신설길16) ,탕류(보신용),null,null,null,null,null
+null,태성정,서울특별시 동대문구 신설동 104-16 ,한식,null,null,null,null,null
+null,행복한연탄92,서울특별시 동대문구 답십리동 241-10 ,한식,null,null,null,null,null
+null,흙식당,서울특별시 동대문구 답십리동 488-327 (전농로12) ,한식,null,null,null,null,null
+null,원보리밥,서울특별시 동대문구 장안동 330-2 (답십리길 293) ,한식,null,null,null,null,null
+null,성신식당,서울특별시 동대문구 답십리동 497-24 ,한식,null,null,null,null,null
+null,영화루,서울특별시 동대문구 장안동 457-14 ,중국식,null,null,null,null,null
+null,산자락,서울특별시 동대문구 신설동 102-4 ,한식,null,null,null,null,null
+null,도야족발보쌈장안점,서울특별시 동대문구 장안동 376-4 ,한식,null,null,null,null,null
+null,가정식당,서울특별시 동대문구 용두동 740-18 (용머리길 100) ,한식,null,null,null,null,null
+null,선진국낙지마당,서울특별시 동대문구 장안동 306-11 ,한식,null,null,null,null,null
+null,원성집,서울특별시 동대문구 장안동 458-1 (장평2길 26) ,한식,null,null,null,null,null
+null,무교동미성낙지장안본점,서울특별시 동대문구 장안동 361-3 ,한식,null,null,null,null,null
+null,장안술집,서울특별시 동대문구 장안동 370-4 ,한식,null,null,null,null,null
+null,은하집,서울특별시 동대문구 전농동 295-48 ,한식,null,null,null,null,null
+null,르네상스,서울특별시 동대문구 청량리동 30-6 (망우로 63) ,경양식,null,null,null,null,null
+null,뚱이네,서울특별시 동대문구 청량리동 737-0 (청량시장5길 21) ,한식,null,null,null,null,null
+null,호남식당,서울특별시 동대문구 답십리동 952-4 (한천로31) ,한식,null,null,null,null,null
+null,신설집,서울특별시 동대문구 신설동 92-9 1층 ,한식,null,null,null,null,null
+null,칠락집염소탕,서울특별시 동대문구 제기동 486-3 ,한식,null,null,null,null,null
+null,원조보쌈,서울특별시 동대문구 제기동 135-84 (제기로 17) ,한식,null,null,null,null,null
+null,마포숯불갈비,서울특별시 동대문구 제기동 486-33 1~2층 ,한식,null,null,null,null,null
+null,전주남문토종순대국전농,서울특별시 동대문구 전농동 60-33 ,한식,null,null,null,null,null
+null,원정숯불바베큐,서울특별시 동대문구 전농동 295-143 (전농로129) ,한식,null,null,null,null,null
+null,장안삼계탕,서울특별시 동대문구 답십리동 35-10 ,한식,null,null,null,null,null
+null,참진한순대국,서울특별시 동대문구 답십리동 490-49 지상1층 ,한식,null,null,null,null,null
+null,일심해장국,서울특별시 동대문구 장안동 302-3 (장한로 179) ,한식,null,null,null,null,null
+null,현대민물장어,서울특별시 동대문구 장안동 367-2 1층 ,한식,null,null,null,null,null
+null,대흥설농탕,서울특별시 동대문구 장안동 192-75 ,한식,null,null,null,null,null
+null,엉클정부대찌개,서울특별시 동대문구 장안동 369-4 ,한식,null,null,null,null,null
+null,힘찬장어,서울특별시 동대문구 장안동 363-13 ,한식,null,null,null,null,null
+null,김가네 회기역점,서울특별시 동대문구 휘경동 319-8 (휘경서길 16) ,한식,null,null,null,null,null
+null,홍콩,서울특별시 동대문구 제기동 1204-0 (방아다리길 41) ,중국식,null,null,null,null,null
+null,봉평메밀국수,서울특별시 동대문구 제기동 635-33 1층 ,한식,null,null,null,null,null
+null,블르,서울특별시 동대문구 장안동 376-1 (샛별공원1길11) ,한식,null,null,null,null,null
+null,밥한술,서울특별시 동대문구 이문동 305-76 1층 ,한식,null,null,null,null,null
+null,썬더치킨,서울특별시 동대문구 청량리동 520-41 1층 ,한식,null,null,null,null,null
+null,소년소고기,서울특별시 동대문구 장안동 463-7 지상 1층 ,한식,null,null,null,null,null
+null,모닥불,서울특별시 동대문구 청량리동 205-569 ,한식,null,null,null,null,null
+null,홍해바다,서울특별시 동대문구 신설동 102-33 1층 ,한식,null,null,null,null,null
+null,가정집삼계탕,서울특별시 동대문구 신설동 104-11 ,한식,null,null,null,null,null
+null,이녁식당,서울특별시 동대문구 용두동 39-525 ,한식,null,null,null,null,null
+null,등촌샤브칼국수,서울특별시 동대문구 장안동 308-1 (장한로 140) ,한식,null,null,null,null,null
+null,박가네 아바이순대,서울특별시 동대문구 장안동 460-5 ,한식,null,null,null,null,null
+null,한방삼계탕,서울특별시 동대문구 장안동 430-1 ,탕류(보신용),null,null,null,null,null
+null,장안동100근집,서울특별시 동대문구 장안동 370-4 ,한식,null,null,null,null,null
+null,북경양꼬치샤브샤브집,서울특별시 동대문구 장안동 387-5 ,한식,null,null,null,null,null
+null,동촌,서울특별시 동대문구 장안동 363-2 ,한식,null,null,null,null,null
+null,옛가바지락칼국수,서울특별시 동대문구 장안동 342-14 (장평11길 16) ,한식,null,null,null,null,null
+null,쓰촨거리,서울특별시 동대문구 회기동 42-10 2층 ,중국식,null,null,null,null,null
+null,삼성루,서울특별시 동대문구 회기동 42-15 ,중국식,null,null,null,null,null
+null,중국성,서울특별시 동대문구 청량리동 235-4 미주상가A-207 (망우로 19) ,중국식,null,null,null,null,null
+null,조령식당,서울특별시 동대문구 전농동 597-28 (망우로 26-1) ,한식,null,null,null,null,null
+null,만나식당,서울특별시 동대문구 장안동 369-4 ,한식,null,null,null,null,null
+null,자매식당,서울특별시 동대문구 장안동 535-2 (한천로148) ,한식,null,null,null,null,null
+null,등촌칼국수,서울특별시 동대문구 회기동 29-2 ,한식,null,null,null,null,null
+null,탐스,서울특별시 동대문구 이문동 305-78 ,한식,null,null,null,null,null
+null,연푸드,서울특별시 동대문구 제기동 486-4 1층 ,중국식,null,null,null,null,null
+null,동묘삼계탕,서울특별시 동대문구 신설동 102-47 ,한식,null,null,null,null,null
+null,동경,서울특별시 동대문구 신설동 73-2 1층 ,한식,null,null,null,null,null
+null,한근숯불닭갈비,서울특별시 동대문구 장안동 433-22 1층 ,한식,null,null,null,null,null
+null,오리명가,서울특별시 동대문구 장안동 382-7 1층 ,중국식,null,null,null,null,null
+null,원보리골,서울특별시 동대문구 장안동 430-5 (장한로 35) ,한식,null,null,null,null,null
+null,굴마을,서울특별시 동대문구 장안동 465-6 ,한식,null,null,null,null,null
+null,아비꼬경희대점,서울특별시 동대문구 회기동 42-81 1층 ,한식,null,null,null,null,null
+null,신식당,서울특별시 동대문구 회기동 60-59 ,한식,null,null,null,null,null
+null,회기족발,서울특별시 동대문구 회기동 45-52 ,한식,null,null,null,null,null
+null,청춘싸롱,서울특별시 동대문구 휘경동 276-48 (휘경중길 3) ,한식,null,null,null,null,null
+null,도란도란곱창,서울특별시 동대문구 이문동 305-71 ,한식,null,null,null,null,null
+null,청일식당,서울특별시 동대문구 청량리동 55-32 (청량2길 32-14) ,한식,null,null,null,null,null
+null,일월성,서울특별시 동대문구 장안동 412-1 ,중국식,null,null,null,null,null
+null,신용궁,서울특별시 동대문구 장안동 195-7 (장일중앙길 16) ,중국식,null,null,null,null,null
+null,현대반점,서울특별시 동대문구 회기동 65 청량리신현대아파트 ,중국식,null,null,null,null,null
+null,청학동,서울특별시 동대문구 용두동 100-1 랜드마크타워1 ,경양식,null,null,null,null,null
+null,행운돈까스 지기,서울특별시 동대문구 장안동 304-1 ,경양식,null,null,null,null,null
+null,또와주오,서울특별시 동대문구 휘경동 163-9 1층 ,한식,null,null,null,null,null
+null,이대감,서울특별시 동대문구 신설동 98-14 (신설2길 1) ,한식,null,null,null,null,null
+null,장안닭한마리,서울특별시 동대문구 장안동 433-22 ,한식,null,null,null,null,null
+null,진미식당,서울특별시 동대문구 이문동 305-84 ,한식,null,null,null,null,null
+null,제주육돈가,서울특별시 동대문구 장안동 459-3 ,한식,null,null,null,null,null
+null,하루,서울특별시 동대문구 신설동 97-22 (신설길15) ,한식,null,null,null,null,null
+null,임오네쭈꾸미,서울특별시 동대문구 용두동 119-4 (용두북길4) ,한식,null,null,null,null,null
+null,풍년식당,서울특별시 동대문구 답십리동 53-24 (답십리길164-1) ,한식,null,null,null,null,null
+null,그남자의돼지갈비,서울특별시 동대문구 장안동 286-7 1층 ,한식,null,null,null,null,null
+null,메가엠지씨커피 장한평역점,서울특별시 동대문구 장안동 463-3 ,식육(숯불구이),null,null,null,null,null
+null,부산갈매기,서울특별시 동대문구 장안동 463-7 (장평1길7-11) ,한식,null,null,null,null,null
+null,감악산생소금구이,서울특별시 동대문구 장안동 143-40 (답십리길252) ,한식,null,null,null,null,null
+null,홍탁집,서울특별시 동대문구 장안동 375-3 (장한로69) ,한식,null,null,null,null,null
+null,친구사이,서울특별시 동대문구 장안동 216-32 1층 ,한식,null,null,null,null,null
+null,압구정포장마차,서울특별시 동대문구 청량리동 696 ,한식,null,null,null,null,null
+null,정화네뼈우거지탕,서울특별시 동대문구 청량리동 704 1층 ,한식,null,null,null,null,null
+null,옛날칼국수,서울특별시 동대문구 이문동 256-24 ,한식,null,null,null,null,null
+null,돼지왕,서울특별시 동대문구 이문동 305-75 ,한식,null,null,null,null,null
+null,계절밥상,서울특별시 동대문구 이문동 237-153 ,한식,null,null,null,null,null
+null,와우한식당,서울특별시 동대문구 답십리동 483-39 (황물길 146) ,한식,null,null,null,null,null
+null,홍반장,서울특별시 동대문구 용두동 129-98 ,중국식,null,null,null,null,null
+null,동순루,서울특별시 동대문구 전농동 620-10 (왕산로 326-1) ,중국식,null,null,null,null,null
+null,황금성,서울특별시 동대문구 장안동 312-13 ,중국식,null,null,null,null,null
+null,만성,서울특별시 동대문구 장안동 141-24 (답십리길241) ,중국식,null,null,null,null,null
+null,따봉돈까스,서울특별시 동대문구 장안동 288-38 (장안안길76) ,경양식,null,null,null,null,null
+null,아리랑동가스,서울특별시 동대문구 이문동 288-44 ,경양식,null,null,null,null,null
+null,서종냉면 경희대점,서울특별시 동대문구 회기동 42-8 1층 ,한식,null,null,null,null,null
+null,장미식당,서울특별시 동대문구 용두동 11-24 ,한식,null,null,null,null,null
+null,가도,서울특별시 동대문구 용두동 27-1 ,일식,null,null,null,null,null
+null,유황오리구이전문점,서울특별시 동대문구 장안동 127-7 (은천길29) ,한식,null,null,null,null,null
+null,외대철판마을,서울특별시 동대문구 이문동 287-48 ,한식,null,null,null,null,null
+null,보신옥,서울특별시 동대문구 제기동 466-0 ,한식,null,null,null,null,null
+null,고흥식당,서울특별시 동대문구 용두동 112-31 (용두북길8) ,한식,null,null,null,null,null
+null,돌솥밥기사식당,서울특별시 동대문구 제기동 1159-0 (방아다리길 105) ,한식,null,null,null,null,null
+null,서울식당,서울특별시 동대문구 제기동 137-16 (안암로 162) ,한식,null,null,null,null,null
+null,석거리홍어,서울특별시 동대문구 장안동 306-5 (한울길 6) ,일식,null,null,null,null,null
+null,구가설렁탕,서울특별시 동대문구 장안동 127-9 1층 ,한식,null,null,null,null,null
+null,제주흑돼지알토란쌈밥,서울특별시 동대문구 장안동 377-5 (장일중앙길 39) ,한식,null,null,null,null,null
+null,안씨네원조쭈꾸미,서울특별시 동대문구 회기동 75 ,한식,null,null,null,null,null
+null,배비장,서울특별시 동대문구 휘경동 264-1 ,한식,null,null,null,null,null
+null,다복,서울특별시 동대문구 휘경동 72-7 ,한식,null,null,null,null,null
+null,오뚜기부대찌개,서울특별시 동대문구 이문동 288-47 ,한식,null,null,null,null,null
+null,코로코로,서울특별시 동대문구 이문동 305-130 ,한식,null,null,null,null,null
+null,시골집,서울특별시 동대문구 장안동 217-2 ,한식,null,null,null,null,null
+null,그집,서울특별시 동대문구 이문동 264-407 ,한식,null,null,null,null,null
+null,북경중화요리,서울특별시 동대문구 신설동 15 (한빛길48) ,중국식,null,null,null,null,null
+null,대광반점,서울특별시 동대문구 답십리동 488-49 ,중국식,null,null,null,null,null
+null,다래성,서울특별시 동대문구 장안동 288-2 (늘푸른1길11) ,중국식,null,null,null,null,null
+null,탐호프레스토랑,서울특별시 동대문구 이문동 305-132 ,경양식,null,null,null,null,null
+null,참숯불구이,서울특별시 동대문구 신설동 98-15 1층 ,한식,null,null,null,null,null
+null,신남원추어탕,서울특별시 동대문구 신설동 93-19 (새말길28) ,한식,null,null,null,null,null
+null,피자스쿨시립대점,서울특별시 동대문구 전농동 124-69 (전농로211) ,한식,null,null,null,null,null
+null,외대역전,서울특별시 동대문구 이문동 288-44 ,한식,null,null,null,null,null
+null,밥은,서울특별시 동대문구 휘경동 281-9 ,한식,null,null,null,null,null
+null,재벌국수,서울특별시 동대문구 신설동 97-31 ,한식,null,null,null,null,null
+null,갈치와고갈비,서울특별시 동대문구 신설동 102-46 (하정로17-3) ,한식,null,null,null,null,null
+null,진달래식당,서울특별시 동대문구 용두동 129-376 (풍인길7) ,한식,null,null,null,null,null
+null,완산골,서울특별시 동대문구 용두동 235-17 ,한식,null,null,null,null,null
+null,기와집,서울특별시 동대문구 용두동 45-6 ,한식,null,null,null,null,null
+null,홍도야빈대떡,서울특별시 동대문구 제기동 134-49 1층 ,한식,null,null,null,null,null
+null,구포국수,서울특별시 동대문구 전농동 648-63 ,한식,null,null,null,null,null
+null,갯뻘낙지,서울특별시 동대문구 답십리동 493-3 (천호대로 137) ,한식,null,null,null,null,null
+null,제비 민속손국시,서울특별시 동대문구 답십리동 497-1 (고미술길95) ,한식,null,null,null,null,null
+null,이종구낙지세상장안점,서울특별시 동대문구 장안동 310-3 ,한식,null,null,null,null,null
+null,한양유황오리,서울특별시 동대문구 장안동 183-22 (장안복지길26) ,한식,null,null,null,null,null
+null,칠성포차(경희대점),서울특별시 동대문구 회기동 42-35 1~2층 ,한식,null,null,null,null,null
+null,삼정,서울특별시 동대문구 장안동 422-0 (안골공원길19) ,일식,null,null,null,null,null
+null,황우곱창,서울특별시 동대문구 신설동 81-97 (한빛1길5) ,한식,null,null,null,null,null
+null,만만스시,서울특별시 동대문구 신설동 102-31 1층 ,한식,null,null,null,null,null
+null,전주식당,서울특별시 동대문구 답십리동 492-1 (천호대로147) ,한식,null,null,null,null,null
+null,백두산감자탕,서울특별시 동대문구 신설동 96-16 (새말길 29) ,탕류(보신용),null,null,null,null,null
+null,이조갈비,서울특별시 동대문구 용두동 122-50 (신동길5) ,한식,null,null,null,null,null
+null,수희네목포홍탁,서울특별시 동대문구 용두동 223-23 (한빛길70) ,한식,null,null,null,null,null
+null,세진회관,서울특별시 동대문구 용두동 232-12 (구슬길 24) ,한식,null,null,null,null,null
+null,고향마을갈비,서울특별시 동대문구 용두동 233-11 (구슬1길1) ,한식,null,null,null,null,null
+null,부여식당,서울특별시 동대문구 용두동 105-22 지하1층 ,한식,null,null,null,null,null
+null,명품중화요리,서울특별시 동대문구 용두동 234-28 1층 ,중국식,null,null,null,null,null
+null,경동시장원조감자탕,서울특별시 동대문구 제기동 993-5 ,한식,null,null,null,null,null
+null,전주식당,서울특별시 동대문구 제기동 993-5 ,한식,null,null,null,null,null
+null,경동연탄돼지갈비,서울특별시 동대문구 제기동 1140-50 ,한식,null,null,null,null,null
+null,맛나식당,서울특별시 동대문구 전농동 643-51 (배봉로 49) ,한식,null,null,null,null,null
+null,전주식당,서울특별시 동대문구 답십리동 910 ,한식,null,null,null,null,null
+null,갈풍집,서울특별시 동대문구 장안동 459-3 ,한식,null,null,null,null,null
+null,사조회참치장한평점,서울특별시 동대문구 장안동 433-8 2층 ,횟집,null,null,null,null,null
+null,월계정,서울특별시 동대문구 장안동 406-4 (군자새싹길 31) ,한식,null,null,null,null,null
+null,종로청진동해장국,서울특별시 동대문구 장안동 195-2 (장안벌길112) ,한식,null,null,null,null,null
+null,빽다방장한평역점,서울특별시 동대문구 장안동 433-22 ,한식,null,null,null,null,null
+null,우일식당,서울특별시 동대문구 장안동 138-43 (전곡시장길100) ,한식,null,null,null,null,null
+null,우촌식당,서울특별시 동대문구 장안동 372-8 (장미공원1길8-9) ,한식,null,null,null,null,null
+null,박사삼계탕,서울특별시 동대문구 장안동 423-14 (장안남2길17) ,한식,null,null,null,null,null
+null,운주식당,서울특별시 동대문구 청량리동 30-12 (청량6길 13) ,한식,null,null,null,null,null
+null,고향집,서울특별시 동대문구 청량리동 769-1 (왕산로 323) ,한식,null,null,null,null,null
+null,더진국수육국밥(경희대점),서울특별시 동대문구 회기동 42-11 ,한식,null,null,null,null,null
+null,낭만포차,서울특별시 동대문구 휘경동 167-21 1층 ,한식,null,null,null,null,null
+null,외대곱창,서울특별시 동대문구 이문동 326-14 ,한식,null,null,null,null,null
+null,은짱스낵,서울특별시 동대문구 이문동 287-44 지하1층 ,한식,null,null,null,null,null
+null,딱이야2,서울특별시 동대문구 이문동 287-50 ,한식,null,null,null,null,null
+null,스시카야 논데,서울특별시 동대문구 장안동 293-20 ,한식,null,null,null,null,null
+null,성일식당,서울특별시 동대문구 장안동 424-11 (안골공원2길1) ,한식,null,null,null,null,null
+null,청량리회집,서울특별시 동대문구 청량리동 735-0 (청량시장3길 22) ,일식,null,null,null,null,null
+null,그옛날즉석짜장,서울특별시 동대문구 제기동 1145-6 ,중국식,null,null,null,null,null
+null,히비야,서울특별시 동대문구 회기동 16-1 지하1 ,한식,null,null,null,null,null
+null,하자포차,서울특별시 동대문구 이문동 287-22 지하1층 ,경양식,null,null,null,null,null
+null,육전식당,서울특별시 동대문구 신설동 104-3 1층 ,한식,null,null,null,null,null
+null,홍조식당,서울특별시 동대문구 신설동 97-22 (신설길15) ,한식,null,null,null,null,null
+null,익골,서울특별시 동대문구 신설동 102-17 ,일식,null,null,null,null,null
+null,고향집,서울특별시 동대문구 용두동 119-22 ,한식,null,null,null,null,null
+null,함경면옥,서울특별시 동대문구 제기동 1158-49 ,한식,null,null,null,null,null
+null,정궁중화요리,서울특별시 동대문구 제기동 464 (지상1층) ,중국식,null,null,null,null,null
+null,은정식당,서울특별시 동대문구 제기동 637-0 ,한식,null,null,null,null,null
+null,닭한마리오리한마리,서울특별시 동대문구 답십리동 495-1 ,한식,null,null,null,null,null
+null,미로,서울특별시 동대문구 답십리동 821 ,한식,null,null,null,null,null
+null,항방양꼬치,서울특별시 동대문구 장안동 433-10 1층 ,한식,null,null,null,null,null
+null,영순네집,서울특별시 동대문구 장안동 338-10 장안코지빌 ,한식,null,null,null,null,null
+null,참진한 순대국,서울특별시 동대문구 청량리동 653-1 ,한식,null,null,null,null,null
+null,성문식당,서울특별시 동대문구 청량리동 701 ,한식,null,null,null,null,null
+null,청우식당,서울특별시 동대문구 청량리동 199-230 (홍릉길 80) ,한식,null,null,null,null,null
+null,중국관,서울특별시 동대문구 청량리동 36-15 ,중국식,null,null,null,null,null
+null,봉자막창 경희대점,서울특별시 동대문구 회기동 42-78 ,한식,null,null,null,null,null
+null,홍학식당,서울특별시 동대문구 회기동 60-51 ,한식,null,null,null,null,null
+null,도읍지,서울특별시 동대문구 회기동 29-1 ,한식,null,null,null,null,null
+null,신화식당,서울특별시 동대문구 휘경동 262-2 (휘경일길 23) ,한식,null,null,null,null,null
+null,등대횟집,서울특별시 동대문구 이문동 220-302 ,한식,null,null,null,null,null
+null,만미온,서울특별시 동대문구 이문동 288-68 1~2층 ,뷔페식,null,null,null,null,null
+null,히노하루,서울특별시 동대문구 이문동 341-18 ,일식,null,null,null,null,null
+null,행복한한끼,서울특별시 동대문구 이문동 283-6 1층 ,한식,null,null,null,null,null
+null,장수식당,서울특별시 동대문구 전농동 35-4 ,한식,null,null,null,null,null
+null,봉황부대찌게,서울특별시 동대문구 전농동 646-10 ,한식,null,null,null,null,null
+null,동백꽃,서울특별시 동대문구 제기동 464-0 (약령시길 116) ,한식,null,null,null,null,null
+null,고가네곱창,서울특별시 동대문구 용두동 38-13 (하정로129-1) ,한식,null,null,null,null,null
+null,서울칼국수,서울특별시 동대문구 용두동 129-480 (풍인길14) ,한식,null,null,null,null,null
+null,홍가네식당,서울특별시 동대문구 답십리동 218-1 (답십리길 133) ,한식,null,null,null,null,null
+null,희수네숯불갈비,서울특별시 동대문구 답십리동 498-4 1층 ,한식,null,null,null,null,null
+null,고향식당,서울특별시 동대문구 답십리동 271-4 1층 ,한식,null,null,null,null,null
+null,한양숯불갈비,서울특별시 동대문구 장안동 344-3 (장평10길9) ,한식,null,null,null,null,null
+null,이모네식당,서울특별시 동대문구 전농동 648-116 ,한식,null,null,null,null,null
+null,치킨에 꼬치다(외대역점),서울특별시 동대문구 이문동 305-77 1층 ,한식,null,null,null,null,null
+null,조선감저,서울특별시 동대문구 전농동 26-13 ,한식,null,null,null,null,null
+null,나폴리식당,서울특별시 동대문구 이문동 349-11 ,한식,null,null,null,null,null
+null,독도게찜분점,서울특별시 동대문구 장안동 360-1 ,한식,null,null,null,null,null
+null,해성닭한마리,서울특별시 동대문구 이문동 305-74 ,한식,null,null,null,null,null
+null,신토불이한우곱창,서울특별시 동대문구 휘경동 261-3 1층 ,한식,null,null,null,null,null
+null,곡성,서울특별시 동대문구 전농동 204-204 (전농시장1길12) ,한식,null,null,null,null,null
+null,마포숯불갈비,서울특별시 동대문구 전농동 648-13 (배봉로 42) ,한식,null,null,null,null,null
+null,정인식당,서울특별시 동대문구 제기동 505-0 (약령시길 110) ,한식,null,null,null,null,null
+null,장터칼국수,서울특별시 동대문구 청량리동 769-1 (왕산로 323) ,한식,null,null,null,null,null
+null,시골집,서울특별시 동대문구 제기동 892-48 1층 ,한식,null,null,null,null,null
+null,청량리 대박삼겹살,서울특별시 동대문구 용두동 9-2 ,한식,null,null,null,null,null
+null,용두식당,서울특별시 동대문구 용두동 112-10 (용두서길5) ,한식,null,null,null,null,null
+null,황대포소금구이,서울특별시 동대문구 용두동 130-9 (어항길9-1) ,한식,null,null,null,null,null
+null,신미정,서울특별시 동대문구 용두동 238-74 ,한식,null,null,null,null,null
+null,구락,서울특별시 동대문구 용두동 129-480 (풍인길14) ,한식,null,null,null,null,null
+null,보리밭수제비,서울특별시 동대문구 신설동 114-41 (한솔길9) ,한식,null,null,null,null,null
+null,우리식당,서울특별시 동대문구 답십리동 472-56 (간데메서길15) ,한식,null,null,null,null,null
+null,유성관,서울특별시 동대문구 회기동 42-23 ,한식,null,null,null,null,null
+null,월미당 경희대점,서울특별시 동대문구 회기동 19 1층 ,한식,null,null,null,null,null
+null,휘경식당,서울특별시 동대문구 휘경동 267-101 (망우로 155) ,한식,null,null,null,null,null
+null,현대갈비마을,서울특별시 동대문구 장안동 284-3 (경안길80) ,한식,null,null,null,null,null
+null,군산아구찜,서울특별시 동대문구 장안동 447-1 (장평4길12) ,한식,null,null,null,null,null
+null,기다림,서울특별시 동대문구 장안동 167-19 (장일길18) ,한식,null,null,null,null,null
+null,금족,서울특별시 동대문구 장안동 345-3 ,한식,null,null,null,null,null
+null,장수닭도리탕감자탕,서울특별시 동대문구 장안동 345-3 102호,한식,null,null,null,null,null
+null,옛집한우허파,서울특별시 동대문구 장안동 103-1 (사가정길222) ,한식,null,null,null,null,null
+null,수연,서울특별시 동대문구 답십리동 477-38 (답오1길25) ,한식,null,null,null,null,null
+null,바다가육지,서울특별시 동대문구 장안동 397-16 ,일식,null,null,null,null,null
+null,도모다찌,서울특별시 동대문구 회기동 19 ,경양식,null,null,null,null,null
+null,젠(zen),서울특별시 동대문구 이문동 305-3 지하1층 ,경양식,null,null,null,null,null
+null,세도락,서울특별시 동대문구 답십리동 93-9 (전농로100) ,경양식,null,null,null,null,null
+null,서병장대김이병,서울특별시 동대문구 회기동 25 ,한식,null,null,null,null,null
+null,백돈,서울특별시 동대문구 장안동 366-6 (장한로106) ,한식,null,null,null,null,null
+null,토크쇼 ,서울특별시 동대문구 장안동 351-3 (장평6길17-6) ,한식,null,null,null,null,null
+null,약속,서울특별시 동대문구 전농동 643-67 ,한식,null,null,null,null,null
+null,부어치킨,서울특별시 동대문구 장안동 143-40 ,한식,null,null,null,null,null
+null,한우동청량리점,서울특별시 동대문구 청량리동 645-0 ,한식,null,null,null,null,null
+null,치악산 흑염소요리전문점,서울특별시 동대문구 장안동 309-3 지상1층 ,한식,null,null,null,null,null
+null,육회지존,서울특별시 동대문구 휘경동 329 ,한식,null,null,null,null,null
+null,초우마을,서울특별시 동대문구 휘경동 329 2층 ,한식,null,null,null,null,null
+null,반지하돈부리,서울특별시 동대문구 휘경동 294-187 ,한식,null,null,null,null,null
+null,구공탄뽈따구,서울특별시 동대문구 휘경동 319-26 1층 ,한식,null,null,null,null,null
+null,선이네순대국,서울특별시 동대문구 이문동 287-18 ,한식,null,null,null,null,null
+null,닭한마리,서울특별시 동대문구 이문동 288-61 ,한식,null,null,null,null,null
+null,부산대구탕,서울특별시 동대문구 답십리동 956-21 (부품상가6길27-1) ,한식,null,null,null,null,null
+null,장안보쌈&족발,서울특별시 동대문구 장안동 304-2 (장한로 171) ,한식,null,null,null,null,null
+null,석산식당,서울특별시 동대문구 장안동 430-12 (안골공원1길12) ,한식,null,null,null,null,null
+null,우정식당,서울특별시 동대문구 장안동 330-2 (답십리길 293) ,한식,null,null,null,null,null
+null,조선왕순대,서울특별시 동대문구 장안동 428-14 1층 ,한식,null,null,null,null,null
+null,뚝배기 양평해장국,서울특별시 동대문구 장안동 429-3 (장한로 51) ,한식,null,null,null,null,null
+null,대하갈비냉면,서울특별시 동대문구 전농동 295-27 (부군당길12) ,한식,null,null,null,null,null
+null,목포홍탁,서울특별시 동대문구 전농동 204-196 (전농시장1길6-1) ,한식,null,null,null,null,null
+null,이따가,서울특별시 동대문구 전농동 643-65 (배봉로 51-6) ,한식,null,null,null,null,null
+null,영지닭한마리,서울특별시 동대문구 전농동 494-32 (이삭5길14) ,한식,null,null,null,null,null
+null,이조식당,서울특별시 동대문구 제기동 1124-0 (약령길 22-13) ,탕류(보신용),null,null,null,null,null
+null,하얼빈양꼬치샤브샤브,서울특별시 동대문구 신설동 98-34 1층 ,한식,null,null,null,null,null
+null,이천농장,서울특별시 동대문구 제기동 1131 2층 ,한식,null,null,null,null,null
+null,새마당회,서울특별시 동대문구 회기동 16-85 ,한식,null,null,null,null,null
+null,고대로 찌개집 2,서울특별시 동대문구 제기동 137-38 ,한식,null,null,null,null,null
+null,닭한마리 호정,서울특별시 동대문구 제기동 67-85 (제기골6길 1) ,한식,null,null,null,null,null
+null,영미식당,서울특별시 동대문구 제기동 635-21 ,한식,null,null,null,null,null
+null,세겹살닷컴(.COM),서울특별시 동대문구 회기동 42-70 ,한식,null,null,null,null,null
+null,맛있는식탁,서울특별시 동대문구 회기동 57-22 ,한식,null,null,null,null,null
+null,삼학도,서울특별시 동대문구 용두동 127-18 ,일식,null,null,null,null,null
+null,군산식당,서울특별시 동대문구 용두동 20-1 (용우물3길26-1) ,한식,null,null,null,null,null
+null,시골집,서울특별시 동대문구 신설동 104-38 1층 ,한식,null,null,null,null,null
+null,홍어닭발,서울특별시 동대문구 신설동 90-6 ,한식,null,null,null,null,null
+null,먹거리식당,서울특별시 동대문구 용두동 231-5 (한빛길90) ,한식,null,null,null,null,null
+null,신설보쌈앤칼국수,서울특별시 동대문구 신설동 98-38 ,한식,null,null,null,null,null
+null,명진관,서울특별시 동대문구 장안동 349-17 (장평12길64) ,중국식,null,null,null,null,null
+null,희야성,서울특별시 동대문구 용두동 235-23 (무학로 90) ,경양식,null,null,null,null,null
+null,명성오리,서울특별시 동대문구 청량리동 315-0 ,한식,null,null,null,null,null
+null,코리아 푸드스토리,서울특별시 동대문구 회기동 42-77 ,한식,null,null,null,null,null
+null,39돈가스,서울특별시 동대문구 이문동 305-74 1층 ,한식,null,null,null,null,null
+null,주)설빙서울이문점,서울특별시 동대문구 이문동 289-1 지상2층 ,경양식,null,null,null,null,null
+null,이문닭발,서울특별시 동대문구 회기동 16-97 ,한식,null,null,null,null,null
+null,명성순대국,서울특별시 동대문구 회기동 346-5 ,한식,null,null,null,null,null
+null,우담,서울특별시 동대문구 회기동 108-20 ,한식,null,null,null,null,null
+null,화이트캣(white cat),서울특별시 동대문구 회기동 42-77 ,경양식,null,null,null,null,null
+null,조조상회,서울특별시 동대문구 신설동 102-12 ,일식,null,null,null,null,null
+null,육당정육식당,서울특별시 동대문구 답십리동 498-3 ,한식,null,null,null,null,null
+null,황가네소문난유황오리,서울특별시 동대문구 장안동 135-23 (장안안길21) ,한식,null,null,null,null,null
+null,남원식당,서울특별시 동대문구 전농동 2-72 (성너머길7) ,한식,null,null,null,null,null
+null,족발야시장 신설동점,서울특별시 동대문구 신설동 102-36 ,한식,null,null,null,null,null
+null,전주식당,서울특별시 동대문구 신설동 250-34 ,한식,null,null,null,null,null
+null,윤포차 연어참치초밥,서울특별시 동대문구 휘경동 329 ,일식,null,null,null,null,null
+null,인연,서울특별시 동대문구 이문동 287-37 1층 ,한식,null,null,null,null,null
+null,일번지정육식당장한평점,서울특별시 동대문구 장안동 433-19 ,한식,null,null,null,null,null
+null,김시우초밥,서울특별시 동대문구 장안동 463-5 ,일식,null,null,null,null,null
+null,생도야지세상,서울특별시 동대문구 회기동 42-20 (과학원길 28) ,한식,null,null,null,null,null
+null,구이 강산,서울특별시 동대문구 장안동 453-1 ,한식,null,null,null,null,null
+null,이모네왕파전,서울특별시 동대문구 휘경동 334-13 ,한식,null,null,null,null,null
+null,대아,서울특별시 동대문구 이문동 238-15 (신이문길37) ,한식,null,null,null,null,null
+null,용궁,서울특별시 동대문구 이문동 180-8 (한천로450-1) ,중국식,null,null,null,null,null
+null,진도식당,서울특별시 동대문구 이문동 220-359 (신이문길 77) ,한식,null,null,null,null,null
+null,선정숯불생고기,서울특별시 동대문구 답십리동 493-4 (천호대로139) ,한식,null,null,null,null,null
+null,본스치킨,서울특별시 동대문구 답십리동 241-10 (답십리길 145) ,한식,null,null,null,null,null
+null,한옥정,서울특별시 동대문구 답십리동 246-12 (답십리길 146-2) ,한식,null,null,null,null,null
+null,한우리,서울특별시 동대문구 장안동 408-9 ,한식,null,null,null,null,null
+null,아르누보,서울특별시 동대문구 장안동 306-1 1층 ,한식,null,null,null,null,null
+null,제일식당,서울특별시 동대문구 장안동 344-9 (장평10길 7) ,한식,null,null,null,null,null
+null,엄마손추어탕,서울특별시 동대문구 장안동 377-9 ,한식,null,null,null,null,null
+null,청진동 해장국,서울특별시 동대문구 장안동 363-1 (장한로76) ,한식,null,null,null,null,null
+null,온(ON),서울특별시 동대문구 전농동 602-6 1층 ,한식,null,null,null,null,null
+null,옛날짜장,서울특별시 동대문구 청량리동 701 1층 ,한식,null,null,null,null,null
+null,이화정,서울특별시 동대문구 제기동 1124 ,한식,null,null,null,null,null
+null,팔선생,서울특별시 동대문구 제기동 1142-3 ,중국식,null,null,null,null,null
+null,섬마을횟집,서울특별시 동대문구 청량리동 702-1 ,한식,null,null,null,null,null
+null,88식당,서울특별시 동대문구 용두동 39-448 (용우물1길30) ,한식,null,null,null,null,null
+null,명동칼국수샤브샤브,서울특별시 동대문구 신설동 74-2 1층 ,한식,null,null,null,null,null
+null,할머니홍어집,서울특별시 동대문구 용두동 39-889 (목련1길47) ,한식,null,null,null,null,null
+null,개미반점,서울특별시 동대문구 용두동 102-118 ,중국식,null,null,null,null,null
+null,마사키,서울특별시 동대문구 휘경동 320-4 (휘경서길 7) ,경양식,null,null,null,null,null
+null,투썸플레이스장안점,서울특별시 동대문구 장안동 375-1 ,한식,null,null,null,null,null
+null,명인만두장안배봉점,서울특별시 동대문구 장안동 188-17 ,한식,null,null,null,null,null
+null,장안동먹깨비간장게장해물아구찜,서울특별시 동대문구 장안동 365-6 화성빌딩 ,한식,null,null,null,null,null
+null,문래동냉삼,서울특별시 동대문구 장안동 433-9 ,한식,null,null,null,null,null
+null,호남웰빙맛집,서울특별시 동대문구 장안동 142-5 ,한식,null,null,null,null,null
+null,행님아,서울특별시 동대문구 청량리동 260-0 지하1층 ,경양식,null,null,null,null,null
+null,오봉집 경희대점,서울특별시 동대문구 회기동 42-71 1층 ,한식,null,null,null,null,null
+null,79번지국수집,서울특별시 동대문구 회기동 42-79 ,한식,null,null,null,null,null
+null,홈런순대국밥,서울특별시 동대문구 장안동 427-2 (장일중앙길30-1) ,한식,null,null,null,null,null
+null,풍년야식,서울특별시 동대문구 장안동 417-1 (장안남1길16) ,한식,null,null,null,null,null
+null,미미식당,서울특별시 동대문구 장안동 412-1 (한천로 12-2) ,한식,null,null,null,null,null
+null,신가네왕코등갈비,서울특별시 동대문구 용두동 118-81 지상1층~지상2층 ,한식,null,null,null,null,null
+null,청마루 한우,서울특별시 동대문구 용두동 26-22 ,한식,null,null,null,null,null
+null,장터분식해성만두,서울특별시 동대문구 이문동 305-152 ,중국식,null,null,null,null,null
+null,불타는닭갈비,서울특별시 동대문구 회기동 45-76 ,한식,null,null,null,null,null
+null,웨딩헤너스,서울특별시 동대문구 휘경동 267-9 (지 5 6 7 8층) (망우로 171) ,뷔페식,null,null,null,null,null
+null,돈통,서울특별시 동대문구 휘경동 187-20 1층 ,한식,null,null,null,null,null
+null,일번지대왕갈비,서울특별시 동대문구 휘경동 276-11 ,한식,null,null,null,null,null
+null,제주식당,서울특별시 동대문구 장안동 360-5 ,한식,null,null,null,null,null
+null,최가네,서울특별시 동대문구 답십리동 495-1 1층 ,한식,null,null,null,null,null
+null,허브영양족발,서울특별시 동대문구 장안동 286-2 ,한식,null,null,null,null,null
+null,칠갑산 능이버섯 오리마을,서울특별시 동대문구 제기동 479 ,한식,null,null,null,null,null
+null,보문숯불갈비,서울특별시 동대문구 청량리동 349-0 (홍릉길 44-1) ,한식,null,null,null,null,null
+null,오뚝식당,서울특별시 동대문구 회기동 45-94 (청운길 6-6) ,한식,null,null,null,null,null
+null,준이네식당,서울특별시 동대문구 신설동 117-6 1층 ,한식,null,null,null,null,null
+null,김영희강남동태찜,서울특별시 동대문구 용두동 129-174 (풍인3길3) ,한식,null,null,null,null,null
+null,경성농장,서울특별시 동대문구 용두동 26-39 1층 ,한식,null,null,null,null,null
+null,가마솥,서울특별시 동대문구 신설동 122-27 (하정로86) ,한식,null,null,null,null,null
+null,옛날짜장,서울특별시 동대문구 용두동 52-7 ,중국식,null,null,null,null,null
+null,옹기골,서울특별시 동대문구 장안동 93-75 ,한식,null,null,null,null,null
+null,대영식당,서울특별시 동대문구 장안동 373-8 (장미공원2길 10) ,한식,null,null,null,null,null
+null,돈주담삼겹살,서울특별시 동대문구 장안동 365-1 1층 ,한식,null,null,null,null,null
+null,흥부골숯불갈비,서울특별시 동대문구 장안동 306-12 ,한식,null,null,null,null,null
+null,소문난명물아구찜,서울특별시 동대문구 장안동 183-23 1층 ,한식,null,null,null,null,null
+null,샛집남원추어탕,서울특별시 동대문구 장안동 334-2 ,한식,null,null,null,null,null
+null,행복한샤브샤브,서울특별시 동대문구 장안동 417-1 (장안남1길 16) ,한식,null,null,null,null,null
+null,동양연탄갈비,서울특별시 동대문구 제기동 887-119 (약령시길 62) ,한식,null,null,null,null,null
+null,빠삐룰라,서울특별시 동대문구 장안동 99-21 2층 ,경양식,null,null,null,null,null
+null,장한평역점 홍콩반점,서울특별시 동대문구 장안동 433-8 ,경양식,null,null,null,null,null
+null,사조로하이참치신설동점,서울특별시 동대문구 신설동 117-6 (난계로 11) ,횟집,null,null,null,null,null
+null,미가랑,서울특별시 동대문구 장안동 432-11 (장안남2길 4) ,한식,null,null,null,null,null
+null,성미식당,서울특별시 동대문구 휘경동 150-44 1층 ,한식,null,null,null,null,null
+null,휘경식당,서울특별시 동대문구 휘경동 35-5 (망우로 234) ,한식,null,null,null,null,null
+null,샤로스톤,서울특별시 동대문구 이문동 305-85 ,한식,null,null,null,null,null
+null,참치뱅크,서울특별시 동대문구 청량리동 705-1 ,횟집,null,null,null,null,null
+null,용용이네떡볶이,서울특별시 동대문구 회기동 16-90 ,한식,null,null,null,null,null
+null,홍익짬뽕,서울특별시 동대문구 신설동 76-57 ,한식,null,null,null,null,null
+null,짬뽕명가,서울특별시 동대문구 전농동 621-2 ,중국식,null,null,null,null,null
+null,북배산흑염소요리,서울특별시 동대문구 장안동 362-1 JB타워 ,한식,null,null,null,null,null
+null,강진식당,서울특별시 동대문구 장안동 168-9 ,한식,null,null,null,null,null
+null,장안족발,서울특별시 동대문구 장안동 183-23 (장안벌길86) ,한식,null,null,null,null,null
+null,주연이네끼니,서울특별시 동대문구 장안동 347-9 ,한식,null,null,null,null,null
+null,조마루뼈다귀전문점,서울특별시 동대문구 장안동 301-2 (장한로 201) ,한식,null,null,null,null,null
+null,마포형제주먹고기,서울특별시 동대문구 전농동 621-2 (답십리길3) ,한식,null,null,null,null,null
+null,마라톤 닭한마리,서울특별시 동대문구 용두동 39-167 ,한식,null,null,null,null,null
+null,전라도 고흥집,서울특별시 동대문구 청량리동 741 지상1층 ,한식,null,null,null,null,null
+null,1막2창,서울특별시 동대문구 휘경동 319-32 ,한식,null,null,null,null,null
+null,고창풍천장어,서울특별시 동대문구 청량리동 640 ,한식,null,null,null,null,null
+null,강여사식당,서울특별시 동대문구 답십리동 19-12 ,한식,null,null,null,null,null
+null,장터순대,서울특별시 동대문구 장안동 344-3 (장평10길9) ,한식,null,null,null,null,null
+null,장안설렁탕,서울특별시 동대문구 장안동 459-4 (장평1길 27-1) ,한식,null,null,null,null,null
+null,수목원맛쌈밥,서울특별시 동대문구 청량리동 205-707 ,한식,null,null,null,null,null
+null,진미기사식당,서울특별시 동대문구 장안동 362-9 (장한로 64) ,한식,null,null,null,null,null
+null,이간자식당,서울특별시 동대문구 전농동 646-81 (간데메서길 50) ,한식,null,null,null,null,null
+null,원골전통순대국전문,서울특별시 동대문구 장안동 286-4 ,한식,null,null,null,null,null
+null,목포식당,서울특별시 동대문구 제기동 147-6 ,한식,null,null,null,null,null
+null,아우내병천순대,서울특별시 동대문구 휘경동 293-165 (망우로 174-2) ,한식,null,null,null,null,null
+null,혜산식당,서울특별시 동대문구 전농동 655-12 (답십리길87) ,한식,null,null,null,null,null
+null,초록뜰,서울특별시 동대문구 휘경동 276-57 ,한식,null,null,null,null,null
+null,압구정봉구비어,서울특별시 동대문구 전농동 103-351 ,한식,null,null,null,null,null
+null,실내포장마차,서울특별시 동대문구 답십리동 36-44 ,한식,null,null,null,null,null
+null,홍두깨칼국수,서울특별시 동대문구 제기동 654-3 ,한식,null,null,null,null,null
+null,화덕고,서울특별시 동대문구 이문동 326-10 ,한식,null,null,null,null,null
+null,서울식당,서울특별시 동대문구 제기동 978 ,한식,null,null,null,null,null
+null,제주통도야지,서울특별시 동대문구 답십리동 488-17 (전농로22) ,한식,null,null,null,null,null
+null,도토리군버섯양,서울특별시 동대문구 전농동 103-340 (전농로 222) ,한식,null,null,null,null,null
+null,최원석의돼지한판&서해쭈꾸미시립대점,서울특별시 동대문구 전농동 103-340 (전농로 222) ,한식,null,null,null,null,null
+null,오광수산,서울특별시 동대문구 휘경동 293-155 (망우로 174-9) ,횟집,null,null,null,null,null
+null,고대멸치국수,서울특별시 동대문구 제기동 137-544 ,한식,null,null,null,null,null
+null,마포숯불갈비,서울특별시 동대문구 제기동 1143-22 (제청길 4) ,한식,null,null,null,null,null
+null,맛있는수지네,서울특별시 동대문구 신설동 92-10 1층 ,한식,null,null,null,null,null
+null,따띠삼겹 회기점,서울특별시 동대문구 회기동 346-6 ,한식,null,null,null,null,null
+null,명동감자탕,서울특별시 동대문구 제기동 137-414 ,한식,null,null,null,null,null
+null,호남집,서울특별시 동대문구 청량리동 741-0 지상1층 ,한식,null,null,null,null,null
+null,푸른하늘,서울특별시 동대문구 회기동 34-1 1층 ,한식,null,null,null,null,null
+null,시골보리밥,서울특별시 동대문구 용두동 232-33 (한빛길84-1) ,한식,null,null,null,null,null
+null,박가네생삼겹살,서울특별시 동대문구 신설동 31-1 1층 ,한식,null,null,null,null,null
+null,여주집,서울특별시 동대문구 이문동 171-1 (외대역동8길85) ,한식,null,null,null,null,null
+null,전농곱창,서울특별시 동대문구 전농동 15-42 1층 ,한식,null,null,null,null,null
+null,고향집,서울특별시 동대문구 청량리동 702-2 ,한식,null,null,null,null,null
+null,고기싸롱 답십리점,서울특별시 동대문구 답십리동 267-3 ,한식,null,null,null,null,null
+null,행복한보리밥,서울특별시 동대문구 장안동 426-4 ,한식,null,null,null,null,null
+null,대감댁뼈다귀감자탕,서울특별시 동대문구 신설동 29-1 ,한식,null,null,null,null,null
+null,장군네식당,서울특별시 동대문구 장안동 194-12 1층 ,한식,null,null,null,null,null
+null,장성식당,서울특별시 동대문구 장안동 410-6 (장안남길 13-4) ,한식,null,null,null,null,null
+null,해송,서울특별시 동대문구 이문동 264-312 ,한식,null,null,null,null,null
+null,아쿠아,서울특별시 동대문구 이문동 288-79 1층 ,한식,null,null,null,null,null
+null,수랏간한식부페,서울특별시 동대문구 신설동 114-66 1층 ,한식,null,null,null,null,null
+null,도란도란곱창,서울특별시 동대문구 이문동 305-78 1층 ,한식,null,null,null,null,null
+null,웰빙 한식 부페,서울특별시 동대문구 청량리동 52 ,한식,null,null,null,null,null
+null,윤가네식당,서울특별시 동대문구 장안동 162-4 (장일길4) ,한식,null,null,null,null,null
+null,가미네,서울특별시 동대문구 장안동 370-3 지상1층 ,한식,null,null,null,null,null
+null,용두동쭈꾸미,서울특별시 동대문구 용두동 119-3 (용두서길8) ,한식,null,null,null,null,null
+null,우리집,서울특별시 동대문구 전농동 103-294 (전농로227) ,한식,null,null,null,null,null
+null,어머니순대,서울특별시 동대문구 장안동 194-2 (장안벌길94-1) ,한식,null,null,null,null,null
+null,장안곱창,서울특별시 동대문구 장안동 189-20 (장안복지길10) ,한식,null,null,null,null,null
+null,한춘상 일미간장게장,서울특별시 동대문구 장안동 367-3 1층 ,한식,null,null,null,null,null
+null,안암골식당,서울특별시 동대문구 용두동 731-1 (북용두1길15) ,한식,null,null,null,null,null
+null,별미식당,서울특별시 동대문구 용두동 221-2 (용머리길26) ,한식,null,null,null,null,null
+null,만추 먹는집,서울특별시 동대문구 신설동 23 ,식육(숯불구이),null,null,null,null,null
+null,조개베네,서울특별시 동대문구 제기동 137-352 ,한식,null,null,null,null,null
+null,동신식당,서울특별시 동대문구 용두동 251-1 (용신길7) ,한식,null,null,null,null,null
+null,연어사랑1,서울특별시 동대문구 제기동 137-10 ,한식,null,null,null,null,null
+null,오늘은면발땡기는날,서울특별시 동대문구 제기동 137-477 (정릉천길 297) ,중국식,null,null,null,null,null
+null,장위동유성집장안점,서울특별시 동대문구 장안동 430-6 (장한로 33) ,한식,null,null,null,null,null
+null,감초식당,서울특별시 동대문구 제기동 892-12 (약령서길 38) ,한식,null,null,null,null,null
+null,가정식백반,서울특별시 동대문구 청량리동 574-0 (홍릉시장길 54) ,한식,null,null,null,null,null
+null,한우리,서울특별시 동대문구 용두동 122-53 (하정로 76) ,한식,null,null,null,null,null
+null,자매양꼬치,서울특별시 동대문구 장안동 433-9 1층 ,한식,null,null,null,null,null
+null,촬영궁,서울특별시 동대문구 답십리동 64-54 ,중국식,null,null,null,null,null
+null,노천파전,서울특별시 동대문구 휘경동 319-17 ,한식,null,null,null,null,null
+null,가마고을(청량리점),서울특별시 동대문구 청량리동 305-0 (홍릉길 18-1) ,한식,null,null,null,null,null
+null,형제육회,서울특별시 동대문구 신설동 102-21 [천호대로 11-9] ,한식,null,null,null,null,null
+null,장군뽈따구,서울특별시 동대문구 휘경동 276-48 (휘경중길 3) ,한식,null,null,null,null,null
+null,투다리,서울특별시 동대문구 전농동 582-5 (배봉로116) ,한식,null,null,null,null,null
+null,백수씨심야식당,서울특별시 동대문구 회기동 42-49 ,경양식,null,null,null,null,null
+null,놀부만두,서울특별시 동대문구 휘경동 276-33 (휘경중길 7) ,한식,null,null,null,null,null
+null,서울해장국,서울특별시 동대문구 제기동 451-0 ,한식,null,null,null,null,null
+null,자산어보,서울특별시 동대문구 용두동 127-19 (신동길6) ,한식,null,null,null,null,null
+null,화원,서울특별시 동대문구 용두동 129-376 ,중국식,null,null,null,null,null
+null,고향만두전문점,서울특별시 동대문구 용두동 39-555 (목련5길62) ,한식,null,null,null,null,null
+null,밥사랑,서울특별시 동대문구 장안동 94-41 ,한식,null,null,null,null,null
+null,다래,서울특별시 동대문구 청량리동 51-14 (청량9길 6) ,한식,null,null,null,null,null
+null,남원추어탕,서울특별시 동대문구 답십리동 496-17 (천호대로 105) ,한식,null,null,null,null,null
+null,시간여행,서울특별시 동대문구 신설동 103-1 ,경양식,null,null,null,null,null
+null,목포식당,서울특별시 동대문구 제기동 631-1 ,한식,null,null,null,null,null
+null,성하갈비,서울특별시 동대문구 청량리동 50-20 ,한식,null,null,null,null,null
+null,시골쌈밥,서울특별시 동대문구 청량리동 741 ,한식,null,null,null,null,null
+null,옛고을,서울특별시 동대문구 장안동 366-9 2층 ,한식,null,null,null,null,null
+null,오늘손칼국수& 찜,서울특별시 동대문구 답십리동 262-2 ,한식,null,null,null,null,null
+null,정성들인  밥,서울특별시 동대문구 청량리동 38-9 (제기로 149) ,한식,null,null,null,null,null
+null,해적,서울특별시 동대문구 제기동 137-161 ,일식,null,null,null,null,null
+null,주수사,서울특별시 동대문구 이문동 324-49 ,일식,null,null,null,null,null
+null,병천순대,서울특별시 동대문구 용두동 112-41 (용동길10-1) ,한식,null,null,null,null,null
+null,명가식당,서울특별시 동대문구 이문동 288-18 (문일길8) ,한식,null,null,null,null,null
+null,할매토지,서울특별시 동대문구 이문동 319-3 1층 외 1필지(이문동 321-101) ,한식,null,null,null,null,null
+null,금강산숯불갈비,서울특별시 동대문구 신설동 97-26 (신설2길 6-1) ,한식,null,null,null,null,null
+null,홍어집,서울특별시 동대문구 신설동 92-60 ,한식,null,null,null,null,null
+null,전주추어탕,서울특별시 동대문구 장안동 459-3 (장평1길23) ,한식,null,null,null,null,null
+null,오소리순대,서울특별시 동대문구 제기동 1148-10 (섬마을길 27) ,한식,null,null,null,null,null
+null,뜨락,서울특별시 동대문구 장안동 420-8 ,한식,null,null,null,null,null
+null,엄나무집,서울특별시 동대문구 답십리동 241-18 ,한식,null,null,null,null,null
+null,고향집,서울특별시 동대문구 용두동 39-27 ,한식,null,null,null,null,null
+null,보양화 명품코다리 밀가마 부대찌개,서울특별시 동대문구 장안동 301-3 1층 ,한식,null,null,null,null,null
+null,칠선,서울특별시 동대문구 청량리동 205-713 (제청길 34) ,한식,null,null,null,null,null
+null,신마포갈매기,서울특별시 동대문구 답십리동 1-49 ,한식,null,null,null,null,null
+null,마라에 꼬치다,서울특별시 동대문구 장안동 433-13 ,외국음식전문점(인도 태국등),null,null,null,null,null
+null,본가남원추어탕,서울특별시 동대문구 장안동 437-6 (장평4길11) ,한식,null,null,null,null,null
+null,비에르 에 프리트,서울특별시 동대문구 제기동 137-71 1층 ,한식,null,null,null,null,null
+null,형제식당,서울특별시 동대문구 용두동 39-154 1층 ,한식,null,null,null,null,null
+null,시골집,서울특별시 동대문구 전농동 295-52 ,한식,null,null,null,null,null
+null,봉평골메밀막국수,서울특별시 동대문구 장안동 118-38 (한천로186) ,한식,null,null,null,null,null
+null,남원추어탕,서울특별시 동대문구 용두동 39-968 ,한식,null,null,null,null,null
+null,전통왕순대,서울특별시 동대문구 장안동 414-10 ,한식,null,null,null,null,null
+null,전주막걸리전문점,서울특별시 동대문구 장안동 376-1 ,한식,null,null,null,null,null
+null,산타나,서울특별시 동대문구 회기동 76-1 (회기로 174) ,경양식,null,null,null,null,null
+null,라돈까스,서울특별시 동대문구 용두동 234-42 1층 ,경양식,null,null,null,null,null
+null,오렌지보틀 장안점,서울특별시 동대문구 장안동 463-9 ,한식,null,null,null,null,null
+null,풍년상회,서울특별시 동대문구 장안동 361-2 1층 ,한식,null,null,null,null,null
+null,칠기마라샹궈마라탕 고대점,서울특별시 동대문구 제기동 137-72 ,일식,null,null,null,null,null
+null,남화루,서울특별시 동대문구 신설동 117-6 ,한식,null,null,null,null,null
+null,광어.우럭9900,서울특별시 동대문구 제기동 664-5 지상1층 ,한식,null,null,null,null,null
+null,이가네 아구찜,서울특별시 동대문구 장안동 237-3 ,한식,null,null,null,null,null
+null,중국성,서울특별시 동대문구 용두동 39-978 ,중국식,null,null,null,null,null
+null,남원추어탕,서울특별시 동대문구 장안동 105-9 ,한식,null,null,null,null,null
+null,고대사랑,서울특별시 동대문구 제기동 137-260 ,한식,null,null,null,null,null
+null,옛고을닭한마리,서울특별시 동대문구 답십리동 465-5 ,한식,null,null,null,null,null
+null,맛이랑정이랑,서울특별시 동대문구 전농동 270-42 ,한식,null,null,null,null,null
+null,일광 쪽갈비,서울특별시 동대문구 답십리동 265-1 (전농로48) ,한식,null,null,null,null,null
+null,양님이네,서울특별시 동대문구 장안동 367-3 (장평10길5) ,한식,null,null,null,null,null
+null,충주집(분점),서울특별시 동대문구 제기동 138-2 ,한식,null,null,null,null,null
+null,마포생주먹고기,서울특별시 동대문구 휘경동 146-114 ,한식,null,null,null,null,null
+null,고황감자탕뼈다귀해장국,서울특별시 동대문구 회기동 42-31 (경희대1길 8-6) ,한식,null,null,null,null,null
+null,도남수산,서울특별시 동대문구 신설동 53-3 (안암로6) ,한식,null,null,null,null,null
+null,신사호프,서울특별시 동대문구 장안동 361-4 ,경양식,null,null,null,null,null
+null,아라마크(주)경희의료원 장례식장,서울특별시 동대문구 회기동 1-5 지하 2층 ,한식,null,null,null,null,null
+null,신선루,서울특별시 동대문구 이문동 238-16 1층 ,중국식,null,null,null,null,null
+null,해마루,서울특별시 동대문구 제기동 137-72 (고대앞길 8-13) ,한식,null,null,null,null,null
+null,산천가든,서울특별시 동대문구 용두동 39-955 ,한식,null,null,null,null,null
+null,길식당,서울특별시 동대문구 제기동 639-0 (동서시장길 23-8) ,한식,null,null,null,null,null
+null,황우생통오리전문점,서울특별시 동대문구 제기동 483 ,한식,null,null,null,null,null
+null,세진식당,서울특별시 동대문구 전농동 497-71 (배봉로61-2) ,한식,null,null,null,null,null
+null,일조얼큰샤브칼국수 장안점,서울특별시 동대문구 장안동 305-2 ,한식,null,null,null,null,null
+null,순창할머니청국장,서울특별시 동대문구 답십리동 4-248 (한천로69-1) ,한식,null,null,null,null,null
+null,마포껍데기,서울특별시 동대문구 장안동 100-8 (사가정길221) ,한식,null,null,null,null,null
+null,강촌칼국수,서울특별시 동대문구 장안동 410-2 (군자새싹길10) ,한식,null,null,null,null,null
+null,맛고을,서울특별시 동대문구 제기동 1206-0 (방아다리길 117) ,한식,null,null,null,null,null
+null,이한돈,서울특별시 동대문구 휘경동 255-19 1층 ,한식,null,null,null,null,null
+null,어부스,서울특별시 동대문구 용두동 52-7 ,한식,null,null,null,null,null
+null,전주곰탕,서울특별시 동대문구 답십리동 66-33 ,한식,null,null,null,null,null
+null,대만선,서울특별시 동대문구 신설동 97-19 (등기소길 13) ,일식,null,null,null,null,null
+null,마약고기,서울특별시 동대문구 용두동 102-172 홈-스타(home-star) ,한식,null,null,null,null,null
+null,형,서울특별시 동대문구 회기동 45-78 (경희약대길 5-2) ,한식,null,null,null,null,null
+null,충청도식당,서울특별시 동대문구 제기동 549 1층 ,한식,null,null,null,null,null
+null,동해수산,서울특별시 동대문구 전농동 648-137 (간데메서1길 20) ,일식,null,null,null,null,null
+null,현고대닭발,서울특별시 동대문구 제기동 67-64 ,한식,null,null,null,null,null
+null,24시횟집,서울특별시 동대문구 이문동 183-4 (한천로457) ,일식,null,null,null,null,null
+null,아구좋아 해물좋아,서울특별시 동대문구 신설동 102-34 ,한식,null,null,null,null,null
+null,본가 할머니보쌈,서울특별시 동대문구 이문동 288-46 ,한식,null,null,null,null,null
+null,춘천닭갈비,서울특별시 동대문구 청량리동 249-0  250 (망우로 7) ,한식,null,null,null,null,null
+null,해남집,서울특별시 동대문구 용두동 112-71 1층 ,한식,null,null,null,null,null
+null,홍가네 킹호프,서울특별시 동대문구 청량리동 737 1층 ,한식,null,null,null,null,null
+null,주블리,서울특별시 동대문구 회기동 60-58 2층 ,경양식,null,null,null,null,null
+null,김선생,서울특별시 동대문구 장안동 387-5 ,일식,null,null,null,null,null
+null,백리향,서울특별시 동대문구 전농동 36-4 ,한식,null,null,null,null,null
+null,장수치악산흑염소,서울특별시 동대문구 청량리동 510 (홍릉길 67-5) ,한식,null,null,null,null,null
+null,골뱅이전문점,서울특별시 동대문구 청량리동 769-1 (왕산로 323) ,한식,null,null,null,null,null
+null,호랑이초밥,서울특별시 동대문구 신설동 84-1 (왕산로 141-1) ,일식,null,null,null,null,null
+null,대성집,서울특별시 동대문구 제기동 67-12 (제기골길 10) ,한식,null,null,null,null,null
+null,대영식당,서울특별시 동대문구 청량리동 32-3 1층 ,한식,null,null,null,null,null
+null,조마루뼈다귀,서울특별시 동대문구 전농동 103-292 ,한식,null,null,null,null,null
+null,삼순이시골감자탕,서울특별시 동대문구 이문동 217-12 ,한식,null,null,null,null,null
+null,빈이네 곱창,서울특별시 동대문구 신설동 98-34 (신설2길7) ,한식,null,null,null,null,null
+null,고향식당,서울특별시 동대문구 제기동 1141-8 (약령길 59-2) ,한식,null,null,null,null,null
+null,청풍장어대감,서울특별시 동대문구 이문동 115-51 (외대역동길94) ,한식,null,null,null,null,null
+null,명주회관,서울특별시 동대문구 전농동 647-13 (간데메서1길 9-2) ,한식,null,null,null,null,null
+null,민들레영토경희대점,서울특별시 동대문구 회기동 60-84 (과학원1길 8) ,경양식,null,null,null,null,null
+null,태능갈비,서울특별시 동대문구 답십리동 97-5 1층 ,중국식,null,null,null,null,null
+null,노다지삼겹살,서울특별시 동대문구 장안동 373-9 ,한식,null,null,null,null,null
+null,이찌방 이야기,서울특별시 동대문구 회기동 42-40 ,한식,null,null,null,null,null
+null,아지트,서울특별시 동대문구 휘경동 112-6 1층 ,한식,null,null,null,null,null
+null,브라운돈까스,서울특별시 동대문구 답십리동 490-5 ,한식,null,null,null,null,null
+null,사오,서울특별시 동대문구 장안동 102-7 (장안안길95-1) ,한식,null,null,null,null,null
+null,용두동동태탕 동태찜,서울특별시 동대문구 용두동 39-728 1층 ,한식,null,null,null,null,null
+null,지호한방삼계탕,서울특별시 동대문구 장안동 305-2 ,한식,null,null,null,null,null
+null,오목대뼈다귀,서울특별시 동대문구 장안동 301-3 (장한로 199) ,한식,null,null,null,null,null
+null,포차별이빛나는밤에,서울특별시 동대문구 장안동 401-6 (장안벌길133) ,한식,null,null,null,null,null
+null,장안 쭈꾸미,서울특별시 동대문구 장안동 463-7 ,한식,null,null,null,null,null
+null,맵찌돈찌 김치찜,서울특별시 동대문구 답십리동 93-7 ,한식,null,null,null,null,null
+null,볼태기집,서울특별시 동대문구 전농동 204-232 (전농시장1길 8) ,한식,null,null,null,null,null
+null,미림식당,서울특별시 동대문구 청량리동 235-4 지하 1-1 (지하1층) (망우로 19) ,한식,null,null,null,null,null
+null,영광,서울특별시 동대문구 전농동 643-23 (답십리길 50) ,한식,null,null,null,null,null
+null,육초연,서울특별시 동대문구 회기동 42-73 1층 ,한식,null,null,null,null,null
+null,장군부대찌개,서울특별시 동대문구 답십리동 4-265 (한천로67) ,한식,null,null,null,null,null
+null,국빈,서울특별시 동대문구 이문동 304-24 1층 ,한식,null,null,null,null,null
+null,문스시,서울특별시 동대문구 장안동 365-6 ,일식,null,null,null,null,null
+null,소문난숯불곰장어,서울특별시 동대문구 청량리동 205-561 ,한식,null,null,null,null,null
+null,남자네선지해장국,서울특별시 동대문구 이문동 78-1 ,한식,null,null,null,null,null
+null,교촌치킨답십리1호점,서울특별시 동대문구 답십리동 53-50 ,한식,null,null,null,null,null
+null,돼지국밥,서울특별시 동대문구 용두동 112-27 ,한식,null,null,null,null,null
+null,솥뚜껑생삼겹살,서울특별시 동대문구 답십리동 490-50 1층 ,한식,null,null,null,null,null
+null,깡통집,서울특별시 동대문구 휘경동 57-1 ,한식,null,null,null,null,null
+null,고대로찌개집,서울특별시 동대문구 제기동 137-68 (고대앞길 4) ,한식,null,null,null,null,null
+null,안동장,서울특별시 동대문구 제기동 486-20 ,중국식,null,null,null,null,null
+null,나주옥,서울특별시 동대문구 신설동 102-30 1층 ,한식,null,null,null,null,null
+null,코삼바(코리안삼겹바베큐),서울특별시 동대문구 이문동 175-14 ,한식,null,null,null,null,null
+null,구민식당,서울특별시 동대문구 장안동 354-5 ,한식,null,null,null,null,null
+null,유미찌개마당,서울특별시 동대문구 장안동 105-2 (은빛길5) ,한식,null,null,null,null,null
+null,나주곰탕나주전,서울특별시 동대문구 용두동 39-105 ,횟집,null,null,null,null,null
+null,강촌기사식당,서울특별시 동대문구 답십리동 1-52 (한천로 165) ,한식,null,null,null,null,null
+null,해남식당,서울특별시 동대문구 용두동 39-945 영신 ,한식,null,null,null,null,null
+null,어수정부대찌개,서울특별시 동대문구 용두동 119-34 ,한식,null,null,null,null,null
+null,강박사 쌈밥,서울특별시 동대문구 전농동 33-28 ,한식,null,null,null,null,null
+null,선자네식당,서울특별시 동대문구 장안동 135-22 ,한식,null,null,null,null,null
+null,띵하우,서울특별시 동대문구 이문동 336-3 ,중국식,null,null,null,null,null
+null,미림찌개세상,서울특별시 동대문구 장안동 139-14 (전곡시장9길7) ,한식,null,null,null,null,null
+null,마포칼국수,서울특별시 동대문구 전농동 90-7 ,한식,null,null,null,null,null
+null,보성녹돈(녹차먹인돼지),서울특별시 동대문구 장안동 429-4 (안골공원1길 22) ,한식,null,null,null,null,null
+null,대명수산,서울특별시 동대문구 장안동 429-4 (안골공원1길 22) ,한식,null,null,null,null,null
+null,솥뚜껑철판파전,서울특별시 동대문구 휘경동 319-31 1층 ,한식,null,null,null,null,null
+null,정봉자당진아구동태찜탕,서울특별시 동대문구 장안동 310-2 1층 ,한식,null,null,null,null,null
+null,옥돌,서울특별시 동대문구 용두동 39-120 ,한식,null,null,null,null,null
+null,채원,서울특별시 동대문구 답십리동 4-225 (한천로 65-12) ,한식,null,null,null,null,null
+null,양대창구이전문점왕십리,서울특별시 동대문구 장안동 361-4 ,한식,null,null,null,null,null
+null,송가네 낙지,서울특별시 동대문구 회기동 42-54 ,한식,null,null,null,null,null
+null,옛날손두부,서울특별시 동대문구 용두동 118-48 (동부병원남길12) ,한식,null,null,null,null,null
+null,한방닭·오리,서울특별시 동대문구 이문동 85-20 (외대역동길 23) ,한식,null,null,null,null,null
+null,바비,서울특별시 동대문구 제기동 1152-4 (안암로 82) ,경양식,null,null,null,null,null
+null,어머니의고등어,서울특별시 동대문구 전농동 295-52 101호 ,한식,null,null,null,null,null
+null,더줌플러스,서울특별시 동대문구 청량리동 322 ,한식,null,null,null,null,null
+null,버드나무 순대국,서울특별시 동대문구 이문동 325-48 1층 ,한식,null,null,null,null,null
+null,빈대떡신사,서울특별시 동대문구 용두동 39-11 1층 ,한식,null,null,null,null,null
+null,동네곱창,서울특별시 동대문구 전농동 643-48 1층 ,한식,null,null,null,null,null
+null,청정수산,서울특별시 동대문구 전농동 294-1 (부군당길22) ,일식,null,null,null,null,null
+null,함평,서울특별시 동대문구 답십리동 770-1 (1층) (약령4길 3) ,한식,null,null,null,null,null
+null,밀림,서울특별시 동대문구 용두동 238-7 (용두새싹길9) ,경양식,null,null,null,null,null
+null,옛날처럼,서울특별시 동대문구 장안동 306-3 (지상1층) ,한식,null,null,null,null,null
+null,규범곱창,서울특별시 동대문구 회기동 45-105 ,한식,null,null,null,null,null
+null,청정생고기집,서울특별시 동대문구 전농동 127-71 ,한식,null,null,null,null,null
+null,솔낭구,서울특별시 동대문구 회기동 60-68 지상1층 ,한식,null,null,null,null,null
+null,도니족발,서울특별시 동대문구 용두동 39-411 1층 ,한식,null,null,null,null,null
+null,88부대찌개,서울특별시 동대문구 제기동 441 ,한식,null,null,null,null,null
+null,부산횟집,서울특별시 동대문구 용두동 102-179 (용두북길 30) ,일식,null,null,null,null,null
+null,만소만,서울특별시 동대문구 회기동 3-150 ,한식,null,null,null,null,null
+null,봉추찜닭,서울특별시 동대문구 회기동 16-32 ,한식,null,null,null,null,null
+null,뚱땡이식당,서울특별시 동대문구 이문동 175-10 (지상1층) ,한식,null,null,null,null,null
+null,다래정,서울특별시 동대문구 이문동 305-133 ,한식,null,null,null,null,null
+null,동해회수산,서울특별시 동대문구 이문동 180-11 (지상1층) (한천로 450) ,일식,null,null,null,null,null
+null,이프,서울특별시 동대문구 답십리동 97-15 (지상2층) (전농로 113) ,경양식,null,null,null,null,null
+null,태능숯불갈비,서울특별시 동대문구 용두동 119-37 ,한식,null,null,null,null,null
+null,궁금한식당,서울특별시 동대문구 용두동 129-38 1층 ,한식,null,null,null,null,null
+null,둥지백반,서울특별시 동대문구 장안동 287-1 ,한식,null,null,null,null,null
+null,잔월,서울특별시 동대문구 회기동 60-46 ,경양식,null,null,null,null,null
+null,대성식당,서울특별시 동대문구 장안동 125-3 ,한식,null,null,null,null,null
+null,밀플랜비,서울특별시 동대문구 이문동 264-140 1층 ,중국식,null,null,null,null,null
+null,무교동맷돌파전,서울특별시 동대문구 장안동 463-9 (장평1길7-14) ,한식,null,null,null,null,null
+null,한옥촌,서울특별시 동대문구 전농동 38-35 (사가정길129-3) ,한식,null,null,null,null,null
+null,8번지,서울특별시 동대문구 회기동 42-139 (경희대길21-4) ,경양식,null,null,null,null,null
+null,이판사판회포차,서울특별시 동대문구 용두동 119-42 1층 ,한식,null,null,null,null,null
+null,상봉닭한마리 장안동점,서울특별시 동대문구 장안동 334-1 지상1층 ,한식,null,null,null,null,null
+null,원주종가집,서울특별시 동대문구 청량리동 772 1층 ,한식,null,null,null,null,null
+null,가학산 흑염소 요리 전문점,서울특별시 동대문구 장안동 387-6 ,한식,null,null,null,null,null
+null,돈벼락김치삼겹살,서울특별시 동대문구 장안동 342-24 지상1층 (장평11길 12) ,한식,null,null,null,null,null
+null,꼴통,서울특별시 동대문구 전농동 103-286 (지상2층) (전농로 235-1) ,한식,null,null,null,null,null
+null,향나무집,서울특별시 동대문구 전농동 38-34 1층 ,한식,null,null,null,null,null
+null,아성식당,서울특별시 동대문구 전농동 195-14 (전농시장2길48) ,한식,null,null,null,null,null
+null,박가네흑돼지생고기구이점,서울특별시 동대문구 청량리동 205-763 (제청길 19) ,한식,null,null,null,null,null
+null,온달파전,서울특별시 동대문구 휘경동 319-31 (휘경서1길 9) ,한식,null,null,null,null,null
+null,뽀빠이칡냉면,서울특별시 동대문구 답십리동 824 ,한식,null,null,null,null,null
+null,에이바우트 경희대점,서울특별시 동대문구 회기동 42-21 회기동근생 ,한식,null,null,null,null,null
+null,가마솥닭곰탕2500원,서울특별시 동대문구 전농동 150-7 (지상1층) ,한식,null,null,null,null,null
+null,봉황부대찌개,서울특별시 동대문구 휘경동 49-178 ,한식,null,null,null,null,null
+null,외대감자탕,서울특별시 동대문구 이문동 288-81 ,한식,null,null,null,null,null
+null,청도해물탕아구찜,서울특별시 동대문구 제기동 478-6 ,한식,null,null,null,null,null
+null,해송,서울특별시 동대문구 답십리동 14-7 ,한식,null,null,null,null,null
+null,화성옥갈비,서울특별시 동대문구 전농동 33-29 ,한식,null,null,null,null,null
+null,상하이문,서울특별시 동대문구 용두동 33-1 홈플러스 지하2층(하정로 137) ,중국식,null,null,null,null,null
+null,가정식백반,서울특별시 동대문구 장안동 116-27 (전곡시장길27) ,한식,null,null,null,null,null
+null,양지함박왕돈까스,서울특별시 동대문구 장안동 313-6 ,경양식,null,null,null,null,null
+null,장수분식,서울특별시 동대문구 장안동 452-1 (장평2길23-3) ,한식,null,null,null,null,null
+null,풍년해물탕,서울특별시 동대문구 청량리동 51-6 1층 ,한식,null,null,null,null,null
+null,월매네남원추어탕,서울특별시 동대문구 청량리동 580 (홍릉길 57-1) ,한식,null,null,null,null,null
+null,도화,서울특별시 동대문구 장안동 342-14 ,중국식,null,null,null,null,null
+null,청년김밥,서울특별시 동대문구 신설동 76-43 ,한식,null,null,null,null,null
+null,종암골,서울특별시 동대문구 제기동 1145-3 1층 ,한식,null,null,null,null,null
+null,김치만선생,서울특별시 동대문구 전농동 103-289 (전농로233) ,한식,null,null,null,null,null
+null,고모집,서울특별시 동대문구 제기동 137-183 (제기로 11-13) ,한식,null,null,null,null,null
+null,술꾼일지,서울특별시 동대문구 회기동 42-82 회기동복합빌딩 ,한식,null,null,null,null,null
+null,함양숯불갈비,서울특별시 동대문구 장안동 141-5 (동산길 4) ,한식,null,null,null,null,null
+null,왕꼼장어,서울특별시 동대문구 장안동 463-6 1층 ,한식,null,null,null,null,null
+null,흥부골숯불돼지갈비,서울특별시 동대문구 장안동 338-2 (장평10길 30) ,한식,null,null,null,null,null
+null,등갈비의신화,서울특별시 동대문구 전농동 124-2 (배봉로147) ,한식,null,null,null,null,null
+null,황하,서울특별시 동대문구 이문동 339-1 (회기안길2) ,중국식,null,null,null,null,null
+null,골목한식,서울특별시 동대문구 회기동 3-185 ,한식,null,null,null,null,null
+null,명동찌개마을,서울특별시 동대문구 청량리동 772 ,한식,null,null,null,null,null
+null,유명홍두깨한방닭한마리칼국수,서울특별시 동대문구 장안동 380-5 1층 101호,한식,null,null,null,null,null
+null,비사벌 전주콩나물국밥,서울특별시 동대문구 장안동 429-3 (성안빌딩 1호) (장한로 51) ,한식,null,null,null,null,null
+null,두메산골,서울특별시 동대문구 제기동 438-11 (청량시장3길 37) ,한식,null,null,null,null,null
+null,은이네,서울특별시 동대문구 답십리동 961-9 ,한식,null,null,null,null,null
+null,참숯민물장어구이,서울특별시 동대문구 답십리동 265-1 1층 ,한식,null,null,null,null,null
+null,본죽전농동점,서울특별시 동대문구 전농동 40 ,한식,null,null,null,null,null
+null,우성식당,서울특별시 동대문구 용두동 20-51 1층 ,한식,null,null,null,null,null
+null,조가네 부대찌개,서울특별시 동대문구 용두동 36-7 ,한식,null,null,null,null,null
+null,이자까야 쥬베이,서울특별시 동대문구 용두동 36-1 (하정로 132) ,일식,null,null,null,null,null
+null,동북풍미 양꼬치,서울특별시 동대문구 청량리동 316 1층 ,한식,null,null,null,null,null
+null,인생극장,서울특별시 동대문구 장안동 338-2 ,한식,null,null,null,null,null
+null,현대식당,서울특별시 동대문구 청량리동 738 ,한식,null,null,null,null,null
+null,대박식당,서울특별시 동대문구 휘경동 163-8 ,한식,null,null,null,null,null
+null,참치본가,서울특별시 동대문구 용두동 234-42 ,한식,null,null,null,null,null
+null,형제집,서울특별시 동대문구 장안동 304-1 ,한식,null,null,null,null,null
+null,작렬곱창,서울특별시 동대문구 장안동 102-2 지하1층 ,한식,null,null,null,null,null
+null,면천추어탕,서울특별시 동대문구 장안동 417-3 1층 ,한식,null,null,null,null,null
+null,도원식당,서울특별시 동대문구 답십리동 542-4 (황물길205) ,한식,null,null,null,null,null
+null,호박웰빙숯불갈비,서울특별시 동대문구 신설동 24-1 ,한식,null,null,null,null,null
+null,시골집,서울특별시 동대문구 이문동 334-87 (이문로 77-3) ,한식,null,null,null,null,null
+null,찌개마을,서울특별시 동대문구 제기동 892-71 한솔동의보감 ,한식,null,null,null,null,null
+null,이문왕곱창,서울특별시 동대문구 이문동 183-3 (한천로459) ,한식,null,null,null,null,null
+null,금복,서울특별시 동대문구 제기동 136-120 (고대앞2길 17-1) ,한식,null,null,null,null,null
+null,란찌개집,서울특별시 동대문구 장안동 321-4 1층 ,한식,null,null,null,null,null
+null,마끼돈까스,서울특별시 동대문구 장안동 143-46 ,경양식,null,null,null,null,null
+null,왕순대,서울특별시 동대문구 용두동 24-14 (고산자로182) ,한식,null,null,null,null,null
+null,계경순대국(장안점),서울특별시 동대문구 장안동 337-12 (장평11길 26) ,한식,null,null,null,null,null
+null,감자탕과빈대떡고을,서울특별시 동대문구 용두동 40-14 1층 ,한식,null,null,null,null,null
+null,장안골,서울특별시 동대문구 장안동 286-12 ,한식,null,null,null,null,null
+null,호남식당,서울특별시 동대문구 용두동 119-20 1층 ,한식,null,null,null,null,null
+null,해뜰날,서울특별시 동대문구 답십리동 964-1 지상1층 ,한식,null,null,null,null,null
+null,명물식당,서울특별시 동대문구 답십리동 66-18 ,한식,null,null,null,null,null
+null,영주집,서울특별시 동대문구 제기동 892-71 한솔동의보감 5층 14호 ,한식,null,null,null,null,null
+null,(주)라온나인,서울특별시 동대문구 제기동 892-71 한솔동의보감 ,뷔페식,null,null,null,null,null
+null,우리집,서울특별시 동대문구 청량리동 50-17 (망우로 43) ,한식,null,null,null,null,null
+null,대성식당,서울특별시 동대문구 제기동 646 주부일련번호:6 ,한식,null,null,null,null,null
+null,수라간,서울특별시 동대문구 청량리동 50-6 ,한식,null,null,null,null,null
+null,봉평메밀막국수,서울특별시 동대문구 장안동 162-9 (한천로106) ,한식,null,null,null,null,null
+null,자가제빵 선명희피자 외대점,서울특별시 동대문구 이문동 346-45 (이문로65) ,한식,null,null,null,null,null
+null,나주해장국,서울특별시 동대문구 답십리동 198-10 (답십리길 140-1) ,한식,null,null,null,null,null
+null,본죽&비빔밥cafe,서울특별시 동대문구 장안동 336 장안현대홈타운 ,한식,null,null,null,null,null
+null,타임하우스,서울특별시 동대문구 답십리동 490-123 (전농로 21) ,경양식,null,null,null,null,null
+null,병천순대,서울특별시 동대문구 답십리동 99-5 ,한식,null,null,null,null,null
+null,대청마루,서울특별시 동대문구 장안동 92-46 (경안길60) ,한식,null,null,null,null,null
+null,남경식당,서울특별시 동대문구 장안동 463-9 (장평1길 7-14) ,한식,null,null,null,null,null
+null,명가,서울특별시 동대문구 제기동 346 ,한식,null,null,null,null,null
+null,뚝방집,서울특별시 동대문구 장안동 436-2 1층 ,한식,null,null,null,null,null
+null,천궁,서울특별시 동대문구 제기동 892-71 한솔동의보감 ,한식,null,null,null,null,null
+null,호박식당,서울특별시 동대문구 장안동 433-25 ,한식,null,null,null,null,null
+null,롯데쇼핑(주)롯데슈퍼전농점,서울특별시 동대문구 전농동 10-0 ,한식,null,null,null,null,null
+null,친정,서울특별시 동대문구 신설동 97-8 동광동대문베르빌 1층 108호,한식,null,null,null,null,null
+null,놀부심보,서울특별시 동대문구 청량리동 203-180 (청홍동1길 18) ,한식,null,null,null,null,null
+null,진수성찬,서울특별시 동대문구 용두동 255-58 ,한식,null,null,null,null,null
+null,손큰할매순대국,서울특별시 동대문구 휘경동 321-27 1층 ,한식,null,null,null,null,null
+null,선일해장국,서울특별시 동대문구 제기동 1144-1 지상1층 ,한식,null,null,null,null,null
+null,본죽,서울특별시 동대문구 신설동 97-8 (하정로25) ,한식,null,null,null,null,null
+null,천하일미,서울특별시 동대문구 장안동 163-17 1층 ,한식,null,null,null,null,null
+null,장안식당,서울특별시 동대문구 답십리동 530-16 ,한식,null,null,null,null,null
+null,돈보네,서울특별시 동대문구 장안동 305-3 1층 ,한식,null,null,null,null,null
+null,먹거리식당II,서울특별시 동대문구 용두동 231-5 1층 ,한식,null,null,null,null,null
+null,선민네,서울특별시 동대문구 청량리동 203-289 ,한식,null,null,null,null,null
+null,박사네곱창,서울특별시 동대문구 답십리동 19-66 (지상1층) (동답남길 57-2) ,한식,null,null,null,null,null
+null,엘브릴란테(el brillante),서울특별시 동대문구 이문동 288-53 지상2층 ,경양식,null,null,null,null,null
+null,백고기,서울특별시 동대문구 장안동 378-6 (샛별공원1길 10) ,한식,null,null,null,null,null
+null,이천농장정육식당,서울특별시 동대문구 장안동 306-2 ,한식,null,null,null,null,null
+null,우미설렁탕,서울특별시 동대문구 답십리동 994 1층 ,한식,null,null,null,null,null
+null,정통삼계탕,서울특별시 동대문구 용두동 129-414 (무학로 131) ,한식,null,null,null,null,null
+null,산마을감자탕,서울특별시 동대문구 이문동 292-188 (문일길 11-1) ,한식,null,null,null,null,null
+null,순창식당,서울특별시 동대문구 제기동 901-4 ,한식,null,null,null,null,null
+null,닛시스시,서울특별시 동대문구 이문동 237-101 ,일식,null,null,null,null,null
+null,꿀밤포차,서울특별시 동대문구 회기동 80-1 (이문로 25) ,한식,null,null,null,null,null
+null,정대감감자탕,서울특별시 동대문구 장안동 431-1 ,한식,null,null,null,null,null
+null,샹그라,서울특별시 동대문구 회기동 39-3 2층 ,중국식,null,null,null,null,null
+null,충주식당,서울특별시 동대문구 장안동 194-12 1층 ,한식,null,null,null,null,null
+null,압구정닭꼬치,서울특별시 동대문구 휘경동 319-16 (휘경서길 4) ,한식,null,null,null,null,null
+null,산촌쌈밥,서울특별시 동대문구 전농동 687 신성미소지움아파트 101동 105호,한식,null,null,null,null,null
+null,두미시골집,서울특별시 동대문구 이문동 247-4 (신이문7길42) ,한식,null,null,null,null,null
+null,락퓨전요리주가,서울특별시 동대문구 전농동 649-1 (답십리길 55) ,한식,null,null,null,null,null
+null,곱창마을,서울특별시 동대문구 이문동 217-12 ,한식,null,null,null,null,null
+null,본죽,서울특별시 동대문구 답십리동 492-1 (천호대로147) ,한식,null,null,null,null,null
+null,피자스쿨 경희대점,서울특별시 동대문구 회기동 76-10 (회기로 172) ,경양식,null,null,null,null,null
+null,왕십리원조고가네곱창,서울특별시 동대문구 전농동 124-39 지상1층 ,한식,null,null,null,null,null
+null,주막집,서울특별시 동대문구 청량리동 235-4 (지하3호 2-가) (망우로 19) ,한식,null,null,null,null,null
+null,디귿(digeut),서울특별시 동대문구 장안동 463-1 ,한식,null,null,null,null,null
+null,불티나곱창,서울특별시 동대문구 장안동 339-25 1층 ,한식,null,null,null,null,null
+null,고향상회,서울특별시 동대문구 청량리동 773 ,한식,null,null,null,null,null
+null,메가커피 장안점,서울특별시 동대문구 장안동 366-1 ,한식,null,null,null,null,null
+null,곱창이랑골뱅이랑,서울특별시 동대문구 장안동 345-3 우석타운2 ,한식,null,null,null,null,null
+null,제이제이바(JJ BAR),서울특별시 동대문구 장안동 374-1 (장한로85) ,일식,null,null,null,null,null
+null,바다식당,서울특별시 동대문구 청량리동 778 (청량시장길 20) ,한식,null,null,null,null,null
+null,두레박,서울특별시 동대문구 장안동 108-6 (한천로196) ,한식,null,null,null,null,null
+null,신중화랑,서울특별시 동대문구 장안동 313-1 (사가정길248) ,중국식,null,null,null,null,null
+null,용두동이모쭈꾸미,서울특별시 동대문구 용두동 112-33 (용두서길7) ,한식,null,null,null,null,null
+null,취홍,서울특별시 동대문구 청량리동 346-1 ,한식,null,null,null,null,null
+null,골목집,서울특별시 동대문구 장안동 331-8 1층 ,한식,null,null,null,null,null
+null,불타는짜장,서울특별시 동대문구 답십리동 276-4 (답십리새싹길13) ,중국식,null,null,null,null,null
+null,논빼미,서울특별시 동대문구 장안동 135-21 (전곡시장길101-1) ,한식,null,null,null,null,null
+null,불타는왕십리,서울특별시 동대문구 제기동 1145-1 ,한식,null,null,null,null,null
+null,추억의연탄구이,서울특별시 동대문구 용두동 52-6 (용일안5길 7) ,한식,null,null,null,null,null
+null,토종순대국,서울특별시 동대문구 장안동 119-18 (한천로174) ,한식,null,null,null,null,null
+null,물고기집,서울특별시 동대문구 답십리동 495-1 지상1층 ,일식,null,null,null,null,null
+null,신현대식당,서울특별시 동대문구 장안동 327-15 (벚꽃8길 34-1) ,한식,null,null,null,null,null
+null,오일삼 양꼬치전문점,서울특별시 동대문구 이문동 316-1 ,한식,null,null,null,null,null
+null,마포주물럭,서울특별시 동대문구 용두동 52-18 ,한식,null,null,null,null,null
+null,복성장,서울특별시 동대문구 장안동 338-2 ,한식,null,null,null,null,null
+null,고깃,서울특별시 동대문구 용두동 119-37 ,한식,null,null,null,null,null
+null,진성 숯불갈비,서울특별시 동대문구 제기동 486-19 ,한식,null,null,null,null,null
+null,최고을,서울특별시 동대문구 장안동 194-11 지상1층 ,한식,null,null,null,null,null
+null,소울,서울특별시 동대문구 회기동 45-105 ,한식,null,null,null,null,null
+null,엽기떡볶기 고려대점,서울특별시 동대문구 제기동 137-433 ,일식,null,null,null,null,null
+null,내가찾던최고의맛있는족발,서울특별시 동대문구 장안동 436-1 ,한식,null,null,null,null,null
+null,라이브카페뜨락,서울특별시 동대문구 휘경동 183-386 ,경양식,null,null,null,null,null
+null,향,서울특별시 동대문구 신설동 76-57 2층 ,한식,null,null,null,null,null
+null,솥뚜껑삼겹살,서울특별시 동대문구 답십리동 53-41 1층 ,한식,null,null,null,null,null
+null,은행,서울특별시 동대문구 전농동 648-1 (배봉로 50) ,한식,null,null,null,null,null
+null,참존숯불바베큐치킨,서울특별시 동대문구 전농동 643-53 1층 ,한식,null,null,null,null,null
+null,돈장군vs소일병,서울특별시 동대문구 제기동 241-14 (약령시길 43) ,한식,null,null,null,null,null
+null,회기왕갈비탕,서울특별시 동대문구 휘경동 183-352 ,한식,null,null,null,null,null
+null,동화기사식당,서울특별시 동대문구 답십리동 645-8 (미나리길32) ,한식,null,null,null,null,null
+null,쉬(She),서울특별시 동대문구 장안동 428-1 (장일중앙길38) ,한식,null,null,null,null,null
+null,아욱꽃,서울특별시 동대문구 이문동 305-85 1층 ,한식,null,null,null,null,null
+null,부부식당,서울특별시 동대문구 장안동 313-4 1층 ,일식,null,null,null,null,null
+null,뚱이식당,서울특별시 동대문구 장안동 419-3 ,한식,null,null,null,null,null
+null,인우스시,서울특별시 동대문구 답십리동 19-65 ,일식,null,null,null,null,null
+null,브라운돈까스,서울특별시 동대문구 장안동 334-7 2층 ,한식,null,null,null,null,null
+null,장진주,서울특별시 동대문구 제기동 948 (약령동길 73) ,한식,null,null,null,null,null
+null,신촌설렁탕,서울특별시 동대문구 회기동 33-1 ,한식,null,null,null,null,null
+null,다래식당,서울특별시 동대문구 장안동 375-9 (장한로67) ,한식,null,null,null,null,null
+null,공자식탁,서울특별시 동대문구 제기동 1142-8 (지하1층~지상1층) (제청길 7) ,한식,null,null,null,null,null
+null,장안 민물장어,서울특별시 동대문구 장안동 308-1 ,한식,null,null,null,null,null
+null,고기혁명,서울특별시 동대문구 휘경동 286-5 (휘경중2길 1) ,한식,null,null,null,null,null
+null,일번지곱창,서울특별시 동대문구 답십리동 488-93 ,한식,null,null,null,null,null
+null,짱구네식당,서울특별시 동대문구 휘경동 286-73 (휘경중2길 2) ,한식,null,null,null,null,null
+null,굿아임찜닭(경희대점),서울특별시 동대문구 회기동 42-55 1층 ,한식,null,null,null,null,null
+null,향원,서울특별시 동대문구 제기동 892-8 (약령서길 20) ,중국식,null,null,null,null,null
+null,마왕족발,서울특별시 동대문구 휘경동 293-157 ,한식,null,null,null,null,null
+null,한솔푸드,서울특별시 동대문구 제기동 892-71 (왕산로 247) ,한식,null,null,null,null,null
+null,오리떼닭한마리,서울특별시 동대문구 전농동 129-64 1층 ,한식,null,null,null,null,null
+null,부어치킨 신설동역지점,서울특별시 동대문구 신설동 97-8 동광동대문베르빌 ,한식,null,null,null,null,null
+null,신가족발,서울특별시 동대문구 이문동 331-18 (외대길53) ,한식,null,null,null,null,null
+null,용진산닭곰탕,서울특별시 동대문구 답십리동 14-8 1층 ,한식,null,null,null,null,null
+null,두꺼비식당,서울특별시 동대문구 휘경동 319-2 ,한식,null,null,null,null,null
+null,마구로준,서울특별시 동대문구 회기동 105-34 1층 ,일식,null,null,null,null,null
+null,오뚝,서울특별시 동대문구 회기동 62-6 (안화현2길 35) ,한식,null,null,null,null,null
+null,광주집,서울특별시 동대문구 전농동 1-174 (한천로221) ,한식,null,null,null,null,null
+null,피자나라,서울특별시 동대문구 용두동 221-2 1층 ,한식,null,null,null,null,null
+null,육전국밥 장안점,서울특별시 동대문구 장안동 310-3 ,한식,null,null,null,null,null
+null,조은식당,서울특별시 동대문구 장안동 117-6 ,한식,null,null,null,null,null
+null,만원의행복,서울특별시 동대문구 제기동 1148-18 (회기로 6) ,한식,null,null,null,null,null
+null,파이스타,서울특별시 동대문구 제기동 288 (홍릉시장6길 7) ,한식,null,null,null,null,null
+null,동해관,서울특별시 동대문구 장안동 399-30 (장안벌길119) ,한식,null,null,null,null,null
+null,부산돼지국밥,서울특별시 동대문구 장안동 97-9 ,한식,null,null,null,null,null
+null,전주전,서울특별시 동대문구 장안동 189-20 ,한식,null,null,null,null,null
+null,돈김치,서울특별시 동대문구 장안동 426-4 ,한식,null,null,null,null,null
+null,달래해장 장한평점,서울특별시 동대문구 장안동 463-3 성동빌딩 1층 103호 ,한식,null,null,null,null,null
+null,국수나무,서울특별시 동대문구 장안동 331-4 ,한식,null,null,null,null,null
+null,왕도숯불갈비,서울특별시 동대문구 제기동 438-9 ,한식,null,null,null,null,null
+null,화끈하고통크게,서울특별시 동대문구 답십리동 477-26 (답일길 4) ,한식,null,null,null,null,null
+null,본죽&비빔밥카페 제기동역점,서울특별시 동대문구 용두동 790 롯데캐슬피렌체 ,한식,null,null,null,null,null
+null,산카이회기역점,서울특별시 동대문구 휘경동 320-4 1층 ,한식,null,null,null,null,null
+null,신일품순대국,서울특별시 동대문구 장안동 432-4 형인타워 ,한식,null,null,null,null,null
+null,리젠시,서울특별시 동대문구 청량리동 296 (홍릉길 10) ,한식,null,null,null,null,null
+null,홍릉각,서울특별시 동대문구 제기동 838 (경동시장길 75) ,중국식,null,null,null,null,null
+null,룰루랄라,서울특별시 동대문구 장안동 361-3 (장평5길3) ,한식,null,null,null,null,null
+null,동강오리앤오매떡,서울특별시 동대문구 청량리동 209-2 ,한식,null,null,null,null,null
+null,황금갈비,서울특별시 동대문구 답십리동 198-45 (상원동2길 24) ,한식,null,null,null,null,null
+null,수유동 진미숯불닭갈비 답십리점,서울특별시 동대문구 답십리동 99-6 ,한식,null,null,null,null,null
+null,신원오리,서울특별시 동대문구 제기동 153 ,한식,null,null,null,null,null
+null,옛맛수제피순대,서울특별시 동대문구 장안동 308-8 ,한식,null,null,null,null,null
+null,칼리앤메리,서울특별시 동대문구 전농동 150 ,한식,null,null,null,null,null
+null,김봉순허브족발보쌈,서울특별시 동대문구 장안동 116-6 1층 ,한식,null,null,null,null,null
+null,춘천식당,서울특별시 동대문구 청량리동 733 ,한식,null,null,null,null,null
+null,서초곱창,서울특별시 동대문구 답십리동 490-47 1층 ,한식,null,null,null,null,null
+null,어르길(ORGIL),서울특별시 동대문구 장안동 194-12 ,한식,null,null,null,null,null
+null,주왕족발,서울특별시 동대문구 제기동 632-16 (동서시장길 24) ,한식,null,null,null,null,null
+null,3번지고깃집,서울특별시 동대문구 장안동 344-3 (장평10길 9) ,한식,null,null,null,null,null
+null,아인스,서울특별시 동대문구 회기동 16-69 ,한식,null,null,null,null,null
+null,돈앤구이,서울특별시 동대문구 장안동 389-1 (장미길23) ,한식,null,null,null,null,null
+null,포마토,서울특별시 동대문구 전농동 295-30 (전농로130) ,한식,null,null,null,null,null
+null,용두쭈꾸미,서울특별시 동대문구 전농동 648-34 ,한식,null,null,null,null,null
+null,장미식당,서울특별시 동대문구 용두동 689-19 ,한식,null,null,null,null,null
+null,명품한방삼계탕,서울특별시 동대문구 장안동 430-4 ,한식,null,null,null,null,null
+null,한촌설렁탕답십리점,서울특별시 동대문구 답십리동 50-27 지상1층 ,한식,null,null,null,null,null
+null,함바식당,서울특별시 동대문구 이문동 240-2 (신이문길 23) ,한식,null,null,null,null,null
+null,농장이야기 장한평역점,서울특별시 동대문구 장안동 463-2 ,한식,null,null,null,null,null
+null,우마이,서울특별시 동대문구 휘경동 264-2 ,한식,null,null,null,null,null
+null,찌마기 용두점,서울특별시 동대문구 용두동 127-10 1층 ,한식,null,null,null,null,null
+null,우돈마루,서울특별시 동대문구 장안동 428-9 1층 ,한식,null,null,null,null,null
+null,바지락칼국수,서울특별시 동대문구 이문동 134-14 (둑구말길46) ,한식,null,null,null,null,null
+null,어흥식당,서울특별시 동대문구 회기동 42-74 1층 ,한식,null,null,null,null,null
+null,닭으로가,서울특별시 동대문구 장안동 344-9 (장평10길7) ,한식,null,null,null,null,null
+null,마장동2C,서울특별시 동대문구 장안동 433-11 ,일식,null,null,null,null,null
+null,녹두삼계탕,서울특별시 동대문구 휘경동 167-25 (휘경안길 24) ,한식,null,null,null,null,null
+null,애넷아빠 생선굽는날,서울특별시 동대문구 장안동 95-1 (한천로224) ,한식,null,null,null,null,null
+null,청량조개구이,서울특별시 동대문구 제기동 486-20 (청량시장4길 17) ,한식,null,null,null,null,null
+null,김밥앤국시,서울특별시 동대문구 용두동 40-37 [고산자로 409-1] ,한식,null,null,null,null,null
+null,맘스터치,서울특별시 동대문구 전농동 103-340 씨티빌라트 ,한식,null,null,null,null,null
+null,윤가네,서울특별시 동대문구 청량리동 769-1 ,한식,null,null,null,null,null
+null,주문진,서울특별시 동대문구 회기동 60-50 2층 ,한식,null,null,null,null,null
+null,풍성집,서울특별시 동대문구 답십리동 35-9 지상1층 ,한식,null,null,null,null,null
+null,시대먹고지고먹고,서울특별시 동대문구 전농동 622-1 3층 ,한식,null,null,null,null,null
+null,가온푸드유통,서울특별시 동대문구 휘경동 265-2 1층 ,한식,null,null,null,null,null
+null,장평곱창,서울특별시 동대문구 장안동 375-4 (장한로65) ,한식,null,null,null,null,null
+null,역전할머니맥주 장한평점,서울특별시 동대문구 장안동 463-2 ,한식,null,null,null,null,null
+null,원조멸치국수,서울특별시 동대문구 답십리동 2-2 ,한식,null,null,null,null,null
+null,옛날할머니보쌈,서울특별시 동대문구 이문동 287-22 ,한식,null,null,null,null,null
+null,불닭발땡초동대문엽기떡볶이,서울특별시 동대문구 용두동 236-1 1층104호 ,한식,null,null,null,null,null
+null,꼴더덕 꼴더덕,서울특별시 동대문구 답십리동 2-179 지상1 2층(답십리산길 13) ,한식,null,null,null,null,null
+null,흑염소요리전문점 광주집,서울특별시 동대문구 청량리동 520-60 1층 ,한식,null,null,null,null,null
+null,다성샤브샤브,서울특별시 동대문구 전농동 622-10 (답십리길21-1) ,한식,null,null,null,null,null
+null,신가네,서울특별시 동대문구 용두동 118-81 1층 ,한식,null,null,null,null,null
+null,화로상회 답십리점,서울특별시 동대문구 답십리동 53-14 1층 ,한식,null,null,null,null,null
+null,태양해물아구찜탕,서울특별시 동대문구 답십리동 496-2 1~2층 ,한식,null,null,null,null,null
+null,광한루남원추어탕,서울특별시 동대문구 이문동 335-5 1층 ,한식,null,null,null,null,null
+null,불광사철탕,서울특별시 동대문구 제기동 466 ,한식,null,null,null,null,null
+null,고래돈가스,서울특별시 동대문구 제기동 137-46 ,한식,null,null,null,null,null
+null,어죽이,서울특별시 동대문구 신설동 117-8 (도서관길18) ,한식,null,null,null,null,null
+null,양촌리,서울특별시 동대문구 장안동 416-10 삼우빌딩 101호 (천호대로 231) ,한식,null,null,null,null,null
+null,갯벌쭈꾸미,서울특별시 동대문구 용두동 26-12 (용우물4길17) ,한식,null,null,null,null,null
+null,본가짜장,서울특별시 동대문구 전농동 152-11 ,중국식,null,null,null,null,null
+null,허파식당,서울특별시 동대문구 용두동 52-12 ,한식,null,null,null,null,null
+null,옥이네 곱창,서울특별시 동대문구 전농동 295-96 ,한식,null,null,null,null,null
+null,장안참숯수제갈비,서울특별시 동대문구 장안동 459-2 1층 ,한식,null,null,null,null,null
+null,용두삼겹살,서울특별시 동대문구 용두동 118-86 (무학로 89) ,한식,null,null,null,null,null
+null,박가네 고깃간,서울특별시 동대문구 장안동 150-2 ,한식,null,null,null,null,null
+null,개코먹태치킨,서울특별시 동대문구 장안동 334-2 ,한식,null,null,null,null,null
+null,전농기사식당,서울특별시 동대문구 전농동 687 신성미소지움상가 101동 104호,한식,null,null,null,null,null
+null,하남불백집,서울특별시 동대문구 신설동 97-8 동광동대문베르빌 ,중국식,null,null,null,null,null
+null,추억의밥상,서울특별시 동대문구 제기동 892-71 5층 16호 (왕산로 247) ,한식,null,null,null,null,null
+null,신의주 찹쌀순대와 쭈꾸미,서울특별시 동대문구 이문동 289-1 ,일식,null,null,null,null,null
+null,영미네곱창전골,서울특별시 동대문구 이문동 305-69 ,한식,null,null,null,null,null
+null,마라전설 경희대점,서울특별시 동대문구 회기동 42-98 2층 ,중국식,null,null,null,null,null
+null,시장식당,서울특별시 동대문구 청량리동 782 (청량시장길 26-2) ,한식,null,null,null,null,null
+null,대동숯불생고기,서울특별시 동대문구 장안동 194-28 민준빌딩 ,한식,null,null,null,null,null
+null,일떡 신설동점,서울특별시 동대문구 신설동 73-1 1층 ,한식,null,null,null,null,null
+null,나나키친,서울특별시 동대문구 장안동 127-7 ,한식,null,null,null,null,null
+null,코리아식당,서울특별시 동대문구 장안동 306-5 1층 ,한식,null,null,null,null,null
+null,대성식당,서울특별시 동대문구 장안동 383-3 1층 ,한식,null,null,null,null,null
+null,장수식당,서울특별시 동대문구 이문동 334-76 (경희얄개길 10) ,한식,null,null,null,null,null
+null,고기하다,서울특별시 동대문구 회기동 54-16 지상1층 ,한식,null,null,null,null,null
+null,청량리푸드앤호프,서울특별시 동대문구 제기동 635-21 2층 ,경양식,null,null,null,null,null
+null,먹거리,서울특별시 동대문구 장안동 123-9 (전곡시장길57) ,한식,null,null,null,null,null
+null,고향식당,서울특별시 동대문구 장안동 397-5 (장미공원길74-1) ,한식,null,null,null,null,null
+null,또순이순대보쌈,서울특별시 동대문구 회기동 42-5 (경희대길 29-1) ,한식,null,null,null,null,null
+null,충북식당,서울특별시 동대문구 제기동 989 (경동시장3길 14-9) ,한식,null,null,null,null,null
+null,신토불이,서울특별시 동대문구 장안동 316-15 원영빌딩 ,한식,null,null,null,null,null
+null,남한강식당,서울특별시 동대문구 제기동 895-11 외1필지 (경동시장8길 9) ,한식,null,null,null,null,null
+null,본죽&비빔밥cafe외대점,서울특별시 동대문구 이문동 287-22 1층 ,한식,null,null,null,null,null
+null,천리향,서울특별시 동대문구 장안동 360-6 지상1층 ,중국식,null,null,null,null,null
+null,일품돈가스,서울특별시 동대문구 청량리동 205-361 (청홍길 18) ,경양식,null,null,null,null,null
+null,땡큐,서울특별시 동대문구 답십리동 960-18 (황물길26) ,한식,null,null,null,null,null
+null,거북곱창,서울특별시 동대문구 장안동 341-4 (장평10길22) ,한식,null,null,null,null,null
+null,청춘포차,서울특별시 동대문구 제기동 575-10 1층 ,한식,null,null,null,null,null
+null,메밀사랑묵사랑,서울특별시 동대문구 장안동 100-5 1층 ,한식,null,null,null,null,null
+null,한신포차 경희대점,서울특별시 동대문구 회기동 42-43 (경희대1길 10) ,일식,null,null,null,null,null
+null,하우스치킨,서울특별시 동대문구 이문동 255-255 1층 ,한식,null,null,null,null,null
+null,왈순네,서울특별시 동대문구 장안동 109-10 1층 ,한식,null,null,null,null,null
+null,옥천옥,서울특별시 동대문구 신설동 94-57 1층 ,한식,null,null,null,null,null
+null,독도게찜,서울특별시 동대문구 장안동 360-4 1층 ,한식,null,null,null,null,null
+null,스마일(smile),서울특별시 동대문구 용두동 39-960 1층 ,한식,null,null,null,null,null
+null,서장각,서울특별시 동대문구 장안동 391-3 (지상1층) ,중국식,null,null,null,null,null
+null,李오 바지락칼국수,서울특별시 동대문구 장안동 408-1 (지상1층) ,한식,null,null,null,null,null
+null,또오래식당,서울특별시 동대문구 장안동 331-3 ,한식,null,null,null,null,null
+null,꼬기한판,서울특별시 동대문구 장안동 123-1 (지상1층) ,한식,null,null,null,null,null
+null,고을집,서울특별시 동대문구 제기동 635-18 1층 ,한식,null,null,null,null,null
+null,비반트(VIVANT),서울특별시 동대문구 회기동 16-38 1층 ,한식,null,null,null,null,null
+null,남원추어탕,서울특별시 동대문구 답십리동 475-110 102호,한식,null,null,null,null,null
+null,대지식당,서울특별시 동대문구 신설동 109-5 서울풍물시장 빨강동 36호,한식,null,null,null,null,null
+null,목포집,서울특별시 동대문구 신설동 109-5 서울풍물시장 빨강동 23호,한식,null,null,null,null,null
+null,정성을 담은 가게,서울특별시 동대문구 신설동 109-5 서울풍물시장 빨강동 38호,한식,null,null,null,null,null
+null,포항댁,서울특별시 동대문구 신설동 109-5 서울풍물시장 빨강동 14호 ,한식,null,null,null,null,null
+null,큰엄마네,서울특별시 동대문구 신설동 109-5 서울풍물시장 빨강동 10호 ,한식,null,null,null,null,null
+null,다시찾고싶은집,서울특별시 동대문구 신설동 109-5 서울풍물시장 빨강동 18~19호 ,한식,null,null,null,null,null
+null,한마당,서울특별시 동대문구 신설동 109-5 서울풍물시장 빨강동 12호 ,한식,null,null,null,null,null
+null,갈치해장국,서울특별시 동대문구 제기동 892-93 ,한식,null,null,null,null,null
+null,서가갈비,서울특별시 동대문구 전농동 648-141 ,한식,null,null,null,null,null
+null,봉평메밀,서울특별시 동대문구 회기동 60-129 ,한식,null,null,null,null,null
+null,진미촌,서울특별시 동대문구 제기동 122-295 ,한식,null,null,null,null,null
+null,맥썸 장한평점,서울특별시 동대문구 장안동 464-4 1층 ,한식,null,null,null,null,null
+null,천라쿵푸마라탕 경희대점,서울특별시 동대문구 회기동 25 ,중국식,null,null,null,null,null
+null,전주집,서울특별시 동대문구 신설동 109-5 서울풍물시장 빨강동 11호,한식,null,null,null,null,null
+null,곱창전문점,서울특별시 동대문구 신설동 109-5 서울풍물시장 빨강동 34호,한식,null,null,null,null,null
+null,풍물빈대떡,서울특별시 동대문구 신설동 109-5 서울풍물시장 빨강동 35호,한식,null,null,null,null,null
+null,국수집,서울특별시 동대문구 신설동 109-5 서울풍물시장 빨강동 33호,한식,null,null,null,null,null
+null,한우리네,서울특별시 동대문구 신설동 109-5 서울풍물시장 빨강동 8호,한식,null,null,null,null,null
+null,대복칼국수,서울특별시 동대문구 전농동 129-42 ,한식,null,null,null,null,null
+null,향,서울특별시 동대문구 제기동 892-9 지하1층 ,한식,null,null,null,null,null
+null,전농 빈대떡,서울특별시 동대문구 전농동 204-10 ,한식,null,null,null,null,null
+null,우리돈,서울특별시 동대문구 제기동 486-10 1층 ,한식,null,null,null,null,null
+null,서안메밀집고대점,서울특별시 동대문구 제기동 135-22 ,한식,null,null,null,null,null
+null,호텔글로리,서울특별시 동대문구 회기동 60-47 2층 ,경양식,null,null,null,null,null
+null,영화장,서울특별시 동대문구 이문동 288-23 ,중국식,null,null,null,null,null
+null,팔각도 서울장안점,서울특별시 동대문구 장안동 367-1 1층 ,한식,null,null,null,null,null
+null,비나레스토랑,서울특별시 동대문구 제기동 137-41 1층 ,경양식,null,null,null,null,null
+null,내고향식당,서울특별시 동대문구 제기동 1142-6 (지상1층) ,한식,null,null,null,null,null
+null,곱창생각,서울특별시 동대문구 장안동 168-3 ,한식,null,null,null,null,null
+null,가정식식당,서울특별시 동대문구 휘경동 151-3 1층 ,한식,null,null,null,null,null
+null,대왕참치,서울특별시 동대문구 휘경동 333-4 (지상1층) ,횟집,null,null,null,null,null
+null,장금이네,서울특별시 동대문구 신설동 109-5 서울풍물시장 빨강동 26호 ,한식,null,null,null,null,null
+null,경아네,서울특별시 동대문구 신설동 109-5 서울풍물시장 빨강동 43호 ,한식,null,null,null,null,null
+null,일본식오뎅집,서울특별시 동대문구 신설동 109-5 서울풍물시장 빨강동 39호,한식,null,null,null,null,null
+null,송가네,서울특별시 동대문구 용두동 112-29 ,한식,null,null,null,null,null
+null,찌개애감동,서울특별시 동대문구 회기동 1-5 경희대학교 경희의료원 제2주차장61 (지상1층) ,한식,null,null,null,null,null
+null,큰맘할메순대국,서울특별시 동대문구 답십리동 52-4 1층 ,한식,null,null,null,null,null
+null,궁촌토종순대국,서울특별시 동대문구 장안동 92-14 (지상1층) ,한식,null,null,null,null,null
+null,송쉐프장안점,서울특별시 동대문구 장안동 464-5 ,중국식,null,null,null,null,null
+null,한천로 106 닭곰탕,서울특별시 동대문구 장안동 162-9 ,한식,null,null,null,null,null
+null,해물포차 서봉,서울특별시 동대문구 이문동 237-137 ,한식,null,null,null,null,null
+null,곱창마을,서울특별시 동대문구 이문동 134-4 1F ,한식,null,null,null,null,null
+null,정성 서울국수집,서울특별시 동대문구 휘경동 150-14 ,한식,null,null,null,null,null
+null,일품정,서울특별시 동대문구 휘경동 77-2 1층 ,한식,null,null,null,null,null
+null,전통춘천닭갈비,서울특별시 동대문구 장안동 309-4 ,한식,null,null,null,null,null
+null,고향집,서울특별시 동대문구 제기동 148-63 (지상1층) ,한식,null,null,null,null,null
+null,청연염소골,서울특별시 동대문구 신설동 16 ,한식,null,null,null,null,null
+null,치킨매니아,서울특별시 동대문구 답십리동 1-45 1층 ,한식,null,null,null,null,null
+null,회기 돌 곱창,서울특별시 동대문구 휘경동 183-110 1층 ,한식,null,null,null,null,null
+null,신사골감자탕 장안점,서울특별시 동대문구 장안동 366-6 지상1층 ,한식,null,null,null,null,null
+null,벨루트,서울특별시 동대문구 이문동 305-6 ,한식,null,null,null,null,null
+null,여수해물나라,서울특별시 동대문구 장안동 366-9 1층 ,한식,null,null,null,null,null
+null,두툼,서울특별시 동대문구 장안동 460-1 (지상1층) ,일식,null,null,null,null,null
+null,옛고을빈대떡,서울특별시 동대문구 신설동 109-5 서울풍물시장(지상2층) 빨강동 52호,한식,null,null,null,null,null
+null,풍미숯불갈비,서울특별시 동대문구 용두동 220-12 (지상1층) ,한식,null,null,null,null,null
+null,본고집,서울특별시 동대문구 이문동 304-28 (지상1층) ,한식,null,null,null,null,null
+null,봉순이네감자탕,서울특별시 동대문구 전농동 183-6 (지상1층) ,한식,null,null,null,null,null
+null,미남참치,서울특별시 동대문구 장안동 415-9 ,일식,null,null,null,null,null
+null,종로빈대떡,서울특별시 동대문구 신설동 109-5 서울풍물시장 빨강동 60호 (2층) ,한식,null,null,null,null,null
+null,정호프,서울특별시 동대문구 용두동 26-37 ,한식,null,null,null,null,null
+null,동강용봉탕,서울특별시 동대문구 제기동 1199 지상1층 ,한식,null,null,null,null,null
+null,강쇠와 옹녀네,서울특별시 동대문구 장안동 339-19 축제빌딩 지상1층 ,한식,null,null,null,null,null
+null,청마루 한우,서울특별시 동대문구 용두동 26-21 지상1층 ,한식,null,null,null,null,null
+null,대경참치,서울특별시 동대문구 장안동 414-5 2층 ,횟집,null,null,null,null,null
+null,나주막회,서울특별시 동대문구 전농동 497-44 지상1층~지하1층 ,횟집,null,null,null,null,null
+null,두레박,서울특별시 동대문구 회기동 107-27 천초빌딩 1층 ,한식,null,null,null,null,null
+null,참이슬식당,서울특별시 동대문구 이문동 86-79 지상1층 ,한식,null,null,null,null,null
+null,소문난맛집,서울특별시 동대문구 용두동 23-45 1층 ,한식,null,null,null,null,null
+null,빨간오뎅,서울특별시 동대문구 전농동 295-306 ,한식,null,null,null,null,null
+null,또바기 치킨(전농점),서울특별시 동대문구 전농동 295-307 ,한식,null,null,null,null,null
+null,구이구이,서울특별시 동대문구 장안동 380-4 지상1층 ,한식,null,null,null,null,null
+null,가진항물회식당,서울특별시 동대문구 장안동 313-4 지상1층 ,횟집,null,null,null,null,null
+null,곱창사랑,서울특별시 동대문구 장안동 102-5 지상1F ,한식,null,null,null,null,null
+null,수정이네,서울특별시 동대문구 신설동 109-5 서울풍물시장 빨강동 2층 54 55호,한식,null,null,null,null,null
+null,신설동뚝배기,서울특별시 동대문구 신설동 72-10 1층 ,한식,null,null,null,null,null
+null,짜짜루,서울특별시 동대문구 장안동 184-24 ,한식,null,null,null,null,null
+null,해동반점,서울특별시 동대문구 장안동 93-80 2층 ,경양식,null,null,null,null,null
+null,한국식당,서울특별시 동대문구 용두동 119-27 ,한식,null,null,null,null,null
+null,손문대구막창,서울특별시 동대문구 청량리동 773 1층 ,한식,null,null,null,null,null
+null,소머리국밥,서울특별시 동대문구 신설동 109-5 서울풍물시장 빨강동 2호 ,한식,null,null,null,null,null
+null,타이인플레이트,서울특별시 동대문구 회기동 75 1층 ,한식,null,null,null,null,null
+null,동마곱창,서울특별시 동대문구 용두동 39-38 지상1층 ,한식,null,null,null,null,null
+null,이모네쭈꾸미,서울특별시 동대문구 용두동 119-5 지상1층 ,한식,null,null,null,null,null
+null,손문대구막창,서울특별시 동대문구 전농동 127-32 ,한식,null,null,null,null,null
+null,후퉁리,서울특별시 동대문구 회기동 60-139 회기동 복합건물 ,중국식,null,null,null,null,null
+null,화풍정한식,서울특별시 동대문구 장안동 313-1 ,한식,null,null,null,null,null
+null,영자네곱창,서울특별시 동대문구 장안동 93-77 ,한식,null,null,null,null,null
+null,치보,서울특별시 동대문구 이문동 264-207 ,한식,null,null,null,null,null
+null,와디무사(Wadi Musa),서울특별시 동대문구 제기동 714-0 ,경양식,null,null,null,null,null
+null,다복회관,서울특별시 동대문구 장안동 464-4 지상2층 ,한식,null,null,null,null,null
+null,남원정통추어탕,서울특별시 동대문구 청량리동 273 1층 ,한식,null,null,null,null,null
+null,매주식당,서울특별시 동대문구 신설동 109-5 서울풍물시장 빨강동 56호 지상2층 ,한식,null,null,null,null,null
+null,지노돈까스(홀),서울특별시 동대문구 청량리동 30 ,경양식,null,null,null,null,null
+null,더모임,서울특별시 동대문구 신설동 101-2 지하1층 ,한식,null,null,null,null,null
+null,시골밥상,서울특별시 동대문구 제기동 992-4 지상1층 ,한식,null,null,null,null,null
+null,매머드익스프레스경희대점,서울특별시 동대문구 회기동 36-6 1층 ,경양식,null,null,null,null,null
+null,홍콩반점0410(외대점),서울특별시 동대문구 이문동 305-152 ,중국식,null,null,null,null,null
+null,황금성,서울특별시 동대문구 답십리동 487-20 ,중국식,null,null,null,null,null
+null,씨썬쌘드,서울특별시 동대문구 회기동 42-45 지상1층 ,한식,null,null,null,null,null
+null,청정수산,서울특별시 동대문구 답십리동 97-2  97-19  지상1층 ,한식,null,null,null,null,null
+null,해다원해물찜,서울특별시 동대문구 장안동 433-21 ,일식,null,null,null,null,null
+null,숙이네 김밥,서울특별시 동대문구 전농동 103-533 ,한식,null,null,null,null,null
+null,왕십리곱창골,서울특별시 동대문구 용두동 45-12 ,한식,null,null,null,null,null
+null,휘경막창곱창,서울특별시 동대문구 휘경동 269-26 ,한식,null,null,null,null,null
+null,일품의정부 부대찌개,서울특별시 동대문구 휘경동 265-11 1층 ,한식,null,null,null,null,null
+null,코코니주방,서울특별시 동대문구 이문동 288-12 2층 ,한식,null,null,null,null,null
+null,해물마을,서울특별시 동대문구 장안동 124-13 1층 ,한식,null,null,null,null,null
+null,홍탁,서울특별시 동대문구 전농동 15-2 ,한식,null,null,null,null,null
+null,시민곱창,서울특별시 동대문구 전농동 602-17 1층 ,한식,null,null,null,null,null
+null,현대매점식당,서울특별시 동대문구 청량리동 738 지하2층 ,한식,null,null,null,null,null
+null,홍익짬뽕 경희대점,서울특별시 동대문구 회기동 107-16 1층 ,한식,null,null,null,null,null
+null,봉이동동,서울특별시 동대문구 장안동 464-3 ,한식,null,null,null,null,null
+null,온누리,서울특별시 동대문구 장안동 123-9 (1층) ,한식,null,null,null,null,null
+null,윤진식당,서울특별시 동대문구 답십리동 959-10 1층 ,한식,null,null,null,null,null
+null,컴플리트,서울특별시 동대문구 이문동 264-293 블루스카이 ,경양식,null,null,null,null,null
+null,골프타운식당,서울특별시 동대문구 용두동 40-11 동양프자라 B02호,한식,null,null,null,null,null
+null,융창,서울특별시 동대문구 제기동 632-20 1층 ,한식,null,null,null,null,null
+null,오떡,서울특별시 동대문구 전농동 141-160 ,한식,null,null,null,null,null
+null,풍천장어 굴 보쌈,서울특별시 동대문구 회기동 60-109 ,한식,null,null,null,null,null
+null,호남식당,서울특별시 동대문구 제기동 646 ,한식,null,null,null,null,null
+null,한마음곱창,서울특별시 동대문구 답십리동 542-1 ,한식,null,null,null,null,null
+null,서산간장게장,서울특별시 동대문구 장안동 367-3 1층 ,한식,null,null,null,null,null
+null,새우리 궁중 칼국수 아구찜,서울특별시 동대문구 전농동 127-41 (1층) ,한식,null,null,null,null,null
+null,장안국수와 빈대떡,서울특별시 동대문구 장안동 432-13 ,한식,null,null,null,null,null
+null,금산식당,서울특별시 동대문구 청량리동 234-2 현대상가 1층 1호 ,한식,null,null,null,null,null
+null,반달식당,서울특별시 동대문구 용두동 52-15 1층 ,한식,null,null,null,null,null
+null,아키다 참치,서울특별시 동대문구 용두동 790 롯데캐슬피렌체상가 117호,일식,null,null,null,null,null
+null,옥이네,서울특별시 동대문구 제기동 1142-7 ,한식,null,null,null,null,null
+null,멸치국수전문점,서울특별시 동대문구 제기동 636-4 ,한식,null,null,null,null,null
+null,샛터국수,서울특별시 동대문구 전농동 295-306 ,한식,null,null,null,null,null
+null,정성식당,서울특별시 동대문구 청량리동 728 ,한식,null,null,null,null,null
+null,명가옛날통닭,서울특별시 동대문구 답십리동 994 답십리한화아파트 ,한식,null,null,null,null,null
+null,40년전통할머니추어탕,서울특별시 동대문구 장안동 430-18 1층 ,한식,null,null,null,null,null
+null,예향칼국수,서울특별시 동대문구 이문동 264-314 1층 ,한식,null,null,null,null,null
+null,전농숯불돼지갈비,서울특별시 동대문구 전농동 294-29 ,한식,null,null,null,null,null
+null,본초밥상,서울특별시 동대문구 제기동 952 1층 1호,한식,null,null,null,null,null
+null,장수 한방 족발,서울특별시 동대문구 전농동 649-1 1층 ,한식,null,null,null,null,null
+null,원조명동찌개마을,서울특별시 동대문구 장안동 366-6 1층 ,한식,null,null,null,null,null
+null,가가네 꼼장어,서울특별시 동대문구 제기동 486-18 ,한식,null,null,null,null,null
+null,참치군,서울특별시 동대문구 장안동 324-1 웰빙프라자112호 ,일식,null,null,null,null,null
+null,팬스테이크키친 청량리점,서울특별시 동대문구 전농동 591-53 7층 ,한식,null,null,null,null,null
+null,티원(T園)롯데청량리점,서울특별시 동대문구 전농동 591-53 7층 ,한식,null,null,null,null,null
+null,(주)모리야,서울특별시 동대문구 전농동 591-53 ,한식,null,null,null,null,null
+null,농푸꼬지기,서울특별시 동대문구 전농동 591-53 7층 롯데백화점내 ,한식,null,null,null,null,null
+null,명성식당,서울특별시 동대문구 장안동 460-5 ,한식,null,null,null,null,null
+null,도훈라이브갤러리,서울특별시 동대문구 답십리동 542-4 태양상가 B2호,한식,null,null,null,null,null
+null,정영진 허브 영양족발,서울특별시 동대문구 이문동 304-15 지상1층 ,한식,null,null,null,null,null
+null,금보리,서울특별시 동대문구 답십리동 94-1 ,한식,null,null,null,null,null
+null,온앤온(on&on)24,서울특별시 동대문구 장안동 367-2 ,한식,null,null,null,null,null
+null,고기마을옛날순대국,서울특별시 동대문구 전농동 644-90 ,한식,null,null,null,null,null
+null,오리사냥돼지사냥,서울특별시 동대문구 장안동 384-6 ,한식,null,null,null,null,null
+null,꽃닭애,서울특별시 동대문구 전농동 149-1 ,한식,null,null,null,null,null
+null,일품춘천닭갈비,서울특별시 동대문구 이문동 363-2 1층 ,한식,null,null,null,null,null
+null,경호야,서울특별시 동대문구 회기동 60-54 ,한식,null,null,null,null,null
+null,본죽(장안동삼거리점),서울특별시 동대문구 장안동 285-1 ,한식,null,null,null,null,null
+null,등대잔치국수,서울특별시 동대문구 전농동 558-171 ,한식,null,null,null,null,null
+null,조영환의대양한방숯불갈비,서울특별시 동대문구 용두동 40-13 동양프라자 204호~208호 ,한식,null,null,null,null,null
+null,친친,서울특별시 동대문구 용두동 790 롯데캐슬피 1층 118호,중국식,null,null,null,null,null
+null,이수사횟집,서울특별시 동대문구 장안동 463-3 1층 ,일식,null,null,null,null,null
+null,연탄구이,서울특별시 동대문구 답십리동 495-1 ,한식,null,null,null,null,null
+null,치맥파이브(CHIMAC'5/선데이비어),서울특별시 동대문구 회기동 45-102 ,한식,null,null,null,null,null
+null,정동진아구찜,서울특별시 동대문구 답십리동 964-5 지상1층 ,한식,null,null,null,null,null
+null,제기통닭,서울특별시 동대문구 제기동 951-1 지상1층 ,한식,null,null,null,null,null
+null,팔레트,서울특별시 동대문구 회기동 346-16 2층 ,한식,null,null,null,null,null
+null,다돈왕족발,서울특별시 동대문구 답십리동 473-37 지상1층 ,한식,null,null,null,null,null
+null,벗이있는집,서울특별시 동대문구 이문동 334-95 ,한식,null,null,null,null,null
+null,HOTARU(호타루),서울특별시 동대문구 용두동 127-17 DW빌딩 ,한식,null,null,null,null,null
+null,돈부각,서울특별시 동대문구 신설동 76-36 ,한식,null,null,null,null,null
+null,한잔해,서울특별시 동대문구 전농동 204-232 ,한식,null,null,null,null,null
+null,남원추어탕,서울특별시 동대문구 휘경동 49-165 지상1층 ,한식,null,null,null,null,null
+null,두산추어탕,서울특별시 동대문구 답십리동 488-37 외2필지(영업장 : 답십리동 488-67) ,한식,null,null,null,null,null
+null,춘자네엄니밥줘,서울특별시 동대문구 장안동 459-3 ,한식,null,null,null,null,null
+null,홍곱창 회기본점,서울특별시 동대문구 이문동 341-39 ,한식,null,null,null,null,null
+null,쌈짓돈2,서울특별시 동대문구 전농동 648-44 지상1층 ,한식,null,null,null,null,null
+null,돈주네,서울특별시 동대문구 장안동 125-19 1층 ,한식,null,null,null,null,null
+null,미광,서울특별시 동대문구 용두동 53-6 ,한식,null,null,null,null,null
+null,부부식당,서울특별시 동대문구 제기동 148-43 지상1층 ,한식,null,null,null,null,null
+null,토속순대국,서울특별시 동대문구 청량리동 741 지상1층 ,한식,null,null,null,null,null
+null,대성회관,서울특별시 동대문구 장안동 387-12 지상1층 ,한식,null,null,null,null,null
+null,마카나이 시립대점,서울특별시 동대문구 전농동 602-11 1층 ,한식,null,null,null,null,null
+null,더 스토리,서울특별시 동대문구 회기동 42-16 지하1층 ,한식,null,null,null,null,null
+null,본죽앤비빔밥카페(장한평점),서울특별시 동대문구 장안동 465-1 지상1층 ,한식,null,null,null,null,null
+null,홍두깨 칼국수,서울특별시 동대문구 답십리동 99-6 지상1층 ,한식,null,null,null,null,null
+null,봉평메밀촌,서울특별시 동대문구 청량리동 38-28 1층 ,한식,null,null,null,null,null
+null,양평순대국,서울특별시 동대문구 제기동 989-21 지상1층 ,한식,null,null,null,null,null
+null,민속마을,서울특별시 동대문구 전농동 295-310 ,한식,null,null,null,null,null
+null,나정순할매쭈꾸미,서울특별시 동대문구 제기동 886-22 지상 1층~2층 ,한식,null,null,null,null,null
+null,늘봄해물찜&손칼국수,서울특별시 동대문구 답십리동 267-8 1층 ,한식,null,null,null,null,null
+null,장안면옥,서울특별시 동대문구 장안동 314-14 1층 ,한식,null,null,null,null,null
+null,인생소곱창,서울특별시 동대문구 회기동 16-6 1층 ,한식,null,null,null,null,null
+null,청량리 골목식당,서울특별시 동대문구 청량리동 773 지상1층 ,한식,null,null,null,null,null
+null,맛닭꼬 장안래미안점,서울특별시 동대문구 장안동 321-8 ,한식,null,null,null,null,null
+null,성진해장국,서울특별시 동대문구 청량리동 773 1층 ,한식,null,null,null,null,null
+null,락식락당,서울특별시 동대문구 회기동 16-33 ,한식,null,null,null,null,null
+null,두끼홈플러스동대문점,서울특별시 동대문구 용두동 33-1 지상1층 ,한식,null,null,null,null,null
+null,전주토종순대국,서울특별시 동대문구 신설동 97-8 ,한식,null,null,null,null,null
+null,웰빙호프,서울특별시 동대문구 용두동 92-1 외 1필지(용두동712-75) 지상1층 ,한식,null,null,null,null,null
+null,수빈마마,서울특별시 동대문구 장안동 100-8 ,한식,null,null,null,null,null
+null,청정수산,서울특별시 동대문구 장안동 345-2 1층 ,일식,null,null,null,null,null
+null,맛고을 갈비찜,서울특별시 동대문구 제기동 479 ,한식,null,null,null,null,null
+null,목포공주네,서울특별시 동대문구 신설동 109-5 서울풍물시장 빨강동 31호 ,한식,null,null,null,null,null
+null,통큰 짬뽕전문점,서울특별시 동대문구 장안동 304-1 1층 ,중국식,null,null,null,null,null
+null,불타는곱창,서울특별시 동대문구 청량리동 285 지상1층 ,한식,null,null,null,null,null
+null,모닝웨이,서울특별시 동대문구 신설동 97-8 동대문베르빌 111호,한식,null,null,null,null,null
+null,명가양꼬치,서울특별시 동대문구 청량리동 323 지상1층 ,한식,null,null,null,null,null
+null,삼육서울병원 추모관식당,서울특별시 동대문구 휘경동 산 6-2 외7필지 삼육서울병원 영안실동 지하2층 ,한식,null,null,null,null,null
+null,한촌설렁탕,서울특별시 동대문구 장안동 368-4 지상1층 ,한식,null,null,null,null,null
+null,소야지,서울특별시 동대문구 전농동 39-1 ,한식,null,null,null,null,null
+null,용두동 삼겹살,서울특별시 동대문구 용두동 26-38 ,한식,null,null,null,null,null
+null,서유기마라탕 경희대점,서울특별시 동대문구 회기동 35 1층 ,중국식,null,null,null,null,null
+null,돈팔삼,서울특별시 동대문구 신설동 25-2 지상1층 ,중국식,null,null,null,null,null
+null,우리식당,서울특별시 동대문구 신설동 109-5 서울풍물시장 빨간동 48호 ,한식,null,null,null,null,null
+null,사시미래,서울특별시 동대문구 회기동 346-14 2층 ,횟집,null,null,null,null,null
+null,전통춘천닭갈비,서울특별시 동대문구 답십리동 246-29 1층 ,한식,null,null,null,null,null
+null,짝,서울특별시 동대문구 장안동 372-1 지상6층 ,경양식,null,null,null,null,null
+null,최강낙지,서울특별시 동대문구 용두동 39-951 지하1층 ,한식,null,null,null,null,null
+null,20년전통외대닭갈비,서울특별시 동대문구 이문동 326-8 지상1층 ,한식,null,null,null,null,null
+null,뚱보집 장안점,서울특별시 동대문구 장안동 304-3 1층 ,한식,null,null,null,null,null
+null,오븐마루,서울특별시 동대문구 용두동 40-28 1층 ,한식,null,null,null,null,null
+null,누나네숯불구이,서울특별시 동대문구 답십리동 734 ,한식,null,null,null,null,null
+null,한솥외대정문점,서울특별시 동대문구 이문동 287-22 지상1층 ,한식,null,null,null,null,null
+null,서울파전,서울특별시 동대문구 전농동 295-116 ,한식,null,null,null,null,null
+null,버드나무파전,서울특별시 동대문구 휘경동 319-32 ,한식,null,null,null,null,null
+null,산천부페,서울특별시 동대문구 장안동 417-16 지하1층 ,한식,null,null,null,null,null
+null,햇살김밥,서울특별시 동대문구 신설동 92-12 욱도빌딩 102호 ,한식,null,null,null,null,null
+null,나주곰탕 나주전,서울특별시 동대문구 용두동 24-2 ,한식,null,null,null,null,null
+null,윤가네 삼합집,서울특별시 동대문구 답십리동 2-74 ,한식,null,null,null,null,null
+null,임오네쭈꾸미3,서울특별시 동대문구 용두동 112-10 ,한식,null,null,null,null,null
+null,본가칼국수,서울특별시 동대문구 장안동 331-5 1층 ,한식,null,null,null,null,null
+null,풍태,서울특별시 동대문구 회기동 60-141 ,한식,null,null,null,null,null
+null,다솜,서울특별시 동대문구 전농동 103-148 ,한식,null,null,null,null,null
+null,와가리피순대,서울특별시 동대문구 용두동 233-20 ,한식,null,null,null,null,null
+null,꿩 대신 닭,서울특별시 동대문구 제기동 287-23 ,한식,null,null,null,null,null
+null,가장맛있는족발경희대점,서울특별시 동대문구 회기동 45-107 ,한식,null,null,null,null,null
+null,지지고 외대후문점,서울특별시 동대문구 이문동 264-167 1층 ,한식,null,null,null,null,null
+null,용대리명태찜,서울특별시 동대문구 청량리동 741 ,한식,null,null,null,null,null
+null,고향홍두깨손칼국수,서울특별시 동대문구 제기동 486-31 ,한식,null,null,null,null,null
+null,나주식당,서울특별시 동대문구 이문동 78-7 ,한식,null,null,null,null,null
+null,춘천막국수,서울특별시 동대문구 휘경동 286-234 ,한식,null,null,null,null,null
+null,홍두깨 손칼국수,서울특별시 동대문구 청량리동 761 ,한식,null,null,null,null,null
+null,오늘은  쌈밥,서울특별시 동대문구 장안동 423-1 1층 ,한식,null,null,null,null,null
+null,남한강 물고기,서울특별시 동대문구 휘경동 163-4 ,한식,null,null,null,null,null
+null,오실장강남면옥 장안점,서울특별시 동대문구 장안동 107-8 ,한식,null,null,null,null,null
+null,이층식당,서울특별시 동대문구 장안동 414-10 ,한식,null,null,null,null,null
+null,포마토 스푼,서울특별시 동대문구 전농동 620-30 ,한식,null,null,null,null,null
+null,보경벌교참꼬막전문점,서울특별시 동대문구 장안동 377-4 ,한식,null,null,null,null,null
+null,아름이네,서울특별시 동대문구 제기동 695 1층 ,한식,null,null,null,null,null
+null,용두동홍가네,서울특별시 동대문구 용두동 118-87 ,한식,null,null,null,null,null
+null,전주콩나물국밥,서울특별시 동대문구 용두동 40-35 ,한식,null,null,null,null,null
+null,장군식당,서울특별시 동대문구 제기동 575-4 ,한식,null,null,null,null,null
+null,잇선,서울특별시 동대문구 장안동 167-32 ,외국음식전문점(인도 태국등),null,null,null,null,null
+null,제이비파스타,서울특별시 동대문구 회기동 348-3 ,경양식,null,null,null,null,null
+null,아사달초밥,서울특별시 동대문구 장안동 460-14 ,일식,null,null,null,null,null
+null,명가족발,서울특별시 동대문구 휘경동 140-45 ,한식,null,null,null,null,null
+null,영칼국수,서울특별시 동대문구 답십리동 66-9 ,한식,null,null,null,null,null
+null,한우마을 정육점식당,서울특별시 동대문구 답십리동 4-13 ,한식,null,null,null,null,null
+null,아지매,서울특별시 동대문구 이문동 288-45 ,한식,null,null,null,null,null
+null,허브족발,서울특별시 동대문구 신설동 97-22 ,한식,null,null,null,null,null
+null,박가족,서울특별시 동대문구 장안동 587 동대문더퍼스트데시앙 ,횟집,null,null,null,null,null
+null,통나무집,서울특별시 동대문구 용두동 39-84 ,한식,null,null,null,null,null
+null,해나루초밥,서울특별시 동대문구 회기동 16-68 ,일식,null,null,null,null,null
+null,힘찬 풍천장어,서울특별시 동대문구 신설동 117-5 ,한식,null,null,null,null,null
+null,꼬망쥐,서울특별시 동대문구 제기동 487 ,한식,null,null,null,null,null
+null,참숯갈비화로촌,서울특별시 동대문구 용두동 38-8 1층 ,한식,null,null,null,null,null
+null,평범식당,서울특별시 동대문구 제기동 136-148 ,한식,null,null,null,null,null
+null,고흥집,서울특별시 동대문구 이문동 78-8 ,한식,null,null,null,null,null
+null,다해식당,서울특별시 동대문구 이문동 288-44 ,한식,null,null,null,null,null
+null,영남식당,서울특별시 동대문구 장안동 375-5 1층 ,한식,null,null,null,null,null
+null,엔드롱(Endlong),서울특별시 동대문구 신설동 97-20 ,한식,null,null,null,null,null
+null,야순네식당,서울특별시 동대문구 제기동 1144-2 ,한식,null,null,null,null,null
+null,수정포장마차,서울특별시 동대문구 이문동 327-1 ,한식,null,null,null,null,null
+null,홍가네,서울특별시 동대문구 용두동 24-13 ,한식,null,null,null,null,null
+null,다사리아,서울특별시 동대문구 전농동 103-285 ,한식,null,null,null,null,null
+null,풍년오리,서울특별시 동대문구 제기동 944-3 1층 ,한식,null,null,null,null,null
+null,등촌샤브칼국수 장한평역점,서울특별시 동대문구 장안동 465-2 지상1층 ,한식,null,null,null,null,null
+null,고기나라,서울특별시 동대문구 답십리동 93-5 ,한식,null,null,null,null,null
+null,모녀칼국수,서울특별시 동대문구 휘경동 151-3 ,한식,null,null,null,null,null
+null,마루샤브 용두직영점,서울특별시 동대문구 용두동 231-10 ,한식,null,null,null,null,null
+null,팔삼,서울특별시 동대문구 신설동 98-10 미성빌딩 ,중국식,null,null,null,null,null
+null,남대문대도집,서울특별시 동대문구 답십리동 97-4 ,한식,null,null,null,null,null
+null,교촌치킨장안2호점,서울특별시 동대문구 장안동 375-3 ,한식,null,null,null,null,null
+null,짬투더뽕(짬To the뽕),서울특별시 동대문구 전농동 90-7 ,중국식,null,null,null,null,null
+null,곽만근갈비탕 휘경점,서울특별시 동대문구 휘경동 35-5 1층 ,한식,null,null,null,null,null
+null,작렬곱창본점&작렬닭발,서울특별시 동대문구 장안동 102-3 지하1 ,한식,null,null,null,null,null
+null,소나무,서울특별시 동대문구 이문동 108-21 1층 ,한식,null,null,null,null,null
+null,석우동,서울특별시 동대문구 이문동 264-167 ,한식,null,null,null,null,null
+null,돈카츠.우동.돼랑이우랑이,서울특별시 동대문구 이문동 82-27 2층 ,중국식,null,null,null,null,null
+null,그냥밥집,서울특별시 동대문구 용두동 102-121 1층 ,한식,null,null,null,null,null
+null,카빙당,서울특별시 동대문구 이문동 264-314 ,일식,null,null,null,null,null
+null,불란서삼겹살,서울특별시 동대문구 회기동 16-13 2층 ,한식,null,null,null,null,null
+null,뽕뜨락피자,서울특별시 동대문구 이문동 305-70 1층 ,경양식,null,null,null,null,null
+null,압구정찌개마을,서울특별시 동대문구 장안동 108-23 1층 ,한식,null,null,null,null,null
+null,솔밭족발보쌈,서울특별시 동대문구 전농동 190-8 ,한식,null,null,null,null,null
+null,먹거리촌 N 사랑채,서울특별시 동대문구 이문동 82-29 1층 ,한식,null,null,null,null,null
+null,박리,서울특별시 동대문구 답십리동 495-1 1층 ,한식,null,null,null,null,null
+null,돈수백외대점,서울특별시 동대문구 이문동 363-5 1층 ,한식,null,null,null,null,null
+null,피자스쿨(청량리점),서울특별시 동대문구 청량리동 322 1층 ,경양식,null,null,null,null,null
+null,홍익돈까스,서울특별시 동대문구 휘경동 192-5 1층 B동 101 102호,경양식,null,null,null,null,null
+null,한가네곱창,서울특별시 동대문구 휘경동 269-18 1층 ,한식,null,null,null,null,null
+null,짬뽕남선반점,서울특별시 동대문구 장안동 144-17 1층 ,중국식,null,null,null,null,null
+null,총각회수산,서울특별시 동대문구 청량리동 773 주부일련번-12 ,일식,null,null,null,null,null
+null,포앤라이스(PHO&RICE),서울특별시 동대문구 전농동 32-4 전농하우스스토리 1층 107호,외국음식전문점(인도 태국등),null,null,null,null,null
+null,Iyou파티클럽,서울특별시 동대문구 휘경동 319-1 3층 ,경양식,null,null,null,null,null
+null,라무진(회기점),서울특별시 동대문구 회기동 45-116 1층 ,한식,null,null,null,null,null
+null,김밥천국,서울특별시 동대문구 청량리동 40-7 1층 ,한식,null,null,null,null,null
+null,꽃밭정이,서울특별시 동대문구 신설동 89-76 1층 ,한식,null,null,null,null,null
+null,용두포구,서울특별시 동대문구 용두동 119-8 1층 ,한식,null,null,null,null,null
+null,신용두동쭈꾸미,서울특별시 동대문구 용두동 144-10 2층 ,한식,null,null,null,null,null
+null,왕돈까스왕냉면,서울특별시 동대문구 휘경동 191-5 1층 ,한식,null,null,null,null,null
+null,산골밥상,서울특별시 동대문구 휘경동 161-40 1층 ,한식,null,null,null,null,null
+null,천객루,서울특별시 동대문구 답십리동 488-327 쌍마빌딩 2층204 ,중국식,null,null,null,null,null
+null,큰맘할매순대국(시립대점),서울특별시 동대문구 전농동 103-94 2층 ,한식,null,null,null,null,null
+null,돈까스마마,서울특별시 동대문구 장안동 167-41 ,경양식,null,null,null,null,null
+null,장안식당,서울특별시 동대문구 답십리동 959-16 ,한식,null,null,null,null,null
+null,수퍼보울 외대점,서울특별시 동대문구 이문동 264-263 1층 ,한식,null,null,null,null,null
+null,착한초밥,서울특별시 동대문구 전농동 602-12 1층 ,일식,null,null,null,null,null
+null,옥이네추어탕,서울특별시 동대문구 장안동 135-19 1층 ,한식,null,null,null,null,null
+null,서울마님죽,서울특별시 동대문구 제기동 1012 1층104호 ,한식,null,null,null,null,null
+null,청춘순대국,서울특별시 동대문구 답십리동 4-239 1층 ,한식,null,null,null,null,null
+null,팡팡,서울특별시 동대문구 답십리동 488-327 2층 ,한식,null,null,null,null,null
+null,위너,서울특별시 동대문구 용두동 40-28 ,경양식,null,null,null,null,null
+null,다생오리,서울특별시 동대문구 휘경동 267-84 2층 ,뷔페식,null,null,null,null,null
+null,스낵식당,서울특별시 동대문구 청량리동 738 현대코아동관 지하1층 ,한식,null,null,null,null,null
+null,원조식당,서울특별시 동대문구 휘경동 191-11 1층 ,한식,null,null,null,null,null
+null,맘스터치휘경점,서울특별시 동대문구 휘경동 269-26 ,한식,null,null,null,null,null
+null,문뒤엔,서울특별시 동대문구 제기동 137-60 1층 ,한식,null,null,null,null,null
+null,꿀꿀이와 닭갈비,서울특별시 동대문구 이문동 264-150 지하1층 ,한식,null,null,null,null,null
+null,돈부리청년,서울특별시 동대문구 이문동 264-295 ,일식,null,null,null,null,null
+null,공릉동 원조멸치국수,서울특별시 동대문구 청량리동 505 ,한식,null,null,null,null,null
+null,홍가비어,서울특별시 동대문구 전농동 602-13 1층 ,일식,null,null,null,null,null
+null,사철멸치국수나라,서울특별시 동대문구 장안동 313-6 1층 ,한식,null,null,null,null,null
+null,본참치,서울특별시 동대문구 장안동 433-5 ,횟집,null,null,null,null,null
+null,모전여전,서울특별시 동대문구 장안동 360-1 1층 ,한식,null,null,null,null,null
+null,호남식당,서울특별시 동대문구 제기동 632-23 ,한식,null,null,null,null,null
+null,시골밥상,서울특별시 동대문구 신설동 91-111 1층 ,한식,null,null,null,null,null
+null,안흥갈비 장안점,서울특별시 동대문구 장안동 306-1 2층 ,한식,null,null,null,null,null
+null,오징어 데이,서울특별시 동대문구 장안동 428-4 1층 ,횟집,null,null,null,null,null
+null,부자순대국,서울특별시 동대문구 휘경동 34-57 1층 ,횟집,null,null,null,null,null
+null,파스타리코(장안동점),서울특별시 동대문구 장안동 335-6 1층 13호,경양식,null,null,null,null,null
+null,별주점,서울특별시 동대문구 휘경동 286-125 1층 ,한식,null,null,null,null,null
+null,오성식당,서울특별시 동대문구 제기동 1153-28 1층 ,한식,null,null,null,null,null
+null,황기닭곰탕,서울특별시 동대문구 장안동 464-6 1층 ,한식,null,null,null,null,null
+null,육회와연어,서울특별시 동대문구 청량리동 38-29 1층 금은빌딩 ,한식,null,null,null,null,null
+null,동원식당,서울특별시 동대문구 제기동 1109-3 1층 ,한식,null,null,null,null,null
+null,한국통닭,서울특별시 동대문구 휘경동 321-25 1층 ,일식,null,null,null,null,null
+null,하오짬,서울특별시 동대문구 휘경동 269-20 지하1층 ,한식,null,null,null,null,null
+null,섭이네,서울특별시 동대문구 답십리동 21-61 1층 ,한식,null,null,null,null,null
+null,맛닭꼬답십리점,서울특별시 동대문구 답십리동 12-51 1층 ,한식,null,null,null,null,null
+null,포차1번지 먹새통 장안점,서울특별시 동대문구 장안동 381-1 1층 109 110호,한식,null,null,null,null,null
+null,장안멸치국수,서울특별시 동대문구 장안동 301-3 1층 ,한식,null,null,null,null,null
+null,열한시,서울특별시 동대문구 회기동 107-16 2층 ,경양식,null,null,null,null,null
+null,곱분이곱창 회기점,서울특별시 동대문구 휘경동 321-57 1층 ,경양식,null,null,null,null,null
+null,현주네,서울특별시 동대문구 장안동 183-4 1층 106호,횟집,null,null,null,null,null
+null,화야,서울특별시 동대문구 전농동 582-3 1층 ,한식,null,null,null,null,null
+null,호헌장담,서울특별시 동대문구 이문동 264-222 지상2층 ,한식,null,null,null,null,null
+null,봄의정원 회기점,서울특별시 동대문구 회기동 60-99 1층 ,한식,null,null,null,null,null
+null,국수나무,서울특별시 동대문구 장안동 93-82 1층 ,한식,null,null,null,null,null
+null,알래스카에서 온 연어가 맛있는집,서울특별시 동대문구 제기동 136-272 1층 ,일식,null,null,null,null,null
+null,베브릿지,서울특별시 동대문구 이문동 288-63 1층 ,한식,null,null,null,null,null
+null,우리할매떡볶이 전농점,서울특별시 동대문구 전농동 295-100 1층 ,한식,null,null,null,null,null
+null,동대문엽기떡볶이전농점,서울특별시 동대문구 전농동 295-93 2층 ,한식,null,null,null,null,null
+null,네남자,서울특별시 동대문구 장안동 378-2 ,한식,null,null,null,null,null
+null,탕미옥,서울특별시 동대문구 제기동 1158-33 태종빌딩1층101호 ,한식,null,null,null,null,null
+null,중근네식당,서울특별시 동대문구 장안동 111-12 1층 ,한식,null,null,null,null,null
+null,새마을반찬,서울특별시 동대문구 제기동 1144-3 1층 ,한식,null,null,null,null,null
+null,서진,서울특별시 동대문구 제기동 1004 지상2층 ,한식,null,null,null,null,null
+null,어썸바,서울특별시 동대문구 장안동 367-8 2층 ,한식,null,null,null,null,null
+null,모모호프,서울특별시 동대문구 제기동 438-6 1층 ,한식,null,null,null,null,null
+null,스시고이,서울특별시 동대문구 회기동 60-22 1층 ,한식,null,null,null,null,null
+null,자매식당,서울특별시 동대문구 전농동 204-203 1층 ,한식,null,null,null,null,null
+null,파이브로브즈,서울특별시 동대문구 이문동 264-207 ,경양식,null,null,null,null,null
+null,명품수제갈비,서울특별시 동대문구 휘경동 256 1 ,한식,null,null,null,null,null
+null,채선당 답십리점,서울특별시 동대문구 답십리동 498-7 1층 ,한식,null,null,null,null,null
+null,콩보장안점,서울특별시 동대문구 장안동 382-23 1층 ,한식,null,null,null,null,null
+null,대가숯불갈비,서울특별시 동대문구 장안동 398-10 ,한식,null,null,null,null,null
+null,피자헛 장안동점,서울특별시 동대문구 장안동 338-8 1층 ,한식,null,null,null,null,null
+null,통골뱅이전문점,서울특별시 동대문구 청량리동 769-1 1층 ,한식,null,null,null,null,null
+null,장안양육관,서울특별시 동대문구 장안동 92-13 1층 ,한식,null,null,null,null,null
+null,진미육가,서울특별시 동대문구 장안동 433-3 1층 ,한식,null,null,null,null,null
+null,즐거운식당,서울특별시 동대문구 제기동 1140-12 ,한식,null,null,null,null,null
+null,일층집,서울특별시 동대문구 이문동 264-50 1층 ,한식,null,null,null,null,null
+null,북촌,서울특별시 동대문구 전농동 124-2 우성빌딩1층102호 ,한식,null,null,null,null,null
+null,승호원식당,서울특별시 동대문구 청량리동 223-1 1층 ,한식,null,null,null,null,null
+null,할매순대국,서울특별시 동대문구 청량리동 288 1층 ,한식,null,null,null,null,null
+null,연안식당답십리사거리점,서울특별시 동대문구 답십리동 245-3 1층 ,식육(숯불구이),null,null,null,null,null
+null,국수사랑,서울특별시 동대문구 제기동 137-10 지하1층 ,한식,null,null,null,null,null
+null,베르떼,서울특별시 동대문구 답십리동 53-22 1층 ,한식,null,null,null,null,null
+null,기석일호,서울특별시 동대문구 이문동 346-146 ,경양식,null,null,null,null,null
+null,왕산가한우다,서울특별시 동대문구 용두동 24-11 1층11호 ,한식,null,null,null,null,null
+null,제주올레족발,서울특별시 동대문구 답십리동 497-3 1층 ,한식,null,null,null,null,null
+null,엄마손맛집,서울특별시 동대문구 휘경동 286-125 1층 ,한식,null,null,null,null,null
+null,서울뼈구이,서울특별시 동대문구 전농동 602-9 1층 ,한식,null,null,null,null,null
+null,옛맛한우소머리국밥,서울특별시 동대문구 신설동 109-5 풍물시장빨간동1층4호 ,한식,null,null,null,null,null
+null,와인양꼬치,서울특별시 동대문구 휘경동 321-57 2층 ,중국식,null,null,null,null,null
+null,왕산가한우다투,서울특별시 동대문구 용두동 24-12 1층12호 ,한식,null,null,null,null,null
+null,서오릉피자,서울특별시 동대문구 답십리동 245-2 1층 ,횟집,null,null,null,null,null
+null,홍가네,서울특별시 동대문구 제기동 1193 1층 ,한식,null,null,null,null,null
+null,진미식당,서울특별시 동대문구 제기동 1022 경동시장신관지하1층8호 ,한식,null,null,null,null,null
+null,경동식당,서울특별시 동대문구 제기동 1022 경동시장신관지하1층67 68호 ,한식,null,null,null,null,null
+null,스시긴,서울특별시 동대문구 장안동 372-3 1층 에스엠타워 101호,일식,null,null,null,null,null
+null,동경통닭,서울특별시 동대문구 제기동 632-24 A동27호 ,한식,null,null,null,null,null
+null,노가리까는포차,서울특별시 동대문구 장안동 372-5 1층105호 ,한식,null,null,null,null,null
+null,세리에타(SERIETA),서울특별시 동대문구 청량리동 41-7 1층 ,한식,null,null,null,null,null
+null,외할머니댁,서울특별시 동대문구 용두동 118-48 1층 ,한식,null,null,null,null,null
+null,아마자께,서울특별시 동대문구 이문동 264-223 ,일식,null,null,null,null,null
+null,허뚱돼지나라,서울특별시 동대문구 이문동 255-393 1층 ,한식,null,null,null,null,null
+null,25시감자탕뼈해장국,서울특별시 동대문구 신설동 97-8 동광동대문베르빌1층106호 ,한식,null,null,null,null,null
+null,애넷포차,서울특별시 동대문구 장안동 95-1 현대상가1층107호 ,한식,null,null,null,null,null
+null,마장한우소머리국밥,서울특별시 동대문구 신설동 109-5 풍물시장빨간동1호 ,한식,null,null,null,null,null
+null,옐로우피자(안암점),서울특별시 동대문구 제기동 137-347 ,경양식,null,null,null,null,null
+null,인천식당,서울특별시 동대문구 제기동 630-9 1층 ,한식,null,null,null,null,null
+null,대통삼,서울특별시 동대문구 신설동 104-28 ,한식,null,null,null,null,null
+null,국수와낙지비빔밥,서울특별시 동대문구 장안동 334-1 지하1 ,한식,null,null,null,null,null
+null,크레이저 경희대점,서울특별시 동대문구 회기동 54-99 1층 ,한식,null,null,null,null,null
+null,훅그냥,서울특별시 동대문구 전농동 209-104 1층 ,한식,null,null,null,null,null
+null,전술의고향,서울특별시 동대문구 이문동 359-2 1층 ,한식,null,null,null,null,null
+null,천호낙지,서울특별시 동대문구 장안동 107-8 1층 106~1호,한식,null,null,null,null,null
+null,굴다리전주콩나물국밥,서울특별시 동대문구 답십리동 50-33 1층 ,한식,null,null,null,null,null
+null,오광식당,서울특별시 동대문구 휘경동 293-155 지하1층 ,한식,null,null,null,null,null
+null,밥사랑,서울특별시 동대문구 용두동 119-21 지상1층 ,한식,null,null,null,null,null
+null,짬뽕선수 답십리점,서울특별시 동대문구 답십리동 12-51 1층 ,한식,null,null,null,null,null
+null,할매순대국배봉사거리점,서울특별시 동대문구 장안동 108-6 1층 ,한식,null,null,null,null,null
+null,일시정지,서울특별시 동대문구 장안동 425-11 1층 ,한식,null,null,null,null,null
+null,마라왕 레오,서울특별시 동대문구 신설동 67-1 1층 ,한식,null,null,null,null,null
+null,제일정육식당,서울특별시 동대문구 장안동 438-20 지하1층 ,한식,null,null,null,null,null
+null,요집가먹으러,서울특별시 동대문구 청량리동 766 1층 ,한식,null,null,null,null,null
+null,김씨네돌솥밥순두부,서울특별시 동대문구 휘경동 77-7 1층 ,한식,null,null,null,null,null
+null,왕코등갈비,서울특별시 동대문구 장안동 108-3 1층 ,한식,null,null,null,null,null
+null,망고푸드,서울특별시 동대문구 청량리동 557 ,한식,null,null,null,null,null
+null,산과들그리고달,서울특별시 동대문구 이문동 288-4 2층 ,한식,null,null,null,null,null
+null,만석반점,서울특별시 동대문구 제기동 1131-1 2층 2호,중국식,null,null,null,null,null
+null,키세츠,서울특별시 동대문구 회기동 42-66 1층 ,경양식,null,null,null,null,null
+null,강떡,서울특별시 동대문구 장안동 376-1 1층 ,한식,null,null,null,null,null
+null,휘경할매순대국,서울특별시 동대문구 휘경동 269-20 1층 ,한식,null,null,null,null,null
+null,낭만돼지,서울특별시 동대문구 장안동 331-13 1층 ,한식,null,null,null,null,null
+null,명성,서울특별시 동대문구 용두동 40-28 1층 ,한식,null,null,null,null,null
+null,국화향기,서울특별시 동대문구 장안동 431-2 ,경양식,null,null,null,null,null
+null,우리동네 김밥,서울특별시 동대문구 이문동 257-686 1층 ,일식,null,null,null,null,null
+null,드림레스토랑(Dream Restaurant),서울특별시 동대문구 이문동 288-47 지하1층 ,경양식,null,null,null,null,null
+null,짬뽕취향 신설동점,서울특별시 동대문구 신설동 69-1 1층 ,일식,null,null,null,null,null
+null,꽃동네,서울특별시 동대문구 용두동 39-575 1층 ,한식,null,null,null,null,null
+null,하루원,서울특별시 동대문구 장안동 141-24 1층 4 5호,한식,null,null,null,null,null
+null,함평집,서울특별시 동대문구 제기동 588 ,한식,null,null,null,null,null
+null,미송닭한마리,서울특별시 동대문구 전농동 199-7 지상1층 ,한식,null,null,null,null,null
+null,전주식당,서울특별시 동대문구 제기동 1141-59 지하1층 ,한식,null,null,null,null,null
+null,레스토랑부티크나인,서울특별시 동대문구 신설동 92-35 지하1층 ,경양식,null,null,null,null,null
+null,노가리,서울특별시 동대문구 장안동 375-4 지상1층 ,한식,null,null,null,null,null
+null,능이갈비탕 능이삼계탕,서울특별시 동대문구 제기동 892-108 1층 ,한식,null,null,null,null,null
+null,매운도리집,서울특별시 동대문구 신설동 102-14 지상1층 ,한식,null,null,null,null,null
+null,뚜띠쿠치나 용두점,서울특별시 동대문구 용두동 119-15 지상1층101호 ,한식,null,null,null,null,null
+null,수상한식당,서울특별시 동대문구 용두동 219-4 1층 ,한식,null,null,null,null,null
+null,백돈,서울특별시 동대문구 답십리동 68-1 1층 ,한식,null,null,null,null,null
+null,성수면옥 청량리점,서울특별시 동대문구 전농동 591-53 롯데백화점 7층 ,한식,null,null,null,null,null
+null,더빙스,서울특별시 동대문구 답십리동 253-12 지상1 2층 ,경양식,null,null,null,null,null
+null,압구정제주집 장안점,서울특별시 동대문구 장안동 403-4 ,일식,null,null,null,null,null
+null,빈칸(BEAN KHAN),서울특별시 동대문구 휘경동 192-5 ,한식,null,null,null,null,null
+null,임진강 메기매운탕,서울특별시 동대문구 장안동 360-8 1층 ,한식,null,null,null,null,null
+null,동래파전,서울특별시 동대문구 답십리동 465-137 1층 ,한식,null,null,null,null,null
+null,아빠분식,서울특별시 동대문구 휘경동 286-22 1층 ,한식,null,null,null,null,null
+null,마시께매운떡볶이,서울특별시 동대문구 용두동 727-2 1층 ,한식,null,null,null,null,null
+null,일품양평해장국,서울특별시 동대문구 답십리동 530-8 골든메카1층108호 ,경양식,null,null,null,null,null
+null,호미,서울특별시 동대문구 제기동 137-65 ,한식,null,null,null,null,null
+null,푸드김밥,서울특별시 동대문구 용두동 233-30 1층 ,한식,null,null,null,null,null
+null,인생극장,서울특별시 동대문구 답십리동 467-17 지하1층 ,한식,null,null,null,null,null
+null,페르비타(PERVITA),서울특별시 동대문구 장안동 310-4 대흥빌딩1층102호 ,경양식,null,null,null,null,null
+null,쏠래다이닝,서울특별시 동대문구 신설동 98-17 지상2층 ,경양식,null,null,null,null,null
+null,갈비가맛있는집,서울특별시 동대문구 전농동 101-10 1층 ,한식,null,null,null,null,null
+null,부르네,서울특별시 동대문구 장안동 289-13 지상1층 ,한식,null,null,null,null,null
+null,잭아저씨보쌈,서울특별시 동대문구 장안동 375-4 1층 ,한식,null,null,null,null,null
+null,야만(Yaman),서울특별시 동대문구 이문동 288-82 1층 ,한식,null,null,null,null,null
+null,스시원(元),서울특별시 동대문구 장안동 363-1 지상1층 ,일식,null,null,null,null,null
+null,럭키식당,서울특별시 동대문구 휘경동 294-222 1층 ,한식,null,null,null,null,null
+null,왕십리곱창,서울특별시 동대문구 장안동 337-7 1층 ,한식,null,null,null,null,null
+null,성은식당,서울특별시 동대문구 장안동 331-4 ,한식,null,null,null,null,null
+null,왔다~생고기마을,서울특별시 동대문구 이문동 86-83 1층 ,한식,null,null,null,null,null
+null,바푸리김밥,서울특별시 동대문구 전농동 222-5 1층 ,한식,null,null,null,null,null
+null,이화,서울특별시 동대문구 신설동 104-49 1층 ,한식,null,null,null,null,null
+null,신화쭈꾸미,서울특별시 동대문구 회기동 346-15 2층 ,한식,null,null,null,null,null
+null,운남쌀국수,서울특별시 동대문구 이문동 305-64 2층 ,중국식,null,null,null,null,null
+null,루프탑다이닝,서울특별시 동대문구 신설동 98-17 3층 ,한식,null,null,null,null,null
+null,크레이저(C.Razer),서울특별시 동대문구 이문동 264-171 ,경양식,null,null,null,null,null
+null,마포연탄불갈비,서울특별시 동대문구 장안동 216-6 1층 ,한식,null,null,null,null,null
+null,미성,서울특별시 동대문구 이문동 283-6 ,한식,null,null,null,null,null
+null,대박삼겹김치찜&초대박등갈비김치찜(장안동점),서울특별시 동대문구 장안동 103-1 1층 ,한식,null,null,null,null,null
+null,고향식당,서울특별시 동대문구 장안동 326-9 ,뷔페식,null,null,null,null,null
+null,이기자한우,서울특별시 동대문구 장안동 295-4 1층 ,한식,null,null,null,null,null
+null,진한순대국,서울특별시 동대문구 장안동 430-9 1층 ,한식,null,null,null,null,null
+null,경동포차,서울특별시 동대문구 제기동 892-6 1층 ,경양식,null,null,null,null,null
+null,홍어일번지,서울특별시 동대문구 장안동 436-2 1층 ,한식,null,null,null,null,null
+null,똘비족발,서울특별시 동대문구 장안동 347-7 ,한식,null,null,null,null,null
+null,리진,서울특별시 동대문구 답십리동 99-20 ,중국식,null,null,null,null,null
+null,원조멸치국수,서울특별시 동대문구 장안동 331-2 1층 ,한식,null,null,null,null,null
+null,앵춘,서울특별시 동대문구 회기동 42-37 1층 ,한식,null,null,null,null,null
+null,마산집,서울특별시 동대문구 용두동 20-92 ,한식,null,null,null,null,null
+null,설맥,서울특별시 동대문구 전농동 103-332 ,한식,null,null,null,null,null
+null,삼삼뼈국 회기점,서울특별시 동대문구 휘경동 192-5 ,한식,null,null,null,null,null
+null,대광횟집,서울특별시 동대문구 답십리동 473-14 ,일식,null,null,null,null,null
+null,한우천국,서울특별시 동대문구 장안동 365-8 ,식육(숯불구이),null,null,null,null,null
+null,이상준초밥,서울특별시 동대문구 이문동 305-59 ,일식,null,null,null,null,null
+null,갈비명가 이상 답십리점,서울특별시 동대문구 답십리동 530-27 ,한식,null,null,null,null,null
+null,송학삼계탕,서울특별시 동대문구 청량리동 767 ,한식,null,null,null,null,null
+null,장군집,서울특별시 동대문구 회기동 54-39 ,한식,null,null,null,null,null
+null,힐링켐프(직영점),서울특별시 동대문구 신설동 109-13 대성스카이렉스 105~106호 ,일식,null,null,null,null,null
+null,수상한 막창,서울특별시 동대문구 답십리동 260-1 ,한식,null,null,null,null,null
+null,다사리아2,서울특별시 동대문구 전농동 103-333 ,한식,null,null,null,null,null
+null,정다운포차,서울특별시 동대문구 장안동 151-11 ,한식,null,null,null,null,null
+null,이강참치,서울특별시 동대문구 이문동 255-380 ,일식,null,null,null,null,null
+null,토종순대국,서울특별시 동대문구 이문동 392-6 ,한식,null,null,null,null,null
+null,복순네 감자탕,서울특별시 동대문구 청량리동 782 ,한식,null,null,null,null,null
+null,거정,서울특별시 동대문구 전농동 46-32 ,한식,null,null,null,null,null
+null,한성 함흥냉면,서울특별시 동대문구 제기동 992-29 ,한식,null,null,null,null,null
+null,돈사돈,서울특별시 동대문구 신설동 53-3 체육관 1층 ,한식,null,null,null,null,null
+null,쿠우쿠우아트몰링점,서울특별시 동대문구 장안동 368-1 ,일식,null,null,null,null,null
+null,삼촌네춘천닭갈비,서울특별시 동대문구 답십리동 270-7 ,한식,null,null,null,null,null
+null,미소야,서울특별시 동대문구 장안동 334-7 ,한식,null,null,null,null,null
+null,전주전통식당,서울특별시 동대문구 제기동 586-5 ,한식,null,null,null,null,null
+null,둥이네분식,서울특별시 동대문구 장안동 143-38 ,한식,null,null,null,null,null
+null,아지돈부리,서울특별시 동대문구 장안동 436-2 ,일식,null,null,null,null,null
+null,신선푸드,서울특별시 동대문구 장안동 122-18 ,한식,null,null,null,null,null
+null,문성해물짬뽕,서울특별시 동대문구 전농동 597-27 ,중국식,null,null,null,null,null
+null,다인포차24시,서울특별시 동대문구 청량리동 36-14 ,한식,null,null,null,null,null
+null,108장 마라탕,서울특별시 동대문구 회기동 16-42 ,중국식,null,null,null,null,null
+null,더드림푸드,서울특별시 동대문구 장안동 383-7 ,한식,null,null,null,null,null
+null,고씨네,서울특별시 동대문구 제기동 137-20 ,일식,null,null,null,null,null
+null,시대곱창,서울특별시 동대문구 전농동 141-145 ,한식,null,null,null,null,null
+null,공릉닭한마리,서울특별시 동대문구 용두동 127-16 ,한식,null,null,null,null,null
+null,두촌 가마솥밥,서울특별시 동대문구 장안동 464-3 ,한식,null,null,null,null,null
+null,삼대봉 누릉지통닭,서울특별시 동대문구 장안동 464-3 ,중국식,null,null,null,null,null
+null,도원,서울특별시 동대문구 신설동 89-55 ,한식,null,null,null,null,null
+null,뚱이식당,서울특별시 동대문구 제기동 585-4 ,한식,null,null,null,null,null
+null,한결보쌈 전농점,서울특별시 동대문구 전농동 36-17 ,한식,null,null,null,null,null
+null,신락원,서울특별시 동대문구 전농동 60-32 1층 ,중국식,null,null,null,null,null
+null,이가네,서울특별시 동대문구 전농동 645-2 ,한식,null,null,null,null,null
+null,특별식당,서울특별시 동대문구 제기동 67-197 ,일식,null,null,null,null,null
+null,전통춘천닭갈비,서울특별시 동대문구 휘경동 34-48 ,한식,null,null,null,null,null
+null,싼마이 꼬치앤이자카야,서울특별시 동대문구 장안동 380-3 ,일식,null,null,null,null,null
+null,진미,서울특별시 동대문구 용두동 90-2 ,중국식,null,null,null,null,null
+null,스시선생,서울특별시 동대문구 회기동 54-12 ,일식,null,null,null,null,null
+null,풍뎅이집,서울특별시 동대문구 답십리동 16-53 ,한식,null,null,null,null,null
+null,한마음기사식당,서울특별시 동대문구 전농동 24-43 ,한식,null,null,null,null,null
+null,소문난답십리감자탕,서울특별시 동대문구 답십리동 53-11 ,한식,null,null,null,null,null
+null,안흥갈비답십리점,서울특별시 동대문구 답십리동 250-13 ,식육(숯불구이),null,null,null,null,null
+null,전주콩나물국밥,서울특별시 동대문구 휘경동 319-4 ,한식,null,null,null,null,null
+null,팔당동동육개장 장한평점,서울특별시 동대문구 장안동 465-2 ,한식,null,null,null,null,null
+null,시키카츠(sikiKATSU),서울특별시 동대문구 회기동 60-147 ,한식,null,null,null,null,null
+null,큰손,서울특별시 동대문구 휘경동 334-2 ,한식,null,null,null,null,null
+null,장안생소금구이,서울특별시 동대문구 장안동 141-10 ,한식,null,null,null,null,null
+null,삼보닭꼬치,서울특별시 동대문구 장안동 118-38 ,한식,null,null,null,null,null
+null,고씨네 한국외대점,서울특별시 동대문구 이문동 305-62 ,일식,null,null,null,null,null
+null,호운래반점,서울특별시 동대문구 회기동 45-91 ,중국식,null,null,null,null,null
+null,커리146(CURRY146),서울특별시 동대문구 휘경동 183-243 ,외국음식전문점(인도 태국등),null,null,null,null,null
+null,오복,서울특별시 동대문구 장안동 382-16 ,한식,null,null,null,null,null
+null,대한닭발 1979,서울특별시 동대문구 신설동 97-8 ,한식,null,null,null,null,null
+null,정대감감자탕,서울특별시 동대문구 장안동 338-3 ,한식,null,null,null,null,null
+null,민들레 커피숲,서울특별시 동대문구 청량리동 738 ,한식,null,null,null,null,null
+null,마마푸드,서울특별시 동대문구 신설동 80-1 ,한식,null,null,null,null,null
+null,콩보(제기점),서울특별시 동대문구 용두동 711-4 ,한식,null,null,null,null,null
+null,원우회,서울특별시 동대문구 신설동 102-9 ,한식,null,null,null,null,null
+null,만나네 마라탕,서울특별시 동대문구 용두동 39-968 ,경양식,null,null,null,null,null
+null,명가순대국,서울특별시 동대문구 답십리동 475-101 ,한식,null,null,null,null,null
+null,동대문닭한마리,서울특별시 동대문구 신설동 1-2 ,한식,null,null,null,null,null
+null,한남동 그집,서울특별시 동대문구 장안동 324-1 ,한식,null,null,null,null,null
+null,신의주 부대찌개,서울특별시 동대문구 신설동 92-17 ,한식,null,null,null,null,null
+null,호남식당,서울특별시 동대문구 휘경동 100-21 ,한식,null,null,null,null,null
+null,북촌손만두 청량리점,서울특별시 동대문구 전농동 591-53 ,한식,null,null,null,null,null
+null,다이스라떼(DCC카페),서울특별시 동대문구 장안동 428-3 ,한식,null,null,null,null,null
+null,김가네 한근두근,서울특별시 동대문구 장안동 245-17 ,식육(숯불구이),null,null,null,null,null
+null,경성고기꾼,서울특별시 동대문구 회기동 16-87 ,한식,null,null,null,null,null
+null,안녕유부,서울특별시 동대문구 회기동 42-52 ,한식,null,null,null,null,null
+null,(주)선호에프엔비(속초코다리냉면 청량리점),서울특별시 동대문구 전농동 591-53 ,한식,null,null,null,null,null
+null,윙키케이크,서울특별시 동대문구 이문동 325-51 ,외국음식전문점(인도 태국등),null,null,null,null,null
+null,디에블린,서울특별시 동대문구 장안동 465-4 ,경양식,null,null,null,null,null
+null,왼손우동짜장,서울특별시 동대문구 이문동 345-8 ,중국식,null,null,null,null,null
+null,김뚜껑부대찌개,서울특별시 동대문구 장안동 460-2 ,한식,null,null,null,null,null
+null,엠키친 앤 카페,서울특별시 동대문구 전농동 597-41 ,경양식,null,null,null,null,null
+null,더푸드인시티뷔페(The food in city Buffet),서울특별시 동대문구 장안동 414-4 ,뷔페식,null,null,null,null,null
+null,애슐리퀸즈 롯데백화점 청량리점,서울특별시 동대문구 전농동 591-53 ,뷔페식,null,null,null,null,null
+null,로운 롯데백화점 청량리점,서울특별시 동대문구 전농동 591-53 ,뷔페식,null,null,null,null,null
+null,탕의신 홍대포 장안동직영점,서울특별시 동대문구 장안동 430-2 ,한식,null,null,null,null,null
+null,오늘와인한잔(경희대점),서울특별시 동대문구 회기동 42-46 ,한식,null,null,null,null,null
+null,태평양 HOME 참치,서울특별시 동대문구 전농동 493-72 ,횟집,null,null,null,null,null
+null,애신,서울특별시 동대문구 이문동 305-62 ,중국식,null,null,null,null,null
+null,육회왕자 연어공주,서울특별시 동대문구 휘경동 321-7 ,한식,null,null,null,null,null
+null,큰손갈비,서울특별시 동대문구 전농동 643-54 ,한식,null,null,null,null,null
+null,한우구이 이정도는 돼야지,서울특별시 동대문구 장안동 118-40 ,한식,null,null,null,null,null
+null,대진회집,서울특별시 동대문구 전농동 295-431 ,일식,null,null,null,null,null
+null,광어9900,서울특별시 동대문구 전농동 1-216 ,일식,null,null,null,null,null
+null,짬뽕필락전농점,서울특별시 동대문구 전농동 30-3 ,중국식,null,null,null,null,null
+null,명가푸드,서울특별시 동대문구 전농동 124-59 ,한식,null,null,null,null,null
+null,대박식자재 주식회사,서울특별시 동대문구 휘경동 71-9 ,한식,null,null,null,null,null
+null,팔도명가,서울특별시 동대문구 제기동 892-48 ,한식,null,null,null,null,null
+null,우리곱창,서울특별시 동대문구 전농동 295-48 북동점포 ,한식,null,null,null,null,null
+null,호랑이도삭면,서울특별시 동대문구 회기동 16-13 ,한식,null,null,null,null,null
+null,신카이,서울특별시 동대문구 이문동 255-27 ,일식,null,null,null,null,null
+null,청와대만두,서울특별시 동대문구 장안동 105-15 1층 ,한식,null,null,null,null,null
+null,한상에소두마리장안점,서울특별시 동대문구 장안동 430-2 ,한식,null,null,null,null,null
+null,용두동엽기쭈꾸미,서울특별시 동대문구 제기동 67-137 ,한식,null,null,null,null,null
+null,엉터리생고기경희대점,서울특별시 동대문구 회기동 42-5 ,한식,null,null,null,null,null
+null,육전식당,서울특별시 동대문구 신설동 93-3 ,한식,null,null,null,null,null
+null,사나이뚝배기경희대점,서울특별시 동대문구 회기동 16-35 ,한식,null,null,null,null,null
+null,열정쭈꾸미,서울특별시 동대문구 장안동 141-24 ,횟집,null,null,null,null,null
+null,기와옥,서울특별시 동대문구 장안동 387-13 ,한식,null,null,null,null,null
+null,주한상,서울특별시 동대문구 장안동 376-4 ,한식,null,null,null,null,null
+null,백두산국밥집,서울특별시 동대문구 전농동 602-12 ,한식,null,null,null,null,null
+null,오관스시,서울특별시 동대문구 회기동 60-101 ,일식,null,null,null,null,null
+null,동호식당,서울특별시 동대문구 장안동 377-5 ,탕류(보신용),null,null,null,null,null
+null,장안신화닭,서울특별시 동대문구 답십리동 248-22 ,한식,null,null,null,null,null
+null,더드림순대국,서울특별시 동대문구 답십리동 490-148 ,한식,null,null,null,null,null
+null,민경이네,서울특별시 동대문구 제기동 726-3 ,한식,null,null,null,null,null
+null,더테이블,서울특별시 동대문구 제기동 1213 ,경양식,null,null,null,null,null
+null,청량리 경양식,서울특별시 동대문구 전농동 499-15 ,한식,null,null,null,null,null
+null,껌지네술밥,서울특별시 동대문구 휘경동 150-11 ,한식,null,null,null,null,null
+null,춘천막국수,서울특별시 동대문구 제기동 989-13 ,한식,null,null,null,null,null
+null,도깨비매운탕,서울특별시 동대문구 청량리동 728 ,한식,null,null,null,null,null
+null,고향반점,서울특별시 동대문구 회기동 45-78 ,중국식,null,null,null,null,null
+null,남원,서울특별시 동대문구 제기동 635-4 ,한식,null,null,null,null,null
+null,빛나는바다,서울특별시 동대문구 장안동 431-4 ,한식,null,null,null,null,null
+null,웰빙한식부페(보리랑),서울특별시 동대문구 답십리동 72-6 ,한식,null,null,null,null,null
+null,장안대박집,서울특별시 동대문구 장안동 188-19 ,한식,null,null,null,null,null
+null,디어테이블(DEAR TABLE),서울특별시 동대문구 장안동 338-9 ,한식,null,null,null,null,null
+null,우거지감자탕,서울특별시 동대문구 이문동 258-15 ,한식,null,null,null,null,null
+null,엄마손식당,서울특별시 동대문구 이문동 87-1 ,한식,null,null,null,null,null
+null,명품한강오리,서울특별시 동대문구 청량리동 712 ,한식,null,null,null,null,null
+null,진실이네회마트,서울특별시 동대문구 장안동 184-21 ,한식,null,null,null,null,null
+null,혜미네산꼼장어,서울특별시 동대문구 장안동 305-4 ,한식,null,null,null,null,null
+null,풍류,서울특별시 동대문구 장안동 463-2 ,한식,null,null,null,null,null
+null,또박식당,서울특별시 동대문구 장안동 430-14 ,한식,null,null,null,null,null
+null,하마쌀국수,서울특별시 동대문구 회기동 57-30 ,한식,null,null,null,null,null
+null,무이리꼬냉면돈가스만두,서울특별시 동대문구 장안동 98-10 ,한식,null,null,null,null,null
+null,밍기적,서울특별시 동대문구 회기동 42-2 ,한식,null,null,null,null,null
+null,하얼빈양꼬치샤브샤브,서울특별시 동대문구 신설동 15 ,한식,null,null,null,null,null
+null,두매골,서울특별시 동대문구 신설동 117-14 101호,한식,null,null,null,null,null
+null,열린마당,서울특별시 동대문구 청량리동 753 ,한식,null,null,null,null,null
+null,한객샤브샤브뷔페,서울특별시 동대문구 이문동 304-26 지상3층 ,중국식,null,null,null,null,null
+null,비비큐 안암오거리점,서울특별시 동대문구 용두동 727-4 4 ,한식,null,null,null,null,null
+null,삼화기사식당,서울특별시 동대문구 전농동 687 전농동신성미소지움아파트 102동 103호,한식,null,null,null,null,null
+null,탐나종합어시장 신설동역점,서울특별시 동대문구 신설동 102-9 문정빌딩 지상1층 ,한식,null,null,null,null,null
+null,수,서울특별시 동대문구 신설동 89-86 ,한식,null,null,null,null,null
+null,애자이모식당,서울특별시 동대문구 이문동 175-4 ,한식,null,null,null,null,null
+null,오늘도  전,서울특별시 동대문구 제기동 892-8 ,한식,null,null,null,null,null
+null,24시회마트,서울특별시 동대문구 답십리동 964-5 ,일식,null,null,null,null,null
+null,비에이치씨(bhc) 장안점,서울특별시 동대문구 장안동 141-10 ,일식,null,null,null,null,null
+null,정육정,서울특별시 동대문구 전농동 103-94 ,한식,null,null,null,null,null
+null,오늘도,서울특별시 동대문구 전농동 597-10 ,한식,null,null,null,null,null
+null,옛골명가,서울특별시 동대문구 답십리동 488-327 ,한식,null,null,null,null,null
+null,동촌,서울특별시 동대문구 신설동 117-8 ,한식,null,null,null,null,null
+null,분더바,서울특별시 동대문구 용두동 233-21 ,경양식,null,null,null,null,null
+null,명성식당,서울특별시 동대문구 용두동 119-18 ,한식,null,null,null,null,null
+null,욱이네우기네포차식당,서울특별시 동대문구 제기동 486-26 ,한식,null,null,null,null,null
+null,카레집,서울특별시 동대문구 전농동 103-160 ,한식,null,null,null,null,null
+null,순대국,서울특별시 동대문구 휘경동 150-42 ,한식,null,null,null,null,null
+null,차칸스시,서울특별시 동대문구 이문동 341-55 ,일식,null,null,null,null,null
+null,오븐돼지,서울특별시 동대문구 전농동 647-1 ,한식,null,null,null,null,null
+null,초원,서울특별시 동대문구 장안동 141-10 ,한식,null,null,null,null,null
+null,불꽃냉면칼국수,서울특별시 동대문구 회기동 42-53 ,한식,null,null,null,null,null
+null,신설동 부산 양곱창,서울특별시 동대문구 신설동 81-111 ,한식,null,null,null,null,null
+null,청춘고추,서울특별시 동대문구 제기동 137-69 ,한식,null,null,null,null,null
+null,장안함박,서울특별시 동대문구 장안동 359-19 ,한식,null,null,null,null,null
+null,청량옥,서울특별시 동대문구 청량리동 50-28 ,한식,null,null,null,null,null
+null,우마스시,서울특별시 동대문구 답십리동 70-19 ,일식,null,null,null,null,null
+null,남해바다,서울특별시 동대문구 답십리동 21-63 ,한식,null,null,null,null,null
+null,토리후니,서울특별시 동대문구 전농동 1-112 ,한식,null,null,null,null,null
+null,용두감자탕,서울특별시 동대문구 용두동 112-65 ,한식,null,null,null,null,null
+null,엉뚱식당,서울특별시 동대문구 장안동 435-7 ,한식,null,null,null,null,null
+null,육해공,서울특별시 동대문구 제기동 441 ,한식,null,null,null,null,null
+null,공간이야기(도야식당),서울특별시 동대문구 전농동 558-130 ,한식,null,null,null,null,null
+null,빅스타피자(안암점),서울특별시 동대문구 제기동 137-97 ,한식,null,null,null,null,null
+null,영푸드,서울특별시 동대문구 이문동 305-152 ,한식,null,null,null,null,null
+null,마마포차,서울특별시 동대문구 장안동 390-25 ,한식,null,null,null,null,null
+null,이모네설렁탕,서울특별시 동대문구 용두동 238-7 ,한식,null,null,null,null,null
+null,푸짐한집,서울특별시 동대문구 신설동 109-5 서울풍물시장 ,한식,null,null,null,null,null
+null,고향정식당,서울특별시 동대문구 신설동 109-5 ,한식,null,null,null,null,null
+null,나루터,서울특별시 동대문구 답십리동 542-1 ,한식,null,null,null,null,null
+null,답십리별미,서울특별시 동대문구 답십리동 21-62 ,한식,null,null,null,null,null
+null,정통녹두빈대떡,서울특별시 동대문구 신설동 109-5 ,한식,null,null,null,null,null
+null,대독장,서울특별시 동대문구 장안동 459-2 ,한식,null,null,null,null,null
+null,힐링여성사우나,서울특별시 동대문구 답십리동 472-1 ,한식,null,null,null,null,null
+null,원호프,서울특별시 동대문구 제기동 575-9 ,한식,null,null,null,null,null
+null,청우갈비,서울특별시 동대문구 청량리동 309 ,한식,null,null,null,null,null
+null,백채장한평역점,서울특별시 동대문구 장안동 429-2 ,한식,null,null,null,null,null
+null,얌샘김밥회기역점,서울특별시 동대문구 휘경동 269-7 ,한식,null,null,null,null,null
+null,윤가네,서울특별시 동대문구 전농동 150-8 ,한식,null,null,null,null,null
+null,소문난의정부부대찌개3호점,서울특별시 동대문구 제기동 137-40 ,한식,null,null,null,null,null
+null,전주식당,서울특별시 동대문구 용두동 790 ,한식,null,null,null,null,null
+null,니뽕내뽕바우하우스장안점,서울특별시 동대문구 장안동 368-1 ,한식,null,null,null,null,null
+null,빨간대문,서울특별시 동대문구 휘경동 294-199 ,한식,null,null,null,null,null
+null,담뿍,서울특별시 동대문구 장안동 432-4 ,한식,null,null,null,null,null
+null,이화수전통육개장 서울안암오거리점,서울특별시 동대문구 제기동 148-115 ,횟집,null,null,null,null,null
+null,두꺼비로멘스(경희대점),서울특별시 동대문구 회기동 107-7 ,한식,null,null,null,null,null
+null,커먼센스커피,서울특별시 동대문구 제기동 67-197 ,한식,null,null,null,null,null
+null,고흥아줌매,서울특별시 동대문구 제기동 635-18 ,한식,null,null,null,null,null
+null,청년다방,서울특별시 동대문구 장안동 94-42 ,한식,null,null,null,null,null
+null,마라양꼬치,서울특별시 동대문구 회기동 16-87 ,중국식,null,null,null,null,null
+null,곤지암한우소머리국밥,서울특별시 동대문구 제기동 1140-12 ,한식,null,null,null,null,null
+null,진국식당,서울특별시 동대문구 전농동 46-50 ,한식,null,null,null,null,null
+null,한솥도시락시립대점,서울특별시 동대문구 전농동 124-2 ,한식,null,null,null,null,null
+null,다채용두점,서울특별시 동대문구 용두동 129-203 ,한식,null,null,null,null,null
+null,이화수전통육개장,서울특별시 동대문구 장안동 307-3 ,한식,null,null,null,null,null
+null,동아쏘시오그룹공제회(DA-1201),서울특별시 동대문구 용두동 252-5 ,한식,null,null,null,null,null
+null,신의주부대찌개,서울특별시 동대문구 회기동 106-1 ,한식,null,null,null,null,null
+null,부스(Booth)부리또,서울특별시 동대문구 전농동 152-11 ,한식,null,null,null,null,null
+null,새작골회관,서울특별시 동대문구 전농동 295-118 ,한식,null,null,null,null,null
+null,비바라비다,서울특별시 동대문구 장안동 423-13 ,한식,null,null,null,null,null
+null,미스터보쌈앤스탠딩스테이크장안동점,서울특별시 동대문구 장안동 162-9 ,한식,null,null,null,null,null
+null,승낭식당,서울특별시 동대문구 회기동 60-136 ,한식,null,null,null,null,null
+null,바른식당다림방,서울특별시 동대문구 전농동 24-42 ,한식,null,null,null,null,null
+null,키즈인푸드,서울특별시 동대문구 답십리동 1003-2 ,한식,null,null,null,null,null
+null,광어두마리15000원,서울특별시 동대문구 휘경동 264-10 ,횟집,null,null,null,null,null
+null,아지트,서울특별시 동대문구 장안동 344-9 ,일식,null,null,null,null,null
+null,쉼표포차,서울특별시 동대문구 장안동 103-10 ,한식,null,null,null,null,null
+null,수타생고기,서울특별시 동대문구 신설동 104-7 ,식육(숯불구이),null,null,null,null,null
+null,우리칼국수,서울특별시 동대문구 장안동 401-6 ,한식,null,null,null,null,null
+null,꾸니꾸니,서울특별시 동대문구 이문동 305-75 ,한식,null,null,null,null,null
+null,너디블루(Nerdy Blue),서울특별시 동대문구 전농동 103-312 ,한식,null,null,null,null,null
+null,힐링식탁,서울특별시 동대문구 제기동 137-18 ,중국식,null,null,null,null,null
+null,심양,서울특별시 동대문구 회기동 60-42 ,중국식,null,null,null,null,null
+null,플러스푸드,서울특별시 동대문구 장안동 415-15 ,한식,null,null,null,null,null
+null,스타동(경희대점),서울특별시 동대문구 회기동 60-92 ,한식,null,null,null,null,null
+null,여수포차,서울특별시 동대문구 이문동 126-37 ,한식,null,null,null,null,null
+null,주문진항,서울특별시 동대문구 장안동 313-5 ,한식,null,null,null,null,null
+null,주연네연탄곱창,서울특별시 동대문구 장안동 216-32 ,한식,null,null,null,null,null
+null,국수나무답십리역점,서울특별시 동대문구 답십리동 530-15 ,한식,null,null,null,null,null
+null,파치외대점,서울특별시 동대문구 이문동 264-140 ,한식,null,null,null,null,null
+null,피자나라치킨공주,서울특별시 동대문구 장안동 378-1 ,한식,null,null,null,null,null
+null,할머니보쌈,서울특별시 동대문구 회기동 20-2 ,한식,null,null,null,null,null
+null,한잔해퓨전호프,서울특별시 동대문구 장안동 373-5 ,경양식,null,null,null,null,null
+null,생선구이정식 어반正,서울특별시 동대문구 전농동 647-27 ,한식,null,null,null,null,null
+null,골목족발,서울특별시 동대문구 회기동 76-5 ,한식,null,null,null,null,null
+null,새마을식당 청량리점,서울특별시 동대문구 전농동 602-14 ,한식,null,null,null,null,null
+null,더고집,서울특별시 동대문구 답십리동 265-1 ,한식,null,null,null,null,null
+null,굿갓,서울특별시 동대문구 회기동 16-23 ,경양식,null,null,null,null,null
+null,재민식당,서울특별시 동대문구 용두동 238-66 ,한식,null,null,null,null,null
+null,제일제면소 청량리역사점,서울특별시 동대문구 전농동 547 ,한식,null,null,null,null,null
+null,직화푸드,서울특별시 동대문구 장안동 93-32 장안동근린생활시설 ,한식,null,null,null,null,null
+null,슬로우캘리 동대문,서울특별시 동대문구 장안동 389-1 ,한식,null,null,null,null,null
+null,혜성돈까스,서울특별시 동대문구 장안동 146-17 ,한식,null,null,null,null,null
+null,베러댄(betterthan),서울특별시 동대문구 휘경동 317-9 ,경양식,null,null,null,null,null
+null,시그널커피,서울특별시 동대문구 용두동 39-728 ,한식,null,null,null,null,null
+null,속초매콤명태간장조림,서울특별시 동대문구 장안동 183-6 ,한식,null,null,null,null,null
+null,보정황소곱창,서울특별시 동대문구 장안동 339-28 ,한식,null,null,null,null,null
+null,저바다,서울특별시 동대문구 청량리동 777 ,일식,null,null,null,null,null
+null,삐에로라운지,서울특별시 동대문구 전농동 647-1 ,한식,null,null,null,null,null
+null,지코바치킨,서울특별시 동대문구 청량리동 38-18 ,한식,null,null,null,null,null
+null,계림원,서울특별시 동대문구 휘경동 319-34 ,한식,null,null,null,null,null
+null,본추추어탕,서울특별시 동대문구 용두동 130-18 ,한식,null,null,null,null,null
+null,감악산 생소금구이,서울특별시 동대문구 장안동 437-5 ,한식,null,null,null,null,null
+null,차차,서울특별시 동대문구 전농동 558-198 ,한식,null,null,null,null,null
+null,뿔발,서울특별시 동대문구 장안동 355-1 ,한식,null,null,null,null,null
+null,무등산왕돌구이집,서울특별시 동대문구 장안동 409-8 ,한식,null,null,null,null,null
+null,대왕동태탕,서울특별시 동대문구 장안동 394-10 ,한식,null,null,null,null,null
+null,오레노도쿄,서울특별시 동대문구 휘경동 286-1 휘경동근생주택 ,일식,null,null,null,null,null
+null,곽만근갈비탕이야기(답십리점),서울특별시 동대문구 답십리동 494-1 한일노벨리아 ,한식,null,null,null,null,null
+null,천하식당,서울특별시 동대문구 용두동 788 한방천하 용두동 포스빌 ,한식,null,null,null,null,null
+null,천호낙지,서울특별시 동대문구 청량리동 770 ,한식,null,null,null,null,null
+null,한방식당,서울특별시 동대문구 용두동 788 한방천하 용두동 포스빌 ,한식,null,null,null,null,null
+null,옛날국밥,서울특별시 동대문구 전농동 204-220 ,한식,null,null,null,null,null
+null,김말자,서울특별시 동대문구 장안동 463-5 광일빌딩 ,한식,null,null,null,null,null
+null,속초코다리,서울특별시 동대문구 이문동 251-5 ,한식,null,null,null,null,null
+null,꼬로노이 CORONOI,서울특별시 동대문구 회기동 60-216 동일오피스텔 엠포 ,한식,null,null,null,null,null
+null,천하매점,서울특별시 동대문구 용두동 788 한방천하 용두동 포스빌 ,횟집,null,null,null,null,null
+null,족발종족,서울특별시 동대문구 회기동 3-37 ,한식,null,null,null,null,null
+null,본도시락신설동역점,서울특별시 동대문구 신설동 76-29 ,한식,null,null,null,null,null
+null,강경참치 장안본점,서울특별시 동대문구 장안동 372-4 ,한식,null,null,null,null,null
+null,아즈매식당,서울특별시 동대문구 용두동 23-31 ,한식,null,null,null,null,null
+null,북창동순두부,서울특별시 동대문구 장안동 465-2 ,한식,null,null,null,null,null
+null,양많은 눈꽃육회 제기점,서울특별시 동대문구 제기동 828-1 ,한식,null,null,null,null,null
+null,우리집,서울특별시 동대문구 신설동 109-5 서울풍물시장 ,한식,null,null,null,null,null
+null,밥이야기,서울특별시 동대문구 전농동 1-96 ,한식,null,null,null,null,null
+null,킹콩부대찌개장안아트몰링점,서울특별시 동대문구 장안동 368-1 바우하우스 ,한식,null,null,null,null,null
+null,갈비장터,서울특별시 동대문구 휘경동 319-13 두리빌딩 ,한식,null,null,null,null,null
+null,고향마을,서울특별시 동대문구 제기동 988-16 ,한식,null,null,null,null,null
+null,행복도시락,서울특별시 동대문구 용두동 39-960 ,한식,null,null,null,null,null
+null,돈풍숯불갈비,서울특별시 동대문구 전농동 650-4 ,한식,null,null,null,null,null
+null,소문난고향순대국,서울특별시 동대문구 제기동 677-13 ,한식,null,null,null,null,null
+null,하카타,서울특별시 동대문구 회기동 346-16 ,외국음식전문점(인도 태국등),null,null,null,null,null
+null,로이앤벨라(Roy&Bella),서울특별시 동대문구 장안동 337-22 H·M 빌딩 ,한식,null,null,null,null,null
+null,도훈고기집,서울특별시 동대문구 회기동 16-1 ,한식,null,null,null,null,null
+null,꼬기92,서울특별시 동대문구 이문동 291-90 ,식육(숯불구이),null,null,null,null,null
+null,서라벌,서울특별시 동대문구 청량리동 399 ,한식,null,null,null,null,null
+null,옛날바지락칼국수,서울특별시 동대문구 용두동 235-1 ,한식,null,null,null,null,null
+null,라무진(장안점),서울특별시 동대문구 장안동 362-1 JB타워 ,한식,null,null,null,null,null
+null,박원기설렁탕,서울특별시 동대문구 제기동 1131-1 ,한식,null,null,null,null,null
+null,마치(japanese bistro march),서울특별시 동대문구 장안동 339-19 축제빌딩 ,일식,null,null,null,null,null
+null,오늘동,서울특별시 동대문구 장안동 424-10 ,식육(숯불구이),null,null,null,null,null
+null,풀초롱밥상(회기점),서울특별시 동대문구 회기동 42-5 ,경양식,null,null,null,null,null
+null,명품참숯화로구이,서울특별시 동대문구 청량리동 324 ,식육(숯불구이),null,null,null,null,null
+null,미식회,서울특별시 동대문구 장안동 309-2 정성빌딩 ,횟집,null,null,null,null,null
+null,송학수산,서울특별시 동대문구 장안동 334-6 우성2차아파트 ,한식,null,null,null,null,null
+null,고산이자카야,서울특별시 동대문구 장안동 363-9 ,한식,null,null,null,null,null
+null,장수각교동짬뽕,서울특별시 동대문구 답십리동 12-253 정민빌딩 ,중국식,null,null,null,null,null
+null,종합조명,서울특별시 동대문구 신설동 114-27 ,한식,null,null,null,null,null
+null,명가네콩나물국밥,서울특별시 동대문구 장안동 313-4 ,한식,null,null,null,null,null
+null,시그니쳐키친,서울특별시 동대문구 제기동 137-78 크림슨 하우스 ,경양식,null,null,null,null,null
+null,평양 냉면,서울특별시 동대문구 청량리동 296 ,한식,null,null,null,null,null
+null,이모네밥집,서울특별시 동대문구 장안동 452-12 ,한식,null,null,null,null,null
+null,로즈힐청량리점,서울특별시 동대문구 전농동 591-53 청량리역 롯데백화점 ,경양식,null,null,null,null,null
+null,라구퀸,서울특별시 동대문구 회기동 103-16 ,일식,null,null,null,null,null
+null,킹콩부대찌개(경희대점),서울특별시 동대문구 회기동 42-69 ,경양식,null,null,null,null,null
+null,마루한,서울특별시 동대문구 전농동 127-123 ,한식,null,null,null,null,null
+null,방앗간,서울특별시 동대문구 용두동 39-843 ,한식,null,null,null,null,null
+null,촌식당,서울특별시 동대문구 청량리동 41-6 ,한식,null,null,null,null,null
+null,복구기,서울특별시 동대문구 용두동 102-171 ,한식,null,null,null,null,null
+null,강금옥쭈꾸미,서울특별시 동대문구 휘경동 321-25 ,한식,null,null,null,null,null
+null,피자웍스,서울특별시 동대문구 회기동 60-19 ,경양식,null,null,null,null,null
+null,미스사이공장안점,서울특별시 동대문구 장안동 463-10 장안동 우성4차 아파트 ,외국음식전문점(인도 태국등),null,null,null,null,null
+null,명동바지락칼국수,서울특별시 동대문구 제기동 892-5 ,한식,null,null,null,null,null
+null,직화삼겹직구삼이문휘경점,서울특별시 동대문구 휘경동 150-18 ,식육(숯불구이),null,null,null,null,null
+null,여우애 김밥,서울특별시 동대문구 용두동 40-13 동양프라자 ,경양식,null,null,null,null,null
+null,아라마크(주)서울동부병원장례식장,서울특별시 동대문구 용두동 118-20 시립동부병원 ,한식,null,null,null,null,null
+null,세븐틴(17),서울특별시 동대문구 회기동 17 ,한식,null,null,null,null,null
+null,다홍식당,서울특별시 동대문구 신설동 102-26 ,한식,null,null,null,null,null
+null,우미도시락,서울특별시 동대문구 장안동 399-20 ,한식,null,null,null,null,null
+null,황옥예찬방,서울특별시 동대문구 장안동 98-8 ,한식,null,null,null,null,null
+null,누쿠모리,서울특별시 동대문구 장안동 426-6 ,한식,null,null,null,null,null
+null,인(In)서울,서울특별시 동대문구 이문동 317-12 ,한식,null,null,null,null,null
+null,소담촌장안점,서울특별시 동대문구 장안동 107-8 삼협메디스빌딩 ,한식,null,null,null,null,null
+null,철계단집,서울특별시 동대문구 휘경동 183-433 ,한식,null,null,null,null,null
+null,미아리우동집,서울특별시 동대문구 장안동 372-1 제일빌딩 ,한식,null,null,null,null,null
+null,이가네빈대떡,서울특별시 동대문구 장안동 167-14 ,한식,null,null,null,null,null
+null,탕화쿵푸마라탕,서울특별시 동대문구 회기동 16-69 ,중국식,null,null,null,null,null
+null,아키엠,서울특별시 동대문구 제기동 1142-10 ,한식,null,null,null,null,null
+null,이상한나라의앨리스,서울특별시 동대문구 회기동 16-13 ,중국식,null,null,null,null,null
+null,술술,서울특별시 동대문구 전농동 591-2 ,한식,null,null,null,null,null
+null,써든스테이크동대문점,서울특별시 동대문구 용두동 33-1 홈플러스 동대문점 ,식육(숯불구이),null,null,null,null,null
+null,미채담샤브정홈플러스동대문점,서울특별시 동대문구 용두동 33-1 홈플러스 동대문점 ,한식,null,null,null,null,null
+null,카츠남바5,서울특별시 동대문구 용두동 33-1 홈플러스 동대문점 ,일식,null,null,null,null,null
+null,놀부부대찌게,서울특별시 동대문구 용두동 33-1 홈플러스 동대문점 ,한식,null,null,null,null,null
+null,도쿄짬뽕(홈플러스동대문점),서울특별시 동대문구 용두동 33-1 홈플러스 동대문점 ,중국식,null,null,null,null,null
+null,망우로30,서울특별시 동대문구 휘경동 317-60 ,경양식,null,null,null,null,null
+null,까로치아답십리점,서울특별시 동대문구 답십리동 산 2-9 힐스포츠파크 ,경양식,null,null,null,null,null
+null,송정초밥,서울특별시 동대문구 용두동 36-7 ,일식,null,null,null,null,null
+null,제주은희네해장국,서울특별시 동대문구 장안동 465-4 ,한식,null,null,null,null,null
+null,중화식탁,서울특별시 동대문구 장안동 118-35 ,중국식,null,null,null,null,null
+null,고창집,서울특별시 동대문구 청량리동 50-22 ,한식,null,null,null,null,null
+null,장호덕손만두,서울특별시 동대문구 장안동 334-1 ,한식,null,null,null,null,null
+null,명륜진사갈비 서울장안점,서울특별시 동대문구 장안동 141-30 ,한식,null,null,null,null,null
+null,소문난냉면,서울특별시 동대문구 제기동 991 ,한식,null,null,null,null,null
+null,한앤둘치킨,서울특별시 동대문구 이문동 256-13 ,한식,null,null,null,null,null
+null,홍대직화불향쭈꾸미,서울특별시 동대문구 신설동 93-40 ,한식,null,null,null,null,null
+null,코야,서울특별시 동대문구 답십리동 542-1 ,일식,null,null,null,null,null
+null,연어골,서울특별시 동대문구 장안동 375-4 ,한식,null,null,null,null,null
+null,용두상사,서울특별시 동대문구 용두동 40-28 ,한식,null,null,null,null,null
+null,타코비(한국외대점),서울특별시 동대문구 이문동 288-65 ,일식,null,null,null,null,null
+null,그릭데이 경희대점,서울특별시 동대문구 회기동 3-251 ,경양식,null,null,null,null,null
+null,서희,서울특별시 동대문구 장안동 585 성우스타팰리스 ,한식,null,null,null,null,null
+null,통칼삼겹살,서울특별시 동대문구 답십리동 53-21 ,식육(숯불구이),null,null,null,null,null
+null,한상차림식당,서울특별시 동대문구 청량리동 51-10 동현프라자 ,뷔페식,null,null,null,null,null
+null,떡가게 종춘 힐스포파크점,서울특별시 동대문구 답십리동 산 2-9 힐스포츠파크 ,경양식,null,null,null,null,null
+null,이찌방 이야기,서울특별시 동대문구 장안동 367-2 ,한식,null,null,null,null,null
+null,순대야족발먹자,서울특별시 동대문구 장안동 463-6 ,한식,null,null,null,null,null
+null,해물참치빠,서울특별시 동대문구 전농동 602-9 ,일식,null,null,null,null,null
+null,부오상회,서울특별시 동대문구 신설동 396-11 ,한식,null,null,null,null,null
+null,공릉동원조멸치국수,서울특별시 동대문구 회기동 16-42 ,한식,null,null,null,null,null
+null,이모네골뱅이전문점,서울특별시 동대문구 휘경동 319-5 휘경동 코업레지던스 ,식육(숯불구이),null,null,null,null,null
+null,회태랑사골마라탕,서울특별시 동대문구 이문동 264-303 ,중국식,null,null,null,null,null
+null,(주)캘리스코사보텐청량리역사점,서울특별시 동대문구 전농동 591-53 청량리역 롯데백화점 ,일식,null,null,null,null,null
+null,수정,서울특별시 동대문구 제기동 1005 ,한식,null,null,null,null,null
+null,밥맛나는세상전농점,서울특별시 동대문구 전농동 558-152 ,한식,null,null,null,null,null
+null,부타,서울특별시 동대문구 장안동 143-47 ,식육(숯불구이),null,null,null,null,null
+null,가장맛있는배돌이네족발집,서울특별시 동대문구 장안동 192-4 ,한식,null,null,null,null,null
+null,언니네함바그,서울특별시 동대문구 이문동 341-60 ,경양식,null,null,null,null,null
+null,메이드,서울특별시 동대문구 장안동 367-3 ,한식,null,null,null,null,null
+null,쎄븐,서울특별시 동대문구 청량리동 359 ,한식,null,null,null,null,null
+null,이문동 그집,서울특별시 동대문구 이문동 255-380 ,한식,null,null,null,null,null
+null,이문동 그집,서울특별시 동대문구 이문동 255-380 ,한식,null,null,null,null,null
+null,홈밥,서울특별시 동대문구 휘경동 281-8 ,한식,null,null,null,null,null
+null,곱창 정비소,서울특별시 동대문구 장안동 397-11 ,한식,null,null,null,null,null
+null,청춘연가,서울특별시 동대문구 장안동 106-20 ,한식,null,null,null,null,null
+null,최진사곰탕,서울특별시 동대문구 장안동 368-1 아트몰링 장안 ,한식,null,null,null,null,null
+null,명동칼국수(답십리점),서울특별시 동대문구 답십리동 495-1 ,한식,null,null,null,null,null
+null,베쌀집&샤브샤브,서울특별시 동대문구 답십리동 21-8 ,외국음식전문점(인도 태국등),null,null,null,null,null
+null,봄봄감자탕 그리고 코다리,서울특별시 동대문구 전농동 129-68 ,한식,null,null,null,null,null
+null,신원식당,서울특별시 동대문구 장안동 365-6 화성빌딩 ,한식,null,null,null,null,null
+null,정원식당,서울특별시 동대문구 제기동 486-20 ,한식,null,null,null,null,null
+null,고기여행,서울특별시 동대문구 용두동 24-7 ,식육(숯불구이),null,null,null,null,null
+null,서선생(先生)묵은지,서울특별시 동대문구 회기동 42-56 ,외국음식전문점(인도 태국등),null,null,null,null,null
+null,진키친,서울특별시 동대문구 회기동 16-87 ,한식,null,null,null,null,null
+null,김여사짜장앤짬뽕,서울특별시 동대문구 용두동 127-10 ,중국식,null,null,null,null,null
+null,닥터찬의찌개백반전농점,서울특별시 동대문구 전농동 645-2 동아아파트 ,한식,null,null,null,null,null
+null,환상휴계점,서울특별시 동대문구 청량리동 291 ,한식,null,null,null,null,null
+null,비앤에이치,서울특별시 동대문구 전농동 652-4 ,한식,null,null,null,null,null
+null,고대골목집,서울특별시 동대문구 제기동 137-175 ,한식,null,null,null,null,null
+null,신가네동춘찜닭,서울특별시 동대문구 전농동 558-73 ,한식,null,null,null,null,null
+null,홍수계찜닭청량리역사점,서울특별시 동대문구 전농동 591-53 청량리역 롯데백화점 ,한식,null,null,null,null,null
+null,벌교집구이랑찌개랑,서울특별시 동대문구 답십리동 492-1 네모313빌딩 ,한식,null,null,null,null,null
+null,닭한마리칼국수,서울특별시 동대문구 용두동 112-26 ,외국음식전문점(인도 태국등),null,null,null,null,null
+null,밍차이,서울특별시 동대문구 장안동 384-6 장안동 근린생활시설 ,중국식,null,null,null,null,null
+null,짱구 맛집,서울특별시 동대문구 제기동 575-2 ,한식,null,null,null,null,null
+null,이천농장정육식당,서울특별시 동대문구 제기동 1019 경동시장 ,한식,null,null,null,null,null
+null,한신,서울특별시 동대문구 청량리동 57-5 ,한식,null,null,null,null,null
+null,한수담한식,서울특별시 동대문구 장안동 412-4 ,뷔페식,null,null,null,null,null
+null,그레이스(Grace),서울특별시 동대문구 회기동 60-60 ,한식,null,null,null,null,null
+null,훔친갈비공장,서울특별시 동대문구 제기동 1054-1 ,한식,null,null,null,null,null
+null,빈체로전농점,서울특별시 동대문구 전농동 10 전농 SK아파트 ,경양식,null,null,null,null,null
+null,명품금돼지,서울특별시 동대문구 장안동 585 성우스타팰리스 ,한식,null,null,null,null,null
+null,갈치가보리를물고찌게속으로,서울특별시 동대문구 휘경동 149-30 ,한식,null,null,null,null,null
+null,스시지,서울특별시 동대문구 답십리동 21-8 ,일식,null,null,null,null,null
+null,미뇽(MIGNON),서울특별시 동대문구 제기동 142-16 ,경양식,null,null,null,null,null
+null,그옛날1947왕만두,서울특별시 동대문구 이문동 78-27 ,한식,null,null,null,null,null
+null,라봉크랩 청계점,서울특별시 동대문구 용두동 255-53 청광빌딩 ,한식,null,null,null,null,null
+null,평양냉면,서울특별시 동대문구 제기동 1013 ,한식,null,null,null,null,null
+null,베트남 테이블,서울특별시 동대문구 장안동 399-31 ,외국음식전문점(인도 태국등),null,null,null,null,null
+null,남도보쌈파전,서울특별시 동대문구 장안동 305-5 ,한식,null,null,null,null,null
+null,고흥식당,서울특별시 동대문구 제기동 896 ,한식,null,null,null,null,null
+null,안계식당,서울특별시 동대문구 제기동 345-23 ,한식,null,null,null,null,null
+null,처음처럼,서울특별시 동대문구 전농동 204-224 ,한식,null,null,null,null,null
+null,일곱평,서울특별시 동대문구 제기동 136-160 ,한식,null,null,null,null,null
+null,소내장집(Bei Bei Niu ZaBao),서울특별시 동대문구 회기동 3-79 ,한식,null,null,null,null,null
+null,행운다방,서울특별시 동대문구 전농동 646-61 ,한식,null,null,null,null,null
+null,경동,서울특별시 동대문구 제기동 847-6 ,한식,null,null,null,null,null
+null,전주밥상,서울특별시 동대문구 용두동 20-28 ,한식,null,null,null,null,null
+null,헤이즐넛버터,서울특별시 동대문구 회기동 42-80 MAIBAUM 회기 ,일식,null,null,null,null,null
+null,채서원 병천순대,서울특별시 동대문구 회기동 61-5 ,한식,null,null,null,null,null
+null,답구정동,서울특별시 동대문구 답십리동 496-3 ,한식,null,null,null,null,null
+null,반해버린 족발,서울특별시 동대문구 휘경동 122-6 ,한식,null,null,null,null,null
+null,키친요로시쿠,서울특별시 동대문구 회기동 3-24 ,일식,null,null,null,null,null
+null,동네오빠,서울특별시 동대문구 장안동 368-4 ,한식,null,null,null,null,null
+null,조선닭갈비파전,서울특별시 동대문구 답십리동 258-8 ,한식,null,null,null,null,null
+null,천심,서울특별시 동대문구 답십리동 483-20 ,한식,null,null,null,null,null
+null,정글포차,서울특별시 동대문구 용두동 235-18 ,한식,null,null,null,null,null
+null,풍모란,서울특별시 동대문구 답십리동 488-37 ,한식,null,null,null,null,null
+null,MJ24불가마스파랜드,서울특별시 동대문구 회기동 67-3 ,한식,null,null,null,null,null
+null,장안벌함흥냉면,서울특별시 동대문구 장안동 361-1 ,한식,null,null,null,null,null
+null,두레박,서울특별시 동대문구 신설동 109-5 서울풍물시장 ,횟집,null,null,null,null,null
+null,고기나라 돼통령,서울특별시 동대문구 장안동 313-7 장안동신부파스카아파트 ,한식,null,null,null,null,null
+null,수제왕갈비,서울특별시 동대문구 이문동 256-361 ,한식,null,null,null,null,null
+null,오늘도 스시,서울특별시 동대문구 청량리동 57-7 ,일식,null,null,null,null,null
+null,더(the)수제돈까스 장안점,서울특별시 동대문구 장안동 183-4 한일연립 ,일식,null,null,null,null,null
+null,신라방 마라탕 장안동맛집,서울특별시 동대문구 장안동 424-9 ,중국식,null,null,null,null,null
+null,꽃보다족발,서울특별시 동대문구 전농동 209-3 ,한식,null,null,null,null,null
+null,산골오리,서울특별시 동대문구 장안동 306-3 ,한식,null,null,null,null,null
+null,고향식당,서울특별시 동대문구 제기동 892-71 한솔동의보감 ,한식,null,null,null,null,null
+null,마라마라,서울특별시 동대문구 이문동 64 쌍용아파트 ,중국식,null,null,null,null,null
+null,삼시세끼,서울특별시 동대문구 전농동 620-29 ,한식,null,null,null,null,null
+null,꼴목 경희대점,서울특별시 동대문구 회기동 42-48 ,한식,null,null,null,null,null
+null,오레노카츠,서울특별시 동대문구 답십리동 245-2 ,일식,null,null,null,null,null
+null,끼니,서울특별시 동대문구 신설동 30-4 ,한식,null,null,null,null,null
+null,고무래,서울특별시 동대문구 장안동 335-8 르.메이에르 장안타운 5차 ,한식,null,null,null,null,null
+null,신설동 그집돼지,서울특별시 동대문구 용두동 234-61 ,한식,null,null,null,null,null
+null,얼땅쟈,서울특별시 동대문구 회기동 42-45 ,중국식,null,null,null,null,null
+null,국수천천히,서울특별시 동대문구 전농동 124-25 ,한식,null,null,null,null,null
+null,신의주찹쌀순대,서울특별시 동대문구 장안동 334-7 ,한식,null,null,null,null,null
+null,만냥회,서울특별시 동대문구 장안동 430-2 ,한식,null,null,null,null,null
+null,비전식당,서울특별시 동대문구 제기동 486-29 ,한식,null,null,null,null,null
+null,백가짼빙궈즈전문점,서울특별시 동대문구 제기동 132-20 ,중국식,null,null,null,null,null
+null,곱창인생,서울특별시 동대문구 답십리동 68-1 ,한식,null,null,null,null,null
+null,용두 시네마,서울특별시 동대문구 용두동 39-61 ,외국음식전문점(인도 태국등),null,null,null,null,null
+null,미나리식당,서울특별시 동대문구 답십리동 955-7 ,한식,null,null,null,null,null
+null,난바우동 회기점,서울특별시 동대문구 회기동 16-73 ,한식,null,null,null,null,null
+null,신설동1억해장국267,서울특별시 동대문구 신설동 114-42 ,한식,null,null,null,null,null
+null,88 & 상회,서울특별시 동대문구 장안동 345-3 ,한식,null,null,null,null,null
+null,꼬지사께서울전농점,서울특별시 동대문구 답십리동 94-9 목련빌딩 ,한식,null,null,null,null,null
+null,장안정,서울특별시 동대문구 장안동 308-9 ,한식,null,null,null,null,null
+null,더벙커,서울특별시 동대문구 회기동 25 ,한식,null,null,null,null,null
+null,커피굽는라이로스터라이,서울특별시 동대문구 장안동 347-9 ,한식,null,null,null,null,null
+null,행운식당,서울특별시 동대문구 답십리동 530-4 보광타워 ,한식,null,null,null,null,null
+null,스시사이젠,서울특별시 동대문구 장안동 423-2 ,일식,null,null,null,null,null
+null,풍천숯불장어세상,서울특별시 동대문구 이문동 256-371 ,한식,null,null,null,null,null
+null,엄나무골 삼계탕,서울특별시 동대문구 제기동 635-21 ,한식,null,null,null,null,null
+null,8.Oli(에잇올리),서울특별시 동대문구 회기동 3-79 ,경양식,null,null,null,null,null
+null,제이와이.K푸드,서울특별시 동대문구 전농동 648-137 ,한식,null,null,null,null,null
+null,철판왕만두,서울특별시 동대문구 장안동 307-3 ,한식,null,null,null,null,null
+null,수정이불(청량회관),서울특별시 동대문구 청량리동 42-14 ,일식,null,null,null,null,null
+null,(주)프라임유통,서울특별시 동대문구 제기동 426-4 ,한식,null,null,null,null,null
+null,미연 마라탕,서울특별시 동대문구 이문동 288-37 ,중국식,null,null,null,null,null
+null,촨커,서울특별시 동대문구 이문동 349-11 ,중국식,null,null,null,null,null
+null,마장동동바곱창,서울특별시 동대문구 답십리동 496-3 ,한식,null,null,null,null,null
+null,주식회사하이즈야코리아,서울특별시 동대문구 제기동 137-15 ,중국식,null,null,null,null,null
+null,짱닭,서울특별시 동대문구 휘경동 150-12 ,한식,null,null,null,null,null
+null,대경양꼬치,서울특별시 동대문구 장안동 345-3 ,중국식,null,null,null,null,null
+null,이면,서울특별시 동대문구 제기동 1019 경동시장 ,한식,null,null,null,null,null
+null,코지인 무르무르,서울특별시 동대문구 회기동 60-41 ,경양식,null,null,null,null,null
+null,마라천국,서울특별시 동대문구 장안동 382-23 ,중국식,null,null,null,null,null
+null,밀(meal)(따뜻한 한끼),서울특별시 동대문구 장안동 167-14 ,경양식,null,null,null,null,null
+null,옆집떡볶이 장안점,서울특별시 동대문구 장안동 190-82 하나로빌딩 ,한식,null,null,null,null,null
+null,중국관,서울특별시 동대문구 제기동 122-290 ,중국식,null,null,null,null,null
+null,싸다구회수산,서울특별시 동대문구 전농동 124-27 ,횟집,null,null,null,null,null
+null,이령김밥,서울특별시 동대문구 이문동 250-3 ,한식,null,null,null,null,null
+null,부어치킨 휘경점,서울특별시 동대문구 휘경동 276-40 ,한식,null,null,null,null,null
+null,인생설렁탕 경희대점,서울특별시 동대문구 회기동 42-84 ,한식,null,null,null,null,null
+null,스시화,서울특별시 동대문구 청량리동 30-17 ,일식,null,null,null,null,null
+null,백미향마라탕고대점,서울특별시 동대문구 제기동 137-97 KEBY타워 ,중국식,null,null,null,null,null
+null,나주곰탕나주전,서울특별시 동대문구 용두동 39-60 ,한식,null,null,null,null,null
+null,민수정육식당,서울특별시 동대문구 전농동 498-12 ,한식,null,null,null,null,null
+null,죽도령,서울특별시 동대문구 장안동 394-15 ,경양식,null,null,null,null,null
+null,고향왕파전,서울특별시 동대문구 휘경동 329 ,한식,null,null,null,null,null
+null,사까야,서울특별시 동대문구 용두동 104-26 ,일식,null,null,null,null,null
+null,신마라탕,서울특별시 동대문구 제기동 137-423 ,중국식,null,null,null,null,null
+null,신훠궈뷔페,서울특별시 동대문구 제기동 137-423 ,중국식,null,null,null,null,null
+null,빅(VIC),서울특별시 동대문구 제기동 67-410 ,경양식,null,null,null,null,null
+null,엄마맘약선김밥,서울특별시 동대문구 신설동 29-1 ,한식,null,null,null,null,null
+null,양꼬치 And 양갈비,서울특별시 동대문구 장안동 374-11 진성빌딩 ,중국식,null,null,null,null,null
+null,할머니보쌈,서울특별시 동대문구 이문동 264-249 ,한식,null,null,null,null,null
+null,진가 마라룽샤,서울특별시 동대문구 회기동 16-43 ,중국식,null,null,null,null,null
+null,명륜진사갈비 신설동점,서울특별시 동대문구 신설동 103-9 ,한식,null,null,null,null,null
+null,최강노가리,서울특별시 동대문구 장안동 460-5 ,한식,null,null,null,null,null
+null,복코돼지,서울특별시 동대문구 전농동 647-20 ,한식,null,null,null,null,null
+null,우마양대창,서울특별시 동대문구 전농동 498-10 ,한식,null,null,null,null,null
+null,골목집,서울특별시 동대문구 제기동 1017 ,한식,null,null,null,null,null
+null,엄마손돼지불백,서울특별시 동대문구 장안동 186-8 ,한식,null,null,null,null,null
+null,끌텅,서울특별시 동대문구 장안동 314-5 ,한식,null,null,null,null,null
+null,다래옥,서울특별시 동대문구 신설동 103-20 ,중국식,null,null,null,null,null
+null,정성푸드,서울특별시 동대문구 전농동 26-8 ,한식,null,null,null,null,null
+null,판다마라,서울특별시 동대문구 용두동 127-19 ,중국식,null,null,null,null,null
+null,스시덴고쿠 청량리점,서울특별시 동대문구 전농동 591-53 청량리역 롯데백화점 ,일식,null,null,null,null,null
+null,저기압일때 고기앞으로,서울특별시 동대문구 청량리동 521 ,한식,null,null,null,null,null
+null,우정식당,서울특별시 동대문구 제기동 486-29 ,한식,null,null,null,null,null
+null,민이식당,서울특별시 동대문구 이문동 237-17 ,한식,null,null,null,null,null
+null,술먹고밥먹고,서울특별시 동대문구 장안동 381-13 ,한식,null,null,null,null,null
+null,제이엠푸드,서울특별시 동대문구 전농동 648-137 ,한식,null,null,null,null,null
+null,일광족발,서울특별시 동대문구 제기동 635-11 ,한식,null,null,null,null,null
+null,모아키친,서울특별시 동대문구 답십리동 530-4 보광타워 ,경양식,null,null,null,null,null
+null,오봉집,서울특별시 동대문구 답십리동 53-7 ,한식,null,null,null,null,null
+null,청량리 숯불닭갈비,서울특별시 동대문구 청량리동 741 ,한식,null,null,null,null,null
+null,백순오 간장게장  순오가,서울특별시 동대문구 답십리동 256-47 ,한식,null,null,null,null,null
+null,개그맨 이경래의 참숯갈비,서울특별시 동대문구 휘경동 312-46 ,한식,null,null,null,null,null
+null,원할머니보쌈회기배달점,서울특별시 동대문구 회기동 103-16 ,한식,null,null,null,null,null
+null,굿가이즈 포핸즈,서울특별시 동대문구 전농동 103-91 ,한식,null,null,null,null,null
+null,이문,서울특별시 동대문구 이문동 288-45 ,한식,null,null,null,null,null
+null,우정식당,서울특별시 동대문구 휘경동 286-330 ,한식,null,null,null,null,null
+null,에이유(AU),서울특별시 동대문구 회기동 42-57 ,한식,null,null,null,null,null
+null,19고깃집,서울특별시 동대문구 전농동 103-294 ,한식,null,null,null,null,null
+null,마라대학,서울특별시 동대문구 휘경동 319-8 ,중국식,null,null,null,null,null
+null,곽씨아저씨네,서울특별시 동대문구 제기동 136-53 ,한식,null,null,null,null,null
+null,백반집,서울특별시 동대문구 장안동 370-12 ,한식,null,null,null,null,null
+null,닭봉씨,서울특별시 동대문구 이문동 175-18 ,한식,null,null,null,null,null
+null,주식회사 참쉬운푸드솔루션 장안지점,서울특별시 동대문구 장안동 324-1 웰빙프라자 ,한식,null,null,null,null,null
+null,집반찬,서울특별시 동대문구 답십리동 269-18 ,한식,null,null,null,null,null
+null,(주)비케이우대갈비,서울특별시 동대문구 장안동 345-1 어반슈필라움 ,한식,null,null,null,null,null
+null,스시준몽,서울특별시 동대문구 장안동 337-20 ,일식,null,null,null,null,null
+null,제육볶음나라,서울특별시 동대문구 전농동 130-21 그린캐슬 ,한식,null,null,null,null,null
+null,박가뼈다귀 안암점,서울특별시 동대문구 제기동 1153-16 재경포항학사 ,한식,null,null,null,null,null
+null,풍천민물장어,서울특별시 동대문구 장안동 394-10 ,한식,null,null,null,null,null
+null,행복한식탁,서울특별시 동대문구 장안동 309-2 정성빌딩 ,한식,null,null,null,null,null
+null,밥스틸러 김치찜,서울특별시 동대문구 청량리동 52-19 ,한식,null,null,null,null,null
+null,육회바른연어 외대점,서울특별시 동대문구 이문동 306-4 ,한식,null,null,null,null,null
+null,십이점오도(12.5˚),서울특별시 동대문구 답십리동 36-62 ,경양식,null,null,null,null,null
+null,조선감저,서울특별시 동대문구 장안동 107-19 ,한식,null,null,null,null,null
+null,솥뚜껑 삼겹살집,서울특별시 동대문구 이문동 250-3 ,한식,null,null,null,null,null
+null,김가네김밥,서울특별시 동대문구 전농동 204-225 ,한식,null,null,null,null,null
+null,홍콩반점 0410 답십리점,서울특별시 동대문구 답십리동 494-1 한일노벨리아 ,중국식,null,null,null,null,null
+null,옛사랑,서울특별시 동대문구 장안동 436-2 ,한식,null,null,null,null,null
+null,박가부대 신설동역점,서울특별시 동대문구 신설동 80-1 ,한식,null,null,null,null,null
+null,진미가정식백반,서울특별시 동대문구 이문동 255-203 ,한식,null,null,null,null,null
+null,고래한입피자 휘경점,서울특별시 동대문구 휘경동 294-163 ,외국음식전문점(인도 태국등),null,null,null,null,null
+null,꽁보리밥,서울특별시 동대문구 장안동 390-14 ,한식,null,null,null,null,null
+null,티엔티푸드 서울보호관찰소,서울특별시 동대문구 휘경동 43-1 서울보호관찰소 ,한식,null,null,null,null,null
+null,맹자네떡볶이,서울특별시 동대문구 휘경동 276-48 ,한식,null,null,null,null,null
+null,토핑의신,서울특별시 동대문구 이문동 126-38 ,경양식,null,null,null,null,null
+null,소담촌,서울특별시 동대문구 용두동 234-1 ,한식,null,null,null,null,null
+null,굿모닝(Goodmoring),서울특별시 동대문구 휘경동 151-3 ,경양식,null,null,null,null,null
+null,맛있게싸게 홍게대게,서울특별시 동대문구 전농동 357-5 ,일식,null,null,null,null,null
+null,팟타이킹sg35asia,서울특별시 동대문구 전농동 204-221 ,외국음식전문점(인도 태국등),null,null,null,null,null
+null,청계소담 왕갈비탕,서울특별시 동대문구 답십리동 472-50 ,한식,null,null,null,null,null
+null,88식당,서울특별시 동대문구 답십리동 530-8 골든메카 ,한식,null,null,null,null,null
+null,어사또 청량리점,서울특별시 동대문구 제기동 635-35 ,한식,null,null,null,null,null
+null,철탑,서울특별시 동대문구 제기동 1115-15 ,한식,null,null,null,null,null
+null,별미한식뷔페,서울특별시 동대문구 신설동 102-27 ,한식,null,null,null,null,null
+null,장안정,서울특별시 동대문구 장안동 368-1 아트몰링 장안 ,일식,null,null,null,null,null
+null,전주팔미콩나물국밥 장안점,서울특별시 동대문구 장안동 429-5 ,한식,null,null,null,null,null
+null,적정온도℃,서울특별시 동대문구 장안동 389-10 ,경양식,null,null,null,null,null
+null,동서비빔국수,서울특별시 동대문구 답십리동 496-1 ,한식,null,null,null,null,null
+null,제이에스파트너스,서울특별시 동대문구 답십리동 21-59 ,한식,null,null,null,null,null
+null,정편백,서울특별시 동대문구 전농동 568-5 ,한식,null,null,null,null,null
+null,스쿨푸드 딜리버리 장안점,서울특별시 동대문구 답십리동 1-174 ,한식,null,null,null,null,null
+null,김우리식당,서울특별시 동대문구 용두동 220-4 ,한식,null,null,null,null,null
+null,황토와소나무사우나식당,서울특별시 동대문구 전농동 6 전농우성아파트 ,한식,null,null,null,null,null
+null,홍콩솥밥왕,서울특별시 동대문구 청량리동 526 ,한식,null,null,null,null,null
+null,속초아바이순대국밥,서울특별시 동대문구 장안동 289-4 ,한식,null,null,null,null,null
+null,우차이,서울특별시 동대문구 회기동 16-35 ,중국식,null,null,null,null,null
+null,명륜진사갈비,서울특별시 동대문구 용두동 39-810 ,한식,null,null,null,null,null
+null,장안제일손칼국수,서울특별시 동대문구 장안동 113-8 ,한식,null,null,null,null,null
+null,라마,서울특별시 동대문구 휘경동 294-163 ,경양식,null,null,null,null,null
+null,혼부라더스,서울특별시 동대문구 용두동 102-159 ,한식,null,null,null,null,null
+null,킹(King) 마라훠궈,서울특별시 동대문구 신설동 76-25 ,중국식,null,null,null,null,null
+null,찜닭 대장 이문점,서울특별시 동대문구 이문동 255-187 ,한식,null,null,null,null,null
+null,제순이네,서울특별시 동대문구 전농동 149-1 ,한식,null,null,null,null,null
+null,지노돈까스,서울특별시 동대문구 청량리동 36-14 ,일식,null,null,null,null,null
+null,현집,서울특별시 동대문구 제기동 1142-6 ,한식,null,null,null,null,null
+null,단밤,서울특별시 동대문구 답십리동 530-17 한성아펠시티 ,한식,null,null,null,null,null
+null,유정보쌈칼국수해물찜,서울특별시 동대문구 장안동 294-11 참 튼튼병원 빌딩 ,한식,null,null,null,null,null
+null,서울마님죽,서울특별시 동대문구 전농동 295-48 북동점포 ,한식,null,null,null,null,null
+null,참진한순대국,서울특별시 동대문구 장안동 186-33 ,한식,null,null,null,null,null
+null,광장,서울특별시 동대문구 청량리동 738 청량리현대코아 ,한식,null,null,null,null,null
+null,오마이돈,서울특별시 동대문구 장안동 387-4 ,한식,null,null,null,null,null
+null,소림마라 동대문점,서울특별시 동대문구 답십리동 530-4 보광타워 ,중국식,null,null,null,null,null
+null,고소운,서울특별시 동대문구 이문동 288-40 ,한식,null,null,null,null,null
+null,현덕육회,서울특별시 동대문구 제기동 574 ,한식,null,null,null,null,null
+null,은행골,서울특별시 동대문구 회기동 45-62 ,일식,null,null,null,null,null
+null,정담,서울특별시 동대문구 용두동 764-13 ,한식,null,null,null,null,null
+null,옛날순대국,서울특별시 동대문구 제기동 285-33 ,한식,null,null,null,null,null
+null,사천면가,서울특별시 동대문구 이문동 331-1 ,중국식,null,null,null,null,null
+null,오르새피자 전농답십리점,서울특별시 동대문구 전농동 1-73 ,경양식,null,null,null,null,null
+null,제육스,서울특별시 동대문구 휘경동 294-316 ,한식,null,null,null,null,null
+null,언니네,서울특별시 동대문구 제기동 630-8 ,한식,null,null,null,null,null
+null,파파도나스 장안점,서울특별시 동대문구 장안동 295-7 ,경양식,null,null,null,null,null
+null,동해안세꼬시,서울특별시 동대문구 답십리동 263-1 ,횟집,null,null,null,null,null
+null,웃돌목소머리국밥,서울특별시 동대문구 제기동 136-235 ,한식,null,null,null,null,null
+null,장평칼국수,서울특별시 동대문구 장안동 438-4 ,한식,null,null,null,null,null
+null,이문동 불탄 곱창,서울특별시 동대문구 이문동 165-73 ,한식,null,null,null,null,null
+null,알촌 경희·외대 직영점,서울특별시 동대문구 이문동 331-1 ,한식,null,null,null,null,null
+null,상진푸드 본점,서울특별시 동대문구 청량리동 215-51 ,한식,null,null,null,null,null
+null,성원유황오리,서울특별시 동대문구 이문동 237-153 ,한식,null,null,null,null,null
+null,권사부순대국,서울특별시 동대문구 전농동 103-287 ,한식,null,null,null,null,null
+null,혼밥대왕,서울특별시 동대문구 전농동 103-305 ,한식,null,null,null,null,null
+null,행님 디저트카페 장안점,서울특별시 동대문구 장안동 338-6 ,경양식,null,null,null,null,null
+null,우더스,서울특별시 동대문구 용두동 39-895 ,경양식,null,null,null,null,null
+null,오소록,서울특별시 동대문구 답십리동 276-24 ,한식,null,null,null,null,null
+null,카페 뜨랑,서울특별시 동대문구 청량리동 57-7 ,경양식,null,null,null,null,null
+null,둥구리 투,서울특별시 동대문구 전농동 204-221 ,한식,null,null,null,null,null
+null,한잔해,서울특별시 동대문구 장안동 382-25 ,한식,null,null,null,null,null
+null,두들이네,서울특별시 동대문구 회기동 16-38 ,한식,null,null,null,null,null
+null,타오타이랑 장안점,서울특별시 동대문구 장안동 368-1 아트몰링 장안 ,중국식,null,null,null,null,null
+null,오레노카츠 신설동점,서울특별시 동대문구 신설동 89-74 ,경양식,null,null,null,null,null
+null,지짐이,서울특별시 동대문구 용두동 231-5 ,한식,null,null,null,null,null
+null,용이기,서울특별시 동대문구 회기동 60-67 ,한식,null,null,null,null,null
+null,참진한순대국,서울특별시 동대문구 용두동 122-52 ,한식,null,null,null,null,null
+null,강릉항,서울특별시 동대문구 답십리동 465-137 ,한식,null,null,null,null,null
+null,공릉동원조멸치국수,서울특별시 동대문구 이문동 251-7 ,한식,null,null,null,null,null
+null,전농초밥,서울특별시 동대문구 전농동 32-4 전농동하우스토리 ,일식,null,null,null,null,null
+null,만추 롯데백화점 청량리점,서울특별시 동대문구 전농동 591-53 청량리역 롯데백화점 ,중국식,null,null,null,null,null
+null,도톰,서울특별시 동대문구 장안동 460-2 ,한식,null,null,null,null,null
+null,물로,서울특별시 동대문구 답십리동 472-46 ,경양식,null,null,null,null,null
+null,BHC답십리점,서울특별시 동대문구 답십리동 257-3 ,한식,null,null,null,null,null
+null,권&고 Food,서울특별시 동대문구 장안동 390-11 ,한식,null,null,null,null,null
+null,은주네 통영 횟집,서울특별시 동대문구 전농동 295-150 ,일식,null,null,null,null,null
+null,감초식당,서울특별시 동대문구 제기동 892-128 ,한식,null,null,null,null,null
+null,청량리뼈구이,서울특별시 동대문구 제기동 457 ,한식,null,null,null,null,null
+null,이웃사촌,서울특별시 동대문구 제기동 989-6 ,한식,null,null,null,null,null
+null,만선애꿈,서울특별시 동대문구 장안동 580 위더스빌 ,한식,null,null,null,null,null
+null,지혜식당,서울특별시 동대문구 장안동 406-10 ,한식,null,null,null,null,null
+null,새벽두시,서울특별시 동대문구 휘경동 286-334 ,경양식,null,null,null,null,null
+null,이문식당(한식뷔페),서울특별시 동대문구 이문동 291-37 더 메디칼빌딩 ,한식,null,null,null,null,null
+null,명랑 부대찌개,서울특별시 동대문구 장안동 422-9 ,한식,null,null,null,null,null
+null,경양카츠 제기점,서울특별시 동대문구 용두동 104-3 동대문 푸르지오시티 ,일식,null,null,null,null,null
+null,어산장안점,서울특별시 동대문구 장안동 426-6 ,횟집,null,null,null,null,null
+null,대성가마솥설렁탕,서울특별시 동대문구 장안동 381-3 ,한식,null,null,null,null,null
+null,계포동,서울특별시 동대문구 장안동 448-1 ,한식,null,null,null,null,null
+null,더담플러스주식회사 더바다마켓 전농점,서울특별시 동대문구 전농동 183-31 ,한식,null,null,null,null,null
+null,휘경곱창,서울특별시 동대문구 휘경동 163-9 ,한식,null,null,null,null,null
+null,마코토키친,서울특별시 동대문구 장안동 289-4 ,일식,null,null,null,null,null
+null,먹자,서울특별시 동대문구 청량리동 11-16 ,중국식,null,null,null,null,null
+null,두마리찜닭 두찜 동대문 청량리점,서울특별시 동대문구 청량리동 50-12 ,한식,null,null,null,null,null
+null,엄마의 덮밥,서울특별시 동대문구 장안동 437-6 ,한식,null,null,null,null,null
+null,싸다아구찜&청량리점,서울특별시 동대문구 제기동 483 ,한식,null,null,null,null,null
+null,성남순대,서울특별시 동대문구 청량리동 773 ,한식,null,null,null,null,null
+null,희희(喜喜)키친,서울특별시 동대문구 장안동 318-16 ,한식,null,null,null,null,null
+null,어머니 대성집,서울특별시 동대문구 용두동 232-26 ,한식,null,null,null,null,null
+null,훔친갈비포차,서울특별시 동대문구 제기동 1054-1 ,한식,null,null,null,null,null
+null,삼성명가식당,서울특별시 동대문구 이문동 264-445 ,한식,null,null,null,null,null
+null,보글보글,서울특별시 동대문구 전농동 620-27 청량리창보리버리치1차오피스텔 ,한식,null,null,null,null,null
+null,취홍별관,서울특별시 동대문구 청량리동 366 ,중국식,null,null,null,null,null
+null,역대짬뽕본점,서울특별시 동대문구 장안동 415-7 ,중국식,null,null,null,null,null
+null,승키친,서울특별시 동대문구 장안동 330-9 ,한식,null,null,null,null,null
+null,아라연대게3호점,서울특별시 동대문구 장안동 382-1 ,횟집,null,null,null,null,null
+null,컴포즈커피 휘경주공점,서울특별시 동대문구 장안동 94-27 예신프라자 ,경양식,null,null,null,null,null
+null,행컵 회기점,서울특별시 동대문구 휘경동 294-185 ,한식,null,null,null,null,null
+null,뜨락,서울특별시 동대문구 청량리동 205-281 ,한식,null,null,null,null,null
+null,한상차림 코다리명가,서울특별시 동대문구 답십리동 1012 ,한식,null,null,null,null,null
+null,딜리버리 푸드,서울특별시 동대문구 제기동 822-4 ,한식,null,null,null,null,null
+null,THE+짬뽕,서울특별시 동대문구 장안동 430-2 ,중국식,null,null,null,null,null
+null,디올리,서울특별시 동대문구 장안동 349-13 ,경양식,null,null,null,null,null
+null,쌀국수공방,서울특별시 동대문구 답십리동 492-1 네모313빌딩 ,한식,null,null,null,null,null
+null,리얼안심탕수육&리얼하노이 청량리점,서울특별시 동대문구 청량리동 234-2 현대아파트 ,중국식,null,null,null,null,null
+null,피자파는집 답십리점,서울특별시 동대문구 전농동 645-2 동아아파트 ,경양식,null,null,null,null,null
+null,다미정,서울특별시 동대문구 휘경동 150-41 ,한식,null,null,null,null,null
+null,제주은희네해장국,서울특별시 동대문구 장안동 430-3 광성빌딩 ,한식,null,null,null,null,null
+null,탐나종합어시장 답십리점,서울특별시 동대문구 답십리동 68-1 ,일식,null,null,null,null,null
+null,라온롯데백화점 청량리점,서울특별시 동대문구 전농동 591-53 청량리역 롯데백화점 ,한식,null,null,null,null,null
+null,젓국지,서울특별시 동대문구 전농동 184-15 ,한식,null,null,null,null,null
+null,육회챱챱&딱새우,서울특별시 동대문구 장안동 100-8 ,한식,null,null,null,null,null
+null,수야 세꼬시&막회,서울특별시 동대문구 장안동 339-29 ,횟집,null,null,null,null,null
+null,스시진 이자카야,서울특별시 동대문구 장안동 366-1 풍양빌딩 ,일식,null,null,null,null,null
+null,삼시세끼,서울특별시 동대문구 전농동 620-27 청량리창보리버리치1차오피스텔 ,한식,null,null,null,null,null
+null,닛시스시,서울특별시 동대문구 이문동 220-105 ,일식,null,null,null,null,null
+null,미가초밥,서울특별시 동대문구 장안동 93-64 ,일식,null,null,null,null,null
+null,뉴 새로나,서울특별시 동대문구 용두동 39-1042 ,한식,null,null,null,null,null
+null,돈까스익스프레스,서울특별시 동대문구 신설동 98-15 ,경양식,null,null,null,null,null
+null,다퍼줘,서울특별시 동대문구 제기동 1005 ,한식,null,null,null,null,null
+null,늘봄비빔밥,서울특별시 동대문구 장안동 375-2 ,한식,null,null,null,null,null
+null,달셰프,서울특별시 동대문구 장안동 430-11 ,중국식,null,null,null,null,null
+null,이다짬뽕,서울특별시 동대문구 장안동 94-42 소망빌딩 ,중국식,null,null,null,null,null
+null,서경 차돌해물,서울특별시 동대문구 제기동 443 ,한식,null,null,null,null,null
+null,맛있는 쭈꾸미집,서울특별시 동대문구 장안동 382-25 ,한식,null,null,null,null,null
+null,삼복한방닭한마리,서울특별시 동대문구 회기동 64-45 ,한식,null,null,null,null,null
+null,큰손참치,서울특별시 동대문구 장안동 453-1 ,일식,null,null,null,null,null
+null,정담 샤브연 롯데백화점 청량리점,서울특별시 동대문구 전농동 591-53 청량리역 롯데백화점 ,한식,null,null,null,null,null
+null,삼형제김밥 본점,서울특별시 동대문구 답십리동 242-11 ,한식,null,null,null,null,null
+null,행복은간장밥 경희대점,서울특별시 동대문구 회기동 16-69 ,한식,null,null,null,null,null
+null,그린푸드,서울특별시 동대문구 전농동 622-1 ,한식,null,null,null,null,null
+null,스시 캘리포니아,서울특별시 동대문구 회기동 42-58 ,한식,null,null,null,null,null
+null,쿠마타코야끼&캔카페,서울특별시 동대문구 전농동 655-37 ,일식,null,null,null,null,null
+null,호야네족발(동대문점),서울특별시 동대문구 전농동 141-141 ,한식,null,null,null,null,null
+null,홍콩대반점,서울특별시 동대문구 전농동 647-65 ,중국식,null,null,null,null,null
+null,찐참다랑어 참치상회,서울특별시 동대문구 용두동 39-83 ,일식,null,null,null,null,null
+null,산타나포차,서울특별시 동대문구 전농동 602-34 ,일식,null,null,null,null,null
+null,일만족발,서울특별시 동대문구 제기동 153 안암골 벽산아파트 ,한식,null,null,null,null,null
+null,청량역전,서울특별시 동대문구 제기동 632-1 ,한식,null,null,null,null,null
+null,제주은희네해장국,서울특별시 동대문구 용두동 40-2 ,한식,null,null,null,null,null
+null,태리로제떡볶이&닭강정 장안점,서울특별시 동대문구 장안동 331-12 ,한식,null,null,null,null,null
+null,주당천국,서울특별시 동대문구 청량리동 526 ,한식,null,null,null,null,null
+null,퀸스테이크 답십리점,서울특별시 동대문구 답십리동 242-1 코지스페이스 ,한식,null,null,null,null,null
+null,장터푸드,서울특별시 동대문구 회기동 60-83 ,한식,null,null,null,null,null
+null,좋은초밥,서울특별시 동대문구 전농동 103-289 ,일식,null,null,null,null,null
+null,힙스온힙스(heaps on heaps),서울특별시 동대문구 회기동 77-13 ,경양식,null,null,null,null,null
+null,한끼한죽,서울특별시 동대문구 장안동 119-18 ,한식,null,null,null,null,null
+null,모코모코,서울특별시 동대문구 회기동 16-92 ,일식,null,null,null,null,null
+null,소일,서울특별시 동대문구 신설동 98-24 라마다 앙코르 동대문 호텔 ,경양식,null,null,null,null,null
+null,두접시,서울특별시 동대문구 회기동 42-59 메이플 하우스 ,일식,null,null,null,null,null
+null,오늘밥상,서울특별시 동대문구 답십리동 488-55 ,한식,null,null,null,null,null
+null,아재족발,서울특별시 동대문구 답십리동 465-137 ,일식,null,null,null,null,null
+null,대찬식당,서울특별시 동대문구 신설동 97-34 ,한식,null,null,null,null,null
+null,오늘의 찬,서울특별시 동대문구 제기동 899-4 ,한식,null,null,null,null,null
+null,빈이푸드,서울특별시 동대문구 장안동 383-1 ,한식,null,null,null,null,null
+null,동진칼국수,서울특별시 동대문구 제기동 887-120 ,한식,null,null,null,null,null
+null,술만팜,서울특별시 동대문구 회기동 42-35 ,한식,null,null,null,null,null
+null,서울마님죽,서울특별시 동대문구 제기동 635-6 ,한식,null,null,null,null,null
+null,수진궁 한식부페,서울특별시 동대문구 장안동 381-1 우민에뜨와르오피스텔 ,뷔페식,null,null,null,null,null
+null,고돼지,서울특별시 동대문구 용두동 122-9 ,한식,null,null,null,null,null
+null,행복한뷔페,서울특별시 동대문구 이문동 257-17 ,한식,null,null,null,null,null
+null,라멘트럭 장안점,서울특별시 동대문구 장안동 359-19 ,일식,null,null,null,null,null
+null,열정국밥,서울특별시 동대문구 장안동 380-3 ,한식,null,null,null,null,null
+null,청년레시피,서울특별시 동대문구 제기동 1019 경동시장 ,경양식,null,null,null,null,null
+null,동궁찜닭 장안점,서울특별시 동대문구 장안동 168-6 장안동근린생활시설및다가구주택 ,한식,null,null,null,null,null
+null,배달삼겹돼지되지 장안점,서울특별시 동대문구 장안동 104-5 ,한식,null,null,null,null,null
+null,스시고칸 장안점,서울특별시 동대문구 장안동 287-2 ,일식,null,null,null,null,null
+null,배고픈 덮밥이 장안점,서울특별시 동대문구 장안동 401-6 ,한식,null,null,null,null,null
+null,티유씨 TUC,서울특별시 동대문구 제기동 1207 ,경양식,null,null,null,null,null
+null,경희맛나곱창,서울특별시 동대문구 회기동 60-23 ,한식,null,null,null,null,null
+null,황금어장,서울특별시 동대문구 답십리동 66-16 ,횟집,null,null,null,null,null
+null,오색칼국수,서울특별시 동대문구 이문동 287-50 ,한식,null,null,null,null,null
+null,안주당,서울특별시 동대문구 답십리동 530-17 한성아펠시티 ,한식,null,null,null,null,null
+null,풍국면 장안점,서울특별시 동대문구 장안동 308-4 ,한식,null,null,null,null,null
+null,시골할매 김치찜,서울특별시 동대문구 전농동 204-10 ,한식,null,null,null,null,null
+null,꽃분이손두부,서울특별시 동대문구 용두동 122-49 ,한식,null,null,null,null,null
+null,묵치빠,서울특별시 동대문구 제기동 138-13 ,한식,null,null,null,null,null
+null,전주식당,서울특별시 동대문구 휘경동 165-16 ,한식,null,null,null,null,null
+null,명랑찜닭,서울특별시 동대문구 신설동 80-1 ,한식,null,null,null,null,null
+null,다미,서울특별시 동대문구 이문동 363-2 ,한식,null,null,null,null,null
+null,고기호랑이,서울특별시 동대문구 청량리동 30 ,한식,null,null,null,null,null
+null,꽃돼지상회,서울특별시 동대문구 휘경동 281-17 ,한식,null,null,null,null,null
+null,콩빠두,서울특별시 동대문구 답십리동 530-8 골든메카 ,한식,null,null,null,null,null
+null,황금닭발,서울특별시 동대문구 제기동 67-114 ,한식,null,null,null,null,null
+null,철수네 해산물 먹거리장터,서울특별시 동대문구 제기동 631-5 ,한식,null,null,null,null,null
+null,정화네 동태국,서울특별시 동대문구 전농동 597-2 ,한식,null,null,null,null,null
+null,달리자,서울특별시 동대문구 제기동 486-8 ,한식,null,null,null,null,null
+null,제니아,서울특별시 동대문구 답십리동 961-9 ,한식,null,null,null,null,null
+null,연한담,서울특별시 동대문구 제기동 137-5 ,한식,null,null,null,null,null
+null,소담찬,서울특별시 동대문구 휘경동 372 휘경에스케이뷰 ,한식,null,null,null,null,null
+null,청년한식,서울특별시 동대문구 제기동 1019 경동시장 ,한식,null,null,null,null,null
+null,파도식탁,서울특별시 동대문구 제기동 1019 경동시장 ,일식,null,null,null,null,null
+null,호랑이남매,서울특별시 동대문구 장안동 315-22 ,한식,null,null,null,null,null
+null,부어치킨,서울특별시 동대문구 장안동 116-2 ,한식,null,null,null,null,null
+null,숙이네,서울특별시 동대문구 전농동 295-52 ,한식,null,null,null,null,null
+null,삼첩분식 청량리점,서울특별시 동대문구 전농동 155 전농동삼성아파트 ,한식,null,null,null,null,null
+null,춘리마라탕 장안답십리점,서울특별시 동대문구 장안동 335-6 ,중국식,null,null,null,null,null
+null,고기듬뿍 국물두루치기,서울특별시 동대문구 청량리동 205-279 ,한식,null,null,null,null,null
+null,육회한연어씨,서울특별시 동대문구 전농동 645-2 동아아파트 ,한식,null,null,null,null,null
+null,마포갈비,서울특별시 동대문구 장안동 335-8 르.메이에르 장안타운 5차 ,한식,null,null,null,null,null
+null,피식,서울특별시 동대문구 전농동 103-493 ,일식,null,null,null,null,null
+null,누리식당,서울특별시 동대문구 이문동 292-10 이문동 웰츠타워 ,한식,null,null,null,null,null
+null,민속주점,서울특별시 동대문구 제기동 591-15 ,한식,null,null,null,null,null
+null,베스트생갈비찜&찜닭,서울특별시 동대문구 제기동 892-66 현대아파트 ,한식,null,null,null,null,null
+null,민자옥,서울특별시 동대문구 제기동 138-13 ,한식,null,null,null,null,null
+null,명가갈비찜,서울특별시 동대문구 청량리동 366 ,한식,null,null,null,null,null
+null,직화구이통삼겹,서울특별시 동대문구 답십리동 530-4 보광타워 ,한식,null,null,null,null,null
+null,동래정 장안점,서울특별시 동대문구 장안동 366-6 장안동 상가 ,한식,null,null,null,null,null
+null,짬뽕지존장안점,서울특별시 동대문구 장안동 372-4 장안동음식점빌딩 ,중국식,null,null,null,null,null
+null,88누룽지백숙감자탕,서울특별시 동대문구 휘경동 372 휘경에스케이뷰 ,한식,null,null,null,null,null
+null,청과포차,서울특별시 동대문구 제기동 647-1 ,한식,null,null,null,null,null
+null,초장집 장안점,서울특별시 동대문구 장안동 366-6 장안동 상가 ,한식,null,null,null,null,null
+null,일미리금계찜닭,서울특별시 동대문구 제기동 137-94 ,한식,null,null,null,null,null
+null,미아리우동집 용두동점,서울특별시 동대문구 용두동 119-61 ,한식,null,null,null,null,null
+null,윌리하우스,서울특별시 동대문구 청량리동 42-10 ,경양식,null,null,null,null,null
+null,결찌,서울특별시 동대문구 제기동 137-153 ,경양식,null,null,null,null,null
+null,고기반햄반김치찌개 장안동점,서울특별시 동대문구 답십리동 766 백석빌딩 ,한식,null,null,null,null,null
+null,청수식당,서울특별시 동대문구 전농동 38-45 ,한식,null,null,null,null,null
+null,스시마루,서울특별시 동대문구 휘경동 286-31 ,일식,null,null,null,null,null
+null,김제식당,서울특별시 동대문구 제기동 1019 경동시장 ,한식,null,null,null,null,null
+null,술독에 빠진 기린포차,서울특별시 동대문구 이문동 287-41 ,경양식,null,null,null,null,null
+null,일품식탁,서울특별시 동대문구 장안동 423-13 ,한식,null,null,null,null,null
+null,파스타집이야,서울특별시 동대문구 전농동 204-220 ,경양식,null,null,null,null,null
+null,카츠와이찌,서울특별시 동대문구 장안동 195-2 ,경양식,null,null,null,null,null
+null,서파넓적갈비 용두점,서울특별시 동대문구 용두동 39-752 ,한식,null,null,null,null,null
+null,경양카츠 경희대점,서울특별시 동대문구 회기동 60-24 ,경양식,null,null,null,null,null
+null,신미방 마라탕,서울특별시 동대문구 회기동 347-4 ,중국식,null,null,null,null,null
+null,할머니만두,서울특별시 동대문구 제기동 135-86 ,한식,null,null,null,null,null
+null,손큰할매순대국 고대점,서울특별시 동대문구 제기동 137-94 ,한식,null,null,null,null,null
+null,국주가,서울특별시 동대문구 회기동 106-6 ,한식,null,null,null,null,null
+null,갈비속으로,서울특별시 동대문구 답십리동 786 ,한식,null,null,null,null,null
+null,또봉이 통닭(휘경점),서울특별시 동대문구 휘경동 43-184 ,한식,null,null,null,null,null
+null,앤버드,서울특별시 동대문구 제기동 892-62 ,경양식,null,null,null,null,null
+null,카페55-1,서울특별시 동대문구 이문동 288-87 ,경양식,null,null,null,null,null
+null,미인김밥,서울특별시 동대문구 장안동 346-14 ,한식,null,null,null,null,null
+null,장안만두쟁이,서울특별시 동대문구 장안동 587 동대문더퍼스트데시앙 ,한식,null,null,null,null,null
+null,명가,서울특별시 동대문구 이문동 255-260 ,한식,null,null,null,null,null
+null,마드리짬뽕,서울특별시 동대문구 제기동 1152-7 ,중국식,null,null,null,null,null
+null,태양식품,서울특별시 동대문구 장안동 410-9 ,한식,null,null,null,null,null
+null,우리한식부페식당,서울특별시 동대문구 장안동 403-7 ,뷔페식,null,null,null,null,null
+null,교센,서울특별시 동대문구 회기동 107-13 ,일식,null,null,null,null,null
+null,부라더키친 동대문구점,서울특별시 동대문구 제기동 138-19 ,횟집,null,null,null,null,null
+null,서울왕도숯불갈비,서울특별시 동대문구 제기동 438-10 ,한식,null,null,null,null,null
+null,카츠이로하,서울특별시 동대문구 회기동 42-60 스페이스 플러스 ,경양식,null,null,null,null,null
+null,달포차,서울특별시 동대문구 장안동 289-33 ,한식,null,null,null,null,null
+null,진주돈까스,서울특별시 동대문구 휘경동 286-108 ,경양식,null,null,null,null,null
+null,파스타딜리 회기이문점,서울특별시 동대문구 이문동 327-8 ,경양식,null,null,null,null,null
+null,배봉도야지,서울특별시 동대문구 장안동 107-12 ,한식,null,null,null,null,null
+null,춘천닭갈비,서울특별시 동대문구 장안동 428-2 ,한식,null,null,null,null,null
+null,부안식당,서울특별시 동대문구 제기동 341 ,한식,null,null,null,null,null
+null,쇼후,서울특별시 동대문구 회기동 103-150 ,중국식,null,null,null,null,null
+null,진주포차,서울특별시 동대문구 전농동 497-75 ,한식,null,null,null,null,null
+null,딩동쿡,서울특별시 동대문구 전농동 295-142 ,한식,null,null,null,null,null
+null,문83,서울특별시 동대문구 장안동 417-5 ,경양식,null,null,null,null,null
+null,(주)은정푸드,서울특별시 동대문구 청량리동 520-2 ,한식,null,null,null,null,null
+null,주식회사 멘부리,서울특별시 동대문구 제기동 389 ,일식,null,null,null,null,null
+null,짜글이잘하는집 동대문외대점,서울특별시 동대문구 이문동 255-190 캠퍼스빌 ,한식,null,null,null,null,null
+null,경아식당,서울특별시 동대문구 제기동 636-2 ,한식,null,null,null,null,null
+null,자금성,서울특별시 동대문구 용두동 236-1 신설동역대우아이빌 ,중국식,null,null,null,null,null
+null,푸드딜리버리 동대문구점,서울특별시 동대문구 답십리동 249-15 ,한식,null,null,null,null,null
+null,춘리마라탕 외대점,서울특별시 동대문구 이문동 305-61 ,중국식,null,null,null,null,null
+null,언제나만족,서울특별시 동대문구 청량리동 205-757 ,한식,null,null,null,null,null
+null,주야식탁,서울특별시 동대문구 휘경동 312-65 ,한식,null,null,null,null,null
+null,정담초밥,서울특별시 동대문구 전농동 648-62 ,일식,null,null,null,null,null
+null,일품대패,서울특별시 동대문구 장안동 337-17 ,한식,null,null,null,null,null
+null,오팔식당,서울특별시 동대문구 신설동 103-1 ,한식,null,null,null,null,null
+null,장안뷔페,서울특별시 동대문구 장안동 285-4 ,한식,null,null,null,null,null
+null,장안집,서울특별시 동대문구 장안동 372-5 장안 NEW CITY ,한식,null,null,null,null,null
+null,뚱띠떡볶이,서울특별시 동대문구 장안동 373-1 양우 내안애 애플 ,한식,null,null,null,null,null
+null,만감(ManGam),서울특별시 동대문구 장안동 139-23 ,일식,null,null,null,null,null
+null,백소정 경희대점,서울특별시 동대문구 회기동 33-1 ,일식,null,null,null,null,null
+null,주술육회연어,서울특별시 동대문구 장안동 104-10 근생및주택 ,한식,null,null,null,null,null
+null,가비,서울특별시 동대문구 장안동 105-4 ,일식,null,null,null,null,null
+null,진미가정식백반,서울특별시 동대문구 이문동 291-32 ,한식,null,null,null,null,null
+null,엄지집밥,서울특별시 동대문구 장안동 168-39 ,한식,null,null,null,null,null
+null,메이,서울특별시 동대문구 장안동 287-6 ,중국식,null,null,null,null,null
+null,잔 제주,서울특별시 동대문구 제기동 138-19 ,일식,null,null,null,null,null
+null,윤중화요리,서울특별시 동대문구 제기동 348 신광빌딩 ,중국식,null,null,null,null,null
+null,이술집,서울특별시 동대문구 이문동 305-71 ,한식,null,null,null,null,null
+null,돈까스짱 전농동사거리점,서울특별시 동대문구 전농동 35-4 ,경양식,null,null,null,null,null
+null,빽보이 답십리사거리점,서울특별시 동대문구 답십리동 243-3 ,경양식,null,null,null,null,null
+null,가나점보돈까스,서울특별시 동대문구 답십리동 99-9 ,경양식,null,null,null,null,null
+null,제기동324마라탕,서울특별시 동대문구 제기동 324 ,중국식,null,null,null,null,null
+null,금수저,서울특별시 동대문구 이문동 255-188 C&J오피스텔 ,한식,null,null,null,null,null
+null,여울 다이닝,서울특별시 동대문구 청량리동 51-9 ,일식,null,null,null,null,null
+null,가정식뷔페,서울특별시 동대문구 청량리동 199-172 ,한식,null,null,null,null,null
+null,보배반점 장안점,서울특별시 동대문구 장안동 335-5 ,중국식,null,null,null,null,null
+null,착한마라탕,서울특별시 동대문구 전농동 648-57 ,중국식,null,null,null,null,null
+null,미니멀 샐러드,서울특별시 동대문구 이문동 288-53 ,한식,null,null,null,null,null
+null,좋은집다와,서울특별시 동대문구 휘경동 312-11 ,한식,null,null,null,null,null
+null,고향집,서울특별시 동대문구 제기동 585-1 ,한식,null,null,null,null,null
+null,한방약선식료원카페,서울특별시 동대문구 제기동 591-10 ,한식,null,null,null,null,null
+null,소문난 순대국 해장국,서울특별시 동대문구 용두동 689-19 ,한식,null,null,null,null,null
+null,소신선,서울특별시 동대문구 답십리동 497-9 젠트리움 ,한식,null,null,null,null,null
+null,곱창명가,서울특별시 동대문구 장안동 331-3 ,한식,null,null,null,null,null
+null,야미가,서울특별시 동대문구 이문동 255-255 ,일식,null,null,null,null,null
+null,1호선김밥,서울특별시 동대문구 휘경동 281-22 ,한식,null,null,null,null,null
+null,식탐한식부페,서울특별시 동대문구 제기동 478-4 ,한식,null,null,null,null,null
+null,철원포차,서울특별시 동대문구 제기동 433-4 ,한식,null,null,null,null,null
+null,스시혼,서울특별시 동대문구 이문동 246-23 ,일식,null,null,null,null,null
+null,마라대국 전농점,서울특별시 동대문구 전농동 60-25 ,중국식,null,null,null,null,null
+null,제주미향해장,서울특별시 동대문구 청량리동 790 ,한식,null,null,null,null,null
+null,마식당,서울특별시 동대문구 제기동 698 ,한식,null,null,null,null,null
+null,베이크 야미,서울특별시 동대문구 제기동 136-298 ,경양식,null,null,null,null,null
+null,장원닭한마리,서울특별시 동대문구 답십리동 21-8 답십리포레스트스퀘어 ,한식,null,null,null,null,null
+null,금수저,서울특별시 동대문구 이문동 288-20 ,한식,null,null,null,null,null
+null,한잔바다회,서울특별시 동대문구 용두동 790 롯데캐슬피렌체 ,일식,null,null,null,null,null
+null,장흥포차,서울특별시 동대문구 제기동 472 ,한식,null,null,null,null,null
+null,정푸드,서울특별시 동대문구 전농동 520-16 ,한식,null,null,null,null,null
+null,목욕탕 실내포차,서울특별시 동대문구 전농동 183-36 ,한식,null,null,null,null,null
+null,키친 마카로니,서울특별시 동대문구 장안동 380-3 ,경양식,null,null,null,null,null
+null,미랑푸드,서울특별시 동대문구 장안동 394-15 ,한식,null,null,null,null,null
+null,동묘흑염소삼계탕,서울특별시 동대문구 신설동 73-5 ,한식,null,null,null,null,null
+null,쌈마루,서울특별시 동대문구 전농동 644-90 ,한식,null,null,null,null,null
+null,유연한식당,서울특별시 동대문구 장안동 167-6 ,일식,null,null,null,null,null
+null,마라입구마라탕,서울특별시 동대문구 장안동 430-8 ,중국식,null,null,null,null,null
+null,혜니키친,서울특별시 동대문구 제기동 1019 경동시장 ,한식,null,null,null,null,null
+null,손오공마라탕 경희대점,서울특별시 동대문구 회기동 16-68 ,중국식,null,null,null,null,null
+null,양꼬치92,서울특별시 동대문구 전농동 648-92 ,중국식,null,null,null,null,null
+null,젓가락질 잘해야만 밥을 먹나요,서울특별시 동대문구 답십리동 475-146 ,한식,null,null,null,null,null
+null,안주상회 회기점,서울특별시 동대문구 회기동 16-57 ,횟집,null,null,null,null,null
+null,회식의달인,서울특별시 동대문구 장안동 466-2 ,한식,null,null,null,null,null
+null,폰드(FOND),서울특별시 동대문구 휘경동 28-35 ,경양식,null,null,null,null,null
+null,세현푸드,서울특별시 동대문구 전농동 204-44 ,한식,null,null,null,null,null
+null,왕산포차,서울특별시 동대문구 전농동 602-7 ,한식,null,null,null,null,null
+null,광주식당,서울특별시 동대문구 제기동 136-148 ,한식,null,null,null,null,null
+null,수유리혼밥왕&국제시장국밥,서울특별시 동대문구 장안동 184-20 ,한식,null,null,null,null,null
+null,일구팔팔(1988),서울특별시 동대문구 이문동 305-6 ,한식,null,null,null,null,null
+null,피자파스토(PizzaPasto),서울특별시 동대문구 휘경동 286-336 ,경양식,null,null,null,null,null
+null,매일식품관,서울특별시 동대문구 전농동 591-53 청량리역 롯데백화점 ,한식,null,null,null,null,null
+null,삼청당 경희대점,서울특별시 동대문구 회기동 8-5 ,한식,null,null,null,null,null
+null,비비큐(BBQ) 전농행복점,서울특별시 동대문구 전농동 695 동대문 롯데캐슬 노블레스 ,한식,null,null,null,null,null
+null,헤이마오차이 외대점,서울특별시 동대문구 이문동 305-63 ,중국식,null,null,null,null,null
+null,초심회관,서울특별시 동대문구 장안동 435-1 ,한식,null,null,null,null,null
+null,수상한 키친,서울특별시 동대문구 이문동 64 쌍용아파트 ,일식,null,null,null,null,null
+null,꾸워봐,서울특별시 동대문구 장안동 312-12 ,한식,null,null,null,null,null
+null,라멘짱 청량리역점,서울특별시 동대문구 전농동 591-53 청량리역 롯데백화점 ,일식,null,null,null,null,null
+null,빽보이피자 외대앞점,서울특별시 동대문구 이문동 287-61 ,경양식,null,null,null,null,null
+null,편백집 청량리역사점,서울특별시 동대문구 전농동 591-53 청량리역 롯데백화점 ,한식,null,null,null,null,null
+null,회기 우화당,서울특별시 동대문구 휘경동 319-3 ,한식,null,null,null,null,null
+null,태곱이네,서울특별시 동대문구 휘경동 286-127 ,한식,null,null,null,null,null
+null,케이푸디,서울특별시 동대문구 전농동 55-90 ,한식,null,null,null,null,null
+null,해마루푸드 주식회사,서울특별시 동대문구 전농동 622-1 ,한식,null,null,null,null,null
+null,닭찌 흔한 닭볶음탕에도 명품은 있다,서울특별시 동대문구 장안동 305-11 ,한식,null,null,null,null,null
+null,행운돈까스,서울특별시 동대문구 장안동 337-20 ,경양식,null,null,null,null,null
+null,더노벰버라운지 고대점,서울특별시 동대문구 용두동 753-9 래미안엘리니티 ,경양식,null,null,null,null,null
+null,우마스시,서울특별시 동대문구 휘경동 191-4 ,일식,null,null,null,null,null
+null,오늘칡냉면,서울특별시 동대문구 장안동 383-9 ,한식,null,null,null,null,null
+null,오육,서울특별시 동대문구 용두동 741-10 ,한식,null,null,null,null,null
+null,88제육,서울특별시 동대문구 장안동 403-2 ,한식,null,null,null,null,null
+null,경동컵밥,서울특별시 동대문구 제기동 1019 경동시장 ,한식,null,null,null,null,null
+null,시안식당,서울특별시 동대문구 제기동 138-19 ,중국식,null,null,null,null,null
+null,제일식당,서울특별시 동대문구 제기동 1016 ,한식,null,null,null,null,null
+null,똑이네떡볶이,서울특별시 동대문구 전농동 209-128 ,한식,null,null,null,null,null
+null,본죽&비빔밥 회기역점,서울특별시 동대문구 휘경동 264-2 효자 워너빌 ,한식,null,null,null,null,null
+null,우덮동밥,서울특별시 동대문구 이문동 316-3 ,한식,null,null,null,null,null
+null,키요이미즈,서울특별시 동대문구 장안동 94-27 장안동 마루하우스 ,일식,null,null,null,null,null
+null,장안정,서울특별시 동대문구 장안동 142-3 ,한식,null,null,null,null,null
+null,지어앤Choen,서울특별시 동대문구 회기동 346-29 ,외국음식전문점(인도 태국등),null,null,null,null,null
+null,샹샤오미 중식당,서울특별시 동대문구 회기동 346-19 ,중국식,null,null,null,null,null
+null,사랑애흑염소,서울특별시 동대문구 휘경동 253-5 ,한식,null,null,null,null,null
+null,딜리버링,서울특별시 동대문구 제기동 714-10 ,한식,null,null,null,null,null
+null,김선생 나주곰탕,서울특별시 동대문구 제기동 1149-16 ,한식,null,null,null,null,null
+null,오고고,서울특별시 동대문구 답십리동 488-71 ,한식,null,null,null,null,null
+null,오늘포차,서울특별시 동대문구 장안동 395-5 화성골드빌라트 ,한식,null,null,null,null,null
+null,맛고을 푸드,서울특별시 동대문구 전농동 688-3 래미안아름숲 상가 ,한식,null,null,null,null,null
+null,육반상회,서울특별시 동대문구 답십리동 246-10 ,한식,null,null,null,null,null
+null,도모다찌에 꼬치다,서울특별시 동대문구 회기동 42-75 ,일식,null,null,null,null,null
+null,길동우동,서울특별시 동대문구 회기동 1-5 경희의료원 ,한식,null,null,null,null,null
+null,천희공관,서울특별시 동대문구 회기동 45-121 ,중국식,null,null,null,null,null
+null,수유리혼밥왕 외대점,서울특별시 동대문구 이문동 287-18 ,한식,null,null,null,null,null
+null,도야짬뽕 장안직영점,서울특별시 동대문구 장안동 302-3 ,중국식,null,null,null,null,null
+null,용두홍어,서울특별시 동대문구 청량리동 789 ,한식,null,null,null,null,null
+null,광식당,서울특별시 동대문구 장안동 307-1 J빌딩 ,한식,null,null,null,null,null
+null,정선 육회&연어,서울특별시 동대문구 장안동 289-13 ,한식,null,null,null,null,null
+null,수제비집,서울특별시 동대문구 청량리동 499 ,한식,null,null,null,null,null
+null,진성식당,서울특별시 동대문구 장안동 341-2 ,한식,null,null,null,null,null
+null,와떠마라탕 회기점,서울특별시 동대문구 회기동 103-3 ,중국식,null,null,null,null,null
+null,다올뷔페 2호점,서울특별시 동대문구 장안동 188-19 ,뷔페식,null,null,null,null,null
+null,금도리 곱도리,서울특별시 동대문구 제기동 844-1 ,한식,null,null,null,null,null
+null,왕언니네,서울특별시 동대문구 제기동 1019 경동시장 ,한식,null,null,null,null,null
+null,펜타스원 딜리버리,서울특별시 동대문구 답십리동 242-1 코지스페이스 ,한식,null,null,null,null,null
+null,아리아,서울특별시 동대문구 회기동 42-73 ,한식,null,null,null,null,null
+null,금수저 함바식당,서울특별시 동대문구 휘경동 117 동양2차아파트 ,한식,null,null,null,null,null
+null,경성고기꾼 익스프레스,서울특별시 동대문구 회기동 16-23 ,한식,null,null,null,null,null
+null,든든식탁,서울특별시 동대문구 휘경동 366 동일스위트리버 ,한식,null,null,null,null,null
+null,전주식당,서울특별시 동대문구 휘경동 294-187 ,한식,null,null,null,null,null
+null,키라키라윤 회기점,서울특별시 동대문구 회기동 107-13 ,한식,null,null,null,null,null
+null,공릉닭한마리,서울특별시 동대문구 장안동 310-2 ,한식,null,null,null,null,null
+null,세친구곱창,서울특별시 동대문구 장안동 287-2 ,한식,null,null,null,null,null
+null,닭발의꿈,서울특별시 동대문구 청량리동 18-19 ,한식,null,null,null,null,null
+null,카리스,서울특별시 동대문구 청량리동 37 ,경양식,null,null,null,null,null
+null,숙성회136 안암점,서울특별시 동대문구 제기동 1194 ,일식,null,null,null,null,null
+null,준호네,서울특별시 동대문구 신설동 109-5 서울풍물시장 ,한식,null,null,null,null,null
+null,삼형제김밥 경희대점,서울특별시 동대문구 회기동 42-54 ,경양식,null,null,null,null,null
+null,써니네식당,서울특별시 동대문구 장안동 362-9 ,한식,null,null,null,null,null
+null,미아회관 제기직영점,서울특별시 동대문구 제기동 798 ,한식,null,null,null,null,null
+null,런에이Runay,서울특별시 동대문구 신설동 109-8 청광플러스원청계 ,한식,null,null,null,null,null
+null,동네파스타 회기이문본점,서울특별시 동대문구 이문동 64 쌍용아파트 ,경양식,null,null,null,null,null
+null,승우푸드,서울특별시 동대문구 장안동 390-13 ,한식,null,null,null,null,null
+null,열정국밥 회기점,서울특별시 동대문구 회기동 103-54 ,한식,null,null,null,null,null
+null,남원정통추어탕,서울특별시 동대문구 전농동 38-37 ,한식,null,null,null,null,null
+null,연서네떡갈비 2호점,서울특별시 동대문구 제기동 314 ,한식,null,null,null,null,null
+null,직화짬뽕,서울특별시 동대문구 휘경동 49-78 ,중국식,null,null,null,null,null
+null,직화대장,서울특별시 동대문구 장안동 93-42 ,한식,null,null,null,null,null
+null,스시준,서울특별시 동대문구 휘경동 281-6 ,일식,null,null,null,null,null
+null,호노오,서울특별시 동대문구 제기동 1019 경동시장 ,일식,null,null,null,null,null
+null,오늘동,서울특별시 동대문구 전농동 498-10 ,일식,null,null,null,null,null
+null,향래원마라탕,서울특별시 동대문구 제기동 714-18 ,중국식,null,null,null,null,null
+null,덮담 회기점,서울특별시 동대문구 이문동 64 쌍용아파트 ,한식,null,null,null,null,null
+null,(주)육전에프앤씨,서울특별시 동대문구 용두동 105-3 ,한식,null,null,null,null,null
+null,또순이순대곱창1976 회기점,서울특별시 동대문구 이문동 64 쌍용아파트 ,한식,null,null,null,null,null
+null,상상김밥,서울특별시 동대문구 신설동 104-7 ,한식,null,null,null,null,null
+null,불닭볶음탕,서울특별시 동대문구 전농동 103-583 ,한식,null,null,null,null,null
+null,두번먹는명인김치찜,서울특별시 동대문구 전농동 103-583 ,한식,null,null,null,null,null
+null,엄마손식도락,서울특별시 동대문구 장안동 184-21 ,한식,null,null,null,null,null
+null,가끔맛,서울특별시 동대문구 회기동 60-92 ,한식,null,null,null,null,null
+null,진도맛집,서울특별시 동대문구 제기동 486-17 ,한식,null,null,null,null,null
+null,화산 반점,서울특별시 동대문구 휘경동 286-225 ,중국식,null,null,null,null,null
+null,오레노카츠(경희대점),서울특별시 동대문구 회기동 16-69 ,일식,null,null,null,null,null
+null,지금나와  여기가자,서울특별시 동대문구 휘경동 276-45 ,한식,null,null,null,null,null
+null,양대왕양꼬치,서울특별시 동대문구 회기동 42-62 힐링빌 ,중국식,null,null,null,null,null
+null,원푸드,서울특별시 동대문구 장안동 383-9 ,한식,null,null,null,null,null
+null,신나라,서울특별시 동대문구 청량리동 788 ,한식,null,null,null,null,null
+null,촨후,서울특별시 동대문구 회기동 42-71 ,중국식,null,null,null,null,null
+null,마미묵은지김치찜,서울특별시 동대문구 장안동 298-14 ,한식,null,null,null,null,null
+null,가마솥황칠갈비탕,서울특별시 동대문구 답십리동 66-41 ,한식,null,null,null,null,null
+null,맛있는 시장닭발,서울특별시 동대문구 제기동 630-9 ,한식,null,null,null,null,null
+null,참치장수,서울특별시 동대문구 답십리동 21-55 ,일식,null,null,null,null,null
+null,전농피자,서울특별시 동대문구 전농동 10 전농 SK아파트 ,경양식,null,null,null,null,null
+null,호이호이 마라&로제 찜닭,서울특별시 동대문구 제기동 844-1 ,한식,null,null,null,null,null
+null,라라카츠 동대문전농점,서울특별시 동대문구 전농동 295-48 북동점포 ,일식,null,null,null,null,null
+null,옛날시골집얼큰이뼈해장국 서울장안점,서울특별시 동대문구 장안동 415-8 보니타 오피스텔 ,한식,null,null,null,null,null
+null,더바른정국밥(제기점),서울특별시 동대문구 제기동 122-529 ,한식,null,null,null,null,null
+null,이코중식,서울특별시 동대문구 회기동 45-102 ,중국식,null,null,null,null,null
+null,선이네곱창,서울특별시 동대문구 전농동 183-29 ,한식,null,null,null,null,null
+null,장독대숙성김치찜 회기점,서울특별시 동대문구 이문동 64 쌍용아파트 ,한식,null,null,null,null,null
+null,마루칼국수,서울특별시 동대문구 답십리동 467-45 ,한식,null,null,null,null,null
+null,임금님 파스타,서울특별시 동대문구 장안동 152-32 ,경양식,null,null,null,null,null
+null,제이와이(JY푸드),서울특별시 동대문구 답십리동 490-123 ,한식,null,null,null,null,null
+null,짝태앤노가리,서울특별시 동대문구 휘경동 34-57 ,한식,null,null,null,null,null
+null,무지개맥주,서울특별시 동대문구 회기동 60-47 ,한식,null,null,null,null,null
+null,안푸드,서울특별시 동대문구 답십리동 70-15 ,한식,null,null,null,null,null
+null,우렁쌈밥,서울특별시 동대문구 장안동 93-102 ,한식,null,null,null,null,null
+null,다원,서울특별시 동대문구 답십리동 242-3 ,중국식,null,null,null,null,null
+null,기깔난게장 무한리필,서울특별시 동대문구 장안동 378-6 선빌딩 ,한식,null,null,null,null,null
+null,삼화만두,서울특별시 동대문구 장안동 424-7 ,한식,null,null,null,null,null
+null,노모어피자 답십리점,서울특별시 동대문구 답십리동 250-1 ,경양식,null,null,null,null,null
+null,루이상하이훈툰,서울특별시 동대문구 회기동 347-6 ,중국식,null,null,null,null,null
+null,인생감자탕 외대점,서울특별시 동대문구 이문동 288-41 민족통일빌딩 ,한식,null,null,null,null,null
+null,노이,서울특별시 동대문구 용두동 118-105 ,경양식,null,null,null,null,null
+null,동대문부대찌개,서울특별시 동대문구 장안동 410-12 ,한식,null,null,null,null,null
+null,상상오리 장안점,서울특별시 동대문구 장안동 535-2 ,한식,null,null,null,null,null

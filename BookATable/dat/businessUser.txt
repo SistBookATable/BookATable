@@ -1,4 +1,3 @@
-ID,Pw,name,license,phone,bank,acc,signout
 ebkfy,uuqolafq&,최준영,002-00-40342,010-4690-5564,케이뱅크,777-876-395939,null
 hlczlzr,vyxjtg!,강원훈,005-44-05382,010-3120-7316,케이뱅크,883-596-816460,null
 zszwd,jhwrmddx%,최준혜,008-84-17494,010-3540-0176,신한은행,770-667-265700,null

@@ -1,6 +1,9 @@
 package com.test.java.view;
 
+import java.io.IOException;
 import java.util.Scanner;
+
+import com.github.lalyos.jfiglet.FigletFont;
 
 public class MainView {
 
@@ -8,8 +11,18 @@ public class MainView {
 	 * 로고 출력
 	 */
 	public static void logo() {
+		System.out.println();
 		// TODO 로고 출력화면 만들기 
-		System.out.println("logo");
+		try {
+		    String asciiArt;
+			asciiArt = FigletFont.convertOneLine("BookATable");
+		    System.out.println(asciiArt);
+		    
+		    
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 	
 
@@ -18,10 +31,11 @@ public class MainView {
 	 * 
 	 */
 	public static void show() {
-		System.out.println("1. 회원 가입");
-		System.out.println("2. 로그인");
-		System.out.println("3. 계정 찾기");
-		System.out.println("4. 음식점 검색");
+		System.out.println("□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□");
+		System.out.println("┌──────────────┐\t┌──────────────┐\t┌───────────────┐\t┌───────────────┐");
+		System.out.println("|  1. 회원 가입   |\t|   2. 로그인    |\t|   3. 계정 찾기   |\t|  4. 음식점 검색  |");
+		System.out.println("└──────────────┘\t└──────────────┘\t└───────────────┘\t└───────────────┘");
+		System.out.println();
 	}
 
 	/**

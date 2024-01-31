@@ -23,6 +23,7 @@ public class Data {
 	
 	//프로그램을 시작할 때 file의 내용을 모두 메모리에 넣는 작업
 	public static void load() {
+		
 
 	}
 	//프로그램을 끝낼 때 메모리의 내용을 모두 file에 넣는 작업

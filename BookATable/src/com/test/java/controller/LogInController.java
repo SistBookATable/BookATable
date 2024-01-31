@@ -1,9 +1,9 @@
 package com.test.java.controller;
 
 import java.io.BufferedReader;
-import java.io.FileReader;
 import java.util.ArrayList;
 
+import com.test.java.model.Member;
 import com.test.java.model.User;
 import com.test.java.repository.Data;
 import com.test.java.view.LogInView;
@@ -11,34 +11,37 @@ import com.test.java.view.LogInView;
 public class LogInController {
 	
 	public void logIn() {
-		ArrayList<String> inputList = new ArrayList<String>();
-		inputList = LogInView.getInput();
 		
-		User user = new User();
+		boolean loop = true;
 		
-		try {
-			BufferedReader reader
-				= new BufferedReader(new FileReader(Data.getUser())); 
+		while(loop) {
 			
-			String line = null;
-			while((line = reader.readLine()) != null) {
-				String[] tmp = line.split(",");
-				
-				if(tmp[1].equals(inputList.get(0))) {
-					break;
-				} else {
-					System.out.println("해당 ID를 찾을 수 없습니다.");
-				}
+			ArrayList<String> input = LogInView.getInput();
+			String inputId = input.get(0);
+			String inputPw = input.get(1);
+			
+			if (!checkInputId(inputId)) {
+				System.out.println("해당 ID를 찾을 수 없습니다.");
+				loop = true;
+			} else {
+				loop = false;
 			}
 			
-			
-		} catch (Exception e) {
-
 		}
 		
-		
-	
 	}
-	
+
+	private boolean checkInputId(String inputId) {
+		
+		for(Member u : Data.memberList) {
+			System.out.println(u.getId());
+			
+			if (inputId.equals(u.getId())) {
+				return true;
+			}
+		}
+		
+		return false;
+	}
 }
      

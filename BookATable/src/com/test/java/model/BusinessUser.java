@@ -2,15 +2,14 @@ package com.test.java.model;
 
 import java.util.Calendar;
 
-public class User {
+public class BusinessUser {
 	
 	private String id; 
 	private String pw; 
 	private String name; 
+	private String storeName; 
+	private String licenseNumber;
 	private String phoneNumber;
-	private Calendar birth;
-	private int noshowCount;
-	private int balance;
 	private String account; 
 	private Calendar signOut;
 	
@@ -26,20 +25,16 @@ public class User {
 		return name;
 	}
 
+	public String getStoreName() {
+		return storeName;
+	}
+
+	public String getLicenseNumber() {
+		return licenseNumber;
+	}
+
 	public String getPhoneNumber() {
 		return phoneNumber;
-	}
-
-	public Calendar getBirth() {
-		return birth;
-	}
-
-	public int getNoshowCount() {
-		return noshowCount;
-	}
-
-	public int getBalance() {
-		return balance;
 	}
 
 	public String getAccount() {
@@ -50,12 +45,14 @@ public class User {
 		return signOut;
 	}
 
-	public boolean checkid(String id) {
+	public boolean checkId(String inputId) {
 		return true;
 	}
 	
-	public boolean checkSignOut(Calendar signOut) {
+	public boolean checkSignOut(Calendar inputSignOut) {
 		return true;
 	}
+
+	
 	
 }

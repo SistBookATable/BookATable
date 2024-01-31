@@ -10,7 +10,10 @@ public class UserView {
 		
 	}
 	
-	public void show(ArrayList<User> userList) {
+
+	public void show(ArrayList<User> user) {
 		
 	}
+	
 }
+

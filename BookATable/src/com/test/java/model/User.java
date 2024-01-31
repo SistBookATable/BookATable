@@ -14,6 +14,7 @@ public class User extends Member{
 	private int balance;
 	private String bank;
 	private String account; 
+	private String checkStop;
 	private Calendar signOut;
 	
 	public User() {
@@ -21,7 +22,7 @@ public class User extends Member{
 	}
 	
 	public User (String id, String pw, String name, String phoneNumber, String jumin, int noshowCount, int balance,
-			String account, Calendar signOut) {
+			String account, String checkStop, Calendar signOut) {
 		super();
 		this.userType = 1;
 		this.id = id;
@@ -32,6 +33,7 @@ public class User extends Member{
 		this.noshowCount = noshowCount;
 		this.balance = balance;
 		this.account = account;
+		this.checkStop = checkStop;
 		this.signOut = signOut;
 	}
 	

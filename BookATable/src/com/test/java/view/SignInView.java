@@ -10,9 +10,15 @@ public class SignInView {
 	 * 일반회원가입, 업체회원가입 선택 화면 
 	 */
 	public static void showSelectType() {
-		System.out.println("1. 일반 회원");
-		System.out.println("2. 업체 회원");
-		System.out.println("0. 회원 가입 취소");
+		System.out.println();
+		System.out.println();
+		System.out.println("------------------------------------------------------------------------------------------");
+		System.out.println("               회원 가입 - 회원 그룹을 선택해주세요             ■");
+		System.out.println("□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□");
+		System.out.println("■           1. 일반 회원              ■");
+		System.out.println("■           2. 업체 회원              ■");
+		System.out.println("■           0. 회원 가입 취소          ■");
+		System.out.println("□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□");
 		System.out.println();
 		System.out.print("선택(번호) : ");
 	}

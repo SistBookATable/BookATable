@@ -5,7 +5,12 @@ import com.test.java.model.Store;
 import com.test.java.view.BusinessUserSignInView;
 
 public class BusinessUserSignInController {
-
+	
+	/**
+	 * @return boolean
+	 * 업체회원 회원가입이 완료되면 true
+	 * 가입이 중단되면 false
+	 */
 	public static boolean signIn() {
 		String storeName = BusinessUserSignInView.getStoreName();
 		String name = BusinessUserSignInView.getName();

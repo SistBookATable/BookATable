@@ -5,6 +5,11 @@ import com.test.java.view.UserSignInView;
 
 public class UserSignInController {
 
+	/**
+	 * @return boolean
+	 * 일반회원 회원가입이 완료되면 true
+	 * 가입이 중단되면 false
+	 */
 	public static boolean signIn() {
 		
 		String name = UserSignInView.getName();

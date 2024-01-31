@@ -8,9 +8,10 @@ public class User {
 	private String pw; 
 	private String name; 
 	private String phoneNumber;
-	private Calendar birth;
+	private String jumin;
 	private int noshowCount;
 	private int balance;
+	private String bank; 
 	private String account; 
 	private Calendar signOut;
 	
@@ -30,8 +31,8 @@ public class User {
 		return phoneNumber;
 	}
 
-	public Calendar getBirth() {
-		return birth;
+	public String getJumin() {
+		return jumin;
 	}
 
 	public int getNoshowCount() {

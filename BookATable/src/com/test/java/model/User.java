@@ -12,11 +12,15 @@ public class User {
 	private String jumin;
 	private int noshowCount;
 	private int balance;
+	private String bank;
 	private String account; 
 	private Calendar signOut;
 	
+	public User() {
+		
+	}
 	
-	public User(String id, String pw, String name, String phoneNumber, String jumin, int noshowCount, int balance,
+	public User (String id, String pw, String name, String phoneNumber, String jumin, int noshowCount, int balance,
 			String account, Calendar signOut) {
 		super();
 		this.userType = 1;
@@ -29,6 +33,10 @@ public class User {
 		this.balance = balance;
 		this.account = account;
 		this.signOut = signOut;
+	}
+	
+	public int getUserType() {
+		return userType;
 	}
 
 	public String getId() {

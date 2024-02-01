@@ -121,6 +121,8 @@ public class MainController {
 
 	public static void load() {
 		Data.loadAdmin();
+		Data.loadUser();
+		Data.loadBusinessUser();
 		for(Member m : Data.memberList) {
 			System.out.println(m);
 		}

@@ -43,16 +43,19 @@ public class MainController {
 
 				MainView.logo();
 				MainView.userPage();
+				loop = false;
 			}
 			else if(Member.level == 2) {
 
 				MainView.logo();
 				MainView.businessUserPage();
+				loop = false;
 			}
 			else if(Member.level == 3) {
 
 				MainView.logo();
 				MainView.adminPage();
+				loop = false;
 
 			}
 		}

@@ -1,9 +1,10 @@
 package com.test.java.repository;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.util.ArrayList;
-import java.util.Calendar;
 
 import com.test.java.model.Admin;
 import com.test.java.model.BusinessUser;
@@ -98,9 +99,66 @@ public class Data {
 	}
 	
 	//프로그램을 끝낼 때 메모리의 내용을 모두 file에 넣는 작업
-	public static void save() {
+	public static void saveUser() {
+		try {
+			BufferedWriter writer = new BufferedWriter(new FileWriter(Data.USER));
+			
+			for(Member user : Data.memberList) {
+				if (user.getUserType() == 1) {
+					
+					String line = String.format("%d,%s,%s,%s,%s,%s,%s,%s,%d,%d,%d,%s,%s"
+												, user.getUserType(), user.getId(), user.getPw(), user.getName()
+												, user.getPhoneNumber(), user.getPhoneNumber(), ((User)user).getJumin()
+												, ((User)user).getBank(), ((User)user).getAccount(), ((User)user).getBalance()
+												, ((User)user).getReservationCount(), ((User)user), ((User)user).getNoshowCount()
+												, ((User)user).getCheckStop(), ((User)user).getSignIn(), ((User)user).getSignOut()); 
+					writer.write(line);
+					
+				}
+			}
+			
+			writer.close();
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 
 	}
+
+	public static void saveBusinessUser() {
+		try {
+			BufferedWriter writer = new BufferedWriter(new FileWriter(Data.BUSINESSUSER));
+			
+			for(Member businessUser : Data.memberList) {
+				if (businessUser.getUserType() == 1) {
+					/*
+						BusinessUser(int userType, String id, String pw, String name, String licenseNumber, String phoneNumber,
+									String bank, String account, String signIn, String signOut)
+					*/
+					String line = String.format("%d,%s,%s,%s,%s,%s,%s,%s,%s,%s"
+												, businessUser.getUserType(), businessUser.getId(), businessUser.getPw()
+												, businessUser.getName(), ((BusinessUser)businessUser).getLicenseNumber()
+												, businessUser.getPhoneNumber(), ((BusinessUser)businessUser).getBank()
+												, ((BusinessUser)businessUser).getAccount()
+												, ((BusinessUser)businessUser).getSignIn()
+												, ((BusinessUser)businessUser).getSignOut());
+							
+							
+					writer.write(line);
+					
+				}
+			}
+			
+			writer.close();
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+	}
+	
+	
+	
 	public static String getUser() {
 		return USER;
 	}

@@ -26,7 +26,6 @@ public class ReservationManagementView {
 		Scanner scan = new Scanner(System.in);
 		int temp = scan.nextInt();
 		scan.nextLine();
-		scan.close();
 		
 		return temp;
 	}

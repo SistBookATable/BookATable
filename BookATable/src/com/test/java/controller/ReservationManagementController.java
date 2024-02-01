@@ -9,6 +9,18 @@ public class ReservationManagementController {
 		ReservationManagementView.showReservationManagement();
 		int choice = ReservationManagementView.get();
 		
+		switch(choice) {
+		case 1:
+			ReservationStatusInquiryController reservationStatusInquiryController
+				= new ReservationStatusInquiryController();
+			reservationStatusInquiryController.reservationStatusInquiry();
+			
+		case 2:
+			
+		case 0:
+		
+		}
+		
 	}
 
 }

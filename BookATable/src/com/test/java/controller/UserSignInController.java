@@ -4,6 +4,7 @@ import com.test.java.model.Member;
 import com.test.java.model.User;
 import com.test.java.repository.Data;
 import com.test.java.view.UserSignInView;
+import com.test.java.view.View;
 
 public class UserSignInController {
 
@@ -22,17 +23,21 @@ public class UserSignInController {
 		String pw = UserSignInView.getPw();
 		
 		
-		User user = new User(id,pw,name,phone,jumin,0,0,account,null,null);
+		User user = new User(id,pw,name,phone,jumin,0,0,null,account,null,null);
 		
 //		//유효성 검사
 //		if(isValid(user)) {
 //			return true;
 //		}
 		
+		
+		System.out.println("회원가입이 완료되었습니다.");
 		Data.memberList.add(user);
 		for(Member u : Data.memberList) {
 			System.out.println(u);
 		}
+		
+		View.pause();
 		
 		return true;
 	}

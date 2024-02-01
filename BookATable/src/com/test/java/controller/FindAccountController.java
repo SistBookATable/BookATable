@@ -3,6 +3,7 @@ package com.test.java.controller;
 import com.test.java.model.Member;
 import com.test.java.repository.Data;
 import com.test.java.view.FindAccountView;
+import com.test.java.view.View;
 
 public class FindAccountController {
 
@@ -35,6 +36,8 @@ public class FindAccountController {
 		default:
 			break;
 		}
+		
+		View.pause();
 	}
 
 	private String FindPw(String id, String phoneNumber) {

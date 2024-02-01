@@ -39,7 +39,7 @@ public class LogInController {
 				} else {
 					System.out.println(u.getName() + "님, 로그인에 성공하셨습니다.");
 					Member.level = u.getUserType();
-					findById(Member.id);
+					findNameById(Member.id);
 					return true;
 				}
 			} 
@@ -48,7 +48,7 @@ public class LogInController {
 		return false;
 	}
 
-	private String findById(String id) {
+	private String findNameById(String id) {
 		String name = "";
 		
 		for(Member u : Data.memberList) {

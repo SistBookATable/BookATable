@@ -6,7 +6,7 @@ public class LogOutController {
 
 	public void logOut() {
 		Member.level = 0;
-		Member.name = null;
+		Member.id = null;
 		
 	}
 

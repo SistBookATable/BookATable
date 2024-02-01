@@ -39,13 +39,26 @@ public class LogInController {
 				} else {
 					System.out.println(u.getName() + "님, 로그인에 성공하셨습니다.");
 					Member.level = u.getUserType();
-					Member.name = u.getName();
+					findById(Member.id);
 					return true;
 				}
 			} 
 		}
 		System.out.println("해당 아이디를 찾을 수 없습니다.");
 		return false;
+	}
+
+	private String findById(String id) {
+		String name = "";
+		
+		for(Member u : Data.memberList) {
+			if(u.getId().equals(id)) {
+				name = u.getName();
+				break;
+			}
+		}
+		return name;
+		
 	}
 
 }

@@ -1,11 +1,12 @@
 package com.test.java.view;
 
 import com.test.java.model.Member;
+import com.test.java.model.User;
 import com.test.java.repository.Data;
 
 public class SignInUserManagementView {
 
-	public static void showSignInUser() {
+	public static void findAllUser() {
 
 		System.out.println();
 		System.out.println();
@@ -14,12 +15,24 @@ public class SignInUserManagementView {
 		System.out.println("└───────────────────────────────────────────────────────┘");
 		System.out.println();
 		
-		System.out.println("[회원ID]\t[가입일]\t[회원 이름]\t[예약 횟수]\t[노쇼 횟수]\t[정지 여부]");
+		String header = String.format("%15s%15s%15s%15s%15s%15s", "[회원ID]","[가입일]","[회원 이름]","[예약 횟수]","[노쇼 횟수]","[정지 여부]");
+		System.out.println(header);
 		
 		for(Member m : Data.memberList) {
 			String tmp = "";
-			String.format("%s\t%s\t%s\t%s\t%s\t%s\t");
+			if(m.getUserType() == 1) {
+				tmp = String.format("%15s%18s%15s%15d회%15d회%15s", 
+						m.getId(),
+						m.getSignIn(),
+						m.getName(),
+						((User)m).getNoshowCount(),
+						((User)m).getReservationCount(),
+						((User)m).getNoshowCount()>10? "정지회원입니다.":" ");
+				System.out.println(tmp);
+			}
+			
 		}
+		View.pause();
 	}
 
 }

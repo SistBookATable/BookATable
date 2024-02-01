@@ -10,6 +10,7 @@ public class User extends Member{
 	private String name; 
 	private String phoneNumber;
 	private String jumin;
+	private int reservationCount;
 	private int noshowCount;
 	private int balance;
 	private String bank;
@@ -22,7 +23,7 @@ public class User extends Member{
 		
 	}
 	
-	public User (String id, String pw, String name, String phoneNumber, String jumin, int noshowCount, int balance,
+	public User (String id, String pw, String name, String phoneNumber, String jumin, int reservationCount, int noshowCount, int balance,
 			String bank, String account, String checkStop, String signIn, String signOut) {
 		super();
 		this.userType = 1;
@@ -31,6 +32,7 @@ public class User extends Member{
 		this.name = name;
 		this.phoneNumber = phoneNumber;
 		this.jumin = jumin;
+		this.reservationCount = reservationCount;
 		this.noshowCount = noshowCount;
 		this.balance = balance;
 		this.bank = bank;
@@ -98,6 +100,10 @@ public class User extends Member{
 				+ phoneNumber + ", jumin=" + jumin + ", noshowCount=" + noshowCount + ", balance=" + balance + ", bank="
 				+ bank + ", account=" + account + ", checkStop=" + checkStop + ", signIn=" + signIn + ", signOut="
 				+ signOut + "]";
+	}
+
+	public int getReservationCount() {
+		return reservationCount;
 	}
 
 	

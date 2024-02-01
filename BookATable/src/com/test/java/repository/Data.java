@@ -57,9 +57,9 @@ public class Data {
 			while((line = reader.readLine()) != null) {
 				
 				String[] tmp = line.split(",");
-				User user = new User(tmp[0], tmp[1], tmp[2], tmp[3], tmp[4]
-									, Integer.parseInt(tmp[5]), Integer.parseInt(tmp[6])
-									, tmp[7], tmp[8], tmp[9], tmp[10], tmp[11]);
+				User user = new User(tmp[0], tmp[1], tmp[2], tmp[3], tmp[4], Integer.parseInt(tmp[5])
+									, Integer.parseInt(tmp[6]), Integer.parseInt(tmp[7])
+									, tmp[8], tmp[9], tmp[10], tmp[11], tmp[12]);
 				
 				memberList.add(user);
 			}
@@ -84,7 +84,7 @@ public class Data {
 				String[] tmp = line.split(",");
 				
 				BusinessUser businessUser = new BusinessUser(Integer.parseInt(tmp[0]), tmp[1], tmp[2], tmp[3]
-															, tmp[4], tmp[5], tmp[6],  tmp[7], tmp[8], tmp[9]);
+															, tmp[4], tmp[5], tmp[6],  tmp[7], tmp[8]);
 				
 				memberList.add(businessUser);
 			}

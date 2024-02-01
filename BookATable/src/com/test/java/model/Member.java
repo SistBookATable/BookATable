@@ -1,7 +1,9 @@
 package com.test.java.model;
 
 public abstract class Member {
-
+	
+	public static String level;
+	
 	public abstract String toString();
 	public abstract String getName();
 	public abstract String getPhoneNumber();

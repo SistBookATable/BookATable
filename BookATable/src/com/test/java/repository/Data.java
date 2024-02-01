@@ -131,10 +131,6 @@ public class Data {
 			
 			for(Member businessUser : Data.memberList) {
 				if (businessUser.getUserType() == 1) {
-					/*
-						BusinessUser(int userType, String id, String pw, String name, String licenseNumber, String phoneNumber,
-									String bank, String account, String signIn, String signOut)
-					*/
 					String line = String.format("%d,%s,%s,%s,%s,%s,%s,%s,%s,%s"
 												, businessUser.getUserType(), businessUser.getId(), businessUser.getPw()
 												, businessUser.getName(), ((BusinessUser)businessUser).getLicenseNumber()

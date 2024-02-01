@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import com.test.java.model.Admin;
 import com.test.java.model.BusinessUser;
 import com.test.java.model.Member;
+import com.test.java.model.Menu;
 import com.test.java.model.Store;
 import com.test.java.model.User;
 
@@ -23,6 +24,7 @@ public class Data {
 	//필요한 자료들
 	public static ArrayList<Member> memberList = new ArrayList<>();
 	public static ArrayList<Store> storeList = new ArrayList<>();
+	public static ArrayList<Menu> menuList = new ArrayList<>();
 	
 	//프로그램을 시작할 때 file의 내용을 모두 메모리에 넣는 작업
 	public static void loadAdmin() {

@@ -3,7 +3,6 @@ package com.test.java.model;
 public abstract class Member {
 	
 	public static int level;
-	
 	public abstract int getUserType();
 	public abstract String toString();
 

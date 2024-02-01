@@ -1,5 +1,7 @@
 package com.test.java.model;
 
+import com.test.java.repository.Data;
+
 public class Store {
 
 	private String licenseNumber;
@@ -9,6 +11,8 @@ public class Store {
 	private String address;
 	private int score;
 	private int distanceFrom;
+	
+	private String menuName;
 	
 	private String tablecount;
 	private boolean bookmark;
@@ -29,8 +33,25 @@ public class Store {
 		this.distanceFrom = 0;
 	}
 	
+	public double getScore() {
+		double sum = 0;
+		int count = 0;
+		for(Review r :Data.reviewList) {
+			if(r.getLicenseNumber().equals(this.licenseNumber)) {
+				sum += r.getScore();
+				count ++;
+			}
+		}
+		
+		return sum/count;
+	}
+	
 	public String getStoreName() {
 		return storeName;
+	}
+	
+	public String getmenuName() {
+		return menuName;
 	}
 	public String getStoreNumber() {
 		return storeTelNumber;
@@ -44,9 +65,6 @@ public class Store {
 //	public Menu getMenuList() {
 //		return menuList;
 //	}
-	public int getScore() {
-		return score;
-	}
 //	public OperatingHours getOperatingHours() {
 //		return operatingHours;
 //	}

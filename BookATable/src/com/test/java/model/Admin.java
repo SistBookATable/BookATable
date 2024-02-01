@@ -32,7 +32,7 @@ public class Admin extends Member{
 
 	@Override
 	public String getName() {
-		return null;
+		return "관리자";
 	}
 
 	@Override

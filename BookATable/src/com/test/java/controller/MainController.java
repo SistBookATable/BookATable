@@ -9,8 +9,7 @@ public class MainController {
 	 * 메인 화면 시작 
 	 */
 	public static void start() {
-		
-		
+
 		boolean loop = true;
 		while(loop) {
 
@@ -28,13 +27,15 @@ public class MainController {
 				//logInController.logIn();
 				break;
 			case 3:
+				FindAccountController findAccountController = new FindAccountController();
+				findAccountController.findAccount();
 				break;
 			case 4:
 				break;
-			case 0:
+			default:
 				loop = false;
 			}
-		
+		}
 	}
 	
 	private static void searchMenu() {

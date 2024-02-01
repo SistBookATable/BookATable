@@ -50,6 +50,9 @@ public class BusinessUser extends Member{
 		return name;
 	}
 
+	public int getUserType() {
+		return userType;
+	}
 
 	public String getLicenseNumber() {
 		return licenseNumber;

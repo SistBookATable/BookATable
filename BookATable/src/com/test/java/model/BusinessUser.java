@@ -15,8 +15,6 @@ public class BusinessUser extends Member{
 	private String signIn;
 	private String signOut;
 	
-	
-	
 	public BusinessUser(int userType, String id, String pw, String name, String licenseNumber, String phoneNumber,
 			String bank, String account, String signIn, String signOut) {
 		super();
@@ -96,6 +94,10 @@ public class BusinessUser extends Member{
 		return true;
 	}
 
+
+	public String getBank() {
+		return bank;
+	}
 
 	@Override
 	public String getSignIn() {

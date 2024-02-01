@@ -14,7 +14,7 @@ public class MainController {
 		boolean loop = true;
 		while(loop) {
 			
-			if(Member.level == null) {
+			if(Member.level == 0) {
 
 				MainView.logo();
 				MainView.show();
@@ -39,17 +39,17 @@ public class MainController {
 					loop = false;
 				}
 			}
-			else if(Member.level == "1") {
+			else if(Member.level == 1) {
 
 				MainView.logo();
 				MainView.userPage();
 			}
-			else if(Member.level == "2") {
+			else if(Member.level == 2) {
 
 				MainView.logo();
 				MainView.businessUserPage();
 			}
-			else if(Member.level == "3") {
+			else if(Member.level == 3) {
 
 				MainView.logo();
 				MainView.adminPage();

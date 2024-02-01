@@ -36,6 +36,7 @@ public class MainController {
 				loop = false;
 			}
 		}
+
 	}
 	
 	private static void searchMenu() {

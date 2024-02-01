@@ -37,6 +37,32 @@ public class MainView {
 		System.out.println("└──────────────┘\t└──────────────┘\t└───────────────┘\t└───────────────┘");
 		System.out.println();
 	}
+	
+	public static void adminPage() {
+		System.out.println("□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□");
+		System.out.println("┌──────────────┐\t┌──────────────┐\t┌───────────────┐\t┌───────────────┐");
+		System.out.println("|  1. 회원 관리   |\t| 2. 문의사항관리  |\t| 3. 리뷰삭제요청  |\t|   4. 로그아웃   |");
+		System.out.println("└──────────────┘\t└──────────────┘\t└───────────────┘\t└───────────────┘");
+		System.out.println();
+	}
+
+	public static void userPage() {
+		System.out.println("□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□");
+		System.out.println("┌──────────────┐\t┌──────────────┐\t┌───────────────┐\t┌───────────────┐");
+		System.out.println("|  1. My page   |\t|  2. 로그아웃   |\t|   3. 문의 사항   |\t|  4. 음식점 검색  |");
+		System.out.println("└──────────────┘\t└──────────────┘\t└───────────────┘\t└───────────────┘");
+		System.out.println();
+		
+	}
+
+	public static void businessUserPage() {
+		System.out.println("□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□");
+		System.out.println("┌──────────────┐\t┌──────────────┐\t┌───────────────┐\t┌───────────────┐");
+		System.out.println("|  1. My page   |\t|  2. 로그아웃   |\t|   3. 문의 사항   |\t|  4. 음식점 검색  |");
+		System.out.println("└──────────────┘\t└──────────────┘\t└───────────────┘\t└───────────────┘");
+		System.out.println();
+		
+	}
 
 	/**
 	 * 선택한 인덱스 반환
@@ -51,6 +77,7 @@ public class MainView {
 		scan.nextLine();
 		return temp;
 	}
+
 
 	
 

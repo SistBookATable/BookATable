@@ -9,39 +9,54 @@ import com.test.java.repository.Data;
 import com.test.java.view.LogInView;
 
 public class LogInController {
-	
+
 	public void logIn() {
-		
+
 		boolean loop = true;
-		
-		while(loop) {
-			
+
+		while (loop) {
+
 			ArrayList<String> input = LogInView.getInput();
 			String inputId = input.get(0);
 			String inputPw = input.get(1);
-			
-			if (!checkInputId(inputId)) {
-				System.out.println("해당 ID를 찾을 수 없습니다.");
+
+			if (checkInputId(inputId) == null) {
+				System.out.println("해당 아이디를 찾을 수 없습니다.");
 				loop = true;
 			} else {
-				loop = false;
+				if (checkInputPw(inputPw) == null ) {
+					System.out.println("비밀번호가 맞지 않습니다.");
+				}
 			}
-			
+
+			System.out.println("등록된 아이디입니다.");
+			loop = false;
 		}
-		
+
 	}
 
-	private boolean checkInputId(String inputId) {
-		
-		for(Member u : Data.memberList) {
-			System.out.println(u.getId());
-			
-			if (inputId.equals(u.getId())) {
-				return true;
+	private String checkInputPw(String inputPw) {
+
+		for (Member u : Data.memberList) {
+
+			if (inputPw.equals(u.getPw())) {
+				return u.getName();
 			}
 		}
-		
-		return false;
+
+		return null;
 	}
+
+	private String checkInputId(String inputId) {
+
+		for (Member u : Data.memberList) {
+
+			if (inputId.equals(u.getId())) {
+				return u.getName();
+			}
+		}
+
+		return null;
+	}
+
 }
-     

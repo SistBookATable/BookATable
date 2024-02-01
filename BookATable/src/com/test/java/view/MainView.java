@@ -49,7 +49,7 @@ public class MainView {
 	public static void userPage() {
 		System.out.println("□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□");
 		System.out.println("┌──────────────┐\t┌──────────────┐\t┌───────────────┐\t┌───────────────┐");
-		System.out.println("|  1. My page   |\t|  2. 로그아웃   |\t|   3. 문의 사항   |\t|  4. 음식점 검색  |");
+		System.out.println("|  1. My page   |\t|  2. 로그아웃    |\t|   3. 문의 사항   |\t|  4. 음식점 검색  |");
 		System.out.println("└──────────────┘\t└──────────────┘\t└───────────────┘\t└───────────────┘");
 		System.out.println();
 		
@@ -58,7 +58,7 @@ public class MainView {
 	public static void businessUserPage() {
 		System.out.println("□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□□");
 		System.out.println("┌──────────────┐\t┌──────────────┐\t┌───────────────┐\t┌───────────────┐");
-		System.out.println("|  1. My page   |\t|  2. 로그아웃   |\t|   3. 문의 사항   |\t|  4. 음식점 검색  |");
+		System.out.println("|  1. My page   |\t|  2. 로그아웃    |\t|   3. 문의 사항   |\t|  4. 음식점 검색  |");
 		System.out.println("└──────────────┘\t└──────────────┘\t└───────────────┘\t└───────────────┘");
 		System.out.println();
 		

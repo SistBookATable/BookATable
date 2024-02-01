@@ -15,14 +15,15 @@ public class User extends Member{
 	private String bank;
 	private String account; 
 	private String checkStop;
-	private Calendar signOut;
+	private String signIn;  
+	private String signOut;
 	
 	public User() {
 		
 	}
 	
 	public User (String id, String pw, String name, String phoneNumber, String jumin, int noshowCount, int balance,
-			String bank, String account, String checkStop, Calendar signOut) {
+			String bank, String account, String checkStop, String signIn, String signOut) {
 		super();
 		this.userType = 1;
 		this.id = id;
@@ -35,6 +36,7 @@ public class User extends Member{
 		this.bank = bank;
 		this.account = account;
 		this.checkStop = checkStop;
+		this.signIn = signIn;
 		this.signOut = signOut;
 	}
 	
@@ -74,8 +76,12 @@ public class User extends Member{
 		return account;
 	}
 
-	public Calendar getSignOut() {
+	public String getSignOut() {
 		return signOut;
+	}
+	
+	public String getSignIn() {
+		return signIn;
 	}
 
 	public boolean checkid(String id) {
@@ -90,8 +96,9 @@ public class User extends Member{
 	public String toString() {
 		return "User [userType=" + userType + ", id=" + id + ", pw=" + pw + ", name=" + name + ", phoneNumber="
 				+ phoneNumber + ", jumin=" + jumin + ", noshowCount=" + noshowCount + ", balance=" + balance + ", bank="
-				+ bank + ", account=" + account + ", checkStop=" + checkStop + ", signOut=" + signOut + "]";
+				+ bank + ", account=" + account + ", checkStop=" + checkStop + ", signIn=" + signIn + ", signOut="
+				+ signOut + "]";
 	}
-	
+
 	
 }

@@ -1,5 +1,7 @@
 package com.test.java.controller;
 
+import java.util.Calendar;
+
 import com.test.java.model.Member;
 import com.test.java.model.User;
 import com.test.java.repository.Data;
@@ -22,8 +24,10 @@ public class UserSignInController {
 		String id = UserSignInView.getId();
 		String pw = UserSignInView.getPw();
 		
+		Calendar c = Calendar.getInstance();
+		String now = String.format("%tF", c);
 		
-		User user = new User(id,pw,name,phone,jumin,0,0,null,account,null,null);
+		User user = new User(id,pw,name,phone,jumin,0,0,null,account,null,now,null);
 		
 //		//유효성 검사
 //		if(isValid(user)) {

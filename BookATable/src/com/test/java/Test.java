@@ -5,8 +5,10 @@ import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.util.ArrayList;
-import java.util.Calendar;
 
+import com.test.java.model.Member;
+import com.test.java.model.OperatingHours;
+import com.test.java.model.PointUsage;
 import com.test.java.model.Reservation;
 import com.test.java.model.Table;
 import com.test.java.model.User;
@@ -20,12 +22,55 @@ public class Test {
 		String TABLE = "dat\\table.txt";
 		String RESERVATION = "dat\\reservation.txt";
 		String BUSINESSUSER = "dat\\businessUser";
-
+		String POINT = "dat\\pointUsage.txt";
+		String OH = "dat\\operatinghours.txt";
+		
 		ArrayList<User> userList = new ArrayList<>();
 		ArrayList<Table> tableList = new ArrayList<>();
 		ArrayList<Reservation> reservationList = new ArrayList<>();
+		ArrayList<PointUsage> pointList = new ArrayList<>();
+		ArrayList<OperatingHours> hourList = new ArrayList<>();
 		
+		try {
+			BufferedReader reader
+			= new BufferedReader(new FileReader(OH));
+			
+			String line = null;
+			
+			while((line = reader.readLine()) != null) {
+				
+				String[] tmp = line.split(",");
+				OperatingHours o = new OperatingHours(tmp[0],tmp[1],tmp[2],tmp[3],tmp[4],tmp[5]);
+				
+				hourList.add(o);
+			}
+			
+			reader.close();
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	
 		
+		try {
+			BufferedReader reader
+			= new BufferedReader(new FileReader(POINT));
+			
+			String line = null;
+			
+			while((line = reader.readLine()) != null) {
+				
+				String[] tmp = line.split(",");
+				PointUsage p = new PointUsage(Integer.parseInt(tmp[0]),Integer.parseInt(tmp[1]),tmp[2],tmp[3],tmp[4]);
+				
+				pointList.add(p);
+			}
+			
+			reader.close();
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	
 		try {
 			BufferedReader reader
@@ -75,6 +120,8 @@ public class Test {
 
 		for(User u : userList) {
 			int noshowCount = u.getNoshowCount();
+			int s = 0;
+			
 			for(int i=0; i<u.getReservationCount(); i++) {
 				
 				Reservation r = new Reservation();
@@ -98,6 +145,20 @@ public class Test {
 				r.setState(noshowCount > 0? "노쇼":"방문");
 				noshowCount--;
 				
+				for(; s<pointList.size(); s++) {
+					if(pointList.get(s).getUserId().equals(u.getId())) {
+						r.setReservationDate(pointList.get(s).getUseTime());
+						break;
+					}
+				}
+				
+				for(OperatingHours o : hourList) {
+					if(o.getLicenseNumber().equals(licenseNumber)) {
+						r.setReservationTime(o.getOpen());
+						break;
+					}
+				}
+				
 				
 				System.out.println(r);
 				
@@ -107,6 +168,33 @@ public class Test {
 			}
 			
 		}
+		
+		
+		try {
+			BufferedWriter writer = new BufferedWriter(new FileWriter(RESERVATION));
+			
+			for(Reservation r : reservationList) {
+				String line = String.format("%d,%s,%s,%s,%s,%s,%s,%d,%d,%s",
+						r.getReservationNumber(),
+						r.getUserId(),
+						r.getLicenseNumber(),
+						r.getReservationTime(),
+						r.getReservationDate(),
+						r.getNumOfPeple(),
+						r.getTableCapacity(),
+						r.getState());
+				
+				
+				writer.write(line);
+			}
+			
+			writer.close();
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		
 		
 	}
 }

@@ -49,6 +49,8 @@ public class MainController {
 				
 				switch(choice) {
 				case 1:
+					UserMyPageController userMyPageController = new UserMyPageController();
+					userMyPageController.userMyPage();
 					break;
 				case 2:
 					LogOutController logOutController = new LogOutController();

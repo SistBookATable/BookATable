@@ -5,6 +5,7 @@ import com.test.java.model.Member;
 import com.test.java.model.Store;
 import com.test.java.repository.Data;
 import com.test.java.view.BusinessUserSignInView;
+import com.test.java.view.View;
 
 public class BusinessUserSignInController {
 	
@@ -38,6 +39,8 @@ public class BusinessUserSignInController {
 		Data.memberList.add(businessUser);
 		Data.storeList.add(store);
 		
+		System.out.println("회원가입이 완료되었습니다.");
+		
 		for(Member b : Data.memberList) {
 			System.out.println(b);
 		}
@@ -45,6 +48,8 @@ public class BusinessUserSignInController {
 		for(Store s : Data.storeList) {
 			System.out.println(s);
 		}
+		
+		View.pause();
 		
 		return true;
 	}

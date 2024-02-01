@@ -11,7 +11,7 @@ public class ReservationStatusInquiryView {
 
 		System.out.println("------------------------------------------------------------------------------------------");
 		System.out.println();
-		System.out.printf("■           %s님 현재 예약 현황		   ■", Member.name);
+		System.out.printf("■           %s님 현재 예약 현황		   ■");
 		System.out.println();
 		System.out.println("------------------------------------------------------------------------------------------");
 

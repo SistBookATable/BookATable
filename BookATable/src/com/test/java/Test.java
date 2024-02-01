@@ -6,13 +6,12 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.util.ArrayList;
 
-import com.test.java.model.Member;
+import com.test.java.model.Menu;
 import com.test.java.model.OperatingHours;
 import com.test.java.model.PointUsage;
 import com.test.java.model.Reservation;
 import com.test.java.model.Table;
 import com.test.java.model.User;
-import com.test.java.repository.Data;
 
 public class Test {
 	public static void main(String[] args) {
@@ -24,12 +23,37 @@ public class Test {
 		String BUSINESSUSER = "dat\\businessUser";
 		String POINT = "dat\\pointUsage.txt";
 		String OH = "dat\\operatinghours.txt";
+		String MENU = "dat\\menu.txt";
+		
 		
 		ArrayList<User> userList = new ArrayList<>();
 		ArrayList<Table> tableList = new ArrayList<>();
 		ArrayList<Reservation> reservationList = new ArrayList<>();
 		ArrayList<PointUsage> pointList = new ArrayList<>();
 		ArrayList<OperatingHours> hourList = new ArrayList<>();
+		ArrayList<Menu> menuList = new ArrayList<>();
+
+		
+		try {
+			BufferedReader reader
+			= new BufferedReader(new FileReader(MENU));
+			
+			String line = null;
+			
+			while((line = reader.readLine()) != null) {
+				
+				String[] tmp = line.split(",");
+				Menu m = new Menu(tmp[0],tmp[1],Integer.parseInt(tmp[2]));
+				
+				menuList.add(m);
+			}
+			
+			reader.close();
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	
 		
 		try {
 			BufferedReader reader

@@ -17,6 +17,11 @@ public class UserManagementController {
 				signInUserManagementController.signInUserManagement();
 				break;
 			case 2:
+				SignOutUserManagementController singOutUserManagementController = new  SignOutUserManagementController();
+				singOutUserManagementController.signOutUserManagement();
+				break;
+			case 0:
+				loop = false;
 				break;
 			default:
 				loop = false;

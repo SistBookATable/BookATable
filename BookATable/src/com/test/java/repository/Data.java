@@ -36,6 +36,8 @@ public class Data {
 				
 				String[] tmp = line.split(",");
 				
+				
+				
 				Admin admin = new Admin(Integer.parseInt(tmp[0]), tmp[1], tmp[2]); 
 				memberList.add(admin);
 			}

@@ -12,12 +12,28 @@ public class BusinessUser extends Member{
 	private String phoneNumber;
 	private String bank; 
 	private String account; 
-	private Calendar signOut;
+	private String signIn;
+	private String signOut;
 	
 	
 	
+	public BusinessUser(int userType, String id, String pw, String name, String licenseNumber, String phoneNumber,
+			String bank, String account, String signIn, String signOut) {
+		super();
+		this.userType = userType;
+		this.id = id;
+		this.pw = pw;
+		this.name = name;
+		this.licenseNumber = licenseNumber;
+		this.phoneNumber = phoneNumber;
+		this.bank = bank;
+		this.account = account;
+		this.signIn = signIn;
+		this.signOut = signOut;
+	}
+
 	public BusinessUser(String id, String pw, String name, String licenseNumber, String phoneNumber, String bank,
-			String account) {
+			String account, String signIn) {
 		super();
 		this.id = id;
 		this.pw = pw;
@@ -26,16 +42,19 @@ public class BusinessUser extends Member{
 		this.phoneNumber = phoneNumber;
 		this.bank = bank;
 		this.account = account;
+		this.signIn = signIn;
 		
 		this.userType = 2;
 		this.signOut = null;
 	}
 
+	
+
 	@Override
 	public String toString() {
 		return "BusinessUser [userType=" + userType + ", id=" + id + ", pw=" + pw + ", name=" + name
 				+ ", licenseNumber=" + licenseNumber + ", phoneNumber=" + phoneNumber + ", bank=" + bank + ", account="
-				+ account + ", signOut=" + signOut + "]";
+				+ account + ", signIn=" + signIn + ", signOut=" + signOut + "]";
 	}
 
 	public String getId() {
@@ -66,7 +85,7 @@ public class BusinessUser extends Member{
 		return account;
 	}
 
-	public Calendar getSignOut() {
+	public String getSignOut() {
 		return signOut;
 	}
 
@@ -76,6 +95,12 @@ public class BusinessUser extends Member{
 	
 	public boolean checkSignOut(Calendar inputSignOut) {
 		return true;
+	}
+
+
+	@Override
+	public String getSignIn() {
+		return signIn;
 	}
 
 	

@@ -2,7 +2,7 @@ package com.test.java.model;
 
 public class Admin extends Member{
 	
-	private int userType = 1; //[1:일반회원,2,3]
+	private int userType = 3; //[1,2,3: 관리자]
 	private String id; 
 	private String pw;
 	
@@ -37,6 +37,12 @@ public class Admin extends Member{
 
 	@Override
 	public String getPhoneNumber() {
+		return null;
+	}
+
+	@Override
+	public String getSignIn() {
+		// TODO Auto-generated method stub
 		return null;
 	} 
 

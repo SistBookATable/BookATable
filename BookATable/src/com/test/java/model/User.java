@@ -19,10 +19,28 @@ public class User extends Member{
 	private String signIn;  
 	private String signOut;
 	
-	public User() {
-		
-	}
 	
+	
+	public User(int userType, String id, String pw, String name, String phoneNumber, String jumin, String bank, String account, int balance, int reservationCount,
+			int noshowCount,  String checkStop, String signIn,
+			String signOut) {
+		super();
+		this.userType = userType;
+		this.id = id;
+		this.pw = pw;
+		this.name = name;
+		this.phoneNumber = phoneNumber;
+		this.jumin = jumin;
+		this.reservationCount = reservationCount;
+		this.noshowCount = noshowCount;
+		this.balance = balance;
+		this.bank = bank;
+		this.account = account;
+		this.checkStop = checkStop;
+		this.signIn = signIn;
+		this.signOut = signOut;
+	}
+
 	public User (String id, String pw, String name, String phoneNumber, String jumin, int reservationCount, int noshowCount, int balance,
 			String bank, String account, String checkStop, String signIn, String signOut) {
 		super();

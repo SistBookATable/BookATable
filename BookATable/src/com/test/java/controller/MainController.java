@@ -10,8 +10,7 @@ public class MainController {
 	 * 메인 화면 시작 
 	 */
 	public static void start() {
-		
-		
+
 		boolean loop = true;
 		while(loop) {
 			
@@ -27,8 +26,8 @@ public class MainController {
 					signInController.signIn();
 					break;
 				case 2:
-					//LogInController logInController = new LogInController();
-					//logInController.logIn();
+					LogInController logInController = new LogInController();
+					logInController.logIn();
 					break;
 				case 3:
 					FindAccountController findAccountController = new FindAccountController();
@@ -54,8 +53,10 @@ public class MainController {
 
 				MainView.logo();
 				MainView.adminPage();
+
 			}
 		}
+
 	}
 	
 	private static void searchMenu() {

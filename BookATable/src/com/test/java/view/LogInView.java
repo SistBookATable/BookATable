@@ -13,12 +13,13 @@ public class LogInView {
 		System.out.print("ID: ");
 		tmp.add(scan.nextLine());
 		
+		
 		System.out.print("PW: ");
 		tmp.add(scan.nextLine());
 		
 		return tmp;
 	}
-	
+
 	
 	
 }

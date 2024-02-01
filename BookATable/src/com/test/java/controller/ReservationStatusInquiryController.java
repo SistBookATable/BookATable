@@ -9,9 +9,18 @@ public class ReservationStatusInquiryController {
 	public void reservationStatusInquiry() {
 		ReservationStatusInquiryView reservationStatusInquiryView
 			= new ReservationStatusInquiryView();
-		reservationStatusInquiryView.showReservationStatusInquiry();
+		reservationStatusInquiryView.showReservationStatusInquiry(findNameById(Member.id));
 		
-		findNameById(Member.id);
+		int choice = ReservationStatusInquiryView.get();
+		
+		switch(choice) {
+		case 1:
+			ReservationCancelController reservationCancelController
+				= new ReservationCancelController();
+			reservationCancelController.reservationCancel();
+		case 0:
+			
+		}
 	}
 
 	private String findNameById(String id) {

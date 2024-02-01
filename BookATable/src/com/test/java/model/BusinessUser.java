@@ -43,7 +43,6 @@ public class BusinessUser extends Member{
 		this.bank = bank;
 		this.account = account;
 		this.signIn = signIn;
-		
 		this.userType = 2;
 		this.signOut = null;
 	}

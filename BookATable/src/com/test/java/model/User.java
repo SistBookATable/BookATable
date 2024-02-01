@@ -22,7 +22,7 @@ public class User extends Member{
 	}
 	
 	public User (String id, String pw, String name, String phoneNumber, String jumin, int noshowCount, int balance,
-			String account, String checkStop, Calendar signOut) {
+			String bank, String account, String checkStop, Calendar signOut) {
 		super();
 		this.userType = 1;
 		this.id = id;
@@ -32,6 +32,7 @@ public class User extends Member{
 		this.jumin = jumin;
 		this.noshowCount = noshowCount;
 		this.balance = balance;
+		this.bank = bank;
 		this.account = account;
 		this.checkStop = checkStop;
 		this.signOut = signOut;
@@ -88,8 +89,9 @@ public class User extends Member{
 	@Override
 	public String toString() {
 		return "User [userType=" + userType + ", id=" + id + ", pw=" + pw + ", name=" + name + ", phoneNumber="
-				+ phoneNumber + ", jumin=" + jumin + ", noshowCount=" + noshowCount + ", balance=" + balance
-				+ ", account=" + account + ", signOut=" + signOut + "]";
+				+ phoneNumber + ", jumin=" + jumin + ", noshowCount=" + noshowCount + ", balance=" + balance + ", bank="
+				+ bank + ", account=" + account + ", checkStop=" + checkStop + ", signOut=" + signOut + "]";
 	}
+	
 	
 }

@@ -22,7 +22,7 @@ public class UserSignInController {
 		String pw = UserSignInView.getPw();
 		
 		
-		User user = new User(id,pw,name,phone,jumin,0,0,account,null,null);
+		User user = new User(id,pw,name,phone,jumin,0,0,null,account,null,null);
 		
 //		//유효성 검사
 //		if(isValid(user)) {

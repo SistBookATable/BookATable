@@ -63,6 +63,7 @@ public class MainView {
 		System.out.println();
 		
 	}
+	
 
 	/**
 	 * 선택한 인덱스 반환

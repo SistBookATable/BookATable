@@ -161,7 +161,7 @@ public class Test {
 				
 				
 				System.out.println(r);
-				
+				reservationList.add(r);
 				
 				reservationNumber++;
 				
@@ -174,7 +174,7 @@ public class Test {
 			BufferedWriter writer = new BufferedWriter(new FileWriter(RESERVATION));
 			
 			for(Reservation r : reservationList) {
-				String line = String.format("%d,%s,%s,%s,%s,%s,%s,%d,%d,%s",
+				String line = String.format("%d,%s,%s,%s,%s,%d,%d,%s\n",
 						r.getReservationNumber(),
 						r.getUserId(),
 						r.getLicenseNumber(),
@@ -183,7 +183,6 @@ public class Test {
 						r.getNumOfPeple(),
 						r.getTableCapacity(),
 						r.getState());
-				
 				
 				writer.write(line);
 			}

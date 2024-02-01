@@ -9,7 +9,27 @@ public class MainController {
 	 * 메인 화면 시작 
 	 */
 	public static void start() {
+<<<<<<< HEAD
+		
+		
+<<<<<<< HEAD
+		switch(choice) {
+		case 1:
+			SignInController signInController = new SignInController();
+			signInController.signIn();
+			break;
+		case 2:
+			LogInController logInController = new LogInController();
+			logInController.logIn();
+			break;
+		case 3:
+			break;
+		case 4:
+			break;
+=======
+=======
 
+>>>>>>> 121d50e51239826251e96b0564a4b4a13951b048
 		boolean loop = true;
 		while(loop) {
 
@@ -35,6 +55,10 @@ public class MainController {
 			default:
 				loop = false;
 			}
+<<<<<<< HEAD
+>>>>>>> 957e6d320bff1c51c7ac78514fbe2a611a62d14b
+=======
+>>>>>>> 121d50e51239826251e96b0564a4b4a13951b048
 		}
 	}
 	

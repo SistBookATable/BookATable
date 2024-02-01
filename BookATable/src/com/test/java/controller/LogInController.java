@@ -21,31 +21,30 @@ public class LogInController {
 			String inputId = input.get(0);
 			String inputPw = input.get(1);
 
-			System.out.println(checkLogIn(inputId, inputPw));
-			loop = false;
+			loop = !checkLogIn(inputId, inputPw);
+			
 			View.pause();   
 
 		}
 
 	}
 
-	private String checkLogIn(String inputId, String inputPw) {
+	private boolean checkLogIn(String inputId, String inputPw) {
 		String result = "";
 		for (Member u : Data.memberList) {
 			if (inputId.equals(u.getId())) {
 				if (!inputPw.equals(u.getPw())) {
-				result = "입력한 비밀번호가 올바르지 않습니다.";
-				return result;
+				System.out.println("입력한 비밀번호가 올바르지 않습니다.");
+				return false;
 				} else {
-					result = u.getName() + "님, 로그인에 성공하셨습니다.";
+					System.out.println(u.getName() + "님, 로그인에 성공하셨습니다.");
 					Member.level = u.getUserType();
-					return result;
+					return true;
 				}
 			} 
 		}
-
-		result = "해당 아이디를 찾을 수 없습니다.";
-		return result;
+		System.out.println("해당 아이디를 찾을 수 없습니다.");
+		return false;
 	}
 
 }

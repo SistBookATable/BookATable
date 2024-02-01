@@ -9,7 +9,7 @@ public class FindAccountView {
 		System.out.println();
 		System.out.println();
 		System.out.println("┌───────────────────────────────────────────────────────┐");
-		System.out.println("|              계정 찾기 - 찾으실 계정 정보를 선택하세요          ■");
+		System.out.println("|              계정 찾기 - 찾으실 계정 정보를 선택하세요			■");
 		System.out.println("└───────────────────────────────────────────────────────┘");
 		System.out.println("==========================================================================================");
 		System.out.println();

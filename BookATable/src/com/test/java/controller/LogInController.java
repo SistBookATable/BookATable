@@ -21,21 +21,8 @@ public class LogInController {
 			String inputId = input.get(0);
 			String inputPw = input.get(1);
 
-//			if (checkInputId(inputId) == null) {
-//				System.out.println("해당 아이디를 찾을 수 없습니다.");
-//				View.pause();
-//				continue;
-//			}	
-//			if (checkInputPw(inputId,inputPw) == null ) {
-//				System.out.println("비밀번호가 맞지 않습니다.");
-//				View.pause();
-//				continue;
-//			} else {
-//				System.out.printf("");
-//				loop = false;
-//			}
-			
-			System.out.println(checkLogIn(inputId, inputPw)); 
+			System.out.println(checkLogIn(inputId, inputPw));
+			loop = false;
 			View.pause();   
 
 		}
@@ -60,29 +47,5 @@ public class LogInController {
 		result = "해당 아이디를 찾을 수 없습니다.";
 		return result;
 	}
-
-//	private String checkInputPw(String inputId, String inputPw) {
-//
-//		for (Member u : Data.memberList) {
-//
-//			if (inputPw.equals(u.getPw()) && inputId.equals(u.getId())) {
-//				return u.getName();
-//			}
-//		}
-//
-//		return null;
-//	}
-//
-//	private String checkInputId(String inputId) {
-//
-//		for (Member u : Data.memberList) {
-//
-//			if (inputId.equals(u.getId())) {
-//				return u.getName();
-//			}
-//		}
-//
-//		return null;
-//	}
 
 }

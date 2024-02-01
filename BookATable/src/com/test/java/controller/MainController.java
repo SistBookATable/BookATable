@@ -43,20 +43,66 @@ public class MainController {
 
 				MainView.logo();
 				MainView.userPage();
-				loop = false;
+				int choice = MainView.get();
+				
+				switch(choice) {
+				case 1:
+					break;
+				case 2:
+					break;
+				case 3:
+					break;
+				case 4:
+					break;
+				default:
+					loop = false;
+				}
+				
 			}
 			else if(Member.level == 2) {
 
 				MainView.logo();
 				MainView.businessUserPage();
-				loop = false;
+				int choice = MainView.get();
+				
+				switch(choice) {
+				case 1:
+					break;
+				case 2:
+					break;
+				case 3:
+					break;
+				case 4:
+					break;
+				default:
+					loop = false;
+				}
+				
 			}
 			else if(Member.level == 3) {
 
 				MainView.logo();
 				MainView.adminPage();
-				loop = false;
-
+				int choice = MainView.get();
+				
+				switch(choice) {
+				case 1:
+					UserManagementController userManagementController = new UserManagementController();
+					userManagementController.userManagement();
+					break;
+				case 2:
+					LogInController logInController = new LogInController();
+					logInController.logIn();
+					break;
+				case 3:
+					FindAccountController findAccountController = new FindAccountController();
+					findAccountController.findAccount();
+					break;
+				case 4:
+					break;
+				default:
+					loop = false;
+				}
 			}
 		}
 

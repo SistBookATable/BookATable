@@ -1,5 +1,7 @@
 package com.test.java.controller;
 
+import java.util.Calendar;
+
 import com.test.java.model.BusinessUser;
 import com.test.java.model.Member;
 import com.test.java.model.Store;
@@ -26,8 +28,11 @@ public class BusinessUserSignInController {
 		String id = BusinessUserSignInView.getId();
 		String pw = BusinessUserSignInView.getPw();
 		
+		Calendar c = Calendar.getInstance();
+		String now = String.format("%tF", c);
 		
-		BusinessUser businessUser = new BusinessUser(id,pw,name,licenseNumber, phoneNumber, bank, account);
+		
+		BusinessUser businessUser = new BusinessUser(id,pw,name,licenseNumber, phoneNumber, bank, account,now);
 		
 		Store store = new Store(licenseNumber,storeName, storeTelNumber, address);
 		

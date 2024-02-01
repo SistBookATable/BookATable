@@ -24,4 +24,12 @@ public class UserManagementView {
 		return tmp;
 	}
 
+	public static void showTitle() {
+		System.out.println();
+		System.out.println();
+		System.out.println("┌───────────────────────────────────────────────────────┐");
+		System.out.println("|             회원 관리 - 조회할 항목을 선택해주세요              ■");
+		System.out.println("└───────────────────────────────────────────────────────┘");
+	}
+
 }

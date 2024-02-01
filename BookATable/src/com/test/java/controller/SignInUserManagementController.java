@@ -8,7 +8,7 @@ public class SignInUserManagementController {
 
 	public void signInUserManagement() {
 		
-		SignInUserManagementView.showSignInUser();
+		SignInUserManagementView.findAllUser();
 		
 	}
 

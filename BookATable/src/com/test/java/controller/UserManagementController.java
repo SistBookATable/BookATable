@@ -7,6 +7,7 @@ public class UserManagementController {
 	public void userManagement() {
 		boolean loop = true;
 		while(loop) {
+			UserManagementView.showTitle();
 			UserManagementView.showSelectBox();
 			int choice = UserManagementView.getSelectType();
 			

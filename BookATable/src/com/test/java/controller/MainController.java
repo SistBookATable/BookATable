@@ -1,6 +1,7 @@
 package com.test.java.controller;
 
 import com.test.java.model.Member;
+import com.test.java.repository.Data;
 import com.test.java.view.MainView;
 import com.test.java.view.StoreView;
 
@@ -116,5 +117,12 @@ public class MainController {
 		storeView.searchMenu();
 	
 		
+	}
+
+	public static void load() {
+		Data.loadAdmin();
+		for(Member m : Data.memberList) {
+			System.out.println(m);
+		}
 	}
 }

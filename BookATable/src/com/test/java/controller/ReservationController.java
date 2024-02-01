@@ -11,17 +11,17 @@ public class ReservationController {
 	private ReservationView reservationView;
 	private ArrayList<Reservation> reservation;
 	
-	public void findSignOut(Calendar c) {
+	public void reservation() {
+			
+			int num=reservationView.getReservationNum();
+			String date=reservationView.getReservationDate();
+			String time=reservationView.getReservationTime();
+			String menu=reservationView.getReservationMenu(); 
+			
+			reservationView.showReservation(num, date, time, menu);
 		
 	}
 	
-	public void findByUserId(String userId) {
-		
-		
-	}
 	
-	public void findAll() {
-		
-	}
 
 }

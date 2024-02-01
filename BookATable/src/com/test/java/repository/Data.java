@@ -7,10 +7,25 @@ import java.io.FileWriter;
 import java.util.ArrayList;
 
 import com.test.java.model.Admin;
+import com.test.java.model.BlackList;
 import com.test.java.model.BusinessUser;
+import com.test.java.model.CompletedList;
+import com.test.java.model.Faq;
+import com.test.java.model.Inquiry;
 import com.test.java.model.Member;
+import com.test.java.model.Menu;
+import com.test.java.model.OperatingHours;
+import com.test.java.model.PointUsage;
+import com.test.java.model.Request;
+import com.test.java.model.Reservation;
+import com.test.java.model.ReservationCancel;
+import com.test.java.model.Review;
+import com.test.java.model.StopUser;
 import com.test.java.model.Store;
+import com.test.java.model.Table;
 import com.test.java.model.User;
+import com.test.java.model.UserInfo;
+import com.test.java.model.WriteReview;
 
 public class Data {
 	
@@ -18,11 +33,45 @@ public class Data {
 	private final static String USER = "dat\\User.txt";
 	private final static String BUSINESSUSER = "dat\\BusinessUser.txt";
 	private final static String ADMIN = "dat\\Admin.txt";
+	
 	private final static String STORE = "dat\\Store.txt";
+	
+	private final static String BLACKLIST = "dat\\BlackList.txt";
+	private final static String VIP = "dat\\Vip.txt";
+	private final static String TABLE = "dat\\Table.txt";
+	private final static String MENU = "dat\\Menu.txt";
+	private final static String OPERATINGHOURS = "dat\\Operatinghours.txt";
+	private final static String RESERVATION = "dat\\Reservation.txt";
+	private final static String RESERVATIONMENU = "dat\\ReservationMenu.txt";
+	private final static String POINTUSAGE = "dat\\PointUsage.txt";
+	private final static String REVIEW = "dat\\Review.txt";
+	private final static String FAQ = "dat\\Faq.txt";
+	private final static String INQUIRY = "dat\\Inquiry.txt";
+	private final static String REQUEST = "dat\\Request.txt";
+	private final static String BOOKMARK = "dat\\Bookmark.txt";
+	
 	
 	//필요한 자료들
 	public static ArrayList<Member> memberList = new ArrayList<>();
 	public static ArrayList<Store> storeList = new ArrayList<>();
+	public static ArrayList<Menu> menuList = new ArrayList<>();
+	
+	public static ArrayList<BlackList> blackList = new ArrayList<>();
+	public static ArrayList<Faq> faqList = new ArrayList<>();
+	public static ArrayList<CompletedList> compleatedList = new ArrayList<>();
+	public static ArrayList<Inquiry> inquiryList = new ArrayList<>();
+	public static ArrayList<Menu> menuList = new ArrayList<>();
+	public static ArrayList<OperatingHours> operatingHoursList = new ArrayList<>();
+	public static ArrayList<PointUsage> pointList = new ArrayList<>();
+	public static ArrayList<Request> requestList = new ArrayList<>();
+	public static ArrayList<Reservation> reservationList = new ArrayList<>();
+	public static ArrayList<ReservationCancel> reservationCancelList = new ArrayList<>();
+	public static ArrayList<Review> reviewList = new ArrayList<>();
+	public static ArrayList<StopUser> stopUserList = new ArrayList<>();
+	public static ArrayList<Table> tableList = new ArrayList<>();
+	public static ArrayList<UserInfo> userInfoList = new ArrayList<>();
+	public static ArrayList<WriteReview> writeReviewList = new ArrayList<>();
+	
 	
 	//프로그램을 시작할 때 file의 내용을 모두 메모리에 넣는 작업
 	public static void loadAdmin() {

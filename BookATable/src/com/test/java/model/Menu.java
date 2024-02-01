@@ -18,4 +18,18 @@ public class Menu {
 	public void deleteMenu(String licenseNumbe,String menuName) {
 		this.menuName = menuName;
 	}
+
+	public String getLicenseNumber() {
+		return licenseNumber;
+	}
+
+	public String getMenuName() {
+		return menuName;
+	}
+
+	public int getPrice() {
+		return price;
+	}
+	
+	
 }

@@ -5,15 +5,52 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
+import com.test.java.model.Menu;
 import com.test.java.model.Store;
+import com.test.java.repository.Data;
 import com.test.java.view.StoreView;
 
 public class StoreController {
 
-	private ArrayList<Store> storeList = new ArrayList<>();
-
 	public void run() {
+		
 		StoreView storeView = new StoreView();
+		
+		boolean loop = true;
+		while(loop) {
+
+			storeView.searchMenu();
+			int choice = storeView.get();
+			
+			switch(choice) {
+			case 0:
+				System.out.println("이전 화면으로 이동합니다.");
+				break;
+			case 1:
+				
+				// FindByNameController findByNameController = new FindByNameController();
+				String storeName = StoreView.getStoreName();
+				ArrayList<Store> searched = searchStoreName(storeName);
+				storeView.show(searched);
+				storeView.showSelectBox();
+				storeView.get();
+				storeView.showSelectBox();
+				
+				break;
+				
+			case 2:
+				String menuName = storeView.getmenuName();
+				ArrayList<Store> searchByMenu = searchMenuName(menuName);
+				storeView.show(searchByMenu);
+				break;
+			default:
+				System.out.println("잘못 입력하셨습니다. 다시 입력해주세요.");
+
+			}
+			
+		}
+		
+		
 
 		while(true) {
 			storeView.searchMenu();
@@ -35,7 +72,8 @@ public class StoreController {
 				break;
 			case 2:
 				try {
-					
+					String menuName = storeView.getmenuName();
+					searchMenuName(menuName);
 				} catch (Exception e) {
 					System.out.println("StoreController.run");
 					e.printStackTrace();
@@ -48,43 +86,46 @@ public class StoreController {
 			}
 		}
 	}
-	private void searchStoreName(String keyword) throws IOException {
+	private ArrayList<Store> searchStoreName(String keyword) {
 
+		ArrayList<Store> tmp = new ArrayList<>();
 		
-		for(Store store : storeList) {
+		for(Store store : Data.storeList) {
 			if(store.getStoreName().equals(keyword)) {
-				System.out.println(store);
+				tmp.add(store);
 			}
 		}
 		
-		BufferedReader reader = new BufferedReader(new FileReader("C:\\Users\\user\\Desktop\\wonhyuk\\BookATable\\dat\\resturant.txt"));
+		return tmp;
+		// 별점순, 거리순, 리뷰순 정렬
 
-		System.out.println("상호명을 입력해주세요: ");
-		String storeName = reader.readLine();
+	}
 
-		String line = "";
-		while((line = reader.readLine()) != null) {
-			String[] parts = line.split(",");
-//			if (storeName.equals(parts[0])) {
-//				
-//				System.out.println("상호명: " + parts[0]);
-//				System.out.println("음식분류: " + parts[1]);
-//				System.out.println("주소: " + parts[2]);
-//				System.out.println("테이블: " + Integer.parseInt(parts[3]));
-//				System.out.println("평균평점: " + Double.parseDouble(parts[4]));
-//				System.out.println("즐겨찾기 여부: " + Boolean.parseBoolean(parts[5]));
-//				return; 
-//			}
-
+	private ArrayList<Store> searchMenuName(String menu) {
+		
+		ArrayList<Store> tmp = new ArrayList<>();
+		
+		for(Menu m : Data.menuList) {
+			
+			//메뉴 이름이 검색한 값과 같은지 확인
+			if(m.getMenuName().equals(menu)) {
+				
+				String licenseNumber = m.getLicenseNumber();
+				
+				//라이센스 넘버가 같은 스토어 찾기
+				for(Store store : Data.storeList) {
+					
+					//라이센스 넘버가 같으면 tmp에 넣기
+					if(store.getLicenseNumber().equals(licenseNumber)) {
+						tmp.add(store);
+						break;
+					}
+				}
+				
+			}
 		}
-		System.out.println("일치하는 음식점을 찾을 수 없습니다.");
-
-	}
-
-	private void searchMenuName() {
-		
+		return tmp;
 		
 	}
-
-
 }
+

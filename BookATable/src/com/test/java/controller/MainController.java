@@ -43,6 +43,7 @@ public class MainController {
 
 				MainView.logo();
 				MainView.userPage();
+
 				int choice = MainView.get();
 				
 				switch(choice) {
@@ -63,6 +64,7 @@ public class MainController {
 
 				MainView.logo();
 				MainView.businessUserPage();
+
 				int choice = MainView.get();
 				
 				switch(choice) {
@@ -77,12 +79,13 @@ public class MainController {
 				default:
 					loop = false;
 				}
-				
 			}
 			else if(Member.level == 3) {
 
 				MainView.logo();
 				MainView.adminPage();
+				loop = false;
+
 				int choice = MainView.get();
 				
 				switch(choice) {

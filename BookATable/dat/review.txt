@@ -1,0 +1,1 @@
+userid, licenseNumber, 점수, 리뷰내용, 

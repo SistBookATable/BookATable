@@ -5,7 +5,7 @@ public class PointUsage {
 	private int usageNumber; 
 	private int amountCharging;
 	private String useTime;
-	private String Content;
+	private String content;
 	private String userId;
 	
 	
@@ -14,7 +14,7 @@ public class PointUsage {
 		this.usageNumber = usageNumber;
 		this.amountCharging = amountCharging;
 		this.useTime = useTime;
-		Content = content;
+		content = content;
 		this.userId = userId;
 	}
 	
@@ -28,7 +28,7 @@ public class PointUsage {
 	}
 
 	public String getContent() {
-		return Content;
+		return content;
 	}
 
 	public String getUserId() {

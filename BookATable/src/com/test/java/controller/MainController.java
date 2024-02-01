@@ -51,6 +51,8 @@ public class MainController {
 				case 1:
 					break;
 				case 2:
+					LogOutController logOutController = new LogOutController();
+					logOutController.logOut();
 					break;
 				case 3:
 					break;
@@ -72,6 +74,8 @@ public class MainController {
 				case 1:
 					break;
 				case 2:
+					LogOutController logOutController = new LogOutController();
+					logOutController.logOut();
 					break;
 				case 3:
 					break;
@@ -85,7 +89,6 @@ public class MainController {
 
 				MainView.logo();
 				MainView.adminPage();
-				loop = false;
 
 				int choice = MainView.get();
 				
@@ -95,14 +98,12 @@ public class MainController {
 					userManagementController.userManagement();
 					break;
 				case 2:
-					LogInController logInController = new LogInController();
-					logInController.logIn();
 					break;
 				case 3:
-					FindAccountController findAccountController = new FindAccountController();
-					findAccountController.findAccount();
 					break;
 				case 4:
+					LogOutController logOutController = new LogOutController();
+					logOutController.logOut();
 					break;
 				default:
 					loop = false;

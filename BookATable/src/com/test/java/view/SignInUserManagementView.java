@@ -15,19 +15,19 @@ public class SignInUserManagementView {
 		System.out.println("└───────────────────────────────────────────────────────┘");
 		System.out.println();
 		
-		String header = String.format("%15s%15s%15s%15s%15s%15s", "[회원ID]","[가입일]","[회원 이름]","[예약 횟수]","[노쇼 횟수]","[정지 여부]");
+		String header = String.format("%15s%15s%18s%15s%15s%15s", "[회원ID]","[가입일]","[회원 이름]","[예약 횟수]","[노쇼 횟수]","[정지 여부]");
 		System.out.println(header);
 		
 		for(Member m : Data.memberList) {
 			String tmp = "";
 			if(m.getUserType() == 1) {
-				tmp = String.format("%15s%18s%15s%15d회%15d회%15s", 
+				tmp = String.format("%15s%18s%15s%15d회%15d회%19s", 
 						m.getId(),
 						m.getSignIn(),
 						m.getName(),
-						((User)m).getNoshowCount(),
 						((User)m).getReservationCount(),
-						((User)m).getNoshowCount()>10? "정지회원입니다.":" ");
+						((User)m).getNoshowCount(),
+						(((User)m).getNoshowCount() >= 10)? "정지회원입니다.":" ");
 				System.out.println(tmp);
 			}
 			

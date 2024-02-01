@@ -19,6 +19,19 @@ public class Store {
 	private double averageScore;
 	
 
+	public Store(String licenseNumber, String storeName, String storeTelNumber, String menuCategory, String address, double score, int distanceFrom) {
+		super();
+		this.licenseNumber = licenseNumber;
+		this.storeName = storeName;
+		this.storeTelNumber = storeTelNumber;
+		this.address = address;
+		
+		// TODO distanceFrom 주소 사용해서 구하기
+		this.score = 0 ;
+		this.menuCategory = null;
+		this.distanceFrom = 0;
+		
+	}
 
 	public Store(String licenseNumber, String storeName, String storeTelNumber, String address) {
 		super();
@@ -33,6 +46,7 @@ public class Store {
 		this.distanceFrom = 0;
 	}
 	
+
 	public double getScore() {
 		double sum = 0;
 		int count = 0;

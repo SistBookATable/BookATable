@@ -39,6 +39,7 @@ public class LogInController {
 				} else {
 					System.out.println(u.getName() + "님, 로그인에 성공하셨습니다.");
 					Member.level = u.getUserType();
+					Member.name = u.getName();
 					return true;
 				}
 			} 

@@ -3,6 +3,7 @@ package com.test.java.model;
 import java.util.Calendar;
 
 public class Review {
+
 	private int reviewNumber;
 	private Calendar dateWritten;
 	private String content;
@@ -12,4 +13,5 @@ public class Review {
 	public boolean checkNumber(int num) {
 		return false;
 	} 
+
 }

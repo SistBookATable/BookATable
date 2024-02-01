@@ -10,6 +10,8 @@ public class Store {
 	private int score;
 	private int distanceFrom;
 	
+	private String menuName;
+	
 	private String tablecount;
 	private boolean bookmark;
 	private double averageScore;
@@ -31,6 +33,10 @@ public class Store {
 	
 	public String getStoreName() {
 		return storeName;
+	}
+	
+	public String getmenuName() {
+		return menuName;
 	}
 	public String getStoreNumber() {
 		return storeTelNumber;

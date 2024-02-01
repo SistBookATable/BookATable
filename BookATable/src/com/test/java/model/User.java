@@ -60,6 +60,7 @@ public class User extends Member{
 		this.signOut = signOut;
 	}
 	
+
 	public int getUserType() {
 		return userType;
 	}
@@ -92,16 +93,24 @@ public class User extends Member{
 		return balance;
 	}
 
+	public String getBank() {
+		return bank;
+	}
+
 	public String getAccount() {
 		return account;
 	}
 
-	public String getSignOut() {
-		return signOut;
+	public String getCheckStop() {
+		return checkStop;
 	}
-	
+
 	public String getSignIn() {
 		return signIn;
+	}
+
+	public String getSignOut() {
+		return signOut;
 	}
 
 	public boolean checkid(String id) {

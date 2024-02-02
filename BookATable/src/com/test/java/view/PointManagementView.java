@@ -7,13 +7,13 @@ import com.test.java.model.User;
 
 public class PointManagementView {
 	
-	public static void showPointManagement(String name) {
+	public static void showPointManagement(String name, String account, int balance) {
 		System.out.println();
 		System.out.println();
 		System.out.println("┌───────────────────────────────────────────────────────┐");
 		System.out.printf("	|						%s 회원님							|", name); 
-		System.out.println("|              	보 유 포 인 트 : 	%d	  			       	|");
-		System.out.println("|              	계 좌 번 호   :   %s     	                |");
+		System.out.printf(" |              	보 유 포 인 트 : 	%d	  			       	|", balance);
+		System.out.printf(" |              	계 좌 번 호   :   %s     	                |", account);
 		System.out.println("|	※충전계좌 변경은 개인정보관리의 등록계좌 변경 메뉴에서 가능합니다※ 	|");
 		System.out.println("└───────────────────────────────────────────────────────┘");
 		System.out.println("==========================================================================================");

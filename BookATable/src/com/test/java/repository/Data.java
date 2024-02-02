@@ -55,8 +55,9 @@ public class Data {
 	//필요한 자료들
 	public static ArrayList<Member> memberList = new ArrayList<>();
 	public static ArrayList<Store> storeList = new ArrayList<>();
-
 	public static ArrayList<Menu> menuList = new ArrayList<>();
+	public static ArrayList<Reservation> reservationList = new ArrayList<>();
+
 	public static ArrayList<BlackList> blackList = new ArrayList<>();
 	public static ArrayList<Faq> faqList = new ArrayList<>();
 	public static ArrayList<CompletedList> compleatedList = new ArrayList<>();
@@ -64,15 +65,67 @@ public class Data {
 	public static ArrayList<OperatingHours> operatingHoursList = new ArrayList<>();
 	public static ArrayList<PointUsage> pointList = new ArrayList<>();
 	public static ArrayList<Request> requestList = new ArrayList<>();
-	//인원수에 따라서 메뉴 늘어남 -> index정해져 있지 않음 -> 포문 돌려서 save하기
-	public static ArrayList<Reservation> reservationList = new ArrayList<>();
 	public static ArrayList<ReservationCancel> reservationCancelList = new ArrayList<>();
 	public static ArrayList<Review> reviewList = new ArrayList<>();
 	public static ArrayList<StopUser> stopUserList = new ArrayList<>();
 	public static ArrayList<Table> tableList = new ArrayList<>();
 	public static ArrayList<WriteReview> writeReviewList = new ArrayList<>();
 	
-	
+
+	public static void loadReservation() {
+		try {
+			BufferedReader reader
+			= new BufferedReader(new FileReader(Data.RESERVATION));
+		
+		String line = null;
+		
+		while((line = reader.readLine())!=null){
+			
+			String[] tmp = line.split(",");
+			ArrayList<String> arr = new ArrayList<>();
+			for(int i=0; i<Integer.parseInt(tmp[5]); i++) {
+				arr.add(tmp[i+8]);
+			}
+			Reservation reservation = new Reservation(Integer.parseInt(tmp[0]),tmp[1],tmp[2],tmp[3],tmp[4]
+													,Integer.parseInt(tmp[5]),Integer.parseInt(tmp[6]),tmp[7], arr);
+			reservationList.add(reservation);
+		}
+
+		reader.close();
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+	public static void saveReservation() {
+		try {
+			BufferedWriter writer = new BufferedWriter(new FileWriter(Data.RESERVATION));
+			
+			for(Reservation reservation : Data.reservationList) {
+				String line = String.format("%d,%s,%s,%s,%s,%d,%d,%s",
+						reservation.getReservationNumber(),
+						reservation.getUserId(),
+						reservation.getLicenseNumber(),
+						reservation.getReservationTime(),
+						reservation.getReservationDate(),
+						reservation.getNumOfPeople(),
+						reservation.getTableCapacity(),
+						reservation.getState());
+				
+				for(String menuName :reservation.getMenulist()) {
+					line += "," + menuName;
+				}
+				
+				line += "\n";
+				writer.write(line);
+			}
+			
+			writer.close();
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		
+	}
 	public static void loadMenu() {
 		try {
 			BufferedReader reader
@@ -212,9 +265,10 @@ public class Data {
 			
 			while((line = reader.readLine()) != null) {
 				
-				String[] tmp = line.split(",");
-				BusinessUser businessUser = new BusinessUser(Integer.parseInt(tmp[0]), tmp[1], tmp[2], tmp[3]
-															, tmp[4], tmp[5], tmp[6],  tmp[7], tmp[8], tmp[9]);
+//				String[] tmp = line.split(",");
+////				 TODO: model 생성자 수정후 변경하기
+//				BusinessUser businessUser = new BusinessUser(Integer.parseInt(tmp[0]), tmp[1], tmp[2], tmp[3]
+//															, tmp[4], tmp[5], tmp[6],  tmp[7], tmp[8], tmp[9]);
 				
 				memberList.add(businessUser);
 			}

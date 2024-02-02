@@ -8,23 +8,18 @@ import com.test.java.model.Reservation;
 import com.test.java.model.Store;
 import com.test.java.repository.Data;
 
-public class ReservationStatusInquiryView {
+public class InquiryReservationStatusView {
 	
 	
-	public void showReservationStatusInquiry() {
+	public static void showInquiryReservationStatus() {
 
 		System.out.println("------------------------------------------------------------------------------------------");
 		System.out.println();
-<<<<<<< HEAD
 		System.out.printf("■           %s님 현재 예약 현황		   ■", findNameById(Member.id));
-=======
-		System.out.printf("■           %s님 현재 예약 현황		   ■\n", name);
->>>>>>> dbe5f5ccb50d42562134ecbf5f4c208a11d792ff
 		System.out.println();
 		System.out.println("------------------------------------------------------------------------------------------");
 
 		System.out.println();
-<<<<<<< HEAD
 		System.out.printf("[상호명]\t[인원수]\t[예약 시간]");
 		
 		while(true) {
@@ -35,12 +30,7 @@ public class ReservationStatusInquiryView {
 			}
 			break;
 		}
-		
-=======
 
-		System.out.printf("[상호명]\t[인원수]\t[예약 시간]\n");
-		System.out.printf("맥도날드\t3명\t13:00\t\n");
->>>>>>> dbe5f5ccb50d42562134ecbf5f4c208a11d792ff
 		System.out.println();
 		System.out.println("------------------------------------------------------------------------------------------");
 		System.out.println();
@@ -55,7 +45,7 @@ public class ReservationStatusInquiryView {
 		System.out.println();
 	}
 
-	private String findreservationTimeById(String id) {
+	private static String findreservationTimeById(String id) {
 		String reservationTime = "";
 		for(Reservation r : Data.reservationList) {
 			if (r.getUserId().equals(id)) {
@@ -66,7 +56,7 @@ public class ReservationStatusInquiryView {
 		return reservationTime;
 	}
 
-	private int findNumOfPepleById(String id) {
+	private static int findNumOfPepleById(String id) {
 		int numOfPeple = 0;
 		
 		for(Reservation r : Data.reservationList) {
@@ -78,7 +68,7 @@ public class ReservationStatusInquiryView {
 		return numOfPeple;
 	}
 
-	private String findStoreNameById(String id) {
+	private static String findStoreNameById(String id) {
 		String storeName = "";
 		for(Reservation r : Data.reservationList) {
 			if (r.getUserId().equals(id)) {
@@ -103,7 +93,7 @@ public class ReservationStatusInquiryView {
 		return temp;
 	}
 
-	private String findNameById(String id) {
+	private static String findNameById(String id) {
 		String name = "";
 
 		for(Member u : Data.memberList) {

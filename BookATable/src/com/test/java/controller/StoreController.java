@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collections;
 
 import com.test.java.model.Menu;
 import com.test.java.model.Store;
@@ -27,21 +28,26 @@ public class StoreController {
 				System.out.println("이전 화면으로 이동합니다.");
 				break;
 			case 1:
-				
-				// FindByNameController findByNameController = new FindByNameController();
+				FindByNameController findByNameController = new FindByNameController();
 				String storeName = StoreView.getStoreName();
 				ArrayList<Store> searched = searchStoreName(storeName);
-				storeView.show(searched);
-				storeView.showSelectBox();
-				storeView.get();
-				storeView.showSelectBox();
-				
+				if(storeView.show(searched)) {
+//					storeView.showSelectBox();
+//					storeView.get();
+					storeView.showSelectBox();
+					storeView.get();
+					Collections.sort(searched, new FindByNameController());
+				}
 				break;
 				
 			case 2:
 				String menuName = storeView.getmenuName();
 				ArrayList<Store> searchByMenu = searchMenuName(menuName);
 				storeView.show(searchByMenu);
+				storeView.showSelectBox();
+				storeView.get();
+				Collections.sort(searchByMenu, new FindDistanceFromController());
+				
 				break;
 			default:
 				System.out.println("잘못 입력하셨습니다. 다시 입력해주세요.");
@@ -65,7 +71,7 @@ public class StoreController {
 				try {
 					String storeName = StoreView.getStoreName();
 					searchStoreName(storeName);
-				} catch (IOException e) {
+				} catch (Exception e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
@@ -128,4 +134,3 @@ public class StoreController {
 		
 	}
 }
-

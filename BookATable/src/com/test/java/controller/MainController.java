@@ -1,6 +1,7 @@
 package com.test.java.controller;
 
 import com.test.java.model.Member;
+import com.test.java.model.Store;
 import com.test.java.repository.Data;
 import com.test.java.view.MainView;
 import com.test.java.view.StoreView;
@@ -35,6 +36,8 @@ public class MainController {
 					findAccountController.findAccount();
 					break;
 				case 4:
+					StoreController storeController = new StoreController();
+					storeController.run();
 					break;
 				default:
 					loop = false;
@@ -128,6 +131,14 @@ public class MainController {
 		Data.loadAdmin();
 		Data.loadUser();
 		Data.loadBusinessUser();
+		Data.loadStore();
+//		for(Store s : Data.storeList) {
+//			System.out.println(s);
+//		}
+//<<<<<<< Updated upstream
 
+//=======
+		
+//>>>>>>> Stashed changes
 	}
 }

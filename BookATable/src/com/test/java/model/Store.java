@@ -19,7 +19,12 @@ public class Store {
 	private double averageScore;
 	
 
-	public Store(String licenseNumber, String storeName, String storeTelNumber, String menuCategory, String address, double averageScore, int distanceFrom) {
+
+	/*public Store(String licenseNumber, String storeName, String storeTelNumber, String menuCategory, String address, double averageScore, int distanceFrom) {
+
+	/*
+	public Store(String licenseNumber, String storeName, String storeTelNumber, String address) {
+>>>>>>> Stashed changes
 		super();
 		this.licenseNumber = licenseNumber;
 		this.storeName = storeName;
@@ -46,6 +51,8 @@ public class Store {
 		this.distanceFrom = 0;
 	}
 	
+	}*/
+//<<<<<<< Updated upstream
 
 	public String getAddress() {
 		return address;
@@ -58,14 +65,25 @@ public class Store {
 	public double getAverageScore() {
 		return averageScore;
 	}
+	public Store(String licenseNumber, String storeName, String storeTelNumber, String menuCategory, String address, double score, int distanceFrom) {
+		this.licenseNumber = licenseNumber;
+		this.storeName = storeName;
+		this.storeTelNumber = storeTelNumber;
+		this.menuCategory = menuCategory;
+		this.address = address;
+		this.score = (int)(score);
+		this.distanceFrom = distanceFrom;
+		//this.distanceFrom = distanceFrom;
+
+	}
 
 	public double getScore() {
 		double sum = 0;
 		int count = 0;
-		for(Review r :Data.reviewList) {
+		for(Store r :Data.storeList) {
 			if(r.getLicenseNumber().equals(this.licenseNumber)) {
 				sum += r.getScore();
-				count ++;
+				count++;
 			}
 		}
 		

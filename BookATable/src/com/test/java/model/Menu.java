@@ -1,7 +1,8 @@
 package com.test.java.model;
 
 public class Menu {
-	
+	private Store store;
+
 	private String licenseNumber;
 	private String menuName;
 	private int price;
@@ -38,6 +39,11 @@ public class Menu {
 
 	public int getPrice() {
 		return price;
+	}
+
+	public Store getStore() {
+		// TODO Auto-generated method stub
+		return this.store;
 	}
 	
 	

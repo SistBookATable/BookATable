@@ -1,23 +1,34 @@
 package com.test.java.controller;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.util.ArrayList;
 import java.util.Comparator;
 
-import com.test.java.model.Menu;
+import com.test.java.model.Store;
 
-public class FindByNameController implements Comparator<Menu> {
 
-	ArrayList<Menu> menuList = new ArrayList<Menu>();
-	BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-	
-	public int compare(Menu m1, Menu m2) {
+public class FindByNameController implements Comparator<Store> {
+
+	@Override
+	public int compare(Store o1, Store o2) {
+
+		double score1 = o1.getScore();
+		double score2 = o2.getScore();
 		
-		
-		
+		return Double.compare(score2, score1);
+
 	}
-	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

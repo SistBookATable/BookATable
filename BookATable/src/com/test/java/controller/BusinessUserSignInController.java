@@ -33,7 +33,7 @@ public class BusinessUserSignInController {
 		String now = String.format("%tF", c);
 		
 		
-		BusinessUser businessUser = new BusinessUser(id,pw,name,licenseNumber, phoneNumber, bank, account,now);
+		BusinessUser businessUser = new BusinessUser(2, id,pw,name,licenseNumber, phoneNumber, bank, account,now,null);
 		
 		Store store = new Store(licenseNumber,storeName, storeTelNumber, address, menuCategory);
 		

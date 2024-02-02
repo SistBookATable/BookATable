@@ -20,6 +20,7 @@ public class ReservationStatusInquiryController {
 				= new ReservationCancelController();
 			reservationCancelController.reservationCancel();
 		case 0:
+			
 			break;
 		}
 	}

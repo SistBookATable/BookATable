@@ -20,6 +20,7 @@ public class AnswerController {
 			
 			switch (choice) {
 			case 1:
+				//답변 등록
 				if(!selected.getAnswer().equals("null")) {
 					answerView.hasAnswerMessage();
 				}else {
@@ -29,11 +30,13 @@ public class AnswerController {
 				}
 				break;
 			case 2:
+				//답변 삭제
 				selected.setAnswer("null");
 				selected.setAdminId("null");
 				answerView.deleteSuccessMessage();
 				break;
 			case 0:
+				//뒤로 가기
 				loop = false;
 				break;
 			default:

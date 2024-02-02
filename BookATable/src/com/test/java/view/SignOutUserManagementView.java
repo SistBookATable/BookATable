@@ -32,7 +32,6 @@ public class SignOutUserManagementView {
 			}
 			
 		}
-		View.pause();
 		
 	}
 

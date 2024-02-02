@@ -21,11 +21,16 @@ public class SignInUserManagementController {
 			int choice = SignInUserManagementView.getSelectType();
 			
 			if(choice == 1) {
+				//아이디 입력 받기
 				String id = SignInUserManagementView.getId();
-				String basic = findBasicById(id); 
+				//아이디를 사용해서 기본정보 받아오기
+				String basic = findBasicById(id);
+				//기본 정보 출력
 				SignInUserManagementView.show(basic);
 				
+				//아이디를 사용해서 세부 예약 내역 정보 받아오기
 				findDetailById(id);
+				
 			}
 			else if(choice == 0) {
 				loop = false;
@@ -49,9 +54,18 @@ public class SignInUserManagementController {
 	}
 
 	private void findDetailById(String id) {
+		ArrayList<String> temp = new ArrayList<>();
 		ArrayList<Reservation> tmp = new ArrayList<>();
 		for(Reservation r : Data.reservationList) {
 			if(r.getUserId().equals(id)) {
+				tmp.add(r);
+				int reservationNumber = r.getReservationNumber();
+				String storeName = findName(r.getLicenseNumber());
+				String date = r.getReservationDate();
+				int numOfPeople = r.getNumOfPeople();
+				ArrayList<Menu> = r.getMenu();
+				
+				
 			}
 		}
 		

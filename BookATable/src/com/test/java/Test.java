@@ -23,7 +23,7 @@ public class Test {
 		String BUSINESSUSER = "dat\\businessUser";
 		String POINT = "dat\\pointUsage.txt";
 		String OH = "dat\\operatinghours.txt";
-		String MENU = "dat\\menu.txt";
+		String MENU = "dat\\menu";
 		
 		
 		ArrayList<User> userList = new ArrayList<>();
@@ -162,7 +162,7 @@ public class Test {
 				//0,1 (정수)
 				int idx = (int)(Math.random()*10)%2;
 				int capa = tableList.get(start).getTableCapacity();
-				r.setNumOfPeple(capa-idx);
+				r.setNumOfPeople(capa-idx);
 				r.setTableCapacity(capa);
 			
 				
@@ -183,6 +183,16 @@ public class Test {
 					}
 				}
 				
+				for(Menu m : menuList) {
+					if(m.getLicenseNumber().equals(licenseNumber)) {
+						System.out.println(m.getMenuName());
+						for(int k=0; k<r.getNumOfPeople(); k++) {
+							r.addmenu(m.getMenuName());
+						}
+						break;
+					}
+				}
+				
 				
 				System.out.println(r);
 				reservationList.add(r);
@@ -198,16 +208,21 @@ public class Test {
 			BufferedWriter writer = new BufferedWriter(new FileWriter(RESERVATION));
 			
 			for(Reservation r : reservationList) {
-				String line = String.format("%d,%s,%s,%s,%s,%d,%d,%s\n",
+				String line = String.format("%d,%s,%s,%s,%s,%d,%d,%s",
 						r.getReservationNumber(),
 						r.getUserId(),
 						r.getLicenseNumber(),
 						r.getReservationTime(),
 						r.getReservationDate(),
-						r.getNumOfPeple(),
+						r.getNumOfPeople(),
 						r.getTableCapacity(),
 						r.getState());
 				
+				for(String name :r.getMenulist()) {
+					line += "," + name;
+				}
+				
+				line += "\n";
 				writer.write(line);
 			}
 			

@@ -34,7 +34,6 @@ public class SignInUserManagementView {
 			}
 			
 		}
-		View.pause();
 	}
 
 	public static void showSelectBox() {

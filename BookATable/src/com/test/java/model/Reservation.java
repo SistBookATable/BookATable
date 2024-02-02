@@ -19,6 +19,11 @@ public class Reservation {
 	
 	
 	
+	public Reservation(int int1, String string, String string2, String string3, String string4, int int2, int int3,
+			String string5, ArrayList<String> arr) {
+		// TODO Auto-generated constructor stub
+	}
+
 	public void addmenu(String name) {
 		menulist.add(name);
 	}

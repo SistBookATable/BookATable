@@ -14,8 +14,9 @@ public class UserMyPageController {
 
 			switch (choice) {
 			case 1:
-				ReservationManagementController reservationManagementController = new ReservationManagementController(); 
-				reservationManagementController.reservaionManagement();
+				ReservationManagementController reservationManagementController = new ReservationManagementController();
+				reservationManagementController.reservationManagement();
+				break;
 			case 2:
 				PointManagementController pointManage
 

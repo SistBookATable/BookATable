@@ -15,11 +15,16 @@ public class ReservationStatusInquiryView {
 
 		System.out.println("------------------------------------------------------------------------------------------");
 		System.out.println();
+<<<<<<< HEAD
 		System.out.printf("■           %s님 현재 예약 현황		   ■", findNameById(Member.id));
+=======
+		System.out.printf("■           %s님 현재 예약 현황		   ■\n", name);
+>>>>>>> dbe5f5ccb50d42562134ecbf5f4c208a11d792ff
 		System.out.println();
 		System.out.println("------------------------------------------------------------------------------------------");
 
 		System.out.println();
+<<<<<<< HEAD
 		System.out.printf("[상호명]\t[인원수]\t[예약 시간]");
 		
 		while(true) {
@@ -31,6 +36,11 @@ public class ReservationStatusInquiryView {
 			break;
 		}
 		
+=======
+
+		System.out.printf("[상호명]\t[인원수]\t[예약 시간]\n");
+		System.out.printf("맥도날드\t3명\t13:00\t\n");
+>>>>>>> dbe5f5ccb50d42562134ecbf5f4c208a11d792ff
 		System.out.println();
 		System.out.println("------------------------------------------------------------------------------------------");
 		System.out.println();

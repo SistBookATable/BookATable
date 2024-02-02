@@ -107,7 +107,29 @@ public class Data {
 			BlackList blackList = new BlackList(tmp[0],tmp[1],Integer.parseInt(tmp[2]));
 			blackListList.add(blackList);
 		}
+	public static void loadInquiry() {
+		try {
+			BufferedReader reader
+			= new BufferedReader(new FileReader(Data.INQUIRY));
+		
+		String line = null;
+		
+		while((line = reader.readLine())!=null){
+			
+			String[] tmp = line.split(",");
+			
+			Inquiry inquiry = new Inquiry(Integer.parseInt(tmp[0]),tmp[1],tmp[2], tmp[3], tmp[4],tmp[5],tmp[6],tmp[7]);
+			
+			inquiryList.add(inquiry);
+		}
 
+		reader.close();
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		
+	}
+	
 		reader.close();
 		} catch (Exception e) {
 			// TODO: handle exception

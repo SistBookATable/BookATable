@@ -1,5 +1,6 @@
 package com.test.java.controller;
 
+import com.test.java.model.Inquiry;
 import com.test.java.model.Member;
 import com.test.java.repository.Data;
 import com.test.java.view.MainView;
@@ -128,6 +129,10 @@ public class MainController {
 		Data.loadAdmin();
 		Data.loadUser();
 		Data.loadBusinessUser();
-
+		Data.loadInquiry();
+		
+		for(Inquiry i :Data.inquiryList) {
+			System.out.println(i);
+		}
 	}
 }

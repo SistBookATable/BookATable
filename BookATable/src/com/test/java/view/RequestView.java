@@ -61,4 +61,31 @@ public class RequestView {
 		}
 	}
 
+	public void showSelectBox() {
+		System.out.println("==========================================================================================");
+		System.out.println();
+		System.out.println("■           1. 리뷰 내용 보기              ■");
+		System.out.println("■           0. 뒤로 가기                  ■");
+		System.out.println();
+		System.out.println("==========================================================================================");
+		System.out.println();
+		System.out.println("선택(번호) : ");
+	}
+
+	public int getSelectType() {
+		Scanner scan = new Scanner(System.in);
+		int tmp = scan.nextInt();
+		scan.nextLine();
+		return tmp;
+	}
+
+	public String getRequestNumber() {
+		System.out.println("확인할 요청 번호 입력하세요");
+		System.out.print("선택(요청번호) : ");
+
+		Scanner scan = new Scanner(System.in);
+		String tmp = scan.nextLine();
+		return tmp;
+	}
+
 }

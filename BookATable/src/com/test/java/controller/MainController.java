@@ -105,8 +105,8 @@ public class MainController {
 					inquiryController.inquiryManagement();
 					break;
 				case 3:
-					RequestController reviewController = new RequestController();
-					reviewController.reviewManagement();
+					RequestController requestController = new RequestController();
+					requestController.requestManagement();
 					break;
 				case 4:
 					LogOutController logOutController = new LogOutController();

@@ -1,18 +1,18 @@
 package com.test.java.controller;
 
-import java.io.BufferedReader;
 import java.util.ArrayList;
 
 import com.test.java.model.Member;
-import com.test.java.model.User;
 import com.test.java.repository.Data;
 import com.test.java.view.LogInView;
+import com.test.java.view.MainView;
 import com.test.java.view.View;
 
 public class LogInController {
+	LogInView logInView = new LogInView();
 
 	public void logIn() {
-
+		
 		boolean loop = true;
 
 		while (loop) {
@@ -43,9 +43,24 @@ public class LogInController {
 					return true;
 				}
 			} 
+			
 		}
 		System.out.println("해당 아이디를 찾을 수 없습니다.");
-		return false;
+		logInView.show();
+		while (true) {
+
+			switch (logInView.get()) {
+
+			case 1:
+				logIn();
+				break;
+			case 2:
+				MainController.start();
+				break;
+			}
+			return false;
+		}
+		
 	}
 
 	private String findNameById(String id) {

@@ -55,6 +55,7 @@ public class Data {
 	//필요한 자료들
 	public static ArrayList<Member> memberList = new ArrayList<>();
 	public static ArrayList<Store> storeList = new ArrayList<>();
+
 	public static ArrayList<Menu> menuList = new ArrayList<>();
 	public static ArrayList<BlackList> blackList = new ArrayList<>();
 	public static ArrayList<Faq> faqList = new ArrayList<>();

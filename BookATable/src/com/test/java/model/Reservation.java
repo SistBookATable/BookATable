@@ -1,7 +1,9 @@
 package com.test.java.model;
 
 
+import java.util.ArrayList;
 import java.util.Calendar;
+
 
 public class Reservation {
 	
@@ -10,11 +12,23 @@ public class Reservation {
 	private String licenseNumber;
 	private String reservationTime;
 	private String reservationDate;
-	private int numOfPeple;
+	private int numOfPeople;
 	private int tableCapacity;
 	private String state;
+	private ArrayList<String> menulist = new ArrayList<>();
 	
 	
+	
+	public void addmenu(String name) {
+		menulist.add(name);
+	}
+	
+	public ArrayList<String> getMenulist() {
+		return menulist;
+	}
+	public void setMenulist(ArrayList<String> menulist) {
+		this.menulist = menulist;
+	}
 	public int getReservationNumber() {
 		return reservationNumber;
 	}
@@ -45,11 +59,11 @@ public class Reservation {
 	public void setReservationDate(String reservationDate) {
 		this.reservationDate = reservationDate;
 	}
-	public int getNumOfPeple() {
-		return numOfPeple;
+	public int getNumOfPeople() {
+		return numOfPeople;
 	}
-	public void setNumOfPeple(int numOfPeple) {
-		this.numOfPeple = numOfPeple;
+	public void setNumOfPeople(int numOfPeple) {
+		this.numOfPeople = numOfPeple;
 	}
 	public int getTableCapacity() {
 		return tableCapacity;
@@ -57,18 +71,22 @@ public class Reservation {
 	public void setTableCapacity(int tableCapacity) {
 		this.tableCapacity = tableCapacity;
 	}
-	@Override
-	public String toString() {
-		return "Reservation [reservationNumber=" + reservationNumber + ", userId=" + userId + ", licenseNumber="
-				+ licenseNumber + ", reservationTime=" + reservationTime + ", reservationDate=" + reservationDate
-				+ ", numOfPeple=" + numOfPeple + ", tableCapacity=" + tableCapacity + ", state=" + state + "]";
-	}
 	public String getState() {
 		return state;
 	}
 	public void setState(String state) {
 		this.state = state;
 	}
+	@Override
+	public String toString() {
+		System.out.println(menulist);
+		return "Reservation [reservationNumber=" + reservationNumber + ", userId=" + userId + ", licenseNumber="
+				+ licenseNumber + ", reservationTime=" + reservationTime + ", reservationDate=" + reservationDate
+				+ ", numOfPeople=" + numOfPeople + ", tableCapacity=" + tableCapacity + ", state=" + state
+				+ ", menulist=" + menulist + "]";
+	}
+
+	
 	
 	
 	

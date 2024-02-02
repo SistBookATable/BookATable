@@ -9,7 +9,7 @@ public class UserManagementView {
 		System.out.println();
 		System.out.println("■           1. 가입 회원 조회              ■");
 		System.out.println("■           2. 탈퇴 회원 조회              ■");
-		System.out.println("■           0. 뒤로 가기                  ■");
+		System.out.println("■           0. 이전 화면	               ■");
 		System.out.println();
 		System.out.println("==========================================================================================");
 		System.out.println();

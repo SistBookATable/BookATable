@@ -101,6 +101,7 @@ public class MainController {
 					break;
 				case 2:
 					InquiryController inquiryController = new InquiryController();
+					inquiryController.inquiryManagement();
 					break;
 				case 3:
 					break;

@@ -1,6 +1,7 @@
 package com.test.java.controller;
 
 import com.test.java.model.Inquiry;
+import com.test.java.model.Member;
 import com.test.java.view.AnswerView;
 
 public class AnswerController {
@@ -23,11 +24,13 @@ public class AnswerController {
 					answerView.hasAnswerMessage();
 				}else {
 					String answer = answerView.getAnswer();
+					selected.setAdminId(Member.id);
 					selected.setAnswer(answer);
 				}
 				break;
 			case 2:
 				selected.setAnswer("null");
+				selected.setAdminId("null");
 				answerView.deleteSuccessMessage();
 				break;
 			case 0:

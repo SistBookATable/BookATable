@@ -26,6 +26,9 @@ public class Inquiry {
 		this.answer = answer;
 	}
 
+	public void setAdminId(String id) {
+		this.adminId = id;
+	}
 	public void setAnswer(String answer) {
 		this.answer = answer;
 	}

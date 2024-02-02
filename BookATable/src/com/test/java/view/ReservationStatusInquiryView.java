@@ -61,7 +61,7 @@ public class ReservationStatusInquiryView {
 		
 		for(Reservation r : Data.reservationList) {
 			if (r.getUserId().equals(id)) {
-				numOfPeple = r.getNumOfPeple();
+				numOfPeple = r.getNumOfPeople();
 			}
 		}
 		

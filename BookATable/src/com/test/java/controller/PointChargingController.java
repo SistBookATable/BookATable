@@ -23,7 +23,7 @@ public class PointChargingController {
 				inputPrice = Integer.parseInt(input.get(0));
 				
 			} catch (NumberFormatException e) {
-				System.out.println("숫자로만 입력하세요. 다시 시도하세요.");
+				System.out.println("잘못된 입력입니다.");
 				continue;
 			}
 			

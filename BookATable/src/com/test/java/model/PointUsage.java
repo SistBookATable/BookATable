@@ -3,18 +3,25 @@ package com.test.java.model;
 public class PointUsage {
 	
 	private int usageNumber; 
-	private int amountCharging;
+	private int usagePoint;
 	private String useTime;
-	private String content;
 	private String userId;
 	
+	//TODO save할 때 어떻게 적용할지..!
 	
-	public PointUsage(int usageNumber, int amountCharging, String useTime, String content, String userId) {
+	private String[] content = {"포인트충전","[예약취소]포인트환급","[예약신청]포인트지불","충전포인트환불"};
+	
+	public String[] getContent() {
+		return content;
+	}
+
+	
+	public PointUsage(int usageNumber,int usagePoint,String useTime, String[] content, String userId) {
 		super();
 		this.usageNumber = usageNumber;
-		this.amountCharging = amountCharging;
+		this.usagePoint = usagePoint;
 		this.useTime = useTime;
-		content = content;
+		this.content = content;
 		this.userId = userId;
 	}
 	
@@ -27,24 +34,22 @@ public class PointUsage {
 		return useTime;
 	}
 
-	public String getContent() {
-		return content;
-	}
+
 
 	public String getUserId() {
 		return userId;
 	}
 
-	public void setAmountCharging(int amountCharging) {
-		this.amountCharging = amountCharging;
+	public void setUsagePoint(int usagePoint) {
+		this.usagePoint = usagePoint;
 	}
 	
-	public int getAmountCharging() {
-		return amountCharging;
+	public int getUsagePoint() {
+		return usagePoint;
 	}
 	
 	public void InqueryPointCharging() {
-		
+	
 	}
 	
 	public void InqueryPointRefund() {

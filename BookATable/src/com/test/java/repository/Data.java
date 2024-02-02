@@ -57,20 +57,41 @@ public class Data {
 	public static ArrayList<Menu> menuList = new ArrayList<>();
 	public static ArrayList<Reservation> reservationList = new ArrayList<>();
 	public static ArrayList<BlackList> blackListList = new ArrayList<>();
-
-	public static ArrayList<Faq> faqList = new ArrayList<>();
-	public static ArrayList<CompletedList> compleatedList = new ArrayList<>();
 	public static ArrayList<Inquiry> inquiryList = new ArrayList<>();
-	public static ArrayList<OperatingHours> operatingHoursList = new ArrayList<>();
+	public static ArrayList<Faq> faqList = new ArrayList<>();
 	public static ArrayList<PointUsage> pointList = new ArrayList<>();
+
+	public static ArrayList<CompletedList> compleatedList = new ArrayList<>();
+	public static ArrayList<OperatingHours> operatingHoursList = new ArrayList<>();
 	public static ArrayList<Request> requestList = new ArrayList<>();
 	public static ArrayList<ReservationCancel> reservationCancelList = new ArrayList<>();
 	public static ArrayList<Review> reviewList = new ArrayList<>();
 	public static ArrayList<StopUser> stopUserList = new ArrayList<>();
 	public static ArrayList<Table> tableList = new ArrayList<>();
 	public static ArrayList<WriteReview> writeReviewList = new ArrayList<>();
-	
-	
+	//TODO PointUsage 개체 완성하고, loadPointUsage() 마무리.... 
+	public static void loadPointUsage() {
+		try {
+			BufferedReader reader
+			= new BufferedReader(new FileReader(Data.POINTUSAGE));
+			
+			String line = null;
+			
+			while((line = reader.readLine()) != null) {
+				
+				String[] tmp = line.split(",");
+////				PointUsage pointUsage = new PointUsage(Integer.parseInt(tmp[0]),tmp[1],tmp[2],tmp[3]);
+//				pointList.add(pointUsage);
+				System.out.println(pointList);
+			}
+			
+			reader.close();
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+		
 	public static void loadFaq() {
 		try {
 			BufferedReader reader

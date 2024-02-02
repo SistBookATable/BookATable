@@ -130,14 +130,6 @@ public class Data {
 		
 	}
 	
-		reader.close();
-		} catch (Exception e) {
-			// TODO: handle exception
-		}
-		
-		
-	}
-	
 	public static void saveBlackList() {
 		try {
 			BufferedWriter writer = new BufferedWriter(new FileWriter(Data.BLACKLIST));

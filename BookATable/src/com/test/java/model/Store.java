@@ -33,16 +33,16 @@ public class Store {
 		
 	}
 
-	public Store(String licenseNumber, String storeName, String storeTelNumber, String address) {
+	public Store(String licenseNumber, String storeName, String storeTelNumber, String address, String menuCategory) {
 		super();
 		this.licenseNumber = licenseNumber;
 		this.storeName = storeName;
 		this.storeTelNumber = storeTelNumber;
 		this.address = address;
+		this.menuCategory = menuCategory;
 		
 		// TODO distanceFrom 주소 사용해서 구하기
 		this.score = 0;
-		this.menuCategory = null;
 		this.distanceFrom = 0;
 	}
 	

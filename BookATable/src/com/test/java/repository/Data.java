@@ -5,7 +5,6 @@ import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.Reader;
 import java.util.ArrayList;
 
 import com.test.java.model.Admin;
@@ -71,7 +70,29 @@ public class Data {
 	public static ArrayList<Table> tableList = new ArrayList<>();
 	public static ArrayList<WriteReview> writeReviewList = new ArrayList<>();
 	
-//TODO create load and save blakcList 
+	
+	public static void loadFaq() {
+		try {
+			BufferedReader reader
+			= new BufferedReader(new FileReader(Data.FAQ));
+			
+			String line = null;
+			
+			while((line = reader.readLine()) != null) {
+				
+				String[] tmp = line.split(",");
+				Faq faq = new Faq(Integer.parseInt(tmp[0]),tmp[1],tmp[2],tmp[3]);
+				faqList.add(faq);
+				System.out.println(faq);
+			}
+			
+			reader.close();
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
 	public static void loadBlackList() {
 		try {
 			BufferedReader reader
@@ -91,6 +112,7 @@ public class Data {
 		} catch (Exception e) {
 			// TODO: handle exception
 		}
+		
 		
 	}
 	
@@ -306,7 +328,6 @@ public class Data {
 			while((line = reader.readLine()) != null) {
 				
 				String[] tmp = line.split(",");
-////				 TODO: model 생성자 수정후 변경하기
 				BusinessUser businessUser = new BusinessUser(Integer.parseInt(tmp[0]), tmp[1], tmp[2], tmp[3]
 															, tmp[4], tmp[5], tmp[6],  tmp[7], tmp[8], tmp[9]);
 				

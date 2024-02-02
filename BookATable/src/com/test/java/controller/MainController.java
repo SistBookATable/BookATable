@@ -131,8 +131,5 @@ public class MainController {
 		Data.loadBusinessUser();
 		Data.loadInquiry();
 		
-		for(Inquiry i :Data.inquiryList) {
-			System.out.println(i);
-		}
 	}
 }

@@ -17,8 +17,7 @@ public class Reservation {
 	private String state;
 	private ArrayList<String> menulist = new ArrayList<>();
 	
-	
-	
+
 	public Reservation (int reservationNumber, String userId, String licenseNumber, String reservationTime,String reservationDate
 			, int numOfPeople, int tableCapacity, String state, ArrayList<String> menulist) {
 		super();
@@ -32,8 +31,6 @@ public class Reservation {
 		this.state = state;
 		this.menulist = menulist;
 	}
-
-
 
 	public void addmenu(String name) {
 		menulist.add(name);
@@ -102,14 +99,6 @@ public class Reservation {
 				+ ", numOfPeople=" + numOfPeople + ", tableCapacity=" + tableCapacity + ", state=" + state
 				+ ", menulist=" + menulist + "]";
 	}
-
-	
-	
-	
-	
-	
-	
-	
 
 	
 	

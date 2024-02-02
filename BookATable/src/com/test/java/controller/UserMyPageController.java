@@ -17,6 +17,7 @@ public class UserMyPageController {
 				ReservationManagementController reservationManagementController = new ReservationManagementController(); 
 				reservationManagementController.reservaionManagement();
 			case 2:
+				PointManagementController pointManage
 
 			case 3:
 

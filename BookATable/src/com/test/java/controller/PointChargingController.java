@@ -34,6 +34,8 @@ public class PointChargingController {
 			View.pause();
 			
 		}
+		
+		
 	
 	}	
 	//비밀번호 검증 

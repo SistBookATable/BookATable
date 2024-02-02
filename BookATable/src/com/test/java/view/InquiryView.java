@@ -12,7 +12,6 @@ public class InquiryView {
 	
 	public void show(Inquiry inquiry) {
 		
-		
 	}
 	
 	
@@ -84,7 +83,7 @@ public class InquiryView {
 	}
 
 
-	public String getId() {
+	public String getInquiryNumber() {
 		System.out.println("확인할 문의 번호 입력하세요");
 		System.out.print("선택(문의번호) : ");
 

@@ -8,11 +8,12 @@ public class PointManagementController {
 	
 	public void pointManagement() {
 		PointManagementView pointManagementView = new PointManagementView();
-		PointManagementView.showPointManagement(findNameById(Member.id), findAccountById(Member.id));
+		PointManagementView.showPointManagement(findNameById(Member.id), findAccountById(Member.id), findPointById(Member.id));
 		int choice = PointManagementView.get();
 				
 		
-		// 포인트 양 추가 해야되는거 아니냐고 물어보기....pointamount어디갔어..
+		
+		
 		findNameById(Member.id);
 		findAccountById(Member.id);
 		findPointById(Member.id);
@@ -47,17 +48,17 @@ public class PointManagementController {
 		return account;
 	}
 	
-	private String findPointById(String id)  {
+	private int findPointById(String id)  {
 		
-		String account = "";
+		int balance = 0;
 		
 		for(Member u : Data.memberList) {
 			if(u.getId().equals(id)) {
-				account = u.getAccount();
+				balance = u.getBalance();
 				break;
 			}
 		}
-		return account;
+		return balance;
 	}
 	
 	

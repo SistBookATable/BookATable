@@ -184,4 +184,21 @@ public class BusinessUserSignInView {
 		}	
 		return tmp;
 	}
+
+	public static String getmenuType() {
+		Scanner scan = new Scanner(System.in);
+		String tmp = "";
+		
+		while(true) {
+
+			System.out.print("음식 분야 : ");
+			tmp = scan.nextLine();
+			// TODO 유효성 검사 만들기
+//			if(isValid(tmp)) {
+//				break;
+//			}
+			break;
+		}	
+		return tmp;
+	}
 }

@@ -19,6 +19,22 @@ public class Reservation {
 	
 	
 	
+	public Reservation (int reservationNumber, String userId, String licenseNumber, String reservationTime,String reservationDate
+			, int numOfPeople, int tableCapacity, String state, ArrayList<String> menulist) {
+		super();
+		this.reservationNumber = reservationNumber;
+		this.userId = userId;
+		this.licenseNumber = licenseNumber;
+		this.reservationTime = reservationTime;
+		this.reservationDate = reservationDate;
+		this.numOfPeople = numOfPeople;
+		this.tableCapacity = tableCapacity;
+		this.state = state;
+		this.menulist = menulist;
+	}
+
+
+
 	public void addmenu(String name) {
 		menulist.add(name);
 	}
@@ -77,6 +93,7 @@ public class Reservation {
 	public void setState(String state) {
 		this.state = state;
 	}
+	
 	@Override
 	public String toString() {
 		System.out.println(menulist);

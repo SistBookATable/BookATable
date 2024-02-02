@@ -1,5 +1,7 @@
 package com.test.java.controller;
 
+import java.util.Calendar;
+
 import com.test.java.model.Member;
 import com.test.java.model.Reservation;
 import com.test.java.model.Review;
@@ -22,10 +24,21 @@ public class InquiryCompletedReservationController {
 		while(true) {
 			switch(inquiryCompletedReservationView.get()) {
 				case 1:
+					inquiryCompletedReservationView.inputStoreName();
+					String review = inquiryCompletedReservationView.writeReview();
+					this.addReview(review);
 			 
 			}
 		}
 	}
+
+
+
+	private void addReview(String review) {
+		
+	}
+
+
 
 	private String findNameById(String id) {
 		String name = "";
@@ -103,14 +116,11 @@ public class InquiryCompletedReservationController {
 	}
 
 	private String findReviewStateById(String id) {
-		
+		String reviewState = "";
 		for(Review r : Data.reviewList) {
-			if (!r.getUserId().equals(id)) {
-				
-			}
+			reviewState = (r.getUserId().equals(id)) ? "O" : "X";
 		}
-
-		return null;
+		return reviewState;
 	}
 
 }

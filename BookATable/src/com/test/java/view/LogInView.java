@@ -32,6 +32,7 @@ public class LogInView {
 		System.out.println("선택(번호): ");
 		System.out.println();
 	}
+	
 	public int get() {
 		Scanner scan = new Scanner(System.in);
 		int answer = scan.nextInt();

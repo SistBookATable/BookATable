@@ -17,11 +17,19 @@ public class Reservation {
 	private String state;
 	private ArrayList<String> menulist = new ArrayList<>();
 	
-	
-	
-	public Reservation(int int1, String string, String string2, String string3, String string4, int int2, int int3,
-			String string5, ArrayList<String> arr) {
-		// TODO Auto-generated constructor stub
+
+	public Reservation (int reservationNumber, String userId, String licenseNumber, String reservationTime,String reservationDate
+			, int numOfPeople, int tableCapacity, String state, ArrayList<String> menulist) {
+		super();
+		this.reservationNumber = reservationNumber;
+		this.userId = userId;
+		this.licenseNumber = licenseNumber;
+		this.reservationTime = reservationTime;
+		this.reservationDate = reservationDate;
+		this.numOfPeople = numOfPeople;
+		this.tableCapacity = tableCapacity;
+		this.state = state;
+		this.menulist = menulist;
 	}
 
 	public void addmenu(String name) {
@@ -82,6 +90,7 @@ public class Reservation {
 	public void setState(String state) {
 		this.state = state;
 	}
+	
 	@Override
 	public String toString() {
 		System.out.println(menulist);
@@ -90,14 +99,6 @@ public class Reservation {
 				+ ", numOfPeople=" + numOfPeople + ", tableCapacity=" + tableCapacity + ", state=" + state
 				+ ", menulist=" + menulist + "]";
 	}
-
-	
-	
-	
-	
-	
-	
-	
 
 	
 	

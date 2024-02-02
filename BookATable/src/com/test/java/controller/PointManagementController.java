@@ -46,38 +46,32 @@ public class PointManagementController {
 		
 		for(Member u : Data.memberList) {
 			if(u.getId().equals(id)) {
-				name = u.getName();
-				break;
+				return u.getName();
 			}
 		}
-		return name;
+		return null;
 	}
 	
 	
 	private String findAccountById(String id)  {
 		
-		String account = "";
-		
 		for(Member u : Data.memberList) {
 			if(u.getId().equals(id)) {
-				account = u.getAccount();
-				break;
+				return u.getAccount();
+				
 			}
 		}
-		return account;
+		return null;
 	}
 	
 	private int findPointById(String id)  {
 		
-		int balance = 0;
-		
 		for(Member u : Data.memberList) {
 			if(u.getId().equals(id)) {
-				balance = ((User)u).getBalance();
-				break;
+				return ((User)u).getBalance();
 			}
 		}
-		return balance;
+		return 0;
 	}
 	
 	

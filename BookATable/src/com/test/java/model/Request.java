@@ -22,6 +22,10 @@ public class Request {
 		this.dateWritten = dateWritten;
 		this.permission = permission;
 	}
+	
+	public void setPermission(String permission) {
+		this.permission = permission;
+	}
 
 	public int getRequestNumber() {
 		return requestNumber;

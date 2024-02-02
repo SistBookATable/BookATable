@@ -21,6 +21,8 @@ public class RequestController {
 				//요청 번호 입력 받기
 				String requestNumber = requestView.getRequestNumber();
 				
+				//입력받은 요청번호가 이미 승인된 요청이면
+				
 				//요청번호를 사용해서 요청사유 찾기
 				String reason = findReason(requestNumber);
 				
@@ -30,12 +32,27 @@ public class RequestController {
 				
 				//리뷰내용 보고 승인하기
 				ReviewManagementController reviewManagementController = new ReviewManagementController();
-				reviewManagementController.reviewManagement(selected, reason);
+				boolean success = reviewManagementController.reviewManagement(selected, reason);
+				
+				//리뷰 삭제 시 요청을 승인으로 변경
+				if(success) {
+					changeRequestState(requestNumber);
+				}
+				
 			}
 			else if(choice == 0) {
 				loop = false;
 			}
 		}
+	}
+
+	private void changeRequestState(String requestNumber) {
+		for(Request r : Data.requestList) {
+			if(r.getRequestNumber() == Integer.parseInt(requestNumber)) {
+				r.setPermission("승인");
+			}
+		}
+		
 	}
 
 	private String findReason(String requestNumber) {

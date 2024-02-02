@@ -15,7 +15,7 @@ public class UserMyPageController {
 			switch (choice) {
 			case 1:
 				ReservationManagementController reservationManagementController = new ReservationManagementController(); 
-				reservationManagementController.reservationStatusInquiry();
+				reservationManagementController.reservationManagement();
 				break;
 			case 2:
 				PointManagementController pointManagementController = new PointManagementController();
@@ -35,7 +35,6 @@ public class UserMyPageController {
 				break;
 
 			case 0:
-				break;
 
 			}
 		}

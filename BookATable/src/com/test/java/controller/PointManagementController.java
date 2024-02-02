@@ -11,13 +11,31 @@ public class PointManagementController {
 		PointManagementView pointManagementView = new PointManagementView();
 		PointManagementView.showPointManagement(findNameById(Member.id), findAccountById(Member.id), findPointById(Member.id));
 		int choice = PointManagementView.get();
-				
-		
-		
 		
 		findNameById(Member.id);
 		findAccountById(Member.id);
 		findPointById(Member.id);
+		
+		boolean loop = true;
+		
+		while (loop) {
+			
+			switch (choice) {
+			// 포인트충전
+			case 1 : PointChargingController pointChargingController = new PointChargingController();
+					 pointChargingController.pointCharging();
+			// 포인트환불	
+			case 2 :
+			// 포인트 선물	
+			case 3 : 
+			// 포인트사용내역
+			case 4 :
+				
+			case 0 :
+				
+			}
+			
+		}
 
 
 }

@@ -8,6 +8,8 @@ public class PointCharging {
 	
 	public void addBalance(String userid, int price) {
 		
+		// find id > balance 에 price 값만큼 충전
+		
 	}
 	public boolean checkPw(String pw) {
 		

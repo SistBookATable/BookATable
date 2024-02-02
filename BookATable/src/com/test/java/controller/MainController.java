@@ -1,5 +1,6 @@
 package com.test.java.controller;
 
+import com.test.java.model.Inquiry;
 import com.test.java.model.Member;
 import com.test.java.repository.Data;
 import com.test.java.view.MainView;
@@ -100,9 +101,12 @@ public class MainController {
 					userManagementController.userManagement();
 					break;
 				case 2:
-					
+					InquiryController inquiryController = new InquiryController();
+					inquiryController.inquiryManagement();
 					break;
 				case 3:
+					RequestController requestController = new RequestController();
+					requestController.requestManagement();
 					break;
 				case 4:
 					LogOutController logOutController = new LogOutController();
@@ -127,5 +131,7 @@ public class MainController {
 		Data.loadAdmin();
 		Data.loadUser();
 		Data.loadBusinessUser();
+		Data.loadInquiry();
+		
 	}
 }

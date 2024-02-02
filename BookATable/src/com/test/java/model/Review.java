@@ -12,6 +12,17 @@ public class Review {
 	private double score;
 	private int reservationNumber;
 	
+	public Review(String userId, String licenseNumber, int reviewNumber, Calendar dateWritten, String content,
+			double score, int reservationNumber) {
+		super();
+		this.userId = userId;
+		this.licenseNumber = licenseNumber;
+		this.reviewNumber = reviewNumber;
+		this.dateWritten = dateWritten;
+		this.content = content;
+		this.score = score;
+		this.reservationNumber = reservationNumber;
+	}
 	
 	public String getUserId() {
 		return userId;

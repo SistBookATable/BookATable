@@ -53,5 +53,6 @@ public class InquiryReservationStatusView {
 		return temp;
 	}
 
+
 	
 }

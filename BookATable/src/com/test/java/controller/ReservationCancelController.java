@@ -2,7 +2,6 @@ package com.test.java.controller;
 
 import com.test.java.model.Member;
 import com.test.java.view.ReservationCancelView;
-import com.test.java.view.ReservationStatusInquiryView;
 import com.test.java.view.View;
 
 public class ReservationCancelController {

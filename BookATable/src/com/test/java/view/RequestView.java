@@ -3,59 +3,57 @@ package com.test.java.view;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import com.test.java.model.Inquiry;
-import com.test.java.model.Member;
-import com.test.java.model.User;
+import com.test.java.model.Request;
+import com.test.java.model.Review;
 import com.test.java.repository.Data;
 
-public class InquiryView {
+public class RequestView {
 	
-	public void show(Inquiry inquiry) {
+	
+	public void show(ArrayList<Review> review) {
+		
 		
 	}
 	
-	
-	public void show(ArrayList<Inquiry> inquiry) {
-		
-	}
-	
-	public ArrayList<String> getAnswer(){
-		return null;
-		
+	public int getNumber() {
+		Scanner scan=new Scanner(System.in);
+		System.out.print("삭제할 리뷰 선택 : ");
+		return scan.nextInt();
 	}
 
 
-	public void FindAllInquiry() {
+	public void FindAllRequest() {
 
 
 		System.out.println();
 		System.out.println();
 		System.out.println("┌───────────────────────────────────────────────────────┐");
-		System.out.println("|               문의사항 관리 - 문의 사항 조회                <");
+		System.out.println("|               리뷰 관리 - 리뷰 삭제 요청 조회               <");
 		System.out.println("└───────────────────────────────────────────────────────┘");
 		System.out.println();
 		
-		String header = String.format("%6s%15s\t%10s\t\t%-15s%-15s%-20s", "[문의 번호]","[답변여부]","[작성일]","[문의자]","[회원타입]","[제목]");
+		String header = String.format("%6s%15s\t%10s\t\t%-15s%-15s%-20s", "[요청 번호]","[작성일]","[요청 업체]","[요청 사유]","[리뷰 번호]","[승인 여부]");
 		System.out.println(header);
 		
-		if(Data.inquiryList.isEmpty()) {
+		if(Data.requestList.isEmpty()) {
 			System.out.println();
-			System.out.println("문의 내역이 없습니다.");
+			System.out.println("요청 내역이 없습니다.");
 			System.out.println();
 			View.pause();
 		}
 		else {
 
 
-			for(Inquiry i : Data.inquiryList) {
+			for(Request r : Data.requestList) {
 				String tmp = "";
 				tmp = String.format("%6s%18s%20s\t%15s%15s\t\t%-20s",
-						i.getInquiryNumber(),
-						i.getAnswer().equals("null")? "답변 대기":"답변 완료",
-						i.getDateWritten(),
-						i.getUserId(),
-						i.getType().equals("1")? "일반회원":"업체회원",
-						i.getTitle());
+						r.getRequestNumber(),
+						r.getDateWritten(),
+						r.getLicenseNumber(),
+						r.getReason(),
+						r.getReviewNumber(),
+						r.getPermission());
+						
 
 				System.out.println(tmp);
 				
@@ -63,18 +61,17 @@ public class InquiryView {
 		}
 	}
 
-
 	public void showSelectBox() {
 		System.out.println("==========================================================================================");
 		System.out.println();
-		System.out.println("■           1. 문의 내용 보기              ■");
+		System.out.println("■           1. 리뷰 내용 보기              ■");
 		System.out.println("■           0. 뒤로 가기                  ■");
 		System.out.println();
 		System.out.println("==========================================================================================");
 		System.out.println();
 		System.out.println("선택(번호) : ");
 	}
-	
+
 	public int getSelectType() {
 		Scanner scan = new Scanner(System.in);
 		int tmp = scan.nextInt();
@@ -82,10 +79,9 @@ public class InquiryView {
 		return tmp;
 	}
 
-
-	public String getInquiryNumber() {
-		System.out.println("확인할 문의 번호 입력하세요");
-		System.out.print("선택(문의번호) : ");
+	public String getRequestNumber() {
+		System.out.println("확인할 요청 번호 입력하세요");
+		System.out.print("선택(요청번호) : ");
 
 		Scanner scan = new Scanner(System.in);
 		String tmp = scan.nextLine();

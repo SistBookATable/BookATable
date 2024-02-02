@@ -50,6 +50,12 @@ public class Admin extends Member{
 	public String getAccount() {
 		// TODO Auto-generated method stub
 		return null;
+	}
+
+	@Override
+	public String getSignOut() {
+		// TODO Auto-generated method stub
+		return null;
 	} 
 
 }

@@ -20,6 +20,7 @@ public class BusinessUserSignInController {
 		String storeName = BusinessUserSignInView.getStoreName();
 		String name = BusinessUserSignInView.getName();
 		String licenseNumber = BusinessUserSignInView.getLicenseNumber();
+		String menuCategory = BusinessUserSignInView.getmenuType();
 		String phoneNumber = BusinessUserSignInView.getPhoneNumber();
 		String storeTelNumber = BusinessUserSignInView.getStoreTelNumber();
 		String bank = BusinessUserSignInView.getBank();
@@ -34,7 +35,7 @@ public class BusinessUserSignInController {
 		
 		BusinessUser businessUser = new BusinessUser(id,pw,name,licenseNumber, phoneNumber, bank, account,now);
 		
-		Store store = new Store(licenseNumber,storeName, storeTelNumber, address);
+		Store store = new Store(licenseNumber,storeName, storeTelNumber, address, menuCategory);
 		
 //		//유효성 검사
 //		if(isValid(store) && isValid(businessUser)) {

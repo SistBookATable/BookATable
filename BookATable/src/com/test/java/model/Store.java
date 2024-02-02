@@ -19,7 +19,7 @@ public class Store {
 	private double averageScore;
 	
 
-	public Store(String licenseNumber, String storeName, String storeTelNumber, String menuCategory, String address, double score, int distanceFrom) {
+	public Store(String licenseNumber, String storeName, String storeTelNumber, String menuCategory, String address, double averageScore, int distanceFrom) {
 		super();
 		this.licenseNumber = licenseNumber;
 		this.storeName = storeName;
@@ -47,6 +47,18 @@ public class Store {
 	}
 	
 
+	public String getAddress() {
+		return address;
+	}
+
+	public String getTablecount() {
+		return tablecount;
+	}
+
+	public double getAverageScore() {
+		return averageScore;
+	}
+
 	public double getScore() {
 		double sum = 0;
 		int count = 0;
@@ -67,7 +79,7 @@ public class Store {
 	public String getmenuName() {
 		return menuName;
 	}
-	public String getStoreNumber() {
+	public String getStoreTelNumber() {
 		return storeTelNumber;
 	}
 	public String getLicenseNumber() {

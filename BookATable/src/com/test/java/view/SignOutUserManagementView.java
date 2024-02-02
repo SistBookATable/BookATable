@@ -33,6 +33,35 @@ public class SignOutUserManagementView {
 			
 		}
 		
+		
+	}
+
+	public static void showSelectBox() {
+		System.out.println();
+		System.out.println("==========================================================================================");
+		System.out.println();
+		System.out.println("■           1. 회원 정보 삭제              ■");
+		System.out.println("■           0. 뒤로 가기                  ■");
+		System.out.println();
+		System.out.println("==========================================================================================");
+		System.out.println();
+		System.out.println("선택(번호) : ");
+		
+	}
+
+	public static void deleteCancleMessage() {
+		System.out.println();
+		System.out.println("탈퇴후 30일이 경과하지 않아서 삭제할 수 없습니다.");
+		System.out.println();
+		View.pause();
+	}
+
+	public static void deleteSuccessMessage() {
+		System.out.println();
+		System.out.println("회원 정보가 삭제되었습니다.");
+		System.out.println();
+		View.pause();
+		
 	}
 
 }

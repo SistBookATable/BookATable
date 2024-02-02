@@ -3,16 +3,16 @@ package com.test.java.controller;
 import com.test.java.model.Member;
 import com.test.java.model.Store;
 import com.test.java.repository.Data;
-import com.test.java.view.ReservationStatusInquiryView;
+import com.test.java.view.InquiryReservationStatusView;
 
-public class ReservationStatusInquiryController {
+public class InquiryReservationStatusController {
 
-	public void reservationStatusInquiry() {
-		ReservationStatusInquiryView reservationStatusInquiryView
-			= new ReservationStatusInquiryView();
-		reservationStatusInquiryView.showReservationStatusInquiry();
+	public static void inquiryReservationStatus() {
+		InquiryReservationStatusView inquiryReservationStatusView
+			= new InquiryReservationStatusView ();
+		InquiryReservationStatusView.showInquiryReservationStatus();
 		
-		int choice = ReservationStatusInquiryView.get();
+		int choice = inquiryReservationStatusView.get();
 		
 		switch(choice) {
 		case 1:

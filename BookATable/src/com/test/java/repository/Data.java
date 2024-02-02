@@ -59,16 +59,40 @@ public class Data {
 	public static ArrayList<BlackList> blackListList = new ArrayList<>();
 	public static ArrayList<Inquiry> inquiryList = new ArrayList<>();
 	public static ArrayList<Faq> faqList = new ArrayList<>();
-	public static ArrayList<PointUsage> pointList = new ArrayList<>();
-
-	public static ArrayList<CompletedList> compleatedList = new ArrayList<>();
 	public static ArrayList<OperatingHours> operatingHoursList = new ArrayList<>();
+
+	public static ArrayList<PointUsage> pointList = new ArrayList<>();
+	public static ArrayList<CompletedList> compleatedList = new ArrayList<>();
 	public static ArrayList<Request> requestList = new ArrayList<>();
 	public static ArrayList<ReservationCancel> reservationCancelList = new ArrayList<>();
 	public static ArrayList<Review> reviewList = new ArrayList<>();
 	public static ArrayList<StopUser> stopUserList = new ArrayList<>();
 	public static ArrayList<Table> tableList = new ArrayList<>();
 	public static ArrayList<WriteReview> writeReviewList = new ArrayList<>();
+	
+	
+	public static void loadOperatingHours() {
+		try {
+			BufferedReader reader
+			= new BufferedReader(new FileReader(Data.OPERATINGHOURS));
+			
+			String line = null;
+			
+			while((line = reader.readLine()) != null) {
+				
+				String[] tmp = line.split(",");
+				OperatingHours operatingHours = new OperatingHours(tmp[0],tmp[1],tmp[2],tmp[3],tmp[4],tmp[5]);
+				operatingHoursList.add(operatingHours);
+				System.out.println(pointList);
+			}
+			
+			reader.close();
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
 	//TODO PointUsage 개체 완성하고, loadPointUsage() 마무리.... 
 	public static void loadPointUsage() {
 		try {
@@ -91,7 +115,8 @@ public class Data {
 			e.printStackTrace();
 		}
 	}
-		
+
+	
 	public static void loadFaq() {
 		try {
 			BufferedReader reader

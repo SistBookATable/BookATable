@@ -47,21 +47,14 @@ public class LogInController {
 		}
 		System.out.println("해당 아이디를 찾을 수 없습니다.");
 		logInView.show();
-		while (true) {
-
-			switch (logInView.get()) {
-
-			case 1:
-				logIn();
-				break;
-			case 2:
-				MainController.start();
-				break;
-			}
+		if (logInView.get()==1) {
 			return false;
+		} else {
+			return true;
 		}
-		
 	}
+		
+		
 
 	private String findNameById(String id) {
 		String name = "";

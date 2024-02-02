@@ -100,7 +100,7 @@ public class MainController {
 					userManagementController.userManagement();
 					break;
 				case 2:
-					
+					InquiryController inquiryController = new InquiryController();
 					break;
 				case 3:
 					break;

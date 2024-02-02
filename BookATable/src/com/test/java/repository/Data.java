@@ -31,11 +31,11 @@ import com.test.java.model.WriteReview;
 public class Data {
 	
 	//여러개면 Path 클래스를 만들어서 넣는게 좋음
-	private final static String USER = "dat\\User.txt";
+	private final static String USER = "dat\\user.txt";
 	private final static String BUSINESSUSER = "dat\\BusinessUser.txt";
 	private final static String ADMIN = "dat\\Admin.txt";
 	
-	private final static String STORE = "dat\\Store.txt";
+	private final static String STORE = "dat\\store.txt";
 	
 	private final static String BLACKLIST = "dat\\BlackList.txt";
 	private final static String VIP = "dat\\Vip.txt";
@@ -57,8 +57,8 @@ public class Data {
 	public static ArrayList<Store> storeList = new ArrayList<>();
 	public static ArrayList<Menu> menuList = new ArrayList<>();
 	public static ArrayList<Reservation> reservationList = new ArrayList<>();
+	public static ArrayList<BlackList> blackListList = new ArrayList<>();
 
-	public static ArrayList<BlackList> blackList = new ArrayList<>();
 	public static ArrayList<Faq> faqList = new ArrayList<>();
 	public static ArrayList<CompletedList> compleatedList = new ArrayList<>();
 	public static ArrayList<Inquiry> inquiryList = new ArrayList<>();
@@ -72,6 +72,45 @@ public class Data {
 	public static ArrayList<WriteReview> writeReviewList = new ArrayList<>();
 	
 //TODO create load and save blakcList 
+	public static void loadBlackList() {
+		try {
+			BufferedReader reader
+			= new BufferedReader(new FileReader(Data.BLACKLIST));
+		
+		String line = null;
+		
+		while((line = reader.readLine())!=null){
+			
+			String[] tmp = line.split(",");
+			
+			BlackList blackList = new BlackList(tmp[0],tmp[1],Integer.parseInt(tmp[2]));
+			blackListList.add(blackList);
+		}
+
+		reader.close();
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		
+	}
+	
+	public static void saveBlackList() {
+		try {
+			BufferedWriter writer = new BufferedWriter(new FileWriter(Data.BLACKLIST));
+			
+			for(BlackList blackList : Data.blackListList) {
+				String line = String.format("%s,%s,%d",blackList.getLicenseNumber(),blackList.getUserId(),blackList.getNoShowCount());
+							
+				writer.write(line);
+					
+			}
+			
+			writer.close();
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}		
+	}
 	public static void loadReservation() {
 		try {
 			BufferedReader reader
@@ -141,6 +180,7 @@ public class Data {
 			
 			Menu menu = new Menu(tmp[0],tmp[1],Integer.parseInt(tmp[2]));
 			menuList.add(menu);
+			System.out.println(menuList);
 		}
 
 		reader.close();
@@ -218,8 +258,6 @@ public class Data {
 			while((line = reader.readLine()) != null) {
 				
 				String[] tmp = line.split(",");
-				
-				
 				
 				Admin admin = new Admin(Integer.parseInt(tmp[0]), tmp[1], tmp[2]); 
 				memberList.add(admin);

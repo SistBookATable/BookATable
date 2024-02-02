@@ -8,20 +8,26 @@ public class BlackList {
 	public BlackList(String licenseNumber, String userId, int noShowCount) {
 		super();
 		this.licenseNumber = licenseNumber;
-		UserId = userId;
+		this.UserId = userId;
 		this.noShowCount = noShowCount;
 	}
 	
-	public void getLicenseNumber(String licenseNumber) {
-		this.licenseNumber = licenseNumber;
-	}
-	public void getUserId(String UserId) {
-		this.UserId = UserId;
-	}
-	public void getNoShowCount(int noShowCount) {
-		this.noShowCount = noShowCount;
-	}
 	
+	public String getLicenseNumber() {
+		return licenseNumber;
+	}
+
+
+	public String getUserId() {
+		return UserId;
+	}
+
+
+	public int getNoShowCount() {
+		return noShowCount;
+	}
+
+
 	@Override
 	public String toString() {
 		return "BlackList [licenseNumber=" + licenseNumber + ", UserId=" + UserId + ", noShowCount=" + noShowCount

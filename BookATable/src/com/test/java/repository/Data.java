@@ -107,6 +107,14 @@ public class Data {
 			BlackList blackList = new BlackList(tmp[0],tmp[1],Integer.parseInt(tmp[2]));
 			blackListList.add(blackList);
 		}
+		reader.close();
+		
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		
+	}
+	
 	public static void loadInquiry() {
 		try {
 			BufferedReader reader

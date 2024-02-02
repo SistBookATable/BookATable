@@ -12,6 +12,5 @@ public abstract class Member {
 	public abstract String getPw();
 	public abstract String getSignIn();
 	public abstract String getAccount();
-	public abstract int getBalance();
 
 }

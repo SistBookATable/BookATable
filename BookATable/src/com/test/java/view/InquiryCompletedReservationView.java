@@ -1,6 +1,11 @@
 package com.test.java.view;
 
+import java.util.Calendar;
 import java.util.Scanner;
+
+import com.test.java.model.Member;
+import com.test.java.model.Review;
+import com.test.java.repository.Data;
 
 public class InquiryCompletedReservationView {
 
@@ -18,14 +23,12 @@ public class InquiryCompletedReservationView {
 						 , reserveDate, storeName, numOfPeple, canceledReservationState, noShowState, reviewState);
 
 		System.out.println();
-		System.out
-				.println("------------------------------------------------------------------------------------------");
+		System.out.println("------------------------------------------------------------------------------------------");
 		System.out.println();
 		System.out.println("■           1. 리뷰 작성하기	   ■");
 		System.out.println("■           0. 이전 화면		   ■");
 		System.out.println();
-		System.out
-				.println("------------------------------------------------------------------------------------------");
+		System.out.println("------------------------------------------------------------------------------------------");
 
 		System.out.println();
 
@@ -35,7 +38,22 @@ public class InquiryCompletedReservationView {
 
 	public int get() {
 		Scanner scan = new Scanner(System.in);
-		
-		return 0;
+		int num = scan.nextInt();
+		scan.nextLine();
+		return num;
+	}
+
+	public String inputStoreName() {
+		System.out.println("리뷰작성을 원하는 음식점을 입력해주세요.");
+		System.out.print("상호명: ");
+		Scanner scan = new Scanner(System.in);
+		String storNameToWriteReview = scan.nextLine();
+		return storNameToWriteReview;
+	}
+
+	public String writeReview() {
+		System.out.print("리뷰 작성란: ");
+		Scanner scan = new Scanner(System.in);
+		return scan.nextLine();
 	}
 }

@@ -44,6 +44,12 @@ public class Admin extends Member{
 	public String getSignIn() {
 		// TODO Auto-generated method stub
 		return null;
+	}
+
+	@Override
+	public String getAccount() {
+		// TODO Auto-generated method stub
+		return null;
 	} 
 
 }

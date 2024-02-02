@@ -1,5 +1,6 @@
 package com.test.java.view;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 import com.test.java.model.Member;
@@ -68,6 +69,32 @@ public class SignInUserManagementView {
 		System.out.println();
 		System.out.println(basic);
 		System.out.println();
+	}
+
+	public static void showDetail(int reservationNumber, String storeName, String date, int numOfPeople,
+			ArrayList<String> menulist, double score, String content) {
+		
+
+
+		System.out.println();
+		System.out.println();
+		System.out.println("┌───────────────────────────────────────────────────────┐");
+		System.out.println("|          회원 관리 - 가입 회원 조회 - 상세 내역 조회           <");
+		System.out.println("└───────────────────────────────────────────────────────┘");
+		System.out.println();
+		
+		System.out.println("[예약 번호] " + reservationNumber);
+		System.out.println("[ 음식점 ] " + storeName);
+		System.out.println("[ 예약일 ] " + date);
+		System.out.println("[ 인원수 ] " + numOfPeople + "명");
+		System.out.print("[  메뉴  ] ");
+		for(int i=0; i<menulist.size(); i++) {
+			System.out.print(menulist.get(i));
+		}
+		System.out.println();
+		System.out.println("[  별점  ] " + score);
+		System.out.println("[  리뷰  ] " + content);
+		
 	}
 
 }

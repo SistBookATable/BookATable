@@ -4,9 +4,12 @@ import java.util.ArrayList;
 
 import com.test.java.model.Member;
 import com.test.java.model.Reservation;
+import com.test.java.model.Review;
+import com.test.java.model.Store;
 import com.test.java.model.User;
 import com.test.java.repository.Data;
 import com.test.java.view.SignInUserManagementView;
+import com.test.java.view.View;
 
 public class SignInUserManagementController {
 
@@ -28,8 +31,9 @@ public class SignInUserManagementController {
 				//기본 정보 출력
 				SignInUserManagementView.show(basic);
 				
-				//아이디를 사용해서 세부 예약 내역 정보 받아오기
+				//아이디를 사용해서 세부 예약 내역을 찾고 출력
 				findDetailById(id);
+				
 				
 			}
 			else if(choice == 0) {
@@ -54,21 +58,59 @@ public class SignInUserManagementController {
 	}
 
 	private void findDetailById(String id) {
-		ArrayList<String> temp = new ArrayList<>();
-		ArrayList<Reservation> tmp = new ArrayList<>();
+		
+		boolean hasHistory = false;
+		
 		for(Reservation r : Data.reservationList) {
 			if(r.getUserId().equals(id)) {
-				tmp.add(r);
+				hasHistory = true;
+				
 				int reservationNumber = r.getReservationNumber();
 				String storeName = findName(r.getLicenseNumber());
 				String date = r.getReservationDate();
 				int numOfPeople = r.getNumOfPeople();
-				ArrayList<Menu> = r.getMenu();
+				ArrayList<String> menulist = r.getMenulist();
 				
+				double score = findScore(id);
+				String content = findContent(id);
 				
+				SignInUserManagementView.showDetail(reservationNumber, storeName,date,numOfPeople,menulist,score,content);
 			}
 		}
 		
+		if(!hasHistory) {
+			SignInUserManagementView.show("이용 내역을 찾을 수 없습니다.");
+		}
+		
+		View.pause();
+		
+	}
+
+	private String findContent(String id) {
+		for(Review r :Data.reviewList) {
+			if(r.getUserId().equals(id)){
+				return r.getContent();
+			}
+		}
+		return null;
+	}
+
+	private double findScore(String id) {
+		for(Review r :Data.reviewList) {
+			if(r.getUserId().equals(id)){
+				return r.getScore();
+			}
+		}
+		return 0;
+	}
+
+	private String findName(String licenseNumber) {
+		for(Store s : Data.storeList) {
+			if(s.getLicenseNumber().equals(licenseNumber)) {
+				return s.getStoreName();
+			}
+		}
+		return null;
 	}
 
 }

@@ -8,7 +8,6 @@ import com.test.java.model.Member;
 public class PointChargingView {
 	
 
-	
 	public static ArrayList<String> getInput() {
 		
 		Scanner scan = new Scanner(System.in);

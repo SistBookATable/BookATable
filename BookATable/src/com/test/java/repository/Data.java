@@ -71,7 +71,7 @@ public class Data {
 	public static ArrayList<Table> tableList = new ArrayList<>();
 	public static ArrayList<WriteReview> writeReviewList = new ArrayList<>();
 	
-
+//TODO create load and save blakcList 
 	public static void loadReservation() {
 		try {
 			BufferedReader reader

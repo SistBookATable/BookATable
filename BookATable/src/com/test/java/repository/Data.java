@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 
 import com.test.java.model.Admin;
@@ -24,7 +25,6 @@ import com.test.java.model.StopUser;
 import com.test.java.model.Store;
 import com.test.java.model.Table;
 import com.test.java.model.User;
-import com.test.java.model.UserInfo;
 import com.test.java.model.WriteReview;
 
 public class Data {
@@ -54,12 +54,12 @@ public class Data {
 	//필요한 자료들
 	public static ArrayList<Member> memberList = new ArrayList<>();
 	public static ArrayList<Store> storeList = new ArrayList<>();
-	
+
+	public static ArrayList<Menu> menuList = new ArrayList<>();
 	public static ArrayList<BlackList> blackList = new ArrayList<>();
 	public static ArrayList<Faq> faqList = new ArrayList<>();
 	public static ArrayList<CompletedList> compleatedList = new ArrayList<>();
 	public static ArrayList<Inquiry> inquiryList = new ArrayList<>();
-	public static ArrayList<Menu> menuList = new ArrayList<>();
 	public static ArrayList<OperatingHours> operatingHoursList = new ArrayList<>();
 	public static ArrayList<PointUsage> pointList = new ArrayList<>();
 	public static ArrayList<Request> requestList = new ArrayList<>();
@@ -68,11 +68,51 @@ public class Data {
 	public static ArrayList<Review> reviewList = new ArrayList<>();
 	public static ArrayList<StopUser> stopUserList = new ArrayList<>();
 	public static ArrayList<Table> tableList = new ArrayList<>();
-	public static ArrayList<UserInfo> userInfoList = new ArrayList<>();
 	public static ArrayList<WriteReview> writeReviewList = new ArrayList<>();
 	
 	
 	//프로그램을 시작할 때 file의 내용을 모두 메모리에 넣는 작업
+	public static void loadStore() {
+		try {
+			BufferedReader reader
+				= new BufferedReader(new FileReader(Data.STORE));
+			
+			String line = null;
+			
+			while((line = reader.readLine())!=null){
+				
+				String[] tmp = line.split(",");
+				
+				Store store = new Store (tmp[0],tmp[1],tmp[2],tmp[3],tmp[4],
+										Double.parseDouble(tmp[5]),Integer.parseInt(tmp[6]));
+				storeList.add(store);
+			}
+			reader.close();
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+	
+	public static void saveStore() {
+		try {
+			BufferedWriter writer = new BufferedWriter(new FileWriter(Data.STORE));
+			
+			for(Store store : Data.storeList) {
+				
+				String line = String.format("%s,%s,%s,%s,%s,%.1f,%d"
+											,store.getLicenseNumber(),store.getStoreName(),store.getStoreTelNumber(),store.getMenuCategory()
+											,store.getAddress(),store.getAverageScore(),store.getDistanceFrom());
+			
+				writer.write(line);
+			}
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	
+	}
+	
 	public static void loadAdmin() {
 		try {
 			BufferedReader reader

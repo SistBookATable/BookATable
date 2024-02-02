@@ -8,12 +8,15 @@ public class PointManagementController {
 	
 	public void pointManagement() {
 		PointManagementView pointManagementView = new PointManagementView();
-		PointManagementView.showPointManagement(findNameById(Member.id));
+		PointManagementView.showPointManagement(findNameById(Member.id), findAccountById(Member.id), findPointById(Member.id));
 		int choice = PointManagementView.get();
 				
 		
+		
+		
 		findNameById(Member.id);
 		findAccountById(Member.id);
+		findPointById(Member.id);
 
 
 }
@@ -43,6 +46,19 @@ public class PointManagementController {
 			}
 		}
 		return account;
+	}
+	
+	private int findPointById(String id)  {
+		
+		int balance = 0;
+		
+		for(Member u : Data.memberList) {
+			if(u.getId().equals(id)) {
+				balance = u.getBalance();
+				break;
+			}
+		}
+		return balance;
 	}
 	
 	

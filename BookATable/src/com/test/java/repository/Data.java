@@ -82,7 +82,8 @@ public class Data {
 				
 				String[] tmp = line.split(",");
 				
-				Store store = new Store (tmp[0],tmp[1],tmp[2],tmp[3],tmp[4],Double.parseDouble(tmp[5]),Integer.parseInt(tmp[6]));
+				Store store = new Store (tmp[0],tmp[1],tmp[2],tmp[3],tmp[4],
+										Double.parseDouble(tmp[5]),Integer.parseInt(tmp[6]));
 				storeList.add(store);
 			}
 			reader.close();
@@ -91,22 +92,26 @@ public class Data {
 		}
 	}
 	
-//	public static void saveStore() {
-//		try {
-//			BufferedWriter writer = new BufferedWriter(new FileWriter(Data.STORE));
-//			
-//			for(Store store : Data.storeList) {
-//				
-//				String line = String.format(%s,%s,%s,%s,%s,%.1f,%d,)
-//			
-//			}
-//		} catch (IOException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
+	public static void saveStore() {
+		try {
+			BufferedWriter writer = new BufferedWriter(new FileWriter(Data.STORE));
+			
+			for(Store store : Data.storeList) {
+				
+				String line = String.format("%s,%s,%s,%s,%s,%.1f,%d"
+											,store.getLicenseNumber(),store.getStoreName(),store.getStoreTelNumber(),store.getMenuCategory()
+											,store.getAddress(),store.getAverageScore(),store.getDistanceFrom());
+			
+				writer.write(line);
+			}
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 	
-//	}
+	}
+	
 	public static void loadAdmin() {
 		try {
 			BufferedReader reader

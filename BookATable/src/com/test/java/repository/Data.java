@@ -5,6 +5,7 @@ import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.Reader;
 import java.util.ArrayList;
 
 import com.test.java.model.Admin;
@@ -63,6 +64,7 @@ public class Data {
 	public static ArrayList<OperatingHours> operatingHoursList = new ArrayList<>();
 	public static ArrayList<PointUsage> pointList = new ArrayList<>();
 	public static ArrayList<Request> requestList = new ArrayList<>();
+	//인원수에 따라서 메뉴 늘어남 -> index정해져 있지 않음 -> 포문 돌려서 save하기
 	public static ArrayList<Reservation> reservationList = new ArrayList<>();
 	public static ArrayList<ReservationCancel> reservationCancelList = new ArrayList<>();
 	public static ArrayList<Review> reviewList = new ArrayList<>();
@@ -71,6 +73,44 @@ public class Data {
 	public static ArrayList<WriteReview> writeReviewList = new ArrayList<>();
 	
 	
+	public static void loadMenu() {
+		try {
+			BufferedReader reader
+			= new BufferedReader(new FileReader(Data.MENU));
+		
+		String line = null;
+		
+		while((line = reader.readLine())!=null){
+			
+			String[] tmp = line.split(",");
+			
+			Menu menu = new Menu(tmp[0],tmp[1],Integer.parseInt(tmp[2]));
+			menuList.add(menu);
+		}
+
+		reader.close();
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+	public static void saveMenu() {
+		try {
+			BufferedWriter writer = new BufferedWriter(new FileWriter(Data.MENU));
+			
+			for(Menu menu : Data.menuList) {
+				String line = String.format("%s,%s,%d",menu.getLicenseNumber(),menu.getMenuName(),menu.getPrice());
+							
+				writer.write(line);
+					
+			}
+			
+			writer.close();
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		
+	}
 	//프로그램을 시작할 때 file의 내용을 모두 메모리에 넣는 작업
 	public static void loadStore() {
 		try {
@@ -173,7 +213,6 @@ public class Data {
 			while((line = reader.readLine()) != null) {
 				
 				String[] tmp = line.split(",");
-				
 				BusinessUser businessUser = new BusinessUser(Integer.parseInt(tmp[0]), tmp[1], tmp[2], tmp[3]
 															, tmp[4], tmp[5], tmp[6],  tmp[7], tmp[8], tmp[9]);
 				

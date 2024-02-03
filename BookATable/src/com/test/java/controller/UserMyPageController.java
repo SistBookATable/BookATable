@@ -18,8 +18,9 @@ public class UserMyPageController {
 				reservationManagementController.reservationManagement();
 				break;
 			case 2:
-				PointManagementController pointManage
-
+				PointManagementController pointManagementController = new PointManagementController();
+				pointManagementController.pointManagement();
+				break;
 			case 3:
 
 			case 4:

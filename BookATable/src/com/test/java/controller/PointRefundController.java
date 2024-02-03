@@ -1,5 +1,9 @@
 package com.test.java.controller;
 
+import com.test.java.model.Member;
+import com.test.java.model.User;
+import com.test.java.repository.Data;
+import com.test.java.view.PointRefundHistoryView;
 import com.test.java.view.PointRefundView;
 
 public class PointRefundController {
@@ -12,18 +16,45 @@ public class PointRefundController {
 		
 		int choice = pointRefundView.get();
 		
+		boolean loop = true;
+		
+		while(loop) {
+		
 		switch(choice) {
 		// 포인트 환불신청
 		case 1: pointRefundView.showRefund();
 				break;
 		// 포인트 환불신청내역
-		case 2: 
+		case 2: PointRefundHistoryView pointRefundHistoryView = new PointRefundHistoryView();
+				pointRefundHistoryView.showPointRefundHistory(findNameById(Member.id), findPointById(Member.id));
+		
 			break;
 		case 0:
 			break;
 
-		}		
+			}
+		}
+	}
+	
+	private String findNameById(String id) {
+		String userName = "";
+		for (Member u : Data.memberList) {
+			if (u.getId().equals(id)) {
+				userName = u.getName();
+				break;
+			}
+		}
+		return userName;
+	}
+	
+	private int findPointById(String id)  {
 		
+		for(Member u : Data.memberList) {
+			if(u.getId().equals(id)) {
+				return ((User)u).getBalance();
+			}
+		}
+		return 0;
 	}
 	
 	

@@ -3,6 +3,7 @@ package com.test.java.controller;
 import com.test.java.model.Member;
 import com.test.java.model.User;
 import com.test.java.repository.Data;
+import com.test.java.view.PointChargingView;
 import com.test.java.view.PointManagementView;
 
 public class PointManagementController {

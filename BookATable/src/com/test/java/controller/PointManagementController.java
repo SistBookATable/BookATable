@@ -24,14 +24,24 @@ public class PointManagementController {
 			// 포인트충전
 			case 1 : PointChargingController pointChargingController = new PointChargingController();
 					 pointChargingController.pointCharging();
+					 break;
 			// 포인트환불	
-			case 2 :
-			// 포인트 선물	
-			case 3 : 
-			// 포인트사용내역
-			case 4 :
+			case 2 : PointRefundController pointRefundController = new PointRefundController();
+					 pointRefundController.pointRefund();
+					 break;
+			// 포인트선물	
+			case 3 : PointGiftController pointGiftController = new PointGiftController();
+					 pointGiftController.pointGift();
+					 break;
 				
-			case 0 :
+			// 포인트사용내역
+			case 4 : PointUsageHistoryController pointUsageHistoryController = new PointUsageHistoryController(); 
+					 pointUsageHistoryController.pointUsageHistory();
+					 break;
+
+			// 이전화면	
+			case 0 : loop = false;
+					
 				
 			}
 			

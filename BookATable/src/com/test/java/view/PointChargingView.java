@@ -4,34 +4,37 @@ import java.util.Scanner;
 import com.test.java.model.Member;
 
 public class PointChargingView {
+	private static Scanner scan = new Scanner(System.in);
 	
-	public int getAmountCharging() {
-		Scanner scan = new Scanner(System.in);
+	public static int getAmountCharging() {
+
 		int tmp = 0;
 		
-		//TODO 유효성 검사 나중에
-			System.out.print("포인트 충전금액: ");
+		while(true) {
+			System.out.print("충전 금액 입력: ");
 			tmp = scan.nextInt();
-			return tmp;
+			scan.nextLine();
+			break;
+				
+			//TODO 유효성 검사 만들기
+//			if(isValid(tmp)) {
+//				break;
+//			}
 		}
+		return tmp;
+	}
 	
-	
-	public String getPw() {
+	public static String getPw() {
 		
-		Scanner scan = new Scanner(System.in);
 		String tmp = "";
-
-		// TODO 유효성 검사 나중에 
+		
+		while(true) {
 			System.out.print("비밀번호 입력: ");
 			tmp = scan.nextLine();
+			//TODO 유효성 검사 만들기
+			break;
+		}
+		return tmp;
+	}
 
-				return tmp;	
-	}
-	
-	public void showPointCharging (int amountCharging) {
-		System.out.println("----------------------");
-		System.out.printf("%d 포인트가 충전되었습니다.", amountCharging);
-		System.out.println("----------------------");
-	}
 }
-	

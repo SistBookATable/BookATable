@@ -5,6 +5,13 @@ public class PointCharging {
 	private int amountCharging;
 	private String pw;
 	
+	public PointCharging(int amountCharging, String pw) {
+		this.amountCharging = amountCharging;
+		this.pw = pw;
+		
+	}
+	
+	
 	
 	public void addBalance(String userid, int price) {
 		

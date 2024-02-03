@@ -19,7 +19,7 @@ public class PointManagementController {
 		boolean loop = true;
 		
 		while (loop) {
-			
+			//
 			switch (choice) {
 			// 포인트충전
 			case 1 : PointChargingController pointChargingController = new PointChargingController();

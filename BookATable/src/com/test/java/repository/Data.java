@@ -456,7 +456,6 @@ public class Data {
 				BusinessUser businessUser = new BusinessUser(Integer.parseInt(tmp[0]), tmp[1], tmp[2], tmp[3]
 															, tmp[4], tmp[5], tmp[6],  tmp[7]
 															, tmp[8], tmp[9]);
-				
 				memberList.add(businessUser);
 			}
 			

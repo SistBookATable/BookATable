@@ -14,19 +14,24 @@ public class ReservationManagementController {
 
 		int choice = InquiryReservationStatusView.get();
 
-		switch (choice) {
-		case 1:
-			InquiryReservationStatusController inquiryReservationStatusController = new InquiryReservationStatusController();
-			inquiryReservationStatusController.inquiryReservationStatus();
-			break;
-		case 2:
-			InquiryCompletedReservationController inquiryCompletedReservationController
-				= new InquiryCompletedReservationController();
-			inquiryCompletedReservationController.inquiryCompletedReservation();
-			break;
-		case 0:
-			break;
+		boolean loop = true;
 
+		while (loop) {
+
+			switch (choice) {
+			case 1:
+				InquiryReservationStatusController inquiryReservationStatusController = new InquiryReservationStatusController();
+				inquiryReservationStatusController.inquiryReservationStatus();
+				break;
+			case 2:
+				InquiryCompletedReservationController inquiryCompletedReservationController = new InquiryCompletedReservationController();
+				inquiryCompletedReservationController.inquiryCompletedReservation();
+				break;
+			case 0:
+				loop = false;
+				break;
+
+			}
 		}
 
 	}

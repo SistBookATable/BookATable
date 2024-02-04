@@ -137,5 +137,7 @@ public class MainController {
 		Data.loadRequest();
 		Data.loadReview();
 		Data.loadReservation();
+		Data.loadStore();
+		Data.loadMenu();
 	}
 }

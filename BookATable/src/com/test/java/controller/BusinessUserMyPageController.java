@@ -21,6 +21,8 @@ public class BusinessUserMyPageController {
 				reservationController.BusinessUserReservationManagement();
 				break;
 			case 2:
+				RevenueManagementController revenueManagementController = new RevenueManagementController();
+				revenueManagementController.revenueManagement();
 				break;
 			case 3:
 				break;

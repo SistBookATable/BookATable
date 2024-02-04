@@ -23,7 +23,6 @@ import com.test.java.model.Request;
 import com.test.java.model.Reservation;
 import com.test.java.model.ReservationCancel;
 import com.test.java.model.Review;
-import com.test.java.model.StopUser;
 import com.test.java.model.Store;
 import com.test.java.model.Table;
 import com.test.java.model.User;

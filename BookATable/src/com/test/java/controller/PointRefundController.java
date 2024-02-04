@@ -4,7 +4,6 @@ import com.test.java.model.Member;
 import com.test.java.model.User;
 import com.test.java.repository.Data;
 import com.test.java.view.PointRefundHistoryView;
->>>>>>> be92b070f0bdd7fe2b9ee5371a8032c292cc96f6
 import com.test.java.view.PointRefundView;
 
 public class PointRefundController {

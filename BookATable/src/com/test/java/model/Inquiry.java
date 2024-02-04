@@ -7,25 +7,32 @@ public class Inquiry {
 	private String userId;
 	private String title;
 	private String content;
-	private String adminId;
 	private String type;
 	private String dateWritten;
+	private String adminId;
 	private String answer;
 	
 	
-	
-	public Inquiry(int inquiryNumber, String userId, String title, String content, String adminId, String type,
-			String dateWritten, String answer) {
+	public Inquiry(int inquiryNumber, String userId, String title, String content, String type, String dateWritten,
+			String adminId, String answer) {
 		super();
 		this.inquiryNumber = inquiryNumber;
 		this.userId = userId;
 		this.title = title;
 		this.content = content;
-		this.adminId = adminId;
 		this.type = type;
 		this.dateWritten = dateWritten;
+		this.adminId = adminId;
 		this.answer = answer;
 	}
+
+	public void setAdminId(String id) {
+		this.adminId = id;
+	}
+	public void setAnswer(String answer) {
+		this.answer = answer;
+	}
+	
 	public int getInquiryNumber() {
 		return inquiryNumber;
 	}
@@ -49,6 +56,13 @@ public class Inquiry {
 	}
 	public String getAnswer() {
 		return answer;
+	}
+
+	@Override
+	public String toString() {
+		return "Inquiry [inquiryNumber=" + inquiryNumber + ", userId=" + userId + ", title=" + title + ", content="
+				+ content + ", type=" + type + ", dateWritten=" + dateWritten + ", adminId=" + adminId + ", answer="
+				+ answer + "]";
 	}
 	
 	

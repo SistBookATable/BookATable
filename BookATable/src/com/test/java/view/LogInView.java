@@ -20,7 +20,7 @@ public class LogInView {
 		return tmp;
 	}
 
-	public void show() {
+	public static void showAgain() {
 		View.pause();
 		System.out.println("------------------------------------------------");
 		System.out.println();
@@ -33,7 +33,7 @@ public class LogInView {
 		System.out.println();
 	}
 	
-	public int get() {
+	public static int get() {
 		Scanner scan = new Scanner(System.in);
 		int answer = scan.nextInt();
 		scan.nextLine();

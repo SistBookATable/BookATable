@@ -7,41 +7,45 @@ import com.test.java.model.Reservation;
 import com.test.java.model.Store;
 import com.test.java.repository.Data;
 import com.test.java.view.InquiryReservationStatusView;
+import com.test.java.view.View;
 
 public class InquiryReservationStatusController {
 
 	public void inquiryReservationStatus() {
+		
 		InquiryReservationStatusView inquiryReservationStatusView
-			= new InquiryReservationStatusView ();
-		
-		InquiryReservationStatusView.showInquiryReservationStatus(findNameById(Member.id)
-																, findStoreNameById(Member.id)
-																, findNumOfPepleById(Member.id)
-																, findreservationTimeById(Member.id));
-		
-		int choice = inquiryReservationStatusView.get();
-		
-		switch(choice) {
-		case 1:
-			ReservationCancelController reservationCancelController
-				= new ReservationCancelController();
-			reservationCancelController.reservationCancel();
-		case 0:
-			
-			break;
+			= new InquiryReservationStatusView();
+		inquiryReservationStatusView.showInquiryReservationStatus(findNameById(Member.id)
+																 , findStoreNameById(Member.id)
+																 , findNumOfPepleById(Member.id)
+																 , findReservationTimeById(Member.id));
+		boolean loop = true;
+		while(loop) {
+			switch(inquiryReservationStatusView.get()) {
+			case 1:
+				ReservationCancelController reservationCancelController
+					= new ReservationCancelController();
+				reservationCancelController.reservationCancel();
+				break;
+			case 0:
+				break;
+			}
+			loop = false;
 		}
-	}
-	
-	private String findNameById(String id) {
-		String name = "";
 		
+		
+		
+	}
+
+	private String findNameById(String id) {
+		String userName = "";
 		for(Member u : Data.memberList) {
 			if(u.getId().equals(id)) {
-				name = u.getName();
+				userName = u.getName();
 				break;
 			}
 		}
-		return name;
+		return userName;
 		
 	}
 	
@@ -56,39 +60,30 @@ public class InquiryReservationStatusController {
 				}
 				
 			}
-		
 		}
-		
 		return storeName;
 	}
 	
-	
-	
 	private int findNumOfPepleById(String id) {
 		int numOfPeple = 0;
-		
 		for(Reservation r : Data.reservationList) {
 			if (r.getUserId().equals(id)) {
 				numOfPeple = r.getNumOfPeople();
 			}
 		}
-		
 		return numOfPeple;
 	}
 	
-	private String findreservationTimeById(String id) {
+	private String findReservationTimeById(String id) {
 		String reservationTime = "";
 		for(Reservation r : Data.reservationList) {
 			if (r.getUserId().equals(id)) {
 				reservationTime = r.getReservationTime();
 			}
 		}
-		
 		return reservationTime;
 	}
 	
-	
-
 	
 	
 	

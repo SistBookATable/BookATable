@@ -21,7 +21,7 @@ public class PointRefundHistoryView {
 		// 보유포인트금액 == 환불금액? 
 		System.out.println();
 		System.out.println("[환불신청일]\t[포인트금액]");
-		System.out.printf("			%d", balance);
+		System.out.printf("		%d", balance);
 		
 
 
@@ -35,8 +35,6 @@ public class PointRefundHistoryView {
 		System.out.println();
 		
 		System.out.print("입력(Y/N) : ");
-		System.out.println();
-		
 		
 	}
 	
@@ -44,7 +42,6 @@ public class PointRefundHistoryView {
 		
 		Scanner scan = new Scanner(System.in);
 		String temp = scan.nextLine();
-		scan.close();
 		
 		return temp;
 	}

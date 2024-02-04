@@ -44,7 +44,9 @@ public class PointManagementController {
 					 break;
 
 			// 이전화면	
-			case 0 : loop = false;
+			case 0 : UserMyPageController userMyPageController = new UserMyPageController();
+					 userMyPageController.userMyPage();
+					 break;
 					
 				
 			}

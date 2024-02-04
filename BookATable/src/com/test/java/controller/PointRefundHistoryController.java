@@ -9,30 +9,29 @@ import com.test.java.view.View;
 
 public class PointRefundHistoryController {
 
+	private PointManagementController pointManagementController = new PointManagementController(); // PointManagementController의 인스턴스 생성
+	
+	
 	public void pointRefundHistory() {
 		
 		PointRefundHistoryView pointRefundHistoryView = new PointRefundHistoryView(); 
 		pointRefundHistoryView.showPointRefundHistory(findNameById(Member.id), findPointById(Member.id));
 		
-		
-	
-		boolean loop = true;
-		
-		while (loop) {
-			if (PointRefundHistoryView.get().equalsIgnoreCase("Y")) {
-				System.out.println("환불 신청이 취소되었습니다.");
-				View.pause();
-				loop = false;
-				
+		String choice = "";
+		while (true) {
+			choice = pointRefundHistoryView.get().toUpperCase();
+			if (choice.equals("Y")) {
+				System.out.println("환불 신청이 취소되었습니다. 포인트 관리 메뉴로 돌아갑니다.");
+				pointManagementController.pointManagement(); 
+				break; 
+			} else if (choice.equals("N")) {
+				return;
 			} else {
-				View.pause();
-				loop = false;
-			}
-	
+				System.out.println("잘못된 입력입니다. ");
 				
 			}
 		
-
+		}
 		
 	}
 

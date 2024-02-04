@@ -51,24 +51,23 @@ public class Data {
 	private final static String BOOKMARK = "dat\\Bookmark.txt";
 	
 	
-	//필요한 자료들
+	//load+save 완료
 	public static ArrayList<Member> memberList = new ArrayList<>();
 	public static ArrayList<Store> storeList = new ArrayList<>();
 	public static ArrayList<Menu> menuList = new ArrayList<>();
 	public static ArrayList<Reservation> reservationList = new ArrayList<>();
 	public static ArrayList<BlackList> blackListList = new ArrayList<>();
-	public static ArrayList<Inquiry> inquiryList = new ArrayList<>();
+	//load 완료
 	public static ArrayList<Faq> faqList = new ArrayList<>();
 	public static ArrayList<OperatingHours> operatingHoursList = new ArrayList<>();
 
+	public static ArrayList<Inquiry> inquiryList = new ArrayList<>();
+	
+	//TODO 하단에 loadPointUsage만들다 만거 있음
 	public static ArrayList<PointUsage> pointList = new ArrayList<>();
-	public static ArrayList<CompletedList> compleatedList = new ArrayList<>();
 	public static ArrayList<Request> requestList = new ArrayList<>();
-	public static ArrayList<ReservationCancel> reservationCancelList = new ArrayList<>();
 	public static ArrayList<Review> reviewList = new ArrayList<>();
-	public static ArrayList<StopUser> stopUserList = new ArrayList<>();
 	public static ArrayList<Table> tableList = new ArrayList<>();
-	public static ArrayList<WriteReview> writeReviewList = new ArrayList<>();
 	
 	
 	public static void loadOperatingHours() {
@@ -83,7 +82,6 @@ public class Data {
 				String[] tmp = line.split(",");
 				OperatingHours operatingHours = new OperatingHours(tmp[0],tmp[1],tmp[2],tmp[3],tmp[4],tmp[5]);
 				operatingHoursList.add(operatingHours);
-				System.out.println(pointList);
 			}
 			
 			reader.close();
@@ -129,7 +127,6 @@ public class Data {
 				String[] tmp = line.split(",");
 				Faq faq = new Faq(Integer.parseInt(tmp[0]),tmp[1],tmp[2],tmp[3]);
 				faqList.add(faq);
-				System.out.println(faq);
 			}
 			
 			reader.close();

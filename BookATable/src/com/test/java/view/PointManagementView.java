@@ -34,7 +34,6 @@ public class PointManagementView {
 		Scanner scan = new Scanner(System.in);
 		int temp = scan.nextInt();
 		scan.nextLine();
-		
 		return temp;
 	}
 

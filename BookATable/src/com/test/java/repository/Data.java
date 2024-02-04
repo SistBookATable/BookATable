@@ -1,7 +1,9 @@
 package com.test.java.repository;
 
+
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -30,25 +32,25 @@ import com.test.java.model.WriteReview;
 public class Data {
 	
 	//여러개면 Path 클래스를 만들어서 넣는게 좋음
-	private final static String USER = "dat\\user.txt";
-	private final static String BUSINESSUSER = "dat\\BusinessUser.txt";
-	private final static String ADMIN = "dat\\Admin.txt";
+	private final static String USER = "dat"+File.separator+"user.txt";
+	private final static String BUSINESSUSER = "dat"+File.separator+"businessUser.txt";
+	private final static String ADMIN = "dat"+File.separator+"admin.txt";
 	
-	private final static String STORE = "dat\\store.txt";
+	private final static String STORE = "dat"+File.separator+"store.txt";
 	
-	private final static String BLACKLIST = "dat\\BlackList.txt";
-	private final static String VIP = "dat\\Vip.txt";
-	private final static String TABLE = "dat\\Table.txt";
-	private final static String MENU = "dat\\Menu.txt";
-	private final static String OPERATINGHOURS = "dat\\Operatinghours.txt";
-	private final static String RESERVATION = "dat\\Reservation.txt";
-	private final static String RESERVATIONMENU = "dat\\ReservationMenu.txt";
-	private final static String POINTUSAGE = "dat\\PointUsage.txt";
-	private final static String REVIEW = "dat\\Review.txt";
-	private final static String FAQ = "dat\\Faq.txt";
-	private final static String INQUIRY = "dat\\Inquiry.txt";
-	private final static String REQUEST = "dat\\Request.txt";
-	private final static String BOOKMARK = "dat\\Bookmark.txt";
+	private final static String BLACKLIST = "dat"+File.separator+"blackList.txt";
+	private final static String VIP = "dat"+File.separator+"vip.txt";
+	private final static String TABLE = "dat"+File.separator+"table.txt";
+	private final static String MENU = "dat"+File.separator+"menu";
+	private final static String OPERATINGHOURS = "dat"+File.separator+"operatinghours.txt";
+	private final static String RESERVATION = "dat"+File.separator+"reservation.txt";
+	private final static String RESERVATIONMENU = "dat"+File.separator+"reservationMenu.txt";
+	private final static String POINTUSAGE = "dat"+File.separator+"pointUsage.txt";
+	private final static String REVIEW = "dat"+File.separator+"review.txt";
+	private final static String FAQ = "dat"+File.separator+"faq.txt";
+	private final static String INQUIRY = "dat"+File.separator+"inquiry.txt";
+	private final static String REQUEST = "dat"+File.separator+"request.txt";
+	private final static String BOOKMARK = "dat"+File.separator+"bookmark.txt";
 	
 	
 	//필요한 자료들
@@ -71,6 +73,62 @@ public class Data {
 	public static ArrayList<WriteReview> writeReviewList = new ArrayList<>();
 	
 	
+	public static void loadRequest() {
+		try {
+			BufferedReader reader
+			= new BufferedReader(new FileReader(Data.REQUEST));
+			
+			String line = null;
+			
+			while((line = reader.readLine()) != null) {
+				
+				String[] tmp = line.split(",");
+				Request request = new Request(
+						Integer.parseInt(tmp[0]),
+						Integer.parseInt(tmp[1]),
+						tmp[2],
+						tmp[3],
+						tmp[4],
+						tmp[5],
+						tmp[6]);
+				requestList.add(request);
+			}
+			
+			reader.close();
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public static void loadReview() {
+		try {
+			BufferedReader reader
+			= new BufferedReader(new FileReader(Data.REVIEW));
+			
+			String line = null;
+			
+			while((line = reader.readLine()) != null) {
+				
+				String[] tmp = line.split(",");
+				Review review = new Review(
+						Integer.parseInt(tmp[0]),
+						tmp[1],
+						tmp[2],
+						tmp[3],
+						tmp[4],
+						Double.parseDouble(tmp[5]),
+						Integer.parseInt(tmp[6]));
+				reviewList.add(review);
+			}
+			
+			reader.close();
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
 	public static void loadOperatingHours() {
 		try {
 			BufferedReader reader
@@ -83,7 +141,6 @@ public class Data {
 				String[] tmp = line.split(",");
 				OperatingHours operatingHours = new OperatingHours(tmp[0],tmp[1],tmp[2],tmp[3],tmp[4],tmp[5]);
 				operatingHoursList.add(operatingHours);
-				System.out.println(pointList);
 			}
 			
 			reader.close();

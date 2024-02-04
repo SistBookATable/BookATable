@@ -12,6 +12,7 @@ public class Request {
 	
 	public Request(int requestNumber, int reviewNumber, String licenseNumber, String reason, String requester,
 			String dateWritten, String permission) {
+
 		super();
 		this.requestNumber = requestNumber;
 		this.reviewNumber = reviewNumber;

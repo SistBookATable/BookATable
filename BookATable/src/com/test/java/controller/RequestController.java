@@ -12,7 +12,6 @@ public class RequestController {
 		
 		boolean loop = true;
 		while(loop) {
-
 			boolean hasRequests = requestView.FindAllRequest();
 			if(!hasRequests) {
 				return;
@@ -23,7 +22,7 @@ public class RequestController {
 			if(choice == 1) {
 				//요청 번호 입력 받기
 				String requestNumber = requestView.getRequestNumber();
-				
+			
 				//입력받은 요청번호가 이미 승인된 요청이면 메시지 출력 후 다시 선택
 				if(alreadPermitted(requestNumber)) {
 					requestView.showAlreadPermittedMessage();

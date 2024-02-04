@@ -3,6 +3,10 @@ package com.test.java.controller;
 import com.test.java.model.Member;
 import com.test.java.model.User;
 import com.test.java.repository.Data;
+<<<<<<< HEAD
+=======
+import com.test.java.view.PointChargingView;
+>>>>>>> be92b070f0bdd7fe2b9ee5371a8032c292cc96f6
 import com.test.java.view.PointManagementView;
 
 public class PointManagementController {
@@ -19,7 +23,7 @@ public class PointManagementController {
 		boolean loop = true;
 		
 		while (loop) {
-			
+			//
 			switch (choice) {
 			// 포인트충전
 			case 1 : PointChargingController pointChargingController = new PointChargingController();

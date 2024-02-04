@@ -1,12 +1,15 @@
 package com.test.java.view;
+import java.util.InputMismatchException;
+>>>>>>> be92b070f0bdd7fe2b9ee5371a8032c292cc96f6
 import java.util.Scanner;
 
 import com.test.java.model.Member;
 
 public class PointChargingView {
-	private static Scanner scan = new Scanner(System.in);
 	
 	public static int getAmountCharging() {
+		
+		Scanner scan = new Scanner(System.in);
 
 		int tmp = 0;
 		
@@ -15,17 +18,14 @@ public class PointChargingView {
 			tmp = scan.nextInt();
 			scan.nextLine();
 			break;
-				
-			//TODO 유효성 검사 만들기
-//			if(isValid(tmp)) {
-//				break;
-//			}
+	
 		}
 		return tmp;
 	}
 	
 	public static String getPw() {
 		
+		Scanner scan = new Scanner(System.in);
 		String tmp = "";
 		
 		while(true) {
@@ -34,6 +34,12 @@ public class PointChargingView {
 			//TODO 유효성 검사 만들기
 			break;
 		}
+		return tmp;
+	}
+	
+	public String showPointCharging(int amountCharging) {
+		String tmp = "";
+		tmp = amountCharging + "포인트가 충전되었습니다.";
 		return tmp;
 	}
 

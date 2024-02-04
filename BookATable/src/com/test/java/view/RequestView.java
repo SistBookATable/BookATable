@@ -54,7 +54,6 @@ public class RequestView {
 						r.getReason(),
 						r.getReviewNumber(),
 						r.getPermission().equals("null")? "대기":r.getPermission());
-						
 
 				System.out.println(tmp);
 				
@@ -89,7 +88,7 @@ public class RequestView {
 		String tmp = scan.nextLine();
 		return tmp;
 	}
-
+	
 	public void showAlreadPermittedMessage() {
 		System.out.println();
 		System.out.println("이미 승인된 요청입니다.");

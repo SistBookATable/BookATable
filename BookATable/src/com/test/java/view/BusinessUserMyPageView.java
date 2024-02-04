@@ -18,7 +18,7 @@ public class BusinessUserMyPageView {
 		System.out.println("==========================================================================================");
 		System.out.println();
 		System.out.println("■            1. 예약 관리          \t■");
-		System.out.println("■            2. 예약금 관리         \t■");
+		System.out.println("■            2. 수익 관리          \t■");
 		System.out.println("■            3. 영업 관리          \t■");
 		System.out.println("■            4. 운영정보 관리       \t■");
 		System.out.println("■            5. 문의 사항          \t■");

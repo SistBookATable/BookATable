@@ -199,7 +199,6 @@ public class ReservationView {
 		}
 		
 		System.out.println(tmp);
-		View.pause();
 	}
 	
 

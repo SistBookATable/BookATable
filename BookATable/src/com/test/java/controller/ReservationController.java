@@ -7,6 +7,7 @@ import com.test.java.model.Member;
 import com.test.java.model.Reservation;
 import com.test.java.repository.Data;
 import com.test.java.view.ReservationView;
+import com.test.java.view.View;
 
 public class ReservationController {
 	
@@ -76,6 +77,7 @@ public class ReservationController {
 					String name = findUserName(r.getUserId());
 					reservationView.showOneReservation(r, name);
 				}
+				View.pause();
 				break;
 			case 0:
 				loop = false;

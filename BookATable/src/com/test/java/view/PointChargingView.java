@@ -6,10 +6,6 @@ import java.util.Scanner;
 public class PointChargingView {
 	
 	public static int getAmountCharging() {
-		
-		Scanner scan = new Scanner(System.in);
-
-	public static int getAmountCharging() {
 		Scanner scan = new Scanner(System.in);
 		int tmp = 0;
 

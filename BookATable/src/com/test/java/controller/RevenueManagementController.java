@@ -19,6 +19,7 @@ public class RevenueManagementController {
 
 		RevenueManagementView revenueManagementView = new RevenueManagementView();
 		String lisenceNumber = "";
+		String storeName = "";
 		
 		boolean loop = true;
 		while(loop) {
@@ -37,7 +38,7 @@ public class RevenueManagementController {
 				lisenceNumber = findLisenceNumber(Member.id);
 
 				//라이센스번호로 음식점 이름 조회
-				String name = findNameNumber(lisenceNumber);
+				storeName = findNameNumber(lisenceNumber);
 				
 				//오늘 날짜 구하기
 				Calendar cur = Calendar.getInstance();
@@ -58,11 +59,31 @@ public class RevenueManagementController {
 				//예상 매출 합산
 				int revenue = calcRevenue(lisenceNumber,menuCount);
 				
-				revenueManagementView.showRevenue(revenue, today, name);
+				revenueManagementView.showRevenue(revenue, today, storeName);
 				break;
 			case 2:
 				//정산 예약금 조회
 				revenueManagementView.showCase2Title();
+
+				//업체회원 ID로 음식점 라이센스번호 조회
+				lisenceNumber = findLisenceNumber(Member.id);
+
+				//업체회원 ID로 이름 조회
+				String userName = findUserName(Member.id);
+				
+				//라이센스번호로 음식점 이름 조회
+				storeName = findNameNumber(lisenceNumber);
+
+				//오늘, 이번달 1일 구하기
+				Calendar date = Calendar.getInstance();
+				today = String.format("%tF", date);
+				date.set(Calendar.DATE, 1);
+				String firstDay = String.format("%tF", date);
+				
+				//이번달 1일 이후 예약 개수 구하기 (노쇼, 방문 상태인 예약만)
+				int reservationCount = getReservationCount(firstDay,lisenceNumber);
+				
+				revenueManagementView.showDeposit(firstDay, today, storeName, userName, reservationCount*3000);
 				
 				break;
 			case 0:
@@ -77,6 +98,52 @@ public class RevenueManagementController {
 		
 	}
 	
+	private String findUserName(String id) {
+		for(Member m : Data.memberList) {
+			if(m.getId().equals(id)) {
+				return m.getName();
+			}
+		}
+		return null;
+	}
+
+	private int getReservationCount(String firstDay, String lisenceNumber) {
+		int cnt = 0;
+		for(Reservation r : Data.reservationList) {
+			if(r.getLicenseNumber().equals(lisenceNumber)) {
+				if(r.getState().equals("취소") || r.getState().equals("예약")) {
+					continue;
+				}
+				if(isValid(r.getReservationDate(), firstDay)) {
+					System.out.println(r.getReservationNumber());
+					cnt++;
+				}
+			}
+		}
+		return cnt;
+	}
+
+	private boolean isValid(String reservationDate, String firstDay) {
+		int ryear = Integer.parseInt(reservationDate.split("-")[0]);
+		int rmonth = Integer.parseInt(reservationDate.split("-")[1]);
+		int rday = Integer.parseInt(reservationDate.split("-")[2]);
+		
+		int fyear = Integer.parseInt(firstDay.split("-")[0]);
+		int fmonth = Integer.parseInt(firstDay.split("-")[1]);
+		int fday = Integer.parseInt(firstDay.split("-")[2]);
+		
+		if(ryear < fyear) {
+			return false;
+		}
+		else if(rmonth < fmonth) {
+			return false;
+		}
+		else if(rday < fday) {
+			return false;
+		}
+		return true;
+	}
+
 	private String findNameNumber(String lisenceNumber) {
 		for(Store s : Data.storeList) {
 			if(s.getLicenseNumber().equals(lisenceNumber)) {

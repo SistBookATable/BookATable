@@ -65,7 +65,7 @@ public class RevenueManagementView {
 		System.out.println("\t■■■■■■■■■■■■■■■■ " + name + " ■■■■■■■■■■■■■■■■");
 		System.out.println("==========================================================================================");
 		System.out.println();
-		System.out.printf("\t\t예상 매출 : %,d원 (%s)\n",revenue,today);
+		System.out.printf("\t  예상 매출 : %,d원 (%s)\n",revenue,today);
 		System.out.println();
 		System.out.println("==========================================================================================");
 		System.out.println();
@@ -81,6 +81,23 @@ public class RevenueManagementView {
 		System.out.println();
 		View.pause();
 		
+	}
+
+	public void showDeposit(String firstDay, String today, String storeName, String userName, int i) {
+
+
+		System.out.println("\t■■■■■■■■■■■■■■■■ " + storeName + " ■■■■■■■■■■■■■■■■");
+		System.out.println("==========================================================================================");
+		System.out.println();
+		System.out.printf("\t %,d원이 %s사장님 계좌로 입금되었습니다.\n",i,userName);
+		System.out.printf("\t (조회일자 : %s ~ %s)\n",firstDay,today);
+		System.out.println();
+		System.out.println("==========================================================================================");
+		System.out.println();
+		System.out.println("\t(⋇현재 화면의 금액과 실제 입금받은 금액이 상이한 경우,\n"
+				+ "\t\t1:1 문의사항을 이용해주세요.)\n");
+		
+		View.pause();
 	}
 
 }

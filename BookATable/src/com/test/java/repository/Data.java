@@ -1,11 +1,9 @@
 package com.test.java.repository;
 
+
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
-<<<<<<< HEAD
 import java.io.File;
-=======
->>>>>>> be92b070f0bdd7fe2b9ee5371a8032c292cc96f6
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;

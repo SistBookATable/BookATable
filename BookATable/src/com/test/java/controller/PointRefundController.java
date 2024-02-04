@@ -1,5 +1,7 @@
 package com.test.java.controller;
 
+import java.util.Scanner;
+
 import com.test.java.model.Member;
 import com.test.java.model.User;
 import com.test.java.repository.Data;
@@ -15,6 +17,7 @@ public class PointRefundController {
 		pointRefundView.showPointRefund();
 		
 		int choice = pointRefundView.get();
+		Scanner scan = new Scanner(System.in);
 		
 		boolean loop = true;
 		
@@ -23,12 +26,16 @@ public class PointRefundController {
 		switch(choice) {
 		// 포인트 환불신청
 		case 1: pointRefundView.showRefund();
+				// 엔터 입력 시 이전 화면으로 이동
+				if (scan.nextLine().isEmpty()) {
+					return;
+				}
 				break;
 		// 포인트 환불신청내역
-		case 2: PointRefundHistoryView pointRefundHistoryView = new PointRefundHistoryView();
-				pointRefundHistoryView.showPointRefundHistory(findNameById(Member.id), findPointById(Member.id));
-		
+		case 2: PointRefundHistoryController pointRefundHistoryController = new PointRefundHistoryController();
+				pointRefundHistoryController.pointRefundHistory();
 			break;
+			
 		case 0:
 			break;
 

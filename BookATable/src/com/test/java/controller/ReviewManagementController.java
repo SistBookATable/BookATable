@@ -12,7 +12,7 @@ public class ReviewManagementController {
 
 	ReviewManagementView reviewManagementView = new ReviewManagementView();
 	
-	public void reviewManagement(Review selected, String reason) {
+	public boolean reviewManagement(Review selected, String reason) {
 		
 		boolean loop = true;
 		while(loop) {
@@ -24,10 +24,10 @@ public class ReviewManagementController {
 			case 1:
 				//리뷰 삭제
 				deleteReview(selected.getReviewNumber());
-				break;
+				return true;
 			case 2:
 				//요청 거부
-				break;
+				return false;
 			case 0:
 				//뒤로가기
 				loop = false;
@@ -36,7 +36,7 @@ public class ReviewManagementController {
 				break;
 			}
 		}
-		
+		return false;
 	}
 
 	private void deleteReview(int reviewNumber) {

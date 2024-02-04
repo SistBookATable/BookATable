@@ -6,67 +6,78 @@ import com.test.java.model.Member;
 import com.test.java.repository.Data;
 import com.test.java.view.LogInView;
 import com.test.java.view.MainView;
-import com.test.java.view.View;
 
 public class LogInController {
-	LogInView logInView = new LogInView();
 
 	public void logIn() {
-		
-		boolean loop = true;
-
-		while (loop) {
-
-			ArrayList<String> input = LogInView.getInput();
-			String inputId = input.get(0);
-			String inputPw = input.get(1);
-
-			loop = !checkLogIn(inputId, inputPw);
-			
-			View.pause();   
-
-		}
-
-	}
-
-	private boolean checkLogIn(String inputId, String inputPw) {
-		String result = "";
-		for (Member u : Data.memberList) {
-			if (inputId.equals(u.getId())) {
-				if (!inputPw.equals(u.getPw())) {
-				System.out.println("입력한 비밀번호가 올바르지 않습니다.");
-				return false;
-				} else {
-					System.out.println(u.getName() + "님, 로그인에 성공하셨습니다.");
-					Member.level = u.getUserType();
-					findNameById(Member.id);
-					return true;
+		/*
+		 * id pw x x,o get() o x get() o o UserPage
+		 */
+		boolean again = false;
+		while(true) {
+			if(again)
+			{
+				LogInView.showAgain();
+				int i = LogInView.get();
+				if(i == 1) { }
+				else if(i == 2)
+				{
+					break;
 				}
-			} 
+			}
 			
-		}
-		System.out.println("해당 아이디를 찾을 수 없습니다.");
-		logInView.show();
-		if (logInView.get()==1) {
-			return false;
-		} else {
-			return true;
-		}
-	}
-		
-		
+			ArrayList<String> input = LogInView.getInput();
+			String id = input.get(0);
+			String pw = input.get(1);
+			again = true;
+			
+			boolean isValidId = checkId(id);
+			if(isValidId == false)
+			{
+				System.out.println("해당 아이디를 찾을 수 없습니다.");
+				continue;
+			}
+			
+			boolean isValidPw = checkPw(pw);
+			if(isValidPw == false)
+			{
+				System.out.println("해당 아이디는 등록되어있으나, 비밀번호가 일치하지 않습니다.");
+				continue;
+			}
+			
 
-	private String findNameById(String id) {
-		String name = "";
+			System.out.printf("%s님, 로그인에 성공하셨습니다.", findNameById(Member.id));
+			break;
+		}
 		
+	}
+
+	private Object findNameById(String id) {
 		for(Member u : Data.memberList) {
-			if(u.getId().equals(id)) {
-				name = u.getName();
-				break;
+			if (u.getId().equals(id)) {
+				return u.getName();
 			}
 		}
-		return name;
-		
+		return null;
 	}
 
+	private boolean checkPw(String pw) {
+		for(Member u : Data.memberList) {
+			if (u.getId().equals(pw)) {
+				Member.level = u.getUserType();
+				Member.id = u.getId();
+				return true;
+			}
+		}
+		return false;
+	}
+
+	private boolean checkId(String id) {
+		for(Member u : Data.memberList) {
+			if (u.getId().equals(id)) {
+				return true;
+			}
+		}
+		return false;
+	}
 }

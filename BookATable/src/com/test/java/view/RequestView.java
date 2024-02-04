@@ -22,7 +22,7 @@ public class RequestView {
 	}
 
 
-	public void FindAllRequest() {
+	public boolean FindAllRequest() {
 
 
 		System.out.println();
@@ -40,6 +40,7 @@ public class RequestView {
 			System.out.println("요청 내역이 없습니다.");
 			System.out.println();
 			View.pause();
+			return false;
 		}
 		else {
 
@@ -52,12 +53,12 @@ public class RequestView {
 						r.getLicenseNumber(),
 						r.getReason(),
 						r.getReviewNumber(),
-						r.getPermission());
-						
+						r.getPermission().equals("null")? "대기":r.getPermission());
 
 				System.out.println(tmp);
 				
 			}
+			return true;
 		}
 	}
 
@@ -86,6 +87,13 @@ public class RequestView {
 		Scanner scan = new Scanner(System.in);
 		String tmp = scan.nextLine();
 		return tmp;
+	}
+	
+	public void showAlreadPermittedMessage() {
+		System.out.println();
+		System.out.println("이미 승인된 요청입니다.");
+		System.out.println();
+		View.pause();
 	}
 
 }

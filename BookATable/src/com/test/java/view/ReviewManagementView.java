@@ -30,7 +30,7 @@ public class ReviewManagementView {
 	}
 
 	public void showSelectBox() {
-
+		System.out.println();
 		System.out.println("==========================================================================================");
 		System.out.println();
 		System.out.println("■           1. 리뷰 삭제                  ■");

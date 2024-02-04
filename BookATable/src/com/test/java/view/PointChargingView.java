@@ -1,5 +1,6 @@
 package com.test.java.view;
 import java.util.InputMismatchException;
+>>>>>>> be92b070f0bdd7fe2b9ee5371a8032c292cc96f6
 import java.util.Scanner;
 
 import com.test.java.model.Member;

@@ -132,6 +132,7 @@ public class MainController {
 		Data.loadUser();
 		Data.loadBusinessUser();
 		Data.loadInquiry();
-		
+		Data.loadRequest();
+		Data.loadReview();
 	}
 }

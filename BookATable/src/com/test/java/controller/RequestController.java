@@ -12,16 +12,22 @@ public class RequestController {
 		
 		boolean loop = true;
 		while(loop) {
-
-			requestView.FindAllRequest();
+			boolean hasRequests = requestView.FindAllRequest();
+			if(!hasRequests) {
+				return;
+			}
 			requestView.showSelectBox();
 			int choice = requestView.getSelectType();
 			
 			if(choice == 1) {
 				//요청 번호 입력 받기
 				String requestNumber = requestView.getRequestNumber();
-				
-				//입력받은 요청번호가 이미 승인된 요청이면
+			
+				//입력받은 요청번호가 이미 승인된 요청이면 메시지 출력 후 다시 선택
+				if(alreadPermitted(requestNumber)) {
+					requestView.showAlreadPermittedMessage();
+					continue;
+				}
 				
 				//요청번호를 사용해서 요청사유 찾기
 				String reason = findReason(requestNumber);
@@ -32,11 +38,14 @@ public class RequestController {
 				
 				//리뷰내용 보고 승인하기
 				ReviewManagementController reviewManagementController = new ReviewManagementController();
-				boolean success = reviewManagementController.reviewManagement(selected, reason);
+				int permission = reviewManagementController.reviewManagement(selected, reason);
 				
 				//리뷰 삭제 시 요청을 승인으로 변경
-				if(success) {
-					changeRequestState(requestNumber);
+				if(permission==1) {
+					changeRequestState(requestNumber, "승인");
+				}
+				else if(permission == 2) {
+					changeRequestState(requestNumber, "거부");
 				}
 				
 			}
@@ -46,10 +55,22 @@ public class RequestController {
 		}
 	}
 
-	private void changeRequestState(String requestNumber) {
+	private boolean alreadPermitted(String requestNumber) {
 		for(Request r : Data.requestList) {
 			if(r.getRequestNumber() == Integer.parseInt(requestNumber)) {
-				r.setPermission("승인");
+				if(r.getPermission().equals("승인")) {
+					return true;
+				}
+				break;
+			}
+		}
+		return false;
+	}
+
+	private void changeRequestState(String requestNumber, String string) {
+		for(Request r : Data.requestList) {
+			if(r.getRequestNumber() == Integer.parseInt(requestNumber)) {
+				r.setPermission(string);
 			}
 		}
 		

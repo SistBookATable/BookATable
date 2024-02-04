@@ -7,6 +7,19 @@ import com.test.java.model.User;
 import com.test.java.repository.Data;
 import com.test.java.view.PointChargingView;
 import com.test.java.view.View;
+<<<<<<< HEAD
+
+public class PointChargingController {
+	
+	public static boolean pointCharging() {
+		
+		int amountCharging = PointChargingView.getAmountCharging();
+		String pw = PointChargingView.getPw();
+		
+		//유효성 검사
+		
+		System.out.println("포인트 충전이 완료되었습니다.");
+=======
 import java.util.Scanner;
 
 public class PointChargingController {
@@ -34,7 +47,6 @@ public class PointChargingController {
 	// PointManagement로
 	PointManagementController pointManagementController = new PointManagementController();
 	pointManagementController.pointManagement();
-		
 	}
 		
 }

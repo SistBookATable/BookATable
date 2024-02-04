@@ -75,6 +75,8 @@ public class MainController {
 				
 				switch(choice) {
 				case 1:
+					BusinessUserMyPageController businessUserMyPageController = new BusinessUserMyPageController();
+					businessUserMyPageController.businessUserMyPage();
 					break;
 				case 2:
 					LogOutController logOutController = new LogOutController();
@@ -134,5 +136,6 @@ public class MainController {
 		Data.loadInquiry();
 		Data.loadRequest();
 		Data.loadReview();
+		Data.loadReservation();
 	}
 }

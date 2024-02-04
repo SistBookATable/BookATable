@@ -15,7 +15,7 @@ public class FindByNameController implements Comparator<Menu> {
 	public int compare(Menu m1, Menu m2) {
 		
 		
-		
+		return 0;
 	}
 	
 }

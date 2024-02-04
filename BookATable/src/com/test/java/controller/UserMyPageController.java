@@ -21,7 +21,6 @@ public class UserMyPageController {
 				PointManagementController pointManagementController = new PointManagementController();
 				pointManagementController.pointManagement();
 				break;
-
 			case 3:
 				FavouriteStoreManagementController favouriteStoreManagementController = new FavouriteStoreManagementController();
 				favouriteStoreManagementController.favouriteStoreManagement();

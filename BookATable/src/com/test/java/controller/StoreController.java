@@ -65,7 +65,7 @@ public class StoreController {
 				try {
 					String storeName = StoreView.getStoreName();
 					searchStoreName(storeName);
-				} catch (IOException e) {
+				} catch (Exception e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}

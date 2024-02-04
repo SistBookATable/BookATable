@@ -39,6 +39,5 @@ public class PointRefundView {
 		System.out.println();
 		
 	}
-	
 
 }

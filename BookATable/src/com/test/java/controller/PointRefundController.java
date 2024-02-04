@@ -17,6 +17,7 @@ public class PointRefundController {
 		pointRefundView.showPointRefund();
 		
 		int choice = pointRefundView.get();
+    
 		Scanner scan = new Scanner(System.in);
 		
 		boolean loop = true;
@@ -32,8 +33,8 @@ public class PointRefundController {
 				}
 				break;
 		// 포인트 환불신청내역
-		case 2: PointRefundHistoryController pointRefundHistoryController = new PointRefundHistoryController();
-				pointRefundHistoryController.pointRefundHistory();
+		case 2: PointRefundHistoryView pointRefundHistoryView = new PointRefundHistoryView();
+				pointRefundHistoryView.showPointRefundHistory(findNameById(Member.id), findPointById(Member.id));
 			break;
 			
 		case 0:

@@ -54,11 +54,7 @@ public class LogInController {
 		return null;
 	}
 
-<<<<<<< HEAD
 	private boolean checkIdPw(String id, String pw) {
-=======
-	private boolean checkIdPw(String id,String pw) {
->>>>>>> d63f7fb8cba1bc267ef5db02cb3874a9ea89f6d1
 		for (Member u : Data.memberList) {
 			if (u.getId().equals(id)) {
 				if (u.getPw().equals(pw)) {

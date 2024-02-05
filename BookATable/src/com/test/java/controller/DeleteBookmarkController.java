@@ -1,8 +1,11 @@
 package com.test.java.controller;
 
+import java.util.Iterator;
 import java.util.Scanner;
 
+import com.test.java.model.Bookmark;
 import com.test.java.model.Member;
+import com.test.java.model.Review;
 import com.test.java.model.Store;
 import com.test.java.repository.Data;
 import com.test.java.view.DeleteBookmarkView;
@@ -18,26 +21,26 @@ public class DeleteBookmarkController {
 		Store store = findStoreByName(storeName);
 		// 현재 로그인한 사용자 아이디 
 		String userId = Member.id;
-
 		
-		if (store != null) {
-			// 즐겨찾기에서 해당 음식점을 현재 로그인한 사용자의 아이디로 매칭되는 것만 삭제
-			for (int i = 0; i < Data.bookmarkList.size(); i++) {
-				if (Data.bookmarkList.get(i).getLicenseNumber().equals(store.getLicenseNumber()) 
-						&& Data.bookmarkList.get(i).getUserId().equals(userId)) {
-					Data.bookmarkList.remove(i);
+		
+		// 즐겨찾기에서 해당 음식점을 현재 로그인한 사용자의 아이디로 매칭되는 것만 삭제
+					
+		Iterator it = Data.bookmarkList.iterator();
+			
+		while(it.hasNext()) {
+			Bookmark bookmark = (Bookmark)it.next();
+				
+			if (bookmark.getUserId().equals(userId)) {
+				if (bookmark.getLicenseNumber().equals(store.getLicenseNumber())) {
+						
+					it.remove();
+						
 					deleteBookmarkView.message();
-					break; // 한번만 삭제
+						
+					}
 				}
 			}
-		
-		} else {
-			System.out.println("해당 음식점이 존재하지 않습니다.");
-		}
-		
 		System.out.println("<<엔터를 입력하면, 이전 화면으로 이동합니다.>>");
-		
-		
 		// 엔터 입력 대기
 		waitForEnter();
 		
@@ -45,7 +48,7 @@ public class DeleteBookmarkController {
 		BookmarkHistoryController bookmarkHistoryController = new BookmarkHistoryController();
 		bookmarkHistoryController.bookmarkHistory();
 		
-	}
+		}
 	
 	
 	private void waitForEnter() {
@@ -62,9 +65,5 @@ public class DeleteBookmarkController {
 		}
 		return null;
 	}
-	
-	
-	
-	
 
 }

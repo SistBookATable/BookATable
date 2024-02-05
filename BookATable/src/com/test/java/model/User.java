@@ -132,6 +132,11 @@ public class User extends Member{
 	public int getReservationCount() {
 		return reservationCount;
 	}
+	
+	public void setBalance(int balance) {
+		this.balance = balance;
+		
+	}
 
 	
 }

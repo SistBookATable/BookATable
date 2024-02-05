@@ -9,7 +9,7 @@ public class PointUsage {
 	
 	//TODO save할 때 어떻게 적용할지..!
 	
-	private String[] content = {"포인트충전","[예약취소]포인트환급","[예약신청]포인트지불","충전포인트환불"};
+	private String[] content = {"포인트충전","[예약취소]포인트환급","[예약신청]포인트지불","포인트환불완료","포인트환불신청"};
 	
 	public String[] getContent() {
 		return content;

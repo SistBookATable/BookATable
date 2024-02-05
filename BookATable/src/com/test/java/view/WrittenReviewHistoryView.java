@@ -12,7 +12,7 @@ public class WrittenReviewHistoryView {
 	public static ArrayList<Store> storeList = new ArrayList<>();
 	
 	
-	public void showWrittenReviewHistory(String name, Calendar dateWritten, String storeName, String menu, String content) {
+	public void showWrittenReviewHistory(String name, String dateWritten, String storeName, String menu, String content) {
 		
 		System.out.println("------------------------------------------------------------------------------------------");
 		System.out.println();

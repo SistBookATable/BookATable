@@ -21,7 +21,7 @@ public class WrittenReviewHistoryController {
 	
 		String id = Member.id; // 사용자 ID 지정
 		String name = writtenReviewHistoryController.findNameById(id);
-		Calendar dateWritten = writtenReviewHistoryController.findDateById(id);// 작성일
+		String dateWritten = writtenReviewHistoryController.findDateById(id);// 작성일
 		String content = writtenReviewHistoryController.findContentById(id); // 작성 내용
 		String storeName = writtenReviewHistoryController.findStoreNameById(id); // 상호명
 		String menu = writtenReviewHistoryController.findMenuById(id); // 메뉴
@@ -57,7 +57,7 @@ public class WrittenReviewHistoryController {
 		}	
 	
 	// 작성일
-	private Calendar findDateById(String id) {
+	private String findDateById(String id) {
 		String dateWritten = "";
 		for (Review u : Data.reviewList) {
 			if (u.getUserId().equals(id)) {

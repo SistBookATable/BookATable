@@ -41,7 +41,7 @@ public class Data {
 	private final static String BLACKLIST = "dat"+File.separator+"blackList.txt";
 	private final static String VIP = "dat"+File.separator+"vip.txt";
 	private final static String TABLE = "dat"+File.separator+"table.txt";
-	private final static String MENU = "dat"+File.separator+"menu";
+	private final static String MENU = "dat"+File.separator+"menu.txt";
 	private final static String OPERATINGHOURS = "dat"+File.separator+"operatinghours.txt";
 	private final static String RESERVATION = "dat"+File.separator+"reservation.txt";
 	private final static String RESERVATIONMENU = "dat"+File.separator+"reservationMenu.txt";
@@ -342,22 +342,25 @@ public class Data {
 			BufferedReader reader
 			= new BufferedReader(new FileReader(Data.MENU));
 		
-		String line = null;
+			String line = null;
 		
-		while((line = reader.readLine())!=null){
+			while((line = reader.readLine())!=null){
 			
-			String[] tmp = line.split(",");
+				String[] tmp = line.split(",");
 			
-			Menu menu = new Menu(tmp[0],tmp[1],Integer.parseInt(tmp[2]));
-			menuList.add(menu);
-			System.out.println(menuList);
-		}
+				Menu menu = new Menu(tmp[0],tmp[1],Integer.parseInt(tmp[2]));
+			
+				menuList.add(menu);
+			
+				System.out.println(menuList);
+			}
 
 		reader.close();
 		} catch (Exception e) {
 			// TODO: handle exception
 		}
 	}
+	
 	public static void saveMenu() {
 		try {
 			BufferedWriter writer = new BufferedWriter(new FileWriter(Data.MENU));
@@ -480,6 +483,7 @@ public class Data {
 															, tmp[4], tmp[5], tmp[6],  tmp[7]
 															, tmp[8], tmp[9]);
 				memberList.add(businessUser);
+				System.out.println(memberList);
 			}
 			
 			reader.close();

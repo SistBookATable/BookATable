@@ -1,26 +1,18 @@
 package com.test.java.controller;
 
-import java.util.ArrayList;
-
 import com.test.java.model.Request;
 import com.test.java.model.Review;
 import com.test.java.repository.Data;
-import com.test.java.repository.RequestRepository;
 import com.test.java.view.RequestView;
 
 public class RequestController {
-
-	RequestView requestView = new RequestView();
 	
 	public void requestManagement() {
+		RequestView requestView = new RequestView();
 		
 		boolean loop = true;
 		while(loop) {
-			
-			ArrayList<Request> requests = RequestRepository.FindAllRequest();
-			
 			boolean hasRequests = requestView.FindAllRequest();
-			
 			if(!hasRequests) {
 				return;
 			}

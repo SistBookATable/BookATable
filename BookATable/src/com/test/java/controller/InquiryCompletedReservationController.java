@@ -12,30 +12,39 @@ import com.test.java.view.InquiryCompletedReservationView;
 public class InquiryCompletedReservationController {
 
 	public void inquiryCompletedReservation() {
-		InquiryCompletedReservationView inquiryCompletedReservationView = new InquiryCompletedReservationView();
-		inquiryCompletedReservationView.showInquiryCompletedReservation(findNameById(Member.id)
+		InquiryCompletedReservationView.showInquiryCompletedReservation(findNameById(Member.id)
 																		, findReserveDateById(Member.id)
 																		, findstoreNameById(Member.id)
 																		, findNumOfPepleById(Member.id)
 																		, findCancelStateById(Member.id)
 																		, findNoshowStateById(Member.id)
 																		, findReviewStateById(Member.id));
-		
-		while(true) {
-			switch(inquiryCompletedReservationView.get()) {
-				case 1:
-					inquiryCompletedReservationView.inputStoreName();
-					String review = inquiryCompletedReservationView.writeReview();
-					this.addReview(review);
-			 
+		boolean loop = true;
+		while (loop) {
+			int choice = InquiryCompletedReservationView.get();
+			switch (choice) {
+			case 1:
+				InquiryCompletedReservationView.inputStoreName();
+				String review = InquiryCompletedReservationView.writeReview();
+				addReview(review, Member.id);
+				break;
+			case 0 :
+				loop = false;
+				break;
 			}
 		}
 	}
 
-
-
-	private void addReview(String review) {
-		
+	private void addReview(String review, String id) {
+		for(Member u : Data.memberList) {
+			if (u.getId().equals(id)) {
+				for(Review r : Data.reviewList) {
+					if (r.getUserId().equals(id)) {
+						r.setContent(review);
+					}
+				}
+			}
+		}
 	}
 
 

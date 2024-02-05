@@ -11,13 +11,13 @@ public class LogInController {
 
 	public void logIn() {
 		boolean again = false;
-		
+
 		while (true) {
 			if (again) {
 				LogInView.showAgain();
-				int i = LogInView.get();
-				if (i == 1) {
-				} else if (i == 2) {
+				int choice = LogInView.get();
+				if (choice == 1) {
+				} else if (choice == 2) {
 					break;
 				}
 			}
@@ -33,7 +33,7 @@ public class LogInController {
 				continue;
 			}
 
-			boolean isValidPw = checkPw(pw);
+			boolean isValidPw = checkIdPw(id, pw);
 			if (isValidPw == false) {
 				System.out.println("해당 아이디는 등록되어있으나, 비밀번호가 일치하지 않습니다.");
 				continue;
@@ -47,19 +47,22 @@ public class LogInController {
 
 	private Object findNameById(String id) {
 		for (Member u : Data.memberList) {
-			if (u.getId().equals(id)) {
+			if (u.getId().equals(id) && u.getSignOut().equals("null")) {
 				return u.getName();
 			}
 		}
 		return null;
 	}
 
-	private boolean checkPw(String pw) {
+	private boolean checkIdPw(String id, String pw) {
 		for (Member u : Data.memberList) {
-			if (u.getPw().equals(pw)) {
-				Member.level = u.getUserType();
-				Member.id = u.getId();
-				return true;
+			if (u.getId().equals(id)) {
+				if (u.getPw().equals(pw)) {
+					Member.level = u.getUserType();
+					Member.id = u.getId();
+					return true;
+
+				}
 			}
 		}
 		return false;

@@ -11,8 +11,8 @@ import java.util.ArrayList;
 
 import com.test.java.model.Admin;
 import com.test.java.model.BlackList;
+import com.test.java.model.Bookmark;
 import com.test.java.model.BusinessUser;
-import com.test.java.model.CompletedList;
 import com.test.java.model.Faq;
 import com.test.java.model.Inquiry;
 import com.test.java.model.Member;
@@ -21,12 +21,10 @@ import com.test.java.model.OperatingHours;
 import com.test.java.model.PointUsage;
 import com.test.java.model.Request;
 import com.test.java.model.Reservation;
-import com.test.java.model.ReservationCancel;
 import com.test.java.model.Review;
 import com.test.java.model.Store;
 import com.test.java.model.Table;
 import com.test.java.model.User;
-import com.test.java.model.WriteReview;
 
 public class Data {
 	
@@ -40,10 +38,9 @@ public class Data {
 	private final static String BLACKLIST = "dat"+File.separator+"blackList.txt";
 	private final static String VIP = "dat"+File.separator+"vip.txt";
 	private final static String TABLE = "dat"+File.separator+"table.txt";
-	private final static String MENU = "dat"+File.separator+"menu";
+	private final static String MENU = "dat"+File.separator+"menu.txt";
 	private final static String OPERATINGHOURS = "dat"+File.separator+"operatinghours.txt";
 	private final static String RESERVATION = "dat"+File.separator+"reservation.txt";
-	private final static String RESERVATIONMENU = "dat"+File.separator+"reservationMenu.txt";
 	private final static String POINTUSAGE = "dat"+File.separator+"pointUsage.txt";
 	private final static String REVIEW = "dat"+File.separator+"review.txt";
 	private final static String FAQ = "dat"+File.separator+"faq.txt";
@@ -70,6 +67,31 @@ public class Data {
 	public static ArrayList<Request> requestList = new ArrayList<>();
 	public static ArrayList<Review> reviewList = new ArrayList<>();
 	public static ArrayList<Table> tableList = new ArrayList<>();
+	
+	public static ArrayList<Bookmark> bookmarkList = new ArrayList<>();
+	
+	public static void loadBookmark() {
+		try {
+			BufferedReader reader = new BufferedReader(new FileReader(Data.BOOKMARK));
+			
+			String line = null;
+			
+			while((line = reader.readLine()) != null) {
+				
+				String[] tmp = line.split(",");
+				Bookmark bookmark = new Bookmark(tmp[0], tmp[1]);
+				bookmarkList.add(bookmark);
+			}
+			
+			reader.close();
+			
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	
 	
 	
 	public static void loadRequest() {
@@ -227,9 +249,10 @@ public class Data {
 			
 			String[] tmp = line.split(",");
 			
-			Inquiry inquiry = new Inquiry(Integer.parseInt(tmp[0]),tmp[1],tmp[2], tmp[3], tmp[4],tmp[5],tmp[6],tmp[7]);
+			Inquiry inquiry = new Inquiry(Integer.parseInt(tmp[0]),tmp[1],tmp[2], tmp[3], Integer.parseInt(tmp[4]),tmp[5],tmp[6],tmp[7]);
 			
 			inquiryList.add(inquiry);
+			Inquiry.COUNT++;
 		}
 
 		reader.close();
@@ -315,22 +338,25 @@ public class Data {
 			BufferedReader reader
 			= new BufferedReader(new FileReader(Data.MENU));
 		
-		String line = null;
+			String line = null;
 		
-		while((line = reader.readLine())!=null){
+			while((line = reader.readLine())!=null){
 			
-			String[] tmp = line.split(",");
+				String[] tmp = line.split(",");
 			
-			Menu menu = new Menu(tmp[0],tmp[1],Integer.parseInt(tmp[2]));
-			menuList.add(menu);
-			System.out.println(menuList);
-		}
+				Menu menu = new Menu(tmp[0],tmp[1],Integer.parseInt(tmp[2]));
+			
+				menuList.add(menu);
+			
+				System.out.println(menuList);
+			}
 
 		reader.close();
 		} catch (Exception e) {
 			// TODO: handle exception
 		}
 	}
+	
 	public static void saveMenu() {
 		try {
 			BufferedWriter writer = new BufferedWriter(new FileWriter(Data.MENU));
@@ -453,6 +479,7 @@ public class Data {
 															, tmp[4], tmp[5], tmp[6],  tmp[7]
 															, tmp[8], tmp[9]);
 				memberList.add(businessUser);
+				System.out.println(memberList);
 			}
 			
 			reader.close();

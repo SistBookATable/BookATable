@@ -8,6 +8,9 @@ public class Review {
 	private String licenseNumber;
 	private String dateWritten;
 	private String content;
+	public void setContent(String content) {
+		this.content = content;
+	}
 	private double score;
 	private int reservationNumber;
 	

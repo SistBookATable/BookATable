@@ -17,22 +17,23 @@ public class SignInController {
 		boolean loop = true;
 		while(loop) {
 			SignInView.showSelectType();
-			int choice = SignInView.getSelectType();
+			String choice = SignInView.getSelectType();
 			
-//			유효성 검사
-//			if(!isValid(choice)) {
-//				continue;
-//			}
 			
 			switch(choice) {
-			case 1:
+			case "1":
+				//일반회원 회원가입
 				loop = !(UserSignInController.signIn());
 				break;
-			case 2:
+			case "2":
+				//업체회원 회원가입
 				loop = !(BusinessUserSignInController.signIn());
 				break;
-			case 0:
-				return;
+			case "0":
+				loop = false;
+			default:
+				//유효하지 않은 입력
+				SignInView.incorrectInputMessage();
 			}
 		}
 		

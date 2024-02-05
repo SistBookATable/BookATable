@@ -1,10 +1,7 @@
 package com.test.java.controller;
 
-import java.util.Iterator;
-
 import com.test.java.model.Member;
 import com.test.java.model.Reservation;
-import com.test.java.model.ReservationCancel;
 import com.test.java.model.Store;
 import com.test.java.repository.Data;
 import com.test.java.view.ReservationCancelView;
@@ -57,8 +54,6 @@ public class ReservationCancelController {
 		}
 		
 	}
-
-
 
 	private boolean checkStoreName(String inputStoreName, String storeNameByReservation) {
 		if (inputStoreName.equals(storeNameByReservation)) {

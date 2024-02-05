@@ -60,7 +60,10 @@ public class MainController {
 					logOutController.logOut();
 					break;
 				case 3:
-					
+
+					UserInquiryController userInquiryController = new UserInquiryController();
+					userInquiryController.userInquiry();
+
 					break;
 				case 4:
 					ReservationController reservationController = new ReservationController();
@@ -88,6 +91,8 @@ public class MainController {
 					logOutController.logOut();
 					break;
 				case 3:
+					UserInquiryController userInquiryController = new UserInquiryController();
+					userInquiryController.userInquiry();
 					break;
 				case 4:
 					break;

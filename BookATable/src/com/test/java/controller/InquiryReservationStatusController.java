@@ -12,79 +12,71 @@ import com.test.java.view.View;
 public class InquiryReservationStatusController {
 
 	public void inquiryReservationStatus() {
-		
-		InquiryReservationStatusView inquiryReservationStatusView
-			= new InquiryReservationStatusView();
-		inquiryReservationStatusView.showInquiryReservationStatus(findNameById(Member.id)
-																 , findStoreNameById(Member.id)
-																 , findNumOfPepleById(Member.id)
-																 , findReservationTimeById(Member.id));
+
+	
 		boolean loop = true;
-		while(loop) {
-			switch(inquiryReservationStatusView.get()) {
+		while (loop) {
+			InquiryReservationStatusView.showInquiryReservationStatus(findNameById(Member.id), findStoreNameById(Member.id),
+					findNumOfPepleById(Member.id), findReservationTimeById(Member.id));
+			int choice = InquiryReservationStatusView.get();
+			
+			switch (choice) {
 			case 1:
-				ReservationCancelController reservationCancelController
-					= new ReservationCancelController();
+				ReservationCancelController reservationCancelController = new ReservationCancelController();
 				reservationCancelController.reservationCancel();
 				break;
 			case 0:
 				break;
 			}
-			loop = false;
 		}
-		
-		
-		
+
 	}
 
 	private String findNameById(String id) {
 		String userName = "";
-		for(Member u : Data.memberList) {
-			if(u.getId().equals(id)) {
+		for (Member u : Data.memberList) {
+			if (u.getId().equals(id)) {
 				userName = u.getName();
 				break;
 			}
 		}
 		return userName;
-		
+
 	}
-	
+
 	private String findStoreNameById(String id) {
 		String storeName = "";
-		for(Reservation r : Data.reservationList) {
+		for (Reservation r : Data.reservationList) {
 			if (r.getUserId().equals(id)) {
-				for(Store s : Data.storeList) {
+				for (Store s : Data.storeList) {
 					if (r.getLicenseNumber().equals(s.getStoreName())) {
 						storeName = s.getStoreName();
 					}
 				}
-				
+
 			}
 		}
 		return storeName;
 	}
-	
+
 	private int findNumOfPepleById(String id) {
 		int numOfPeple = 0;
-		for(Reservation r : Data.reservationList) {
+		for (Reservation r : Data.reservationList) {
 			if (r.getUserId().equals(id)) {
 				numOfPeple = r.getNumOfPeople();
 			}
 		}
 		return numOfPeple;
 	}
-	
+
 	private String findReservationTimeById(String id) {
 		String reservationTime = "";
-		for(Reservation r : Data.reservationList) {
+		for (Reservation r : Data.reservationList) {
 			if (r.getUserId().equals(id)) {
 				reservationTime = r.getReservationTime();
 			}
 		}
 		return reservationTime;
 	}
-	
-	
-	
-	
+
 }

@@ -9,15 +9,11 @@ public class ReservationManagementController {
 
 	public void reservationManagement() {
 
-		ReservationManagementView reservationManagementView = new ReservationManagementView();
-		reservationManagementView.showReservationManagement();
-
-		int choice = InquiryReservationStatusView.get();
-
 		boolean loop = true;
 
 		while (loop) {
-
+			ReservationManagementView.showReservationManagement();
+			int choice = InquiryReservationStatusView.get();
 			switch (choice) {
 			case 1:
 				InquiryReservationStatusController inquiryReservationStatusController = new InquiryReservationStatusController();

@@ -14,7 +14,6 @@ public class UpdatePhoneNumberController {
 		while(loop) {
 			String toUpdatePhoneNumber = UpdatePhoneNumberView.getPhoneNumber();
 			
-			
 			//TODO 유효성 검사
 			//isValidOf(toUpdatePhoneNumber)
 			UpdatePhoneNumberView.showUpdatePhoneNumber(toUpdatePhoneNumber);

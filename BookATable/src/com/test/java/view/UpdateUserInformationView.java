@@ -2,38 +2,43 @@ package com.test.java.view;
 
 import java.util.Scanner;
 
-public class UserMyPageView {
-	
-	public static void showUserMyPage() {
-		
+public class UpdateUserInformationView {
+
+	public static void show() {
 		System.out.println();
 		System.out.println();
 		System.out.println("┌───────────────────────────────────────────────────────┐");
-		System.out.println("|              My Page - 원하시는 항목을 선택해주세요          	|");
+		System.out.println("|        개인정보 수정 - 원하시는 항목을 선택해주세요				<");
 		System.out.println("└───────────────────────────────────────────────────────┘");
+		System.out.println();
+	}
+
+	public static void showSelectBox() {
 		System.out.println("==========================================================================================");
 		System.out.println();
-		System.out.println("■           1. 예약 관리			   ■");
-		System.out.println("■           2. 포인트 관리			   ■");
-		System.out.println("■           3. 관심매장 관리		   ■");
-		System.out.println("■           4. 개인정보 관리		   ■");
-		System.out.println("■           5. 회원탈퇴			   ■");
-		System.out.println("■           0. 이전 화면으로 돌아가기	   	■");
+		System.out.println("■           1. 비밀번호 변경                  ■");
+		System.out.println("■           2. 출금계좌 변경                  ■");
+		System.out.println("■           3. 전화번호 변경                  ■");
+		System.out.println("■           0. 뒤로 가기                     ■");
 		System.out.println();
 		System.out.println("==========================================================================================");
 		System.out.println();
-		System.out.print("선택(번호) : ");
+		System.out.println("선택(번호) : ");
+		
 	}
 
 	public static int get() {
 		Scanner scan = new Scanner(System.in);
 		int temp = scan.nextInt();
 		scan.nextLine();
-		
 		return temp;
 	}
 
-	
-
+	public static String getPw() {
+		System.out.print("비밀번호 입력: ");
+		Scanner scan = new Scanner(System.in);
+		String temp = scan.nextLine();
+		return temp;
+	}
 
 }

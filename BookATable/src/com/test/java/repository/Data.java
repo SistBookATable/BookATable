@@ -13,7 +13,6 @@ import com.test.java.model.Admin;
 import com.test.java.model.BlackList;
 import com.test.java.model.Bookmark;
 import com.test.java.model.BusinessUser;
-import com.test.java.model.CompletedList;
 import com.test.java.model.Faq;
 import com.test.java.model.Inquiry;
 import com.test.java.model.Member;
@@ -23,12 +22,10 @@ import com.test.java.model.PointRefund;
 import com.test.java.model.PointUsage;
 import com.test.java.model.Request;
 import com.test.java.model.Reservation;
-import com.test.java.model.ReservationCancel;
 import com.test.java.model.Review;
 import com.test.java.model.Store;
 import com.test.java.model.Table;
 import com.test.java.model.User;
-import com.test.java.model.WriteReview;
 
 public class Data {
 	
@@ -45,7 +42,6 @@ public class Data {
 	private final static String MENU = "dat"+File.separator+"menu.txt";
 	private final static String OPERATINGHOURS = "dat"+File.separator+"operatinghours.txt";
 	private final static String RESERVATION = "dat"+File.separator+"reservation.txt";
-	private final static String RESERVATIONMENU = "dat"+File.separator+"reservationMenu.txt";
 	private final static String POINTUSAGE = "dat"+File.separator+"pointUsage.txt";
 	private final static String REVIEW = "dat"+File.separator+"review.txt";
 	private final static String FAQ = "dat"+File.separator+"faq.txt";
@@ -278,9 +274,10 @@ public class Data {
 			
 			String[] tmp = line.split(",");
 			
-			Inquiry inquiry = new Inquiry(Integer.parseInt(tmp[0]),tmp[1],tmp[2], tmp[3], tmp[4],tmp[5],tmp[6],tmp[7]);
+			Inquiry inquiry = new Inquiry(Integer.parseInt(tmp[0]),tmp[1],tmp[2], tmp[3], Integer.parseInt(tmp[4]),tmp[5],tmp[6],tmp[7]);
 			
 			inquiryList.add(inquiry);
+			Inquiry.COUNT++;
 		}
 
 		reader.close();

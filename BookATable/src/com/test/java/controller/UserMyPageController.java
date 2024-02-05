@@ -5,13 +5,10 @@ import com.test.java.view.UserMyPageView;
 public class UserMyPageController {
 
 	public void userMyPage() {
-		UserMyPageView.showUserMyPage();
-		int choice = UserMyPageView.get();
-
 		boolean loop = true;
-
 		while (loop) {
-
+			UserMyPageView.showUserMyPage();
+			int choice = UserMyPageView.get();
 			switch (choice) {
 			case 1:
 				ReservationManagementController reservationManagementController = new ReservationManagementController(); 

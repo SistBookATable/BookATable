@@ -31,9 +31,6 @@ public class UserMyPageController {
 			case 5:
 				break;
 
-			case 6:
-				break;
-
 			case 0:
 				loop = false;
 				break;

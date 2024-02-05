@@ -150,5 +150,9 @@ public class User extends Member{
 		this.account = account;
 	}
 
+	public void setSignOut(String signOut) {
+		this.signOut = signOut;
+	}
+
 	
 }

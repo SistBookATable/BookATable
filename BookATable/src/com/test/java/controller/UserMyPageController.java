@@ -1,5 +1,7 @@
 package com.test.java.controller;
 
+import com.test.java.model.Member;
+import com.test.java.repository.Data;
 import com.test.java.view.UserMyPageView;
 
 public class UserMyPageController {
@@ -9,6 +11,11 @@ public class UserMyPageController {
 		while (loop) {
 			UserMyPageView.showUserMyPage();
 			int choice = UserMyPageView.get();
+			if (!findSignOutById(Member.id).equals("null")) {
+				loop = true;
+			} else {
+				loop = false;
+			}
 			switch (choice) {
 			case 1:
 				//예약 관리
@@ -45,6 +52,16 @@ public class UserMyPageController {
 			}
 		}
 
+	}
+
+	private String findSignOutById(String id) {
+		for(Member u : Data.memberList) {
+			if (u.getId().equals(id)) {
+				return u.getSignOut();
+			}
+		}
+		
+		return null;
 	}
 
 }

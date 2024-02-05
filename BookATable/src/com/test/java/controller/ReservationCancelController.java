@@ -58,8 +58,6 @@ public class ReservationCancelController {
 		
 	}
 
-
-
 	private boolean checkStoreName(String inputStoreName, String storeNameByReservation) {
 		if (inputStoreName.equals(storeNameByReservation)) {
 			return true;

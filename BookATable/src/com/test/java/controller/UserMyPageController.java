@@ -24,6 +24,8 @@ public class UserMyPageController {
 				break;
 
 			case 4:
+				UserInformationManagementController userInformationManagementController = new UserInformationManagementController() ;
+				userInformationManagementController.userInformationManagement();
 				break;
 
 			case 5:

@@ -15,11 +15,11 @@ public class Reservation {
 	private int numOfPeople;
 	private int tableCapacity;
 	private String state;
-	private ArrayList<String> menulist = new ArrayList<>();
+	private String menulist;
 	
 
 	public Reservation (int reservationNumber, String userId, String licenseNumber, String reservationTime,String reservationDate
-			, int numOfPeople, int tableCapacity, String state, ArrayList<String> menulist) {
+			, int numOfPeople, int tableCapacity, String state, String menulist) {
 		super();
 		this.reservationNumber = reservationNumber;
 		this.userId = userId;
@@ -32,16 +32,12 @@ public class Reservation {
 		this.menulist = menulist;
 	}
 
-	public void addmenu(String name) {
-		menulist.add(name);
-	}
 	
-	public ArrayList<String> getMenulist() {
+	
+	public String getMenulist() {
 		return menulist;
 	}
-	public void setMenulist(ArrayList<String> menulist) {
-		this.menulist = menulist;
-	}
+	
 	public int getReservationNumber() {
 		return reservationNumber;
 	}

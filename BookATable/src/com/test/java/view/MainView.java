@@ -73,7 +73,6 @@ public class MainView {
 		Scanner scan = new Scanner(System.in);
 		int temp = 0;
 		System.out.print("선택(번호): ");
-		
 		temp = scan.nextInt();
 		scan.nextLine();
 		return temp;

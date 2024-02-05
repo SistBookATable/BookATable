@@ -2,7 +2,9 @@ package com.test.java.view;
 
 import java.util.Scanner;
 
+import com.test.java.model.Bookmark;
 import com.test.java.model.Store;
+import com.test.java.repository.Data;
 
 public class MoveStorePageView {
 	
@@ -26,7 +28,7 @@ public class MoveStorePageView {
 		System.out.println();
 		System.out.println(); 
 		System.out.println("┌───────────────────────────────────────────────────────┐");
-		System.out.printf("	■								%s			 			■\n", store.getStoreName()); 
+		System.out.printf("				%s			 \n", store.getStoreName()); 
 		System.out.println("└───────────────────────────────────────────────────────┘");
 		System.out.println("==========================================================================================");
 		System.out.println();
@@ -40,8 +42,10 @@ public class MoveStorePageView {
 		System.out.println("==========================================================================================");
 		System.out.println();
 		
-	}
-	
-	
 
-}
+   
+			}
+			
+		}
+		
+

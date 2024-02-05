@@ -3,6 +3,7 @@ package com.test.java.controller;
 import java.util.Scanner;
 
 import com.test.java.model.Member;
+import com.test.java.model.PointRefund;
 import com.test.java.model.User;
 import com.test.java.repository.Data;
 import com.test.java.view.PointRefundHistoryView;
@@ -42,9 +43,9 @@ public class PointRefundController {
 				}
 				break;
 		// 포인트 환불신청내역
-//		case 2: PointRefundHistoryView pointRefundHistoryView = new PointRefundHistoryView();
-//				pointRefundHistoryView.showPointRefundHistory(findNameById(Member.id), findPointById(Member.id));
-//			break;
+		case 2: PointRefundHistoryController pointRefundHistoryController = new PointRefundHistoryController();
+				pointRefundHistoryController.pointRefundHistory();
+			break;
 			
 		case 0: PointManagementController pointManagementController = new PointManagementController();
 				pointManagementController.pointManagement();
@@ -76,15 +77,34 @@ public class PointRefundController {
 		return userName;
 	}
 	
-	private int findPointById(String id)  {
-		
-		for(Member u : Data.memberList) {
-			if(u.getId().equals(id)) {
-				return ((User)u).getBalance();
+
+	
+	private String findRefundDateById(String id) {
+		String refundDate = "";
+		for (PointRefund p : Data.pointRefundList) {
+			if (p.getUserId().equals(Member.id)) {
+					refundDate = p.getRefundDate(); 
+					break;					
 			}
-		}
-		return 0;
+		}	
+		return refundDate;
 	}
+	
+
+	private int findPointAmountById(String id) {
+		int pointAmount = 0;
+		for (PointRefund p : Data.pointRefundList) {
+			if (p.getUserId().equals(Member.id)) {		
+					pointAmount = p.getPointAmount();
+						break;
+				}
+		}
+		return pointAmount;
+	}
+
+	
+	
+
 	
 	
 }

@@ -16,17 +16,17 @@ public class BookmarkHistoryController {
 		findNameById(Member.id);
 		String name = findNameById(Member.id);
 		
-		// 사용자의 즐겨찾기 목록에서 음식점의 사업자등록번호 가져오기
-		String userId = Member.id; //사용자의 아이디
-		String licenseNumber = findBookmarkById(userId);
+//		// 사용자의 즐겨찾기 목록에서 음식점의 사업자등록번호 가져오기
+//		String userId = Member.id; //사용자의 아이디
+//		String licenseNumber = findBookmarkById(userId);
 		
-		// 음식점의 사업자등록번호로 음식점 정보 가져오기
-		String storeName = findStoreNameBylicenseNumber(licenseNumber);
-		String storeTelNumber = findStoreTelNumberBylicenseNumber(licenseNumber);
-		String menuName = findMenuNameBylicenseNumber(licenseNumber);
+//		// 음식점의 사업자등록번호로 음식점 정보 가져오기
+//		String storeName = findStoreNameBylicenseNumber(licenseNumber);
+//		String storeTelNumber = findStoreTelNumberBylicenseNumber(licenseNumber);
+//		String menuName = findMenuNameBylicenseNumber(licenseNumber);
 		
 		BookmarkHistoryView bookmarkHistoryView = new BookmarkHistoryView();
-		bookmarkHistoryView.showBookmarkHistory(name, storeName, storeTelNumber, menuName);
+		bookmarkHistoryView.showBookmarkHistory(name);
 		
 		int choice = bookmarkHistoryView.get();
 		Scanner scan = new Scanner(System.in);
@@ -57,44 +57,44 @@ public class BookmarkHistoryController {
 		
 	}
 	
-	private String findMenuNameBylicenseNumber(String licenseNumber) {
-		for (Store s : Data.storeList) {
-			if (s.getLicenseNumber().equals(licenseNumber)) {
-				return s.getmenuName();
-			}
-		}
-		return null;
-	}
-
-	// 전화번호
-	private String findStoreTelNumberBylicenseNumber(String licenseNumber) {
-		for (Store s : Data.storeList) {
-			if (s.getLicenseNumber().equals(licenseNumber)) {
-				return s.getStoreTelNumber();
-			}
-		}
-		return null;
-	}
-
-	// 상호명 
-	private String findStoreNameBylicenseNumber(String licenseNumber) {
-		for (Store s : Data.storeList) {
-			if (s.getLicenseNumber().equals(licenseNumber)) {
-				return s.getStoreName();
-			}	
-		}
-		return null;
-	}
-
-	// 즐겨찾기 목록에서 음식점의 사업자등록번호 가져오기 
-	private String findBookmarkById(String userId) {
-		for (Bookmark bookmark : Data.bookmarkList) {
-			if(bookmark.getUserId().equals(userId)) {
-				return bookmark.getLicenseNumber();
-			}
-		}
-		return null;
-	}
+//	private String findMenuNameBylicenseNumber(String licenseNumber) {
+//		for (Store s : Data.storeList) {
+//			if (s.getLicenseNumber().equals(licenseNumber)) {
+//				return s.getmenuName();
+//			}
+//		}
+//		return null;
+//	}
+//
+//	// 전화번호
+//	private String findStoreTelNumberBylicenseNumber(String licenseNumber) {
+//		for (Store s : Data.storeList) {
+//			if (s.getLicenseNumber().equals(licenseNumber)) {
+//				return s.getStoreTelNumber();
+//			}
+//		}
+//		return null;
+//	}
+//
+//	// 상호명 
+//	private String findStoreNameBylicenseNumber(String licenseNumber) {
+//		for (Store s : Data.storeList) {
+//			if (s.getLicenseNumber().equals(licenseNumber)) {
+//				return s.getStoreName();
+//			}	
+//		}
+//		return null;
+//	}
+//
+//	// 즐겨찾기 목록에서 음식점의 사업자등록번호 가져오기 
+//	private String findBookmarkById(String userId) {
+//		for (Bookmark bookmark : Data.bookmarkList) {
+//			if(bookmark.getUserId().equals(userId)) {
+//				return bookmark.getLicenseNumber();
+//			}
+//		}
+//		return null;
+//	}
 
 	// 이름
 	private String findNameById(String id) {

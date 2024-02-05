@@ -12,7 +12,7 @@ public class MainController {
 	 * 메인 화면 시작 
 	 */
 	public static void start() {
-
+		
 		boolean loop = true;
 		while(loop) {
 			

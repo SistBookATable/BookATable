@@ -99,12 +99,8 @@ public class UserSignInController {
 		Calendar c = Calendar.getInstance();
 		String now = String.format("%tF", c);
 		
-		User user = new User(id,pw,name,phone,jumin,0,0,0,null,account,null,now,null);
-		
-//		//유효성 검사
-//		if(isValid(user)) {
-//			return true;
-//		}
+		User user = new User(id,pw,name,phone,jumin,0,0,0,bank,account,null,now,null);
+
 		
 		System.out.println("회원가입이 완료되었습니다.");
 		Data.memberList.add(user);
@@ -126,8 +122,12 @@ public class UserSignInController {
 	}
 
 
+	/**
+	 * 1. 특수문자 1개 이상
+	 * 2. 5글자 이상
+	 */
 	private static boolean isValidPw(String pw) {
-		return Pattern.matches("^(?=.*\\d)(?=.*[a-zA-Z]).{5,}$", pw);
+		return Pattern.matches("^(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{5,}$", pw);
 	}
 
 
@@ -137,7 +137,12 @@ public class UserSignInController {
 
 
 	private static boolean isValidBank(String bank) {
-		return (Pattern.matches("^[0-9]+&", bank) && Integer.parseInt(bank)<=11);
+		if(Pattern.matches("^[0-9]+$", bank)) {
+			if(Integer.parseInt(bank)<=11 && Integer.parseInt(bank)>0) {
+				return true;
+			}
+		}
+		return false;
 	}
 
 

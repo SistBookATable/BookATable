@@ -11,6 +11,7 @@ import java.util.ArrayList;
 
 import com.test.java.model.Admin;
 import com.test.java.model.BlackList;
+import com.test.java.model.Bookmark;
 import com.test.java.model.BusinessUser;
 import com.test.java.model.CompletedList;
 import com.test.java.model.Faq;
@@ -69,6 +70,31 @@ public class Data {
 	public static ArrayList<Request> requestList = new ArrayList<>();
 	public static ArrayList<Review> reviewList = new ArrayList<>();
 	public static ArrayList<Table> tableList = new ArrayList<>();
+	
+	public static ArrayList<Bookmark> bookmarkList = new ArrayList<>();
+	
+	public static void loadBookmark() {
+		try {
+			BufferedReader reader = new BufferedReader(new FileReader(Data.BOOKMARK));
+			
+			String line = null;
+			
+			while((line = reader.readLine()) != null) {
+				
+				String[] tmp = line.split(",");
+				Bookmark bookmark = new Bookmark(tmp[0], tmp[1]);
+				bookmarkList.add(bookmark);
+			}
+			
+			reader.close();
+			
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	
 	
 	
 	public static void loadRequest() {

@@ -2,6 +2,7 @@ package com.test.java.controller;
 
 import java.util.Scanner;
 
+import com.test.java.model.Bookmark;
 import com.test.java.model.Member;
 import com.test.java.model.Store;
 import com.test.java.repository.Data;
@@ -46,9 +47,6 @@ public class BookmarkHistoryController {
 		}
 		
 		
-		
-		
-		
 	}
 	
 	private String findMenuNameBylicenseNumber(String licenseNumber) {
@@ -82,10 +80,9 @@ public class BookmarkHistoryController {
 
 	// 즐겨찾기 목록에서 음식점의 사업자등록번호 가져오기 
 	private String findBookmarkById(String userId) {
-		for (String bookmark : Data.BOOKMARK) {
-			String[] splitBookmark = bookmark.split(",");
-			if (splitBookmark[1].equals(userId)) {
-				return splitBookmark[0];
+		for (Bookmark bookmark : Data.bookmarkList) {
+			if(bookmark.getUserId().equals(userId)) {
+				return bookmark.getLicenseNumber();
 			}
 		}
 		return null;

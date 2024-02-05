@@ -1,19 +1,19 @@
 package com.test.java.model;
 
-import java.util.Calendar;
 
 public class Inquiry {
+	public static int COUNT = 0;
 	private int inquiryNumber;
 	private String userId;
 	private String title;
 	private String content;
-	private String type;
+	private int type;
 	private String dateWritten;
 	private String adminId;
 	private String answer;
 	
 	
-	public Inquiry(int inquiryNumber, String userId, String title, String content, String type, String dateWritten,
+	public Inquiry(int inquiryNumber, String userId, String title, String content, int type, String dateWritten,
 			String adminId, String answer) {
 		super();
 		this.inquiryNumber = inquiryNumber;
@@ -48,7 +48,7 @@ public class Inquiry {
 	public String getAdminId() {
 		return adminId;
 	}
-	public String getType() {
+	public int getType() {
 		return type;
 	}
 	public String getDateWritten() {

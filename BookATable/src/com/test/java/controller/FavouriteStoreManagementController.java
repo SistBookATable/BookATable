@@ -32,9 +32,12 @@ public class FavouriteStoreManagementController {
 				break;
 			// 즐겨찾기 삭제
 			case 3:
+				DeleteBookmarkController deleteBookmarkController = new DeleteBookmarkController();
+				deleteBookmarkController.deleteBookmark();
 				break;
 			// 이전화면
-			case 0:
+			case 0: UserMyPageController userMyPageController = new UserMyPageController();
+			 userMyPageController.userMyPage();
 				break;
 			
 			}

@@ -5,6 +5,9 @@ import com.test.java.repository.Data;
 
 public class Main {
 	public static void main(String[] args) {
+		Data.loadMenu();
+		Data.loadBusinessUser();
+		
 
 		MainController.load();
 		MainController.start();  

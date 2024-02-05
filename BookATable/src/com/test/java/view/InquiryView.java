@@ -54,7 +54,7 @@ public class InquiryView {
 						i.getAnswer().equals("null")? "답변 대기":"답변 완료",
 						i.getDateWritten(),
 						i.getUserId(),
-						i.getType().equals("1")? "일반회원":"업체회원",
+						i.getType()==1? "일반회원":"업체회원",
 						i.getTitle());
 
 				System.out.println(tmp);

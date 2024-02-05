@@ -13,20 +13,12 @@ public class PointUsageHistoryController {
 	
 	public void pointUsageHistory() {
 		
-		PointUsageHistoryController pointUsageHistoryController = new PointUsageHistoryController();
-		String id = Member.id; // 사용자 ID 지정..
-		String name = pointUsageHistoryController.findNameById(id);
-		String useTime = pointUsageHistoryController.findUseTimeById(id);//사용시간 가져오기
-		String[] content = pointUsageHistoryController.findContentById(id); // 내역 
-		int usagePoint = pointUsageHistoryController.findUsagePointById(id); // 사용포인트 
-		int balance = pointUsageHistoryController.findPointById(id); // 보유포인트 
-
-		
+		String userId = Member.id; 
+		String name = findNameById(userId);	
 		
 		PointUsageHistoryView pointUsageHistoryView = new PointUsageHistoryView();
-		pointUsageHistoryView.showPointUsageHistoryView(name, useTime, content, usagePoint, balance);
+		pointUsageHistoryView.showPointUsageHistoryView(name);
 		
-		findNameById(Member.id);
 		
 		// 사용자가 엔터를 입력할 때까지 대기
 		Scanner scan = new Scanner(System.in);
@@ -39,10 +31,10 @@ public class PointUsageHistoryController {
 		
 	}
 
-	private int findPointById(String id) {
+	private int findPointById(String userId) {
 		
 		for(Member u : Data.memberList) {
-			if(u.getId().equals(id)) {
+			if(u.getId().equals(userId)) {
 				return ((User)u).getBalance();
 			}
 		}
@@ -50,55 +42,24 @@ public class PointUsageHistoryController {
 		return 0;
 	}
 
-	private String findAccountById(String id) {
+	private String findAccountById(String userId) {
 		
 		for(Member u : Data.memberList) {
-			if(u.getId().equals(id)) {
+			if(u.getId().equals(userId)) {
 				return u.getAccount();
 			}
 		}
 		return null;
 	}
 
-	private String findNameById(String id) {
+	private String findNameById(String userId) {
 		String name = "";
 		for(Member u : Data.memberList) {
-			if(u.getId().equals(id)) {
+			if(u.getId().equals(userId)) {
 				return u.getName();
 			}
 		}
 		return null;	
-	}
-	
-	
-	private String findUseTimeById(String id) {
-		String useTime = "";
-		for (PointUsage u : Data.pointList) {
-			if (u.getUserId().equals(id)) {
-				return u.getUseTime();
-			}
-		}
-		return null;
-	}
-	
-	private int findUsagePointById(String id) {
-		int usagePoint = 0;
-		for (PointUsage u : Data.pointList) {
-			if (u.getUserId().equals(id)) {
-				return u.getUsagePoint();
-			}
-		}
-		return 0;
-	}
-	
-	private String[] findContentById(String id) {
-		String content = "";
-		for (PointUsage u : Data.pointList) {
-			if (u.getUserId().equals(id)) {
-				return u.getContent();
-			}
-		}
-		return null;
 	}
 	
 	

@@ -7,6 +7,7 @@ import com.test.java.repository.Data;
 
 public class PointRefundHistoryView {
 	
+	
 	public static void showPointRefundHistory(String userName, String refundDate, int pointAmount) {
 
 		
@@ -36,8 +37,8 @@ public class PointRefundHistoryView {
 	public static String get() {
 		
 		Scanner scan = new Scanner(System.in);
+	
 		String temp = scan.nextLine();
-		
 		return temp;
 	}
 

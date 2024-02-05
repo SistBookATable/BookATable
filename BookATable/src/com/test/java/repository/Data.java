@@ -207,9 +207,9 @@ public class Data {
 			while((line = reader.readLine()) != null) {
 				
 				String[] tmp = line.split(",");
-////				PointUsage pointUsage = new PointUsage(Integer.parseInt(tmp[0]),tmp[1],tmp[2],tmp[3]);
-//				pointList.add(pointUsage);
-				System.out.println(pointList);
+				PointUsage pointUsage = new PointUsage(Integer.parseInt(tmp[0]),Integer.parseInt(tmp[1]),tmp[2],tmp[3], tmp[4]);
+				pointList.add(pointUsage);
+
 			}
 			
 			reader.close();

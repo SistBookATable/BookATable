@@ -19,7 +19,7 @@ public class InquiryCompletedReservationView {
 
 		System.out.println();
 		System.out.printf("[예약일]\t[상호명]\t[인원수]\t[예약 취소]\t[노쇼]\t[리뷰 작성]\n");
-		System.out.printf("[%s]\t[%s]\t[%d명]\t[%s]\t[%s]\t[%s]\n"
+		System.out.printf("[%s]\t[%s]\t[%d명]\t[%s]\t\t[%s]\t[%s]\n"
 						 , reserveDate, storeName, numOfPeple, canceledReservationState, noShowState, reviewState);
 
 		System.out.println();

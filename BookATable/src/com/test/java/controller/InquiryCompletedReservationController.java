@@ -19,27 +19,28 @@ public class InquiryCompletedReservationController {
 																		, findCancelStateById(Member.id)
 																		, findNoshowStateById(Member.id)
 																		, findReviewStateById(Member.id));
-		
-		while(true) {
+		boolean loop = true;
+		while (loop) {
 			int choice = InquiryCompletedReservationView.get();
-			switch(choice) {
-				case 1:
-					InquiryCompletedReservationView.inputStoreName();
-					String review = InquiryCompletedReservationView.writeReview();
-					addReview(review, Member.id);
-			 
+			switch (choice) {
+			case 1:
+				InquiryCompletedReservationView.inputStoreName();
+				String review = InquiryCompletedReservationView.writeReview();
+				addReview(review, Member.id);
+				break;
+			case 0 :
+				loop = false;
+				break;
 			}
 		}
 	}
-
-
 
 	private void addReview(String review, String id) {
 		for(Member u : Data.memberList) {
 			if (u.getId().equals(id)) {
 				for(Review r : Data.reviewList) {
 					if (r.getUserId().equals(id)) {
-						Data.reviewList.add(review);
+						r.setContent(review);
 					}
 				}
 			}

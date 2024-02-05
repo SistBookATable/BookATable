@@ -12,8 +12,7 @@ import com.test.java.view.InquiryCompletedReservationView;
 public class InquiryCompletedReservationController {
 
 	public void inquiryCompletedReservation() {
-		InquiryCompletedReservationView inquiryCompletedReservationView = new InquiryCompletedReservationView();
-		inquiryCompletedReservationView.showInquiryCompletedReservation(findNameById(Member.id)
+		InquiryCompletedReservationView.showInquiryCompletedReservation(findNameById(Member.id)
 																		, findReserveDateById(Member.id)
 																		, findstoreNameById(Member.id)
 																		, findNumOfPepleById(Member.id)
@@ -22,11 +21,12 @@ public class InquiryCompletedReservationController {
 																		, findReviewStateById(Member.id));
 		
 		while(true) {
-			switch(inquiryCompletedReservationView.get()) {
+			int choice = InquiryCompletedReservationView.get();
+			switch(choice) {
 				case 1:
-					inquiryCompletedReservationView.inputStoreName();
-					String review = inquiryCompletedReservationView.writeReview();
-					this.addReview(review);
+					InquiryCompletedReservationView.inputStoreName();
+					String review = InquiryCompletedReservationView.writeReview();
+					addReview(review, Member.id);
 			 
 			}
 		}
@@ -34,8 +34,16 @@ public class InquiryCompletedReservationController {
 
 
 
-	private void addReview(String review) {
-		
+	private void addReview(String review, String id) {
+		for(Member u : Data.memberList) {
+			if (u.getId().equals(id)) {
+				for(Review r : Data.reviewList) {
+					if (r.getUserId().equals(id)) {
+						Data.reviewList.add(review);
+					}
+				}
+			}
+		}
 	}
 
 

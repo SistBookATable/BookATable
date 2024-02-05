@@ -11,7 +11,7 @@ public class LogInController {
 
 	public void logIn() {
 		boolean again = false;
-		
+
 		while (true) {
 			if (again) {
 				LogInView.showAgain();
@@ -33,7 +33,7 @@ public class LogInController {
 				continue;
 			}
 
-			boolean isValidPw = checkPw(pw);
+			boolean isValidPw = checkIdPw(id, pw);
 			if (isValidPw == false) {
 				System.out.println("해당 아이디는 등록되어있으나, 비밀번호가 일치하지 않습니다.");
 				continue;
@@ -54,12 +54,15 @@ public class LogInController {
 		return null;
 	}
 
-	private boolean checkPw(String pw) {
+	private boolean checkIdPw(String pw, String id) {
 		for (Member u : Data.memberList) {
-			if (u.getPw().equals(pw)) {
-				Member.level = u.getUserType();
-				Member.id = u.getId();
-				return true;
+			if (u.getId().equals(id)) {
+				if (u.getPw().equals(pw)) {
+					Member.level = u.getUserType();
+					Member.id = u.getId();
+					return true;
+
+				}
 			}
 		}
 		return false;

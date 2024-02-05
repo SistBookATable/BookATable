@@ -26,6 +26,7 @@ public class InquiryReservationStatusController {
 				reservationCancelController.reservationCancel();
 				break;
 			case 0:
+				loop = false;
 				break;
 			}
 		}

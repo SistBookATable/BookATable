@@ -14,7 +14,7 @@ public class BusinessUserMyPageController {
 			businessUserMyPageView.showTitle();
 			businessUserMyPageView.showSelectBox();
 			int choice = businessUserMyPageView.getSelectType();
-			
+			String licenseNumber="002-00-40342";
 			switch(choice) {
 			case 1:
 				ReservationController reservationController = new ReservationController();
@@ -27,6 +27,8 @@ public class BusinessUserMyPageController {
 			case 3:
 				break;
 			case 4:
+				OperationalInfoManagementController operationalInfoMangagementController=new OperationalInfoManagementController();
+				operationalInfoMangagementController.operationalInfoManagement(licenseNumber);
 				break;
 			case 5:
 				break;

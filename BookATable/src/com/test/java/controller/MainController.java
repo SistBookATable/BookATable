@@ -47,7 +47,7 @@ public class MainController {
 				MainView.userPage();
 
 				int choice = MainView.get();
-				
+				String licenseNumber="002-00-40342";
 				switch(choice) {
 				case 1:
 					UserMyPageController userMyPageController = new UserMyPageController();
@@ -62,6 +62,8 @@ public class MainController {
 					userInquiryController.userInquiry();
 					break;
 				case 4:
+					ReservationController reservationController = new ReservationController();
+					reservationController.reservation(licenseNumber);
 					break;
 				default:
 					loop = false;
@@ -89,6 +91,7 @@ public class MainController {
 					userInquiryController.userInquiry();
 					break;
 				case 4:
+					
 					break;
 				default:
 					loop = false;

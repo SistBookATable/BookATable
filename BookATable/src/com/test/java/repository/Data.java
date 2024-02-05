@@ -13,7 +13,6 @@ import com.test.java.model.Admin;
 import com.test.java.model.BlackList;
 import com.test.java.model.Bookmark;
 import com.test.java.model.BusinessUser;
-import com.test.java.model.CompletedList;
 import com.test.java.model.Faq;
 import com.test.java.model.Inquiry;
 import com.test.java.model.Member;
@@ -22,12 +21,10 @@ import com.test.java.model.OperatingHours;
 import com.test.java.model.PointUsage;
 import com.test.java.model.Request;
 import com.test.java.model.Reservation;
-import com.test.java.model.ReservationCancel;
 import com.test.java.model.Review;
 import com.test.java.model.Store;
 import com.test.java.model.Table;
 import com.test.java.model.User;
-import com.test.java.model.WriteReview;
 
 public class Data {
 	

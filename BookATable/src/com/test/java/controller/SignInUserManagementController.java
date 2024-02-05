@@ -1,39 +1,62 @@
 package com.test.java.controller;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 import com.test.java.model.Member;
 import com.test.java.model.Reservation;
-import com.test.java.model.Review;
-import com.test.java.model.Store;
 import com.test.java.model.User;
-import com.test.java.repository.Data;
+import com.test.java.repository.MemberRepository;
+import com.test.java.repository.ReservationRepository;
+import com.test.java.repository.ReviewRepository;
+import com.test.java.repository.StoreRepository;
 import com.test.java.view.SignInUserManagementView;
 import com.test.java.view.View;
 
 public class SignInUserManagementController {
 
+	SignInUserManagementView signInUserManagementView = new SignInUserManagementView();
+	
 	public void signInUserManagement() {
-		
 		
 		boolean loop = true;
 		while(loop) {
 
-			SignInUserManagementView.findAllUser();
-			SignInUserManagementView.showSelectBox();
-			int choice = SignInUserManagementView.getSelectType();
+			signInUserManagementView.findAllUser();
+			signInUserManagementView.showSelectBox();
+			int choice = signInUserManagementView.getSelectType();
 			
 			if(choice == 1) {
 				//아이디 입력 받기
-				String id = SignInUserManagementView.getId();
-				//아이디를 사용해서 기본정보 받아오기
-				String basic = findBasicById(id);
+				String id = signInUserManagementView.getId();
+				
+				//아이디를 사용해서 Member조회
+				Member member = MemberRepository.findOneById(id);
+				
+				//member가 없으면
+				if(member==null) {
+					signInUserManagementView.incorrectInputMessage();
+					continue;
+				}
+				
+				//멤버를 사용해서 기본정보 받아오기
+				String basic = findBasicById(member);
+				
 				//기본 정보 출력
-				SignInUserManagementView.show(basic);
+				signInUserManagementView.show(basic);
 				
-				//아이디를 사용해서 세부 예약 내역을 찾고 출력
-				findDetailById(id);
+
+				//아이디를 사용해서 세부 예약 내역을 찾기
+				ArrayList<Reservation> reservations = ReservationRepository.findAllById(id);
 				
+				//예약 내역이 없으면
+				if(reservations.isEmpty()) {
+					signInUserManagementView.show("이용 내역을 찾을 수 없습니다.");
+					continue;
+				}
+				
+				
+				makeDetailCard(reservations);
 				
 			}
 			else if(choice == 0) {
@@ -43,74 +66,43 @@ public class SignInUserManagementController {
 		}
 	}
 
-	private String findBasicById(String id) {
+	private String findBasicById(Member member) {
 		String tmp = "";
-		for(Member m : Data.memberList) {
-			if(m.getId().equals(id)) {
-				tmp += "\t회원명 : " + m.getName() +"\n";
-				tmp += "\t회원ID : " + m.getId() +"\n";
-				tmp += "\t예약 횟수 : " + ((User)m).getReservationCount() +"\n";
-				tmp += "\t노쇼 횟수 : " + ((User)m).getNoshowCount() +"\n";
-				break;
-			}
-		}
+		tmp += "회원명 : " + member.getName() +"\n";
+		tmp += "회원ID : " + member.getId() +"\n";
+		tmp += "예약 횟수 : " + ((User)member).getReservationCount() +"\n";
+		tmp += "노쇼 횟수 : " + ((User)member).getNoshowCount() +"\n";
 		return tmp;
 	}
 
-	private void findDetailById(String id) {
-		
-		boolean hasHistory = false;
-		
-		for(Reservation r : Data.reservationList) {
-			if(r.getUserId().equals(id)) {
-				hasHistory = true;
-				
-				int reservationNumber = r.getReservationNumber();
-				String storeName = findName(r.getLicenseNumber());
-				String date = r.getReservationDate();
-				int numOfPeople = r.getNumOfPeople();
-				ArrayList<String> menulist = r.getMenulist();
-				
-				double score = findScore(id);
-				String content = findContent(id);
-				
-				SignInUserManagementView.showDetail(reservationNumber, storeName,date,numOfPeople,menulist,score,content);
-			}
+	
+	
+	private void makeDetailCard(ArrayList<Reservation> reservations) {
+
+
+		signInUserManagementView.showDetailTitle();
+
+		for(Reservation r : reservations) {			
+			int reservationNumber = r.getReservationNumber();
+			String storeName = StoreRepository.findOneByLicenseNumber(r.getLicenseNumber()).getStoreName();
+			String date = r.getReservationDate();
+			int numOfPeople = r.getNumOfPeople();
+			ArrayList<String> menulist = r.getMenulist();
+			
+			double score = ReviewRepository.findScoreByReservationNumber(reservationNumber);
+			String content = ReviewRepository.findContentByReservationNumber(reservationNumber);
+			
+			//예약내역 중 노쇼,취소를 제외한 내역의 메뉴 개수 구하기
+			HashMap<String, Integer> menuCount = ReservationRepository.findMenuCountByReservationNumber(reservationNumber);;
+
+			
+			signInUserManagementView.showDetail(reservationNumber, storeName,date,numOfPeople,menuCount,score,content);
+
 		}
-		
-		if(!hasHistory) {
-			SignInUserManagementView.show("이용 내역을 찾을 수 없습니다.");
-		}
-		
+	
 		View.pause();
-		
 	}
 
-	private String findContent(String id) {
-		for(Review r :Data.reviewList) {
-			if(r.getUserId().equals(id)){
-				return r.getContent();
-			}
-		}
-		return null;
-	}
 
-	private double findScore(String id) {
-		for(Review r :Data.reviewList) {
-			if(r.getUserId().equals(id)){
-				return r.getScore();
-			}
-		}
-		return 0;
-	}
-
-	private String findName(String licenseNumber) {
-		for(Store s : Data.storeList) {
-			if(s.getLicenseNumber().equals(licenseNumber)) {
-				return s.getStoreName();
-			}
-		}
-		return null;
-	}
 
 }

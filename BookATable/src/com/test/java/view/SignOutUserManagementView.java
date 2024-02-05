@@ -1,12 +1,14 @@
 package com.test.java.view;
 
+import java.util.Scanner;
+
 import com.test.java.model.Member;
 import com.test.java.model.User;
 import com.test.java.repository.Data;
 
 public class SignOutUserManagementView {
 
-	public static void findAllSignOutUser() {
+	public void findAllSignOutUser() {
 
 		System.out.println();
 		System.out.println();
@@ -36,7 +38,7 @@ public class SignOutUserManagementView {
 		
 	}
 
-	public static void showSelectBox() {
+	public void showSelectBox() {
 		System.out.println();
 		System.out.println("==========================================================================================");
 		System.out.println();
@@ -62,6 +64,22 @@ public class SignOutUserManagementView {
 		System.out.println();
 		View.pause();
 		
+	}
+
+	public int getSelectType() {
+		Scanner scan = new Scanner(System.in);
+		int tmp = scan.nextInt();
+		scan.nextLine();
+		return tmp;
+	}
+
+	public String getId() {
+		System.out.println("확인할 회원의 아이디를 입력하세요");
+		System.out.print("선택(회원ID) : ");
+
+		Scanner scan = new Scanner(System.in);
+		String tmp = scan.nextLine();
+		return tmp;
 	}
 
 }

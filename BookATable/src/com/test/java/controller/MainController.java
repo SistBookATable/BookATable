@@ -12,7 +12,7 @@ public class MainController {
 	 * 메인 화면 시작 
 	 */
 	public static void start() {
-
+		
 		boolean loop = true;
 		while(loop) {
 			
@@ -58,6 +58,8 @@ public class MainController {
 					logOutController.logOut();
 					break;
 				case 3:
+					UserInquiryController userInquiryController = new UserInquiryController();
+					userInquiryController.userInquiry();
 					break;
 				case 4:
 					break;
@@ -83,6 +85,8 @@ public class MainController {
 					logOutController.logOut();
 					break;
 				case 3:
+					UserInquiryController userInquiryController = new UserInquiryController();
+					userInquiryController.userInquiry();
 					break;
 				case 4:
 					break;

@@ -22,10 +22,9 @@ public class FindAccountView {
 		System.out.print("선택(번호) : ");
 	}
 
-	public static int getSelectNum() {
+	public static String getSelectNum() {
 		Scanner scan = new Scanner(System.in);
-		int tmp = scan.nextInt();
-		scan.nextLine();
+		String tmp = scan.nextLine();
 		return tmp;
 	}
 	
@@ -34,17 +33,9 @@ public class FindAccountView {
 		
 		Scanner scan = new Scanner(System.in);
 		String tmp = "";
-		
-		while(true) {
 
-			System.out.print("이름/대표자명 : ");
-			tmp = scan.nextLine();
-			// TODO 유효성 검사 만들기
-//			if(isValid(tmp)) {
-//				break;
-//			}
-			break;
-		}
+		System.out.print("이름/대표자명 : ");
+		tmp = scan.nextLine();
 				
 		return tmp;
 	}

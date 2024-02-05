@@ -15,26 +15,31 @@ public class UpdateAccountController {
 		while (loop) {
 
 			String toUpdateAccount = UpdateAccountView.getAccount();
-
-			// TODO 유효성 검사
-			// isValidOfAccount(toUpdateAccount);
-
-			UpdateAccountView.showUpdateAccount(toUpdateAccount);
-			String answer = UpdateAccountView.getAnswer();
-
-			if (answer.equalsIgnoreCase("N")) {
-				System.out.println("계좌번호 변경을 취소하겠습니다.\n");
-				System.out.println("다시 입력해주시길 바랍니다.\n");
-				View.pause();
+			if (!isValidOfAccount(toUpdateAccount)) {
 				loop = true;
-			} else if (answer.equalsIgnoreCase("Y")){
-				updateAccountToInputAccount(Member.id, toUpdateAccount);
-				System.out.println("계좌번호가 변경되었습니다.\n");
-				View.pause();
-				loop = false;
+			} else {
+				UpdateAccountView.showUpdateAccount(toUpdateAccount);
+				String answer = UpdateAccountView.getAnswer();
+				
+				if (answer.equalsIgnoreCase("N")) {
+					System.out.println("계좌번호 변경을 취소하겠습니다.\n");
+					System.out.println("다시 입력해주시길 바랍니다.\n");
+					View.pause();
+					loop = true;
+				} else if (answer.equalsIgnoreCase("Y")){
+					updateAccountToInputAccount(Member.id, toUpdateAccount);
+					System.out.println("계좌번호가 변경되었습니다.\n");
+					View.pause();
+					loop = false;
+				}
+				
 			}
 
 		}
+	}
+
+	private boolean isValidOfAccount(String toUpdateAccount) {
+		return false;
 	}
 
 	private void updateAccountToInputAccount(String id, String toUpdateAccount) {

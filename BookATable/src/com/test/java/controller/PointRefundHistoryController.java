@@ -1,6 +1,7 @@
 package com.test.java.controller;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 import com.test.java.model.Member;
 import com.test.java.model.PointRefund;
@@ -17,14 +18,64 @@ public class PointRefundHistoryController {
 	public void pointRefundHistory() {
 		
 		String id = Member.id; 
-		String name = findNameById(id);
+		String userName = findNameById(id);
 		String refundDate = findRefundDateById(id); 
 		int pointAmount = findPointAmountById(id); 
 		
 		PointRefundHistoryView pointRefundHistoryView = new PointRefundHistoryView();
-		pointRefundHistoryView.showPointRefundHistory(name, refundDate, pointAmount); 
+		pointRefundHistoryView.showPointRefundHistory(userName, refundDate, pointAmount);
+		
+		String choice = pointRefundHistoryView.get();
+		
+		String userId = Member.id;
+		User currentUser = findUserById(userId);
 		
 		
+		if (currentUser != null) {
+		
+		if (choice.equalsIgnoreCase("Y")) {				
+				currentUser.setBalance(currentUser.getBalance() + pointAmount);
+				System.out.println("환불 신청이 취소되었습니다.");
+			} else if (choice.equalsIgnoreCase("N")) {
+			System.out.println("환불 취소 과정을 중단합니다.");
+		} else {
+			System.out.println("잘못된 입력입니다.");
+		}
+		
+		
+		}
+		
+		System.out.println("<<엔터를 입력하면, 이전 화면으로 이동합니다.>>");
+		
+		// 엔터 입력 대기
+		waitForEnter();
+		
+		PointRefundController pointRefundController = new PointRefundController();
+		pointRefundController.pointRefund();
+		
+		
+		
+	}
+		
+	
+		private void waitForEnter() {
+			Scanner scan = new Scanner(System.in);
+			scan.nextLine();
+		
+	}
+
+
+		private User findUserById(String userId) {
+			for (Member member : Data.memberList) {
+				if (member instanceof User && member.getId().equals(userId)) {
+					return (User) member;
+				}
+			}
+			return null;
+		}
+	
+	
+	
 			
 		private String findRefundDateById(String id) {
 			String refundDate = "";
@@ -53,25 +104,6 @@ public class PointRefundHistoryController {
 		
 	
 
-		
-//		
-//		String choice = pointRefundHistoryView.get();
-//		while (true) {
-//			
-//			if (choice.equalsIgnoreCase("Y")) {
-//				System.out.println("환불 신청이 취소되었습니다. 포인트 관리 메뉴로 돌아갑니다.");
-//				pointManagementController.pointManagement(); 
-//				break; 
-//			} else if (choice.equalsIgnoreCase("N")) {
-//				break;
-//			} else {
-//				System.out.println("잘못된 입력입니다. ");
-//				break;
-//			}
-//		
-//		}
-//		
-//	}
 
 
 

@@ -18,6 +18,7 @@ import com.test.java.model.Inquiry;
 import com.test.java.model.Member;
 import com.test.java.model.Menu;
 import com.test.java.model.OperatingHours;
+import com.test.java.model.PointRefund;
 import com.test.java.model.PointUsage;
 import com.test.java.model.Request;
 import com.test.java.model.Reservation;
@@ -47,6 +48,8 @@ public class Data {
 	private final static String INQUIRY = "dat"+File.separator+"inquiry.txt";
 	private final static String REQUEST = "dat"+File.separator+"request.txt";
 	private final static String BOOKMARK = "dat"+File.separator+"bookmark.txt";
+	private final static String POINTREFUND = "dat"+File.separator+"pointRefund.txt";
+	
 	
 	
 	//load+save 완료
@@ -60,6 +63,9 @@ public class Data {
 	public static ArrayList<OperatingHours> operatingHoursList = new ArrayList<>();
 
 	public static ArrayList<Inquiry> inquiryList = new ArrayList<>();
+	public static ArrayList<Bookmark> bookmarkList = new ArrayList<>();
+	public static ArrayList<PointRefund> pointRefundList = new ArrayList<>();
+
 	
 	//TODO 하단에 loadPointUsage만들다 만거 있음
 	public static ArrayList<PointUsage> pointList = new ArrayList<>();
@@ -67,7 +73,27 @@ public class Data {
 	public static ArrayList<Review> reviewList = new ArrayList<>();
 	public static ArrayList<Table> tableList = new ArrayList<>();
 	
-	public static ArrayList<Bookmark> bookmarkList = new ArrayList<>();
+	
+	
+	public static void loadPointRefund() {
+		try {
+			BufferedReader reader = new BufferedReader(new FileReader(Data.POINTREFUND));
+			
+			String line = null;
+			
+			while((line = reader.readLine()) != null) {
+				String[] tmp = line.split(",");
+				PointRefund pointRefund = new PointRefund(tmp[0], Integer.parseInt(tmp[1]),tmp[2]);
+				pointRefundList.add(pointRefund);
+			}
+			
+			reader.close();
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
 	
 	public static void loadBookmark() {
 		try {

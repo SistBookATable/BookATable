@@ -7,9 +7,8 @@ import com.test.java.repository.Data;
 
 public class PointRefundHistoryView {
 	
-	public static void showPointRefundHistory(String userName, int balance) {
-		
-		// 환불 신청 내역
+	public static void showPointRefundHistory(String userName, String refundDate, int pointAmount) {
+
 		
 		System.out.println("------------------------------------------------------------------------------------------");
 		System.out.println();
@@ -17,14 +16,10 @@ public class PointRefundHistoryView {
 		System.out.println();
 		System.out.println("------------------------------------------------------------------------------------------");
 
-		
-		// 보유포인트금액 == 환불금액? 
 		System.out.println();
-		System.out.println("[환불신청일]\t[포인트금액]");
-		System.out.printf("		%d", balance);
+		System.out.println("[환불신청일] : " + refundDate);
+		System.out.println("[포인트금액] : " + pointAmount);
 		
-
-
 		System.out.println();
 		System.out.println("------------------------------------------------------------------------------------------");
 		System.out.println();

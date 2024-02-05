@@ -12,7 +12,11 @@ import com.test.java.view.OperationalInfoManagementView;
 
 public class OperatingHourController {
 	
+<<<<<<< HEAD
 	
+=======
+	//licenseNumber  받아서 for문 돌려서 사업자번호 해당하는 어레이 리스트 
+>>>>>>> f9ba0fb460eabfde7008cc9d6edc291ba70b23bc
 	public void showOperatingHour(String licenseNumber) {
 		
 		OperatingHourView operatingHourView=new OperatingHourView(); 
@@ -47,4 +51,11 @@ public class OperatingHourController {
 		
 	}
 	
+<<<<<<< HEAD
 }
+=======
+}
+
+
+
+>>>>>>> f9ba0fb460eabfde7008cc9d6edc291ba70b23bc

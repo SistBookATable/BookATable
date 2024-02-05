@@ -18,7 +18,7 @@ public class BusinessUserMyPageController {
 			switch(choice) {
 			case 1:
 				ReservationController reservationController = new ReservationController();
-				reservationController.BusinessUserReservationManagement();
+				//reservationController.BusinessUserReservationManagement();
 				break;
 			case 2:
 				RevenueManagementController revenueManagementController = new RevenueManagementController();
@@ -28,7 +28,11 @@ public class BusinessUserMyPageController {
 				break;
 			case 4:
 				OperationalInfoManagementController operationalInfoMangagementController=new OperationalInfoManagementController();
+<<<<<<< HEAD
 				operationalInfoMangagementController.operationalInfoManagement(licenseNumber);
+=======
+				operationalInfoMangagementController.operationalInfoManagement();
+>>>>>>> f9ba0fb460eabfde7008cc9d6edc291ba70b23bc
 				break;
 			case 5:
 				break;

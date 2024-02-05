@@ -20,6 +20,7 @@ public void showOperatingHour(String licenseNumber) {
 	            }
 	        }
 		System.out.println("요일(평일/공휴일)\t\t영업시간\t\t휴게시간");
+<<<<<<< HEAD
 //	OperatingHours o = new OperatingHours(licenseNumber,"월","1200","1500","1600","2000");
 ////		System.out.println(licenseNumber.equals(o.getLicenseNumber()));
 //		System.out.println(licenseNumber.equals(o.getLicenseNumber()));
@@ -29,6 +30,18 @@ public void showOperatingHour(String licenseNumber) {
 //				System.out.println(o.getDayOfWeek());
 //			}
 		}
+=======
+		
+		for(OperatingHours o : Data.operatingHoursList) {
+					
+					if(licenseNumber.equals(o.getLicenseNumber())) {
+						System.out.println("\t"+o.getDayOfWeek()+"\t\t"+
+										   o.getOpen()+"-"+o.getClose()+"\t"+
+										   o.getBreakStart()+"-"+o.getBreakEnd());
+					}
+				}
+		
+>>>>>>> f9ba0fb460eabfde7008cc9d6edc291ba70b23bc
 		
 		
 		
@@ -45,4 +58,8 @@ public static int get() {
 	return temp;
 }
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> f9ba0fb460eabfde7008cc9d6edc291ba70b23bc

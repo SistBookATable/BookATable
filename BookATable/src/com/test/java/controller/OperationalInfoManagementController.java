@@ -5,8 +5,13 @@ import com.test.java.view.OperationalInfoManagementView;
 
 public class OperationalInfoManagementController {
 	
+<<<<<<< HEAD
 	public void operationalInfoManagement(String licenseNumber) {
 		//String licenseNumber="002-00-40342";
+=======
+	public void operationalInfoManagement() {
+		String licenseNumber="002-00-40342";
+>>>>>>> f9ba0fb460eabfde7008cc9d6edc291ba70b23bc
 		OperationalInfoManagementView operationalView=new OperationalInfoManagementView();
 		operationalView.showChoice();
 		boolean loop = true;
@@ -41,3 +46,7 @@ public class OperationalInfoManagementController {
 	
 	
 	
+<<<<<<< HEAD
+=======
+
+>>>>>>> f9ba0fb460eabfde7008cc9d6edc291ba70b23bc

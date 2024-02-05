@@ -36,8 +36,6 @@ public class MainController {
 					findAccountController.findAccount();
 					break;
 				case 4:
-					StoreController storeController = new StoreController();
-		               storeController.run();
 					break;
 				default:
 					loop = false;
@@ -47,9 +45,9 @@ public class MainController {
 
 				MainView.logo();
 				MainView.userPage();
-				String licenseNumber="002-00-40342";
+
 				int choice = MainView.get();
-				String licenseNumber="002-00-40342";
+				
 				switch(choice) {
 				case 1:
 					UserMyPageController userMyPageController = new UserMyPageController();
@@ -60,14 +58,10 @@ public class MainController {
 					logOutController.logOut();
 					break;
 				case 3:
-
 					UserInquiryController userInquiryController = new UserInquiryController();
 					userInquiryController.userInquiry();
-
 					break;
 				case 4:
-					ReservationController reservationController = new ReservationController();
-					reservationController.reservation(licenseNumber);
 					break;
 				default:
 					loop = false;
@@ -95,7 +89,6 @@ public class MainController {
 					userInquiryController.userInquiry();
 					break;
 				case 4:
-					
 					break;
 				default:
 					loop = false;
@@ -141,7 +134,6 @@ public class MainController {
 	}
 
 	public static void load() {
-		Data.loadOperatingHours();
 		Data.loadAdmin();
 		Data.loadUser();
 		Data.loadBusinessUser();
@@ -153,5 +145,3 @@ public class MainController {
 		Data.loadMenu();
 	}
 }
-
-

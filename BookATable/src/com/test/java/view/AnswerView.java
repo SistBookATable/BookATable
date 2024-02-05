@@ -29,7 +29,7 @@ public class AnswerView {
 		System.out.println("───────────────────────────────────────────────────────");
 		System.out.println("                          답변");
 		System.out.println("───────────────────────────────────────────────────────");
-		System.out.println(inquiry.getAnswer());
+		System.out.println(inquiry.getAnswer().equals("null")? "아직 답변이 등록되지 않았습니다.":inquiry.getAnswer());
 	}
 
 	public void showSelectBox() {
@@ -82,7 +82,7 @@ public class AnswerView {
 				}
 				break;
 			}
-			answer += tmp;
+			answer += tmp + "\n";
 		}
 		
 		System.out.println();

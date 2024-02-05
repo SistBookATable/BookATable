@@ -252,9 +252,10 @@ public class Data {
 			
 			String[] tmp = line.split(",");
 			
-			Inquiry inquiry = new Inquiry(Integer.parseInt(tmp[0]),tmp[1],tmp[2], tmp[3], tmp[4],tmp[5],tmp[6],tmp[7]);
+			Inquiry inquiry = new Inquiry(Integer.parseInt(tmp[0]),tmp[1],tmp[2], tmp[3], Integer.parseInt(tmp[4]),tmp[5],tmp[6],tmp[7]);
 			
 			inquiryList.add(inquiry);
+			Inquiry.COUNT++;
 		}
 
 		reader.close();

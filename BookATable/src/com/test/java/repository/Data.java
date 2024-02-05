@@ -295,7 +295,7 @@ public class Data {
 			}
 			
 			Reservation reservation = new Reservation(Integer.parseInt(tmp[0]),tmp[1],tmp[2],tmp[3],tmp[4]
-													,Integer.parseInt(tmp[5]),Integer.parseInt(tmp[6]),tmp[7],tmp[8]);
+													,Integer.parseInt(tmp[5]),Integer.parseInt(tmp[6]),tmp[7],bookedMenuList);
 			
 			reservationList.add(reservation);
 		}

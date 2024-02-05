@@ -2,22 +2,89 @@ package com.test.java;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
-import java.nio.file.FileSystemNotFoundException;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.Random;
 
 public class DataTest {
 	public static void main(String[] args) {
 //		m1();
 //		m2();
+		m3();
+//		m4();
+		
 
 	}
 
+//	private static void m4() {
+//		String path = "dat\\bookMark.txt";
+//		String path = "dat\\review.txt";
+		
+//	}
+
+	private static void m3() {
+		//path1에서 사업자등록번호만 추출
+		//path2에서 사업자등록번호 추출
+		//path2의 
+		String path1 = "dat\\review.txt";
+		String path2 = "dat\\store.txt";
+		String lisenceNum;
+
+		ArrayList<String> reviewList = new ArrayList<String>();
+		ArrayList<String> reviewCountList = new ArrayList<String>();
+		
+		try {
+
+			BufferedReader reader1 = new BufferedReader(new FileReader(path1));
+
+			String line = null;
+			while ((line = reader1.readLine()) != null) {
+				
+				String[] temp = line.split(",");
+				lisenceNum=temp[2];
+				reviewList.add(lisenceNum);
+			}	
+			
+			reader1.close();	
+		} catch (Exception e) {
+			System.out.println("Data.load");
+			e.printStackTrace();
+		}
+		
+		try {
+			BufferedReader reader2 = new BufferedReader(new FileReader(path2));
+			String line = null;
+			while ((line = reader2.readLine()) != null) {
+				String[] temp = line.split(",");
+				lisenceNum=temp[0];
+				String storeName = temp[1];
+				int i = 0;
+				for(String review : reviewList) {
+					if(review.indexOf(lisenceNum)>-1) {
+						i++;
+					}
+					
+				}
+				String result = String.format("[리뷰]%d개 ,[상호명] %s", i,storeName);
+				reviewCountList.add(result);
+			}
+			reader2.close();
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		Collections.sort(reviewCountList,Collections.reverseOrder());
+		for(String output : reviewCountList) {
+			System.out.println(output);
+		}
+
+	}
+		
+	
+
 	private static void m2() {
 
-		// dat/vip.txt : 단골 릴레이션
+		// dat\vip.txt : 단골 릴레이션
 		// [사업자 등록번호], 일반회원ID, 이용횟수, 최다주문메뉴
 		String path = "dat\\vipTest.txt";
 		String lisenceNum;
@@ -51,7 +118,7 @@ public class DataTest {
 				}	
 					
 			}	
-				
+			reader.close();	
 
 		} catch (Exception e) {
 			System.out.println("Data.load");
@@ -61,7 +128,7 @@ public class DataTest {
 	}
 
 	private static void m1() {
-//		dat/review.txt : 리뷰 릴레이션
+//		dat\review.txt : 리뷰 릴레이션
 //		[리뷰번호], 작성일, 리뷰 내용, 평점, 예약번호
 
 //		String USER = "dat\\user.txt";

@@ -3,10 +3,6 @@ package com.test.java.controller;
 import com.test.java.model.Member;
 import com.test.java.model.User;
 import com.test.java.repository.Data;
-<<<<<<< HEAD
-=======
-import com.test.java.view.PointChargingView;
->>>>>>> be92b070f0bdd7fe2b9ee5371a8032c292cc96f6
 import com.test.java.view.PointManagementView;
 
 public class PointManagementController {
@@ -44,7 +40,9 @@ public class PointManagementController {
 					 break;
 
 			// 이전화면	
-			case 0 : loop = false;
+			case 0 : UserMyPageController userMyPageController = new UserMyPageController();
+					 userMyPageController.userMyPage();
+					 break;
 					
 				
 			}

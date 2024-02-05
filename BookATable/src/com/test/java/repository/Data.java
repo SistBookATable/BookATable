@@ -11,6 +11,7 @@ import java.util.ArrayList;
 
 import com.test.java.model.Admin;
 import com.test.java.model.BlackList;
+import com.test.java.model.Bookmark;
 import com.test.java.model.BusinessUser;
 import com.test.java.model.CompletedList;
 import com.test.java.model.Faq;
@@ -23,7 +24,6 @@ import com.test.java.model.Request;
 import com.test.java.model.Reservation;
 import com.test.java.model.ReservationCancel;
 import com.test.java.model.Review;
-import com.test.java.model.StopUser;
 import com.test.java.model.Store;
 import com.test.java.model.Table;
 import com.test.java.model.User;
@@ -53,24 +53,48 @@ public class Data {
 	private final static String BOOKMARK = "dat"+File.separator+"bookmark.txt";
 	
 	
-	//필요한 자료들
+	//load+save 완료
 	public static ArrayList<Member> memberList = new ArrayList<>();
 	public static ArrayList<Store> storeList = new ArrayList<>();
 	public static ArrayList<Menu> menuList = new ArrayList<>();
 	public static ArrayList<Reservation> reservationList = new ArrayList<>();
 	public static ArrayList<BlackList> blackListList = new ArrayList<>();
-	public static ArrayList<Inquiry> inquiryList = new ArrayList<>();
+	//load 완료
 	public static ArrayList<Faq> faqList = new ArrayList<>();
 	public static ArrayList<OperatingHours> operatingHoursList = new ArrayList<>();
 
+	public static ArrayList<Inquiry> inquiryList = new ArrayList<>();
+	
+	//TODO 하단에 loadPointUsage만들다 만거 있음
 	public static ArrayList<PointUsage> pointList = new ArrayList<>();
-	public static ArrayList<CompletedList> compleatedList = new ArrayList<>();
 	public static ArrayList<Request> requestList = new ArrayList<>();
-	public static ArrayList<ReservationCancel> reservationCancelList = new ArrayList<>();
 	public static ArrayList<Review> reviewList = new ArrayList<>();
-	public static ArrayList<StopUser> stopUserList = new ArrayList<>();
 	public static ArrayList<Table> tableList = new ArrayList<>();
-	public static ArrayList<WriteReview> writeReviewList = new ArrayList<>();
+	
+	public static ArrayList<Bookmark> bookmarkList = new ArrayList<>();
+	
+	public static void loadBookmark() {
+		try {
+			BufferedReader reader = new BufferedReader(new FileReader(Data.BOOKMARK));
+			
+			String line = null;
+			
+			while((line = reader.readLine()) != null) {
+				
+				String[] tmp = line.split(",");
+				Bookmark bookmark = new Bookmark(tmp[0], tmp[1]);
+				bookmarkList.add(bookmark);
+			}
+			
+			reader.close();
+			
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	
 	
 	
 	public static void loadRequest() {
@@ -186,7 +210,6 @@ public class Data {
 				String[] tmp = line.split(",");
 				Faq faq = new Faq(Integer.parseInt(tmp[0]),tmp[1],tmp[2],tmp[3]);
 				faqList.add(faq);
-				System.out.println(faq);
 			}
 			
 			reader.close();

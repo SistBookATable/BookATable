@@ -2,49 +2,41 @@ package com.test.java.view;
 
 import java.util.Scanner;
 
-import com.test.java.model.Reservation;
-import com.test.java.repository.Data;
-
-public class PointRefundHistoryView {
+public class BookmarkHistoryView {
 	
-	public static void showPointRefundHistory(String userName, int balance) {
-		
-		// 환불 신청 내역
+	public void showBookmarkHistory(String name, String storeName, String storeTelNumber, String menuName) {
 		
 		System.out.println("------------------------------------------------------------------------------------------");
 		System.out.println();
-		System.out.printf("■           %s님 환불 신청 내역		   ■", userName);
+		System.out.printf("■           %s님 즐겨찾기		   ■", name);
 		System.out.println();
 		System.out.println("------------------------------------------------------------------------------------------");
 
-		
-		// 보유포인트금액 == 환불금액? 
 		System.out.println();
-		System.out.println("[환불신청일]\t[포인트금액]");
-		System.out.printf("		%d", balance);
-		
-
-
+		System.out.println("[상호명]\t[전화번호]\t[메뉴]");
+		System.out.printf("%s %s %s", storeName, storeTelNumber, menuName);
 		System.out.println();
 		System.out.println("------------------------------------------------------------------------------------------");
 		System.out.println();
-		System.out.println("■           환불 취소하시겠습니까? (Y/N)		   ■");
+		System.out.println("■           1. 상세페이지 이동		   ■");
+		System.out.println("■           2. 즐겨찾기 삭제		   ■");
+		System.out.println("■           0. 이전 화면			   ■");
 		System.out.println();
 		System.out.println("------------------------------------------------------------------------------------------");
 		
 		System.out.println();
 		
-		System.out.print("입력(Y/N) : ");
+		System.out.print("선택(번호) : ");
+		
 		
 	}
 	
-	public static String get() {
+	public static int get() {
 		
 		Scanner scan = new Scanner(System.in);
-		String temp = scan.nextLine();
-		
+		int temp = scan.nextInt();
+		scan.nextLine();
 		return temp;
 	}
-
 
 }

@@ -41,7 +41,6 @@ public class Data {
 	private final static String MENU = "dat"+File.separator+"menu.txt";
 	private final static String OPERATINGHOURS = "dat"+File.separator+"operatinghours.txt";
 	private final static String RESERVATION = "dat"+File.separator+"reservation.txt";
-	private final static String RESERVATIONMENU = "dat"+File.separator+"reservationMenu.txt";
 	private final static String POINTUSAGE = "dat"+File.separator+"pointUsage.txt";
 	private final static String REVIEW = "dat"+File.separator+"review.txt";
 	private final static String FAQ = "dat"+File.separator+"faq.txt";

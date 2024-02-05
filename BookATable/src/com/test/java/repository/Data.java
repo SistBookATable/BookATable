@@ -54,6 +54,11 @@ public class Data {
 	
 	//load+save 완료
 	public static ArrayList<Member> memberList = new ArrayList<>();
+<<<<<<< HEAD
+	public static ArrayList<User> userList = new ArrayList<>();
+=======
+	public static ArrayList<User> userList=new ArrayList<>();
+>>>>>>> f9ba0fb460eabfde7008cc9d6edc291ba70b23bc
 	public static ArrayList<Store> storeList = new ArrayList<>();
 	public static ArrayList<Menu> menuList = new ArrayList<>();
 	public static ArrayList<Reservation> reservationList = new ArrayList<>();
@@ -320,7 +325,7 @@ public class Data {
 			}
 			
 			Reservation reservation = new Reservation(Integer.parseInt(tmp[0]),tmp[1],tmp[2],tmp[3],tmp[4]
-													,Integer.parseInt(tmp[5]),Integer.parseInt(tmp[6]),tmp[7], bookedMenuList);
+													,Integer.parseInt(tmp[5]),Integer.parseInt(tmp[6]),tmp[7],bookedMenuList);
 			
 			reservationList.add(reservation);
 		}
@@ -344,10 +349,8 @@ public class Data {
 						reservation.getNumOfPeople(),
 						reservation.getTableCapacity(),
 						reservation.getState());
+						reservation.getMenulist();
 				
-				for(String menuName :reservation.getMenulist()) {
-					line += "," + menuName;
-				}
 				
 				line += "\n";
 				writer.write(line);
@@ -480,7 +483,11 @@ public class Data {
 				User user = new User(Integer.parseInt(tmp[0]), tmp[1], tmp[2], tmp[3], tmp[4], tmp[5]
 									, tmp[6], tmp[7]
 									, Integer.parseInt(tmp[8]), Integer.parseInt(tmp[9]), Integer.parseInt(tmp[10]), tmp[11], tmp[12],tmp[13]);
+				userList.add(user);
+<<<<<<< HEAD
 				
+=======
+>>>>>>> f9ba0fb460eabfde7008cc9d6edc291ba70b23bc
 				memberList.add(user);
 			}
 			

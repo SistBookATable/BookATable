@@ -81,7 +81,7 @@ public class UserSignInView {
 		System.out.println("10. IBK기업은행");
 		System.out.println("11. KEB하나은행");
 		System.out.print("입력 (번호) : ");
-		tmp = scan.nextLine();		
+		tmp = scan.nextLine();
 		return tmp;
 	}
 

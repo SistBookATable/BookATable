@@ -13,7 +13,7 @@ public class BookmarkHistoryView {
 		System.out.println("------------------------------------------------------------------------------------------");
 
 		System.out.println();
-		System.out.println("[상호명]\t[전화번호]\t[메뉴]");
+		System.out.println("[상호명]\t[전화번호]\t\t[메뉴]");
 		System.out.printf("%s %s %s", storeName, storeTelNumber, menuName);
 		System.out.println();
 		System.out.println("------------------------------------------------------------------------------------------");

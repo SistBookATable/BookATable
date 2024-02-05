@@ -37,7 +37,8 @@ public class PointRefundController {
 				pointRefundHistoryView.showPointRefundHistory(findNameById(Member.id), findPointById(Member.id));
 			break;
 			
-		case 0:
+		case 0: PointManagementController pointManagementController = new PointManagementController();
+				pointManagementController.pointManagement();
 			break;
 
 			}

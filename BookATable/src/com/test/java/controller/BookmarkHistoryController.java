@@ -35,13 +35,21 @@ public class BookmarkHistoryController {
 		
 		while(loop) {
 			switch(choice) {
-			// 상세페이지 이동
-			case 1: 
+			// 상세페이지 보기
+			case 1:
+				MoveStorePageController moveStorePageController = new MoveStorePageController();
+				moveStorePageController.moveStorePage();
+				
 				break;
-			// 즐겨찾기 삭제
+			// 즐겨찾기 삭제 
 			case 2:
+				DeleteBookmarkController deleteBookmarkController = new DeleteBookmarkController();
+				deleteBookmarkController.deleteBookmark();
+				
 				break;
-			case 0:
+			case 0: FavouriteStoreManagementController favouriteStoreManagementController = new FavouriteStoreManagementController();
+					favouriteStoreManagementController.favouriteStoreManagement();
+			
 				break;
 			}
 		}

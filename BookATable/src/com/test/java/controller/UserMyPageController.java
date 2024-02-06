@@ -48,7 +48,7 @@ public class UserMyPageController {
 			case 0:
 				loop = false;
 				break;
-
+			
 			}
 		}
 

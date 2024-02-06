@@ -93,7 +93,7 @@ public class StoreController {
 				storeView.reservationNumber();
 				choice = sc.nextInt();
 				reservationController.reservation(searched.get(choice-1).getLicenseNumber());
-				System.out.println(searched.get(choice-1).getLicenseNumber());
+//				System.out.println(searched.get(choice-1).getLicenseNumber());
 				break;
 				
 //				for(int i=0; i<searched.size(); i++) {

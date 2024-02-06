@@ -191,11 +191,6 @@ public class ReservationController {
 		
 		return tmp;
 	}
-
-	public void reservation(String licenseNumber) {
-		// TODO Auto-generated method stub
-		
-	}
 	
 	
 

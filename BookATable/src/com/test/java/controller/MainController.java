@@ -1,7 +1,8 @@
 package com.test.java.controller;
 
-import com.test.java.model.Inquiry;
+import com.test.java.model.Faq;
 import com.test.java.model.Member;
+import com.test.java.model.Store;
 import com.test.java.repository.Data;
 import com.test.java.view.MainView;
 import com.test.java.view.StoreView;
@@ -36,6 +37,8 @@ public class MainController {
 					findAccountController.findAccount();
 					break;
 				case 4:
+					StoreController storeController = new StoreController();
+					storeController.run();
 					break;
 				default:
 					loop = false;
@@ -136,18 +139,17 @@ public class MainController {
 	}
 
 	public static void load() {
+
+		Data.loadTable();
 		Data.loadOperatingHours();
 		Data.loadAdmin();
 		Data.loadUser();
 		Data.loadBusinessUser();
-		Data.loadInquiry();
-		Data.loadRequest();
-		Data.loadReview();
-		Data.loadReservation();
-		Data.loadStore();
 		Data.loadMenu();
-		Data.loadBookmark();
-		Data.loadFaq();
+		Data.loadStore();
+		Data.loadReview();
+    //Data.loadBookmark();
+    Data.loadFaq();
 
 	}
 }

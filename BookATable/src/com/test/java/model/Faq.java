@@ -3,6 +3,7 @@ package com.test.java.model;
 
 public class Faq {
 	
+
 	private  int faqNumber;
 	private  String title;
 	private  String question;

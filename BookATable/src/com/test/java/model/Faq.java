@@ -3,10 +3,11 @@ package com.test.java.model;
 
 public class Faq {
 	
-	private int faqNumber;
-	private String title;
-	private String question;
-	private String answer;
+
+	private  int faqNumber;
+	private  String title;
+	private  String question;
+	private  String answer;
 
 	public Faq(int faqNumber, String title, String question, String answer) {
 		super();

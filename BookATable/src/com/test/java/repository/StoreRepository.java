@@ -12,4 +12,13 @@ public class StoreRepository {
 		return null;
 	}
 
+	public static Store findOneByName(String storeName) {
+		for(Store s : Data.storeList) {
+			if(s.getStoreName().equals(storeName)) {
+				return s;
+			}
+		}
+		return null;
+	}
+
 }

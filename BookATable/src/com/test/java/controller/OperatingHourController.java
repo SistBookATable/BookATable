@@ -21,7 +21,7 @@ public class OperatingHourController {
 		
 		
 		boolean loop = true;
-			
+			while(loop) {
 			int choice = OperatingHourView.get();
 			switch (choice) {
 			case 1:
@@ -34,14 +34,17 @@ public class OperatingHourController {
 				changeBreakHourController.changeBreakHour(licenseNumber);
 				
 				break;
-			case 3:
-			
-				break;
 
 			
 
 			case 0:
-
+				OperationalInfoManagementController back= new OperationalInfoManagementController();
+				back.operationalInfoManagement(licenseNumber);
+				
+			default: 
+				OperationalInfoManagementController back2= new OperationalInfoManagementController();
+				back2.operationalInfoManagement(licenseNumber);
+			}
 			}
 		
 		

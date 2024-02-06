@@ -15,7 +15,7 @@ public class RequestRepository {
 	public static void addRequest(int reviewNumber, String licenseNumber, String reason, String requester) {
 		Calendar cur = Calendar.getInstance();
 		String today = String.format("%tF", cur);
-		Request tmp = new Request(0, reviewNumber, licenseNumber, reason, requester, today, null);
+		Request tmp = new Request(0, reviewNumber, licenseNumber, reason, requester, today, "null");
 		Data.requestList.add(tmp);
 	}
 

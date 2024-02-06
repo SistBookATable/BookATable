@@ -1,6 +1,6 @@
 package com.test.java.controller;
 
-import com.test.java.model.Inquiry;
+import com.test.java.model.Faq;
 import com.test.java.model.Member;
 import com.test.java.repository.Data;
 import com.test.java.view.MainView;
@@ -147,5 +147,6 @@ public class MainController {
 		Data.loadStore();
 		Data.loadMenu();
 		Data.loadFaq();
+		
 	}
 }

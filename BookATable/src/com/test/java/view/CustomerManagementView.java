@@ -6,7 +6,7 @@ public class CustomerManagementView {
 		System.out.println();
 		System.out.println();
 		System.out.println("┌───────────────────────────────────────────────────────┐");
-		System.out.println("|                  업체 회원 - 즐겨찾기 조회                  <");
+		System.out.println("|                   업체 회원 - 고객 관리                   <");
 		System.out.println("└───────────────────────────────────────────────────────┘");
 	}
 	public void showSelectBox() {

@@ -26,11 +26,11 @@ public class BookmarkHistoryController {
 												, findMenuNameById(Member.id));
 		
 		
-		BookmarkHistoryView.showSelectBox();
-		int choice = BookmarkHistoryView.get();
-		
 		boolean loop = true;
 		while(loop) {
+			BookmarkHistoryView.showSelectBox();
+			int choice = BookmarkHistoryView.get();
+			
 			switch(choice) {
 			// 상세페이지 보기
 			case 1:

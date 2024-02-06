@@ -54,6 +54,7 @@ public class Data {
 	
 	//load+save 완료
 	public static ArrayList<Member> memberList = new ArrayList<>();
+	public static ArrayList<User> userList=new ArrayList<>();
 	public static ArrayList<Store> storeList = new ArrayList<>();
 	public static ArrayList<Menu> menuList = new ArrayList<>();
 	public static ArrayList<Reservation> reservationList = new ArrayList<>();
@@ -482,6 +483,7 @@ public class Data {
 									, Integer.parseInt(tmp[8]), Integer.parseInt(tmp[9]), Integer.parseInt(tmp[10]), tmp[11], tmp[12],tmp[13]);
 				
 				memberList.add(user);
+				userList.add(user);
 			}
 			
 			reader.close();

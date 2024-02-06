@@ -10,7 +10,7 @@ public class BusinessUserMyPageController {
 		
 		boolean loop = true;
 		while(loop) {
-			
+			String licenseNumber="002-00-40342";
 			businessUserMyPageView.showTitle();
 			businessUserMyPageView.showSelectBox();
 			int choice = businessUserMyPageView.getSelectType();
@@ -27,6 +27,8 @@ public class BusinessUserMyPageController {
 			case 3:
 				break;
 			case 4:
+				OperationalInfoManagementController operationalInfoManagementController= new OperationalInfoManagementController();
+				operationalInfoManagementController.operationalInfoManagement(licenseNumber);
 				break;
 			case 5:
 				break;

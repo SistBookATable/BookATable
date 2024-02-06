@@ -20,4 +20,18 @@ public class Bookmark {
 	public String getUserId() {
 		return userId;
 	}
+
+	
+	public void setLicenseNumber(String licenseNumber) {
+		this.licenseNumber = licenseNumber;
+	}
+
+
+	@Override
+	public String toString() {
+		return "Bookmark [licenseNumber=" + licenseNumber + ", userId=" + userId + "]";
+	}
+	
+	
+	
 }

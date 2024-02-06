@@ -24,6 +24,8 @@ public class PointUsageHistoryView {
 		
 		String header = String.format("%10s%5s%10s%10s", "[사용일자]","[구분]","[포인트사용]","[보유포인트]");
 		System.out.println(header);
+
+
 		
 		if(Data.pointList.isEmpty()) {
 			System.out.println();
@@ -40,10 +42,10 @@ public class PointUsageHistoryView {
 						userBalance);
 
 				System.out.println(tmp);
-				
-			}
+		
 
-		}
+
+			}}
 		
 	}
 	
@@ -59,5 +61,15 @@ public class PointUsageHistoryView {
 		
 		return 0;
 	}
+	
+	private String findId(String userId) {
+		for(PointUsage p : Data.pointList) {
+			if (p.getUserId().equals(userId)) {
+				return p.getUserId();
+			}
+		}
+		return null;
+	} 
+	
 		
 }

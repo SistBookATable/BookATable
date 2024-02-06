@@ -86,6 +86,7 @@ public class Data {
 				String[] tmp = line.split(",");
 				PointRefund pointRefund = new PointRefund(tmp[0], Integer.parseInt(tmp[1]),tmp[2]);
 				pointRefundList.add(pointRefund);
+
 			}
 			
 			reader.close();

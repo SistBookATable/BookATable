@@ -52,10 +52,10 @@ public class UserMyPageController {
 				break;
 
 			case 0:
-				loop = false;
 				break;
 			
 			}
+			loop = false;
 		}
 
 	}

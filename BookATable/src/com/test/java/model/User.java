@@ -132,6 +132,32 @@ public class User extends Member{
 	public int getReservationCount() {
 		return reservationCount;
 	}
+	
+	public void setBalance(int balance) {
+		this.balance = balance;
+		
+	}
+
+	public String getBirth() {
+        String[] juminToBirth = this.jumin.split("-");
+		return juminToBirth[0];
+	}
+
+	public void setPw(String pw) {
+		this.pw = pw;
+	}
+
+	public void setPhoneNumber(String phoneNumber) {
+		this.phoneNumber = phoneNumber;
+	}
+
+	public void setAccount(String account) {
+		this.account = account;
+	}
+
+	public void setSignOut(String signOut) {
+		this.signOut = signOut;
+	}
 
 	
 }

@@ -15,9 +15,9 @@ public class LogInController {
 		while (true) {
 			if (again) {
 				LogInView.showAgain();
-				int i = LogInView.get();
-				if (i == 1) {
-				} else if (i == 2) {
+				int choice = LogInView.get();
+				if (choice == 1) {
+				} else if (choice == 2) {
 					break;
 				}
 			}
@@ -47,14 +47,14 @@ public class LogInController {
 
 	private Object findNameById(String id) {
 		for (Member u : Data.memberList) {
-			if (u.getId().equals(id)) {
+			if (u.getId().equals(id) && u.getSignOut().equals("null")) {
 				return u.getName();
 			}
 		}
 		return null;
 	}
 
-	private boolean checkIdPw(String pw, String id) {
+	private boolean checkIdPw(String id, String pw) {
 		for (Member u : Data.memberList) {
 			if (u.getId().equals(id)) {
 				if (u.getPw().equals(pw)) {

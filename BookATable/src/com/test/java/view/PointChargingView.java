@@ -26,11 +26,6 @@ public class PointChargingView {
 		while (true) {
 			System.out.print("비밀번호 입력: ");
 			tmp = scan.nextLine();
-			// TODO 유효성 검사 만들기
-			// TODO 유효성 검사 만들기
-//			if(isValid(tmp)) {
-//				break;
-//			}
 			break;
 		}
 		return tmp;

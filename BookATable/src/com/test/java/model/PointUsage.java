@@ -6,17 +6,18 @@ public class PointUsage {
 	private int usagePoint;
 	private String useTime;
 	private String userId;
+	private String content;
 	
 	//TODO save할 때 어떻게 적용할지..!
 	
-	private String[] content = {"포인트충전","[예약취소]포인트환급","[예약신청]포인트지불","충전포인트환불"};
+//	private String[] content = {"포인트충전","[예약취소]포인트환급","[예약신청]포인트지불","포인트환불완료","포인트환불신청"};
 	
-	public String[] getContent() {
-		return content;
-	}
+//	public String[] getContent() {
+//		return content;
+//	}
 
 	
-	public PointUsage(int usageNumber,int usagePoint,String useTime, String[] content, String userId) {
+	public PointUsage(int usageNumber,int usagePoint,String useTime, String content, String userId) {
 		super();
 		this.usageNumber = usageNumber;
 		this.usagePoint = usagePoint;
@@ -46,6 +47,10 @@ public class PointUsage {
 	
 	public int getUsagePoint() {
 		return usagePoint;
+	}
+	
+	public String getContent() {
+		return content;
 	}
 	
 	public void InqueryPointCharging() {

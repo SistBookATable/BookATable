@@ -9,7 +9,7 @@ public class FindAccountController {
 
 	public void findAccount() {
 		FindAccountView.showSelectBox();
-		int choice = FindAccountView.getSelectNum();
+		String choice = FindAccountView.getSelectNum();
 		
 		String name = "";
 		String phoneNumber = "";
@@ -17,21 +17,21 @@ public class FindAccountController {
 		String pw = "";
 		
 		switch(choice) {
-		case 1:
+		case "1":
 			FindAccountView.showFindIdTitle();
 			name = FindAccountView.getName();
 			phoneNumber = FindAccountView.getPhoneNumber();
 			id = findId(name, phoneNumber);
 			FindAccountView.showResultID(id);
 			break;
-		case 2:
+		case "2":
 			FindAccountView.showFindPwTitle();
 			id = FindAccountView.getId();
 			phoneNumber = FindAccountView.getPhoneNumber();
 			pw = FindPw(id, phoneNumber);
 			FindAccountView.showResultPw(pw);
 			break;
-		case 0:
+		case "0":
 			break;
 		default:
 			break;

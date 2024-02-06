@@ -26,4 +26,11 @@ public class ReservationCancelView {
 		return scan.nextLine();
 	}
 
+	public static void showNoReservationHistoryMessage() {
+		System.out.println();
+		System.out.println("예약 내역이 존재하지 않습니다.");
+		System.out.println();
+		View.pause();
+	}
+
 }

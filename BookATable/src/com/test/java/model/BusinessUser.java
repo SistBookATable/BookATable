@@ -39,7 +39,7 @@ public class BusinessUser extends Member{
 				+ account + ", signIn=" + signIn + ", signOut=" + signOut + "]";
 	}
 
-
+	
 
 	public String getId() {
 		return id;

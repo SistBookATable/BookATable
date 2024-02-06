@@ -30,8 +30,12 @@ public class SalesManagementController {
 				businessUserReviewController.reviewManagement();
 				break;
 			case 2:
+				BusinessUserBookmarkController businessUserBookmarkController = new BusinessUserBookmarkController();
+				businessUserBookmarkController.bookmarkManagement();
 				break;
 			case 3:
+				CustomerManagementController customerManagementController = new CustomerManagementController();
+				customerManagementController.customerManagement();
 				break;
 			case 0:
 				loop = false;

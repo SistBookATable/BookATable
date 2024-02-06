@@ -35,7 +35,8 @@ public class OperationalInfoManagementController {
 			
 
 			case 0:
-
+				BusinessUserMyPageController back= new BusinessUserMyPageController();
+				back.businessUserMyPage();
 			}
 		}
 

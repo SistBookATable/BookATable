@@ -3,10 +3,11 @@ package com.test.java.model;
 
 public class Faq {
 	
-	private static int faqNumber;
-	private static String title;
-	private static String question;
-	private static String answer;
+
+	private  int faqNumber;
+	private  String title;
+	private  String question;
+	private  String answer;
 
 	public Faq(int faqNumber, String title, String question, String answer) {
 		super();
@@ -16,19 +17,19 @@ public class Faq {
 		this.answer = answer;
 	}
 
-	public static int getFaqNumber() {
+	public int getFaqNumber() {
 		return faqNumber;
 	}
 
-	public static String getTitle() {
+	public String getTitle() {
 		return title;
 	}
 
-	public static String getQuestion() {
+	public String getQuestion() {
 		return question;
 	}
 
-	public static String getAnswer() {
+	public String getAnswer() {
 		return answer;
 	}
 

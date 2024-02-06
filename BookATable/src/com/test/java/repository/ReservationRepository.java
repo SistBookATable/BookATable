@@ -71,5 +71,15 @@ public class ReservationRepository {
 		}
 		
 	}
+
+	public static HashMap<String, Integer> findAllCountById(String lisenceNumber) {
+		HashMap<String, Integer> tmp = new HashMap<>();
+		
+		for(Reservation r : Data.reservationList) {
+			
+		}
+		
+		return null;
+	}
 	
 }

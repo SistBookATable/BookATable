@@ -24,7 +24,7 @@ public class BusinessUserReviewView {
 		System.out.println();
 		System.out.println("==========================================================================================");
 		System.out.println();
-		System.out.println("선택(번호) : ");
+		System.out.print("선택(번호) : ");
 		
 	}
 
@@ -33,7 +33,7 @@ public class BusinessUserReviewView {
 	}
 
 	public void showReview(Review r) {
-		System.out.printf("%17s\t%7s\t\t\t%7s%-20s\n",r.getDateWritten(),r.getReviewNumber(),r.getUserId(),r.getContent());
+		System.out.printf("%17s\t%7s\t\t%7s\t\t%-20s\n",r.getDateWritten(),r.getReviewNumber(),r.getUserId(),r.getContent());
 		
 	}
 
@@ -66,20 +66,28 @@ public class BusinessUserReviewView {
 	}
 
 	public void showReviewNumberInputBox() {
+		System.out.println();
+		System.out.println("삭제할 리뷰 번호를 입력해주세요");
+		System.out.print("선택(번호) : ");
+		
+	}
+	public void incorrectReviewNumberMessage() {
 		System.out.println("==========================================================================================");
 		System.out.println();
-		System.out.println("   삭제할 리뷰 번호를 입력해주세요");
+		System.out.println("        유효하지 않은 입력값입니다.");
+		System.out.println("  위의 리스트에 있는 리뷰 번호(숫자)를 입력해주세요");
 		System.out.println();
 		System.out.println("==========================================================================================");
 		System.out.println();
-		System.out.println("선택(번호) : ");
+		
+		View.pause();
 		
 	}
 	public void incorrectInputMessage() {
 		System.out.println("==========================================================================================");
 		System.out.println();
 		System.out.println("        유효하지 않은 입력값입니다.");
-		System.out.println("  위의 리스트에 있는 리뷰 번호(숫자)를 입력해주세요");
+		System.out.println("     (1, 2, 3, 0)중에서 입력해주세요");
 		System.out.println();
 		System.out.println("==========================================================================================");
 		System.out.println();
@@ -104,6 +112,29 @@ public class BusinessUserReviewView {
 		Scanner scan = new Scanner(System.in);
 		String tmp = scan.nextLine();
 		return tmp;
+	}
+
+	public void hasNoHistory() {
+		System.out.println("==========================================================================================");
+		System.out.println();
+		System.out.println("        등록된 리뷰가 없습니다.");
+		System.out.println();
+		System.out.println("==========================================================================================");
+		System.out.println();
+		
+		View.pause();
+		
+	}
+
+	public void requestSuccessMessage() {
+		System.out.println("==========================================================================================");
+		System.out.println();
+		System.out.println("        리뷰 삭제 요청이 전송되었습니다.");
+		System.out.println();
+		System.out.println("==========================================================================================");
+		System.out.println();
+		
+		View.pause();
 	}
 
 }

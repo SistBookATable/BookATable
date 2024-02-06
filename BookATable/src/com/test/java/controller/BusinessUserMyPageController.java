@@ -33,8 +33,12 @@ public class BusinessUserMyPageController {
 				operationalInfoManagementController.operationalInfoManagement(licenseNumber);
 				break;
 			case 5:
+				BusinessUserInquiryController businessUserInquiryController=new BusinessUserInquiryController();
+				businessUserInquiryController.showChoice();
 				break;
 			case 6:
+				MembershipWithdrawalController membershipWithdrawalController = new MembershipWithdrawalController();
+				membershipWithdrawalController.membershipWithdrawal();
 				break;
 			case 0:
 				loop = false;

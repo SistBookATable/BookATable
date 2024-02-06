@@ -107,9 +107,9 @@ public class BusinessUserReviewController {
 					break;
 				}
 				
-				RequestRepository.addRequest(reviewNumber, selected.getLicenseNumber(), reason, selected.getUserId());
-				
+
 				//요청 완료 메시지
+				RequestRepository.addRequest(reviewNumber, selected.getLicenseNumber(), reason, selected.getUserId());
 				businessUserReviewView.requestSuccessMessage();
 				
 				break;

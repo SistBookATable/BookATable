@@ -3,13 +3,11 @@ package com.test.java.model;
 public class BlackList {
 	private String licenseNumber;
 	private String UserId;
-	private int noShowCount;
 	
-	public BlackList(String licenseNumber, String userId, int noShowCount) {
+	public BlackList(String licenseNumber, String userId) {
 		super();
 		this.licenseNumber = licenseNumber;
 		this.UserId = userId;
-		this.noShowCount = noShowCount;
 	}
 	
 	
@@ -23,15 +21,9 @@ public class BlackList {
 	}
 
 
-	public int getNoShowCount() {
-		return noShowCount;
-	}
-
-
 	@Override
 	public String toString() {
-		return "BlackList [licenseNumber=" + licenseNumber + ", UserId=" + UserId + ", noShowCount=" + noShowCount
-				+ "]";
+		return "BlackList [licenseNumber=" + licenseNumber + ", UserId=" + UserId + "]";
 	}
 	
 }

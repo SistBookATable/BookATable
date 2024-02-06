@@ -2,6 +2,7 @@ package com.test.java.repository;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
 import com.test.java.model.Reservation;
 
@@ -94,24 +95,23 @@ public class ReservationRepository {
 		return tmp;
 	}
 
-	public static String findMenuByUserId(String lisenceNumber, String key) {
+	public static HashMap<String, Integer> findMenuByUserId(String lisenceNumber, String key) {
 		HashMap<String, Integer> tmp = new HashMap<>();
 		for(Reservation r : Data.reservationList) {
 			if(r.getLicenseNumber().equals(lisenceNumber) && r.getUserId().equals(key)) {
-				for(String name : r.getMenulist()) {
-					if(tmp.containsKey(name)) {
-						tmp.put(name, tmp.get(name)+1);
+				for(String menu : r.getMenulist()) {
+					if(tmp.containsKey(menu)) {
+						tmp.put(menu, tmp.get(menu)+1);
 					}
 					else {
-						tmp.put(name, 1);
+						tmp.put(menu, 1);
 					}
 				}
 			}
 		}
 		
 		
-		
-		return null;
+		return tmp;
 	}
 	
 }

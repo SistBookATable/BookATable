@@ -25,7 +25,27 @@ public class BookmarkHistoryView {
 		String header = String.format("%10s%10s%10s", "[상호명]","[전화번호]","[메뉴]");
 		System.out.println(header);
 		
+<<<<<<< HEAD
+		if(Data.bookmarkList.isEmpty()) {
+			System.out.println();
+			System.out.println("즐겨찾기 내역이 없습니다.");
+			System.out.println();
+			View.pause();
+		} else {
+			for(Bookmark b : Data.bookmarkList) {
+				Store s = findStoreByLicenseNumber(b.getLicenseNumber());
+				String tmp = String.format("%10s%15s%15s",
+							 s.getStoreName(),
+							 s.getStoreTelNumber(),
+							 s.getmenuName());
+							System.out.println(tmp);
+		
+        }
+			
+    }
+=======
 		String body = String.format("%10s%10s%10s", storeName, storeTelNumber, MenuName);
+>>>>>>> e3b04e02aefbe4d6b90ce9e87528bb0eec916840
 		
 	}
 

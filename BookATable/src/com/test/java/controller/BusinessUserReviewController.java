@@ -26,7 +26,6 @@ public class BusinessUserReviewController {
 		Collections.sort(reviewList, (o1,o2)-> o1.getDateWritten().compareTo(o2.getDateWritten()));
 		
 
-		System.out.println(reviewList.size());
 		int curPage = 0;
 		int choice;
 		int prevPage = -10;
@@ -34,19 +33,21 @@ public class BusinessUserReviewController {
 		boolean loop = true;
 		while(loop) {
 			
-			
-			//10개씩 출력
-			businessUserReviewView.showReviewHeader();
-			for(i = 0; i<10; i++) {
-				if(curPage == reviewList.size()) {
-					break;
-				}
-				Review r = reviewList.get(curPage++);
-				businessUserReviewView.showReview(r);
+			if(reviewList.isEmpty()) {
+				businessUserReviewView.hasNoHistory();
+				break;
 			}
-			
-			if(i==10) {
-				prevPage+=10;
+			else {
+				//10개씩 출력
+				businessUserReviewView.showReviewHeader();
+				for(i = 0; i<10; i++) {
+					if(curPage+i == reviewList.size()) {
+						break;
+					}
+					Review r = reviewList.get(curPage+i);
+					businessUserReviewView.showReview(r);
+				}
+				
 			}
 			
 			businessUserReviewView.showSelectBox();
@@ -55,11 +56,12 @@ public class BusinessUserReviewController {
 			case 1:
 				//다음 페이지 보기
 				//마지막 페이지일 때
-				if(reviewList.size()==curPage) {
+				if(reviewList.size()==curPage+i) {
 					businessUserReviewView.lastPageMessage();
-					curPage -= i;
 				}
 				else {
+					prevPage = curPage;
+					curPage += i;
 					loop = false;	
 				}
 				break;
@@ -68,7 +70,6 @@ public class BusinessUserReviewController {
 				//첫 페이지 일 때
 				if(prevPage<0) {
 					businessUserReviewView.firstPageMessage();
-					curPage -= i;
 				}
 				else {
 					curPage = prevPage;
@@ -78,7 +79,7 @@ public class BusinessUserReviewController {
 				break;
 			case 3:
 				//리뷰 삭제 요청
-				
+
 				//리뷰 번호 입력
 				businessUserReviewView.showReviewNumberInputBox();
 				int reviewNumber = businessUserReviewView.getReviewNumber();
@@ -89,11 +90,11 @@ public class BusinessUserReviewController {
 				}
 				
 				//리뷰 번호로 리뷰 찾기
-				Review selected = find(reviewNumber, reviewList, curPage-i, curPage);
+				Review selected = find(reviewNumber, reviewList, curPage, curPage+i);
 				
 				//리뷰가 없으면 == 보여진 화면에 없는 리뷰 번호 입력 시
 				if(selected == null) {
-					businessUserReviewView.incorrectInputMessage();
+					businessUserReviewView.incorrectReviewNumberMessage();
 					continue;
 				}
 				
@@ -108,13 +109,16 @@ public class BusinessUserReviewController {
 				
 				RequestRepository.addRequest(reviewNumber, selected.getLicenseNumber(), reason, selected.getUserId());
 				
+				//요청 완료 메시지
+				businessUserReviewView.requestSuccessMessage();
+				
 				break;
 			case 0:
 				//뒤로 가기
 				loop = false;
 				break;
 			default:
-				
+				businessUserReviewView.incorrectInputMessage();
 			}
 		}
 	}

@@ -71,5 +71,10 @@ public class ReservationRepository {
 		}
 		
 	}
+
+	public static void findAllCountById(String lisenceNumber, HashMap<String, Integer> customerList) {
+		
+		
+	}
 	
 }

@@ -2,7 +2,7 @@ package com.test.java.model;
 
 
 public class Inquiry {
-	public static int COUNT = 0;
+	public static int COUNT = 1;
 	private int inquiryNumber;
 	private String userId;
 	private String title;

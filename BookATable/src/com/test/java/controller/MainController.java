@@ -1,5 +1,6 @@
 package com.test.java.controller;
 
+import com.test.java.model.Faq;
 import com.test.java.model.Member;
 import com.test.java.model.Store;
 import com.test.java.repository.Data;

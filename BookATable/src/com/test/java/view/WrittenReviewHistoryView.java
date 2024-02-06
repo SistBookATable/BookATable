@@ -36,7 +36,7 @@ public class WrittenReviewHistoryView {
 			for(Review r : Data.reviewList) {
 			String storeNameFromReview = findStoreNameById(r.getLicenseNumber()); // 상호명 찾기
 				String menuFromReview = getMenuById(r.getLicenseNumber()); // 메뉴 찾기
-				String tmp = String.format("%18s%18s%15s%15s%10s",
+				String tmp = String.format("%18s%18s%10s%15s\t%15s",
 						r.getDateWritten(),
 						storeNameFromReview,
 						menuFromReview,

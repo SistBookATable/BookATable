@@ -16,6 +16,7 @@ public class UserMyPageController {
 			} else {
 				loop = false;
 			}
+			
 			switch (choice) {
 			case 1:
 				//예약 관리
@@ -43,6 +44,11 @@ public class UserMyPageController {
 				//회원 탈퇴
 				UserCancellationController userCancellationController = new UserCancellationController();
 				userCancellationController.UserCancellation();
+				break;
+			case 6:
+				//FAQ 조회
+				FaqController faqController = new FaqController();
+				faqController.faqController();
 				break;
 
 			case 0:

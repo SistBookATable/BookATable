@@ -7,6 +7,7 @@ import java.util.Calendar;
 
 public class Reservation {
 	
+	private static int COUNT=1;
 	private int reservationNumber;
 	private String userId;
 	private String licenseNumber;
@@ -21,7 +22,7 @@ public class Reservation {
 	public Reservation (int reservationNumber, String userId, String licenseNumber, String reservationTime,String reservationDate
 			, int numOfPeople, int tableCapacity, String state, ArrayList<String> menulist) {
 		super();
-		this.reservationNumber = reservationNumber;
+		this.reservationNumber = COUNT++;
 		this.userId = userId;
 		this.licenseNumber = licenseNumber;
 		this.reservationTime = reservationTime;

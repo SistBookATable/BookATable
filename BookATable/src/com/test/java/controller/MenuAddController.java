@@ -20,7 +20,8 @@ public class MenuAddController {
 			}
 		}
 		
-		
+		MenuManagementController back = new MenuManagementController();
+		back.showMenuManagement(licenseNumber);
 	}
 	
 }

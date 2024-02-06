@@ -31,6 +31,8 @@ public class BusinessUserMyPageController {
 				operationalInfoManagementController.operationalInfoManagement(licenseNumber);
 				break;
 			case 5:
+				BusinessUserInquiryController businessUserInquiryController=new BusinessUserInquiryController();
+				businessUserInquiryController.showChoice();
 				break;
 			case 6:
 				break;

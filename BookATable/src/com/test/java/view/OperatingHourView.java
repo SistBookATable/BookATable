@@ -40,6 +40,7 @@ public static int get() {
 	Scanner scan = new Scanner(System.in);
 	System.out.println("1. 영업 시간 관리");
 	System.out.println("2. 휴게 시간 관리");
+	System.out.println("0. 이전 화면으로");
 	System.out.print("선택(번호) : ");
 	int temp = scan.nextInt();
 	scan.nextLine();

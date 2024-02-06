@@ -36,6 +36,8 @@ public class MenuRemoveController {
 			}
 		}
 		
+		MenuManagementController back = new MenuManagementController();
+		back.showMenuManagement(licenseNumber);
 		
 	}
 

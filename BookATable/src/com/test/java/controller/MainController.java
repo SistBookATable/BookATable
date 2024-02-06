@@ -136,6 +136,7 @@ public class MainController {
 	}
 
 	public static void load() {
+		Data.loadTable();
 		Data.loadOperatingHours();
 		Data.loadAdmin();
 		Data.loadUser();

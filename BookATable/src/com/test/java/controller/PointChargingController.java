@@ -15,7 +15,7 @@ public class PointChargingController {
 	
 	public void pointCharging() {
 		
-		 PointChargingView pointChargingView = new PointChargingView();		 
+		PointChargingView pointChargingView = new PointChargingView();		 
 		
 		int amountCharging = PointChargingView.getAmountCharging();
 		String pw = PointChargingView.getPw(); // TODO 유효성 검사

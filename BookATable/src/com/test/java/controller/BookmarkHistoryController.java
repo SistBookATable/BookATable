@@ -1,9 +1,8 @@
 package com.test.java.controller;
 
-import java.util.Scanner;
-
 import com.test.java.model.Bookmark;
 import com.test.java.model.Member;
+import com.test.java.model.Menu;
 import com.test.java.model.Store;
 import com.test.java.repository.Data;
 import com.test.java.view.BookmarkHistoryView;
@@ -11,10 +10,6 @@ import com.test.java.view.BookmarkHistoryView;
 public class BookmarkHistoryController {
 	
 	public void bookmarkHistory() {
-		
-		
-		findNameById(Member.id);
-		String name = findNameById(Member.id);
 		
 //		// 사용자의 즐겨찾기 목록에서 음식점의 사업자등록번호 가져오기
 //		String userId = Member.id; //사용자의 아이디
@@ -25,31 +20,30 @@ public class BookmarkHistoryController {
 //		String storeTelNumber = findStoreTelNumberBylicenseNumber(licenseNumber);
 //		String menuName = findMenuNameBylicenseNumber(licenseNumber);
 		
-		BookmarkHistoryView bookmarkHistoryView = new BookmarkHistoryView();
-		bookmarkHistoryView.showBookmarkHistory(name);
+		BookmarkHistoryView.showBookmarkHistory(findNameById(Member.id)
+												, findStoreNameById(Member.id)
+												, findStoreTelNumberById(Member.id)
+												, findMenuNameById(Member.id));
 		
-		int choice = bookmarkHistoryView.get();
-		Scanner scan = new Scanner(System.in);
 		
 		boolean loop = true;
-		
 		while(loop) {
+			BookmarkHistoryView.showSelectBox();
+			int choice = BookmarkHistoryView.get();
+			
 			switch(choice) {
 			// 상세페이지 보기
 			case 1:
 				MoveStorePageController moveStorePageController = new MoveStorePageController();
 				moveStorePageController.moveStorePage();
-				
 				break;
 			// 즐겨찾기 삭제 
 			case 2:
 				DeleteBookmarkController deleteBookmarkController = new DeleteBookmarkController();
 				deleteBookmarkController.deleteBookmark();
-				
 				break;
-			case 0: FavouriteStoreManagementController favouriteStoreManagementController = new FavouriteStoreManagementController();
-					favouriteStoreManagementController.favouriteStoreManagement();
-			
+			case 0:
+				loop = false;
 				break;
 			}
 		}
@@ -57,48 +51,48 @@ public class BookmarkHistoryController {
 		
 	}
 	
-//	private String findMenuNameBylicenseNumber(String licenseNumber) {
-//		for (Store s : Data.storeList) {
-//			if (s.getLicenseNumber().equals(licenseNumber)) {
-//				return s.getmenuName();
-//			}
-//		}
-//		return null;
-//	}
-//
-//	// 전화번호
-//	private String findStoreTelNumberBylicenseNumber(String licenseNumber) {
-//		for (Store s : Data.storeList) {
-//			if (s.getLicenseNumber().equals(licenseNumber)) {
-//				return s.getStoreTelNumber();
-//			}
-//		}
-//		return null;
-//	}
-//
-//	// 상호명 
-//	private String findStoreNameBylicenseNumber(String licenseNumber) {
-//		for (Store s : Data.storeList) {
-//			if (s.getLicenseNumber().equals(licenseNumber)) {
-//				return s.getStoreName();
-//			}	
-//		}
-//		return null;
-//	}
-//
-//	// 즐겨찾기 목록에서 음식점의 사업자등록번호 가져오기 
-//	private String findBookmarkById(String userId) {
-//		for (Bookmark bookmark : Data.bookmarkList) {
-//			if(bookmark.getUserId().equals(userId)) {
-//				return bookmark.getLicenseNumber();
-//			}
-//		}
-//		return null;
-//	}
+	private String findMenuNameById(String id) {
+		for(Bookmark b : Data.bookmarkList) {
+			if (b.getUserId().equals(id)) {
+				for(Menu m : Data.menuList) {
+					if (m.getLicenseNumber().equals(b.getLicenseNumber())) {
+						return m.getMenuName();
+					}
+				}
+			}
+		}
+		return null;
+	}
 
-	// 이름
+
+
+	private String findStoreTelNumberById(String id) {
+		for(Bookmark b : Data.bookmarkList) {
+			if (b.getUserId().equals(id)) {
+				for(Store s : Data.storeList) {
+					if (s.getLicenseNumber().equals(b.getLicenseNumber())) {
+						return s.getStoreTelNumber();
+					}
+				}
+			}
+		}
+		return null;
+	}
+
+	private String findStoreNameById(String id) {
+		for(Bookmark b : Data.bookmarkList) {
+			if (b.getUserId().equals(id)) {
+				for(Store s : Data.storeList) {
+					if (s.getLicenseNumber().equals(b.getLicenseNumber())) {
+						return s.getStoreName();
+					}
+				}
+			}
+		}
+		return null;
+	}
+
 	private String findNameById(String id) {
-		String name = "";
 		for(Member u : Data.memberList) {
 			if(u.getId().equals(id)) {
 				return u.getName();	
@@ -106,7 +100,5 @@ public class BookmarkHistoryController {
 			}
 		return null;
 		}	
-		
-
 
 }

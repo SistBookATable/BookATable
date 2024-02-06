@@ -8,12 +8,10 @@ import com.test.java.view.UpdatePwView;
 import com.test.java.view.View;
 
 public class UpdateAccountController {
-
 	public void updateAccount() {
 
 		boolean loop = true;
 		while (loop) {
-
 			String toUpdateAccount = UpdateAccountView.getAccount();
 			if (!isValidOfAccount(toUpdateAccount)) {
 				loop = true;
@@ -33,9 +31,9 @@ public class UpdateAccountController {
 					loop = false;
 				}
 				
-			}
+			} //else
 
-		}
+		}//while(loop)
 	}
 
 	private boolean isValidOfAccount(String toUpdateAccount) {

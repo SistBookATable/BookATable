@@ -10,10 +10,10 @@ import com.test.java.model.Store;
 import com.test.java.repository.Data;
 
 public class BookmarkHistoryView {
-	
+
 	public static ArrayList<Store> storeList = new ArrayList<>();
-	
-	public void showBookmarkHistory(String name) {
+
+	public static void showBookmarkHistory(String name, String storeName, String storeTelNumber, String MenuName) {
 		
 		System.out.println("------------------------------------------------------------------------------------------");
 		System.out.println();
@@ -25,6 +25,7 @@ public class BookmarkHistoryView {
 		String header = String.format("%10s%10s%10s", "[상호명]","[전화번호]","[메뉴]");
 		System.out.println(header);
 		
+<<<<<<< HEAD
 		if(Data.bookmarkList.isEmpty()) {
 			System.out.println();
 			System.out.println("즐겨찾기 내역이 없습니다.");
@@ -42,7 +43,13 @@ public class BookmarkHistoryView {
         }
 			
     }
+=======
+		String body = String.format("%10s%10s%10s", storeName, storeTelNumber, MenuName);
+>>>>>>> e3b04e02aefbe4d6b90ce9e87528bb0eec916840
 		
+	}
+
+	public static void showSelectBox(){
 		System.out.println("------------------------------------------------------------------------------------------");
 		System.out.println();
 		System.out.println("■           1. 상세페이지 이동		   ■");
@@ -56,26 +63,14 @@ public class BookmarkHistoryView {
 		System.out.print("선택(번호) : ");
 	}
 
-		
-
-	private Store findStoreByLicenseNumber(String licenseNumber) {
-		for (Store store : storeList) {
-			if (store.getLicenseNumber().equals(licenseNumber)) {
-				return store;
-			}
-		}
-		return null;
-	}
-	
-		
-	
 	public static int get() {
-		
 		Scanner scan = new Scanner(System.in);
 		int temp = scan.nextInt();
 		scan.nextLine();
 		return temp;
 	}
-}
 
 	
+
+
+}

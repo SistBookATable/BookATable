@@ -1,5 +1,7 @@
 package com.test.java.controller;
 
+import java.util.ArrayList;
+
 import com.test.java.model.Member;
 import com.test.java.model.Reservation;
 import com.test.java.model.Store;
@@ -12,6 +14,7 @@ public class ReservationCancelController {
 		ReservationCancelView.showReservationCancel();
 //		oknexuf
 //		hsbmt@
+//		한옥집 김치찜 GFC몰점	
 
 		boolean loop = true;
 		while (loop) {
@@ -24,14 +27,21 @@ public class ReservationCancelController {
 				//입력받은 상호명으로 해당 음식점의 라이센스넘버 찾기
 				String lisenceNumber = findLicenseNumber(inputStoreName, Member.id);
 				
-				//입력받은 상호명의 라이센스 넘버와 일반회원의 예약의 라이센스 넘버가 같은지 확인 
-				boolean checkStoreName = checkStoreName(lisenceNumber, Member.id);
+				//라이센스번호로 유저의 모든 예약 조회
+				ArrayList<Reservation> userReservationList = findAllReservation(lisenceNumber);
 				
-				//일치할 때예약 상태 "취소"로 변경
-				if (checkStoreName) {
+				//입력받은 상호명의 라이센스 넘버와 일반회원의 예약의 라이센스 넘버가 같은지 확인 
+				boolean isValidLisenceNumber = checkLisenceNumber(lisenceNumber, Member.id);
+				
+				if (userReservationList.isEmpty()) {
+					ReservationCancelView.showNoReservationHistoryMessage();
+					loop = false;
+				}
+				
+				//일치할 때, 예약 상태 "취소"로 변경
+				if (isValidLisenceNumber) {
 					modifyReservationState(lisenceNumber, Member.id);
 					System.out.println("예약이 취소되었습니다.");
-					View.pause();
 					loop = false;
 				}
 
@@ -47,15 +57,32 @@ public class ReservationCancelController {
 		View.pause();
 	}
 
-	private void modifyReservationState(String lisenceNumber, String id) {
+	private ArrayList<Reservation> findAllReservation(String lisenceNumber) {
+		ArrayList<Reservation> tmp = new ArrayList<Reservation>();
+		for(Reservation r : Data.reservationList) {
+			if (r.getLicenseNumber().equals(lisenceNumber)) {
+				tmp.add(r);
+			}
+		}
 		
+		return tmp;
+	}
+
+	private void modifyReservationState(String lisenceNumber, String id) {
+		for(Reservation r : Data.reservationList) {
+			if (r.getUserId().equals(id)) {
+				r.setState("취소");
+			}
+		}
 		
 	}
 
-	private boolean checkStoreName(String lisenceNumber, String id) {
+	private boolean checkLisenceNumber(String lisenceNumber, String id) {
 		for(Reservation r : Data.reservationList) {
-			if (r.getLicenseNumber().equals(lisenceNumber) && r.getUserId().equals(id)) {
-				return true;
+			if (r.getUserId().equals(id)) {
+				if (r.getLicenseNumber().equals(lisenceNumber)) {
+					return true;
+				}
 			}
 		}
 		return false;

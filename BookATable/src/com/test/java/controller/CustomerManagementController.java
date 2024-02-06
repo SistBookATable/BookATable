@@ -30,10 +30,10 @@ public class CustomerManagementController {
 				String lisenceNumber = user.getLicenseNumber(); 
 				
 				//회원 아이디로 예약횟수를 저장할 해쉬맵 생성 <회원ID, 이용횟수>
-				HashMap<String, Integer> customerList = new HashMap<>();
-
 				//라이센스 넘버로 예약 회원 리스트 조회 
-				ReservationRepository.findAllCountById(lisenceNumber,customerList);
+				HashMap<String, Integer> customerList = ReservationRepository.findAllCountById(lisenceNumber);
+
+				
 				
 				
 				break;

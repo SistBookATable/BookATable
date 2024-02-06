@@ -27,12 +27,12 @@ public class PointGiftController {
 		User currentUser = findUserById(userId);
 
 		if (currentUser != null) {
-			currentUser.setBalance(currentUser.getBalance() - amountGift);
-		} else {
+				currentUser.setBalance(currentUser.getBalance() - amountGift);
+				} else {
 			System.out.println("포인트 선물 불가합니다.");
 		}
 		
-		
+	
 		System.out.println("<<엔터를 입력하면, 이전 화면으로 이동합니다.>>");
 		
 		// 엔터 입력 대기

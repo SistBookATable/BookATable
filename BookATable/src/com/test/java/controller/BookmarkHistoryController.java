@@ -10,21 +10,10 @@ import com.test.java.view.BookmarkHistoryView;
 public class BookmarkHistoryController {
 	
 	public void bookmarkHistory() {
-		
-//		// 사용자의 즐겨찾기 목록에서 음식점의 사업자등록번호 가져오기
-//		String userId = Member.id; //사용자의 아이디
-//		String licenseNumber = findBookmarkById(userId);
-		
-//		// 음식점의 사업자등록번호로 음식점 정보 가져오기
-//		String storeName = findStoreNameBylicenseNumber(licenseNumber);
-//		String storeTelNumber = findStoreTelNumberBylicenseNumber(licenseNumber);
-//		String menuName = findMenuNameBylicenseNumber(licenseNumber);
-		
 		BookmarkHistoryView.showBookmarkHistory(findNameById(Member.id)
 												, findStoreNameById(Member.id)
 												, findStoreTelNumberById(Member.id)
 												, findMenuNameById(Member.id));
-		
 		
 		boolean loop = true;
 		while(loop) {

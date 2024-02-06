@@ -232,7 +232,7 @@ public class Data {
 				
 				String[] tmp = line.split(",");
 				Faq faq = new Faq(Integer.parseInt(tmp[0]),tmp[1],tmp[2],tmp[3]);
-				System.out.println(faq);
+//				System.out.println(faq);
 				faqList.add(faq);
 			}
 			

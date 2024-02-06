@@ -34,7 +34,7 @@ public class PointRefundHistoryController {
 			System.out.println("환불 취소 과정을 중지합니다.");
 		} else {
 			System.out.println("잘못된 입력입니다.");
-		}
+		}}
 		
 		System.out.println("<<엔터를 입력하면, 이전 화면으로 이동합니다>>");
 		
@@ -42,7 +42,7 @@ public class PointRefundHistoryController {
 		waitForEnter();
 		// 이동
 		PointRefundController pointRefundController = new PointRefundController();
-		pointRefundController.pointRefund();
+		pointRefundController.pointRefund();}
 		
 	}
 

@@ -38,7 +38,6 @@ public class PointManagementController {
 				loop = false;
 				break;
 			}
-			
 		}
 
 }

@@ -24,7 +24,7 @@ public class WrittenReviewHistoryView {
 		System.out.println("------------------------------------------------------------------------------------------");
 		System.out.println();
 
-		String header = String.format("%15s\t%10s\t\t%-15s%-15s%-20s", "[작성일]","[상호명]","[메뉴]","[별점]","[리뷰내용]");
+		String header = String.format("%-15s\t%-20s\t%-15s%-15s%-20s", "[작성일]","[상호명]","[메뉴]","[별점]","[리뷰내용]");
 		System.out.println(header);
 		
 		if(Data.reviewList.isEmpty()) {
@@ -36,7 +36,7 @@ public class WrittenReviewHistoryView {
 			for(Review r : Data.reviewList) {
 			String storeNameFromReview = findStoreNameById(r.getLicenseNumber()); // 상호명 찾기
 				String menuFromReview = getMenuById(r.getLicenseNumber()); // 메뉴 찾기
-				String tmp = String.format("%18s%18s%10s%15s\t%15s",
+				String tmp = String.format("%-15s\t%-20s\t%-15s%-15s\t%-20s",
 						r.getDateWritten(),
 						storeNameFromReview,
 						menuFromReview,
@@ -46,10 +46,8 @@ public class WrittenReviewHistoryView {
 				System.out.println(tmp);
 				
 			}
-
 		}
 	}
-
 
 private String findStoreNameById(String id) {
 	for (Store s : Data.storeList) {

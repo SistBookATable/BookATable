@@ -1,12 +1,9 @@
 package com.test.java.controller;
 
-import java.util.Calendar;
-import java.util.Iterator;
+import java.util.ArrayList;
 
-import com.test.java.model.Member;
-import com.test.java.repository.Data;
+import com.test.java.model.User;
 import com.test.java.repository.MemberRepository;
-import com.test.java.view.SignInUserManagementView;
 import com.test.java.view.SignOutUserManagementView;
 
 public class SignOutUserManagementController {
@@ -17,23 +14,27 @@ public class SignOutUserManagementController {
 		
 		boolean loop = true;
 		while(loop) {
-
-			signOutUserManagementView.findAllSignOutUser();
+			signOutUserManagementView.showTitle();
+			ArrayList<User> userList = MemberRepository.findAllSingOutUser();
+			signOutUserManagementView.showAllSignOutUser(userList);
 			signOutUserManagementView.showSelectBox();
 			int choice = signOutUserManagementView.getSelectType();
 			
-			if(choice == 1) {
+			switch(choice) {
+			case 1:
 				//탈퇴 회원 정보 삭제 
 				
 				//아이디 입력 받기
 				String id = signOutUserManagementView.getId();
 				MemberRepository.deleteUser(id);
 				
-			}
-			else if(choice == 0) {
+				break;
+			case 0:
 				loop = false;
+				break;
+			default:
+				signOutUserManagementView.incorrectInputMessage();
 			}
-			
 		}
 	}
 

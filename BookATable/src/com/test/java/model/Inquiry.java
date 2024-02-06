@@ -2,7 +2,7 @@ package com.test.java.model;
 
 
 public class Inquiry {
-	public static int COUNT = 0;
+	public static int COUNT = 1;
 	private int inquiryNumber;
 	private String userId;
 	private String title;
@@ -16,7 +16,7 @@ public class Inquiry {
 	public Inquiry(int inquiryNumber, String userId, String title, String content, int type, String dateWritten,
 			String adminId, String answer) {
 		super();
-		this.inquiryNumber = inquiryNumber;
+		this.inquiryNumber = COUNT++;
 		this.userId = userId;
 		this.title = title;
 		this.content = content;

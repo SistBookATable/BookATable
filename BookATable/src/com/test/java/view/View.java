@@ -11,4 +11,14 @@ public class View {
 		System.out.println();
 		
 	}
+	public static int getSelectType() {
+		try {
+			Scanner scan = new Scanner(System.in);
+			int tmp = scan.nextInt();
+			scan.nextLine();
+			return tmp;
+		} catch (Exception e) {
+			return -1;
+		}
+	}
 }

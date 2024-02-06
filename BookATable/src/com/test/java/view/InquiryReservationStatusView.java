@@ -10,27 +10,32 @@ import com.test.java.repository.Data;
 
 public class InquiryReservationStatusView {
 	
-	
-	public static void showInquiryReservationStatus(String userName, String storeName , int numOfPeple, String reservationTime) {
-
-		System.out.println("------------------------------------------------------------------------------------------");
+	public static void showUserReservationHeader(String userName) {
 		System.out.println();
-		System.out.printf("■           %s님 현재 예약 현황		   ■", userName);
 		System.out.println();
-		System.out.println("------------------------------------------------------------------------------------------");
-
+		System.out.println("┌───────────────────────────────────────────────────────┐");
+		System.out.printf("|                 %s님 현재 예약 현황              	  <\n", userName);
+		System.out.println("└───────────────────────────────────────────────────────┘");
 		System.out.println();
-		System.out.printf("[상호명]\t[인원수]\t[예약 시간]");
 		
+		String header = String.format("%10s\t\t%10s\t\t%10s\t", "[예약 상호명]","[예약 인원 수]","[예약 시간]");
+		System.out.println(header);
+		
+	}
+	
+	public static void showInquiryReservationStatus(String storeName, String numOfPeple, String reservationTime) {
 		while(true) {
 			for(Reservation r : Data.reservationList) {
 				if (r.getState().equals("예약")) {
-					System.out.printf("%s\t%d명\t%s\t\n", storeName, numOfPeple, reservationTime);
+					System.out.printf("%10s\t%10d명\t%10s\t", storeName, numOfPeple, reservationTime);
+					
 				}
 			}
 			break;
 		}
-
+	}
+	public static void showSelectBox() {
+			
 		System.out.println();
 		System.out.println("------------------------------------------------------------------------------------------");
 		System.out.println();
@@ -52,6 +57,23 @@ public class InquiryReservationStatusView {
 		
 		return temp;
 	}
+
+	public static void showNoReservationMessage() {
+		System.out.println();
+		System.out.println("현재 예약이 없습니다.");
+		System.out.println();
+		View.pause();
+	}
+
+	public static void showOneReservation(Reservation r, String storeName) {
+		String tmp = "";
+		tmp = String.format("%10s\t\t%10s명\t\t%10s\t"
+							, storeName
+							, r.getNumOfPeople()
+							, r.getReservationTime().substring(0, 2) + ":" + r.getReservationTime().substring(2));
+		System.out.println(tmp);
+	}
+
 
 
 	

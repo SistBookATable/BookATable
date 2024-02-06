@@ -45,12 +45,17 @@ public class UserMyPageController {
 				UserCancellationController userCancellationController = new UserCancellationController();
 				userCancellationController.UserCancellation();
 				break;
-
-			case 0:
-				loop = false;
+			case 6:
+				//FAQ 조회
+				FaqController faqController = new FaqController();
+				faqController.faqController();
 				break;
 
+			case 0:
+				break;
+			
 			}
+			loop = false;
 		}
 
 	}

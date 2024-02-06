@@ -37,6 +37,19 @@ public class CustomerManagementView {
 		
 		View.pause();
 	}
+	public void hasNoHistory() {
+
+
+		System.out.println("==========================================================================================");
+		System.out.println();
+		System.out.println("        단골 고객이 없습니다.");
+		System.out.println();
+		System.out.println("==========================================================================================");
+		System.out.println();
+		
+		View.pause();
+		
+	}
 	
 
 }

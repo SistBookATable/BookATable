@@ -45,7 +45,7 @@ public class PointManagementController {
 					 break;
 					
 				
-			}
+			} break;
 			
 		}
 

@@ -5,11 +5,12 @@ import com.test.java.model.Member;
 import com.test.java.view.AnswerView;
 
 public class AnswerController {
-
-	AnswerView answerView = new AnswerView();
-
+	
+	
 	public void answerManage(Inquiry selected) {
 
+		AnswerView answerView = new AnswerView();
+		
 		boolean loop = true;
 		while(loop) {
 
@@ -40,7 +41,11 @@ public class AnswerController {
 				break;
 			default:
 				break;
-			}	
-		}	
+			}
+			
+		}
+		
+		
 	}
+	
 }

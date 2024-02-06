@@ -13,7 +13,7 @@ public class MainController {
 	 * 메인 화면 시작 
 	 */
 	public static void start() {
-		
+
 		boolean loop = true;
 		while(loop) {
 			
@@ -150,7 +150,6 @@ public class MainController {
 		Data.loadReview();
 		Data.loadReservation();
 		Data.loadStore();
-		Data.loadMenu();
 		Data.loadBookmark();
 		Data.loadFaq();
 

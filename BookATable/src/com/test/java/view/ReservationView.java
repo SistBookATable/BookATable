@@ -107,51 +107,40 @@ public class ReservationView {
 	   }//showCalendar
 	   
 	   //사업자 번호에 해당하는 메뉴 출력
-	    public String getSelectedMenuName(String licenseNumber) {
-	           Map<String, Integer> menuMap = new HashMap<>();
-	           Scanner scan = new Scanner(System.in);
-	           
-
-	           while (true) {
-	               System.out.print(" 메뉴 번호를 입력하세요 (-1 입력시 종료): ");
-	               int selectedMenuIndex = scan.nextInt();
-	               scan.nextLine(); // 버퍼 비우기
-
-	               // -1 입력 시 종료
-	               if (selectedMenuIndex == -1) {
-	                   break;
-	               }
-
-	               System.out.print(" 개수를 입력하세요: ");
-	               int quantity = scan.nextInt();
-	               scan.nextLine(); // 버퍼 비우기
-
-	               // 선택한 메뉴 번호에 해당하는 메뉴 출력
-	               if (selectedMenuIndex >= 1 && selectedMenuIndex <= Data.menuList.size()) {
-	                   Menu selectedMenu = Data.menuList.get(selectedMenuIndex - 1);
-	                   String menuName = selectedMenu.getMenuName();
-	                   
-	                   // 메뉴가 이미 선택되었을 경우에는 개수만 증가시킴
-	                   if (menuMap.containsKey(menuName)) {
-	                       quantity += menuMap.get(menuName);
-	                   }
-	                   
-	                   // 메뉴와 개수를 Map에 저장
-	                   menuMap.put(menuName, quantity);
-	               } else {
-	                   System.out.println("유효하지 않은 메뉴 번호입니다.");
-	               }
-	           }
-
-	           // 예약한 메뉴와 개수 출력
-	           StringBuilder reservationSummary = new StringBuilder();
-	           
-	           for (Map.Entry<String, Integer> entry : menuMap.entrySet()) {
-	               reservationSummary.append(entry.getKey()).append("/").append(entry.getValue()).append("개 ");
-	           }
-
-	           return reservationSummary.toString();
-	       }
+	   public ArrayList<String> getSelectedMenuName(String licenseNumber) {
+	        ArrayList<String> selectedMenuList = new ArrayList<>();
+	        Scanner scan = new Scanner(System.in);
+	        
+	        while (true) {
+	            System.out.print(" 메뉴 번호를 입력하세요 (-1 입력시 종료): ");
+	            int selectedMenuIndex = scan.nextInt();
+	            scan.nextLine(); // 버퍼 비우기
+	            
+	            // -1 입력 시 종료
+	            if (selectedMenuIndex == -1) {
+	                break;
+	            }
+	            
+	            System.out.print(" 개수를 입력하세요: ");
+	            int quantity = scan.nextInt();
+	            scan.nextLine(); // 버퍼 비우기
+	            
+	            // 선택한 메뉴 번호에 해당하는 메뉴 출력
+	            if (selectedMenuIndex >= 1 && selectedMenuIndex <= Data.menuList.size()) {
+	                Menu selectedMenu = Data.menuList.get(selectedMenuIndex - 1);
+	                String menuName = selectedMenu.getMenuName();
+	                
+	                // 선택한 메뉴를 개수만큼 추가
+	                for (int i = 0; i < quantity; i++) {
+	                    selectedMenuList.add(menuName);
+	                }
+	            } else {
+	                System.out.println("유효하지 않은 메뉴 번호입니다.");
+	            }
+	        }
+	        
+	        return selectedMenuList;
+	    }
 	    
 	    public void showMenu(String licenseNumber) {
 	       Map<Integer, Menu> menuMap = new HashMap<>();
@@ -180,12 +169,33 @@ public class ReservationView {
 	      
 	   
 	   
-	   public String showReservation(int num, String date, String time, String menu) {
-	      String tmp="";
-	      String txt="인원 수 \t 예약 날짜 \t 예약 시간 \t 예약 메뉴 ";
-	      tmp=txt+"\n"+num+"\t "+date+"\t\t "+time+"\t\t "+menu;
-	      return tmp;
-	   }//showReservation
+	    public String showReservation(int num, String date, String time, ArrayList<String> menuList) {
+	        StringBuilder tmp = new StringBuilder();
+	        String txt = "인원 수 \t 예약 날짜 \t 예약 시간 \t 예약 메뉴 ";
+	        tmp.append(txt).append("\n").append(num).append("\t ").append(date).append("\t\t ").append(time).append("\t\t ");
+	        
+	        // 메뉴와 개수를 저장할 Map
+	        Map<String, Integer> menuCounts = new HashMap<>();
+	        
+	        // 메뉴와 개수 계산
+	        for (String menu : menuList) {
+	            menuCounts.put(menu, menuCounts.getOrDefault(menu, 0) + 1);
+	        }
+	        
+	        // 예약한 메뉴와 개수를 문자열에 추가
+	        for (Map.Entry<String, Integer> entry : menuCounts.entrySet()) {
+	            String menu = entry.getKey();
+	            int count = entry.getValue();
+	            tmp.append(menu);
+	            if (count > 1) {
+	                tmp.append("/").append(count);
+	            }
+	            tmp.append(", ");
+	        }
+	        
+	        return tmp.toString();
+	    }
+
 	   
 	public  String get() {
 	      

@@ -34,7 +34,9 @@ public class MenuManagementController {
 		
 
 		case 0:
-
+			OperationalInfoManagementController back= new OperationalInfoManagementController();
+			back.operationalInfoManagement(licenseNumber);
+			break;
 		}
 	}
 	

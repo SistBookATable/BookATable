@@ -1,7 +1,7 @@
 package com.test.java.model;
 
 public class Menu {
-	
+
 	private String licenseNumber;
 	private String menuName;
 	private int price;
@@ -39,6 +39,15 @@ public class Menu {
 	public int getPrice() {
 		return price;
 	}
+
+
+
+	@Override
+	public String toString() {
+		return "Menu [ licenseNumber=" + licenseNumber + ", menuName=" + menuName + ", price="
+				+ price + "]";
+	}
+	
 	
 	
 }

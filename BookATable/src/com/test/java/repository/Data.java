@@ -1,18 +1,21 @@
 package com.test.java.repository;
 
-
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
-import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
+
+import java.util.Collections;
+
 
 import com.test.java.model.Admin;
 import com.test.java.model.BlackList;
 import com.test.java.model.Bookmark;
 import com.test.java.model.BusinessUser;
+//import com.test.java.model.CompletedList;
 import com.test.java.model.Faq;
 import com.test.java.model.Inquiry;
 import com.test.java.model.Member;
@@ -22,59 +25,62 @@ import com.test.java.model.PointRefund;
 import com.test.java.model.PointUsage;
 import com.test.java.model.Request;
 import com.test.java.model.Reservation;
+//import com.test.java.model.ReservationCancel;
 import com.test.java.model.Review;
+//import com.test.java.model.StopUser;
 import com.test.java.model.Store;
 import com.test.java.model.Table;
 import com.test.java.model.User;
+import com.test.java.model.WriteReview;
 
 public class Data {
 
 	
 	//여러개면 Path 클래스를 만들어서 넣는게 좋음
-	private final static String USER = "dat"+File.separator+"user.txt";
-	private final static String BUSINESSUSER = "dat"+File.separator+"businessUser.txt";
-	private final static String ADMIN = "dat"+File.separator+"admin.txt";
+	private final static String USER = "dat\\user.txt";
+	private final static String BUSINESSUSER = "dat\\BusinessUser.txt";
+	private final static String ADMIN = "dat\\Admin.txt";
 	
-	private final static String STORE = "dat"+File.separator+"store.txt";
+	private final static String STORE = "dat\\store.txt";
 	
-	private final static String BLACKLIST = "dat"+File.separator+"blackList.txt";
-	private final static String VIP = "dat"+File.separator+"vip.txt";
-	private final static String TABLE = "dat"+File.separator+"table.txt";
-	private final static String MENU = "dat"+File.separator+"menu.txt";
-	private final static String OPERATINGHOURS = "dat"+File.separator+"operatinghours.txt";
-	private final static String RESERVATION = "dat"+File.separator+"reservation.txt";
-	private final static String POINTUSAGE = "dat"+File.separator+"pointUsage.txt";
-	private final static String REVIEW = "dat"+File.separator+"review.txt";
-	private final static String FAQ = "dat"+File.separator+"faq.txt";
-	private final static String INQUIRY = "dat"+File.separator+"inquiry.txt";
-	private final static String REQUEST = "dat"+File.separator+"request.txt";
-	private final static String BOOKMARK = "dat"+File.separator+"bookmark.txt";
-	private final static String POINTREFUND = "dat"+File.separator+"pointRefund.txt";
+	private final static String BLACKLIST = "dat\\BlackList.txt";
+	private final static String VIP = "dat\\Vip.txt";
+	private final static String TABLE = "dat\\Table.txt";
+	private final static String MENU = "dat\\menu.txt";
+	private final static String OPERATINGHOURS = "dat\\Operatinghours.txt";
+	private final static String RESERVATION = "dat\\Reservation.txt";
+	private final static String RESERVATIONMENU = "dat\\ReservationMenu.txt";
+	private final static String POINTUSAGE = "dat\\PointUsage.txt";
+	private final static String REVIEW = "dat\\Review.txt";
+	private final static String FAQ = "dat\\Faq.txt";
+	private final static String INQUIRY = "dat\\Inquiry.txt";
+	private final static String REQUEST = "dat\\Request.txt";
+	private final static String BOOKMARK = "dat\\Bookmark.txt";
 	
 	
-	
-	//load+save 완료
+	//필요한 자료들
 	public static ArrayList<Member> memberList = new ArrayList<>();
-	public static ArrayList<User> userList=new ArrayList<>();
 	public static ArrayList<Store> storeList = new ArrayList<>();
 	public static ArrayList<Menu> menuList = new ArrayList<>();
 	public static ArrayList<Reservation> reservationList = new ArrayList<>();
 	public static ArrayList<BlackList> blackListList = new ArrayList<>();
-	//load 완료
+	public static ArrayList<Inquiry> inquiryList = new ArrayList<>();
 	public static ArrayList<Faq> faqList = new ArrayList<>();
 	public static ArrayList<OperatingHours> operatingHoursList = new ArrayList<>();
 
-	public static ArrayList<Inquiry> inquiryList = new ArrayList<>();
-	public static ArrayList<Bookmark> bookmarkList = new ArrayList<>();
-	public static ArrayList<PointRefund> pointRefundList = new ArrayList<>();
-
-	
-	//TODO 하단에 loadPointUsage만들다 만거 있음
 	public static ArrayList<PointUsage> pointList = new ArrayList<>();
+//	public static ArrayList<CompletedList> compleatedList = new ArrayList<>();
 	public static ArrayList<Request> requestList = new ArrayList<>();
+//	public static ArrayList<ReservationCancel> reservationCancelList = new ArrayList<>();
 	public static ArrayList<Review> reviewList = new ArrayList<>();
+	public static ArrayList<Review> reviewCountList = new ArrayList<>();
+	//public static ArrayList<StopUser> stopUserList = new ArrayList<>();
 	public static ArrayList<Table> tableList = new ArrayList<>();
-	
+
+	public static ArrayList<WriteReview> writeReviewList = new ArrayList<>();
+	public static String path1 = "dat\review.txt";
+    public static String path2 = "dat\store.txt";
+    
 	
 	
 	public static void loadPointRefund() {
@@ -108,6 +114,7 @@ public class Data {
 				String[] tmp = line.split(",");
 				Bookmark bookmark = new Bookmark(tmp[0], tmp[1]);
 				bookmarkList.add(bookmark);
+				System.out.println(bookmarkList);
 			}
 			
 			reader.close();
@@ -149,29 +156,18 @@ public class Data {
 		}
 	}
 	
+  
 	public static void loadReview() {
 		try {
-			BufferedReader reader
-			= new BufferedReader(new FileReader(Data.REVIEW));
+			BufferedReader reader = new BufferedReader(new FileReader(Data.REVIEW));
 			
 			String line = null;
 			
 			while((line = reader.readLine()) != null) {
-				
 				String[] tmp = line.split(",");
-				Review review = new Review(
-						Integer.parseInt(tmp[0]),
-						tmp[1],
-						tmp[2],
-						tmp[3],
-						tmp[4],
-						Double.parseDouble(tmp[5]),
-						Integer.parseInt(tmp[6]));
+				Review review = new Review(Integer.parseInt(tmp[0]), tmp[1], tmp[2], tmp[3], tmp[4], Double.parseDouble(tmp[5]), Integer.parseInt(tmp[6]));
 				reviewList.add(review);
 			}
-			
-			reader.close();
-			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -189,6 +185,7 @@ public class Data {
 				String[] tmp = line.split(",");
 				OperatingHours operatingHours = new OperatingHours(tmp[0],tmp[1],tmp[2],tmp[3],tmp[4],tmp[5]);
 				operatingHoursList.add(operatingHours);
+				System.out.println(pointList);
 			}
 			
 			reader.close();
@@ -209,9 +206,9 @@ public class Data {
 			while((line = reader.readLine()) != null) {
 				
 				String[] tmp = line.split(",");
-				PointUsage pointUsage = new PointUsage(Integer.parseInt(tmp[0]),Integer.parseInt(tmp[1]),tmp[2],tmp[3], tmp[4]);
-				pointList.add(pointUsage);
-
+////				PointUsage pointUsage = new PointUsage(Integer.parseInt(tmp[0]),tmp[1],tmp[2],tmp[3]);
+//				pointList.add(pointUsage);
+				System.out.println(pointList);
 			}
 			
 			reader.close();
@@ -234,6 +231,7 @@ public class Data {
 				String[] tmp = line.split(",");
 				Faq faq = new Faq(Integer.parseInt(tmp[0]),tmp[1],tmp[2],tmp[3]);
 				faqList.add(faq);
+				System.out.println(faq);
 			}
 			
 			reader.close();
@@ -280,7 +278,6 @@ public class Data {
 			Inquiry inquiry = new Inquiry(Integer.parseInt(tmp[0]),tmp[1],tmp[2], tmp[3], Integer.parseInt(tmp[4]),tmp[5],tmp[6],tmp[7]);
 			
 			inquiryList.add(inquiry);
-			Inquiry.COUNT++;
 		}
 
 		reader.close();
@@ -363,30 +360,27 @@ public class Data {
 		}
 		
 	}
+
 	public static void loadMenu() {
 		try {
-			BufferedReader reader
-			= new BufferedReader(new FileReader(Data.MENU));
-		
+			BufferedReader reader = new BufferedReader(new FileReader(Data.MENU));
+
 			String line = null;
-		
-			while((line = reader.readLine())!=null){
-			
+
+			while ((line = reader.readLine()) != null) {
+
 				String[] tmp = line.split(",");
-			
-				Menu menu = new Menu(tmp[0],tmp[1],Integer.parseInt(tmp[2]));
-			
+
+				Menu menu = new Menu(tmp[0], tmp[1], Integer.parseInt(tmp[2]));
 				menuList.add(menu);
-			
-				System.out.println(menuList);
+
 			}
 
-		reader.close();
+			reader.close();
 		} catch (Exception e) {
-			// TODO: handle exception
+			e.printStackTrace();
 		}
 	}
-	
 	public static void saveMenu() {
 		try {
 			BufferedWriter writer = new BufferedWriter(new FileWriter(Data.MENU));
@@ -413,14 +407,16 @@ public class Data {
 			
 			String line = null;
 			
-			while((line = reader.readLine())!=null){
-				
+			while((line = reader.readLine()) != null){
+
 				String[] tmp = line.split(",");
-				
-				Store store = new Store (tmp[0],tmp[1],tmp[2],tmp[3],tmp[4],
+
+				Store store = new Store(tmp[0],tmp[1],tmp[2],tmp[3],tmp[4],
 										Double.parseDouble(tmp[5]),Integer.parseInt(tmp[6]));
 				storeList.add(store);
+				System.out.println(store);
 			}
+			
 			reader.close();
 		} catch (Exception e) {
 			// TODO: handle exception
@@ -485,7 +481,6 @@ public class Data {
 									, Integer.parseInt(tmp[8]), Integer.parseInt(tmp[9]), Integer.parseInt(tmp[10]), tmp[11], tmp[12],tmp[13]);
 				
 				memberList.add(user);
-				userList.add(user);
 			}
 			
 			reader.close();
@@ -509,8 +504,8 @@ public class Data {
 				BusinessUser businessUser = new BusinessUser(Integer.parseInt(tmp[0]), tmp[1], tmp[2], tmp[3]
 															, tmp[4], tmp[5], tmp[6],  tmp[7]
 															, tmp[8], tmp[9]);
+				
 				memberList.add(businessUser);
-				System.out.println(memberList);
 			}
 			
 			reader.close();
@@ -574,6 +569,25 @@ public class Data {
 			e.printStackTrace();
 		}
 		
+	}
+	
+	public static void loadTable() {
+		try {
+			BufferedReader reader = new BufferedReader(new FileReader(Data.TABLE));
+			
+			String line = null;
+			
+			while((line = reader.readLine()) != null) {
+				String[] tmp = line.split(",");
+				Table table = new Table(tmp[0], Integer.parseInt(tmp[1]),Integer.parseInt(tmp[2]),Boolean.parseBoolean(tmp[3]));
+				tableList.add(table);
+			}
+			
+			reader.close();
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 	
 	

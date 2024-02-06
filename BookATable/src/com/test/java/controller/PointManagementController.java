@@ -8,18 +8,12 @@ import com.test.java.view.PointManagementView;
 public class PointManagementController {
 	
 	public void pointManagement() {
-		PointManagementView pointManagementView = new PointManagementView();
-		PointManagementView.showPointManagement(findNameById(Member.id), findAccountById(Member.id), findPointById(Member.id));
-		int choice = PointManagementView.get();
-		
-		findNameById(Member.id);
-		findAccountById(Member.id);
-		findPointById(Member.id);
-		
 		boolean loop = true;
 		
 		while (loop) {
-			//
+			PointManagementView.showPointManagement(findNameById(Member.id), findAccountById(Member.id), findPointById(Member.id));
+			int choice = PointManagementView.get();
+			
 			switch (choice) {
 			// 포인트충전
 			case 1 : PointChargingController pointChargingController = new PointChargingController();
@@ -40,22 +34,14 @@ public class PointManagementController {
 					 break;
 
 			// 이전화면	
-			case 0 : UserMyPageController userMyPageController = new UserMyPageController();
-					 userMyPageController.userMyPage();
-					 break;
-					
-				
-			} break;
-			
+			case 0 : 
+				loop = false;
+				break;
+			}
 		}
-
 
 }
 	private String findNameById(String id) {
-		
-		
-		String name = "";
-		
 		for(Member u : Data.memberList) {
 			if(u.getId().equals(id)) {
 				return u.getName();
@@ -66,18 +52,15 @@ public class PointManagementController {
 	
 	
 	private String findAccountById(String id)  {
-		
 		for(Member u : Data.memberList) {
 			if(u.getId().equals(id)) {
 				return u.getAccount();
-				
 			}
 		}
 		return null;
 	}
 	
 	private int findPointById(String id)  {
-		
 		for(Member u : Data.memberList) {
 			if(u.getId().equals(id)) {
 				return ((User)u).getBalance();

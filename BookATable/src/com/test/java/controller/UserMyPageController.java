@@ -16,6 +16,7 @@ public class UserMyPageController {
 			} else {
 				loop = false;
 			}
+			
 			switch (choice) {
 			case 1:
 				//예약 관리

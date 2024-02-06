@@ -16,7 +16,7 @@ public class FaqController {
 		System.out.println("FaqController");
 		
 		FaqView faqview = new FaqView();
-		FaqView.showFaq();
+		faqview.showFaq();
 		FaqController.faqViewController();
 
 		

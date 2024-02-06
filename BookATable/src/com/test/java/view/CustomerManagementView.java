@@ -19,7 +19,7 @@ public class CustomerManagementView {
 		System.out.println();
 		System.out.println("==========================================================================================");
 		System.out.println();
-		System.out.println("선택(번호) : ");
+		System.out.print("선택(번호) : ");
 		
 		
 	}
@@ -50,6 +50,36 @@ public class CustomerManagementView {
 		View.pause();
 		
 	}
+	public void showCustomerList(String userName, int count, String menuName, int cnt) {
+		System.out.printf("\t%d\t%s\t%s(%d회)\n", count, userName, menuName, cnt);	
+	}
+	public void showCustomerTitle() {
+		System.out.printf("\t%s\t%s\t%s\n", "이용횟수","회원명","최다 주문 메뉴");	
+	}
+	public void pause() {
+		View.pause();
+		
+	}
+	public void hasNoBlackList() {
+
+		System.out.println("==========================================================================================");
+		System.out.println();
+		System.out.println("       노쇼 고객이 없습니다.");
+		System.out.println();
+		System.out.println("==========================================================================================");
+		System.out.println();
+		
+		View.pause();
+	}
+	public void showBlackListTitle() {
+		System.out.printf("\t%s\t%s\t%s\n", "노쇼횟수","회원ID","사용 제한 여부");	
+		
+	}
+	public void showBlackList(int count, String key, boolean stop) {
+		System.out.printf("\t%d\t%s\t%s\n", count, key, stop==true? "사용제한":"");	
+		
+	}
+	
 	
 
 }

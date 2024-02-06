@@ -24,7 +24,7 @@ public class SalesManagementView {
 		System.out.println();
 		System.out.println("==========================================================================================");
 		System.out.println();
-		System.out.println("선택(번호) : ");
+		System.out.print("선택(번호) : ");
 		
 		
 	}

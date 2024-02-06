@@ -30,6 +30,7 @@ import com.test.java.model.User;
 import com.test.java.model.WriteReview;
 
 public class Data {
+
 	
 	//여러개면 Path 클래스를 만들어서 넣는게 좋음
 	private final static String USER = "dat\\user.txt";
@@ -71,6 +72,7 @@ public class Data {
 	public static ArrayList<Review> reviewCountList = new ArrayList<>();
 	//public static ArrayList<StopUser> stopUserList = new ArrayList<>();
 	public static ArrayList<Table> tableList = new ArrayList<>();
+
 	public static ArrayList<WriteReview> writeReviewList = new ArrayList<>();
 	public static String path1 = "dat\review.txt";
     public static String path2 = "dat\store.txt";
@@ -130,7 +132,83 @@ public class Data {
         }
 
     }
-	public static void loadreviewCount() {
+	
+	
+	public static void loadPointRefund() {
+		try {
+			BufferedReader reader = new BufferedReader(new FileReader(Data.POINTREFUND));
+			
+			String line = null;
+			
+			while((line = reader.readLine()) != null) {
+				String[] tmp = line.split(",");
+				PointRefund pointRefund = new PointRefund(tmp[0], Integer.parseInt(tmp[1]),tmp[2]);
+				pointRefundList.add(pointRefund);
+			}
+			
+			reader.close();
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	
+	public static void loadBookmark() {
+		try {
+			BufferedReader reader = new BufferedReader(new FileReader(Data.BOOKMARK));
+			
+			String line = null;
+			
+			while((line = reader.readLine()) != null) {
+				
+				String[] tmp = line.split(",");
+				Bookmark bookmark = new Bookmark(tmp[0], tmp[1]);
+				bookmarkList.add(bookmark);
+				System.out.println(bookmarkList);
+			}
+			
+			reader.close();
+			
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	
+	
+	
+	public static void loadRequest() {
+		try {
+			BufferedReader reader
+			= new BufferedReader(new FileReader(Data.REQUEST));
+			
+			String line = null;
+			
+			while((line = reader.readLine()) != null) {
+				
+				String[] tmp = line.split(",");
+				Request request = new Request(
+						Integer.parseInt(tmp[0]),
+						Integer.parseInt(tmp[1]),
+						tmp[2],
+						tmp[3],
+						tmp[4],
+						tmp[5],
+						tmp[6]);
+				requestList.add(request);
+			}
+			
+			reader.close();
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+  
+	public static void loadReview() {
 		try {
 			BufferedReader reader = new BufferedReader(new FileReader(Data.REVIEW));
 			
@@ -203,6 +281,7 @@ public class Data {
 				
 				String[] tmp = line.split(",");
 				Faq faq = new Faq(Integer.parseInt(tmp[0]),tmp[1],tmp[2],tmp[3]);
+//				System.out.println(faq);
 				faqList.add(faq);
 				System.out.println(faq);
 			}

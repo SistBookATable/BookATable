@@ -26,7 +26,6 @@ public class Store {
 
    /*
    public Store(String licenseNumber, String storeName, String storeTelNumber, String address) {
->>>>>>> Stashed changes
       super();
       this.licenseNumber = licenseNumber;
       this.storeName = storeName;
@@ -54,7 +53,6 @@ public class Store {
    }
    
    }*/
-//<<<<<<< Updated upstream
    
    public String getAddress() {
       return address;
@@ -135,6 +133,37 @@ public class Store {
 public Object getReviewCount() {
 	// TODO Auto-generated method stub
 	return null;
+
+
+	public Store(String licenseNumber, String storeName, String storeTelNumber, String address, String menuCategory) {
+		super();
+		this.licenseNumber = licenseNumber;
+		this.storeName = storeName;
+		this.storeTelNumber = storeTelNumber;
+		this.address = address;
+		this.menuCategory = menuCategory;
+		
+		// TODO distanceFrom 주소 사용해서 구하기
+		this.score = score;
+		this.distanceFrom = 0;
+	}
+	
+
+
+
+	public double getScore() {
+		double sum = 0;
+		int count = 0;
+		for(Review r :Data.reviewList) {
+			if(r.getLicenseNumber().equals(this.licenseNumber)) {
+				sum += r.getScore();
+				count ++;
+			}
+		}
+		
+		return sum/count;
+	}
+	
 }
 
 @Override

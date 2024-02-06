@@ -154,6 +154,8 @@ public class MainController {
 		Data.loadMenu();
 		Data.loadStore();
 		Data.loadreviewCount();
-		
+    Data.loadBookmark();
+    Data.loadFaq();
+
 	}
 }

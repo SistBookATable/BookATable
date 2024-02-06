@@ -55,7 +55,7 @@ public class Admin extends Member{
 	@Override
 	public String getSignOut() {
 		// TODO Auto-generated method stub
-		return null;
+		return "null";
 	} 
 
 }

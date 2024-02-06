@@ -22,11 +22,19 @@ public class SignInUserManagementController {
 		boolean loop = true;
 		while(loop) {
 
-			signInUserManagementView.findAllUser();
+			signInUserManagementView.showTitle();
+			
+			//탈퇴하지 않은 회원 리스트 출력
+			ArrayList<User> userList = MemberRepository.findAllUser();
+			signInUserManagementView.showAllUser(userList);
+			
 			signInUserManagementView.showSelectBox();
 			int choice = signInUserManagementView.getSelectType();
 			
-			if(choice == 1) {
+			switch (choice) {
+			case 1: 
+				//상세 이용 내역 보기
+				
 				//아이디 입력 받기
 				String id = signInUserManagementView.getId();
 				
@@ -34,17 +42,16 @@ public class SignInUserManagementController {
 				Member member = MemberRepository.findOneById(id);
 				
 				//member가 없으면
-				if(member==null) {
-					signInUserManagementView.incorrectInputMessage();
+				if(member == null) {
+					signInUserManagementView.incorrectIdMessage();
 					continue;
 				}
 				
 				//멤버를 사용해서 기본정보 받아오기
-				String basic = findBasicById(member);
+				String basic = makeBasicInfo(member);
 				
 				//기본 정보 출력
 				signInUserManagementView.show(basic);
-				
 
 				//아이디를 사용해서 세부 예약 내역을 찾기
 				ArrayList<Reservation> reservations = ReservationRepository.findAllById(id);
@@ -55,18 +62,21 @@ public class SignInUserManagementController {
 					continue;
 				}
 				
-				
 				makeDetailCard(reservations);
+				break;
 				
-			}
-			else if(choice == 0) {
+			case 0:
+				//뒤로가기
 				loop = false;
+				break;
+				
+			default:
+				signInUserManagementView.incorrectInputMessage();
 			}
-			
 		}
 	}
 
-	private String findBasicById(Member member) {
+	private String makeBasicInfo(Member member) {
 		String tmp = "";
 		tmp += "회원명 : " + member.getName() +"\n";
 		tmp += "회원ID : " + member.getId() +"\n";
@@ -84,11 +94,11 @@ public class SignInUserManagementController {
 
 		for(Reservation r : reservations) {			
 			int reservationNumber = r.getReservationNumber();
-			String storeName = StoreRepository.findOneByLicenseNumber(r.getLicenseNumber()).getStoreName();
 			String date = r.getReservationDate();
 			int numOfPeople = r.getNumOfPeople();
 			ArrayList<String> menulist = r.getMenulist();
 			
+			String storeName = StoreRepository.findOneByLicenseNumber(r.getLicenseNumber()).getStoreName();
 			double score = ReviewRepository.findScoreByReservationNumber(reservationNumber);
 			String content = ReviewRepository.findContentByReservationNumber(reservationNumber);
 			

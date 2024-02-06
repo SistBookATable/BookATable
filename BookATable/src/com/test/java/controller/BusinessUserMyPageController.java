@@ -35,6 +35,8 @@ public class BusinessUserMyPageController {
 			case 5:
 				break;
 			case 6:
+				MembershipWithdrawalController membershipWithdrawalController = new MembershipWithdrawalController();
+				membershipWithdrawalController.membershipWithdrawal();
 				break;
 			case 0:
 				loop = false;

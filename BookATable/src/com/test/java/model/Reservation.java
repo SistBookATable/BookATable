@@ -15,6 +15,7 @@ public class Reservation {
 	private int numOfPeople;
 	private int tableCapacity;
 	private String state;
+
 	private ArrayList<String> menulist = new ArrayList<>();
 	
 

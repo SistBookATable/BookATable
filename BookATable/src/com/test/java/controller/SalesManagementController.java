@@ -30,10 +30,12 @@ public class SalesManagementController {
 				businessUserReviewController.reviewManagement();
 				break;
 			case 2:
+				//즐겨찾기 조회
 				BusinessUserBookmarkController businessUserBookmarkController = new BusinessUserBookmarkController();
 				businessUserBookmarkController.bookmarkManagement();
 				break;
 			case 3:
+				//고객 관리
 				CustomerManagementController customerManagementController = new CustomerManagementController();
 				customerManagementController.customerManagement();
 				break;

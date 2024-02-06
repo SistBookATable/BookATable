@@ -24,6 +24,7 @@ public class PointUsageHistoryController {
 		Scanner scan = new Scanner(System.in);
 		System.out.println("<<엔터를 입력하면 이전 화면으로 이동합니다.>>");
 		while (scan.nextLine().isEmpty()) {
+			// 이동 
 		    PointManagementView pointManagementView = new PointManagementView();
 		    pointManagementView.showPointManagement(findNameById(Member.id), findAccountById(Member.id), findPointById(Member.id));
 		}

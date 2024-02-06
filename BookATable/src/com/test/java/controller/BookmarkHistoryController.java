@@ -16,33 +16,27 @@ import com.test.java.view.MoveStorePageView;
 public class BookmarkHistoryController {
 
 	
+	
 	public void bookmarkHistory() {
 
 		
+		String UserId = Member.id;
+		String licenseNumber = findBookmarkLicenseById(UserId);
 		
-		String id = Member.id;		
-//		String licenseNumber = findBookmarkLicenseById(userId);
-//		
-//		Store selected = StoreRepository.findOneByName(licenseNumber); 
-//		
-//		// 상호명
-//		String storeName = selected.getStoreName();
-//		// 전화번호
-//		String telPhone = selected.getStoreTelNumber();
-//		// 메뉴
-//		String menu = findMenu(licenseNumber);
+		Store selected = StoreRepository.findOneByName(licenseNumber); 
+		
+		// 상호명
+		String storeName = selected.getStoreName();
+		// 전화번호
+		String telPhone = selected.getStoreTelNumber();
+		// 메뉴
+		String menu = findMenu(licenseNumber);
 		
 		BookmarkHistoryView.showBookmarkHistory(findNameById(Member.id)
-												, findStoreNameById(Member.id)
-												, findStoreTelNumberById(Member.id)
-												, findMenuNameById(Member.id));
+												, storeName
+												, telPhone
+												, menu);
 		
-<<<<<<< HEAD
-		System.out.println(findBookmarkLicenseById(Member.id)); // null로 나오네? 
-		System.out.println(Member.id); // 정상적으로 나옴. 
-		
-=======
->>>>>>> 510bfb6fa6a9d9a4556e01a1c6dd39594622df9e
 		boolean loop = true;
 		while(loop) {
 			BookmarkHistoryView.showSelectBox();
@@ -51,8 +45,9 @@ public class BookmarkHistoryController {
 			switch(choice) {
 			// 상세페이지 보기
 			case 1:
-				MoveStorePageController moveStorePageController = new MoveStorePageController();
-				moveStorePageController.moveStorePage();
+//				MoveStorePageController moveStorePageController = new MoveStorePageController();
+//				moveStorePageController.moveStorePage();
+				moveStorePage();
 				break;
 			// 즐겨찾기 삭제 
 			case 2:
@@ -70,58 +65,55 @@ public class BookmarkHistoryController {
 	
 
 	// 아이디로 사업자등록번호 찾기
-	private String findBookmarkLicenseById(String id) {
+	private String findBookmarkLicenseById(String UserId) {
 	for(Bookmark bookmark : Data.bookmarkList) {
-		if (bookmark.getUserId().equals(id)) {
+		if (bookmark.getUserId().equals(UserId)) {
 					return bookmark.getLicenseNumber();
-					
 			}
 		}
 	return null;
 	}
-
-
 	
-	private String findMenuNameById(String id) {
-		for(Bookmark b : Data.bookmarkList) {
-			if (b.getUserId().equals(id)) {
-				for(Menu m : Data.menuList) {
-					if (m.getLicenseNumber().equals(b.getLicenseNumber())) {
-						return m.getMenuName();
-					}
-				}
-			}
-		}
-		return null;
-	}
-
-
-
-	private String findStoreTelNumberById(String id) {
-		for(Bookmark b : Data.bookmarkList) {
-			if (b.getUserId().equals(id)) {
-				for(Store s : Data.storeList) {
-					if (s.getLicenseNumber().equals(b.getLicenseNumber())) {
-						return s.getStoreTelNumber();
-					}
-				}
-			}
-		}
-		return null;
-	}
-
-	private String findStoreNameById(String id) {
-		for(Bookmark b : Data.bookmarkList) {
-			if (b.getUserId().equals(id)) {
-				for(Store s : Data.storeList) {
-					if (s.getLicenseNumber().equals(b.getLicenseNumber())) {
-						return s.getStoreName();
-					}
-				}
-			}
-		}
-		return null;
-	}
+//	private String findMenuNameById(String id) {
+//		for(Bookmark b : Data.bookmarkList) {
+//			if (b.getUserId().equals(id)) {
+//				for(Menu m : Data.menuList) {
+//					if (m.getLicenseNumber().equals(b.getLicenseNumber())) {
+//						return m.getMenuName();
+//					}
+//				}
+//			}
+//		}
+//		return null;
+//	}
+//
+//
+//
+//	private String findStoreTelNumberById(String id) {
+//		for(Bookmark b : Data.bookmarkList) {
+//			if (b.getUserId().equals(id)) {
+//				for(Store s : Data.storeList) {
+//					if (s.getLicenseNumber().equals(b.getLicenseNumber())) {
+//						return s.getStoreTelNumber();
+//					}
+//				}
+//			}
+//		}
+//		return null;
+//	}
+//
+//	private String findStoreNameById(String id) {
+//		for(Bookmark b : Data.bookmarkList) {
+//			if (b.getUserId().equals(id)) {
+//				for(Store s : Data.storeList) {
+//					if (s.getLicenseNumber().equals(b.getLicenseNumber())) {
+//						return s.getStoreName();
+//					}
+//				}
+//			}
+//		}
+//		return null;
+//	}
 
 	private String findNameById(String id) {
 		for(Member u : Data.memberList) {
@@ -133,6 +125,51 @@ public class BookmarkHistoryController {
 		}
 	
 	
+	
+	
+	// 상세페이지 이동
+	public void moveStorePage() {
+		
+		MoveStorePageView moveStorePageView = new MoveStorePageView();
+		
+		String storeName = moveStorePageView.getStoreName();
+		
+		Store selected = StoreRepository.findOneByName(storeName);
+		
+		// 상호명으로 음식점 정보 조회(전화번호)
+		String telPhone = selected.getStoreTelNumber();
+		// 주소 조회
+		String address = selected.getAddress();
+		// 사업자번호
+		String licenseNumber = selected.getLicenseNumber();
+		// 테이블 조회 (테이블)
+		int table = findTable(licenseNumber);
+		// 평점 조회
+		double score = selected.getScore();
+		// 음식분류 조회
+		String menuCategory = selected.getMenuCategory();
+		// 메뉴 출력
+		String menu = findMenu(licenseNumber);
+		
+		
+		if (storeName != null) {
+			moveStorePageView.showStorePage(storeName, telPhone, address, menuCategory, menu, table, score);
+		} else {
+			System.out.println("해당 음식점이 존재하지 않습니다.");
+		}
+		
+		System.out.println("<<엔터를 입력하면, 이전 화면으로 이동합니다.>>");
+		
+		
+		// 엔터 입력 대기
+		waitForEnter();
+		
+		// 이전 화면 이동
+		BookmarkHistoryController bookmarkHistoryController = new BookmarkHistoryController();
+		bookmarkHistoryController.bookmarkHistory();
+		
+	}
+
 	private String findMenu(String licenseNumber) {
 		for (Menu menu : Data.menuList) {
 			if (menu.getLicenseNumber().equals(licenseNumber)) {
@@ -141,7 +178,23 @@ public class BookmarkHistoryController {
 		}
 		return null;
 	}
-	
+
+
+	private int findTable(String licenseNumber) {
+		for (Table table : Data.tableList) {
+			if (table.getLicenseNumber().equals(licenseNumber)) {
+				return table.getTableCapacity(); 
+			}
+		}
+		return 0;
+	}
+
+
+	private void waitForEnter() {
+		Scanner scan = new Scanner(System.in);
+		scan.nextLine(); // 사용자가 엔터를 입력할 때까지 대기
+		
+	}	
 	
 	
 	

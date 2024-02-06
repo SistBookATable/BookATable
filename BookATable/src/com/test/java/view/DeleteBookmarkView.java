@@ -14,11 +14,4 @@ public class DeleteBookmarkView {
 		return storeName;
 	}
 	
-	public void message() {
-		
-		System.out.println("즐겨찾기 삭제되었습니다.");
-		
-		
-	}
-
 }

@@ -28,6 +28,7 @@ import com.test.java.model.Table;
 import com.test.java.model.User;
 
 public class Data {
+
 	
 	//여러개면 Path 클래스를 만들어서 넣는게 좋음
 	private final static String USER = "dat"+File.separator+"user.txt";
@@ -232,6 +233,7 @@ public class Data {
 				
 				String[] tmp = line.split(",");
 				Faq faq = new Faq(Integer.parseInt(tmp[0]),tmp[1],tmp[2],tmp[3]);
+				System.out.println(faq);
 				faqList.add(faq);
 			}
 			

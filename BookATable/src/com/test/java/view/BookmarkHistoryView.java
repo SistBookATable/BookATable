@@ -27,7 +27,6 @@ public class BookmarkHistoryView {
 		
 		String body = String.format("%10s%10s%10s", storeName, storeTelNumber, MenuName);
 		System.out.println(body);
-		
 	}
 
 	public static void showSelectBox(){

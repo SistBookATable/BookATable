@@ -11,30 +11,21 @@ import com.test.java.repository.Data;
 
 public class SignInUserManagementView {
 
-	public void findAllUser() {
+	public void showAllUser(ArrayList<User> userList) {
 
-		System.out.println();
-		System.out.println();
-		System.out.println("┌───────────────────────────────────────────────────────┐");
-		System.out.println("|                  회원 관리 - 가입 회원 조회                <");
-		System.out.println("└───────────────────────────────────────────────────────┘");
-		System.out.println();
-		
 		String header = String.format("%15s%15s%18s%15s%15s%15s", "[회원ID]","[가입일]","[회원 이름]","[예약 횟수]","[노쇼 횟수]","[정지 여부]");
 		System.out.println(header);
 		
-		for(Member m : Data.memberList) {
+		for(User u : userList) {
 			String tmp = "";
-			if(m.getUserType() == 1) {
-				tmp = String.format("%15s%18s%15s%15d회%15d회%19s", 
-						m.getId(),
-						m.getSignIn(),
-						m.getName(),
-						((User)m).getReservationCount(),
-						((User)m).getNoshowCount(),
-						(((User)m).getNoshowCount() >= 10)? "정지회원입니다.":" ");
-				System.out.println(tmp);
-			}
+			tmp = String.format("%15s%18s%15s%15d회%15d회%19s", 
+					u.getId(),
+					u.getSignIn(),
+					u.getName(),
+					u.getReservationCount(),
+					u.getNoshowCount(),
+					(u.getNoshowCount() >= 10)? "정지회원입니다.":" ");
+			System.out.println(tmp);
 			
 		}
 	}
@@ -52,10 +43,7 @@ public class SignInUserManagementView {
 	
 
 	public int getSelectType() {
-		Scanner scan = new Scanner(System.in);
-		int tmp = scan.nextInt();
-		scan.nextLine();
-		return tmp;
+		return View.getSelectType();
 	}
 
 	public String getId() {
@@ -100,7 +88,7 @@ public class SignInUserManagementView {
 		System.out.println();
 	}
 
-	public void incorrectInputMessage() {
+	public void incorrectIdMessage() {
 		System.out.println();
 		System.out.println("잘못된 id입니다.");
 		System.out.println();
@@ -110,6 +98,29 @@ public class SignInUserManagementView {
 
 	public void showDetailCard(ArrayList<Reservation> reservations) {		
 
+		
+	}
+
+	public void showTitle() {
+		System.out.println();
+		System.out.println();
+		System.out.println("┌───────────────────────────────────────────────────────┐");
+		System.out.println("|                  회원 관리 - 가입 회원 조회                <");
+		System.out.println("└───────────────────────────────────────────────────────┘");
+		System.out.println();
+		
+	}
+
+	public void incorrectInputMessage() {
+		System.out.println("==========================================================================================");
+		System.out.println();
+		System.out.println("        유효하지 않은 입력값입니다.");
+		System.out.println("     (1, 0) 중에 하나를 입력해주세요");
+		System.out.println();
+		System.out.println("==========================================================================================");
+		System.out.println();
+		
+		View.pause();
 		
 	}
 

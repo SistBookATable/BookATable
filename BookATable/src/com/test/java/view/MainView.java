@@ -69,14 +69,8 @@ public class MainView {
 	 * 선택한 인덱스 반환
 	 */
 	public static int get() {
-		
-		Scanner scan = new Scanner(System.in);
-		int temp = 0;
-		System.out.print("선택(번호): ");
-		
-		temp = scan.nextInt();
-		scan.nextLine();
-		return temp;
+		System.out.print("입력 (번호) : ");
+		return View.getSelectType();
 	}
 
 

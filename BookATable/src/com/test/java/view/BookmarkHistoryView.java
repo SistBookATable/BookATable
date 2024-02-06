@@ -26,8 +26,6 @@ public class BookmarkHistoryView {
 		System.out.println(header);
 		
 		String body = String.format("%10s%10s%10s", storeName, storeTelNumber, MenuName);
-		System.out.println(body);
-		
 		
 	}
 

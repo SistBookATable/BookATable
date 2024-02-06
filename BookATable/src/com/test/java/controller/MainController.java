@@ -149,8 +149,9 @@ public class MainController {
 		Data.loadStore();
 		Data.loadReview();
 		Data.loadReservation();
-    //Data.loadBookmark();
-    Data.loadFaq();
+		Data.loadStore();
+		Data.loadBookmark();
+		Data.loadFaq();
 
 	}
 }

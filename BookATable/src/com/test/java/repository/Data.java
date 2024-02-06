@@ -481,7 +481,7 @@ public class Data {
 				User user = new User(Integer.parseInt(tmp[0]), tmp[1], tmp[2], tmp[3], tmp[4], tmp[5]
 									, tmp[6], tmp[7]
 									, Integer.parseInt(tmp[8]), Integer.parseInt(tmp[9]), Integer.parseInt(tmp[10]), tmp[11], tmp[12],tmp[13]);
-				
+				System.out.println(user);
 				memberList.add(user);
 			}
 			

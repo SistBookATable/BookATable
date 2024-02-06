@@ -24,9 +24,10 @@ public class BookmarkHistoryView {
 		
 		String header = String.format("%10s%10s%10s", "[상호명]","[전화번호]","[메뉴]");
 		System.out.println(header);
-		
+
 		String body = String.format("%10s%10s%10s", storeName, storeTelNumber, MenuName);
 		System.out.println(body);
+
 	}
 
 	public static void showSelectBox(){
@@ -49,8 +50,5 @@ public class BookmarkHistoryView {
 		scan.nextLine();
 		return temp;
 	}
-
-	
-
 
 }

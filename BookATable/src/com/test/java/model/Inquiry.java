@@ -16,7 +16,7 @@ public class Inquiry {
 	public Inquiry(int inquiryNumber, String userId, String title, String content, int type, String dateWritten,
 			String adminId, String answer) {
 		super();
-		this.inquiryNumber = inquiryNumber;
+		this.inquiryNumber = COUNT++;
 		this.userId = userId;
 		this.title = title;
 		this.content = content;

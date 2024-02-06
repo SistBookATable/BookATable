@@ -36,6 +36,8 @@ public class MenuEditController {
 				System.out.println(n.getMenuName());
 			}
 		}
+		MenuManagementController back = new MenuManagementController();
+		back.showMenuManagement(licenseNumber);
 		
 		
 	}

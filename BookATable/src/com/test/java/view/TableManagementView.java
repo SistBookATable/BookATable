@@ -13,6 +13,7 @@ public void showChoice(){
 		System.out.println("■           3. 테이블 삭제		  		    ■");
 		System.out.println("■           4. 예약 불가 테이블 지정	    	■");
 		System.out.println("■           5. 예약 불가 테이블 해제	    	■");
+		System.out.println("■           0. 이전 화면으로	    	■");
 		System.out.println();
 		System.out.println("==========================================================================================");
 		System.out.println();

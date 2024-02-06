@@ -7,7 +7,9 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
+
 import java.util.Collections;
+
 
 import com.test.java.model.Admin;
 import com.test.java.model.BlackList;
@@ -371,6 +373,7 @@ public class Data {
 
 				Menu menu = new Menu(tmp[0], tmp[1], Integer.parseInt(tmp[2]));
 				menuList.add(menu);
+
 			}
 
 			reader.close();
@@ -407,10 +410,13 @@ public class Data {
 			while((line = reader.readLine()) != null){
 
 				String[] tmp = line.split(",");
+
 				Store store = new Store(tmp[0],tmp[1],tmp[2],tmp[3],tmp[4],
 										Double.parseDouble(tmp[5]),Integer.parseInt(tmp[6]));
 				storeList.add(store);
+				System.out.println(store);
 			}
+			
 			reader.close();
 		} catch (Exception e) {
 			// TODO: handle exception
@@ -563,6 +569,25 @@ public class Data {
 			e.printStackTrace();
 		}
 		
+	}
+	
+	public static void loadTable() {
+		try {
+			BufferedReader reader = new BufferedReader(new FileReader(Data.TABLE));
+			
+			String line = null;
+			
+			while((line = reader.readLine()) != null) {
+				String[] tmp = line.split(",");
+				Table table = new Table(tmp[0], Integer.parseInt(tmp[1]),Integer.parseInt(tmp[2]),Boolean.parseBoolean(tmp[3]));
+				tableList.add(table);
+			}
+			
+			reader.close();
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 	
 	

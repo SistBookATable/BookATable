@@ -33,11 +33,14 @@ public void showTableManagement(String licenseNumber) {
 				break;
 				
 			case 4:
+				UnableReservationTableController unableResrvationTableController=new UnableReservationTableController();
+				unableResrvationTableController.unableReservation(licenseNumber);
 				
 				
 				break;	
 			case 5:
-				
+				UnableCancelTableController unableCancelTableController = new UnableCancelTableController();
+				unableCancelTableController.unableCancel(licenseNumber);
 				
 				break;
 				
@@ -45,6 +48,8 @@ public void showTableManagement(String licenseNumber) {
 			
 
 			case 0:
+				OperationalInfoManagementController back= new OperationalInfoManagementController();
+				back.operationalInfoManagement(licenseNumber);
 
 			}
 		}

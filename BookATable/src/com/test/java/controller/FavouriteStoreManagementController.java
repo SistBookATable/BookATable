@@ -11,14 +11,13 @@ public class FavouriteStoreManagementController {
 
 		
 		FavoriteStoreManagementView favouriteStoreManagementView = new FavoriteStoreManagementView();
-		favouriteStoreManagementView.showFavoriteStoreManagement();
-		
-		int choice = favouriteStoreManagementView.get();
-		Scanner scan = new Scanner(System.in);
 		
 		boolean loop = true;
 		
 		while (loop) {
+			favouriteStoreManagementView.showFavoriteStoreManagement();
+			int choice = favouriteStoreManagementView.get();
+			
 			switch (choice) {
 			// 작성 리뷰 조회		
 			case 1: 
@@ -36,8 +35,8 @@ public class FavouriteStoreManagementController {
 				deleteBookmarkController.deleteBookmark();
 				break;
 			// 이전화면
-			case 0: UserMyPageController userMyPageController = new UserMyPageController();
-			 userMyPageController.userMyPage();
+			case 0: 
+				loop = false;
 				break;
 			
 			}

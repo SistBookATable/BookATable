@@ -1,5 +1,7 @@
 package com.test.java.repository;
 
+import java.util.ArrayList;
+
 import com.test.java.model.Review;
 
 public class ReviewRepository {
@@ -29,5 +31,16 @@ public class ReviewRepository {
 			}
 		}
 		return null;
+	}
+
+	public static ArrayList<Review> findAllByLisenceNumber(String lisenceNumber) {
+		ArrayList<Review> tmp = new ArrayList<>();
+		for(Review r : Data.reviewList) {
+			if(r.getLicenseNumber().equals(lisenceNumber)) {
+				tmp.add(r);
+			}
+		}
+		
+		return tmp;
 	}
 }

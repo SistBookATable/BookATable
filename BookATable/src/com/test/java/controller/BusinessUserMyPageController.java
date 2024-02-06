@@ -25,6 +25,8 @@ public class BusinessUserMyPageController {
 				revenueManagementController.revenueManagement();
 				break;
 			case 3:
+				SalesManagementController salesManagementController = new SalesManagementController();
+				salesManagementController.salesManagemnet();
 				break;
 			case 4:
 				OperationalInfoManagementController operationalInfoManagementController= new OperationalInfoManagementController();
@@ -35,6 +37,8 @@ public class BusinessUserMyPageController {
 				businessUserInquiryController.showChoice();
 				break;
 			case 6:
+				MembershipWithdrawalController membershipWithdrawalController = new MembershipWithdrawalController();
+				membershipWithdrawalController.membershipWithdrawal();
 				break;
 			case 0:
 				loop = false;

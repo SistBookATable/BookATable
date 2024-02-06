@@ -2,6 +2,7 @@ package com.test.java.model;
 
 
 public class Request {
+	private static int REQUESTCOUNT = 1;
 	private int requestNumber;
 	private int reviewNumber;
 	private String licenseNumber;
@@ -14,7 +15,7 @@ public class Request {
 			String dateWritten, String permission) {
 
 		super();
-		this.requestNumber = requestNumber;
+		this.requestNumber = REQUESTCOUNT++;
 		this.reviewNumber = reviewNumber;
 		this.licenseNumber = licenseNumber;
 		this.reason = reason;

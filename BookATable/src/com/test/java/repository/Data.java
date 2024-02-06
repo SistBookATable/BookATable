@@ -107,6 +107,7 @@ public class Data {
 				String[] tmp = line.split(",");
 				Bookmark bookmark = new Bookmark(tmp[0], tmp[1]);
 				bookmarkList.add(bookmark);
+				System.out.println(bookmarkList);
 			}
 			
 			reader.close();

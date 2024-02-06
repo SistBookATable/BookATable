@@ -9,7 +9,7 @@ public class Store {
 	private String storeTelNumber;
 	private String menuCategory;
 	private String address;
-	private int score;
+	private double score;
 	private int distanceFrom;
 	
 	private String menuName;
@@ -27,8 +27,8 @@ public class Store {
 		this.address = address;
 		
 		// TODO distanceFrom 주소 사용해서 구하기
-		this.score = 0 ;
-		this.menuCategory = null;
+		this.score = score;
+		this.menuCategory = menuCategory;
 		this.distanceFrom = 0;
 		
 	}
@@ -42,7 +42,7 @@ public class Store {
 		this.menuCategory = menuCategory;
 		
 		// TODO distanceFrom 주소 사용해서 구하기
-		this.score = 0;
+		this.score = score;
 		this.distanceFrom = 0;
 	}
 	

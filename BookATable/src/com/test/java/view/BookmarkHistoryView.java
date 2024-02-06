@@ -39,7 +39,6 @@ public class BookmarkHistoryView {
 							 s.getmenuName());
 							System.out.println(tmp);
 		
-   
         }
 			
     }

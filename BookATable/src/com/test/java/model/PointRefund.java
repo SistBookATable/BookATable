@@ -28,8 +28,4 @@ public class PointRefund {
 		return pointAmount;
 	}
 
-	public void setPointAmount(int pointAmount) {
-		this.pointAmount = pointAmount;
-	}
-
 }

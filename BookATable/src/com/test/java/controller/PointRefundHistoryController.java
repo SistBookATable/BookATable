@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 import com.test.java.model.Member;
 import com.test.java.model.PointRefund;
-import com.test.java.model.PointUsage;
 import com.test.java.model.User;
 import com.test.java.repository.Data;
 import com.test.java.view.PointRefundHistoryView;
@@ -45,7 +44,7 @@ public class PointRefundHistoryController {
 		PointRefundController pointRefundController = new PointRefundController();
 		pointRefundController.pointRefund();}
 		
-	
+	}
 
 	private User findUserById(String id) {
 		for (Member member : Data.memberList) {
@@ -71,8 +70,6 @@ public class PointRefundHistoryController {
 		return 0;
 	}
 
-	
-	
 	private String findRefundDateById(String id) {
 		String refundDate = "";
 		for (PointRefund p : Data.pointRefundList) {

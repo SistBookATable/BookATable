@@ -1,15 +1,17 @@
 package com.test.java.repository;
 
+
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Collections;
 
 import com.test.java.model.Admin;
 import com.test.java.model.BlackList;
+import com.test.java.model.Bookmark;
 import com.test.java.model.BusinessUser;
 import com.test.java.model.Faq;
 import com.test.java.model.Inquiry;
@@ -21,7 +23,6 @@ import com.test.java.model.PointUsage;
 import com.test.java.model.Request;
 import com.test.java.model.Reservation;
 import com.test.java.model.Review;
-//import com.test.java.model.StopUser;
 import com.test.java.model.Store;
 import com.test.java.model.Table;
 import com.test.java.model.User;
@@ -29,14 +30,12 @@ import com.test.java.model.User;
 public class Data {
 	
 	//여러개면 Path 클래스를 만들어서 넣는게 좋음
-	private final static String USER = "dat\\user.txt";
-	private final static String BUSINESSUSER = "dat\\BusinessUser.txt";
-	private final static String ADMIN = "dat\\Admin.txt";
+	private final static String USER = "dat"+File.separator+"user.txt";
+	private final static String BUSINESSUSER = "dat"+File.separator+"businessUser.txt";
+	private final static String ADMIN = "dat"+File.separator+"admin.txt";
 	
-	private final static String STORE = "dat\\store.txt";
+	private final static String STORE = "dat"+File.separator+"store.txt";
 	
-
-
 	private final static String BLACKLIST = "dat"+File.separator+"blackList.txt";
 	private final static String VIP = "dat"+File.separator+"vip.txt";
 	private final static String TABLE = "dat"+File.separator+"table.txt";
@@ -51,98 +50,29 @@ public class Data {
 	private final static String BOOKMARK = "dat"+File.separator+"bookmark.txt";
 	private final static String POINTREFUND = "dat"+File.separator+"pointRefund.txt";
 	
-
 	
 	
-	//필요한 자료들
+	//load+save 완료
 	public static ArrayList<Member> memberList = new ArrayList<>();
 	public static ArrayList<User> userList=new ArrayList<>();
 	public static ArrayList<Store> storeList = new ArrayList<>();
 	public static ArrayList<Menu> menuList = new ArrayList<>();
 	public static ArrayList<Reservation> reservationList = new ArrayList<>();
 	public static ArrayList<BlackList> blackListList = new ArrayList<>();
-	public static ArrayList<Inquiry> inquiryList = new ArrayList<>();
+	//load 완료
 	public static ArrayList<Faq> faqList = new ArrayList<>();
 	public static ArrayList<OperatingHours> operatingHoursList = new ArrayList<>();
 
-
-
+	public static ArrayList<Inquiry> inquiryList = new ArrayList<>();
 	public static ArrayList<Bookmark> bookmarkList = new ArrayList<>();
 	public static ArrayList<PointRefund> pointRefundList = new ArrayList<>();
 
 	
 	//TODO 하단에 loadPointUsage만들다 만거 있음
-
 	public static ArrayList<PointUsage> pointList = new ArrayList<>();
-	public static ArrayList<CompletedList> compleatedList = new ArrayList<>();
 	public static ArrayList<Request> requestList = new ArrayList<>();
-	public static ArrayList<ReservationCancel> reservationCancelList = new ArrayList<>();
 	public static ArrayList<Review> reviewList = new ArrayList<>();
-	public static ArrayList<Review> reviewCountList = new ArrayList<>();
-	//public static ArrayList<StopUser> stopUserList = new ArrayList<>();
 	public static ArrayList<Table> tableList = new ArrayList<>();
-
-	public static ArrayList<WriteReview> writeReviewList = new ArrayList<>();
-	public static String path1 = "dat\review.txt";
-  public static String path2 = "dat\store.txt";
-    
-    public static void reviewCount() {
-        //path1에서 사업자등록번호만 추출
-        //path2에서 사업자등록번호 추출
-        //path2의 
-        String path1 = "dat\review.txt";
-        String path2 = "dat\store.txt";
-        String lisenceNum;
-
-        ArrayList<String> reviewList = new ArrayList<String>();
-        ArrayList<String> reviewCountList = new ArrayList<String>();
-
-        try {
-
-            BufferedReader reader1 = new BufferedReader(new FileReader(Data.REVIEW));
-
-            String line = null;
-            while ((line = reader1.readLine()) != null) {
-                String[] temp = line.split(",");
-                lisenceNum=temp[2];
-                reviewList.add(lisenceNum);
-            }
-
-            reader1.close();
-        } catch (Exception e) {
-            System.out.println("Data.load");
-            e.printStackTrace();
-        }
-
-        try {
-            BufferedReader reader2 = new BufferedReader(new FileReader(Data.STORE));
-            String line = null;
-            while ((line = reader2.readLine()) != null) {
-                String[] temp = line.split(",");
-                lisenceNum=temp[0];
-                String storeName = temp[1];
-                int i = 0;
-                for(String review : reviewList) {
-                    if(review.indexOf(lisenceNum)>-1) {
-                        i++;
-                    }
-
-                }
-                String result = String.format("[리뷰]%d개 ,[상호명] %s", i,storeName);
-                reviewCountList.add(result);
-            }
-            reader2.close();
-        } catch (Exception e) {
-            // TODO: handle exception
-        }
-        Collections.sort(reviewCountList,Collections.reverseOrder());
-        for(String output : reviewCountList) {
-            System.out.println(output);
-        }
-
-    }
-	public static void loadreviewCount() {
-
 	
 	
 	
@@ -219,17 +149,28 @@ public class Data {
 	}
 	
 	public static void loadReview() {
-
 		try {
-			BufferedReader reader = new BufferedReader(new FileReader(Data.REVIEW));
+			BufferedReader reader
+			= new BufferedReader(new FileReader(Data.REVIEW));
 			
 			String line = null;
 			
 			while((line = reader.readLine()) != null) {
+				
 				String[] tmp = line.split(",");
-				Review review = new Review(Integer.parseInt(tmp[0]), tmp[1], tmp[2], tmp[3], tmp[4], Double.parseDouble(tmp[5]), Integer.parseInt(tmp[6]));
+				Review review = new Review(
+						Integer.parseInt(tmp[0]),
+						tmp[1],
+						tmp[2],
+						tmp[3],
+						tmp[4],
+						Double.parseDouble(tmp[5]),
+						Integer.parseInt(tmp[6]));
 				reviewList.add(review);
 			}
+			
+			reader.close();
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -247,7 +188,6 @@ public class Data {
 				String[] tmp = line.split(",");
 				OperatingHours operatingHours = new OperatingHours(tmp[0],tmp[1],tmp[2],tmp[3],tmp[4],tmp[5]);
 				operatingHoursList.add(operatingHours);
-				System.out.println(pointList);
 			}
 			
 			reader.close();
@@ -293,7 +233,6 @@ public class Data {
 				String[] tmp = line.split(",");
 				Faq faq = new Faq(Integer.parseInt(tmp[0]),tmp[1],tmp[2],tmp[3]);
 				faqList.add(faq);
-				System.out.println(faq);
 			}
 			
 			reader.close();
@@ -382,7 +321,7 @@ public class Data {
 			}
 			
 			Reservation reservation = new Reservation(Integer.parseInt(tmp[0]),tmp[1],tmp[2],tmp[3],tmp[4]
-													,Integer.parseInt(tmp[5]),Integer.parseInt(tmp[6]),tmp[7], tmp[8]);
+													,Integer.parseInt(tmp[5]),Integer.parseInt(tmp[6]),tmp[7], bookedMenuList);
 			
 			reservationList.add(reservation);
 		}
@@ -422,10 +361,8 @@ public class Data {
 		}
 		
 	}
-
 	public static void loadMenu() {
 		try {
-
 			BufferedReader reader
 			= new BufferedReader(new FileReader(Data.MENU));
 		
@@ -442,20 +379,9 @@ public class Data {
 				System.out.println(menuList);
 			}
 
-			String line = null;
-
-			while ((line = reader.readLine()) != null) {
-
-				String[] tmp = line.split(",");
-
-				Menu menu = new Menu(tmp[0], tmp[1], Integer.parseInt(tmp[2]));
-				menuList.add(menu);
-				
-			}
-
-			reader.close();
+		reader.close();
 		} catch (Exception e) {
-			e.printStackTrace();
+			// TODO: handle exception
 		}
 	}
 	
@@ -492,7 +418,6 @@ public class Data {
 				Store store = new Store (tmp[0],tmp[1],tmp[2],tmp[3],tmp[4],
 										Double.parseDouble(tmp[5]),Integer.parseInt(tmp[6]));
 				storeList.add(store);
-				//System.out.println(storeList);
 			}
 			reader.close();
 		} catch (Exception e) {
@@ -582,7 +507,6 @@ public class Data {
 				BusinessUser businessUser = new BusinessUser(Integer.parseInt(tmp[0]), tmp[1], tmp[2], tmp[3]
 															, tmp[4], tmp[5], tmp[6],  tmp[7]
 															, tmp[8], tmp[9]);
-				
 				memberList.add(businessUser);
 				System.out.println(memberList);
 			}

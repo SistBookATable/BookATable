@@ -49,10 +49,6 @@ public class Review {
 	}
 	
 	
-	@Override
-	public String toString() {
-		return "Review [reviewNumber=" + reviewNumber + ", userId=" + userId + ", licenseNumber=" + licenseNumber
-				+ ", dateWritten=" + dateWritten + ", content=" + content + ", score=" + score + ", reservationNumber="
-				+ reservationNumber + "]";
-	}	
+	
+	
 }

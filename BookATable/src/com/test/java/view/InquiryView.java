@@ -35,7 +35,7 @@ public class InquiryView {
 		System.out.println("└───────────────────────────────────────────────────────┘");
 		System.out.println();
 		
-		String header = String.format("%15s%15s%15s%15s%20s%15s", "[문의 번호]","[작성일]","[문의자]","[회원타입]","[제목]","[답변여부]");
+		String header = String.format("%6s%15s\t%10s\t\t%-15s%-15s%-20s", "[문의 번호]","[답변여부]","[작성일]","[문의자]","[회원타입]","[제목]");
 		System.out.println(header);
 		
 		if(Data.inquiryList.isEmpty()) {
@@ -49,13 +49,13 @@ public class InquiryView {
 
 			for(Inquiry i : Data.inquiryList) {
 				String tmp = "";
-				tmp = String.format("%15s%15s%15s%15s%20s%15s",
+				tmp = String.format("%6s%18s%20s\t%15s%15s\t\t%-20s",
 						i.getInquiryNumber(),
+						i.getAnswer().equals("null")? "답변 대기":"답변 완료",
 						i.getDateWritten(),
 						i.getUserId(),
-						i.getType(),
-						i.getAnswer(),
-						i.getAnswer().equals("null")? "답변 대기":"답변 완료");
+						i.getType().equals("1")? "일반회원":"업체회원",
+						i.getTitle());
 
 				System.out.println(tmp);
 				

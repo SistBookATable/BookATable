@@ -1,5 +1,6 @@
 package com.test.java.controller;
 
+import com.test.java.model.Inquiry;
 import com.test.java.model.Member;
 import com.test.java.model.Store;
 import com.test.java.repository.Data;
@@ -77,6 +78,8 @@ public class MainController {
 				
 				switch(choice) {
 				case 1:
+					BusinessUserMyPageController businessUserMyPageController = new BusinessUserMyPageController();
+					businessUserMyPageController.businessUserMyPage();
 					break;
 				case 2:
 					LogOutController logOutController = new LogOutController();
@@ -107,6 +110,8 @@ public class MainController {
 					inquiryController.inquiryManagement();
 					break;
 				case 3:
+					RequestController requestController = new RequestController();
+					requestController.requestManagement();
 					break;
 				case 4:
 					LogOutController logOutController = new LogOutController();
@@ -131,7 +136,9 @@ public class MainController {
 		Data.loadAdmin();
 		Data.loadUser();
 		Data.loadBusinessUser();
+		Data.loadMenu();
 		Data.loadStore();
+		Data.loadreviewCount();
 //		for(Store s : Data.storeList) {
 //			System.out.println(s);
 //		}
@@ -140,5 +147,13 @@ public class MainController {
 //=======
 		
 //>>>>>>> Stashed changes
+
+//		Data.loadInquiry();
+//		Data.loadRequest();
+//		Data.loadReview();
+//		Data.loadReservation();
+//		Data.loadStore();
+//		Data.loadMenu();
+
 	}
 }

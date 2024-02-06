@@ -45,6 +45,14 @@ public class Menu {
 		// TODO Auto-generated method stub
 		return this.store;
 	}
+
+
+	@Override
+	public String toString() {
+		return "Menu [store=" + store + ", licenseNumber=" + licenseNumber + ", menuName=" + menuName + ", price="
+				+ price + "]";
+	}
+	
 	
 	
 }

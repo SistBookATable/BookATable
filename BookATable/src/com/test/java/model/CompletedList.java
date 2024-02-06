@@ -4,9 +4,9 @@ import java.util.Calendar;
 
 public class CompletedList {
 	
+	private Calendar reservationDate;
 	private String storeName;
 	private int numOfPeople;
-	private Calendar reservationDate;
 	private int reviewCheck;
 	private String state;
 	

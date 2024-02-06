@@ -89,14 +89,14 @@ public class StoreView {
 
    }
 
-   public static String getStoreName() {
+   public String getStoreName() {
       Scanner sc = new Scanner(System.in);
       System.out.print("상호명을 입력해주세요: ");
       String temp = sc.nextLine();
       return temp;
    }
 
-   public static String getmenuName() {
+   public String getmenuName() {
       Scanner sc = new Scanner(System.in);
       System.out.println("메뉴명을 입력해주세요: ");
       String temp = sc.nextLine();

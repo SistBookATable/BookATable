@@ -28,7 +28,6 @@ public class StoreController {
 	public void run() {
 	StoreView storeView = new StoreView();
 
-
 		boolean loop = true;
 		while(loop) {
 
@@ -40,7 +39,7 @@ public class StoreController {
 				System.out.println("이전 화면으로 이동합니다.");
 				return;
 			case 1:
-				String storeName = StoreView.getStoreName();
+				String storeName = storeView.getStoreName();
 				searched = searchStoreName(storeName);
 				storeView.show(searched);
 				processSortingOption(searched);
@@ -93,7 +92,7 @@ public class StoreController {
 				storeView.reservationNumber();
 				choice = sc.nextInt();
 				reservationController.reservation(searched.get(choice-1).getLicenseNumber());
-//				System.out.println(searched.get(choice-1).getLicenseNumber());
+				System.out.println(searched.get(choice-1).getLicenseNumber());
 				break;
 				
 //				for(int i=0; i<searched.size(); i++) {
@@ -137,9 +136,10 @@ public class StoreController {
 			//메뉴 이름이 검색한 값과 같은지 확인
 			if(m.getMenuName().equals(menu)) {
 				String licenseNumber = m.getLicenseNumber();
+				System.out.println(licenseNumber);
 				//라이센스 넘버가 같은 스토어 찾기
 				for(Store store : Data.storeList) {
-
+					System.out.println("스토어 : " + store);
 					//라이센스 넘버가 같으면 tmp에 넣기
 					if(store.getLicenseNumber().equals(licenseNumber)) {
 						tmp.add(store);
@@ -157,6 +157,7 @@ public class StoreController {
 		String same = keyword;
 		for(Store store : Data.storeList) {
 			if(store.getStoreName().contains(same)) {
+				System.out.println(store);
 				tmp.add(store);
 			}
 		}

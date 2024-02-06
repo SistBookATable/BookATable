@@ -1,6 +1,5 @@
 package com.test.java.controller;
 
-import com.test.java.model.Inquiry;
 import com.test.java.model.Member;
 import com.test.java.model.Store;
 import com.test.java.repository.Data;
@@ -139,28 +138,22 @@ public class MainController {
 	}
 
 	public static void load() {
-		Data.loadOperatingHours();
-		Data.loadAdmin();
-		Data.loadUser();
-		Data.loadBusinessUser();
-		Data.loadMenu();
-		Data.loadStore();
-		Data.loadreviewCount();
-//		for(Store s : Data.storeList) {
-//			System.out.println(s);
-//		}
-//<<<<<<< Updated upstream
-
-//=======
-		
-//>>>>>>> Stashed changes
-
+//		Data.loadOperatingHours();
+//		Data.loadAdmin();
+//		Data.loadUser();
+//		Data.loadBusinessUser();
 //		Data.loadInquiry();
 //		Data.loadRequest();
 //		Data.loadReview();
 //		Data.loadReservation();
 //		Data.loadStore();
 //		Data.loadMenu();
-
+		Data.loadAdmin();
+		Data.loadUser();
+		Data.loadBusinessUser();
+		Data.loadMenu();
+		Data.loadStore();
+		Data.loadreviewCount();
+		
 	}
 }

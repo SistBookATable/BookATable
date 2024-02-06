@@ -6,6 +6,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 
 import com.test.java.model.Admin;
@@ -54,7 +55,6 @@ public class Data {
 	
 	//필요한 자료들
 	public static ArrayList<Member> memberList = new ArrayList<>();
-	public static ArrayList<User> userList = new ArrayList<>();
 	public static ArrayList<Store> storeList = new ArrayList<>();
 	public static ArrayList<Menu> menuList = new ArrayList<>();
 	public static ArrayList<Reservation> reservationList = new ArrayList<>();
@@ -345,7 +345,6 @@ public class Data {
 
 				Menu menu = new Menu(tmp[0], tmp[1], Integer.parseInt(tmp[2]));
 				menuList.add(menu);
-				
 			}
 
 			reader.close();
@@ -379,14 +378,14 @@ public class Data {
 			
 			String line = null;
 			
-			while((line = reader.readLine())!=null){
-				
+			while((line = reader.readLine()) != null){
+
 				String[] tmp = line.split(",");
-				
-				Store store = new Store (tmp[0],tmp[1],tmp[2],tmp[3],tmp[4],
+				System.out.println(Arrays.toString(tmp));
+				Store store = new Store(tmp[0],tmp[1],tmp[2],tmp[3],tmp[4],
 										Double.parseDouble(tmp[5]),Integer.parseInt(tmp[6]));
 				storeList.add(store);
-				//System.out.println(storeList);
+				System.out.println(store);
 			}
 			reader.close();
 		} catch (Exception e) {

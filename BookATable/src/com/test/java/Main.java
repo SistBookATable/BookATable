@@ -5,10 +5,8 @@ import com.test.java.repository.Data;
 
 public class Main {
 	public static void main(String[] args) {
-
 		MainController.load();
 		MainController.start();  
-		
 	}
 }
 

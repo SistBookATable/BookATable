@@ -45,7 +45,7 @@ public class LogInController {
 
 	}
 
-	private Object findNameById(String id) {
+	private String findNameById(String id) {
 		for (Member u : Data.memberList) {
 			if (u.getId().equals(id) && u.getSignOut().equals("null")) {
 				return u.getName();

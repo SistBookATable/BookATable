@@ -17,7 +17,7 @@ public class UserSignInView {
 		
 		Scanner scan = new Scanner(System.in);
 		String tmp = "";
-		System.out.print("주민번호 [000000-000000] : ");
+		System.out.print("주민번호 [000000-0000000] : ");
 		tmp = scan.nextLine();	
 		return tmp;
 	}
@@ -65,7 +65,6 @@ public class UserSignInView {
 
 	public static String getBank() {
 
-		
 		Scanner scan = new Scanner(System.in);
 		String tmp = "";
 		System.out.println("사용계좌 은행을 선택해 주세요");

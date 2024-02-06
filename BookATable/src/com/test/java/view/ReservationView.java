@@ -1,92 +1,216 @@
 package com.test.java.view;
 
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 
-import com.test.java.model.Request;
+import com.test.java.model.Menu;
 import com.test.java.model.Reservation;
+import com.test.java.model.Store;
+import com.test.java.model.User;
 import com.test.java.repository.Data;
 
 public class ReservationView {
 	
 	public int getReservationNum() {
-		
-		Scanner scan=new Scanner(System.in);
-		int tmp=0;
-		
-		while(true) {
-			System.out.print("인원 수(숫자) : ");
-			tmp=scan.nextInt();
-			//유효성 검사{
-		//
-			// break;    }
-			break;
-		}
-		
-		return tmp;
-	}
-	
-	public String getReservationDate() {
-			
-			Scanner scan=new Scanner(System.in);
-			String tmp="";
-			
-			while(true) {
-				//예약 달력
-				System.out.print("예약 날짜(월일 0000) : ");
-				tmp=scan.nextLine();
-				//유효성 검사{
-			//
-				// break;    }
-				break;
-			}
-			
-			return tmp;
-		}
-		
-	
-	public String getReservationTime() {
-		
-		Scanner scan=new Scanner(System.in);
-		String tmp="";
-		
-		while(true) {
-			//예약 타임 표
-			System.out.print("예약 시간(00:00) : ");
-			tmp=scan.nextLine();
-			//유효성 검사{
-		//
-			// break;    }
-			break;
-		}
-		
-		return tmp;
-	}
-	
-	
-	public String getReservationMenu() {
-			
-			Scanner scan=new Scanner(System.in);
-			String tmp="";
-			
-			while(true) {
-				//메뉴 리스트
-				System.out.print("예약 메뉴(메뉴 번호, 주문 개수) : ");
-				tmp=scan.nextLine();
-				//유효성 검사{
-			//
-				// break;    }
-				break;
-			}
-			
-			return tmp;
-		}
-	
-	public String showReservation(int num, String date, String time, String menu) {
-		String tmp="";
-		tmp=num+","+date+","+time+","+menu;
-		return tmp;
-	}
+	      
+	      Scanner scan=new Scanner(System.in);
+	      int tmp=0;
+	      
+	      while(true) {
+	         System.out.print("1. 인원 수(숫자) : ");
+	         tmp=scan.nextInt();
+	         //유효성 검사{
+	      //
+	         // break;    }
+	         break;
+	      }
+	      
+	      return tmp;
+	   }
+	   
+	   public String getReservationDate(String licenseNumber) {
+	         
+	         Scanner scan=new Scanner(System.in);
+	         String tmp="";
+	         
+	         while(true) {
+	            //예약 달력
+	            System.out.print("2. 예약 날짜(월일 0000) : ");
+	            tmp=scan.nextLine();
+	            //유효성 검사{
+	         //
+	            // break;    }
+	            break;
+	         }
+	         
+	         return tmp;
+	      }
+	      
+	   
+	   public String getReservationTime(String licenseNumber) {
+	      
+	      Scanner scan=new Scanner(System.in);
+	      String tmp="";
+	      
+	      while(true) {
+	         //예약 타임 표
+	         System.out.print("3. 예약 시간(00:00) : ");
+	         tmp=scan.nextLine();
+	         //유효성 검사{
+	      //
+	         // break;    }
+	         break;
+	      }
+	      
+	      return tmp;
+	   }
+	   
+	   
+
+	   
+	   public static void showCalendar() {
+	      
+	      Calendar calendar=Calendar.getInstance();
+	      calendar.set(2024,Calendar.MONTH-1,1);
+	      
+	      int lastDay=calendar.getActualMaximum(Calendar.DAY_OF_MONTH);
+	      int startDay=calendar.get(Calendar.DAY_OF_WEEK);
+	      
+	      
+	      System.out.printf("\t\t2024 년 %s 월 \n",Calendar.MONTH);
+	      System.out.println("일\t월\t화\t수\t목\t금\t토");
+	      
+	      int currentDay=1;
+	      
+	      for(int i=0 ; i<=42;i++) {
+	         if(i<startDay) {
+	            System.out.print("\t");
+	         }else {
+	            System.out.printf("%02d\t",currentDay);
+	            currentDay++;
+	         }
+	         
+	         if(i%7==0) {
+	            System.out.println();
+	            System.out.println();
+	         }
+	         
+	         if(currentDay>lastDay) {
+	            break;
+	         }
+	      }
+	      
+	      
+	   }//showCalendar
+	   
+	   //사업자 번호에 해당하는 메뉴 출력
+	   public ArrayList<String> getSelectedMenuName(String licenseNumber) {
+	        ArrayList<String> selectedMenuList = new ArrayList<>();
+	        Scanner scan = new Scanner(System.in);
+	        
+	        while (true) {
+	            System.out.print(" 메뉴 번호를 입력하세요 (-1 입력시 종료): ");
+	            int selectedMenuIndex = scan.nextInt();
+	            scan.nextLine(); // 버퍼 비우기
+	            
+	            // -1 입력 시 종료
+	            if (selectedMenuIndex == -1) {
+	                break;
+	            }
+	            
+	            System.out.print(" 개수를 입력하세요: ");
+	            int quantity = scan.nextInt();
+	            scan.nextLine(); // 버퍼 비우기
+	            
+	            // 선택한 메뉴 번호에 해당하는 메뉴 출력
+	            if (selectedMenuIndex >= 1 && selectedMenuIndex <= Data.menuList.size()) {
+	                Menu selectedMenu = Data.menuList.get(selectedMenuIndex - 1);
+	                String menuName = selectedMenu.getMenuName();
+	                
+	                // 선택한 메뉴를 개수만큼 추가
+	                for (int i = 0; i < quantity; i++) {
+	                    selectedMenuList.add(menuName);
+	                }
+	            } else {
+	                System.out.println("유효하지 않은 메뉴 번호입니다.");
+	            }
+	        }
+	        
+	        return selectedMenuList;
+	    }
+	    
+	    public void showMenu(String licenseNumber) {
+	       Map<Integer, Menu> menuMap = new HashMap<>();
+	       for (Store store : Data.storeList) {
+	              if (licenseNumber.equals(store.getLicenseNumber())) {
+	                  System.out.println("  [" + store.getStoreName() + "]");
+	              }
+	          }
+	          System.out.println("==========MENU===========");
+
+	          int index = 1;
+	          for (Menu menu : Data.menuList) {
+	              if (licenseNumber.equals(menu.getLicenseNumber())) {
+	                  menuMap.put(index, menu);
+	                  System.out.println(index + "." + menu.getMenuName() +
+	                          "(" + menu.getPrice() + "원)");
+	                  index++;
+	              }
+	          }
+
+	          System.out.println("=========================");
+	    }
+	   
+	      
+	      
+	      
+	   
+	   
+	    public String showReservation(int num, String date, String time, ArrayList<String> menuList) {
+	        StringBuilder tmp = new StringBuilder();
+	        String txt = "인원 수 \t 예약 날짜 \t 예약 시간 \t 예약 메뉴 ";
+	        tmp.append(txt).append("\n").append(num).append("\t ").append(date).append("\t\t ").append(time).append("\t\t ");
+	        
+	        // 메뉴와 개수를 저장할 Map
+	        Map<String, Integer> menuCounts = new HashMap<>();
+	        
+	        // 메뉴와 개수 계산
+	        for (String menu : menuList) {
+	            menuCounts.put(menu, menuCounts.getOrDefault(menu, 0) + 1);
+	        }
+	        
+	        // 예약한 메뉴와 개수를 문자열에 추가
+	        for (Map.Entry<String, Integer> entry : menuCounts.entrySet()) {
+	            String menu = entry.getKey();
+	            int count = entry.getValue();
+	            tmp.append(menu);
+	            if (count > 1) {
+	                tmp.append("/").append(count);
+	            }
+	            tmp.append(", ");
+	        }
+	        
+	        return tmp.toString();
+	    }
+
+	   
+	public  String get() {
+	      
+	      Scanner scan = new Scanner(System.in);
+	      String tmp = "";
+	      System.out.print("포인트에서 예약금 [3000원]을 결제하겠습니다. 동의하시면 Y/y를 동의하지 않으시면 N/n을 눌러주세요 : ");
+	      
+	      tmp = scan.nextLine();
+	      return tmp;
+	   }
+	   public void showPay(User user) {
+	      Scanner scan =new Scanner(System.in);
+	      System.out.printf("포인트 잔액 : [%d]\n",user.getBalance());
+	      
+	   }
 
 	public void showTitle() {
 

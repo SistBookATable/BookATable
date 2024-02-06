@@ -71,5 +71,47 @@ public class ReservationRepository {
 		}
 		
 	}
+
+	public static HashMap<String, Integer> findAllCountByState(String lisenceNumber, String state) {
+		HashMap<String, Integer> tmp = new HashMap<>();
+		
+		for(Reservation r : Data.reservationList) {
+			if(r.getLicenseNumber().equals(lisenceNumber))
+			{
+				if(r.getState().equals(state)) {
+					String userid = r.getUserId();
+					if(tmp.containsKey(userid)) {
+						tmp.put(r.getUserId(), tmp.get(userid) + 1);	
+					}
+					else {
+						tmp.put(userid, 1);
+					}
+				}
+			
+			}
+		}
+		
+		return tmp;
+	}
+
+	public static String findMenuByUserId(String lisenceNumber, String key) {
+		HashMap<String, Integer> tmp = new HashMap<>();
+		for(Reservation r : Data.reservationList) {
+			if(r.getLicenseNumber().equals(lisenceNumber) && r.getUserId().equals(key)) {
+				for(String name : r.getMenulist()) {
+					if(tmp.containsKey(name)) {
+						tmp.put(name, tmp.get(name)+1);
+					}
+					else {
+						tmp.put(name, 1);
+					}
+				}
+			}
+		}
+		
+		
+		
+		return null;
+	}
 	
 }

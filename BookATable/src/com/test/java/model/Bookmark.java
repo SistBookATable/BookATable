@@ -4,8 +4,6 @@ public class Bookmark {
 	private String licenseNumber;
 	private String userId;
 	
-	
-
 
 	public Bookmark(String licenseNumber, String userId) {
 		super();
@@ -22,4 +20,18 @@ public class Bookmark {
 	public String getUserId() {
 		return userId;
 	}
+
+	
+	public void setLicenseNumber(String licenseNumber) {
+		this.licenseNumber = licenseNumber;
+	}
+
+
+	@Override
+	public String toString() {
+		return "Bookmark [licenseNumber=" + licenseNumber + ", userId=" + userId + "]";
+	}
+	
+	
+	
 }

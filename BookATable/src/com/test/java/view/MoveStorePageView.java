@@ -2,7 +2,9 @@ package com.test.java.view;
 
 import java.util.Scanner;
 
+import com.test.java.model.Bookmark;
 import com.test.java.model.Store;
+import com.test.java.repository.Data;
 
 public class MoveStorePageView {
 	
@@ -21,27 +23,30 @@ public class MoveStorePageView {
 		return tmp;
 	}
 	
+	// Store store
 	
-	public void showStorePage(Store store) {
+	public void showStorePage(String name, String telNumber, String address, String menuCategory, String menu, int table, double score) {
 		System.out.println();
 		System.out.println(); 
 		System.out.println("┌───────────────────────────────────────────────────────┐");
-		System.out.printf("	■								%s			 			■\n", store.getStoreName()); 
+		System.out.printf("	 %20s		 		\n", name); 			
 		System.out.println("└───────────────────────────────────────────────────────┘");
 		System.out.println("==========================================================================================");
 		System.out.println();
-		System.out.printf("■           전화번호 :	%s	   		\n", store.getStoreTelNumber());
-		System.out.printf("■           주소 :		%s   		\n", store.getAddress());
-		System.out.printf("■           음식분류 :	%s	   		\n", store.getMenuCategory());
-		System.out.printf("■           메뉴 :		%s  		\n", store.getmenuName());
-		System.out.printf("■           테이블 :	%s	   		\n", store.getTablecount());
-//		System.out.printf("■           평점 :		%1.f	   		\n", store.getScore());
+		System.out.printf("■           전화번호 : 		    %-20s\n", telNumber);
+		System.out.printf("■           주소 :	 %-20s\n", address);
+		System.out.printf("■           음식분류 : 			%-20s\n", menuCategory);
+		System.out.printf("■           메뉴 :	 		%-20s\n", menu);
+		System.out.printf("■           테이블 :			%d\n", table);
+		System.out.printf("■           평점 :	 		%.1f\n", score);
 		System.out.println();
 		System.out.println("==========================================================================================");
 		System.out.println();
 		
-	}
-	
-	
 
-}
+   
+			}
+			
+		}
+		
+

@@ -6,6 +6,7 @@ import com.test.java.model.Member;
 import com.test.java.repository.Data;
 import com.test.java.view.LogInView;
 import com.test.java.view.MainView;
+import com.test.java.view.View;
 
 public class LogInController {
 
@@ -42,10 +43,11 @@ public class LogInController {
 			System.out.printf("%s님, 로그인에 성공하셨습니다.", findNameById(Member.id));
 			break;
 		}
+		View.pause();
 
 	}
 
-	private Object findNameById(String id) {
+	private String findNameById(String id) {
 		for (Member u : Data.memberList) {
 			if (u.getId().equals(id) && u.getSignOut().equals("null")) {
 				return u.getName();

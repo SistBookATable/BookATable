@@ -42,7 +42,7 @@ public class PointRefundHistoryController {
 		waitForEnter();
 		// 이동
 		PointRefundController pointRefundController = new PointRefundController();
-		pointRefundController.pointRefund();
+		pointRefundController.pointRefund();}
 		
 	}
 

@@ -108,6 +108,7 @@ public class UserSignInController {
 		
 		System.out.println("회원가입이 완료되었습니다.");
 		Data.memberList.add(user);
+		Data.userList.add(user);
 		for(Member u : Data.memberList) {
 			System.out.println(u);
 		}

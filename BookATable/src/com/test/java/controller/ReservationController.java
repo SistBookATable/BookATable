@@ -13,7 +13,7 @@ import com.test.java.view.View;
 public class ReservationController {
 	
 	private ReservationView reservationView = new ReservationView();
-	private ArrayList<Reservation> reservation;
+	private ArrayList<Reservation> reservation = new ArrayList<>();
 	
 	public void reservation(String licenseNumber) {
 			

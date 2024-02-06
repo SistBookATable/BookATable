@@ -18,6 +18,7 @@ public class BookmarkHistoryController {
 	
 	
 	public void bookmarkHistory() {
+
 		
 		String UserId = Member.id;
 		String licenseNumber = findBookmarkLicenseById(UserId);
@@ -31,12 +32,10 @@ public class BookmarkHistoryController {
 		// 메뉴
 		String menu = findMenu(licenseNumber);
 		
-		
 		BookmarkHistoryView.showBookmarkHistory(findNameById(Member.id)
 												, storeName
 												, telPhone
 												, menu);
-		
 		
 		boolean loop = true;
 		while(loop) {

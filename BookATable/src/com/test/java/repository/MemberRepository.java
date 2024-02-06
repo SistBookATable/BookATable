@@ -5,6 +5,7 @@ import java.util.Calendar;
 import java.util.Iterator;
 
 import com.test.java.model.Member;
+import com.test.java.model.User;
 import com.test.java.view.SignOutUserManagementView;
 
 public class MemberRepository {
@@ -83,5 +84,26 @@ public class MemberRepository {
 			return true;
 		}
 		return false;
+	}
+
+	public static ArrayList<User> findAllUser() {
+		ArrayList<User> tmp = new ArrayList<>();
+		for(Member m : Data.memberList) {
+			if(m.getUserType()==1 && m.getSignOut().equals("null")) {
+				tmp.add((User)m);
+			}
+		}
+		return tmp;
+	}
+
+	public static ArrayList<User> findAllSingOutUser() {
+		ArrayList<User> tmp = new ArrayList<>();
+		for(Member m : Data.memberList) {
+			if(m.getUserType()==1 && !m.getSignOut().equals("null")) {
+				tmp.add((User)m);
+			}
+		}
+		return tmp;
+		
 	}
 }

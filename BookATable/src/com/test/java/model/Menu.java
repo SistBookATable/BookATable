@@ -1,7 +1,6 @@
 package com.test.java.model;
 
 public class Menu {
-	private Store store;
 
 	private String licenseNumber;
 	private String menuName;
@@ -41,15 +40,11 @@ public class Menu {
 		return price;
 	}
 
-	public Store getStore() {
-		// TODO Auto-generated method stub
-		return this.store;
-	}
 
 
 	@Override
 	public String toString() {
-		return "Menu [store=" + store + ", licenseNumber=" + licenseNumber + ", menuName=" + menuName + ", price="
+		return "Menu [ licenseNumber=" + licenseNumber + ", menuName=" + menuName + ", price="
 				+ price + "]";
 	}
 	

@@ -11,6 +11,7 @@ import java.util.Collections;
 
 import com.test.java.model.Admin;
 import com.test.java.model.BlackList;
+import com.test.java.model.Bookmark;
 import com.test.java.model.BusinessUser;
 //import com.test.java.model.CompletedList;
 import com.test.java.model.Faq;
@@ -18,6 +19,7 @@ import com.test.java.model.Inquiry;
 import com.test.java.model.Member;
 import com.test.java.model.Menu;
 import com.test.java.model.OperatingHours;
+import com.test.java.model.PointRefund;
 import com.test.java.model.PointUsage;
 import com.test.java.model.Request;
 import com.test.java.model.Reservation;
@@ -77,61 +79,6 @@ public class Data {
 	public static String path1 = "dat\review.txt";
     public static String path2 = "dat\store.txt";
     
-    public static void reviewCount() {
-        //path1에서 사업자등록번호만 추출
-        //path2에서 사업자등록번호 추출
-        //path2의 
-        String path1 = "dat\review.txt";
-        String path2 = "dat\store.txt";
-        String lisenceNum;
-
-        ArrayList<String> reviewList = new ArrayList<String>();
-        ArrayList<String> reviewCountList = new ArrayList<String>();
-
-        try {
-
-            BufferedReader reader1 = new BufferedReader(new FileReader(Data.REVIEW));
-
-            String line = null;
-            while ((line = reader1.readLine()) != null) {
-                String[] temp = line.split(",");
-                lisenceNum=temp[2];
-                reviewList.add(lisenceNum);
-            }
-
-            reader1.close();
-        } catch (Exception e) {
-            System.out.println("Data.load");
-            e.printStackTrace();
-        }
-
-        try {
-            BufferedReader reader2 = new BufferedReader(new FileReader(Data.STORE));
-            String line = null;
-            while ((line = reader2.readLine()) != null) {
-                String[] temp = line.split(",");
-                lisenceNum=temp[0];
-                String storeName = temp[1];
-                int i = 0;
-                for(String review : reviewList) {
-                    if(review.indexOf(lisenceNum)>-1) {
-                        i++;
-                    }
-
-                }
-                String result = String.format("[리뷰]%d개 ,[상호명] %s", i,storeName);
-                reviewCountList.add(result);
-            }
-            reader2.close();
-        } catch (Exception e) {
-            // TODO: handle exception
-        }
-        Collections.sort(reviewCountList,Collections.reverseOrder());
-        for(String output : reviewCountList) {
-            System.out.println(output);
-        }
-
-    }
 	
 	
 	public static void loadPointRefund() {
@@ -460,11 +407,9 @@ public class Data {
 			while((line = reader.readLine()) != null){
 
 				String[] tmp = line.split(",");
-				System.out.println(Arrays.toString(tmp));
 				Store store = new Store(tmp[0],tmp[1],tmp[2],tmp[3],tmp[4],
 										Double.parseDouble(tmp[5]),Integer.parseInt(tmp[6]));
 				storeList.add(store);
-				System.out.println(store);
 			}
 			reader.close();
 		} catch (Exception e) {

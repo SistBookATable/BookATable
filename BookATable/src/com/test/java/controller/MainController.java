@@ -153,8 +153,8 @@ public class MainController {
 		Data.loadBusinessUser();
 		Data.loadMenu();
 		Data.loadStore();
-		Data.loadreviewCount();
-    Data.loadBookmark();
+		Data.loadReview();
+    //Data.loadBookmark();
     Data.loadFaq();
 
 	}

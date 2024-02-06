@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
 
+import com.test.java.model.Member;
 import com.test.java.model.Menu;
 import com.test.java.model.Review;
 import com.test.java.model.Store;
@@ -90,9 +91,24 @@ public class StoreController {
 				Scanner sc = new Scanner(System.in);
 				storeView.bookmarkNreservation();
 				int choice = sc.nextInt();
-				storeView.reservationNumber();
-				choice = sc.nextInt();
-				reservationController.reservation(searched.get(choice-1).getLicenseNumber());
+				if(Member.level == 1) {
+					storeView.reservationNumber();
+					choice = sc.nextInt();
+					reservationController.reservation(searched.get(choice-1).getLicenseNumber());
+				} else {
+					storeView.noneMemberAvailable();
+					Scanner scan = new Scanner(System.in);
+					String input = sc.nextLine();
+					for(int i=0; i<input.length(); i++) {
+						char c = input.charAt(i);
+						if((c > '가' || c < '힣') && (c > 0 || 9 > c) && (c > 'a' || c < 'z')) {
+							
+						}
+					}
+				}
+					//
+				
+				
 				System.out.println(searched.get(choice-1).getLicenseNumber());
 				break;
 				

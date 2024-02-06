@@ -38,7 +38,7 @@ public class StoreView {
       System.out.println("\t\t\t\t\t\t음식점 리스트\t\t\t\t\t\t\t\t\t\t");
       System.out.println("=================================================================================================================");
       System.out.printf("No\t사업자번호\t\t\t상호명\t\t전화번호\t\t음식분류\t\t주소\t\t\t평점\t역과의 거리\t리뷰 갯수\n");
-      System.out.printf("%d%15s%20s\t%12s%8s\t%5s\t%3.1f\t%5d\t%d\\n",index ,store.getLicenseNumber(), store.getStoreName(), store.getStoreTelNumber(), store.getMenuCategory(), store.getAddress(), store.getScore(), store.getDistanceFrom(), store.getReviewCount());
+      System.out.printf("%d%15s%20s\t%12s%8s\t%5s\t%3.1f\t%5d\n",index ,store.getLicenseNumber(), store.getStoreName(), store.getStoreTelNumber(), store.getMenuCategory(), store.getAddress(), store.getScore(), store.getDistanceFrom());
       System.out.println();
       
    }

@@ -78,10 +78,11 @@ public class StoreController {
 				storeView.show(searched);
 				break;
 			case 3:
-				Data.reviewCount();
+//				Data.reviewCount();
 				// 리뷰 갯수 내림차순 정렬 등의 다른 정렬 옵션 추가
 				// 리뷰 갯수를 읽어오고, 라이센스 번호와 일치하는 목록을 찾은 다음, <Store> searched에서 출력
-				Collections.sort(searched, new FindReviewCountController());
+				Collections.sort(searched, (o1, o2)-> (int)(o2.getScore()*10 - o1.getScore()*10));
+//				Collections.sort(searched, new FindReviewCountController());
 				storeView.show(searched);
 				break;
 			case 4:

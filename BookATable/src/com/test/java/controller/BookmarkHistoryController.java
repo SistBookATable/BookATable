@@ -37,12 +37,6 @@ public class BookmarkHistoryController {
 												, findStoreTelNumberById(Member.id)
 												, findMenuNameById(Member.id));
 		
-<<<<<<< HEAD
-		System.out.println(findBookmarkLicenseById(Member.id)); // null로 나오네? 
-		System.out.println(Member.id); // 정상적으로 나옴. 
-		
-=======
->>>>>>> 510bfb6fa6a9d9a4556e01a1c6dd39594622df9e
 		boolean loop = true;
 		while(loop) {
 			BookmarkHistoryView.showSelectBox();

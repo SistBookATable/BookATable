@@ -1,14 +1,13 @@
 package com.test.java.model;
 
-import java.util.ArrayList;
 
 public class Faq {
 	
-	private int faqNumber;
-	private String title;
-	private String question;
-	private String answer;
-	
+	private static int faqNumber;
+	private static String title;
+	private static String question;
+	private static String answer;
+
 	public Faq(int faqNumber, String title, String question, String answer) {
 		super();
 		this.faqNumber = faqNumber;
@@ -17,19 +16,19 @@ public class Faq {
 		this.answer = answer;
 	}
 
-	public int getFaqNumber() {
+	public static int getFaqNumber() {
 		return faqNumber;
 	}
 
-	public String getTitle() {
+	public static String getTitle() {
 		return title;
 	}
 
-	public String getQuestion() {
+	public static String getQuestion() {
 		return question;
 	}
 
-	public String getAnswer() {
+	public static String getAnswer() {
 		return answer;
 	}
 

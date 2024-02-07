@@ -31,6 +31,7 @@ public class SignInController {
 				break;
 			case "0":
 				loop = false;
+				break;
 			default:
 				//유효하지 않은 입력
 				signInView.incorrectInputMessage();

@@ -20,14 +20,14 @@ public class UpdatePhoneNumberController {
 				if (!Validation.isValidPhone(toUpdatePhoneNumber)) {
 					UpdatePhoneNumberView.showErrorMessage();
 					loop = true;
-				} else if (isValidOfPhoneNumber(toUpdatePhoneNumber)) {
+				} else if (Validation.isValidPhone(toUpdatePhoneNumber)) {
 					UpdatePhoneNumberView.showUpdatePhoneNumber(toUpdatePhoneNumber);
 					String answer = UpdatePhoneNumberView.getAnswer();
 					
-					if (answer.equalsIgnoreCase("N")) {
+					if (!Validation.isValidYorN(answer)) {
 						UpdatePhoneNumberView.showUpdateStopMessage();
 						loop = true;
-					} else if (answer.equalsIgnoreCase("Y")) {
+					} else {
 						updatePhoneNumberToInputPhoneNumber(Member.id, toUpdatePhoneNumber);
 						UpdatePhoneNumberView.showUpdatePhoneNumberMessage();
 						loop = false;
@@ -37,13 +37,6 @@ public class UpdatePhoneNumberController {
 
 		}
 
-	}
-
-	private boolean isValidOfPhoneNumber(String toUpdatePhoneNumber) {
-		String regex = "^\\d{3}-\\d{4}-\\d{4}$";
-		Pattern pattern = Pattern.compile(regex);
-		Matcher matcher = pattern.matcher(toUpdatePhoneNumber);
-		return matcher.matches();
 	}
 
 	private void updatePhoneNumberToInputPhoneNumber(String id, String toUpdatePhoneNumber) {

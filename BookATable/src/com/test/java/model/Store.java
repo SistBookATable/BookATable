@@ -57,7 +57,7 @@ public class Store {
 	}
 
 	public Store(String licenseNumber, String storeName, String storeTelNumber, String menuCategory, String address,
-			double score, int distanceFrom) {
+			double score, int reviewCount) {
 		this.licenseNumber = licenseNumber;
 		this.storeName = storeName;
 		this.storeTelNumber = storeTelNumber;
@@ -65,7 +65,7 @@ public class Store {
 		this.address = address;
 		this.score = score;
 		this.distanceFrom = distanceFrom;
-
+		this.reviewCount = reviewCount;
 		// this.distanceFrom = distanceFrom;
 	}
 

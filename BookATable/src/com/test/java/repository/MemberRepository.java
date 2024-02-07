@@ -117,7 +117,7 @@ public class MemberRepository {
 	public static ArrayList<BusinessUser> findAllSingOutBusinessUser() {
 		ArrayList<BusinessUser> tmp = new ArrayList<>();
 		for(Member m : Data.memberList) {
-			if(m.getUserType()==1 && !m.getSignOut().equals("null")) {
+			if(m.getUserType()==2 && !m.getSignOut().equals("null")) {
 				tmp.add((BusinessUser)m);
 			}
 		}

@@ -7,6 +7,10 @@ import com.test.java.model.Reservation;
 import com.test.java.model.Review;
 import com.test.java.model.Store;
 import com.test.java.repository.Data;
+import com.test.java.repository.MemberRepository;
+import com.test.java.repository.ReservationRepository;
+import com.test.java.repository.ReviewRepository;
+import com.test.java.repository.StoreRepository;
 import com.test.java.view.InquiryCompletedReservationView;
 import com.test.java.view.UserWriteReviewView;
 
@@ -15,6 +19,7 @@ public class UserWriteReviewController {
 	public void userWriteReview() {
 		boolean loop = true;
 		while(loop) {
+			
 			ArrayList<Reservation> noReviewReservation = findAllNoReviewReservation(Member.id);
 			
 			if (noReviewReservation.isEmpty()) {
@@ -25,16 +30,22 @@ public class UserWriteReviewController {
 			String userName = findNameById(Member.id);
 			UserWriteReviewView.showNoReviewReservation(userName);
 			
-			String storeName = findStoreName(Member.id);
-			String cancelState = findCancelState(Member.id);
-			String noShowState = findNoShowState(Member.id);
-			String reviewState = findReviewState(Member.id);
-
+			
+			String lisenceNumber = ReservationRepository.findOneById(Member.id).getLicenseNumber();
+			String storeName = StoreRepository.findNameOneByLicenseNumber(lisenceNumber);
+			
 			for(Reservation r : noReviewReservation) {
-				InquiryCompletedReservationView.showOneReservation(r, storeName, cancelState, noShowState, reviewState);
+				String reservationDate = findReservationDate(Member.id);
+				String numOfPeple = findNumOfPeple(Member.id);
+				String cancelState = findCancelState(Member.id);
+				String noShowState = findNoShowState(Member.id);
+				String reviewState = findReviewState(Member.id);
+				
+				UserWriteReviewView.showOneReserVation(reservationDate, storeName, numOfPeple, cancelState, noShowState, reviewState);
 			}
 			
 			String intputStoreName = UserWriteReviewView.getStoreName();
+			
 			if (storeName.equals(intputStoreName)) {
 				String reviewContent = UserWriteReviewView.getReviewContent();
 				addReview(reviewContent);
@@ -45,14 +56,36 @@ public class UserWriteReviewController {
 		}
 	}
 
-	private void addReview(String reviewContent) {
-		for (Reservation reservation : Data.reservationList) {
-			if (reservation.getState().equals("취소")) {
-				for (Review review : Data.reviewList) {
-					if (review.getContent().equals(null)) {
-						review.setContent(reviewContent);
+	private String findNumOfPeple(String id) {
+		for(Member m : Data.memberList) {
+			if (m.getId().equals(id)) {
+				for(Reservation r : Data.reservationList) {
+					if (r.getUserId().equals(id)) {
+						return String.valueOf(r.getNumOfPeople());
 					}
 				}
+			}
+		}
+		return null;
+	}
+
+	private String findReservationDate(String id) {
+		for(Member m : Data.memberList) {
+			if (m.getId().equals(id)) {
+				for(Reservation r : Data.reservationList) {
+					if (r.getUserId().equals(id)) {
+						return r.getReservationDate();
+					}
+				}
+			}
+		}
+		return null;
+	}
+
+	private void addReview(String reviewContent) {
+		for (Review review : Data.reviewList) {
+			if (review.getContent().equals("null")) {
+				review.setContent(reviewContent);
 			}
 		}
 	}
@@ -90,19 +123,6 @@ public class UserWriteReviewController {
 		return null;
 	}
 
-	private String findStoreName(String id) {
-		for(Reservation r : Data.reservationList) {
-			if (r.getUserId().equals(id)) {
-				for(Store s : Data.storeList) {
-					if (s.getLicenseNumber().equals(r.getLicenseNumber())) {
-						return s.getStoreName();
-					}
-				}
-			}
-		}
-		return null;
-	}
-
 	private String findNameById(String id) {
 		for (Member u : Data.memberList) {
 			if (u.getId().equals(id)) {
@@ -114,9 +134,13 @@ public class UserWriteReviewController {
 
 	private ArrayList<Reservation> findAllNoReviewReservation(String id) {
 		ArrayList<Reservation> tmp = new ArrayList<Reservation>();
-		for(Reservation r : Data.reservationList) {
-			if (r.getUserId().equals(id) && r.getState().equals("취소")) {
-				tmp.add(r);
+		for(Reservation reservation : Data.reservationList) {
+			if (reservation.equals(id)) {
+				for(Review review : Data.reviewList) {
+					if (review.getUserId().equals(reservation.getUserId())) {
+						tmp.add(reservation);
+					}
+				}
 			}
 		}
 		return tmp;

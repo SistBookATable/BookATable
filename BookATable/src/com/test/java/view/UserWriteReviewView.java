@@ -8,7 +8,7 @@ public class UserWriteReviewView {
 
 	public static void showNoReviewMessage() {
 		System.out.println();
-		System.out.println("현재 예약이 없습니다.");
+		System.out.println("리뷰가 작성되지 않은 예약이 없습니다.");
 		System.out.println();
 		View.pause();
 	}
@@ -17,7 +17,7 @@ public class UserWriteReviewView {
 		System.out.println();
 		System.out.println();
 		System.out.println("┌───────────────────────────────────────────────────────┐");
-		System.out.printf("|                 %s님 리뷰 미작성 예약              	  <\n", userName);
+		System.out.printf("|                 %s님 리뷰 미작성 예약 리스트              	  <\n", userName);
 		System.out.println("└───────────────────────────────────────────────────────┘");
 		System.out.println();
 		
@@ -27,12 +27,15 @@ public class UserWriteReviewView {
 		
 	}
 
-	public static void showOneReserVation(Reservation r, String storeName) {
+	public static void showOneReserVation(String reservationDate, String storeName, String numOfPeple, String cancelState, String noShowState, String reviewState) {
 		String tmp = "";
 		tmp = String.format("%10s\t%10s\t%10st%10st%10s\t%10s\t"
-							, r.getReservationDate()
+							, reservationDate
 							, storeName
-							, r.getNumOfPeople());
+							, numOfPeple
+							, cancelState
+							, noShowState
+							, reviewState);
 		System.out.println(tmp);
 	}
 

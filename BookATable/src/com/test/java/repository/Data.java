@@ -90,7 +90,7 @@ public class Data {
 			while((line = reader.readLine()) != null) {
 				String[] tmp = line.split(",");
 				PointRefund pointRefund = new PointRefund(tmp[0], Integer.parseInt(tmp[1]),tmp[2]);
-				pointRefundList.add(pointRefund);
+//				pointRefundList.add(pointRefund);
 
 			}
 			
@@ -247,7 +247,6 @@ public class Data {
 		while((line = reader.readLine())!=null){
 			
 			String[] tmp = line.split(",");
-			
 			BlackList blackList = new BlackList(tmp[0],tmp[1]);
 			blackListList.add(blackList);
 		}
@@ -299,6 +298,7 @@ public class Data {
 			// TODO: handle exception
 		}		
 	}
+	
 	public static void loadReservation() {
 		try {
 			BufferedReader reader

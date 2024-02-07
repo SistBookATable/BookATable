@@ -20,9 +20,9 @@ public class PointManagementController {
 					 pointChargingController.pointCharging();
 					 break;
 			// 포인트환불	
-			case 2 : PointRefundController pointRefundController = new PointRefundController();
-					 pointRefundController.pointRefund();
-					 break;
+//			case 2 : PointRefundController pointRefundController = new PointRefundController();
+//					 pointRefundController.pointRefund();
+//					 break;
 			// 포인트선물	
 			case 3 : PointGiftController pointGiftController = new PointGiftController();
 					 pointGiftController.pointGift();

@@ -1,14 +1,10 @@
 package com.test.java.view;
 
-import java.nio.file.FileSystemNotFoundException;
-import java.util.ArrayList;
 import java.util.Scanner;
 
 import com.test.java.controller.FaqController;
 import com.test.java.controller.UserMyPageController;
 import com.test.java.model.Faq;
-import com.test.java.model.Member;
-import com.test.java.repository.Data;
 
 public class FaqView {
 

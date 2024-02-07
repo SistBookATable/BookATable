@@ -331,8 +331,13 @@ public class ReservationView {
 			System.out.println(tmp);
 			
 		}
+			System.out.println("1. 방문 확정");
+			System.out.println("2. 노쇼 확정");
+			System.out.println("0. 이전 화면");
+			System.out.print("선택(숫자) : ");
+			
 		
-		View.pause();
+//		View.pause();
 		
 	}
 

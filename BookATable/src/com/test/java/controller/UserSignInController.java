@@ -64,33 +64,7 @@ public class UserSignInController {
 			}
 		}
 		
-		while (true) {
-			bank = UserSignInView.getBank();
-			if (Validation.isValidBank(bank)) {
-				bank = Validation.banks[Integer.parseInt(bank)];
-				break;
-			} else {
-				if(bank.equals("0"))
-				{
-					UserSignInView.showCancelMessage();
-					return false;
-				}
-				UserSignInView.errorMessage("은행 리스트에 해당하는 번호를 선택해 주십시오");
-			}
-		}
-		while (true) {
-			account = UserSignInView.getAccount();
-			if (Validation.isValidAccount(account,bank)) {
-				break;
-			} else {
-				if(account.equals("0"))
-				{
-					UserSignInView.showCancelMessage();
-					return false;
-				}
-				UserSignInView.errorMessage("입력하신 은행과 계좌번호 형식이 일치하지 않습니다.");
-			}
-		}
+		
 		while (true) {
 			id = UserSignInView.getId();
 			if (Validation.isValidId(id)) {
@@ -122,7 +96,34 @@ public class UserSignInController {
 			}
 		}
 
-
+		while (true) {
+			bank = UserSignInView.getBank();
+			if (Validation.isValidBank(bank)) {
+				bank = Validation.banks[Integer.parseInt(bank)];
+				break;
+			} else {
+				if(bank.equals("0"))
+				{
+					UserSignInView.showCancelMessage();
+					return false;
+				}
+				UserSignInView.errorMessage("은행 리스트에 해당하는 번호를 선택해 주십시오");
+			}
+		}
+		while (true) {
+			account = UserSignInView.getAccount();
+			if (Validation.isValidAccount(account,bank)) {
+				break;
+			} else {
+				if(account.equals("0"))
+				{
+					UserSignInView.showCancelMessage();
+					return false;
+				}
+				UserSignInView.errorMessage("입력하신 은행과 계좌번호 형식이 일치하지 않습니다.");
+			}
+		}
+		
 		MemberRepository.add(id, pw, name, phone, jumin, 0, 0, 0, bank, account, "null", now, "null");
 		
 		UserSignInView.pause();

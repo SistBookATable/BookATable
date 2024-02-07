@@ -140,9 +140,9 @@ public class MainController {
 
 	public static void load() {
 
-		Data.loadTable();
-		Data.loadOperatingHours();
-		Data.loadAdmin();
+//		Data.loadTable();
+//		Data.loadOperatingHours();
+//		Data.loadAdmin();
 		Data.loadUser();
 		Data.loadBusinessUser();
 		Data.loadMenu();
@@ -152,7 +152,6 @@ public class MainController {
 		Data.loadBookmark();
 		Data.loadFaq();
 		Data.loadPointUsage();
-
 
 	}
 }

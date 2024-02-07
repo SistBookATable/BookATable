@@ -113,5 +113,44 @@ public class ReservationRepository {
 		
 		return tmp;
 	}
+
+	public static ArrayList<Reservation> findAllByLisenceNumber(String lisenceNumber) {
+		
+		ArrayList<Reservation> tmp = new ArrayList<>();
+		
+		for(Reservation r : Data.reservationList) {
+			
+			if(r.getLicenseNumber().equals(lisenceNumber)) {
+				tmp.add(r);
+			}
+		}
+		
+		return tmp;
+	}
+
+	public static ArrayList<Reservation> findAllByLisenceNumberState(String lisenceNumber, String string) {
+		ArrayList<Reservation> tmp = new ArrayList<>();
+		
+		for(Reservation r : Data.reservationList) {
+			
+			if(r.getLicenseNumber().equals(lisenceNumber) && r.getState().equals(string)) {
+				tmp.add(r);
+			}
+		}
+		
+		return tmp;
+	}
+
+	public static Reservation findOneByToday(String lisence, String today) {
+		
+		for(Reservation r : Data.reservationList) {
+			
+			if(r.getLicenseNumber().equals(lisence) && r.getReservationDate().equals(today) && r.getState().equals("예약")) {
+				return r;
+			}
+		}
+		
+		return null;
+	}
 	
 }

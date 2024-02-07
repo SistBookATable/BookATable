@@ -1,6 +1,11 @@
 package com.test.java.repository;
 
+import java.util.Calendar;
+import java.util.Iterator;
+
+import com.test.java.model.Reservation;
 import com.test.java.model.Store;
+import com.test.java.view.SignOutUserManagementView;
 
 public class StoreRepository {
 	public static Store findOneByLicenseNumber(String lisenceNumber) {
@@ -37,4 +42,17 @@ public class StoreRepository {
 		
 	}
 
+	public static void delete(String lisenceNumber) {
+		Iterator it = Data.storeList.iterator();
+		
+		while(it.hasNext()) {
+			Store s = (Store)it.next();
+
+			if(s.getLicenseNumber().equals(lisenceNumber)) {
+				it.remove();
+			}	
+		}
+		
+	}
+	
 }

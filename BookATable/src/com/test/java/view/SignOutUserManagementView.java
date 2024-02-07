@@ -9,21 +9,13 @@ import com.test.java.repository.Data;
 
 public class SignOutUserManagementView {
 
-	public void showAllSignOutUser(ArrayList<User> userList) {
+	public void showAllSignOutUser(ArrayList<Member> userList) {
 		
-		String header = String.format("%15s%18s%15s%15s%15s%15s", "[회원ID]","[회원 이름]","[예약 횟수]","[노쇼 횟수]","[탈퇴일]","[정지 여부]");
+		String header = String.format("\t%18s%18s%15s%15s%15s%15s", "[회원ID]","[회원 이름]","[예약 횟수]","[노쇼 횟수]","[탈퇴일]","[정지 여부]");
 		System.out.println(header);
 		
-		for(User u : userList) {
-			String tmp = "";
-			tmp = String.format("%15s%17s%15d회%15d회%19s%15s", 
-					u.getId(),
-					u.getName(),
-					u.getReservationCount(),
-					u.getNoshowCount(),
-					u.getSignOut(),
-					(u.getNoshowCount() >= 10)? "정지회원":" ");
-			System.out.println(tmp);	
+		for(Member u : userList) {
+			u.print();
 		}
 	}
 
@@ -87,6 +79,22 @@ public class SignOutUserManagementView {
 		System.out.println();
 		System.out.println("==========================================================================================");
 		System.out.println();
+		
+		View.pause();
+		
+	}
+
+	public void incorrectIdMessage() {
+		
+		System.out.println("==========================================================================================");
+		System.out.println();
+		System.out.println("        유효하지 않은 입력값입니다.");
+		System.out.println("      위의 리스트에 있는 ID를 입력해주세요");
+		System.out.println();
+		System.out.println("==========================================================================================");
+		System.out.println();
+		
+		View.pause();
 		
 	}
 

@@ -25,7 +25,7 @@ public class InquiryView {
 	}
 
 
-	public void FindAllInquiry() {
+	public void FindAllInquiry(ArrayList<Inquiry> inquiryList) {
 
 
 		System.out.println();
@@ -47,7 +47,7 @@ public class InquiryView {
 		else {
 
 
-			for(Inquiry i : Data.inquiryList) {
+			for(Inquiry i : inquiryList) {
 				String tmp = "";
 				tmp = String.format("%6s%18s%20s\t%15s%15s\t\t%-20s",
 						i.getInquiryNumber(),
@@ -76,10 +76,7 @@ public class InquiryView {
 	}
 	
 	public int getSelectType() {
-		Scanner scan = new Scanner(System.in);
-		int tmp = scan.nextInt();
-		scan.nextLine();
-		return tmp;
+		return View.getSelectType();
 	}
 
 
@@ -90,6 +87,21 @@ public class InquiryView {
 		Scanner scan = new Scanner(System.in);
 		String tmp = scan.nextLine();
 		return tmp;
+	}
+
+
+	public void incorrectInputMessage() {
+
+
+		System.out.println("==========================================================================================");
+		System.out.println();
+		System.out.println("        유효하지 않은 입력값입니다.");
+		System.out.println("      (1, 0) 중에 하나를 입력해주세요");
+		System.out.println();
+		System.out.println("==========================================================================================");
+		System.out.println();
+		
+		View.pause();
 	}
 
 }

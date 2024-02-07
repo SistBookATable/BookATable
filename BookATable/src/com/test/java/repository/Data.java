@@ -2,14 +2,11 @@ package com.test.java.repository;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
-
-import java.util.Collections;
-
 
 import com.test.java.model.Admin;
 import com.test.java.model.BlackList;
@@ -37,25 +34,24 @@ public class Data {
 
 	
 	//여러개면 Path 클래스를 만들어서 넣는게 좋음
-	private final static String USER = "dat\\user.txt";
-	private final static String BUSINESSUSER = "dat\\BusinessUser.txt";
-	private final static String ADMIN = "dat\\Admin.txt";
-	
-	private final static String STORE = "dat\\store.txt";
-	
-	private final static String BLACKLIST = "dat\\BlackList.txt";
 	private final static String VIP = "dat\\Vip.txt";
-	private final static String TABLE = "dat\\Table.txt";
-	private final static String MENU = "dat\\menu.txt";
-	private final static String OPERATINGHOURS = "dat\\Operatinghours.txt";
-	private final static String RESERVATION = "dat\\Reservation.txt";
 	private final static String RESERVATIONMENU = "dat\\ReservationMenu.txt";
-	private final static String POINTUSAGE = "dat\\PointUsage.txt";
-	private final static String REVIEW = "dat\\Review.txt";
-	private final static String FAQ = "dat\\Faq.txt";
-	private final static String INQUIRY = "dat\\Inquiry.txt";
-	private final static String REQUEST = "dat\\Request.txt";
-	private final static String BOOKMARK = "dat\\Bookmark.txt";
+	private final static String USER = "dat"+File.separator+"user.txt";
+	private final static String BUSINESSUSER = "dat"+File.separator+"businessUser.txt";
+	private final static String ADMIN = "dat"+File.separator+"admin.txt";	
+	private final static String STORE = "dat"+File.separator+"store.txt";
+	private final static String BLACKLIST = "dat"+File.separator+"blackList.txt";
+	private final static String TABLE = "dat"+File.separator+"table.txt";
+	private final static String MENU = "dat"+File.separator+"menu.txt";
+	private final static String OPERATINGHOURS = "dat"+File.separator+"operatinghours.txt";
+	private final static String RESERVATION = "dat"+File.separator+"reservation.txt";
+	private final static String POINTUSAGE = "dat"+File.separator+"pointUsage.txt";
+	private final static String REVIEW = "dat"+File.separator+"review.txt";
+	private final static String FAQ = "dat"+File.separator+"faq.txt";
+	private final static String INQUIRY = "dat"+File.separator+"inquiry.txt";
+	private final static String REQUEST = "dat"+File.separator+"request.txt";
+	private final static String BOOKMARK = "dat"+File.separator+"bookmark.txt";
+	private final static String POINTREFUND = "dat"+File.separator+"pointRefund.txt";
 	
 	
 	//필요한 자료들
@@ -67,7 +63,8 @@ public class Data {
 	public static ArrayList<Inquiry> inquiryList = new ArrayList<>();
 	public static ArrayList<Faq> faqList = new ArrayList<>();
 	public static ArrayList<OperatingHours> operatingHoursList = new ArrayList<>();
-
+	public static ArrayList<Bookmark> bookmarkList = new ArrayList<>();
+	public static ArrayList<PointRefund> pointRefundList = new ArrayList<>();
 	public static ArrayList<PointUsage> pointList = new ArrayList<>();
 //	public static ArrayList<CompletedList> compleatedList = new ArrayList<>();
 	public static ArrayList<Request> requestList = new ArrayList<>();
@@ -232,7 +229,6 @@ public class Data {
 				Faq faq = new Faq(Integer.parseInt(tmp[0]),tmp[1],tmp[2],tmp[3]);
 //				System.out.println(faq);
 				faqList.add(faq);
-				System.out.println(faq);
 			}
 			
 			reader.close();
@@ -253,7 +249,7 @@ public class Data {
 			
 			String[] tmp = line.split(",");
 			
-			BlackList blackList = new BlackList(tmp[0],tmp[1],Integer.parseInt(tmp[2]));
+			BlackList blackList = new BlackList(tmp[0],tmp[1]);
 			blackListList.add(blackList);
 		}
 		reader.close();
@@ -292,7 +288,7 @@ public class Data {
 			BufferedWriter writer = new BufferedWriter(new FileWriter(Data.BLACKLIST));
 			
 			for(BlackList blackList : Data.blackListList) {
-				String line = String.format("%s,%s,%d",blackList.getLicenseNumber(),blackList.getUserId(),blackList.getNoShowCount());
+				String line = String.format("%s,%s",blackList.getLicenseNumber(),blackList.getUserId());
 							
 				writer.write(line);
 					
@@ -414,7 +410,6 @@ public class Data {
 				Store store = new Store(tmp[0],tmp[1],tmp[2],tmp[3],tmp[4],
 										Double.parseDouble(tmp[5]),Integer.parseInt(tmp[6]));
 				storeList.add(store);
-				System.out.println(store);
 			}
 			
 			reader.close();

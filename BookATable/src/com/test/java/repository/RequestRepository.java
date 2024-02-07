@@ -19,4 +19,15 @@ public class RequestRepository {
 		Data.requestList.add(tmp);
 	}
 
+	public static Request findOneByReviewNumber(int reviewNumber) {
+		
+		for(Request r : Data.requestList) {
+			if(r.getReviewNumber()==reviewNumber) {
+				return r;
+			}
+		}
+		return null;
+		
+	}
+
 }

@@ -21,4 +21,20 @@ public class View {
 			return -1;
 		}
 	}
+	public static String getSelectString() {
+
+		Scanner scan = new Scanner(System.in);
+		String tmp = scan.nextLine();
+		
+		if(isNotValid(tmp)) {
+			return null;
+		}
+		
+		return tmp;
+		
+	}
+	private static boolean isNotValid(String tmp) {
+		// TODO Auto-generated method stub
+		return false;
+	}
 }

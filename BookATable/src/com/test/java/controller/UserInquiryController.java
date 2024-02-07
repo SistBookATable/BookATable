@@ -87,7 +87,7 @@ public class UserInquiryController {
 				loop = false;
 				break;
 			default:
-				loop = false;
+				userInquiryView.incorrectNumberMessage();
 			}
 			
 		}

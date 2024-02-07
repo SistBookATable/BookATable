@@ -15,83 +15,90 @@ public class ReservationController {
 	private ReservationView reservationView = new ReservationView();
 	
 	public void reservation(String licenseNumber) {
-	    System.out.println(Member.id);
-	    
-	    for (Member m : Data.memberList) {
-	        if (Member.id.equals(m.getId())) {
-	            if (m instanceof User) {
-	                User user = (User) m;
-	                System.out.println(Data.reservationList);
-	                
-	                int num = reservationView.getReservationNum();
-	                ReservationView.showCalendar();
-	                System.out.println();
-	                
-	                String date = reservationView.getReservationDate(licenseNumber);
-	                String time = reservationView.getReservationTime(licenseNumber);
-	                System.out.println();
-	                
-	                reservationView.showMenu(licenseNumber);
-	                ArrayList<String> selectedMenuList = reservationView.getSelectedMenuName(licenseNumber);
-	                System.out.println();
-	                
-	                System.out.println(reservationView.showReservation(num, date, time, selectedMenuList));
-	                
-	                int reservationPay = 3000;
-	                reservationView.showPay(user);
-	                String userInput = reservationView.get();
-	                
-	                switch (userInput) {
-	                    case "Y":
-	                    case "y":
-	                    	
-	                    	int changeBalance = user.getBalance() - reservationPay;
-	                    	if(changeBalance>=0) {
-	                        System.out.printf("예약금 결제가 완료되었습니다.\n예약금 결제 후의 포인트 잔액 [%d원]\n", user.getBalance() - reservationPay);
-	                        
-	                        user.setBalance(changeBalance);
-	                    	}
-	                    	else {
-	                    		PointChargingController pointChargingController = new PointChargingController();
-	                    		pointChargingController.pointCharging();
-	                    	}
-	                        // TODO: user 포인트 변경
-	                        break;
-	                    case "N":
-	                    case "n":
-	                        reservationView.showPay(user);
-	                        // 엔터를 누르면 메인 이동
-	                        break;
-	                }
-	                
-	                int index =1;
-	                for (Member member : Data.memberList) {
-	                    if (Member.id.equals(member.getId())) {
-	                        Reservation reservation = new Reservation(index, Member.id, licenseNumber, time, date, num, 4, "예약", selectedMenuList);
-	                        Data.reservationList.add(reservation);
-	                        // Data.saveReservation();
-	                        index++;
-	                    }
-	                }
-	                for (Reservation r : Data.reservationList) {
-	                    if (r.getLicenseNumber().equals(licenseNumber)) {
-	                        System.out.println(r.getMenulist());
-	                    }
-	                }
-	                for (Member q : Data.memberList) {
-	                    if (Member.id.equals(q.getId())) {
-	                        if (q instanceof User) {
-	                            User user3 = (User) q;
-	                            System.out.println(user3.getBalance());
-	                        }
-	                    }
-	                }
+        // 사용자 ID 출력
+        System.out.println(Member.id);
 
-	                System.out.println();
-	            }
-	        }
-	    }
-	}
+        // 멤버 목록에서 사용자 찾기
+        for (Member m : Data.memberList) {
+            if (Member.id.equals(m.getId())) {
+                if (m instanceof User) {
+                    User user = (User) m;
+
+                    // 예약 메뉴 출력
+                    System.out.println(Data.reservationList);
+
+                    // 예약 인원 입력
+                    int num = reservationView.getReservationNum();
+
+                    // 테이블 번호 계산
+                    int tableNum = reservationView.getTableNum(num);
+
+                    // 예약 날짜, 시간 입력
+                    ReservationView.showCalendar();
+                    System.out.println();
+                    String date = reservationView.getReservationDate(licenseNumber);
+                    String time = reservationView.getReservationTime();
+
+                    // 예약 메뉴 선택
+                    reservationView.showMenu(licenseNumber);
+                    ArrayList<String> selectedMenuList = reservationView.getSelectedMenuName(licenseNumber);
+
+                    // 예약 정보 출력
+                    System.out.println(reservationView.showReservation(num, date, time, selectedMenuList));
+
+                    // 예약 금액 계산 및 결제
+                    int reservationPay = 3000;
+                    reservationView.showPay(user);
+                    String userInput = reservationView.get();
+                    switch (userInput) {
+                        case "Y":
+                        case "y":
+                            int changeBalance = user.getBalance() - reservationPay;
+                            if (changeBalance >= 0) {
+                                System.out.printf("예약금 결제가 완료되었습니다.\n예약금 결제 후의 포인트 잔액 [%d원]\n", user.getBalance() - reservationPay);
+                                user.setBalance(changeBalance);
+                            } else {
+                                PointChargingController pointChargingController = new PointChargingController();
+                                pointChargingController.pointCharging();
+                            }
+                            break;
+                        case "N":
+                        case "n":
+                            System.out.println("예약을 취소하셨습니다.");
+                            break;
+                    }
+
+                    // 예약 정보 저장
+                    int index = 1;
+                    for (Member member : Data.memberList) {
+                        if (Member.id.equals(member.getId())) {
+                            Reservation reservation = new Reservation(index, Member.id, licenseNumber, time, date, num, tableNum, "예약", selectedMenuList);
+                            Data.reservationList.add(reservation);
+                            index++;
+                        }
+                    }
+
+                    // 예약 정보 출력
+                    for (Reservation r : Data.reservationList) {
+                        if (r.getLicenseNumber().equals(licenseNumber)) {
+                            System.out.println(r.getMenulist());
+                        }
+                    }
+
+                    // 사용자 잔액 출력
+                    for (Member q : Data.memberList) {
+                        if (Member.id.equals(q.getId())) {
+                            if (q instanceof User) {
+                                User user3 = (User) q;
+                                System.out.println(user3.getBalance());
+                            }
+                        }
+                    }
+                    System.out.println();
+                }
+            }
+        }
+    }
 
 
 	public void BusinessUserReservationManagement() {

@@ -34,13 +34,33 @@ public class PointGiftView {
 		
 		return tmp;
 	}
-	
-	
 
-	public String showPointGift(String id, String name) {
-		String tmp = "";
-		tmp = name + "님에게 포인트를 선물했습니다.";
-		return tmp;
+	public void withDrawal() {
+
+			System.out.println();
+			System.out.println("■          잘못된 아이디입니다.	   	■");
+			System.out.println();
+			View.pause();
+			
+		}
+
+	public void overAmount() {
+		
+		System.out.println();
+		System.out.println("■          현재 보유한 포인트 금액을 초과합니다.	   	■");
+		System.out.println();
+		View.pause();
+		
+		
+	}
+
+	public void showPointGift(String name) {
+		
+		System.out.println();
+		System.out.printf("■          %s님에게 포인트를 선물했습니다.	   	■", name);
+		System.out.println();
+		View.pause();
+		
 	}
 
 

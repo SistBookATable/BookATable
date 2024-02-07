@@ -10,19 +10,19 @@ public class InquiryCompletedReservationView {
 		System.out.println();
 		System.out.println();
 		System.out.println("┌───────────────────────────────────────────────────────┐");
-		System.out.printf("|                 %s님 현재 예약 현황              	  <\n", userName);
+		System.out.printf("|                 %s님 현재 이용완료 예약 내역          	  <\n", userName);
 		System.out.println("└───────────────────────────────────────────────────────┘");
 		System.out.println();
 		
-		String header = String.format("%10s\t%10s\t%10st%10st%10s\t%10s\t"
+		System.out.println("===========================================================================================");
+		String header = String.format("%10s\t\t%10s\t\t%10s\t\t%10s\t\t%10s\t\t%10s\t"
 									,"[예약일]","[상호명]","[인원수]","[예약취소여부]","[노쇼여부]","[리뷰작성여부]");
 		System.out.println(header);
-		
 	}
 	
 	public static void showOneReservation(Reservation r, String storeName, String cancelState, String noShowState, String reviewState) {
 		String tmp = "";
-		tmp = String.format("%10s\t%10s\t%10st%10st%10s\t%10s\t"
+		tmp = String.format("%10s\t\t%10s\t\t%10s\t\t%10s\t\t%10s\t\t%10s\t"
 							, r.getReservationDate()
 							, storeName
 							, r.getNumOfPeople()
@@ -31,13 +31,17 @@ public class InquiryCompletedReservationView {
 							, reviewState);
 		System.out.println(tmp);
 	}
+	
+	
 
 	public static void showSelecBox() {
+		System.out.println("===========================================================================================");
+		System.out.println();
 		System.out.println();
 		System.out.println("------------------------------------------------------------------------------------------");
 		System.out.println();
-		System.out.println("■           1. 리뷰 작성		   ■");
-		System.out.println("■           0. 이전 화면		   ■");
+		System.out.println("■         		  1. 리뷰 작성		   ■");
+		System.out.println("■         		  0. 이전 화면		   ■");
 		System.out.println();
 		System.out.println("------------------------------------------------------------------------------------------");
 		

@@ -38,21 +38,24 @@ public class UserWriteReviewController {
 			if (storeName.equals(intputStoreName)) {
 				String reviewContent = UserWriteReviewView.getReviewContent();
 				addReview(reviewContent);
+				System.out.println("리뷰 작성이 완료되었습니다.");
+				loop = false;
 			}
-			
-			
+			break;
 		}
 	}
-
 
 	private void addReview(String reviewContent) {
-		for(Reservation r : Data.reservationList) {
-			if (r.getState().equals("취소")) {
-//				TODO 일반회원의 리뷰리스트 중 리뷰 내용을 reviewContent로 바꿈
+		for (Reservation reservation : Data.reservationList) {
+			if (reservation.getState().equals("취소")) {
+				for (Review review : Data.reviewList) {
+					if (review.getContent().equals(null)) {
+						review.setContent(reviewContent);
+					}
+				}
 			}
 		}
 	}
-
 
 	private String findReviewState(String id) {
 		for(Review review : Data.reviewList) {

@@ -7,6 +7,7 @@ import com.test.java.model.Member;
 import com.test.java.model.Store;
 import com.test.java.repository.Data;
 import com.test.java.repository.MemberRepository;
+import com.test.java.repository.StoreRepository;
 import com.test.java.repository.Validation;
 import com.test.java.view.BusinessUserSignInView;
 import com.test.java.view.UserSignInView;
@@ -158,22 +159,13 @@ public class BusinessUserSignInController {
 			}
 		}
 
-		BusinessUser businessUser = new BusinessUser(2, id, pw, name, licenseNumber, phoneNumber, bank, account, now,
-				null);
-		Store store = new Store(licenseNumber, storeName, storeTelNumber, address, menuCategory);
+		
 
-		Data.memberList.add(businessUser);
-		Data.storeList.add(store);
+		MemberRepository.addBusinessUser(2, id, pw, name, licenseNumber, phoneNumber, bank, account, now, "null");
+		StoreRepository.add(licenseNumber, storeName, storeTelNumber, address, menuCategory);
 
 		System.out.println("회원가입이 완료되었습니다.");
 
-		for (Member b : Data.memberList) {
-			System.out.println(b);
-		}
-
-		for (Store s : Data.storeList) {
-			System.out.println(s);
-		}
 		BusinessUserSignInView.pause();
 		return true;
 	}

@@ -101,6 +101,7 @@ public class BusinessUser extends Member{
 
 
 
+
 	public int getReservationCount() {
 		return reservationCount;
 	}
@@ -109,6 +110,41 @@ public class BusinessUser extends Member{
 	public int getNoshowCount() {
 		return noshowCount;
 	}
+	@Override
+	public void print() {
+
+		String tmp = "";
+		tmp = String.format("%s%20s%17s%15d회%15d회%19s%15s",
+				"업체회원",
+				this.getId(),
+				this.getName(),
+				0,
+				0,
+				this.getSignOut(),
+				" ");
+		System.out.println(tmp);	
+	}
+
+
+
+	@Override
+	public void printSignIn() {
+
+		String tmp = "";
+		tmp = String.format("%s%15s%18s%15s%15d회%15d회%19s",
+				"업체회원",
+				this.getId(),
+				this.getSignIn(),
+				this.getName(),
+				0,
+				0,
+				" ");
+		System.out.println(tmp);
+	}
+
+
+
+
 
 	
 	

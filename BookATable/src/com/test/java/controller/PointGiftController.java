@@ -30,7 +30,7 @@ public class PointGiftController {
 		User other = (User)MemberRepository.findOneById(id);
 
 		// 선물받을 user가 탈퇴 회원일 때
-		ArrayList<User> signOutUsers = MemberRepository.findAllSingOutUser();
+		ArrayList<Member> signOutUsers = MemberRepository.findAllSingOutUser();
 		
 		boolean isSignOutUser = signOutUsers.contains(other);
 		
@@ -71,29 +71,5 @@ public class PointGiftController {
 		pointGiftView.showPointGift(name);
 				
 	}
-
-
-//	private String findNameById(String id) {
-//		
-//		String name = "";
-//		
-//		for(Member u : Data.memberList) {
-//			if(u.getId().equals(id)) {
-//				return u.getName();
-//			}
-//		}
-//		return null;
-//		
-//	
-//	}
-	
-//	private User findUserById(String userId) {
-//		for (Member member : Data.memberList) {
-//			if (member instanceof User && member.getId().equals(userId)) {
-//				return (User) member;
-//			}
-//		}
-//		return null;
-//	}
 
 }

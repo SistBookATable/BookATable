@@ -84,21 +84,21 @@ public class MemberRepository {
 		return false;
 	}
 
-	public static ArrayList<User> findAllUser() {
-		ArrayList<User> tmp = new ArrayList<>();
+	public static ArrayList<Member> findAllUser() {
+		ArrayList<Member> tmp = new ArrayList<>();
 		for(Member m : Data.memberList) {
-			if(m.getUserType()==1 && m.getSignOut().equals("null")) {
-				tmp.add((User)m);
+			if(m.getSignOut().equals("null")) {
+				tmp.add(m);
 			}
 		}
 		return tmp;
 	}
 
-	public static ArrayList<User> findAllSingOutUser() {
-		ArrayList<User> tmp = new ArrayList<>();
+	public static ArrayList<Member> findAllSingOutUser() {
+		ArrayList<Member> tmp = new ArrayList<>();
 		for(Member m : Data.memberList) {
-			if(m.getUserType()==1 && !m.getSignOut().equals("null")) {
-				tmp.add((User)m);
+			if(!m.getSignOut().equals("null")) {
+				tmp.add(m);
 			}
 		}
 		return tmp;

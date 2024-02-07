@@ -146,7 +146,7 @@ public class StoreController {
 			storeView.backPage();
 			return true;
 		case 1:	// 예약하기
-			if((Member.level == 1) || (Member.level == 2)) {	// 로그인, 일반회원이라면
+			if((Member.level == 1) || (Member.level == 2)) {	// 로그인, 일반회원, 업체회원이면
 				storeView.show(searched);
 				storeView.reservationNumber();	// 예약할 음식점 선택, 번호
 				int select = sc.nextInt();
@@ -165,9 +165,9 @@ public class StoreController {
 					return false;
 				}
 			}
-		case 2:
-		case 3:
-		case 4:
+		case 2: // 즐겨찾기 등록
+		case 3:	// 즐겨찾기 수정
+		case 4:	// 즐겨찾기 삭제
 		}
 		return true;
 	}

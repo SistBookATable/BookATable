@@ -1,8 +1,6 @@
 package com.test.java.controller;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.Scanner;
 
 import com.test.java.model.Member;
 import com.test.java.model.Reservation;
@@ -30,7 +28,6 @@ public class InquiryReservationStatusController {
 			
 			for(Reservation r : userReservationList) {
 					String storeName = findStoreNameByLisenceNumber(r.getLicenseNumber());
-					String reservationTime = findReservationTime(r.getLicenseNumber());
 					InquiryReservationStatusView.showOneReservation(r, storeName);
 			}
 			
@@ -46,19 +43,9 @@ public class InquiryReservationStatusController {
 				loop = false;
 				break;
 			}
+			View.pause();
 		}
 	}
-
-
-	private String findReservationTime(String licenseNumber) {
-		for(Reservation r : Data.reservationList) {
-			if (r.getLicenseNumber().equals(licenseNumber)) {
-				return r.getReservationTime();
-			}
-		}
-		return null;
-	}
-
 
 	private String findStoreNameByLisenceNumber(String licenseNumber) {
 		for(Store s : Data.storeList) {

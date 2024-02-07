@@ -23,17 +23,15 @@ public class InquiryReservationStatusView {
 		
 	}
 	
-	public static void showInquiryReservationStatus(String storeName, String numOfPeple, String reservationTime) {
-		while(true) {
-			for(Reservation r : Data.reservationList) {
-				if (r.getState().equals("예약")) {
-					System.out.printf("%10s\t%10d명\t%10s\t", storeName, numOfPeple, reservationTime);
-					
-				}
-			}
-			break;
-		}
+	public static void showOneReservation(Reservation r, String storeName) {
+		String tmp = "";
+		tmp = String.format("%10s\t\t%10s명\t\t%10s\t"
+				, storeName
+				, r.getNumOfPeople()
+				, r.getReservationTime().substring(0, 2) + ":" + r.getReservationTime().substring(2));
+		System.out.println(tmp);
 	}
+	
 	public static void showSelectBox() {
 			
 		System.out.println();
@@ -65,14 +63,6 @@ public class InquiryReservationStatusView {
 		View.pause();
 	}
 
-	public static void showOneReservation(Reservation r, String storeName) {
-		String tmp = "";
-		tmp = String.format("%10s\t\t%10s명\t\t%10s\t"
-							, storeName
-							, r.getNumOfPeople()
-							, r.getReservationTime().substring(0, 2) + ":" + r.getReservationTime().substring(2));
-		System.out.println(tmp);
-	}
 
 
 

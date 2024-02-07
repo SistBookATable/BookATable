@@ -1,7 +1,6 @@
 package com.test.java.controller;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 
 import com.test.java.model.Member;
 import com.test.java.model.Reservation;
@@ -9,48 +8,51 @@ import com.test.java.model.Review;
 import com.test.java.model.Store;
 import com.test.java.repository.Data;
 import com.test.java.view.InquiryCompletedReservationView;
-import com.test.java.view.View;
+import com.test.java.view.UserWriteReviewView;
 
-public class InquiryCompletedReservationController {
+public class UserWriteReviewController {
 
-	public void inquiryCompletedReservation() {
-		
+	public void userWriteReview() {
 		boolean loop = true;
-		while (loop) {
+		while(loop) {
+			ArrayList<Reservation> noReviewReservation = findAllNoReviewReservation(Member.id);
 			
-			ArrayList<Reservation> visitedList = findAllRerservation(Member.id);
-			
-			if (visitedList.isEmpty()) {
-				InquiryCompletedReservationView.showNoVisitationMessage();
+			if (noReviewReservation.isEmpty()) {
+				UserWriteReviewView.showNoReviewMessage();
 				break;
 			}
 			
 			String userName = findNameById(Member.id);
-			InquiryCompletedReservationView.showTitle(userName);
+			UserWriteReviewView.showNoReviewReservation(userName);
 			
-			for(Reservation r : visitedList) {
-				String storeName = findStoreName(Member.id);
-				String cancelState = findCancelState(Member.id);
-				String noShowState = findNoShowState(Member.id);
-				String reviewState = findReviewState(Member.id);
+			String storeName = findStoreName(Member.id);
+			String cancelState = findCancelState(Member.id);
+			String noShowState = findNoShowState(Member.id);
+			String reviewState = findReviewState(Member.id);
+
+			for(Reservation r : noReviewReservation) {
 				InquiryCompletedReservationView.showOneReservation(r, storeName, cancelState, noShowState, reviewState);
 			}
 			
-			InquiryCompletedReservationView.showSelecBox();
-			int choice = InquiryCompletedReservationView.get();
-			
-			switch (choice) {
-			case 1:
-				UserWriteReviewController userWriteReviewController = new UserWriteReviewController();
-				userWriteReviewController.userWriteReview();
-				break;
-			case 0 :
-				loop = false;
-				break;
+			String intputStoreName = UserWriteReviewView.getStoreName();
+			if (storeName.equals(intputStoreName)) {
+				String reviewContent = UserWriteReviewView.getReviewContent();
+				addReview(reviewContent);
 			}
-			View.pause();
+			
+			
 		}
 	}
+
+
+	private void addReview(String reviewContent) {
+		for(Reservation r : Data.reservationList) {
+			if (r.getState().equals("취소")) {
+//				TODO 일반회원의 리뷰리스트 중 리뷰 내용을 reviewContent로 바꿈
+			}
+		}
+	}
+
 
 	private String findReviewState(String id) {
 		for(Review review : Data.reviewList) {
@@ -75,7 +77,6 @@ public class InquiryCompletedReservationController {
 		return null;
 	}
 
-
 	private String findCancelState(String id) {
 		for(Reservation r : Data.reservationList) {
 			if (r.getUserId().equals(id)) {
@@ -85,7 +86,6 @@ public class InquiryCompletedReservationController {
 		}
 		return null;
 	}
-
 
 	private String findStoreName(String id) {
 		for(Reservation r : Data.reservationList) {
@@ -97,26 +97,26 @@ public class InquiryCompletedReservationController {
 				}
 			}
 		}
-		
 		return null;
 	}
 
-	private ArrayList<Reservation> findAllRerservation(String id) {
-		ArrayList<Reservation> tmp = new ArrayList<Reservation>();
-		for(Reservation r : Data.reservationList) {
-			if (r.getUserId().equals(id)) {
-				tmp.add(r);
-			}
-		}
-		return tmp;
-	}
-
 	private String findNameById(String id) {
-		for(Member u : Data.memberList) {
+		for (Member u : Data.memberList) {
 			if (u.getId().equals(id)) {
 				return u.getName();
 			}
 		}
 		return null;
 	}
+
+	private ArrayList<Reservation> findAllNoReviewReservation(String id) {
+		ArrayList<Reservation> tmp = new ArrayList<Reservation>();
+		for(Reservation r : Data.reservationList) {
+			if (r.getUserId().equals(id) && r.getState().equals("취소")) {
+				tmp.add(r);
+			}
+		}
+		return tmp;
+	}
+
 }

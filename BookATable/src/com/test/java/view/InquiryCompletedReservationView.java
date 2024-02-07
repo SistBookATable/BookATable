@@ -1,41 +1,53 @@
 package com.test.java.view;
 
-import java.util.Calendar;
 import java.util.Scanner;
 
-import com.test.java.model.Member;
-import com.test.java.model.Review;
-import com.test.java.repository.Data;
+import com.test.java.model.Reservation;
 
 public class InquiryCompletedReservationView {
 
-	public static void showInquiryCompletedReservation(String userName, String reserveDate, String storeName, int numOfPeple,
-			String canceledReservationState, String noShowState, String reviewState) {
-		System.out.println("------------------------------------------------------------------------------------------");
+	public static void showTitle(String userName) {
 		System.out.println();
-		System.out.printf("■           %s님 현재 예약 현황		   ■", userName);
 		System.out.println();
-		System.out.println("------------------------------------------------------------------------------------------");
+		System.out.println("┌───────────────────────────────────────────────────────┐");
+		System.out.printf("|                 %s님 현재 예약 현황              	  <\n", userName);
+		System.out.println("└───────────────────────────────────────────────────────┘");
+		System.out.println();
+		
+		String header = String.format("%10s\t%10s\t%10st%10st%10s\t%10s\t"
+									,"[예약일]","[상호명]","[인원수]","[예약취소여부]","[노쇼여부]","[리뷰작성여부]");
+		System.out.println(header);
+		
+	}
+	
+	public static void showOneReservation(Reservation r, String storeName, String cancelState, String noShowState, String reviewState) {
+		String tmp = "";
+		tmp = String.format("%10s\t%10s\t%10st%10st%10s\t%10s\t"
+							, r.getReservationDate()
+							, storeName
+							, r.getNumOfPeople()
+							, cancelState
+							, noShowState
+							, reviewState);
+		System.out.println(tmp);
+	}
 
-		System.out.println();
-		System.out.printf("[예약일]\t[상호명]\t[인원수]\t[예약 취소]\t[노쇼]\t[리뷰 작성]\n");
-		System.out.printf("[%s]\t[%s]\t[%d명]\t[%s]\t\t[%s]\t[%s]\n"
-						 , reserveDate, storeName, numOfPeple, canceledReservationState, noShowState, reviewState);
-
+	public static void showSelecBox() {
 		System.out.println();
 		System.out.println("------------------------------------------------------------------------------------------");
 		System.out.println();
-		System.out.println("■           1. 리뷰 작성하기	   ■");
+		System.out.println("■           1. 리뷰 작성		   ■");
 		System.out.println("■           0. 이전 화면		   ■");
 		System.out.println();
 		System.out.println("------------------------------------------------------------------------------------------");
-
+		
 		System.out.println();
-
+		
 		System.out.print("선택(번호) : ");
 		System.out.println();
+		
 	}
-
+	
 	public static int get() {
 		Scanner scan = new Scanner(System.in);
 		int num = scan.nextInt();
@@ -51,9 +63,12 @@ public class InquiryCompletedReservationView {
 		return storNameToWriteReview;
 	}
 
-	public static String writeReview() {
-		System.out.print("리뷰 작성란: ");
-		Scanner scan = new Scanner(System.in);
-		return scan.nextLine();
+	public static void showNoVisitationMessage() {
+		System.out.println();
+		System.out.println("방문 내역이 없습니다.");
+		System.out.println();
+		View.pause();		
 	}
+
+
 }

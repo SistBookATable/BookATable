@@ -20,11 +20,7 @@ public class MemberRepository {
 	}
 	
 	public static ArrayList<Member> findAll() {
-		ArrayList<Member> tmp = new ArrayList<>();
-		for(Member m : Data.memberList) {
-			tmp.add(m);
-		}
-		return tmp;
+		return Data.memberList;
 	}
 
 	public static boolean isValidName(String name) {
@@ -106,6 +102,15 @@ public class MemberRepository {
 		return tmp;
 		
 	}
+<<<<<<< HEAD
 	
 	
+=======
+	public static void add(String id, String pw, String name, String phone, String jumin, int i, int j, int k,
+			String bank, String account, String string, String now, String string2) {
+		
+		User user = new User(id, pw, name, phone, jumin, i, j, k, bank, account, string, now, string2);
+		Data.memberList.add(user);
+	}
+>>>>>>> 91198df03630dfaa153a2f9863fa25cb8e98c035
 }

@@ -4,6 +4,10 @@ import com.test.java.view.SignInView;
 
 public class SignInController {
 
+<<<<<<< HEAD
+=======
+	SignInView signInView = new SignInView();
+>>>>>>> 91198df03630dfaa153a2f9863fa25cb8e98c035
 	/**
 	 * 회원 가입 기능
 	 */	
@@ -11,8 +15,8 @@ public class SignInController {
 		
 		boolean loop = true;
 		while(loop) {
-			SignInView.showSelectType();
-			String choice = SignInView.getSelectType();
+			signInView.showSelectType();
+			String choice = signInView.getSelectType();
 			
 			switch(choice) {
 			case "1":
@@ -28,7 +32,7 @@ public class SignInController {
 				break;
 			default:
 				//유효하지 않은 입력
-				SignInView.incorrectInputMessage();
+				signInView.incorrectInputMessage();
 			}
 		}
 		

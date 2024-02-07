@@ -106,16 +106,14 @@ public class Store {
 		return true;
 	}
 
-//   @Override
-//   public String toString() {
-//      return "Store [licenseNumber=" + licenseNumber + ", storeName=" + storeName + ", storeTelNumber="
-//            + storeTelNumber + ", menuCategory=" + menuCategory + ", address=" + address + ", score=" + score
-//            + ", distanceFrom=" + distanceFrom + "]";
-//   }
-
-	public Object getReviewCount() {
-		// TODO Auto-generated method stub
-		return null;
+	public int getReviewCount() {
+		int count = 0;
+		for(Review r : Data.reviewList) {
+			if(r.getLicenseNumber().equals(this.licenseNumber)) {
+				count++;
+			}
+		}
+		return count;
 	}
 
 	public Store(String licenseNumber, String storeName, String storeTelNumber, String address, String menuCategory) {

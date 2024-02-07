@@ -12,8 +12,8 @@ public class PointManagementController {
 		boolean loop = true;
 		
 		while (loop) {
-			User curUser = (User)MemberRepository.findOneById(Member.id);
 			
+			User curUser = (User)MemberRepository.findOneById(Member.id);
 			PointManagementView.showPointManagement(curUser.getName(), curUser.getAccount(), curUser.getBalance());
 			int choice = PointManagementView.get();
 			
@@ -23,19 +23,17 @@ public class PointManagementController {
 					 pointChargingController.pointCharging();
 					 break;
 			// 포인트환불	
-//			case 2 : PointRefundController pointRefundController = new PointRefundController();
-//					 pointRefundController.pointRefund();
-//					 break;
+			case 2 : PointRefundController pointRefundController = new PointRefundController();
+					 pointRefundController.pointRefund();
+					 break;
 			// 포인트선물	
 			case 3 : PointGiftController pointGiftController = new PointGiftController();
 					 pointGiftController.pointGift();
 					 break;
-				
 			// 포인트사용내역
 			case 4 : PointUsageHistoryController pointUsageHistoryController = new PointUsageHistoryController(); 
 					 pointUsageHistoryController.pointUsageHistory();
 					 break;
-
 			// 이전화면	
 			case 0 : 
 				loop = false;

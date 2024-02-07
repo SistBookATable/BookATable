@@ -14,7 +14,6 @@ public class PointChargingView {
 			tmp = scan.nextInt();
 			scan.nextLine();
 			break;
-	
 		}
 		return tmp;
 	}
@@ -31,10 +30,12 @@ public class PointChargingView {
 		return tmp;
 	}
 	
-	public String showPointCharging(int amountCharging) {
-		String tmp = "";
-		tmp = amountCharging + "포인트가 충전되었습니다.";
-		return tmp;
+	public void showPointCharging(int amountCharging) {
+		System.out.println();
+		System.out.printf("■         %d 포인트가 충전되었습니다.		 ■", amountCharging);
+		System.out.println();
+		View.pause();
+		
 	}
 
 }

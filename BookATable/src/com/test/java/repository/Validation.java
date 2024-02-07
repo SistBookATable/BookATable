@@ -7,7 +7,7 @@ import java.util.regex.Pattern;
 import com.test.java.model.Member;
 
 public class Validation {
-	
+	public static String[] banks = {"null", "SC제일은행", "신한은행", "씨티은행", "DGB대구은행", "케이뱅크", "NH농협은행","우리은행","부산은행","카카오뱅크", "IBK기업은행", "KEB하나은행"};
 	
 	public static boolean isValidId(String id) {
 		if (id.equals(""))
@@ -23,8 +23,26 @@ public class Validation {
 		return Pattern.matches("^(?=.*[!@#$%^&*])[a-zA-Z0-9ㄱ-ㅎㅏ-ㅣ!@#$%^&*]{5,}$", pw);
 	}
 
-	public static boolean isValidAccount(String account) {
-		return Pattern.matches("^(\\d{1,})(-(\\d{1,})){1,}", account);
+	public static boolean isValidAccount(String account, String bank) {
+		switch(bank) {
+		case "SC제일은행":
+			return Pattern.matches("^(\\d){11,}", account);
+		case "신한은행":
+		case "씨티은행":
+		case "DGB대구은행":
+		case "케이뱅크":
+			return Pattern.matches("^(\\d){12,}", account);
+		case "NH농협은행":
+		case "우리은행":
+		case "부산은행":
+		case "카카오뱅크":
+			return Pattern.matches("^(\\d){13,}", account);
+		case "IBK기업은행":
+		case "KEB하나은행":
+			return Pattern.matches("^(\\d){14,}", account);
+		}
+		return false;
+		
 	}
 
 	public static boolean isValidBank(String bank) {

@@ -7,7 +7,7 @@ import com.test.java.view.MainView;
 import com.test.java.view.StoreView;
 
 public class MainController {
-
+	 
 	/**
 	 * 메인 화면 시작 
 	 */

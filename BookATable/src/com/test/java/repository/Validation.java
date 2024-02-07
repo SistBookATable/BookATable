@@ -4,6 +4,8 @@ import java.util.Arrays;
 import java.util.function.Predicate;
 import java.util.regex.Pattern;
 
+import com.test.java.model.Member;
+
 public class Validation {
 	
 	
@@ -112,6 +114,23 @@ public class Validation {
 //	    		category -> Arrays.stream(categoryList).anyMatch(category::equals);
 	    return Arrays.stream(categoryList).anyMatch(menuCategory::equals);
 	}
+
+	public static boolean isValidPwWithInput(String id,String inputPw) {
+		for(Member m : Data.memberList) {
+			if (m.getId().equals(id)) {
+				if (m.getPw().equals(inputPw)) {
+					return true;
+				}
+			}
+		}
+		return false;
+	}
 	
-	
+	public static boolean isValidYorN(String string) {
+		if (string.equalsIgnoreCase("Y")) {
+			return true;
+		}
+		return false;
+	}
+
 }

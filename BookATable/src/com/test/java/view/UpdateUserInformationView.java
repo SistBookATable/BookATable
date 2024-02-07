@@ -41,4 +41,11 @@ public class UpdateUserInformationView {
 		return temp;
 	}
 
+	public static void showErrorMessage() {
+		System.out.println();
+		System.out.println("비밀번호를 잘못 입력하셨습니다.");
+		System.out.println();
+		View.pause();
+	}
+
 }

@@ -23,6 +23,9 @@ public class UserSignInController {
 		String account = "";
 		String id = "";
 		String pw = "";
+		
+		Calendar c = Calendar.getInstance();
+		String now = String.format("%tF", c);
 
 		while (true) {
 			name = UserSignInView.getName();
@@ -34,9 +37,10 @@ public class UserSignInController {
 					UserSignInView.showCancelMessage();
 					return false;
 				}
-				UserSignInView.errorMessage("이름은 한글과 영문자로만 구성되어야 하고 총 1자 이상 작성하십시오. ");
+				UserSignInView.errorMessage("이름은 한글과 영문자로만 구성되어야 하고 총 2자 이상 작성하십시오. ");
 			}
 		}
+		
 		while (true) {
 			jumin = UserSignInView.getJumin();
 			if (Validation.isValidJumin(jumin)) {
@@ -60,7 +64,7 @@ public class UserSignInController {
 					UserSignInView.showCancelMessage();
 					return false;
 				}
-				UserSignInView.errorMessage("“전화번호를 숫자와 “-”로만 구성하여  [000-0000-0000] 형식으로 작성하십시오");
+				UserSignInView.errorMessage("전화번호를 숫자와 “-”로만 구성하여  [000-0000-0000] 형식으로 작성하십시오");
 			}
 		}
 		
@@ -118,12 +122,10 @@ public class UserSignInController {
 					UserSignInView.showCancelMessage();
 					return false;
 				}
-				UserSignInView.errorMessage("PW는 특수문자(!,@,#,$,%,^,&,*)를 1자 이상 포함하는 5자로 작성하십시오");
+				UserSignInView.errorMessage("PW는 특수문자(!,@,#,$,%,^,&,*)를 1자 이상 포함하는 5자 이상으로 작성하십시오");
 			}
 		}
 
-		Calendar c = Calendar.getInstance();
-		String now = String.format("%tF", c);
 
 		MemberRepository.add(id, pw, name, phone, jumin, 0, 0, 0, bank, account, "null", now, "null");
 		

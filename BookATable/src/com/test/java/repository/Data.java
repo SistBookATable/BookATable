@@ -41,9 +41,7 @@ public class Data {
 	private final static String USER = "dat"+File.separator+"user.txt";
 	private final static String BUSINESSUSER = "dat"+File.separator+"businessUser.txt";
 	private final static String ADMIN = "dat"+File.separator+"admin.txt";
-	
 	private final static String STORE = "dat"+File.separator+"store.txt";
-	
 	private final static String BLACKLIST = "dat"+File.separator+"blackList.txt";
 	private final static String VIP = "dat"+File.separator+"vip.txt";
 	private final static String TABLE = "dat"+File.separator+"table.txt";
@@ -68,7 +66,7 @@ public class Data {
 	public static ArrayList<Inquiry> inquiryList = new ArrayList<>();
 	public static ArrayList<Faq> faqList = new ArrayList<>();
 	public static ArrayList<OperatingHours> operatingHoursList = new ArrayList<>();
-
+	public static ArrayList<Bookmark> bookmarkList = new ArrayList<>();
 	public static ArrayList<PointUsage> pointList = new ArrayList<>();
 //	public static ArrayList<CompletedList> compleatedList = new ArrayList<>();
 	public static ArrayList<Request> requestList = new ArrayList<>();
@@ -116,7 +114,6 @@ public class Data {
 				String[] tmp = line.split(",");
 				Bookmark bookmark = new Bookmark(tmp[0], tmp[1]);
 				bookmarkList.add(bookmark);
-				System.out.println(bookmarkList);
 			}
 			
 			reader.close();
@@ -187,7 +184,6 @@ public class Data {
 				String[] tmp = line.split(",");
 				OperatingHours operatingHours = new OperatingHours(tmp[0],tmp[1],tmp[2],tmp[3],tmp[4],tmp[5]);
 				operatingHoursList.add(operatingHours);
-				System.out.println(pointList);
 			}
 			
 			reader.close();
@@ -210,7 +206,6 @@ public class Data {
 				String[] tmp = line.split(",");
 ////				PointUsage pointUsage = new PointUsage(Integer.parseInt(tmp[0]),tmp[1],tmp[2],tmp[3]);
 //				pointList.add(pointUsage);
-				System.out.println(pointList);
 			}
 			
 			reader.close();
@@ -233,7 +228,6 @@ public class Data {
 				String[] tmp = line.split(",");
 				Faq faq = new Faq(Integer.parseInt(tmp[0]),tmp[1],tmp[2],tmp[3]);
 				faqList.add(faq);
-				System.out.println(faq);
 			}
 			
 			reader.close();
@@ -255,7 +249,7 @@ public class Data {
 			
 			String[] tmp = line.split(",");
 			
-			BlackList blackList = new BlackList(tmp[0],tmp[1],Integer.parseInt(tmp[2]));
+			BlackList blackList = new BlackList(tmp[0],tmp[1]);
 			blackListList.add(blackList);
 		}
 		reader.close();
@@ -294,7 +288,7 @@ public class Data {
 			BufferedWriter writer = new BufferedWriter(new FileWriter(Data.BLACKLIST));
 			
 			for(BlackList blackList : Data.blackListList) {
-				String line = String.format("%s,%s,%d",blackList.getLicenseNumber(),blackList.getUserId(),blackList.getNoShowCount());
+				String line = String.format("%s,%s",blackList.getLicenseNumber(),blackList.getUserId());
 							
 				writer.write(line);
 					
@@ -416,7 +410,6 @@ public class Data {
 				Store store = new Store(tmp[0],tmp[1],tmp[2],tmp[3],tmp[4],
 										Double.parseDouble(tmp[5]),Integer.parseInt(tmp[6]));
 				storeList.add(store);
-				System.out.println(store);
 			}
 			
 			reader.close();
@@ -481,7 +474,6 @@ public class Data {
 				User user = new User(Integer.parseInt(tmp[0]), tmp[1], tmp[2], tmp[3], tmp[4], tmp[5]
 									, tmp[6], tmp[7]
 									, Integer.parseInt(tmp[8]), Integer.parseInt(tmp[9]), Integer.parseInt(tmp[10]), tmp[11], tmp[12],tmp[13]);
-				System.out.println(user);
 				memberList.add(user);
 			}
 			

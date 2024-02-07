@@ -67,7 +67,7 @@ public class OperatingHours {
 
 	public String getBreakStart() {
 		if(breakStart.equals("null")) {
-			return "휴게시간";
+			return "        휴게시간";
 		}
 		return breakStart;
 	}

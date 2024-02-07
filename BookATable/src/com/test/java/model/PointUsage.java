@@ -2,11 +2,12 @@ package com.test.java.model;
 
 public class PointUsage {
 	
+	private static int COUNT = 1;
 	private int usageNumber; 
 	private int usagePoint;
 	private String useTime;
-	private String userId;
 	private String content;
+	private String userId;
 	
 	//TODO save할 때 어떻게 적용할지..!
 	
@@ -19,7 +20,7 @@ public class PointUsage {
 	
 	public PointUsage(int usageNumber,int usagePoint,String useTime, String content, String userId) {
 		super();
-		this.usageNumber = usageNumber;
+		this.usageNumber = COUNT++;
 		this.usagePoint = usagePoint;
 		this.useTime = useTime;
 		this.content = content;
@@ -60,4 +61,13 @@ public class PointUsage {
 	public void InqueryPointRefund() {
 		
 	}
+
+
+	@Override
+	public String toString() {
+		return "PointUsage [usageNumber=" + usageNumber + ", usagePoint=" + usagePoint + ", useTime=" + useTime
+				+ ", content=" + content + ", userId=" + userId + "]";
+	}
+	
+	
 }

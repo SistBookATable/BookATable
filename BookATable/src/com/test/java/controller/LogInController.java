@@ -49,7 +49,7 @@ public class LogInController {
 
 	private String findNameById(String id) {
 		for (Member u : Data.memberList) {
-			if (u.getId().equals(id) && u.getSignOut().equals("null")) {
+			if (u.getId().equals(id)) {
 				return u.getName();
 			}
 		}
@@ -72,7 +72,7 @@ public class LogInController {
 
 	private boolean checkId(String id) {
 		for (Member u : Data.memberList) {
-			if (u.getId().equals(id)) {
+			if (u.getId().equals(id) && u.getSignOut().equals("null")) {
 				return true;
 			}
 		}

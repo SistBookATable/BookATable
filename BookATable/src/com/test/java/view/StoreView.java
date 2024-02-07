@@ -21,9 +21,9 @@ public class StoreView {
 	}
 
 	public void title() {
-		System.out.println("=================================================================================================================");
-		System.out.println("\t\t\t\t\t\t음식점 리스트\t\t\t\t\t\t\t\t\t\t");
-		System.out.println("=================================================================================================================");
+		System.out.println("┌───────────────────────────────────────────────────────┐");
+		System.out.println("|                       음식점 리스트                      <");
+		System.out.println("└───────────────────────────────────────────────────────┘");
 	}
 
 	public void showMenu(Menu menu) {
@@ -38,7 +38,7 @@ public class StoreView {
 		System.out.println("\t\t\t\t\t\t음식점 리스트\t\t\t\t\t\t\t\t\t\t");
 		System.out.println("=================================================================================================================");
 		System.out.printf("No\t사업자번호\t\t\t상호명\t\t전화번호\t\t음식분류\t\t주소\t\t\t평점\t역과의 거리\t리뷰 갯수\n");
-		System.out.printf("%d%15s%20s\t%12s%8s\t%5s\t%3.1f\t%5d\n",index ,store.getLicenseNumber(), store.getStoreName(), store.getStoreTelNumber(), store.getMenuCategory(), store.getAddress(), store.getScore(), store.getDistanceFrom());
+		System.out.printf("%d%15s%20s\t%12s%8s\t%5s\t%3.1f\t%5d\t%d\n",index ,store.getLicenseNumber(), store.getStoreName(), store.getStoreTelNumber(), store.getMenuCategory(), store.getAddress(), store.getScore(), store.getDistanceFrom(), store.getReviewCount());
 		System.out.println();
 
 	}
@@ -88,6 +88,14 @@ public class StoreView {
 		return temp;
 
 	}
+	
+	public static String getTxt() {
+		Scanner sc = new Scanner(System.in);
+		String txt = "";
+		
+		txt = sc.nextLine();
+		return txt;
+	}
 
 	public String getStoreName() {
 		Scanner sc = new Scanner(System.in);
@@ -105,9 +113,8 @@ public class StoreView {
 
 	public void showSelectBox() {
 		System.out.println("1. 별점 내림차순 정렬");
-		System.out.println("2. 역으로부터 거리 오름차순");
-		System.out.println("3. 리뷰 갯수 내림차순");
-		System.out.println("4. 상세페이지");
+		System.out.println("2. 리뷰 갯수 내림차순");
+		System.out.println("3. 상세페이지");
 		System.out.println("0. 이전 화면");
 		System.out.print("선택(번호) : ");
 	}
@@ -122,13 +129,27 @@ public class StoreView {
 	}
 
 	public void reservationNumber() {
-		System.out.println("예약할 음식점 선택(번호): ");
+		System.out.print("예약할 음식점 선택(번호): ");
 	}
 
 	public void noneMemberAvailable() {
 		System.out.println("┌───────────────────────────────────────────────────────────┐");
 		System.out.println("| 비회원은 회원 가입 후 이용가능합니다. 회원가입 페이지로 이동하시겠습니까?(Y/N) <");
 		System.out.println("└───────────────────────────────────────────────────────────┘");
+		System.out.print("■ 입력 :\t■");
+	}
+
+	public void backPage() {
+		System.out.println("---------------------------------------------------------------------");
+		System.out.println("\t\t\t이전 페이지로 이동합니다\t\t\t");
+		System.out.println("---------------------------------------------------------------------");
+	}
+	
+	public void inputError() {
+		System.out.println("-------------------------------------------------------------------------------");
+		System.out.println("\t\t\t잘못 입력하셨습니다. 다시 입력해주세요.\t\t");
+		System.out.println("-------------------------------------------------------------------------------");
+		
 	}
 
 	//   public int reservationNumber() {

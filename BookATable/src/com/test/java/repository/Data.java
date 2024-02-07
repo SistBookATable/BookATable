@@ -4,7 +4,6 @@ import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.FileWriter;
-import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -38,6 +37,27 @@ public class Data {
 
 	
 	//여러개면 Path 클래스를 만들어서 넣는게 좋음
+
+	
+	
+	
+	
+	
+	
+	
+	private final static String VIP = "dat\\Vip.txt";
+	
+	
+	
+	
+	private final static String RESERVATIONMENU = "dat\\ReservationMenu.txt";
+	
+	
+
+	
+
+	
+
 	private final static String USER = "dat"+File.separator+"user.txt";
 	private final static String BUSINESSUSER = "dat"+File.separator+"businessUser.txt";
 	private final static String ADMIN = "dat"+File.separator+"admin.txt";
@@ -54,6 +74,7 @@ public class Data {
 	private final static String REQUEST = "dat"+File.separator+"request.txt";
 	private final static String BOOKMARK = "dat"+File.separator+"bookmark.txt";
 	private final static String POINTREFUND = "dat"+File.separator+"pointRefund.txt";
+
 	
 	
 	//필요한 자료들
@@ -90,7 +111,9 @@ public class Data {
 			while((line = reader.readLine()) != null) {
 				String[] tmp = line.split(",");
 				PointRefund pointRefund = new PointRefund(tmp[0], Integer.parseInt(tmp[1]),tmp[2]);
+
 //				pointRefundList.add(pointRefund);
+
 
 			}
 			
@@ -226,6 +249,7 @@ public class Data {
 				
 				String[] tmp = line.split(",");
 				Faq faq = new Faq(Integer.parseInt(tmp[0]),tmp[1],tmp[2],tmp[3]);
+//				System.out.println(faq);
 				faqList.add(faq);
 			}
 			
@@ -234,7 +258,6 @@ public class Data {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		
 	}
 	
 	public static void loadBlackList() {
@@ -473,6 +496,7 @@ public class Data {
 				User user = new User(Integer.parseInt(tmp[0]), tmp[1], tmp[2], tmp[3], tmp[4], tmp[5]
 									, tmp[6], tmp[7]
 									, Integer.parseInt(tmp[8]), Integer.parseInt(tmp[9]), Integer.parseInt(tmp[10]), tmp[11], tmp[12],tmp[13]);
+
 				memberList.add(user);
 			}
 			

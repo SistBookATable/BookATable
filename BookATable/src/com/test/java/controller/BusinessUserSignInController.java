@@ -45,7 +45,11 @@ public class BusinessUserSignInController {
 		while (true) {
 			licenseNumber = BusinessUserSignInView.getLicenseNumber();
 			if (Validation.isValidLisenceNumber(licenseNumber)) {
-				break;
+				if(MemberRepository.checkDuplicate(licenseNumber)) {
+					break;
+				} else {
+					UserSignInView.errorMessage("이미 들록된 사업자 번호입니다. 다시 작성하십시오");
+				}
 			} else {
 				BusinessUserSignInView.errorMessage();
 			}

@@ -25,8 +25,8 @@ public class BusinessUserMyPageController {
 				revenueManagementController.revenueManagement();
 				break;
 			case 3:
-				SalesManagementController salesManagementController = new SalesManagementController();
-				salesManagementController.salesManagemnet();
+//				SalesManagementController salesManagementController = new SalesManagementController();
+//				salesManagementController.salesManagemnet();
 				break;
 			case 4:
 				OperationalInfoManagementController operationalInfoManagementController= new OperationalInfoManagementController();

@@ -24,6 +24,9 @@ public class ReservationController {
 	                System.out.println(Data.reservationList);
 	                
 	                int num = reservationView.getReservationNum();
+	                
+	            	int tableNum=reservationView.getTableNum(num);
+	            	
 	                ReservationView.showCalendar();
 	                System.out.println();
 	                
@@ -67,9 +70,9 @@ public class ReservationController {
 	                int index =1;
 	                for (Member member : Data.memberList) {
 	                    if (Member.id.equals(member.getId())) {
-	                        Reservation reservation = new Reservation(index, Member.id, licenseNumber, time, date, num, 4, "예약", selectedMenuList);
+	                        Reservation reservation = new Reservation(index, Member.id, licenseNumber, time, date, num, tableNum, "예약", selectedMenuList);
 	                        Data.reservationList.add(reservation);
-	                        // Data.saveReservation();
+	                        
 	                        index++;
 	                    }
 	                }
@@ -203,6 +206,9 @@ public class ReservationController {
 		
 		return tmp;
 	}
+	
+	
+	
 	
 	
 

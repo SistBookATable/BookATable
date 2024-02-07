@@ -43,4 +43,13 @@ public class ReviewRepository {
 		
 		return tmp;
 	}
+
+	public static boolean findOneById(String id, String lisenceNumber) {
+		for(Review r : Data.reviewList) {
+			if(r.getLicenseNumber().equals(lisenceNumber) && r.getUserId().equals(id)) {
+				return true;
+			}
+		}
+		return false;
+	}
 }

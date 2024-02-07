@@ -1,11 +1,13 @@
 package com.test.java.controller;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 import com.test.java.model.Member;
 import com.test.java.model.PointUsage;
 import com.test.java.model.User;
 import com.test.java.repository.Data;
+import com.test.java.repository.PointRepository;
 import com.test.java.view.PointManagementView;
 import com.test.java.view.PointUsageHistoryView;
 
@@ -16,19 +18,21 @@ public class PointUsageHistoryController {
 		String userId = Member.id; 
 		String name = findNameById(userId);	
 		
+		
 		PointUsageHistoryView pointUsageHistoryView = new PointUsageHistoryView();
-		pointUsageHistoryView.showPointUsageHistoryView(name);
+		//제목 출력
+		pointUsageHistoryView.showTitle(name);
 		
+		//포인트 사용내역 조회
+		ArrayList<PointUsage> usageList = PointRepository.findAllById(userId);
 		
-		// 사용자가 엔터를 입력할 때까지 대기
-		Scanner scan = new Scanner(System.in);
-		System.out.println("<<엔터를 입력하면 이전 화면으로 이동합니다.>>");
-		while (scan.nextLine().isEmpty()) {
-			// 이동 
-		    PointManagementView pointManagementView = new PointManagementView();
-		    pointManagementView.showPointManagement(findNameById(Member.id), findAccountById(Member.id), findPointById(Member.id));
+		//포인트 사용 내역이 없을 때
+		if(usageList.isEmpty()) {
+			pointUsageHistoryView.noHistoryMessage();
 		}
 		
+		//모든 사용 내역 출력
+		pointUsageHistoryView.showPointUsageHistoryView(usageList);
 		
 	}
 

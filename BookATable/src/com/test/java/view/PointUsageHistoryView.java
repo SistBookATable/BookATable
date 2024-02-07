@@ -12,42 +12,7 @@ public class PointUsageHistoryView {
 	
 	public static ArrayList<PointUsage> pointList = new ArrayList<>();
 	
-	public void showPointUsageHistoryView(String name) {
-		
-		System.out.println("------------------------------------------------------------------------------------------");
-		System.out.println();
-		System.out.printf("■           %s님 포인트 사용내역		   ■", name);
-		System.out.println();
-		System.out.println("------------------------------------------------------------------------------------------");
-		System.out.println();
-		
-		
-		String header = String.format("%10s%5s%10s%10s", "[사용일자]","[구분]","[포인트사용]","[보유포인트]");
-		System.out.println(header);
-
-
-		
-		if(Data.pointList.isEmpty()) {
-			System.out.println();
-			System.out.println("■           포인트 사용내역이 없습니다.		   ■");
-			System.out.println();
-			View.pause();
-		} else {
-			for(PointUsage p : Data.pointList) {
-				int userBalance = findBalanceById(p.getUserId()); // 보유포인트찾기
-				String tmp = String.format("%10s%15s%10s%10s",
-						p.getUseTime(),
-						p.getContent(),
-						p.getUsagePoint(),
-						userBalance);
-
-				System.out.println(tmp);
-		
-
-
-			}}
-		
-	}
+	
 	
 	private int findBalanceById(String userId) {
 		
@@ -69,6 +34,49 @@ public class PointUsageHistoryView {
 			}
 		}
 		return null;
+	}
+
+	public void showTitle(String name) {
+		
+		System.out.println("------------------------------------------------------------------------------------------");
+		System.out.println();
+		System.out.printf("■           %s님 포인트 사용내역		   ■", name);
+		System.out.println();
+		System.out.println("------------------------------------------------------------------------------------------");
+		System.out.println();
+		
+		
+		String header = String.format("%10s%5s%10s", "[사용일자]","[구분]","[포인트사용]");
+		System.out.println(header);
+
+		
+	}
+
+
+
+	public void noHistoryMessage() {
+		System.out.println();
+		System.out.println("■           포인트 사용내역이 없습니다.		   ■");
+		System.out.println();
+		View.pause();
+	}
+
+
+
+	public void showPointUsageHistoryView(ArrayList<PointUsage> usageList) {
+		
+		for(PointUsage p : usageList) {
+			
+			String tmp = String.format("%10s%15s%10s",
+					p.getUseTime(),
+					p.getContent(),
+					p.getUsagePoint());
+
+			System.out.println(tmp);
+			
+		}
+		
+		View.pause();
 	} 
 	
 		

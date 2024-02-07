@@ -5,17 +5,41 @@ import java.util.Scanner;
 import com.test.java.model.Member;
 import com.test.java.model.User;
 import com.test.java.repository.Data;
+import com.test.java.repository.MemberRepository;
 import com.test.java.view.PointGiftView;
 
 public class PointGiftController {
+
+	PointGiftView pointGiftView = new PointGiftView();
 	
 	public void pointGift() {
 		
-		PointGiftView pointGiftView = new PointGiftView();
+		//선물할 사람 id입력
+		String id = pointGiftView.getId(); // 사용자가 입력한 ID
 		
-		String id = pointGiftView.getId(); // 사용자가 입력한 ID 
+		//선물할 금액 입력
 		int amountGift = pointGiftView.getAmountGift();
-		String name = findNameById(id); // 사용자가 입력한 ID에 해당하는 이름 찾기 
+		
+		//입력한 금액이 현재 잔액보다 많을 때 메시지 출력하고 return;
+		
+		//id에 해당하는 user찾기
+		User user = (User)MemberRepository.findOneById(id);
+		
+		//user가 탈퇴 회원일 때 잘못된 아이디 입니다. return;
+		
+		//
+		String name = user.getName(); // 사용자가 입력한 ID에 해당하는 이름 찾기
+		
+		//현재 로그인한 회원 Member.id 나 찾기
+		
+		//내 현재 포인트 감소
+		
+		//user(받는 사람) 포인트 증가
+		
+		//pointList 에 추가 PointRepository.add()
+		
+		//완료 메시지 출력
+		
 		String result = pointGiftView.showPointGift(id, name);
 		
 		findNameById(Member.id);

@@ -3,6 +3,7 @@ package com.test.java.controller;
 import com.test.java.model.Member;
 import com.test.java.model.User;
 import com.test.java.repository.Data;
+import com.test.java.repository.MemberRepository;
 import com.test.java.view.PointManagementView;
 
 public class PointManagementController {
@@ -11,7 +12,9 @@ public class PointManagementController {
 		boolean loop = true;
 		
 		while (loop) {
-			PointManagementView.showPointManagement(findNameById(Member.id), findAccountById(Member.id), findPointById(Member.id));
+			User curUser = (User)MemberRepository.findOneById(Member.id);
+			
+			PointManagementView.showPointManagement(curUser.getName(), curUser.getAccount(), curUser.getBalance());
 			int choice = PointManagementView.get();
 			
 			switch (choice) {
@@ -40,35 +43,5 @@ public class PointManagementController {
 			}
 		}
 
-}
-	private String findNameById(String id) {
-		for(Member u : Data.memberList) {
-			if(u.getId().equals(id)) {
-				return u.getName();
-			}
-		}
-		return null;
 	}
-	
-	
-	private String findAccountById(String id)  {
-		for(Member u : Data.memberList) {
-			if(u.getId().equals(id)) {
-				return u.getAccount();
-			}
-		}
-		return null;
-	}
-	
-	private int findPointById(String id)  {
-		for(Member u : Data.memberList) {
-			if(u.getId().equals(id)) {
-				return ((User)u).getBalance();
-			}
-		}
-		return 0;
-	}
-	
-	
-	
 }

@@ -23,7 +23,7 @@ public class ChangeOperatingHourView {
 	      
 	      Scanner scan = new Scanner(System.in);
 	      String tmp = "";
-	      System.out.print("2. 영업 시작 시각 등록(00:00) : ");
+	      System.out.print("2. 영업 시작 시각 등록(0000) : ");
 	      tmp = scan.nextLine();
 	      return tmp;
 	   }
@@ -32,7 +32,7 @@ public class ChangeOperatingHourView {
 	      
 	      Scanner scan = new Scanner(System.in);
 	      String tmp = "";
-	      System.out.print("3. 영업 종료 시각 등록(00:00) : ");
+	      System.out.print("3. 영업 종료 시각 등록(0000) : ");
 	      tmp = scan.nextLine();
 	      return tmp;
 	   }

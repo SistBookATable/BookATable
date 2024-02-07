@@ -8,24 +8,28 @@ public class EditTableController {
 	
 	public void editTable(String licenseNumber) {
 		
-		int editTableCapacity=EditTableView.getTableCapacity();
-		for(Table t : Data.tableList) {
-			if(t.getLicenseNumber().equals(licenseNumber)&&editTableCapacity==t.getTableCapacity()) {
-				
-				int editTableNum=EditTableView.getTableNum();
-				Table e = new Table(licenseNumber,editTableCapacity,editTableNum,true);
-				
-				int index = Data.tableList.indexOf(t);
-		        if (index != -1) { 
+		int editTableCapacity = EditTableView.getTableCapacity();
+		boolean found = false;
+
+		for (Table t : Data.tableList) {
+		    if (t.getLicenseNumber().equals(licenseNumber) && editTableCapacity == t.getTableCapacity()) {
+		        found = true;
+
+		        int editTableNum = EditTableView.getTableNum();
+		        Table e = new Table(licenseNumber, editTableCapacity, editTableNum, true);
+
+		        int index = Data.tableList.indexOf(t);
+		        if (index != -1) {
 		            Data.tableList.set(index, e);
-		            break; 
-		        } else {
-		            System.out.println("해당 테이블을 찾을 수 없습니다.");
+		            break;
 		        }
-			}
+		    }
 		}
-		
-		
+
+		if (!found) {
+		    System.out.println("해당 테이블을 찾을 수 없습니다.");
+		}
+
 		
 		for(Table n:Data.tableList) {
 			if(licenseNumber.equals(n.getLicenseNumber())) {

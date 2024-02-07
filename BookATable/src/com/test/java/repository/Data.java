@@ -93,7 +93,7 @@ public class Data {
 			while((line = reader.readLine()) != null) {
 				String[] tmp = line.split(",");
 				PointRefund pointRefund = new PointRefund(tmp[0], Integer.parseInt(tmp[1]),tmp[2]);
-				pointRefundList.add(pointRefund);
+//				pointRefundList.add(pointRefund);
 
 			}
 			
@@ -115,8 +115,8 @@ public class Data {
 				
 				String[] tmp = line.split(",");
 				Bookmark bookmark = new Bookmark(tmp[0], tmp[1]);
-				bookmarkList.add(bookmark);
-				System.out.println(bookmarkList);
+//				bookmarkList.add(bookmark);
+//				System.out.println(bookmarkList);
 			}
 			
 			reader.close();
@@ -255,8 +255,8 @@ public class Data {
 			
 			String[] tmp = line.split(",");
 			
-			BlackList blackList = new BlackList(tmp[0],tmp[1],Integer.parseInt(tmp[2]));
-			blackListList.add(blackList);
+//			BlackList blackList = new BlackList(tmp[0],tmp[1],Integer.parseInt(tmp[2]));
+//			blackListList.add(blackList);
 		}
 		reader.close();
 		

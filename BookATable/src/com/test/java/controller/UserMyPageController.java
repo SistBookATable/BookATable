@@ -30,8 +30,8 @@ public class UserMyPageController {
 				break;
 			case 3:
 				//관심매장 관리
-				FavouriteStoreManagementController favouriteStoreManagementController = new FavouriteStoreManagementController();
-				favouriteStoreManagementController.favouriteStoreManagement();
+//				FavouriteStoreManagementController favouriteStoreManagementController = new FavouriteStoreManagementController();
+//				favouriteStoreManagementController.favouriteStoreManagement();
 				break;
 
 			case 4:

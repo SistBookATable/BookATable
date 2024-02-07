@@ -1,6 +1,7 @@
 package com.test.java.controller;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 import com.test.java.model.BusinessUser;
 import com.test.java.model.Member;
@@ -130,7 +131,55 @@ public class ReservationController {
 				
 				//예약리스트 출력
 				reservationView.showReservationList(cur);
+				
+				int choice2=reservationView.getSelectType();
+				switch(choice2) {
+				
+				case 1:
+					Scanner scan=new Scanner(System.in);
+					System.out.println("id를 입력하세요 : ");
+					String visitId=scan.nextLine();
+					for(Reservation r:Data.reservationList) {
+						if(visitId.equals(r.getUserId())&&lisenceNumber.equals(r.getLicenseNumber())) {
+							r.setState("방문");
+						}
+					}
+					
+					for(Reservation d:Data.reservationList) {
+						if(visitId.equals(d.getUserId())&&lisenceNumber.equals(d.getLicenseNumber())) {
+							System.out.println(d.getState());
+						}
+					}
+					loop=false;
+					break;
+					
+				
+				case 2:
+					Scanner scanner=new Scanner(System.in);
+					System.out.println("id를 입력하세요 : ");
+					String noShowId=scanner.nextLine();
+					for(Reservation r:Data.reservationList) {
+						if(noShowId.equals(r.getUserId())&&lisenceNumber.equals(r.getLicenseNumber())) {
+							r.setState("노쇼");
+						}
+					}
+					
+					for(Reservation d:Data.reservationList) {
+						if(noShowId.equals(d.getUserId())&&lisenceNumber.equals(d.getLicenseNumber())) {
+							System.out.println(d.getState());
+						}
+					}
+					loop=false;
+					break;
+					
+				case 0:
+					reservationView.showTitle();
+					reservationView.showSelectBox();
+					loop=false;
+					break;
+				}
 				break;
+				
 				
 			// 방문 고객 조회
 			case 2:  

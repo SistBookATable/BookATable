@@ -37,4 +37,16 @@ public class BusinessUserMyPageView {
 		return tmp;
 	}
 
+	public int getSelect() {
+		try {
+			Scanner scan = new Scanner(System.in);
+			int tmp = scan.nextInt();
+			scan.nextLine();
+			return tmp;
+		} catch (Exception e) {
+			return -1;
+		}
+
+	}
+
 }

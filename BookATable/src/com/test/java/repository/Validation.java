@@ -26,6 +26,7 @@ import com.test.java.model.Member;
 
 public class Validation {
 
+
 	public static String[] banks = {"null", "SC제일은행", "신한은행", "씨티은행", "DGB대구은행", "케이뱅크", "NH농협은행","우리은행","부산은행","카카오뱅크", "IBK기업은행", "KEB하나은행"};
 
 	public static boolean isValidId(String id) {
@@ -34,7 +35,7 @@ public class Validation {
 		else
 			return true;
 	}
-
+	
 	/**
 	 * 1. 특수문자 1개 이상 2. 5글자 이상
 	 */
@@ -96,6 +97,7 @@ public class Validation {
 	 * '(주)' 오는 경우만 허용
 	 */
 	public static boolean isValidStoreName(String storeName) {
+
 		if (Pattern.matches("([(주)])+[가-힣a-zA-Z0-9]{2,}$|^[가-힣a-zA-Z0-9]{2,}([(주)])+|^[가-힣a-zA-Z0-9]{2,}$",
 				storeName)) {
 

@@ -47,15 +47,15 @@ public class StoreView {
 
 		boolean success = true;
 
-		if(menuList.size() == 0) {
-			System.out.println("음식점이 없습니다.");
-			success = false;
-		} else {
+//		if(menuList.size() == 0) {
+//			System.out.println("음식점이 없습니다.");
+//			success = false;
+//		} else {
 			for(Menu menu : menuList) {
 				showMenu(menu);
 			}
 			//         return success;
-		}
+//		}
 		View.pause();
 		return success;
 	}
@@ -64,29 +64,22 @@ public class StoreView {
 
 		boolean success = true;
 
-		if(storeList.size() == 0) {
-			System.out.println("음식점이 없습니다.");
-			success = false;
-		}
-		else {
+//		if(storeList.size() == 0) {
+//			System.out.println("음식점이 없습니다.");
+//			success = false;
+//		}
+//		else {
 			for (int i=0; i<storeList.size(); i++) {
 				show(storeList.get(i), i+1);
 			}
+			View.pause();
+			return success;
 		}
 
-		View.pause();
-		return success;
-	}
+	
 
 	public static int get() {
-		Scanner sc = new Scanner(System.in);
-		int temp = 0;
-		//System.out.println("선택(번호) : ");
-
-		temp = sc.nextInt();
-		sc.nextLine();
-		return temp;
-
+		return View.getSelectType();
 	}
 	
 	public static String getTxt() {

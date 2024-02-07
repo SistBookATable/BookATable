@@ -13,7 +13,7 @@ public class BusinessUserMyPageController {
 			String licenseNumber="002-00-40342";
 			businessUserMyPageView.showTitle();
 			businessUserMyPageView.showSelectBox();
-			int choice = businessUserMyPageView.getSelectType();
+			int choice = businessUserMyPageView.getSelect();
 			
 			switch(choice) {
 			case 1:
@@ -39,12 +39,14 @@ public class BusinessUserMyPageController {
 			case 6:
 				MembershipWithdrawalController membershipWithdrawalController = new MembershipWithdrawalController();
 				membershipWithdrawalController.membershipWithdrawal();
+				loop = false;
 				break;
 			case 0:
 				loop = false;
 				break;
 			default:
-				loop = false;
+				System.out.println("잘못 입력하셨습니다. 다시 입력해주세요.");
+				continue;
 			}
 			
 		}

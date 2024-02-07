@@ -7,6 +7,7 @@ import com.test.java.model.BusinessUser;
 import com.test.java.model.Member;
 import com.test.java.model.MembershipWithdrawal;
 import com.test.java.repository.Data;
+import com.test.java.view.MainView;
 import com.test.java.view.MembershipWithdrawalView;
 
 public class MembershipWithdrawalController {
@@ -14,13 +15,13 @@ public class MembershipWithdrawalController {
 	private MembershipWithdrawal membershipWithdrawal;
 	private BusinessUser businessUser;
 	private MembershipWithdrawalView membershipWithdrawalView;
-
+	LogOutController logOutController = new LogOutController();
+	ArrayList<BusinessUser> pw = new ArrayList<BusinessUser>();
+	
 	public MembershipWithdrawalController() {
 		this.membershipWithdrawalView = new MembershipWithdrawalView();
 	}
-
-	ArrayList<BusinessUser> pw = new ArrayList<BusinessUser>();
-
+	
 	public void membershipWithdrawal() {
 		membershipWithdrawalView.showdrawalLogo();
 
@@ -36,9 +37,13 @@ public class MembershipWithdrawalController {
 					if(b.getPw().equals(inputPassword)) {	// member.id가 로그인하면서 계속 돔
 						itr.remove();
 						membershipWithdrawalView.withDrawal();
+						logOutController.logOut();
+						
 						loop = false;   
 					} else {
 						membershipWithdrawalView.noneWithDrawal();
+						//membershipWithdrawalView.backPage();
+						//membershipWithdrawalView.get();
 						break;
 					}
 				}

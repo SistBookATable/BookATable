@@ -34,27 +34,8 @@ public class Data {
 
 	
 	//여러개면 Path 클래스를 만들어서 넣는게 좋음
-
-	
-	
-	
-	
-	
-	
-	
 	private final static String VIP = "dat\\Vip.txt";
-	
-	
-	
-	
 	private final static String RESERVATIONMENU = "dat\\ReservationMenu.txt";
-	
-	
-
-	
-
-	
-
 	private final static String USER = "dat"+File.separator+"user.txt";
 	private final static String BUSINESSUSER = "dat"+File.separator+"businessUser.txt";
 	private final static String ADMIN = "dat"+File.separator+"admin.txt";	
@@ -71,7 +52,6 @@ public class Data {
 	private final static String REQUEST = "dat"+File.separator+"request.txt";
 	private final static String BOOKMARK = "dat"+File.separator+"bookmark.txt";
 	private final static String POINTREFUND = "dat"+File.separator+"pointRefund.txt";
-
 	
 	
 	//필요한 자료들
@@ -84,6 +64,7 @@ public class Data {
 	public static ArrayList<Faq> faqList = new ArrayList<>();
 	public static ArrayList<OperatingHours> operatingHoursList = new ArrayList<>();
 	public static ArrayList<Bookmark> bookmarkList = new ArrayList<>();
+	public static ArrayList<PointRefund> pointRefundList = new ArrayList<>();
 	public static ArrayList<PointUsage> pointList = new ArrayList<>();
 //	public static ArrayList<CompletedList> compleatedList = new ArrayList<>();
 	public static ArrayList<Request> requestList = new ArrayList<>();
@@ -267,6 +248,7 @@ public class Data {
 		while((line = reader.readLine())!=null){
 			
 			String[] tmp = line.split(",");
+
 			BlackList blackList = new BlackList(tmp[0],tmp[1]);
 			blackListList.add(blackList);
 		}

@@ -125,8 +125,6 @@ public class UserSignInController {
 		Calendar c = Calendar.getInstance();
 		String now = String.format("%tF", c);
 
-		User user = new User(id, pw, name, phone, jumin, 0, 0, 0, bank, account, "null", now, "null");
-
 		MemberRepository.add(id, pw, name, phone, jumin, 0, 0, 0, bank, account, "null", now, "null");
 		
 		UserSignInView.pause();

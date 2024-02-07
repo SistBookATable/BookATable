@@ -31,6 +31,23 @@ public class Table {
 		return usage;
 	}
 
+	public void setLicenseNumber(String licenseNumber) {
+		this.licenseNumber = licenseNumber;
+	}
+
+	public void setTableCapacity(int tableCapacity) {
+		this.tableCapacity = tableCapacity;
+	}
+
+	public void setNumber(int number) {
+		this.number = number;
+	}
+
+	public void setUsage(boolean usage) {
+		this.usage = usage;
+	}
+
+	
 	
 
 }

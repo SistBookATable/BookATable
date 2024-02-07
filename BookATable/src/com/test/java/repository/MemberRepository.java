@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Iterator;
 
+import com.test.java.model.BusinessUser;
 import com.test.java.model.Member;
 import com.test.java.model.User;
 import com.test.java.view.SignOutUserManagementView;
@@ -36,12 +37,13 @@ public class MemberRepository {
 
 	public static boolean checkDuplicate(String id) {
 		for(Member m : Data.memberList) {
-			if(m.getName().equals(id)) {
+			if(m.getId().equals(id)) {
 				return false;
 			}
 		}
 		return true;
 	}
+
 	
 	
 
@@ -102,10 +104,36 @@ public class MemberRepository {
 		return tmp;
 		
 	}
+	public static ArrayList<BusinessUser> findAllBusinessUser() {
+		ArrayList<BusinessUser> tmp = new ArrayList<>();
+		for(Member m : Data.memberList) {
+			if(m.getUserType()==2&& m.getSignOut().equals("null")) {
+				tmp.add((BusinessUser)m);
+			}
+		}
+		return tmp;
+	}
+	
+	public static ArrayList<BusinessUser> findAllSingOutBusinessUser() {
+		ArrayList<BusinessUser> tmp = new ArrayList<>();
+		for(Member m : Data.memberList) {
+			if(m.getUserType()==1 && !m.getSignOut().equals("null")) {
+				tmp.add((BusinessUser)m);
+			}
+		}
+		return tmp;
+		
+	}
 	public static void add(String id, String pw, String name, String phone, String jumin, int i, int j, int k,
 			String bank, String account, String string, String now, String string2) {
 		
 		User user = new User(id, pw, name, phone, jumin, i, j, k, bank, account, string, now, string2);
 		Data.memberList.add(user);
+	}
+	public static void addBusinessUser(int userType, String id, String pw, String name, String licenseNumber, String phoneNumber,
+			String bank, String account, String now, String signOut) {
+		
+		BusinessUser businessUser = new BusinessUser(2, id, pw, name,  licenseNumber, phoneNumber, bank, account, now, signOut);
+		Data.memberList.add(businessUser);
 	}
 }

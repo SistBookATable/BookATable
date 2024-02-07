@@ -1,11 +1,12 @@
 package com.test.java.controller;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 import com.test.java.model.Inquiry;
 import com.test.java.repository.Data;
+import com.test.java.repository.InquiryRepository;
 import com.test.java.view.InquiryView;
-import com.test.java.view.SignInUserManagementView;
 
 public class InquiryController {
 
@@ -16,7 +17,9 @@ public class InquiryController {
 		boolean loop = true;
 		while(loop) {
 
-			inquiryView.FindAllInquiry();
+			ArrayList<Inquiry> inquiryList = InquiryRepository.findAll();
+			Collections.sort(inquiryList, (o1, o2) -> o1.getDateWritten().compareTo(o2.getDateWritten()));
+			inquiryView.FindAllInquiry(inquiryList);
 			inquiryView.showSelectBox();
 			int choice = inquiryView.getSelectType();
 			
@@ -34,6 +37,8 @@ public class InquiryController {
 			}
 			else if(choice == 0) {
 				loop = false;
+			}else {
+				inquiryView.incorrectInputMessage();
 			}
 			
 		}

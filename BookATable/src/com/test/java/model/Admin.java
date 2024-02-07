@@ -56,6 +56,30 @@ public class Admin extends Member{
 	public String getSignOut() {
 		// TODO Auto-generated method stub
 		return "null";
+	}
+
+	@Override
+	public void print() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void printSignIn() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public int getReservationCount() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int getNoshowCount() {
+		// TODO Auto-generated method stub
+		return 0;
 	} 
 
 }

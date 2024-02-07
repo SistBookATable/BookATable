@@ -1,7 +1,6 @@
 package com.test.java.controller;
 
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.Scanner;
 
 import com.test.java.model.BusinessUser;
@@ -9,6 +8,8 @@ import com.test.java.model.Member;
 import com.test.java.model.Reservation;
 import com.test.java.model.User;
 import com.test.java.repository.Data;
+import com.test.java.repository.MemberRepository;
+import com.test.java.repository.ReservationRepository;
 import com.test.java.view.ReservationView;
 import com.test.java.view.View;
 
@@ -119,10 +120,10 @@ public class ReservationController {
 			case 1: 
 				
 				//업체회원 ID로 음식점 라이센스번호 조회
-				lisenceNumber = findLisenceNumber(Member.id);
+				lisenceNumber = ((BusinessUser)MemberRepository.findOneById(Member.id)).getLicenseNumber();
 				
 				//라이센스번호로 현재 예약상태인 모든 예약 조회
-				ArrayList<Reservation> cur = findAllReservation(lisenceNumber,"예약");
+				ArrayList<Reservation> cur = ReservationRepository.findAllByLisenceNumberState(lisenceNumber,"예약");
 				
 				//현재 예약이 없을 때
 				if(cur.isEmpty()) {
@@ -137,6 +138,7 @@ public class ReservationController {
 				switch(choice2) {
 				
 				case 1:
+					//상세 내역 조회
 					Scanner scan=new Scanner(System.in);
 					System.out.println("id를 입력하세요 : ");
 					String visitId=scan.nextLine();
@@ -174,6 +176,7 @@ public class ReservationController {
 					break;
 					
 				case 0:
+					//뒤로가	
 					reservationView.showTitle();
 					reservationView.showSelectBox();
 					loop=false;
@@ -186,10 +189,10 @@ public class ReservationController {
 			case 2:  
 
 				//업체회원 ID로 음식점 라이센스번호 조회
-				lisenceNumber = findLisenceNumber(Member.id);
+				lisenceNumber = ((BusinessUser)MemberRepository.findOneById(Member.id)).getLicenseNumber();
 
 				//라이센스번호로 고객이 방문했던 모든 예약 조회
-				ArrayList<Reservation> visited = findAllReservation(lisenceNumber);
+				ArrayList<Reservation> visited = ReservationRepository.findAllByLisenceNumber(lisenceNumber);
 				
 				//방문 기록이 없을 때
 				if(visited.isEmpty()) {
@@ -200,7 +203,7 @@ public class ReservationController {
 				//방문 리스트 출력
 				reservationView.showVistedReservationHeader();
 				for(Reservation r : visited) {
-					String name = findUserName(r.getUserId());
+					String name = MemberRepository.findOneById(r.getUserId()).getName();
 					reservationView.showOneReservation(r, name);
 				}
 				View.pause();
@@ -214,53 +217,5 @@ public class ReservationController {
 		}
 		
 	}
-
-	private ArrayList<Reservation> findAllReservation(String lisenceNumber) {
-		
-		ArrayList<Reservation> tmp = new ArrayList<>();
-		
-		for(Reservation r : Data.reservationList) {
-			
-			if(r.getLicenseNumber().equals(lisenceNumber)) {
-				tmp.add(r);
-			}
-		}
-		
-		return tmp;
-	}
-
-	private String findUserName(String userId) {
-		for(Member m : Data.memberList) {
-			if(m.getId().equals(userId)) {
-				return m.getName();
-			}
-		}
-		return null;
-	}
-
-	private String findLisenceNumber(String id) {
-		for(Member m : Data.memberList) {
-			if(m.getId().equals(id)) {
-				return ((BusinessUser)m).getLicenseNumber();
-			}
-		}
-		return null;
-	}
-
-	private ArrayList<Reservation> findAllReservation(String lisenceNumber,String state) {
-		
-		ArrayList<Reservation> tmp = new ArrayList<>();
-		
-		for(Reservation r : Data.reservationList) {
-			
-			if(r.getLicenseNumber().equals(lisenceNumber) && r.getState().equals(state)) {
-				tmp.add(r);
-			}
-		}
-		
-		return tmp;
-	}
-	
-	
 
 }

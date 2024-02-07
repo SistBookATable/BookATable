@@ -13,5 +13,8 @@ public abstract class Member {
 	public abstract String getSignIn();
 	public abstract String getAccount();
 	public abstract String getSignOut();
-
+	public abstract void print();
+	public abstract void printSignIn();
+	public abstract int getReservationCount();
+	public abstract int getNoshowCount();
 }

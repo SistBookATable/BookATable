@@ -2,6 +2,8 @@ package com.test.java.view;
 
 import java.util.Scanner;
 
+import com.test.java.model.Member;
+
 public class FindAccountView {
 
 	public static void showSelectBox() {
@@ -22,10 +24,8 @@ public class FindAccountView {
 		System.out.print("선택(번호) : ");
 	}
 
-	public static String getSelectNum() {
-		Scanner scan = new Scanner(System.in);
-		String tmp = scan.nextLine();
-		return tmp;
+	public static int getSelectNum() {
+		return View.getSelectType();
 	}
 	
 	public static String getName() {

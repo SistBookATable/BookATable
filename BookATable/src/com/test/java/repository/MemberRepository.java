@@ -136,4 +136,22 @@ public class MemberRepository {
 		BusinessUser businessUser = new BusinessUser(2, id, pw, name,  licenseNumber, phoneNumber, bank, account, now, signOut);
 		Data.memberList.add(businessUser);
 	}
+
+	public static String findId(String name, String phoneNumber) {
+		for(Member selected : Data.memberList) {
+			if(selected.getName().equals(name) && selected.getPhoneNumber().equals(phoneNumber) && selected.getSignOut().equals("null")){
+				return selected.getId();
+			}
+		}
+		return null;
+	}
+
+	public static String findPw(String id, String phoneNumber) {
+		for(Member selected : Data.memberList) {
+			if(selected.getId().equals(id) && selected.getPhoneNumber().equals(phoneNumber) && selected.getSignOut().equals("null")){
+				return selected.getPw();
+			}
+		}
+		return null;
+	}
 }

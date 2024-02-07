@@ -1,7 +1,6 @@
 package com.test.java.controller;
 
 import com.test.java.model.Member;
-import com.test.java.model.PointUsage;
 import com.test.java.repository.Data;
 import com.test.java.view.MainView;
 import com.test.java.view.StoreView;
@@ -149,7 +148,7 @@ public class MainController {
 		Data.loadReview();
 		Data.loadReservation();
 		Data.loadStore();
-//		Data.loadBookmark();
+		Data.loadBookmark();
 		Data.loadFaq();
 		Data.loadPointUsage();
 

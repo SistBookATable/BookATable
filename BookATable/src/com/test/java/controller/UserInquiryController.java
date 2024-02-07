@@ -66,6 +66,11 @@ public class UserInquiryController {
 					//조회할 문의 번호 선택
 					int inquiryNumber = userInquiryView.getInquiryNumber();
 					
+					//뒤로가기
+					if(inquiryNumber==0) {
+						break;
+					}
+					
 					//문의 번호에 해당하는 Inquiry 조회
 					Inquiry selected = findOne(inquiryNumber,inquiryList);
 					
@@ -83,7 +88,7 @@ public class UserInquiryController {
 				
 				
 				break;
-			case 3:
+			case 0:
 				loop = false;
 				break;
 			default:

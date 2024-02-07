@@ -97,17 +97,19 @@ public class ReservationView {
                 
 		        
                 Calendar cur = Calendar.getInstance();
-                cur.set(cur.get(Calendar.YEAR), month, day);
+                String today = String.format("%tF", cur);
+                cur.set(cur.get(Calendar.YEAR), month-1, day);
                 
                 String thatDay = String.format("%tF", cur);
-                String today = String.format("%tF", cur);
                 
+                System.out.println(today + thatDay);
                 if(today.compareTo(thatDay)>0){
                 	System.out.println("오늘 이후 날짜를 입력해주세요");
                 	return null;
                 }
                 
 		        
+                
 		        if (month >= 1 && month <= 12 && day >= 1 && day <= 31) {
 		            return thatDay;
 		        }

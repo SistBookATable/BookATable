@@ -46,19 +46,6 @@ public class UserSignInView {
 		return tmp;
 	}
 
-	public static String getAccount() {
-		Scanner scan = new Scanner(System.in);
-		String tmp = "";
-		System.out.println("==========================================================================================");
-		System.out.println("■            계좌번호를 입력해주세요 \t\t■");
-		System.out.println("     회원가입을 종료하려면 \'0\'을 입력해주세요  ");
-		System.out.println("==========================================================================================");
-		System.out.println();
-		System.out.print("계좌번호 (숫자 : ");
-		tmp = scan.nextLine();		
-		return tmp;
-	}
-	
 
 	public static String getId() {
 		
@@ -96,17 +83,17 @@ public class UserSignInView {
 		System.out.println("■            사용계좌 은행을 선택해 주세요 \t\t■");
 		System.out.println("     회원가입을 종료하려면 \'0\'을 입력해주세요  ");
 		System.out.println();
-		System.out.println("1. SC제일은행");
-		System.out.println("2. 신한은행");
-		System.out.println("3. 씨티은행");
-		System.out.println("4. DGB대구은행");
-		System.out.println("5. 케이뱅크");
-		System.out.println("6. NH농협은행");
-		System.out.println("7. 우리은행");
-		System.out.println("8. 부산은행");
-		System.out.println("9. 카카오뱅크");
-		System.out.println("10. IBK기업은행");
-		System.out.println("11. KEB하나은행");
+		System.out.println("01. SC제일은행	(11자)");
+		System.out.println("02. 신한은행	(12자)");
+		System.out.println("03. 씨티은행	(12자)");
+		System.out.println("04. DGB대구은행	(12자)");
+		System.out.println("05. 케이뱅크	(12자)");
+		System.out.println("06. NH농협은행	(13자)");
+		System.out.println("07. 우리은행	(13자)");
+		System.out.println("08. 부산은행	(13자)");
+		System.out.println("09. 카카오뱅크	(13자)");
+		System.out.println("10. IBK기업은행	(14자)");
+		System.out.println("11. KEB하나은행	(14자)");
 		System.out.println("==========================================================================================");
 		System.out.println();
 		System.out.print("입력 (번호) : ");
@@ -119,7 +106,7 @@ public class UserSignInView {
 		
 		Scanner scan = new Scanner(System.in);
 		String tmp = "";
-		System.out.print("계좌번호 : ");
+		System.out.println("“-”를 제외하고 숫자만 작성하십시오.");
 		tmp = scan.nextLine();		
 		return tmp;
 	}

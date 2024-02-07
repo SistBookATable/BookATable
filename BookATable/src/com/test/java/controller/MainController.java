@@ -141,19 +141,19 @@ public class MainController {
 
 	public static void load() {
 
-		Data.loadTable();
-		Data.loadOperatingHours();
-		Data.loadAdmin();
+//		Data.loadTable();
+//		Data.loadOperatingHours();
+//		Data.loadAdmin();
 		Data.loadUser();
 		Data.loadBusinessUser();
-		Data.loadMenu();
-		//Data.loadStore();
-		Data.loadReview();
-		Data.loadReservation();
-		Data.loadStore();
-		//Data.loadBookmark();
-		Data.loadFaq();
-		Data.loadPointUsage();
+//		Data.loadMenu();
+//		//Data.loadStore();
+//		Data.loadReview();
+//		Data.loadReservation();
+//		Data.loadStore();
+//		//Data.loadBookmark();
+//		Data.loadFaq();
+//		Data.loadPointUsage();
 
 
 	}

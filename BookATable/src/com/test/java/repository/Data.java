@@ -2,14 +2,11 @@ package com.test.java.repository;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
-
-import java.util.Collections;
-
 
 import com.test.java.model.Admin;
 import com.test.java.model.BlackList;
@@ -60,7 +57,7 @@ public class Data {
 
 	private final static String USER = "dat"+File.separator+"user.txt";
 	private final static String BUSINESSUSER = "dat"+File.separator+"businessUser.txt";
-	private final static String ADMIN = "dat"+File.separator+"admin.txt";
+	private final static String ADMIN = "dat"+File.separator+"admin.txt";	
 	private final static String STORE = "dat"+File.separator+"store.txt";
 	private final static String BLACKLIST = "dat"+File.separator+"blackList.txt";
 	private final static String TABLE = "dat"+File.separator+"table.txt";

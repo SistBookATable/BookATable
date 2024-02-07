@@ -98,7 +98,7 @@ public class ReservationRepository {
 	public static HashMap<String, Integer> findMenuByUserId(String lisenceNumber, String key) {
 		HashMap<String, Integer> tmp = new HashMap<>();
 		for(Reservation r : Data.reservationList) {
-			if(r.getLicenseNumber().equals(lisenceNumber) && r.getUserId().equals(key)) {
+			if(r.getLicenseNumber().equals(lisenceNumber) && r.getUserId().equals(key) &&r.getState().equals("방문")) {
 				for(String menu : r.getMenulist()) {
 					if(tmp.containsKey(menu)) {
 						tmp.put(menu, tmp.get(menu)+1);

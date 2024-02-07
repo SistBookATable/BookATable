@@ -16,7 +16,7 @@ public void showOperatingHour(String licenseNumber) {
 		 Map<Integer, Menu> menuMap = new HashMap<>();
 	     for (Store store : Data.storeList) {
 	            if (licenseNumber.equals(store.getLicenseNumber())) {
-	                System.out.println("  \t[" + store.getStoreName() + "]");
+	                System.out.println("  \t     [" + store.getStoreName() + "]");
 	            }
 	        }
 		System.out.println("요일(평일/공휴일)\t\t영업시간\t\t휴게시간");

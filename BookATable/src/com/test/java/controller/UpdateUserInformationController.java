@@ -2,6 +2,7 @@ package com.test.java.controller;
 
 import com.test.java.model.Member;
 import com.test.java.repository.Data;
+import com.test.java.repository.Validation;
 import com.test.java.view.UpdateUserInformationView;
 import com.test.java.view.View;
 
@@ -16,14 +17,14 @@ public class UpdateUserInformationController {
 			UpdateUserInformationView.showSelectBox();
 			
 			int choice = UpdateUserInformationView.get();
-			
+			String inputPw = UpdateUserInformationView.getPw();
+			boolean isValidPw = Validation.isValidPwWithInput(Member.id, inputPw);
+
 			switch(choice) {
 			case 1:
 				//비밀번호 변경
-				String inputPw = UpdateUserInformationView.getPw();
-				if (!isValidPw(inputPw, Member.id)) {
-					System.out.println("비밀번호를 잘못 입력하셨습니다.");
-					View.pause();
+				if (!isValidPw) {
+					UpdateUserInformationView.showErrorMessage();
 					loop = true;
 				} else {
 					UpdatePwController updatePwController = new UpdatePwController();
@@ -33,10 +34,8 @@ public class UpdateUserInformationController {
 				break;
 			case 2:
 				//계좌 변경
-				inputPw = UpdateUserInformationView.getPw();
-				if (!isValidPw(inputPw, Member.id)) {
-					System.out.println("비밀번호를 잘못 입력하셨습니다.");
-					View.pause();
+				if (!isValidPw) {
+					UpdateUserInformationView.showErrorMessage();
 					loop = true;
 				} else {
 					UpdateAccountController updateAccountController = new UpdateAccountController();
@@ -47,10 +46,8 @@ public class UpdateUserInformationController {
 				
 			case 3: 
 				//전화번호 변경
-				inputPw = UpdateUserInformationView.getPw();
-				if (!isValidPw(inputPw, Member.id)) {
-					System.out.println("비밀번호를 잘못 입력하셨습니다.");
-					View.pause();
+				if (!isValidPw) {
+					UpdateUserInformationView.showErrorMessage();
 					loop = true;
 				} else {
 					UpdatePhoneNumberController updatePhoneNumberController = new UpdatePhoneNumberController(); 
@@ -66,18 +63,6 @@ public class UpdateUserInformationController {
 			}
 			
 		}
-		
-	}
-
-	private boolean isValidPw(String inputPw, String id) {
-		for(Member u : Data.memberList) {
-			if (u.getId().equals(id)) {
-				if (u.getPw().equals(inputPw)) {
-					return true;
-				}
-			}
-		}
-		return false;
 		
 	}
 

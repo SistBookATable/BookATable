@@ -1,14 +1,12 @@
 package com.test.java.controller;
 
-import com.test.java.model.Faq;
 import com.test.java.model.Member;
-import com.test.java.model.Store;
 import com.test.java.repository.Data;
 import com.test.java.view.MainView;
 import com.test.java.view.StoreView;
 
 public class MainController {
-
+	 
 	/**
 	 * 메인 화면 시작 
 	 */
@@ -142,18 +140,18 @@ public class MainController {
 
 	public static void load() {
 
-		Data.loadTable();
-		Data.loadOperatingHours();
-		Data.loadAdmin();
+//		Data.loadTable();
+//		Data.loadOperatingHours();
+//		Data.loadAdmin();
 		Data.loadUser();
 		Data.loadBusinessUser();
 		Data.loadMenu();
-		//Data.loadStore();
 		Data.loadReview();
 		Data.loadReservation();
 		Data.loadStore();
-		//Data.loadBookmark();
+		Data.loadBookmark();
 		Data.loadFaq();
+		Data.loadPointUsage();
 
 	}
 }

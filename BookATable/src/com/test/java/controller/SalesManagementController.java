@@ -1,13 +1,5 @@
 package com.test.java.controller;
 
-import java.util.ArrayList;
-import java.util.Collections;
-
-import com.test.java.model.BusinessUser;
-import com.test.java.model.Member;
-import com.test.java.model.Review;
-import com.test.java.repository.MemberRepository;
-import com.test.java.repository.ReviewRepository;
 import com.test.java.view.SalesManagementView;
 
 public class SalesManagementController {
@@ -18,7 +10,7 @@ public class SalesManagementController {
 		
 		boolean loop = true;
 		while(loop) {
-
+			
 			salesManagementView.showTitle();
 			salesManagementView.showSelectBox();
 			int choice = salesManagementView.getSelectType();

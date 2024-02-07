@@ -8,7 +8,7 @@ import com.test.java.view.SignInView;
 
 public class SignInController {
 
-	
+	SignInView signInView = new SignInView();
 	/**
 	 * 회원 가입 기능
 	 */	
@@ -16,8 +16,8 @@ public class SignInController {
 		
 		boolean loop = true;
 		while(loop) {
-			SignInView.showSelectType();
-			String choice = SignInView.getSelectType();
+			signInView.showSelectType();
+			String choice = signInView.getSelectType();
 			
 			
 			switch(choice) {
@@ -33,7 +33,7 @@ public class SignInController {
 				loop = false;
 			default:
 				//유효하지 않은 입력
-				SignInView.incorrectInputMessage();
+				signInView.incorrectInputMessage();
 			}
 		}
 		

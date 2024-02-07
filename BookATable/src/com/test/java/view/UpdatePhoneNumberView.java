@@ -12,7 +12,7 @@ public class UpdatePhoneNumberView {
 	
 	public static void showErrorMessage() {
 		System.out.println();
-		System.err.println("전화번호를 숫자와 “-”로만 구성하여  [000-0000-0000] 형식으로 작성하십시오");
+		System.out.println("전화번호를 숫자와 “-”로만 구성하여  [000-0000-0000] 형식으로 작성하십시오");
 		System.out.println();
 		View.pause();
 	}

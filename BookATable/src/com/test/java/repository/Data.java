@@ -43,7 +43,6 @@ public class Data {
 	private final static String ADMIN = "dat"+File.separator+"admin.txt";
 	private final static String STORE = "dat"+File.separator+"store.txt";
 	private final static String BLACKLIST = "dat"+File.separator+"blackList.txt";
-	private final static String VIP = "dat"+File.separator+"vip.txt";
 	private final static String TABLE = "dat"+File.separator+"table.txt";
 	private final static String MENU = "dat"+File.separator+"menu.txt";
 	private final static String OPERATINGHOURS = "dat"+File.separator+"operatinghours.txt";

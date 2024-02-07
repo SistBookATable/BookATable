@@ -150,7 +150,7 @@ public class MainController {
 		Data.loadReview();
 		Data.loadReservation();
 		Data.loadStore();
-		Data.loadBookmark();
+//		Data.loadBookmark();
 		Data.loadFaq();
 
 	}

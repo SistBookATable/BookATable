@@ -18,7 +18,7 @@ public class Validation {
 	 * 1. 특수문자 1개 이상 2. 5글자 이상
 	 */
 	public static boolean isValidPw(String pw) {
-		return Pattern.matches("^(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{5,}$", pw);
+		return Pattern.matches("^(?=.*[!@#$%^&*])[a-zA-Z0-9ㄱ-ㅎㅏ-ㅣ!@#$%^&*]{5,}$", pw);
 	}
 
 	public static boolean isValidAccount(String account) {
@@ -55,14 +55,14 @@ public class Validation {
 	 * 1. 한글, 영문만 입력 가능(자음, 모음도 안됨) 2. 빈 값인 경우 불가능 3. (주)제외하고 2글자 미만인 경우 불가능 4.특수문자는 '(주)' 오는 경우만 허용
 	 */
 	public static boolean isValidStoreName(String storeName) {
-		if(Pattern.matches("?:((주))?^[가-힣a-zA-Z]{2,}|^[가-힣a-zA-Z]{2,}((주))?", storeName)) {
+		if(Pattern.matches("([(주)])+[가-힣a-zA-Z0-9]{2,}$|^[가-힣a-zA-Z0-9]{2,}([(주)])+|^[가-힣a-zA-Z0-9]{2,}$", storeName)) {
 			
 			return true ;
 		}
 		return false ;
 	}
 	public static boolean isValidStoreTelNumber(String storeTelNumber) {
-		if(Pattern.matches("^0(2|3[1-3]|4[12]|5[1-5]|6[1-4])-(\\d{3,4})-(\\d{4})$", storeTelNumber)) {
+		if(Pattern.matches("^0(2|3[123]|4[12]|5[1-5]|6[1-4])-(\\d{3,4})-(\\d{4})$", storeTelNumber)) {
 			
 			return true ;
 		}
@@ -79,28 +79,52 @@ public class Validation {
 		int sum = 0;
 		
 		//입력 양식 유효성 검사
-		if (!Pattern.matches("^([1-9][0-9][1-9]|[2-9]00)-(?:[0-7]?\\d|8[014567])-(\\d{5})$", lisenceNumber)) {
+		if (!Pattern.matches("^([1-9][0-9][1-9]|[2-9]00)-([0-7]\\d|8[014567])-(\\d{5})$", lisenceNumber)) {
+			System.out.println("정규식 오류");
 			return false;
 		}
 		//문자열에서 - 을 제거함
-		String replaceLisenceNumber = lisenceNumber.replaceAll("-", "");
-		System.out.println(replaceLisenceNumber);
+		int i ;
+		String removeDashLisenceNumber = lisenceNumber.replaceAll("-","");
 		//문자열 문자을 int형으로 변환후, VALID_LOGIC[]의 요소값과 곱한 후 누적함
-		for(int i = 0 ; i < VALID_LOGIC.length ;i++) {
-			sum =+(int)replaceLisenceNumber.charAt(i)*VALID_LOGIC[i];
-			//마지막 인덱스는, 곱한 값을 10으로 나눈 후 한번 더 더해줌
+		for(i = 0 ; i < VALID_LOGIC.length ;i++) {
+			int replaceLisenceNumber = Character.getNumericValue(removeDashLisenceNumber.charAt(i));
+			sum += VALID_LOGIC[i]*replaceLisenceNumber;
+			//마지막 인덱스는, 곱한 값을 10으로 나눈 후 몫을 한번 더 더해줌
 			if(i==VALID_LOGIC.length-1) {
-				sum =+(int)replaceLisenceNumber.charAt(i)*VALID_LOGIC[i]/10;
+				sum += (replaceLisenceNumber*VALID_LOGIC[i])/10;
 			}
 		}
-		int check = 10 - sum/10;
+		int check = 0;
+		check = (10 - (sum%10))%10;
 		//사업자 번호의 마지막 숫자와 위의 과정에서 나온 연산 값이 같으면 유효한 값
-		if((int)replaceLisenceNumber.charAt(9)==check) {
+		if(Character.getNumericValue(removeDashLisenceNumber.charAt(9))==check) {
 			return true;
 		}
+		System.out.println("연산오류");
 		return false;
 	}
 	
+	//TODO 주소 유효성 검사 생성
+	public static boolean isValidAddress(String Address) {
+		if(Address==""||Address==null) {
+			return false;
+		}
+		return true;
+	}
+	
+	/**
+	 * 상세주소 유효성 검사 1. 한글, 영어, 득수문자: ~()-_@ 입력가능  2. 한 글자 이상 작성 필수 3.특수문자만으로 작성 불가능
+	 */
+	public static boolean isValidDetailAddress(String detailAddress) {
+		
+		return Pattern.matches("^[가-힣a-zA-Z]([가-힣a-zA-Z~()-_@\\s])*$", detailAddress);
+		
+	}
+	
+	/**
+	 * 메뉴카테고리 유효성 검사 1.{"한식","중식","일식","양식","육류","해산물","찜/탕","분식","치킨","피자","기타"} 중 하나 선택해서 입력 가능
+	 */
 	public static boolean isValidMenuCategory(String menuCategory) {
 		if(menuCategory==""||menuCategory==null) {
 			return false;

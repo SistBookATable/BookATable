@@ -31,18 +31,6 @@ public class UserSignInView {
 		return tmp;
 	}
 
-	public static String getAccount() {
-		
-		
-		Scanner scan = new Scanner(System.in);
-		String tmp = "";
-		System.out.print("계좌번호 : ");
-		tmp = scan.nextLine();		
-		return tmp;
-	}
-	
-
-
 	public static String getId() {
 		
 		Scanner scan = new Scanner(System.in);
@@ -52,8 +40,6 @@ public class UserSignInView {
 		return tmp;
 	}
 
-
-
 	public static String getPw() {
 		
 		Scanner scan = new Scanner(System.in);
@@ -62,12 +48,12 @@ public class UserSignInView {
 		tmp = scan.nextLine();		
 		return tmp;
 	}
-
+	
 	public static String getBank() {
 
 		Scanner scan = new Scanner(System.in);
 		String tmp = "";
-		System.out.println("사용계좌 은행을 선택해 주세요");
+		System.out.println("연결 계좌의 은행을 선택해 주세요");
 		System.out.println("1. SC제일은행");
 		System.out.println("2. 신한은행");
 		System.out.println("3. 씨티은행");
@@ -83,7 +69,16 @@ public class UserSignInView {
 		tmp = scan.nextLine();
 		return tmp;
 	}
-
+	
+	public static String getAccount() {
+		
+		
+		Scanner scan = new Scanner(System.in);
+		String tmp = "";
+		System.out.print("계좌번호 : ");
+		tmp = scan.nextLine();		
+		return tmp;
+	}
 	public static void errorMessage(String string) {
 
 		System.out.println();

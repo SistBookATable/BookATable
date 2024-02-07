@@ -30,4 +30,11 @@ public class StoreRepository {
 		return null;
 	}
 
+	public static void add(String licenseNumber, String storeName, String storeTelNumber, String address,
+			String menuCategory) {
+		Store tmp = new Store(licenseNumber, storeName, storeTelNumber, address, menuCategory);
+		Data.storeList.add(tmp);
+		
+	}
+
 }

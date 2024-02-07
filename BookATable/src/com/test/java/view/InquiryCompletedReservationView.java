@@ -16,13 +16,14 @@ public class InquiryCompletedReservationView {
 		
 		System.out.println("===========================================================================================");
 		String header = String.format("%10s\t\t%10s\t\t%10s\t\t%10s\t\t%10s\t\t%10s\t"
-									,"[예약일]","[상호명]","[인원수]","[예약취소여부]","[노쇼여부]","[리뷰작성여부]");
+									,"[예약번호]", "[예약일]","[상호명]","[인원수]","[예약취소여부]","[노쇼여부]","[리뷰작성여부]");
 		System.out.println(header);
 	}
 	
 	public static void showOneReservation(Reservation r, String storeName, String cancelState, String noShowState, String reviewState) {
 		String tmp = "";
-		tmp = String.format("%10s\t\t%10s\t\t%10s\t\t%10s\t\t%10s\t\t%10s\t"
+		tmp = String.format("%10d\t%10s\t\t%10s\t\t%10s\t\t%10s\t\t%10s\t\t%10s\t"
+							, r.getReservationNumber()
 							, r.getReservationDate()
 							, storeName
 							, r.getNumOfPeople()

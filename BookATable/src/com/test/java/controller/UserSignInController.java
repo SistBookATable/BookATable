@@ -91,10 +91,6 @@ public class UserSignInController {
 
 		User user = new User(id, pw, name, phone, jumin, 0, 0, 0, "null", account, "null", now, "null");
 
-//		//유효성 검사
-//		if(isValid(user)) {
-//			return true;
-//		}
 
 		System.out.println("회원가입이 완료되었습니다.");
 		Data.memberList.add(user);

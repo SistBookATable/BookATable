@@ -153,5 +153,6 @@ public class MainController {
 		Data.loadFaq();
 		Data.loadPointUsage();
 
+
 	}
 }

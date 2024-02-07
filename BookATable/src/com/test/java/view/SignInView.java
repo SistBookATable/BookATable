@@ -9,7 +9,7 @@ public class SignInView {
 	/**
 	 * 일반회원가입, 업체회원가입 선택 화면 
 	 */
-	public static void showSelectType() {
+	public void showSelectType() {
 		System.out.println();
 		System.out.println();
 		System.out.println("┌───────────────────────────────────────────────────────┐");
@@ -30,13 +30,13 @@ public class SignInView {
 	 * @return
 	 * 선택한 번호 반환
 	 */
-	public static String getSelectType() {
+	public String getSelectType() {
 		Scanner scan = new Scanner(System.in);
 		String tmp = scan.nextLine();
 		return tmp;
 	}
 
-	public static void incorrectInputMessage() {
+	public void incorrectInputMessage() {
 
 		System.out.println("==========================================================================================");
 		System.out.println();

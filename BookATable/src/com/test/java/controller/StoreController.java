@@ -73,7 +73,6 @@ public class StoreController {
 		
 		while (loop) {
 			
-			storeView.showTitle();
 			storeView.show(searched);
 			
 			storeView.showSelectBox();
@@ -124,7 +123,6 @@ public class StoreController {
 		
 		while (loop) {
 			
-			storeView.showTitle();
 			storeView.show(searched);
 			
 			storeView.showSelectBox();

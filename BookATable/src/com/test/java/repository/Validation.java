@@ -13,14 +13,12 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
-import java.util.function.Predicate;
 import java.util.regex.Pattern;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 
-import com.test.java.controller.BusinessUserSignInController;
 import com.test.java.controller.MainController;
 import com.test.java.model.Member;
 
@@ -30,10 +28,7 @@ public class Validation {
 	public static String[] banks = {"null", "SC제일은행", "신한은행", "씨티은행", "DGB대구은행", "케이뱅크", "NH농협은행","우리은행","부산은행","카카오뱅크", "IBK기업은행", "KEB하나은행"};
 
 	public static boolean isValidId(String id) {
-		if (id.equals(""))
-			return false;
-		else
-			return true;
+		return Pattern.matches("[a-zA-Z0-9]{2,}$", id);
 	}
 	
 	/**

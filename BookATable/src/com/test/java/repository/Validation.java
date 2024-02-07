@@ -7,13 +7,14 @@ import java.util.regex.Pattern;
 public class Validation {
 	
 	
+	
 	public static boolean isValidId(String id) {
 		if (id.equals(""))
 			return false;
 		else
 			return true;
 	}
-
+	
 	/**
 	 * 1. 특수문자 1개 이상 2. 5글자 이상
 	 */
@@ -67,6 +68,10 @@ public class Validation {
 			return true ;
 		}
 		return false ;
+	}
+	
+	public static boolean isValidSelectNumber(int select) {
+		return select >= 0 && 2 <= select;
 	}
 	
 	/**

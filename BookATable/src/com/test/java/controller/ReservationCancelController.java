@@ -6,6 +6,7 @@ import com.test.java.model.Member;
 import com.test.java.model.Reservation;
 import com.test.java.model.Store;
 import com.test.java.repository.Data;
+import com.test.java.repository.StoreRepository;
 import com.test.java.view.ReservationCancelView;
 import com.test.java.view.View;
 
@@ -19,7 +20,6 @@ public class ReservationCancelController {
 				ReservationCancelView.showAskCancelMessage();
 				
 				String inputStoreName = ReservationCancelView.getStoreName();
-				
 				String lisenceNumber = findLicenseNumber(inputStoreName, Member.id);
 				
 				ArrayList<Reservation> userReservationList = findAllReservation(lisenceNumber);
@@ -31,7 +31,6 @@ public class ReservationCancelController {
 					loop = false;
 				}
 				
-				//일치할 때, 예약 상태 "취소"로 변경
 				if (isValidLisenceNumber) {
 					modifyReservationState(lisenceNumber, Member.id);
 					ReservationCancelView.showCancelMessage();

@@ -20,7 +20,7 @@ public class InquiryReservationStatusController {
 			
 			if (userReservationList.isEmpty()) {
 				InquiryReservationStatusView.showNoReservationMessage();
-				break;
+				loop = false;
 			}
 			
 			String userName = findNameById(Member.id);

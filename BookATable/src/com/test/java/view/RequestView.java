@@ -22,7 +22,7 @@ public class RequestView {
 	}
 
 
-	public boolean FindAllRequest() {
+	public void showAllRequest(ArrayList<Request> requestList) {
 
 
 		System.out.println();
@@ -35,31 +35,27 @@ public class RequestView {
 		String header = String.format("%6s%15s\t%10s\t\t%-15s%-15s%-20s", "[요청 번호]","[작성일]","[요청 업체]","[요청 사유]","[리뷰 번호]","[승인 여부]");
 		System.out.println(header);
 		
-		if(Data.requestList.isEmpty()) {
-			System.out.println();
-			System.out.println("요청 내역이 없습니다.");
-			System.out.println();
-			View.pause();
-			return false;
+
+		for(Request r : requestList) {
+			String tmp = "";
+			tmp = String.format("%6s%18s%20s\t%15s%15s\t\t%-20s",
+					r.getRequestNumber(),
+					r.getDateWritten(),
+					r.getLicenseNumber(),
+					r.getReason(),
+					r.getReviewNumber(),
+					r.getPermission().equals("null")? "대기":r.getPermission());
+
+			System.out.println(tmp);
+			
 		}
-		else {
-
-
-			for(Request r : Data.requestList) {
-				String tmp = "";
-				tmp = String.format("%6s%18s%20s\t%15s%15s\t\t%-20s",
-						r.getRequestNumber(),
-						r.getDateWritten(),
-						r.getLicenseNumber(),
-						r.getReason(),
-						r.getReviewNumber(),
-						r.getPermission().equals("null")? "대기":r.getPermission());
-
-				System.out.println(tmp);
-				
-			}
-			return true;
-		}
+	}
+	
+	public void hasNoHistory() {
+		System.out.println();
+		System.out.println("요청 내역이 없습니다.");
+		System.out.println();
+		View.pause();
 	}
 
 	public void showSelectBox() {

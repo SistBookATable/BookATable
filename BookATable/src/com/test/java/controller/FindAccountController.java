@@ -1,7 +1,6 @@
 package com.test.java.controller;
 
-import com.test.java.model.Member;
-import com.test.java.repository.Data;
+import com.test.java.repository.MemberRepository;
 import com.test.java.view.FindAccountView;
 import com.test.java.view.View;
 
@@ -9,7 +8,7 @@ public class FindAccountController {
 
 	public void findAccount() {
 		FindAccountView.showSelectBox();
-		String choice = FindAccountView.getSelectNum();
+		int choice = FindAccountView.getSelectNum();
 		
 		String name = "";
 		String phoneNumber = "";
@@ -17,21 +16,21 @@ public class FindAccountController {
 		String pw = "";
 		
 		switch(choice) {
-		case "1":
+		case 1:
 			FindAccountView.showFindIdTitle();
 			name = FindAccountView.getName();
 			phoneNumber = FindAccountView.getPhoneNumber();
-			id = findId(name, phoneNumber);
+			id = MemberRepository.findId(name, phoneNumber);
 			FindAccountView.showResultID(id);
 			break;
-		case "2":
+		case 2:
 			FindAccountView.showFindPwTitle();
 			id = FindAccountView.getId();
 			phoneNumber = FindAccountView.getPhoneNumber();
-			pw = FindPw(id, phoneNumber);
+			pw = MemberRepository.findPw(id, phoneNumber);
 			FindAccountView.showResultPw(pw);
 			break;
-		case "0":
+		case 0:
 			break;
 		default:
 			break;
@@ -39,26 +38,5 @@ public class FindAccountController {
 		
 		View.pause();
 	}
-
-	private String FindPw(String id, String phoneNumber) {
-
-		for(Member selected : Data.memberList) {
-			if(selected.getId().equals(id) && selected.getPhoneNumber().equals(phoneNumber)){
-				return selected.getPw();
-			}
-		}
-		return null;
-	}
-
-	public String findId(String name, String phoneNumber) {
-		for(Member selected : Data.memberList) {
-			if(selected.getName().equals(name) && selected.getPhoneNumber().equals(phoneNumber)){
-				return selected.getId();
-			}
-		}
-		return null;
-	}
-
-	
 	
 }

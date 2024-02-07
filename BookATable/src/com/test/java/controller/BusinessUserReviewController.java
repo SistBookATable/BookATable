@@ -98,6 +98,12 @@ public class BusinessUserReviewController {
 					continue;
 				}
 				
+				//리뷰 번호로 요청이 있으면
+				if(RequestRepository.findOneByReviewNumber(reviewNumber)!=null) {
+					businessUserReviewView.alreadyHasRequest();
+					continue;
+				}
+				
 				//삭제 요청 사유 입력
 				businessUserReviewView.showInputReasonBox(selected.getUserId());
 				String reason = businessUserReviewView.getReason();

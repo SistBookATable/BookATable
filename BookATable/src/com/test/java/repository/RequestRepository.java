@@ -22,7 +22,7 @@ public class RequestRepository {
 	public static Request findOneByReviewNumber(int reviewNumber) {
 		
 		for(Request r : Data.requestList) {
-			if(r.getReviewNumber()==reviewNumber) {
+			if(r.getReviewNumber()==reviewNumber && r.getPermission().equals("대기")) {
 				return r;
 			}
 		}

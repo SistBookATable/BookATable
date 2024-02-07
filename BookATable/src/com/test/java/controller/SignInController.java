@@ -17,20 +17,21 @@ public class SignInController {
 		boolean loop = true;
 		while(loop) {
 			signInView.showSelectType();
-			String choice = signInView.getSelectType();
+			int choice = signInView.getSelectType();
 			
 			
 			switch(choice) {
-			case "1":
+			case 1:
 				//일반회원 회원가입
 				loop = !(UserSignInController.signIn());
 				break;
-			case "2":
+			case 2:
 				//업체회원 회원가입
 				loop = !(BusinessUserSignInController.signIn());
 				break;
-			case "0":
+			case 0:
 				loop = false;
+				break;
 			default:
 				//유효하지 않은 입력
 				signInView.incorrectInputMessage();

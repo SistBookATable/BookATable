@@ -46,6 +46,14 @@ public class SignInUserManagementView {
 		return tmp;
 	}
 
+	public void showBasic(String basic) {
+		System.out.println();
+		System.out.println(basic);
+		System.out.println();
+		
+		View.pause();
+	}
+	
 	public void show(String basic) {
 		System.out.println();
 		System.out.println(basic);

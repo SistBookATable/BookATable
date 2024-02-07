@@ -51,7 +51,7 @@ public class SignInUserManagementController {
 				String basic = makeBasicInfo(member);
 				
 				//기본 정보 출력
-				signInUserManagementView.show(basic);
+				signInUserManagementView.showBasic(basic);
 
 				//아이디를 사용해서 세부 예약 내역을 찾기
 				ArrayList<Reservation> reservations = ReservationRepository.findAllById(id);

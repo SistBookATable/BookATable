@@ -44,23 +44,10 @@ public class StoreController {
 				loop = false;
 				return;
 			case 1:
-				String storeName = storeView.getStoreName();
-				searched = searchStoreName(storeName);
-				if(searched.isEmpty()) {
-					System.out.println("음식점 리스트가 없습니다.");
-					continue;
-				}
-				storeView.show(searched);
-				loop = processSortingOption(searched);
+				loop = processSortingOptionByName(searched);
 				break;
 			case 2:
-				String menuName = storeView.getmenuName();   // 메뉴명을 입력하세요, 짜장면 등
-				searched = searchMenuName(menuName);
-				if(searched.isEmpty()) {
-					System.out.println("음식점 리스트가 없습니다.");
-					continue;
-				}
-				storeView.show(searched);	//
+				// 메뉴명
 				loop = processSortingOption(searched);
 				break;
 			default:
@@ -71,10 +58,24 @@ public class StoreController {
 		}
 	}
 
-	private boolean processSortingOption(ArrayList<Store> searched) {
+	private boolean processSortingOptionByName(ArrayList<Store> searched2) {
 
+		String storeName = storeView.getStoreName();
+		searched = searchStoreName(storeName);
+		if(searched.isEmpty()) {
+			System.out.println();
+			System.out.println("음식점 리스트가 없습니다.");
+			System.out.println();
+			return true;
+		}
+		
 		boolean loop = true;
+		
 		while (loop) {
+			
+			storeView.showTitle();
+			storeView.show(searched);
+			
 			storeView.showSelectBox();
 			int sortingOption = storeView.get();
 			ReservationController reservationController = new ReservationController();
@@ -89,13 +90,62 @@ public class StoreController {
 				//Collections.sort(searched, new FindGPAController());
 				//storeView.show(searched);
 				Collections.sort(searched, (o1, o2)-> (int)(o2.getScore()*10 - o1.getScore()*10));
-				storeView.show(searched);
 				break;
 			case 2:
 				// 리뷰 갯수 내림차순 정렬 등의 다른 정렬 옵션 추가
 				// 리뷰 갯수를 읽어오고, 라이센스 번호와 일치하는 목록을 찾은 다음, <Store> searched에서 출력
 				Collections.sort(searched, (o1, o2) -> (o2.getReviewCount() - o1.getReviewCount()));
-				storeView.show(searched);
+				break;
+			case 3:
+				//storeView.show(searched);
+				Scanner sc = new Scanner(System.in);
+				if(!detailPage()) {
+					return false;
+				}
+				break;
+			default:
+			}
+		}
+		return true;
+	}
+
+	private boolean processSortingOption(ArrayList<Store> searched) {
+
+		String menuName = storeView.getmenuName();   // 메뉴명을 입력하세요, 짜장면 등
+		searched = searchMenuName(menuName);
+		if(searched.isEmpty()) {
+			System.out.println();
+			System.out.println("음식점 리스트가 없습니다.");
+			System.out.println();
+			return true;
+		}
+		
+		boolean loop = true;
+		
+		while (loop) {
+			
+			storeView.showTitle();
+			storeView.show(searched);
+			
+			storeView.showSelectBox();
+			int sortingOption = storeView.get();
+			ReservationController reservationController = new ReservationController();
+
+			switch (sortingOption) {
+			case 0:
+				System.out.println("이전 화면으로 이동합니다.");
+				loop = false;
+				break;
+			case 1:
+				// 별점 내림차순으로 정렬
+				//Collections.sort(searched, new FindGPAController());
+				//storeView.show(searched);
+				Collections.sort(searched, (o1, o2)-> (int)(o2.getScore()*10 - o1.getScore()*10));
+				break;
+			case 2:
+				// 리뷰 갯수 내림차순 정렬 등의 다른 정렬 옵션 추가
+				// 리뷰 갯수를 읽어오고, 라이센스 번호와 일치하는 목록을 찾은 다음, <Store> searched에서 출력
+				Collections.sort(searched, (o1, o2) -> (o2.getReviewCount() - o1.getReviewCount()));
 				break;
 			case 3:
 				//storeView.show(searched);

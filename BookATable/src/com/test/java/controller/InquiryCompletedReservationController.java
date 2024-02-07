@@ -57,13 +57,14 @@ public class InquiryCompletedReservationController {
 			switch (choice) {
 			case 1:
 				UserWriteReviewController userWriteReviewController = new UserWriteReviewController();
-				userWriteReviewController.userWriteReview();
+				userWriteReviewController.userWriteReview(reservations);
 				break;
 			case 0 :
 				loop = false;
 				break;
+			default:
+				break;
 			}
-			View.pause();
 		}
 	}
 

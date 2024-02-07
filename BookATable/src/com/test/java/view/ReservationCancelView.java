@@ -20,10 +20,10 @@ public class ReservationCancelView {
 		return scan.nextLine();
 	}
 
-	public static String getStoreName() {
+	public static int getStoreName() {
 		Scanner scan = new Scanner(System.in);
-		System.out.print("예약 취소 상호명 입력: ");
-		return scan.nextLine();
+		System.out.print("예약 취소할 예약번호 입력: ");
+		return View.getSelectType();
 	}
 
 	public static void showNoReservationHistoryMessage() {
@@ -53,6 +53,16 @@ public class ReservationCancelView {
 		System.out.println();
 		View.pause();
 		
+	}
+
+	public static void incorrectReservationNumber() {
+		
+
+		System.out.println();
+		System.out.println("유효한 예약 번호가 아닙니다.");
+		System.out.println("리스트에 보여진 예약 번호를 입력해주세요.");
+		System.out.println();
+		View.pause();
 	}
 
 

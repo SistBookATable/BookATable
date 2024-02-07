@@ -152,5 +152,15 @@ public class ReservationRepository {
 		
 		return null;
 	}
+
+	public static Reservation findOneByReservationNumber(int reservationNumber, String id) {
+		for(Reservation r : Data.reservationList) {
+			
+			if(r.getReservationNumber() == reservationNumber && r.getUserId().equals(id)) {
+				return r;
+			}
+		}
+		return null;
+	}
 	
 }

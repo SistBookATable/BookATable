@@ -1,6 +1,7 @@
 package com.test.java.controller;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Scanner;
 
 import com.test.java.model.BusinessUser;
@@ -18,7 +19,7 @@ public class ReservationController {
 	public void reservation(String licenseNumber) {
         // 사용자 ID 출력
         System.out.println(Member.id);
-
+        
         // 멤버 목록에서 사용자 찾기
         for (Member m : Data.memberList) {
             if (Member.id.equals(m.getId())) {
@@ -68,7 +69,7 @@ public class ReservationController {
                             System.out.println("예약을 취소하셨습니다.");
                             break;
                     }
-
+                    
                     // 예약 정보 저장
                     int index = 1;
                     for (Member member : Data.memberList) {

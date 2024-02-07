@@ -77,7 +77,8 @@ public class ReservationView {
 		        tmp = scan.nextLine();
 		        
 		        // 유효성 검사
-		        if (isValidDate(tmp)) {
+		        if ((tmp = isValidDate(tmp))!=null) {
+		        	
 		            break;
 		        } else {
 		            System.out.println("올바른 날짜 형식이 아닙니다. 다시 입력하세요.");
@@ -87,19 +88,32 @@ public class ReservationView {
 		    return tmp;
 		}
 
-		private boolean isValidDate(String date) {
+		private String isValidDate(String date) {
 		    // 예약 날짜 형식(MMDD)에 맞는지 확인
 		    if (date.matches("^\\d{4}$")) {
 		        // 2024년 기준으로 월은 01부터 12까지, 일은 01부터 31까지 유효한 범위 내에 있어야 함
 		        int month = Integer.parseInt(date.substring(0, 2));
 		        int day = Integer.parseInt(date.substring(2));
+                
+		        
+                Calendar cur = Calendar.getInstance();
+                cur.set(cur.get(Calendar.YEAR), month, day);
+                
+                String thatDay = String.format("%tF", cur);
+                String today = String.format("%tF", cur);
+                
+                if(today.compareTo(thatDay)>0){
+                	System.out.println("오늘 이후 날짜를 입력해주세요");
+                	return null;
+                }
+                
 		        
 		        if (month >= 1 && month <= 12 && day >= 1 && day <= 31) {
-		            return true;
+		            return thatDay;
 		        }
 		    }
 		    
-		    return false;
+		    return null;
 		}
 
 	    public String getReservationTime() {

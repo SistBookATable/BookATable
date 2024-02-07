@@ -14,7 +14,7 @@ public class PointManagementView {
 		System.out.printf("			%s 회원님				\n", name); 
 		System.out.printf("              	보 유 포 인 트 : 	%d	  		\n", balance);
 		System.out.printf("              	계 좌 번 호   :   %s     	    \n", account);
-		System.out.println("	※충전계좌 변경은 개인정보관리의 등록계좌 변경 메뉴에서 가능합니다※");
+		System.out.println("※충전계좌 변경은 개인정보관리의 등록계좌 변경 메뉴에서 가능합니다※");
 		System.out.println("└───────────────────────────────────────────────────────┘");
 		System.out.println("==========================================================================================");
 		System.out.println();

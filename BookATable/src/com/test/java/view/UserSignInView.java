@@ -47,8 +47,6 @@ public class UserSignInView {
 	}
 
 	public static String getAccount() {
-		
-		
 		Scanner scan = new Scanner(System.in);
 		String tmp = "";
 		System.out.println("==========================================================================================");
@@ -61,7 +59,6 @@ public class UserSignInView {
 		return tmp;
 	}
 	
-
 
 	public static String getId() {
 		
@@ -77,8 +74,6 @@ public class UserSignInView {
 		return tmp;
 	}
 
-
-
 	public static String getPw() {
 		
 		Scanner scan = new Scanner(System.in);
@@ -92,7 +87,7 @@ public class UserSignInView {
 		tmp = scan.nextLine();		
 		return tmp;
 	}
-
+	
 	public static String getBank() {
 
 		Scanner scan = new Scanner(System.in);
@@ -118,7 +113,16 @@ public class UserSignInView {
 		tmp = scan.nextLine();
 		return tmp;
 	}
-
+	
+	public static String getAccount() {
+		
+		
+		Scanner scan = new Scanner(System.in);
+		String tmp = "";
+		System.out.print("계좌번호 : ");
+		tmp = scan.nextLine();		
+		return tmp;
+	}
 	public static void errorMessage(String string) {
 
 		System.out.println();

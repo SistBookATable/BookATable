@@ -306,6 +306,7 @@ public class Data {
 			// TODO: handle exception
 		}		
 	}
+	
 	public static void loadReservation() {
 		try {
 			BufferedReader reader

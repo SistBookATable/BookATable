@@ -54,7 +54,6 @@ public class ReservationCancelController {
 			loop = false;
 
 		}
-		View.pause();
 	}
 
 	private ArrayList<Reservation> findAllReservation(String lisenceNumber) {

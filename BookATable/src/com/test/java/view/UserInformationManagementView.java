@@ -4,15 +4,27 @@ import java.util.Scanner;
 
 public class UserInformationManagementView {
 
-	public static void showUserInformation(String name, String id, String phoneNumber, String birth, String account,
-			int balance) {
+	public static void showTitle(String userName) {
 		System.out.println();
 		System.out.println();
 		System.out.println("┌───────────────────────────────────────────────────────┐");
-		System.out.printf("			%s 회원님	개인정보 조회			\n", name);
+		System.out.printf("	|		%s 회원님	개인정보 조회			<\n", userName);
 		System.out.println("└───────────────────────────────────────────────────────┘");
-		System.out.println("[이름]\t[ID]\t[전화번호]\t\t[생년월일]\t\t[계좌]\t[잔액]\n");
-		System.out.printf("[%s]\t[%s]\t[%s]\t\t[%s]\t\t[%s]\t[%d]\n", name, id, phoneNumber, birth, account, balance);
+		System.out.println();
+		System.out.println();
+		
+		
+	}
+
+	public static void showUserInformation(String userName, String id, String phoneNumber, String birthDate, String account, String balance) {
+		System.out.println("-------------------------------------------------------------------------------------------");
+		System.out.println();
+		String header = String.format("%-5s\t%-15s\t%-13s\t%-6s\t\t%-16s\t%s", "[이름]","[ID]","[전화번호]","[생년월일]", "[계좌]", "[잔액]");
+		System.out.println(header);
+		String body = String.format("%-5s\t%-15s\t%-13s\t%-6s\t\t%-16s\t%s원", userName, id, phoneNumber, birthDate, account, balance);
+		System.out.println(body);
+		System.out.println();
+		System.out.println("-------------------------------------------------------------------------------------------");
 	}
 
 	public static void showSelectBox() {
@@ -32,5 +44,6 @@ public class UserInformationManagementView {
 		scan.nextLine();
 		return temp;
 	}
+
 
 }

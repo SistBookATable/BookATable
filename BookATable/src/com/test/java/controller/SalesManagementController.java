@@ -1,15 +1,6 @@
 package com.test.java.controller;
 
-import java.util.ArrayList;
-import java.util.Collections;
-
-import com.test.java.model.BusinessUser;
-import com.test.java.model.Member;
-import com.test.java.model.Review;
-import com.test.java.repository.MemberRepository;
-import com.test.java.repository.ReviewRepository;
 import com.test.java.view.SalesManagementView;
-import com.test.java.view.View;
 
 public class SalesManagementController {
 

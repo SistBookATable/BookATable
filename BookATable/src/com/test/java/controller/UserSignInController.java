@@ -29,7 +29,7 @@ public class UserSignInController {
 			if (Validation.isValidName(name)) {
 				break;
 			} else {
-				if(name == "0")
+				if(name.equals("0"))
 				{
 					UserSignInView.showCancelMessage();
 					return false;
@@ -42,7 +42,7 @@ public class UserSignInController {
 			if (Validation.isValidJumin(jumin)) {
 				break;
 			} else {
-				if(name == "0")
+				if(jumin.equals("0"))
 				{
 					UserSignInView.showCancelMessage();
 					return false;
@@ -55,7 +55,7 @@ public class UserSignInController {
 			if (Validation.isValidPhone(phone)) {
 				break;
 			} else {
-				if(name == "0")
+				if(phone.equals("0"))
 				{
 					UserSignInView.showCancelMessage();
 					return false;
@@ -70,7 +70,7 @@ public class UserSignInController {
 				bank = Validation.banks[Integer.parseInt(bank)];
 				break;
 			} else {
-				if(name == "0")
+				if(bank.equals("0"))
 				{
 					UserSignInView.showCancelMessage();
 					return false;
@@ -83,7 +83,7 @@ public class UserSignInController {
 			if (Validation.isValidAccount(account,bank)) {
 				break;
 			} else {
-				if(name == "0")
+				if(account.equals("0"))
 				{
 					UserSignInView.showCancelMessage();
 					return false;
@@ -100,7 +100,7 @@ public class UserSignInController {
 					UserSignInView.errorMessage("이미 존재하는 ID입니다. 다시 작성하십시오");
 				}
 			} else {
-				if(name == "0")
+				if(id.equals("0"))
 				{
 					UserSignInView.showCancelMessage();
 					return false;
@@ -113,7 +113,7 @@ public class UserSignInController {
 			if (Validation.isValidPw(pw)) {
 				break;
 			} else {
-				if(name == "0")
+				if(pw.equals("0"))
 				{
 					UserSignInView.showCancelMessage();
 					return false;

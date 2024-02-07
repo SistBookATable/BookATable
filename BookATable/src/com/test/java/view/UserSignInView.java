@@ -56,7 +56,7 @@ public class UserSignInView {
 		System.out.println("     회원가입을 종료하려면 \'0\'을 입력해주세요  ");
 		System.out.println("==========================================================================================");
 		System.out.println();
-		System.out.print("계좌번호 (숫자만) : ");
+		System.out.print("계좌번호 (숫자 : ");
 		tmp = scan.nextLine();		
 		return tmp;
 	}

@@ -33,4 +33,27 @@ public class ReservationCancelView {
 		View.pause();
 	}
 
+	public static void showAskCancelMessage() {
+		System.out.println();
+		System.out.println("예약을 취소하시겠습니까?");
+		System.out.println();
+		View.pause();		
+	}
+
+	public static void showCancelMessage() {
+		System.out.println();
+		System.out.println("예약이 취소되었습니다.");
+		System.out.println();
+		View.pause();
+	}
+
+	public static void showStopCancelMessage() {
+		System.out.println();
+		System.out.println("예약 취소 과정을 중지합니다.");
+		System.out.println();
+		View.pause();
+		
+	}
+
+
 }

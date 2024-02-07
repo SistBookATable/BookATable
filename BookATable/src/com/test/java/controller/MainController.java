@@ -64,8 +64,8 @@ public class MainController {
 					userInquiryController.userInquiry();
 					break;
 				case 4:
-					ReservationController reservationController = new ReservationController();
-					reservationController.reservation(licenseNumber);
+					StoreController storeController = new StoreController();
+					storeController.run();
 					break;
 				default:
 					loop = false;
@@ -93,6 +93,8 @@ public class MainController {
 					userInquiryController.userInquiry();
 					break;
 				case 4:
+					StoreController storeController = new StoreController();
+					storeController.run();
 					break;
 				default:
 					loop = false;
@@ -145,11 +147,14 @@ public class MainController {
 		Data.loadUser();
 		Data.loadBusinessUser();
 		Data.loadMenu();
-		Data.loadStore();
+		//Data.loadStore();
 		Data.loadReview();
 		Data.loadReservation();
 		Data.loadStore();
-//		Data.loadBookmark();
+
+		//Data.loadBookmark();
+
+
 		Data.loadFaq();
 		Data.loadPointUsage();
 

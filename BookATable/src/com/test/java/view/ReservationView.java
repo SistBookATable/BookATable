@@ -30,6 +30,7 @@ public class ReservationView {
 	      
 	      return tmp;
 	   }
+	
 	   
 	   public String getReservationDate(String licenseNumber) {
 	         
@@ -323,6 +324,30 @@ public class ReservationView {
 		}
 		
 		System.out.println(tmp);
+	}
+
+
+	public int getTableNum(int num) {
+		int tableNum=0;
+        if(0<num&&num<3) {
+        	return tableNum=2;
+        }
+        else if(num<5) {
+        	 return tableNum=4;
+        	
+        }
+        else if(num<7) {
+        	 return tableNum=6;
+        }
+        else if(num<9) {
+        	return tableNum=8;
+        }
+        else if(num<11) {
+        	 return tableNum=10;
+        }
+        else {
+        	return 0;
+        }
 	}
 	
 

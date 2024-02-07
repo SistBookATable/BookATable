@@ -1,12 +1,15 @@
 package com.test.java.controller;
 
+import java.util.Scanner;
+
 import com.test.java.model.Member;
 import com.test.java.repository.Data;
 import com.test.java.view.MainView;
 import com.test.java.view.StoreView;
+import com.test.java.view.View;
 
 public class MainController {
-	 
+
 	/**
 	 * 메인 화면 시작 
 	 */
@@ -14,13 +17,13 @@ public class MainController {
 
 		boolean loop = true;
 		while(loop) {
-			
+
 			if(Member.level == 0) {
 
 				MainView.logo();
 				MainView.show();
 				int choice = MainView.get();
-				
+
 				switch(choice) {
 				case 1:
 					SignInController signInController = new SignInController();
@@ -48,7 +51,7 @@ public class MainController {
 				MainView.userPage();
 				String licenseNumber="002-00-40342";
 				int choice = MainView.get();
-				
+
 				switch(choice) {
 				case 1:
 					UserMyPageController userMyPageController = new UserMyPageController();
@@ -69,7 +72,7 @@ public class MainController {
 				default:
 					loop = false;
 				}
-				
+
 			}
 			else if(Member.level == 2) {
 
@@ -77,7 +80,7 @@ public class MainController {
 				MainView.businessUserPage();
 
 				int choice = MainView.get();
-				
+
 				switch(choice) {
 				case 1:
 					BusinessUserMyPageController businessUserMyPageController = new BusinessUserMyPageController();
@@ -105,7 +108,7 @@ public class MainController {
 				MainView.adminPage();
 
 				int choice = MainView.get();
-				
+
 				switch(choice) {
 				case 1:
 					UserManagementController userManagementController = new UserManagementController();
@@ -130,15 +133,16 @@ public class MainController {
 		}
 
 	}
-	
+
 	private static void searchMenu() {
 		StoreView storeView = new StoreView();
 		storeView.searchMenu();
-	
-		
+
+
 	}
 
 	public static void load() {
+
 
 		Data.loadTable();
 		Data.loadOperatingHours();
@@ -155,5 +159,6 @@ public class MainController {
 		Data.loadInquiry();
 		Data.loadBlackList();
 		Data.loadRequest();
+
 	}
 }

@@ -42,10 +42,7 @@ public class UserInquiryView {
 
 
 	public int getSelectType() {
-		Scanner scan = new Scanner(System.in);
-		int tmp = scan.nextInt();
-		scan.nextLine();
-		return tmp;
+		return View.getSelectType();
 	}
 
 	public void showTitleInputBox() {

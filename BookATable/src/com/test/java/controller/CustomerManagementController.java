@@ -48,7 +48,7 @@ public class CustomerManagementController {
 				List<String> keySet = new ArrayList<>(customerList.keySet());
 				
 				if(keySet.size()>1) {
-					keySet.sort((o1,o2)-> customerList.get(o1) - customerList.get(o2));
+					keySet.sort((o1,o2)-> customerList.get(o2) - customerList.get(o1));
 				}
 				
 				//모든 방문자 리스트 출력
@@ -58,12 +58,11 @@ public class CustomerManagementController {
 					String userName = MemberRepository.findOneById(key).getName();
 					HashMap<String, Integer> menuCount = ReservationRepository.findMenuByUserId(lisenceNumber,key);
 					
-
 					//메뉴 주문 횟수로 키셋 정렬
 					List<String> menuCountKeySet = new ArrayList<>(menuCount.keySet());
 					
 					//키셋 개수가 1보다 크면 정렬
-					if(menuCountKeySet.size() > 1) {
+					if(menuCountKeySet.size() > 0) {
 						menuCountKeySet.sort((o1,o2) -> menuCount.get(o2) - menuCount.get(o1));	
 					}
 					

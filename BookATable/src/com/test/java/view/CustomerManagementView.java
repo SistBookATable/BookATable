@@ -54,6 +54,12 @@ public class CustomerManagementView {
 		System.out.printf("\t%d\t%s\t%s(%d회)\n", count, userName, menuName, cnt);	
 	}
 	public void showCustomerTitle() {
+		System.out.println();
+		System.out.println();
+		System.out.println("┌───────────────────────────────────────────────────────┐");
+		System.out.println("|           업체 회원 - 고객 관리 - 단골 고객 리스트            <");
+		System.out.println("└───────────────────────────────────────────────────────┘");
+		System.out.println();
 		System.out.printf("\t%s\t%s\t%s\n", "이용횟수","회원명","최다 주문 메뉴");	
 	}
 	public void pause() {
@@ -72,6 +78,12 @@ public class CustomerManagementView {
 		View.pause();
 	}
 	public void showBlackListTitle() {
+		System.out.println();
+		System.out.println();
+		System.out.println("┌───────────────────────────────────────────────────────┐");
+		System.out.println("|              업체 회원 - 고객 관리 - 블랙리스트              <");
+		System.out.println("└───────────────────────────────────────────────────────┘");
+		System.out.println();
 		System.out.printf("\t%s\t%s\t%s\n", "노쇼횟수","회원ID","사용 제한 여부");	
 		
 	}

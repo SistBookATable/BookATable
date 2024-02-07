@@ -9,6 +9,7 @@ import com.test.java.model.Review;
 import com.test.java.repository.MemberRepository;
 import com.test.java.repository.ReviewRepository;
 import com.test.java.view.SalesManagementView;
+import com.test.java.view.View;
 
 public class SalesManagementController {
 
@@ -18,7 +19,7 @@ public class SalesManagementController {
 		
 		boolean loop = true;
 		while(loop) {
-
+			
 			salesManagementView.showTitle();
 			salesManagementView.showSelectBox();
 			int choice = salesManagementView.getSelectType();

@@ -41,23 +41,19 @@ public class InquiryCompletedReservationView {
 		System.out.println();
 		System.out.println("------------------------------------------------------------------------------------------");
 		System.out.println();
-		System.out.println("■         		  1. 리뷰 작성		   ■");
-		System.out.println("■         		  0. 이전 화면		   ■");
+		System.out.println("■         		  1. 리뷰 작성		   \t■");
+		System.out.println("■         		  0. 이전 화면		   \t■");
 		System.out.println();
 		System.out.println("------------------------------------------------------------------------------------------");
 		
 		System.out.println();
 		
 		System.out.print("선택(번호) : ");
-		System.out.println();
 		
 	}
 	
 	public static int get() {
-		Scanner scan = new Scanner(System.in);
-		int num = scan.nextInt();
-		scan.nextLine();
-		return num;
+		return View.getSelectType();
 	}
 
 	public static String inputStoreName() {

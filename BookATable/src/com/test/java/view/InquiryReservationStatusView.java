@@ -18,14 +18,15 @@ public class InquiryReservationStatusView {
 		System.out.println("└───────────────────────────────────────────────────────┘");
 		System.out.println();
 		
-		String header = String.format("%-20s%-25s%-25s", "[예약 상호명]","[예약 인원 수]","[예약 시간]");
+		String header = String.format("%-10s%-20s%-25s%-25s", "[예약 번호]", "[예약 상호명]","[예약 인원 수]","[예약 시간]");
 		System.out.println(header);
 		
 	}
 	
 	public static void showOneReservation(Reservation r, String storeName) {
 		String tmp = "";
-		tmp = String.format("%-20s%-25s%-25s"
+		tmp = String.format("%-10s%-20s%-25s%-25s"
+				,r.getReservationNumber()
 				, storeName
 				,r.getNumOfPeople() + "명"
 				, r.getReservationTime().substring(0, 2) + ":" + r.getReservationTime().substring(2));
@@ -49,11 +50,7 @@ public class InquiryReservationStatusView {
 	}
 	
 	public static int get() {
-		Scanner scan = new Scanner(System.in);
-		int temp = scan.nextInt();
-		scan.nextLine();
-		
-		return temp;
+		return View.getSelectType();
 	}
 
 	public static void showNoReservationMessage() {

@@ -137,4 +137,15 @@ public class BusinessUserReviewView {
 		View.pause();
 	}
 
+	public void alreadyHasRequest() {
+		System.out.println("==========================================================================================");
+		System.out.println();
+		System.out.println("        이미 삭제 요청된 리뷰입니다.");
+		System.out.println();
+		System.out.println("==========================================================================================");
+		System.out.println();
+		
+		View.pause();
+	}
+
 }

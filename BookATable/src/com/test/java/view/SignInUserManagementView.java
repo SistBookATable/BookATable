@@ -11,22 +11,13 @@ import com.test.java.repository.Data;
 
 public class SignInUserManagementView {
 
-	public void showAllUser(ArrayList<User> userList) {
+	public void showAllUser(ArrayList<Member> memberList) {
 
 		String header = String.format("%15s%15s%18s%15s%15s%15s", "[회원ID]","[가입일]","[회원 이름]","[예약 횟수]","[노쇼 횟수]","[정지 여부]");
 		System.out.println(header);
 		
-		for(User u : userList) {
-			String tmp = "";
-			tmp = String.format("%15s%18s%15s%15d회%15d회%19s", 
-					u.getId(),
-					u.getSignIn(),
-					u.getName(),
-					u.getReservationCount(),
-					u.getNoshowCount(),
-					(u.getNoshowCount() >= 10)? "정지회원입니다.":" ");
-			System.out.println(tmp);
-			
+		for(Member m : memberList) {
+			m.printSignIn();
 		}
 	}
 
@@ -55,10 +46,20 @@ public class SignInUserManagementView {
 		return tmp;
 	}
 
+	public void showBasic(String basic) {
+		System.out.println();
+		System.out.println(basic);
+		System.out.println();
+		
+		View.pause();
+	}
+	
 	public void show(String basic) {
 		System.out.println();
 		System.out.println(basic);
 		System.out.println();
+		
+		View.pause();
 	}
 
 	public void showDetail(int reservationNumber, String storeName, String date, int numOfPeople,

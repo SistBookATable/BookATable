@@ -84,21 +84,21 @@ public class MemberRepository {
 		return false;
 	}
 
-	public static ArrayList<User> findAllUser() {
-		ArrayList<User> tmp = new ArrayList<>();
+	public static ArrayList<Member> findAllUser() {
+		ArrayList<Member> tmp = new ArrayList<>();
 		for(Member m : Data.memberList) {
-			if(m.getUserType()==1 && m.getSignOut().equals("null")) {
-				tmp.add((User)m);
+			if(m.getSignOut().equals("null")) {
+				tmp.add(m);
 			}
 		}
 		return tmp;
 	}
 
-	public static ArrayList<User> findAllSingOutUser() {
-		ArrayList<User> tmp = new ArrayList<>();
+	public static ArrayList<Member> findAllSingOutUser() {
+		ArrayList<Member> tmp = new ArrayList<>();
 		for(Member m : Data.memberList) {
-			if(m.getUserType()==1 && !m.getSignOut().equals("null")) {
-				tmp.add((User)m);
+			if(!m.getSignOut().equals("null")) {
+				tmp.add(m);
 			}
 		}
 		return tmp;
@@ -117,7 +117,7 @@ public class MemberRepository {
 	public static ArrayList<BusinessUser> findAllSingOutBusinessUser() {
 		ArrayList<BusinessUser> tmp = new ArrayList<>();
 		for(Member m : Data.memberList) {
-			if(m.getUserType()==1 && !m.getSignOut().equals("null")) {
+			if(m.getUserType()==2 && !m.getSignOut().equals("null")) {
 				tmp.add((BusinessUser)m);
 			}
 		}
@@ -136,5 +136,23 @@ public class MemberRepository {
 		
 		BusinessUser businessUser = new BusinessUser(2, id, pw, name,  licenseNumber, phoneNumber, bank, account, now, signOut);
 		Data.memberList.add(businessUser);
+	}
+
+	public static String findId(String name, String phoneNumber) {
+		for(Member selected : Data.memberList) {
+			if(selected.getName().equals(name) && selected.getPhoneNumber().equals(phoneNumber) && selected.getSignOut().equals("null")){
+				return selected.getId();
+			}
+		}
+		return null;
+	}
+
+	public static String findPw(String id, String phoneNumber) {
+		for(Member selected : Data.memberList) {
+			if(selected.getId().equals(id) && selected.getPhoneNumber().equals(phoneNumber) && selected.getSignOut().equals("null")){
+				return selected.getPw();
+			}
+		}
+		return null;
 	}
 }

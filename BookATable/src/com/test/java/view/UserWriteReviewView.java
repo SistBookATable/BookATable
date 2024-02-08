@@ -23,6 +23,7 @@ public class UserWriteReviewView {
 		
 		String header = String.format("%10s\t%10s\t%10s\t%10s\t%10s\t%10s\t%10s\t"
 				,"[예약번호]","[예약일]","[상호명]","[인원수]","[예약취소여부]","[노쇼여부]","[리뷰작성여부]");
+
 		System.out.println(header);
 		
 	}

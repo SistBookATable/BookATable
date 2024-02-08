@@ -159,5 +159,35 @@ public class User extends Member{
 		this.signOut = signOut;
 	}
 
+	@Override
+	public void print() {
+
+		String tmp = "";
+		tmp = String.format("%s%20s%17s%15d회%15d회%19s%15s",
+				"일반회원",
+				this.getId(),
+				this.getName(),
+				this.getReservationCount(),
+				this.getNoshowCount(),
+				this.getSignOut(),
+				(this.getNoshowCount() >= 10)? "정지회원":" ");
+		System.out.println(tmp);	
+	}
+
+	@Override
+	public void printSignIn() {
+
+		String tmp = "";
+		tmp = String.format("%s%15s%18s%15s%15d회%15d회%19s",
+				"일반회원",
+				this.getId(),
+				this.getSignIn(),
+				this.getName(),
+				this.getReservationCount(),
+				this.getNoshowCount(),
+				(this.getNoshowCount() >= 10)? "정지회원입니다.":" ");
+		System.out.println(tmp);
+	}
+
 	
 }

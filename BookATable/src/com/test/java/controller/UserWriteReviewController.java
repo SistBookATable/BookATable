@@ -10,11 +10,6 @@ import com.test.java.model.Review;
 import com.test.java.repository.Data;
 import com.test.java.repository.ReviewRepository;
 import com.test.java.repository.StoreRepository;
-import com.test.java.view.InquiryCompletedReservationView;
-import com.test.java.view.UserWriteReviewView;
-import com.test.java.view.View;
-
-public class UserWriteReviewController {
 
 	public void userWriteReview() {
 		boolean loop = true;
@@ -49,8 +44,8 @@ public class UserWriteReviewController {
 				View.pause();
 				loop = false;
 			}
-			break;
 		}
+		return null;
 	}
 
 	private void addReview(String reviewContent, int reservationNumber, double score) {		

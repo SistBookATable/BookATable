@@ -25,8 +25,8 @@ public class SignInUserManagementController {
 			signInUserManagementView.showTitle();
 			
 			//탈퇴하지 않은 회원 리스트 출력
-			ArrayList<User> userList = MemberRepository.findAllUser();
-			signInUserManagementView.showAllUser(userList);
+			ArrayList<Member> memberList = MemberRepository.findAllUser();
+			signInUserManagementView.showAllUser(memberList);
 			
 			signInUserManagementView.showSelectBox();
 			int choice = signInUserManagementView.getSelectType();
@@ -51,7 +51,7 @@ public class SignInUserManagementController {
 				String basic = makeBasicInfo(member);
 				
 				//기본 정보 출력
-				signInUserManagementView.show(basic);
+				signInUserManagementView.showBasic(basic);
 
 				//아이디를 사용해서 세부 예약 내역을 찾기
 				ArrayList<Reservation> reservations = ReservationRepository.findAllById(id);
@@ -80,8 +80,8 @@ public class SignInUserManagementController {
 		String tmp = "";
 		tmp += "회원명 : " + member.getName() +"\n";
 		tmp += "회원ID : " + member.getId() +"\n";
-		tmp += "예약 횟수 : " + ((User)member).getReservationCount() +"\n";
-		tmp += "노쇼 횟수 : " + ((User)member).getNoshowCount() +"\n";
+		tmp += "예약 횟수 : " + member.getReservationCount() +"\n";
+		tmp += "노쇼 횟수 : " + member.getNoshowCount() +"\n";
 		return tmp;
 	}
 

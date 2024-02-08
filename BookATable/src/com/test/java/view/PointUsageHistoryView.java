@@ -46,7 +46,7 @@ public class PointUsageHistoryView {
 		System.out.println();
 		
 		
-		String header = String.format("%10s%5s%10s", "[사용일자]","[구분]","[포인트사용]");
+		String header = String.format("%10s\t    %5s\t%10s", "[사용일자]","[구분]","[포인트사용]");
 		System.out.println(header);
 
 		
@@ -67,7 +67,7 @@ public class PointUsageHistoryView {
 		
 		for(PointUsage p : usageList) {
 			
-			String tmp = String.format("%10s%15s%10s",
+			String tmp = String.format("%10s %15s %10s",
 					p.getUseTime(),
 					p.getContent(),
 					p.getUsagePoint());

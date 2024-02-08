@@ -17,14 +17,15 @@ public class InquiryReservationStatusController {
 		while (loop) {
 			
 			ArrayList<Reservation> userReservationList = findAllReservation(Member.id);
+
+			String userName = findNameById(Member.id);
+			InquiryReservationStatusView.showUserReservationHeader(userName);
 			
 			if (userReservationList.isEmpty()) {
 				InquiryReservationStatusView.showNoReservationMessage();
 				loop = false;
 			}
 			
-			String userName = findNameById(Member.id);
-			InquiryReservationStatusView.showUserReservationHeader(userName);
 			
 			for(Reservation r : userReservationList) {
 					String storeName = findStoreNameByLisenceNumber(r.getLicenseNumber());
@@ -42,8 +43,9 @@ public class InquiryReservationStatusController {
 			case 0:
 				loop = false;
 				break;
+			default:
+				break;
 			}
-			View.pause();
 		}
 	}
 

@@ -14,7 +14,7 @@ import com.test.java.repository.Data;
 
 public class ReservationView {
 	   public static void showCalendar() {
-		      
+		      System.out.println();
 		      Calendar calendar=Calendar.getInstance();
 		      calendar.set(2024,Calendar.MONTH-1,1);
 		      
@@ -68,6 +68,7 @@ public class ReservationView {
 	    }
 
 	 public String getReservationDate(String licenseNumber) {
+		 System.out.println();
 		    Scanner scan = new Scanner(System.in);
 		    String tmp = "";
 		    
@@ -102,7 +103,6 @@ public class ReservationView {
                 
                 String thatDay = String.format("%tF", cur);
                 
-                System.out.println(today + thatDay);
                 if(today.compareTo(thatDay)>0){
                 	System.out.println("오늘 이후 날짜를 입력해주세요");
                 	return null;
@@ -243,7 +243,7 @@ public class ReservationView {
 	            String menu = entry.getKey();
 	            int count = entry.getValue();
 	            tmp.append(menu);
-	            if (count > 1) {
+	            if (count >= 1) {
 	                tmp.append("/").append(count);
 	            }
 	            tmp.append(", ");

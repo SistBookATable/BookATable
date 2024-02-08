@@ -9,27 +9,28 @@ import com.test.java.repository.Data;
 
 public class SignOutUserManagementView {
 
-	public void showAllSignOutUser(ArrayList<Member> userList) {
+	public void showAllSignOutUser(ArrayList<Member> userList, int cur) {
 		
-		String header = String.format("\t%18s%18s%15s%15s%15s%15s", "[회원ID]","[회원 이름]","[예약 횟수]","[노쇼 횟수]","[탈퇴일]","[정지 여부]");
+		String header = String.format("%s\t%18s%18s%15s%15s%15s%15s", "[회원타입]","[회원ID]","[회원 이름]","[예약 횟수]","[노쇼 횟수]","[탈퇴일]","[정지 여부]");
 		System.out.println(header);
-		
-		for(Member u : userList) {
-			u.print();
+		for(int i=0; i<10; i++) {
+			if(cur+i == userList.size())
+				break;
+			userList.get(cur+i).print();
 		}
 	}
 
 	public void showSelectBox() {
-		System.out.println();
 		System.out.println("==========================================================================================");
 		System.out.println();
-		System.out.println("■           1. 회원 정보 삭제              ■");
-		System.out.println("■           0. 뒤로 가기                  ■");
+		System.out.println("■           1. 이전 페이지            \t■");
+		System.out.println("■           2. 다음 페이지            \t■");
+		System.out.println("■           3. 회원 정보 삭제          \t■");
+		System.out.println("■           0. 뒤로 가기              \t■");
 		System.out.println();
 		System.out.println("==========================================================================================");
 		System.out.println();
 		System.out.println("선택(번호) : ");
-		
 	}
 
 	public static void deleteCancleMessage() {
@@ -75,7 +76,7 @@ public class SignOutUserManagementView {
 		System.out.println("==========================================================================================");
 		System.out.println();
 		System.out.println("        유효하지 않은 입력값입니다.");
-		System.out.println("      (1, 0) 중에 하나를 입력해주세요");
+		System.out.println("      (1,2,3,0) 중에 하나를 입력해주세요");
 		System.out.println();
 		System.out.println("==========================================================================================");
 		System.out.println();
@@ -97,5 +98,25 @@ public class SignOutUserManagementView {
 		View.pause();
 		
 	}
+	public void firstPageMessage() {
+		System.out.println("==========================================================================================");
+		System.out.println();
+		System.out.println("       첫 번째 페이지 입니다.");
+		System.out.println();
+		System.out.println("==========================================================================================");
+		System.out.println();
+		
+		View.pause();
+	}
 
+	public void lastPageMessage() {
+		System.out.println("==========================================================================================");
+		System.out.println();
+		System.out.println("       마지막 페이지 입니다.");
+		System.out.println();
+		System.out.println("==========================================================================================");
+		System.out.println();
+		
+		View.pause();
+	}
 }

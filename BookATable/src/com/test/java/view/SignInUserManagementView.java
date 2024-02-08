@@ -11,21 +11,26 @@ import com.test.java.repository.Data;
 
 public class SignInUserManagementView {
 
-	public void showAllUser(ArrayList<Member> memberList) {
+	public void showAllUser(ArrayList<Member> memberList, int cur) {
 
-		String header = String.format("%15s%15s%18s%15s%15s%15s", "[회원ID]","[가입일]","[회원 이름]","[예약 횟수]","[노쇼 횟수]","[정지 여부]");
+		String header = String.format("%s\t%15s%15s%18s%15s%15s%15s","[회원]", "[회원ID]","[가입일]","[회원 이름]","[예약 횟수]","[노쇼 횟수]","[정지 여부]");
 		System.out.println(header);
 		
-		for(Member m : memberList) {
-			m.printSignIn();
+		for(int i=0; i<10; i++) {
+			if(cur+i == memberList.size()) {
+				break;
+			}
+			memberList.get(cur+i).printSignIn();
 		}
 	}
 
 	public void showSelectBox() {
 		System.out.println("==========================================================================================");
 		System.out.println();
-		System.out.println("■           1. 상세 내역 조회              ■");
-		System.out.println("■           0. 뒤로 가기                  ■");
+		System.out.println("■           1. 이전 페이지            \t■");
+		System.out.println("■           2. 다음 페이지            \t■");
+		System.out.println("■           3. 상세 내역 조회          \t■");
+		System.out.println("■           0. 뒤로 가기              \t■");
 		System.out.println();
 		System.out.println("==========================================================================================");
 		System.out.println();
@@ -123,6 +128,28 @@ public class SignInUserManagementView {
 		
 		View.pause();
 		
+	}
+
+	public void firstPageMessage() {
+		System.out.println("==========================================================================================");
+		System.out.println();
+		System.out.println("       첫 번째 페이지 입니다.");
+		System.out.println();
+		System.out.println("==========================================================================================");
+		System.out.println();
+		
+		View.pause();
+	}
+
+	public void lastPageMessage() {
+		System.out.println("==========================================================================================");
+		System.out.println();
+		System.out.println("       마지막 페이지 입니다.");
+		System.out.println();
+		System.out.println("==========================================================================================");
+		System.out.println();
+		
+		View.pause();
 	}
 
 }

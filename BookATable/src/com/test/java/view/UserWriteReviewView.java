@@ -23,15 +23,16 @@ public class UserWriteReviewView {
 		
 
 		System.out.println("===========================================================================================");
-		String header = String.format("%-13s%-10s%10s\t\t\t%10s\t\t%10s\t\t%10s\t\t%10s\t"
-									,"[예약번호]","[예약일]","[상호명]","[인원수]","[예약취소여부]","[노쇼여부]","[리뷰작성여부]");
+		String header = String.format("%-13s%-10s%10s\t%10s\t"
+									,"[예약번호]","[예약일]","[상호명]","[인원수]");
 		System.out.println(header);
-		
+	
 	}
 
 	public static void showOneReserVation(Reservation r, String storeName) {
 		String tmp = "";
-		tmp = String.format("%10s\t%10s\t%10st%10st%10s\t%10s\t"
+		tmp = String.format("%d\t%10s\t%10s\t%10d\t"
+							, r.getReservationNumber()
 							, r.getReservationDate()
 							, storeName
 							, r.getNumOfPeople());

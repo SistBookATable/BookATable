@@ -18,17 +18,12 @@ public class ReservationController {
 	private ReservationView reservationView = new ReservationView();
 	
 	public void reservation(String licenseNumber) {
-        // 사용자 ID 출력
-        System.out.println(Member.id);
         
         // 멤버 목록에서 사용자 찾기
         for (Member m : Data.memberList) {
             if (Member.id.equals(m.getId())) {
                 if (m instanceof User) {
                     User user = (User) m;
-
-                    // 예약 메뉴 출력
-                    System.out.println(Data.reservationList);
 
                     // 예약 인원 입력
                     int num = reservationView.getReservationNum();
@@ -45,9 +40,10 @@ public class ReservationController {
                     // 예약 메뉴 선택
                     reservationView.showMenu(licenseNumber);
                     ArrayList<String> selectedMenuList = reservationView.getSelectedMenuName(licenseNumber);
+                    System.out.println(reservationView.showReservation(num, date, time, selectedMenuList)); 
 
                     // 예약 정보 출력
-                    System.out.println(reservationView.showReservation(num, date, time, selectedMenuList));
+                    reservationView.showReservation(num, date, time, selectedMenuList);
 
                     // 예약 금액 계산 및 결제
                     int reservationPay = 3000;
@@ -81,22 +77,6 @@ public class ReservationController {
                         }
                     }
 
-                    // 예약 정보 출력
-                    for (Reservation r : Data.reservationList) {
-                        if (r.getLicenseNumber().equals(licenseNumber)) {
-                            System.out.println(r.getMenulist());
-                        }
-                    }
-
-                    // 사용자 잔액 출력
-                    for (Member q : Data.memberList) {
-                        if (Member.id.equals(q.getId())) {
-                            if (q instanceof User) {
-                                User user3 = (User) q;
-                                System.out.println(user3.getBalance());
-                            }
-                        }
-                    }
                     System.out.println();
                 }
             }

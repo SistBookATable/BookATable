@@ -3,6 +3,7 @@ package com.test.java.model;
 
 public class Review {
 
+	private static int COUNT = 1;
    private int reviewNumber;
    private String userId;
    private String licenseNumber;
@@ -18,7 +19,7 @@ public class Review {
    public Review(int reviewNumber, String userId, String licenseNumber, String dateWritten, String content,
          double score, int reservationNumber) {
       super();
-      this.reviewNumber = reviewNumber;
+      this.reviewNumber = COUNT++;
       this.userId = userId;
       this.licenseNumber = licenseNumber;
       this.dateWritten = dateWritten;

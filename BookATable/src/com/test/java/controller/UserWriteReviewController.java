@@ -9,13 +9,14 @@ import com.test.java.model.Review;
 import com.test.java.model.Store;
 import com.test.java.repository.Data;
 import com.test.java.repository.ReviewRepository;
+import com.test.java.repository.StoreRepository;
 import com.test.java.view.InquiryCompletedReservationView;
 import com.test.java.view.UserWriteReviewView;
 
 public class UserWriteReviewController {
 
 	public void userWriteReview(ArrayList<Reservation> reservations) {
-		ArrayList<Reservation> noReviewReservation = findAllNoReviewReservation(Member.id);
+		ArrayList<Reservation> noReviewReservation = findAllNoReviewReservation(reservations,Member.id);
 		
 		if (noReviewReservation.isEmpty()) {
 			UserWriteReviewView.showNoReviewMessage();
@@ -31,7 +32,7 @@ public class UserWriteReviewController {
 		String reviewState = findReviewState(Member.id);
 
 		for(Reservation r : noReviewReservation) {
-			InquiryCompletedReservationView.showOneReservation(r, storeName, cancelState, noShowState, reviewState);
+			UserWriteReviewView.showOneReserVation(r, StoreRepository.findOneByLicenseNumber(r.getLicenseNumber()).getStoreName());
 		}
 		
 		int reservationNumber = UserWriteReviewView.getStoreName();
@@ -139,11 +140,14 @@ public class UserWriteReviewController {
 		return null;
 	}
 
-	private ArrayList<Reservation> findAllNoReviewReservation(String id) {
+	private ArrayList<Reservation> findAllNoReviewReservation(ArrayList<Reservation> reservations, String id) {
 		ArrayList<Reservation> tmp = new ArrayList<Reservation>();
-		for(Reservation r : Data.reservationList) {
-			if (r.getUserId().equals(id) && !r.getState().equals("취소") && !r.getState().equals("노쇼")) {
-				tmp.add(r);
+		
+		for(Reservation r : reservations) {
+			if (r.getUserId().equals(id) && r.getState().equals("방문")) {
+				if(!ReviewRepository.findOneById(Member.id, r.getLicenseNumber())) {
+					tmp.add(r);	
+				}
 			}
 		}
 		return tmp;

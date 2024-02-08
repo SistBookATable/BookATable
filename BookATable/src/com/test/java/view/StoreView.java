@@ -146,6 +146,14 @@ public class StoreView {
 		System.out.println();
 		System.out.print("■ 입력 :\t■");
 	}
+	
+	public void noneBusinessUserAvailable() {
+		System.out.println();
+		System.out.println("┌───────────────────────────────────────────────────────────┐");
+		System.out.println("|                    업체회원은 예약이 불가능합니다.                 <");
+		System.out.println("└───────────────────────────────────────────────────────────┘");
+		System.out.println();
+	}
 
 	public void backPage() {
 		System.out.println();
@@ -162,6 +170,19 @@ public class StoreView {
 		System.out.println("-------------------------------------------------------------------------------");
 		System.out.println();
 		
+	}
+	
+	public void showBookmarkedStores(ArrayList<Store> bookmarkedStores) {
+	    if (bookmarkedStores.isEmpty()) {
+	        System.out.println("현재 즐겨찾기된 음식점이 없습니다.");
+	    } else {
+	        System.out.println("즐겨찾는 음식점 목록:");
+	        for (int i = 0; i < bookmarkedStores.size(); i++) {
+	            Store store = bookmarkedStores.get(i);
+	            System.out.println((i+1) + ". " + store.getStoreName());
+	            show(store, i+1);
+	        }
+	    }
 	}
 
 	//   public int reservationNumber() {

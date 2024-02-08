@@ -153,4 +153,13 @@ public class Store {
 				+ ", distanceFrom=" + distanceFrom + "]";
 	}
 
+	public void setBookmark(boolean bookmark) {
+		this.bookmark = bookmark;
+	}
+
+	public boolean isBookmark() {
+		// TODO Auto-generated method stub
+		return this.bookmark;
+	}
 }
+	

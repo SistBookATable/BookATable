@@ -23,7 +23,7 @@ public class InquiryReservationStatusController {
 			
 			if (userReservationList.isEmpty()) {
 				InquiryReservationStatusView.showNoReservationMessage();
-				break;
+				loop = false;
 			}
 			
 			

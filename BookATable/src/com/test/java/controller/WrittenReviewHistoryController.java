@@ -26,15 +26,6 @@ public class WrittenReviewHistoryController {
 		WrittenReviewHistoryView writtenReviewHistoryView = new WrittenReviewHistoryView();
 		writtenReviewHistoryView.showWrittenReviewHistory(name);
 		
-		
-		// 사용자가 엔터를 입력할 때까지 대기
-				Scanner scan = new Scanner(System.in);
-				System.out.println("<<엔터를 입력하면 이전 화면으로 이동합니다.>>");
-				while (scan.nextLine().isEmpty()) {
-					FavoriteStoreManagementView favoriteStoreManagementView = new FavoriteStoreManagementView();
-					favoriteStoreManagementView.showFavoriteStoreManagement();
-				}
-		
 	}
 
 

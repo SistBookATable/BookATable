@@ -9,28 +9,29 @@ public class AddTableController {
 	
 	public void addTable(String licenseNumber) {
 		
-		AddTableView addTableView=new AddTableView();
-		
-		int tableCapacity=AddTableView.getTableCapacity();
-		int tableNum=AddTableView.getTableNum();
-		
-		for (Table t : Data.tableList) {
-		    if (t.getLicenseNumber().equals(licenseNumber) && t.getTableCapacity() == tableCapacity) {
-		        int index = Data.tableList.indexOf(t);
-		        Table u = new Table(licenseNumber, tableCapacity, t.getNumber() + tableNum, true);
-		        Data.tableList.set(index, u);
-		        
-		        }
-		    
-
-		}
-		
-		
-			
-		        Table u = new Table(licenseNumber, tableCapacity,  tableNum, true);
-		        Data.tableList.add(u);
-		        //TODO 할거있음
-		        
+AddTableView addTableView = new AddTableView();
+        
+        int tableCapacity = AddTableView.getTableCapacity();
+        int tableNum = AddTableView.getTableNum();
+        
+        boolean tableFound = false;
+        
+        for (Table t : Data.tableList) {
+            if (t.getLicenseNumber().equals(licenseNumber) && t.getTableCapacity() == tableCapacity) {
+                t.setNumber(t.getNumber() + tableNum);
+                t.setUsage(true);
+                tableFound = true;
+                break;
+            }
+        }
+        
+        if (!tableFound) {
+            Table newTable = new Table(licenseNumber, tableCapacity, tableNum, true);
+            Data.tableList.add(newTable);
+        }
+        
+        
+    
 		        
 		    
 

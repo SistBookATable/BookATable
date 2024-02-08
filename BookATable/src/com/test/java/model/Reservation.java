@@ -1,4 +1,4 @@
-   package com.test.java.model;
+package com.test.java.model;
 
 
 import java.util.ArrayList;

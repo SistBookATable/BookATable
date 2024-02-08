@@ -30,10 +30,8 @@ public class SignInView {
 	 * @return
 	 * 선택한 번호 반환
 	 */
-	public String getSelectType() {
-		Scanner scan = new Scanner(System.in);
-		String tmp = scan.nextLine();
-		return tmp;
+	public int getSelectType() {
+		return View.getSelectType();
 	}
 
 	public void incorrectInputMessage() {

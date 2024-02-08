@@ -9,6 +9,7 @@ import com.test.java.model.Menu;
 import com.test.java.model.Review;
 import com.test.java.model.Store;
 import com.test.java.repository.Data;
+import com.test.java.repository.Validation;
 import com.test.java.view.SignInView;
 //import com.test.java.view.MenuView;
 import com.test.java.view.StoreView;
@@ -37,6 +38,7 @@ public class StoreController {
 			int choice = storeView.get();
 
 			switch(choice) {
+
 			case 0:
 				System.out.println("이전 화면으로 이동합니다.");
 				loop = false;
@@ -44,17 +46,27 @@ public class StoreController {
 			case 1:
 				String storeName = storeView.getStoreName();
 				searched = searchStoreName(storeName);
+				if(searched.isEmpty()) {
+					System.out.println("음식점 리스트가 없습니다.");
+					continue;
+				}
 				storeView.show(searched);
 				loop = processSortingOption(searched);
 				break;
 			case 2:
 				String menuName = storeView.getmenuName();   // 메뉴명을 입력하세요, 짜장면 등
 				searched = searchMenuName(menuName);
+				if(searched.isEmpty()) {
+					System.out.println("음식점 리스트가 없습니다.");
+					continue;
+				}
 				storeView.show(searched);	//
-				processSortingOption(searched);
+				loop = processSortingOption(searched);
 				break;
 			default:
-				System.out.println("잘못 입력하셨습니다. 다시 입력해주세요.");
+				System.out.println("잘못 입력하셨습니다. 0 ~ 2범위의 숫자를 입력하여 주세요.");
+
+
 			}
 		}
 	}
@@ -97,62 +109,65 @@ public class StoreController {
 		}
 		return true;
 	}
-//				storeView.bookmarkNreservation();
-//				int choice = sc.nextInt();
-//				if(Member.level == 1) {
-//					storeView.reservationNumber();
-//					choice = sc.nextInt();
-//					reservationController.reservation(searched.get(choice-1).getLicenseNumber());
-//				} else {
-//					boolean cycle = true;
-//					while(cycle) {
-//						storeView.noneMemberAvailable();
-//						Scanner scan = new Scanner(System.in);
-//						String input = scan.nextLine();
-//						if((input.equals("Y")) || (input.equals("y"))) {
-//							SignInView.showSelectType();
-//							break;
-//						} else if((input.equals("N")) || (input.equals("n"))) {
-//							storeView.backPage();
-//							break;
-//						} else {
-//							storeView.inputError();
-//							continue;
-//						}
-//					}	
-//				}
-	
+	//				storeView.bookmarkNreservation();
+	//				int choice = sc.nextInt();
+	//				if(Member.level == 1) {
+	//					storeView.reservationNumber();
+	//					choice = sc.nextInt();
+	//					reservationController.reservation(searched.get(choice-1).getLicenseNumber());
+	//				} else {
+	//					boolean cycle = true;
+	//					while(cycle) {
+	//						storeView.noneMemberAvailable();
+	//						Scanner scan = new Scanner(System.in);
+	//						String input = scan.nextLine();
+	//						if((input.equals("Y")) || (input.equals("y"))) {
+	//							SignInView.showSelectType();
+	//							break;
+	//						} else if((input.equals("N")) || (input.equals("n"))) {
+	//							storeView.backPage();
+	//							break;
+	//						} else {
+	//							storeView.inputError();
+	//							continue;
+	//						}
+	//					}	
+	//				}
+
 	public boolean detailPage() {	// 상세페이지(음식점)
 		ReservationController reservationController = new ReservationController();
 		SignInController signInController = new SignInController();
 		Scanner sc = new Scanner(System.in);
 		storeView.bookmarkNreservation();
 		int choice = sc.nextInt();
-		
+
 		switch(choice) {
 		case 0:
 			storeView.backPage();
 			return true;
 		case 1:	// 예약하기
-			if(Member.level == 1) {	// 로그인, 일반회원이라면
+			if((Member.level == 1) || (Member.level == 2)) {	// 로그인, 일반회원, 업체회원이면
+				storeView.show(searched);
 				storeView.reservationNumber();	// 예약할 음식점 선택, 번호
 				int select = sc.nextInt();
 				reservationController.reservation(searched.get(select-1).getLicenseNumber());
 			} else if(Member.level == 0) {
+				storeView.show(searched);
 				storeView.noneMemberAvailable();	// 비회원 회원가입 유무 y/n
 				String input = storeView.getTxt();
-				if(input.equals("Y")) {
+				if(input.equals("y")) {
 					return false;
-				} else if(input.equals("N")) {
+				} else if(input.equals("n")) {
 					storeView.backPage();
 					return true;
 				} else {
 					storeView.inputError();
+					return false;
 				}
 			}
-		case 2:
-		case 3:
-		case 4:
+		case 2: // 즐겨찾기 등록
+		case 3:	// 즐겨찾기 수정
+		case 4:	// 즐겨찾기 삭제
 		}
 		return true;
 	}

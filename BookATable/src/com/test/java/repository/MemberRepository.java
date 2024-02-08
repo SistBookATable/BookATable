@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Iterator;
 
+import com.test.java.model.BusinessUser;
 import com.test.java.model.Member;
 import com.test.java.model.User;
 import com.test.java.view.SignOutUserManagementView;
@@ -36,12 +37,13 @@ public class MemberRepository {
 
 	public static boolean checkDuplicate(String id) {
 		for(Member m : Data.memberList) {
-			if(m.getName().equals(id)) {
+			if(m.getId().equals(id)) {
 				return false;
 			}
 		}
 		return true;
 	}
+
 	
 	
 
@@ -82,21 +84,41 @@ public class MemberRepository {
 		return false;
 	}
 
-	public static ArrayList<User> findAllUser() {
-		ArrayList<User> tmp = new ArrayList<>();
+	public static ArrayList<Member> findAllUser() {
+		ArrayList<Member> tmp = new ArrayList<>();
 		for(Member m : Data.memberList) {
-			if(m.getUserType()==1 && m.getSignOut().equals("null")) {
-				tmp.add((User)m);
+			if(m.getSignOut().equals("null")) {
+				tmp.add(m);
 			}
 		}
 		return tmp;
 	}
 
-	public static ArrayList<User> findAllSingOutUser() {
-		ArrayList<User> tmp = new ArrayList<>();
+	public static ArrayList<Member> findAllSingOutUser() {
+		ArrayList<Member> tmp = new ArrayList<>();
 		for(Member m : Data.memberList) {
-			if(m.getUserType()==1 && !m.getSignOut().equals("null")) {
-				tmp.add((User)m);
+			if(!m.getSignOut().equals("null")) {
+				tmp.add(m);
+			}
+		}
+		return tmp;
+		
+	}
+	public static ArrayList<BusinessUser> findAllBusinessUser() {
+		ArrayList<BusinessUser> tmp = new ArrayList<>();
+		for(Member m : Data.memberList) {
+			if(m.getUserType()==2&& m.getSignOut().equals("null")) {
+				tmp.add((BusinessUser)m);
+			}
+		}
+		return tmp;
+	}
+	
+	public static ArrayList<BusinessUser> findAllSingOutBusinessUser() {
+		ArrayList<BusinessUser> tmp = new ArrayList<>();
+		for(Member m : Data.memberList) {
+			if(m.getUserType()==2 && !m.getSignOut().equals("null")) {
+				tmp.add((BusinessUser)m);
 			}
 		}
 		return tmp;
@@ -107,5 +129,29 @@ public class MemberRepository {
 		
 		User user = new User(id, pw, name, phone, jumin, i, j, k, bank, account, string, now, string2);
 		Data.memberList.add(user);
+	}
+	public static void addBusinessUser(int userType, String id, String pw, String name, String licenseNumber, String phoneNumber,
+			String bank, String account, String now, String signOut) {
+		
+		BusinessUser businessUser = new BusinessUser(2, id, pw, name,  licenseNumber, phoneNumber, bank, account, now, signOut);
+		Data.memberList.add(businessUser);
+	}
+
+	public static String findId(String name, String phoneNumber) {
+		for(Member selected : Data.memberList) {
+			if(selected.getName().equals(name) && selected.getPhoneNumber().equals(phoneNumber) && selected.getSignOut().equals("null")){
+				return selected.getId();
+			}
+		}
+		return null;
+	}
+
+	public static String findPw(String id, String phoneNumber) {
+		for(Member selected : Data.memberList) {
+			if(selected.getId().equals(id) && selected.getPhoneNumber().equals(phoneNumber) && selected.getSignOut().equals("null")){
+				return selected.getPw();
+			}
+		}
+		return null;
 	}
 }

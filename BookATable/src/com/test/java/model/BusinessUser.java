@@ -14,6 +14,8 @@ public class BusinessUser extends Member{
 	private String account;
 	private String signIn;
 	private String signOut;
+	private int reservationCount;
+	private int noshowCount;
 	
 	public BusinessUser(int userType, String id, String pw, String name, String licenseNumber, String phoneNumber,
 			String bank, String account, String signIn, String signOut) {
@@ -30,6 +32,12 @@ public class BusinessUser extends Member{
 		this.signOut = signOut;
 	}
 	
+
+
+	public BusinessUser() {
+		// TODO Auto-generated constructor stub
+	}
+
 
 
 	@Override
@@ -90,6 +98,53 @@ public class BusinessUser extends Member{
 	public String getSignIn() {
 		return signIn;
 	}
+
+
+
+
+	public int getReservationCount() {
+		return reservationCount;
+	}
+
+
+	public int getNoshowCount() {
+		return noshowCount;
+	}
+	@Override
+	public void print() {
+
+		String tmp = "";
+		tmp = String.format("%s%20s%17s%15d회%15d회%19s%15s",
+				"업체회원",
+				this.getId(),
+				this.getName(),
+				0,
+				0,
+				this.getSignOut(),
+				" ");
+		System.out.println(tmp);	
+	}
+
+
+
+	@Override
+	public void printSignIn() {
+
+		String tmp = "";
+		tmp = String.format("%s%15s%18s%15s%15d회%15d회%19s",
+				"업체회원",
+				this.getId(),
+				this.getSignIn(),
+				this.getName(),
+				0,
+				0,
+				" ");
+		System.out.println(tmp);
+	}
+
+
+
+
 
 	
 	

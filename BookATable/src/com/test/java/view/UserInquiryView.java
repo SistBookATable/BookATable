@@ -170,13 +170,17 @@ public class UserInquiryView {
 	}
 
 	public int getInquiryNumber() {
-		System.out.println("확인할 문의 번호 입력하세요");
+
+		System.out.println("==========================================================================================");
+		System.out.println();
+		System.out.println("■       확인할 문의 번호 입력하세요   \t■");
+		System.out.println("        (\'0\' 입력시 뒤로가기) ");
+		System.out.println();
+		System.out.println("==========================================================================================");
+		System.out.println();
 		System.out.print("선택(문의번호) : ");
 
-		Scanner scan = new Scanner(System.in);
-		int tmp = scan.nextInt();
-		scan.nextLine();
-		return tmp;
+		return View.getSelectType();
 	}
 
 	public void incorrectNumberMessage() {

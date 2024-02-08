@@ -52,4 +52,19 @@ public class ReviewRepository {
 		}
 		return false;
 	}
+
+	public static Review findOne(int reservationNumber) {
+		for(Review r : Data.reviewList) {
+			if(r.getReservationNumber() == reservationNumber) {
+				return r;
+			}
+		}
+		return null;
+	}
+
+	public static void add(int i, String id, String lisenceNumber, String today, String reviewContent, double score,
+			int reservationNumber) {
+		Review tmp = new Review(i, id, lisenceNumber, today, reviewContent, score, reservationNumber);
+		Data.reviewList.add(tmp);
+	}
 }

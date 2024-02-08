@@ -33,6 +33,13 @@ public class MembershipWithdrawalView {
 		System.out.println("비밀번호가 일치하지 않습니다. 다시 입력해주세요.");
 	}
 	
+	public void backPage() {
+		System.out.println("┌─────────────────────────────────────┐");
+		System.out.println("|     이전 화면으로 돌아가시겠습니까?(Y/N) <");
+		System.out.println("└─────────────────────────────────────┘");
+		System.out.print("■ 입력 :\t■");
+	}
+	
 	public String get() {
 		Scanner sc = new Scanner(System.in);
 		String input = sc.nextLine();	//**

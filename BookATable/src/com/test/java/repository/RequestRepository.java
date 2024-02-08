@@ -11,12 +11,23 @@ public class RequestRepository {
 	public static ArrayList<Request> FindAllRequest() {
 		return Data.requestList;
 	}
-	
+
 	public static void addRequest(int reviewNumber, String licenseNumber, String reason, String requester) {
 		Calendar cur = Calendar.getInstance();
 		String today = String.format("%tF", cur);
 		Request tmp = new Request(0, reviewNumber, licenseNumber, reason, requester, today, "null");
 		Data.requestList.add(tmp);
+	}
+
+	public static Request findOneByReviewNumber(int reviewNumber) {
+		
+		for(Request r : Data.requestList) {
+			if(r.getReviewNumber()==reviewNumber && r.getPermission().equals("대기")) {
+				return r;
+			}
+		}
+		return null;
+		
 	}
 
 }

@@ -23,5 +23,8 @@ public class InquiryRepository {
 		Inquiry tmp = new Inquiry(i, id, title, content, level, today, string, string2);
 		Data.inquiryList.add(tmp);
 	}
+	public static ArrayList<Inquiry> findAll() {
+		return Data.inquiryList;
+	}
 
 }

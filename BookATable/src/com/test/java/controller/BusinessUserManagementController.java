@@ -1,11 +1,8 @@
 package com.test.java.controller;
 
-import java.util.Scanner;
-
 import com.test.java.view.UserManagementView;
-import com.test.java.view.View;
 
-public class UserManagementController {
+public class BusinessUserManagementController {
 	UserManagementView userManagementView = new UserManagementView();
 
 	public void userManagement() {

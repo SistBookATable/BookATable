@@ -24,7 +24,7 @@ public class WrittenReviewHistoryView {
 		System.out.println("------------------------------------------------------------------------------------------");
 		System.out.println();
 
-		String header = String.format("%-15s\t%-20s\t%-15s%-15s%-20s", "[작성일]","[상호명]","[메뉴]","[별점]","[리뷰내용]");
+		String header = String.format("%-15s%-20s  %-15s%-15s %-20s", "[작성일]","[상호명]","[메뉴]","[별점]","[리뷰내용]");
 		System.out.println(header);
 		
 		if(Data.reviewList.isEmpty()) {
@@ -45,7 +45,9 @@ public class WrittenReviewHistoryView {
 
 				System.out.println(tmp);
 				
+				
 			}
+			View.pause();
 		}
 	}
 

@@ -21,14 +21,14 @@ public class BookmarkHistoryView {
 		System.out
 				.println("------------------------------------------------------------------------------------------");
 
-		String header = String.format("%10s%20s%20s", "[상호명]", "[전화번호]", "[메뉴]");
+		String header = String.format("%-10s%20s%20s", "[상호명]", "[전화번호]", "[메뉴]");
 		System.out.println(header);
 
 	}
 
 	public static void showBookmarkHistory(String storeName, String storeTel, String menu) {
 
-		String body = String.format("%10s\t\t%12s\t\t%6s", storeName, storeTel, menu);
+		String body = String.format("%-10s\t\t%-12s\t\t%6s", storeName, storeTel, menu);
 		System.out.println(body);
 
 	}

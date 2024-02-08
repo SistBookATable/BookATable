@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<umlmark-class version="0.8.1" icons="true" show-relationships="true" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-rel="true" router="FAN">  
+  <class id="1" language="java" name="com.test.java.controller.PointManagementController" project="BookATable" 
+    file="/BookATable/src/com/test/java/controller/PointManagementController.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="176" y="120"/>    
+    <display resize-to-fit="true" stereotype="true" package="true" default-value="false" signature="true" sort="true" 
+      accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="false"/>      
+      <operations public="true" package="true" protected="true" private="true" static="false"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="com.test.java.controller.PointUsageHistoryController" project="BookATable" 
+    file="/BookATable/src/com/test/java/controller/PointUsageHistoryController.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="160" width="364" x="1343" y="70"/>    
+    <display resize-to-fit="false" stereotype="true" package="true" default-value="false" signature="true" sort="true" 
+      accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="false"/>      
+      <operations public="true" package="true" protected="true" private="true" static="false"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="com.test.java.controller.PointRefundController" project="BookATable" 
+    file="/BookATable/src/com/test/java/controller/PointRefundController.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="605" y="122"/>    
+    <display resize-to-fit="true" stereotype="true" package="true" default-value="false" signature="true" sort="true" 
+      accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="false"/>      
+      <operations public="true" package="true" protected="true" private="true" static="false"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="com.test.java.controller.PointRefundHistoryController" project="BookATable" 
+    file="/BookATable/src/com/test/java/controller/PointRefundHistoryController.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="107" width="244" x="721" y="69"/>    
+    <display resize-to-fit="false" stereotype="true" package="true" default-value="false" signature="true" sort="true" 
+      accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="false"/>      
+      <operations public="true" package="true" protected="true" private="true" static="false"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="com.test.java.controller.PointGiftController" project="BookATable" 
+    file="/BookATable/src/com/test/java/controller/PointGiftController.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="106" width="210" x="976" y="69"/>    
+    <display resize-to-fit="false" stereotype="true" package="true" default-value="false" signature="true" sort="true" 
+      accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="false"/>      
+      <operations public="true" package="true" protected="true" private="true" static="false"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="com.test.java.controller.PointChargingController" project="BookATable" 
+    file="/BookATable/src/com/test/java/controller/PointChargingController.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="400" y="120"/>    
+    <display resize-to-fit="true" stereotype="true" package="true" default-value="false" signature="true" sort="true" 
+      accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="false"/>      
+      <operations public="true" package="true" protected="true" private="true" static="false"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="com.test.java.view.PointChargingView" project="BookATable" 
+    file="/BookATable/src/com/test/java/view/PointChargingView.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="116" width="202" x="300" y="198"/>    
+    <display resize-to-fit="false" stereotype="true" package="true" default-value="false" signature="true" sort="true" 
+      accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="false"/>      
+      <operations public="true" package="true" protected="true" private="true" static="false"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="com.test.java.view.PointGiftView" project="BookATable" 
+    file="/BookATable/src/com/test/java/view/PointGiftView.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="175" width="210" x="977" y="186"/>    
+    <display resize-to-fit="false" stereotype="true" package="true" default-value="false" signature="true" sort="true" 
+      accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="false"/>      
+      <operations public="true" package="true" protected="true" private="true" static="false"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="com.test.java.view.PointUsageHistoryView" project="BookATable" 
+    file="/BookATable/src/com/test/java/view/PointUsageHistoryView.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1523" y="329"/>    
+    <display resize-to-fit="true" stereotype="true" package="true" default-value="false" signature="true" sort="true" 
+      accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="false"/>      
+      <operations public="true" package="true" protected="true" private="true" static="false"/>    
+    </display>  
+  </class>  
+  <class id="10" language="java" name="com.test.java.view.PointRefundHistoryView" project="BookATable" 
+    file="/BookATable/src/com/test/java/view/PointRefundHistoryView.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="232" width="244" x="723" y="209"/>    
+    <display resize-to-fit="false" stereotype="true" package="true" default-value="false" signature="true" sort="true" 
+      accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="false"/>      
+      <operations public="true" package="true" protected="true" private="true" static="false"/>    
+    </display>  
+  </class>  
+  <class id="11" language="java" name="com.test.java.view.PointRefundView" project="BookATable" 
+    file="/BookATable/src/com/test/java/view/PointRefundView.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="116" width="183" x="515" y="198"/>    
+    <display resize-to-fit="false" stereotype="true" package="true" default-value="false" signature="true" sort="true" 
+      accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="false"/>      
+      <operations public="true" package="true" protected="true" private="true" static="false"/>    
+    </display>  
+  </class>  
+  <class id="12" language="java" name="com.test.java.view.PointManagementView" project="BookATable" 
+    file="/BookATable/src/com/test/java/view/PointManagementView.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="111" width="221" x="67" y="201"/>    
+    <display resize-to-fit="false" stereotype="true" package="true" default-value="false" signature="true" sort="true" 
+      accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="false"/>      
+      <operations public="true" package="true" protected="true" private="true" static="false"/>    
+    </display>  
+  </class>  
+  <class id="13" language="java" name="com.test.java.model.PointUsage" project="BookATable" 
+    file="/BookATable/src/com/test/java/model/PointUsage.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="340" width="364" x="1341" y="429"/>    
+    <display resize-to-fit="false" stereotype="true" package="true" default-value="false" signature="true" sort="true" 
+      accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="false"/>      
+      <operations public="true" package="true" protected="true" private="true" static="false"/>    
+    </display>  
+  </class>  
+  <class id="14" language="java" name="com.test.java.model.PointRefund" project="BookATable" 
+    file="/BookATable/src/com/test/java/model/PointRefund.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="221" width="184" x="513" y="330"/>    
+    <display resize-to-fit="false" stereotype="true" package="true" default-value="false" signature="true" sort="true" 
+      accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="false"/>      
+      <operations public="true" package="true" protected="true" private="true" static="false"/>    
+    </display>  
+  </class>  
+  <class id="15" language="java" name="com.test.java.controller.FavouriteStoreManagementController" project="BookATable" 
+    file="/BookATable/src/com/test/java/controller/FavouriteStoreManagementController.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="180" width="294" x="87" y="742"/>    
+    <display resize-to-fit="false" stereotype="true" package="true" default-value="false" signature="true" sort="true" 
+      accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="false"/>      
+      <operations public="true" package="true" protected="true" private="true" static="false"/>    
+    </display>  
+  </class>  
+  <class id="16" language="java" name="com.test.java.view.FavoriteStoreManagementView" project="BookATable" 
+    file="/BookATable/src/com/test/java/view/FavoriteStoreManagementView.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="148" width="292" x="92" y="938"/>    
+    <display resize-to-fit="false" stereotype="true" package="true" default-value="false" signature="true" sort="true" 
+      accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="false"/>      
+      <operations public="true" package="true" protected="true" private="true" static="false"/>    
+    </display>  
+  </class>  
+  <class id="17" language="java" name="com.test.java.controller.WrittenReviewHistoryController" project="BookATable" 
+    file="/BookATable/src/com/test/java/controller/WrittenReviewHistoryController.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="181" width="279" x="399" y="739"/>    
+    <display resize-to-fit="false" stereotype="true" package="true" default-value="false" signature="true" sort="true" 
+      accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="false"/>      
+      <operations public="true" package="true" protected="true" private="true" static="false"/>    
+    </display>  
+  </class>  
+  <class id="18" language="java" name="com.test.java.view.WrittenReviewHistoryView" project="BookATable" 
+    file="/BookATable/src/com/test/java/view/WrittenReviewHistoryView.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="143" width="273" x="402" y="940"/>    
+    <display resize-to-fit="false" stereotype="true" package="true" default-value="false" signature="true" sort="true" 
+      accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="false"/>      
+      <operations public="true" package="true" protected="true" private="true" static="false"/>    
+    </display>  
+  </class>  
+  <class id="19" language="java" name="com.test.java.controller.BookmarkHistoryController" project="BookATable" 
+    file="/BookATable/src/com/test/java/controller/BookmarkHistoryController.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="824" y="827"/>    
+    <display resize-to-fit="true" stereotype="true" package="true" default-value="false" signature="true" sort="true" 
+      accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="false"/>      
+      <operations public="true" package="true" protected="true" private="true" static="false"/>    
+    </display>  
+  </class>  
+  <class id="20" language="java" name="com.test.java.controller.DeleteBookmarkController" project="BookATable" 
+    file="/BookATable/src/com/test/java/controller/DeleteBookmarkController.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="182" width="264" x="966" y="737"/>    
+    <display resize-to-fit="false" stereotype="true" package="true" default-value="false" signature="true" sort="true" 
+      accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="false"/>      
+      <operations public="true" package="true" protected="true" private="true" static="false"/>    
+    </display>  
+  </class>  
+  <class id="21" language="java" name="com.test.java.view.DeleteBookmarkView" project="BookATable" 
+    file="/BookATable/src/com/test/java/view/DeleteBookmarkView.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="142" width="261" x="971" y="939"/>    
+    <display resize-to-fit="false" stereotype="true" package="true" default-value="false" signature="true" sort="true" 
+      accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="false"/>      
+      <operations public="true" package="true" protected="true" private="true" static="false"/>    
+    </display>  
+  </class>  
+  <class id="22" language="java" name="com.test.java.view.BookmarkHistoryView" project="BookATable" 
+    file="/BookATable/src/com/test/java/view/BookmarkHistoryView.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="148" width="258" x="697" y="935"/>    
+    <display resize-to-fit="false" stereotype="true" package="true" default-value="false" signature="true" sort="true" 
+      accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="false"/>      
+      <operations public="true" package="true" protected="true" private="true" static="false"/>    
+    </display>  
+  </class>  
+  <class id="23" language="java" name="com.test.java.model.Bookmark" project="BookATable" 
+    file="/BookATable/src/com/test/java/model/Bookmark.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="682" y="1223"/>    
+    <display resize-to-fit="true" stereotype="true" package="true" default-value="false" signature="true" sort="true" 
+      accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="false"/>      
+      <operations public="true" package="true" protected="true" private="true" static="false"/>    
+    </display>  
+  </class>  
+  <association id="24">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="25" name="pointRefundHistoryView">        
+        <position height="20" width="149" x="668" y="174"/>      
+      </attribute>      
+      <multiplicity id="26" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="10" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="27">    
+    <end type="SOURCE" refId="9" navigable="false">      
+      <attribute id="28" name="pointList"/>      
+      <multiplicity id="29" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="13" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <classifier-attribute resize-to-fit="true" stereotype="true" package="true" default-value="false" signature="true" 
+    sort="true" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="false"/>    
+    <operations public="true" package="true" protected="true" private="true" static="false"/>  
+  </classifier-attribute>  
+  <association-attribute labels="true" multiplicity="true"/>
+</umlmark-class>

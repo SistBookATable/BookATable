@@ -33,6 +33,7 @@ public class InquiryCompletedReservationController {
 				String cancelState = state.equals("취소")?"O":"X";
 				String noShowState = state.equals("노쇼")?"O":"X";
 				String reviewState = ReviewRepository.findOne(r.getReservationNumber()) != null ? "O" : "X";
+
 				
 				InquiryCompletedReservationView.showOneReservation(r, storeName, cancelState, noShowState, reviewState);
 			}

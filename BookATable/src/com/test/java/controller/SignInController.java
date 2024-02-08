@@ -1,10 +1,6 @@
 package com.test.java.controller;
 
-import java.util.ArrayList;
-
-import com.test.java.model.User;
 import com.test.java.view.SignInView;
-
 
 public class SignInController {
 
@@ -18,7 +14,6 @@ public class SignInController {
 		while(loop) {
 			signInView.showSelectType();
 			int choice = signInView.getSelectType();
-			
 			
 			switch(choice) {
 			case 1:

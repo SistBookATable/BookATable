@@ -4,15 +4,11 @@ import java.util.ArrayList;
 
 import com.test.java.model.Member;
 import com.test.java.model.Reservation;
-import com.test.java.model.Review;
-import com.test.java.model.Store;
 import com.test.java.repository.Data;
 import com.test.java.repository.MemberRepository;
-import com.test.java.repository.ReservationRepository;
 import com.test.java.repository.ReviewRepository;
 import com.test.java.repository.StoreRepository;
 import com.test.java.view.InquiryCompletedReservationView;
-import com.test.java.view.View;
 
 public class InquiryCompletedReservationController {
 
@@ -30,22 +26,12 @@ public class InquiryCompletedReservationController {
 			String userName = MemberRepository.findOneById(Member.id).getName();
 			InquiryCompletedReservationView.showTitle(userName);
 			
-			// ID로 예약조회
-			ArrayList<Reservation> reservations = ReservationRepository.findAllById(Member.id);
-			
-			// 출력
-			for(Reservation r : reservations) {
-				//라이센스 번호
+			for(Reservation r : visitedList) {
 				String lisenceNumber = r.getLicenseNumber();
-				
-				//상호명
 				String storeName = StoreRepository.findNameOneByLicenseNumber(lisenceNumber);
-				
 				String state = r.getState();
-				
 				String cancelState = state.equals("취소")?"O":"X";
 				String noShowState = state.equals("노쇼")?"O":"X";
-				
 				String reviewState = ReviewRepository.findOneById(Member.id, lisenceNumber) == true ? "O" : "X";
 				
 				InquiryCompletedReservationView.showOneReservation(r, storeName, cancelState, noShowState, reviewState);
@@ -71,7 +57,7 @@ public class InquiryCompletedReservationController {
 	private ArrayList<Reservation> findAllRerservation(String id) {
 		ArrayList<Reservation> tmp = new ArrayList<Reservation>();
 		for(Reservation r : Data.reservationList) {
-			if (r.getUserId().equals(id) && !r.getState().equals("취소")) {
+			if (r.getUserId().equals(id) && !r.getState().equals("예약")) {
 				tmp.add(r);
 			}
 		}

@@ -14,7 +14,6 @@ public class MainController {
 	 * 메인 화면 시작 
 	 */
 	public static void start() {
-
 		boolean loop = true;
 		while(loop) {
 
@@ -41,7 +40,7 @@ public class MainController {
 					StoreController storeController = new StoreController();
 					storeController.run();
 					break;
-				default:
+				case 0:
 					loop = false;
 				}
 			}
@@ -69,7 +68,7 @@ public class MainController {
 					StoreController storeController = new StoreController();
 					storeController.run();
 					break;
-				default:
+				case 0:
 					loop = false;
 				}
 
@@ -98,7 +97,7 @@ public class MainController {
 					StoreController storeController = new StoreController();
 					storeController.run();
 					break;
-				default:
+				case 0:
 					loop = false;
 				}
 			}
@@ -126,7 +125,7 @@ public class MainController {
 					LogOutController logOutController = new LogOutController();
 					logOutController.logOut();
 					break;
-				default:
+				case 0:
 					loop = false;
 				}
 			}

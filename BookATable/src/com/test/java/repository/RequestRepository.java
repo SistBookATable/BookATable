@@ -11,7 +11,7 @@ public class RequestRepository {
 	public static ArrayList<Request> FindAllRequest() {
 		return Data.requestList;
 	}
-	
+
 	public static void addRequest(int reviewNumber, String licenseNumber, String reason, String requester) {
 		Calendar cur = Calendar.getInstance();
 		String today = String.format("%tF", cur);

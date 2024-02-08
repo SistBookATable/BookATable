@@ -67,4 +67,5 @@ public class ReviewRepository {
 		Review tmp = new Review(i, id, lisenceNumber, today, reviewContent, score, reservationNumber);
 		Data.reviewList.add(tmp);
 	}
+
 }

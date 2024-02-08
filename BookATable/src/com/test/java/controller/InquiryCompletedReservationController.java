@@ -32,7 +32,8 @@ public class InquiryCompletedReservationController {
 				String state = r.getState();
 				String cancelState = state.equals("취소")?"O":"X";
 				String noShowState = state.equals("노쇼")?"O":"X";
-				String reviewState = ReviewRepository.findOneById(Member.id, lisenceNumber) == true ? "O" : "X";
+				String reviewState = ReviewRepository.findOne(r.getReservationNumber()) != null ? "O" : "X";
+
 				
 				InquiryCompletedReservationView.showOneReservation(r, storeName, cancelState, noShowState, reviewState);
 			}
@@ -42,13 +43,12 @@ public class InquiryCompletedReservationController {
 			
 			switch (choice) {
 			case 1:
+				
 				UserWriteReviewController userWriteReviewController = new UserWriteReviewController();
-				userWriteReviewController.userWriteReview(reservations);
+				userWriteReviewController.userWriteReview(visitedList);
 				break;
 			case 0 :
 				loop = false;
-				break;
-			default:
 				break;
 			}
 		}

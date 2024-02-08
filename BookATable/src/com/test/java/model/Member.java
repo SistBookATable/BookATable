@@ -1,7 +1,7 @@
 package com.test.java.model;
 
 public abstract class Member {
-	
+
 	public static int level;
 	public static String id;
 	public abstract int getUserType();

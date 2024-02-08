@@ -18,21 +18,38 @@ public class SignInUserManagementController {
 	SignInUserManagementView signInUserManagementView = new SignInUserManagementView();
 	
 	public void signInUserManagement() {
-		
+
+		int prev = -10;
+		int cur = 0;
 		boolean loop = true;
 		while(loop) {
-
 			signInUserManagementView.showTitle();
 			
 			//탈퇴하지 않은 회원 리스트 출력
 			ArrayList<Member> memberList = MemberRepository.findAllUser();
-			signInUserManagementView.showAllUser(memberList);
+			signInUserManagementView.showAllUser(memberList,cur);
 			
 			signInUserManagementView.showSelectBox();
 			int choice = signInUserManagementView.getSelectType();
 			
 			switch (choice) {
-			case 1: 
+			case 1:
+				if(prev <0) {
+					signInUserManagementView.firstPageMessage();
+					continue;
+				}
+				cur = prev;
+				prev -= 10;
+				break;
+			case 2:
+				if(cur+10 >= memberList.size()) {
+					signInUserManagementView.lastPageMessage();
+					continue;
+				}
+				prev = cur;
+				cur += 10;
+				break;
+			case 3: 
 				//상세 이용 내역 보기
 				
 				//아이디 입력 받기

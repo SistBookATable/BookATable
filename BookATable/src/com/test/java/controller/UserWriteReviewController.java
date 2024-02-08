@@ -10,16 +10,65 @@ import com.test.java.model.Review;
 import com.test.java.repository.Data;
 import com.test.java.repository.ReviewRepository;
 import com.test.java.repository.StoreRepository;
+import com.test.java.view.InquiryCompletedReservationView;
+import com.test.java.view.UserWriteReviewView;
 
-	public void userWriteReview() {
-		boolean loop = true;
-		while(loop) {
-			
-			ArrayList<Reservation> noReviewReservation = findAllNoReviewReservation(Member.id);
-			
-			if (noReviewReservation.isEmpty()) {
-				UserWriteReviewView.showNoReviewMessage();
-				break;
+public class UserWriteReviewController {
+
+	public void userWriteReview(ArrayList<Reservation> reservations) {
+		ArrayList<Reservation> noReviewReservation = findAllNoReviewReservation(reservations,Member.id);
+		
+		if (noReviewReservation.isEmpty()) {
+			UserWriteReviewView.showNoReviewMessage();
+			return;
+		}
+		
+		String userName = findNameById(Member.id);
+		UserWriteReviewView.showNoReviewReservation(userName);
+		
+		String storeName = findStoreName(Member.id);
+		String cancelState = findCancelState(Member.id);
+		String noShowState = findNoShowState(Member.id);
+		String reviewState = findReviewState(Member.id);
+
+		for(Reservation r : noReviewReservation) {
+			UserWriteReviewView.showOneReserVation(r, StoreRepository.findOneByLicenseNumber(r.getLicenseNumber()).getStoreName());
+		}
+		
+		int reservationNumber = UserWriteReviewView.getStoreName();
+		
+		Reservation selected = isValid(reservationNumber,reservations);
+		
+		if(selected == null) {
+			UserWriteReviewView.incorrectReservationNumber();
+			return;
+		}
+		
+		if(ReviewRepository.findOne(reservationNumber)!=null) {
+			UserWriteReviewView.alreadyHasReview();
+			return;
+		}
+		
+		String lisenceNumber = selected.getLicenseNumber();
+		double score = UserWriteReviewView.getScore();
+		String reviewContent = UserWriteReviewView.getReviewContent();
+		
+		Calendar cur = Calendar.getInstance();
+		String today = String.format("%tF", cur);
+		
+		
+		ReviewRepository.add(0, Member.id, lisenceNumber, today, reviewContent, score, reservationNumber);
+
+		System.out.println("리뷰 작성이 완료되었습니다.");
+		
+	}
+
+	private Reservation isValid(int reservationNumber, ArrayList<Reservation> reservations) {
+		
+		for(Reservation r : reservations) {
+			if(r.getReservationNumber() == reservationNumber) {
+				return r;
+
 			}
 			
 			String userName = findNameById(Member.id);
@@ -75,11 +124,14 @@ import com.test.java.repository.StoreRepository;
 		return null;
 	}
 
-	private ArrayList<Reservation> findAllNoReviewReservation(String id) {
+	private ArrayList<Reservation> findAllNoReviewReservation(ArrayList<Reservation> reservations, String id) {
 		ArrayList<Reservation> tmp = new ArrayList<Reservation>();
-		for(Reservation r : Data.reservationList) {
-			if (r.getUserId().equals(id) && ReviewRepository.findOneById(id, r.getLicenseNumber()) == false){
-				tmp.add(r);
+		
+		for(Reservation r : reservations) {
+			if (r.getUserId().equals(id) && r.getState().equals("방문")) {
+				if(!ReviewRepository.findOneById(Member.id, r.getLicenseNumber())) {
+					tmp.add(r);	
+				}
 			}
 		}
 		return tmp;

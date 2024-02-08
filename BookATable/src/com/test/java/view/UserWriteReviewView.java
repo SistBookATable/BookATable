@@ -27,13 +27,16 @@ public class UserWriteReviewView {
 		
 	}
 
-	public static void showOneReserVation(Reservation r, String storeName) {
+	public static void showOneReserVation(Reservation r, String storeName, String cancelState, String noShowState, String reviewState) {
 		String tmp = "";
-		tmp = String.format("%10d\t%10s\t%10s\t%10s\t%10d\t%10s\t"
-							, r.getReservationNumber()
+		tmp = String.format("%10s\t%10s\t%10s\t%10s\t%10s\t%10s\t%10s\t"
+							, String.valueOf(r.getReservationNumber())
 							, r.getReservationDate()
 							, storeName
-							, r.getNumOfPeople()) + "명";
+							, r.getNumOfPeople() + "명"
+							, cancelState
+							, noShowState
+							, reviewState);
 		System.out.println(tmp);
 	}
 

@@ -35,7 +35,7 @@ public class UserWriteReviewController {
 				String cancelState = r.getState().equals("취소")== true? "O" : "X";
 				String noShowState = r.getState().equals("노쇼")== true? "O" : "X";
 				String reviewState = ReviewRepository.findOneById(Member.id, r.getLicenseNumber()) == true ? "O" : "X";
-				InquiryCompletedReservationView.showOneReservation(r, storeName, cancelState, noShowState, reviewState);
+				UserWriteReviewView.showOneReserVation(r, storeName, cancelState, noShowState, reviewState);
 			}
 			
 			int inputReservationNumber = UserWriteReviewView.getReservationNumber();

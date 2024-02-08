@@ -31,9 +31,10 @@ public class InquiryCompletedReservationController {
 			InquiryCompletedReservationView.showTitle(userName);
 			
 			// ID로 예약조회
+			ArrayList<Reservation> reservations = ReservationRepository.findAllById(Member.id);
 			
 			// 출력
-			for(Reservation r : visitedList) {
+			for(Reservation r : reservations) {
 				//라이센스 번호
 				String lisenceNumber = r.getLicenseNumber();
 				
@@ -69,7 +70,7 @@ public class InquiryCompletedReservationController {
 	private ArrayList<Reservation> findAllRerservation(String id) {
 		ArrayList<Reservation> tmp = new ArrayList<Reservation>();
 		for(Reservation r : Data.reservationList) {
-			if (r.getUserId().equals(id) && !(r.getState().equals("예약"))) {
+			if (r.getUserId().equals(id) && !r.getState().equals("예약")) {
 				tmp.add(r);
 			}
 		}

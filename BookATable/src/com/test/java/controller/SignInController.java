@@ -1,10 +1,6 @@
 package com.test.java.controller;
 
-import java.util.ArrayList;
-
-import com.test.java.model.User;
 import com.test.java.view.SignInView;
-
 
 public class SignInController {
 
@@ -19,7 +15,6 @@ public class SignInController {
 			signInView.showSelectType();
 			String choice = signInView.getSelectType();
 			
-			
 			switch(choice) {
 			case "1":
 				//일반회원 회원가입
@@ -31,6 +26,7 @@ public class SignInController {
 				break;
 			case "0":
 				loop = false;
+				break;
 			default:
 				//유효하지 않은 입력
 				signInView.incorrectInputMessage();

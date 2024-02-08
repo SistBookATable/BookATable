@@ -12,12 +12,14 @@ import com.test.java.repository.ReviewRepository;
 import com.test.java.repository.StoreRepository;
 import com.test.java.view.InquiryCompletedReservationView;
 import com.test.java.view.UserWriteReviewView;
+import com.test.java.view.View;
 
 public class UserWriteReviewController {
 
 	public void userWriteReview() {
 		boolean loop = true;
 		while(loop) {
+			
 			ArrayList<Reservation> noReviewReservation = findAllNoReviewReservation(Member.id);
 			
 			if (noReviewReservation.isEmpty()) {
@@ -44,6 +46,7 @@ public class UserWriteReviewController {
 				double score = UserWriteReviewView.getReviewScore();
 				addReview(reviewContent, inputReservationNumber, score);
 				System.out.println("리뷰 작성이 완료되었습니다.");
+				View.pause();
 				loop = false;
 			}
 			break;

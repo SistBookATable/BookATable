@@ -8,7 +8,7 @@ public class UserWriteReviewView {
 
 	public static void showNoReviewMessage() {
 		System.out.println();
-		System.out.println("현재 예약이 없습니다.");
+		System.out.println("리뷰가 작성되지 않은 예약이 없습니다.");
 		System.out.println();
 		View.pause();
 	}
@@ -17,7 +17,7 @@ public class UserWriteReviewView {
 		System.out.println();
 		System.out.println();
 		System.out.println("┌───────────────────────────────────────────────────────┐");
-		System.out.printf("|                 %s님 리뷰 미작성 예약              	  <\n", userName);
+		System.out.printf("|                 %s님 리뷰 미작성 예약 리스트              	  <\n", userName);
 		System.out.println("└───────────────────────────────────────────────────────┘");
 		System.out.println();
 		

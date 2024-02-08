@@ -124,6 +124,7 @@ public class MemberRepository {
 		return tmp;
 		
 	}
+
 	public static void add(String id, String pw, String name, String phone, String jumin, int i, int j, int k,
 			String bank, String account, String string, String now, String string2) {
 		

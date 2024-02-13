@@ -1,9 +1,9 @@
 package com.test.java.view;
 
 import java.util.Scanner;
-
+//테이블 관리 화면 출력하는 class
 public class TableManagementView {
-	
+	//선택 메서드
 public void showChoice(){
 		
 		System.out.println("==========================================================================================");
@@ -19,7 +19,7 @@ public void showChoice(){
 		System.out.println();
 		System.out.print("선택(번호) : ");
 	}
-
+//선택한 번호 입력받는 메서드
 	public static int get() {
 		Scanner scan = new Scanner(System.in);
 		int temp = scan.nextInt();

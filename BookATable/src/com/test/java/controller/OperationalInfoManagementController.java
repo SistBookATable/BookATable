@@ -2,7 +2,7 @@ package com.test.java.controller;
 
 import com.test.java.view.OperationalInfoManagementView;
 
-
+// 운영 관리 컨트롤러
 public class OperationalInfoManagementController {
 	
 

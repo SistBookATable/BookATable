@@ -1,7 +1,7 @@
 package com.test.java.view;
 
 import java.util.Scanner;
-
+//메뉴 등록 화면 보여주는 class
 public class MenuAddView {
     public static String getMenuName() {
         Scanner scan = new Scanner(System.in);

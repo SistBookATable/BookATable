@@ -1,9 +1,9 @@
 package com.test.java.view;
 
 import java.util.Scanner;
-
+//예약 불가 테이블 화면 출력 class
 public class UnableReservationTableView {
-	
+	//테이블 정원 입력 받는 메서드
 	public static int getTableCapacity() {
         Scanner scan = new Scanner(System.in);
         int temp = 0;

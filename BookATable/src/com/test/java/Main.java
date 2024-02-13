@@ -9,8 +9,11 @@ public class Main {
      * 프로그램 실행을 위한 메인 메서드입니다.
      */
 	public static void main(String[] args) {
+
 		MainController.load();
 		MainController.start();  
+		
+		
 	}
 }
 

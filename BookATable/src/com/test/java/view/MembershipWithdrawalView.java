@@ -9,7 +9,7 @@ public class MembershipWithdrawalView {
 	
 	public void showdrawalLogo() {
 		System.out.println("┌───────────────────────────────────────────────────────┐");
-		System.out.println("|                         회원 탈퇴                       <");
+		System.out.println("|                         회원 탈퇴                       	|");
 		System.out.println("└───────────────────────────────────────────────────────┘");
 	}
 	
@@ -34,9 +34,9 @@ public class MembershipWithdrawalView {
 	}
 	
 	public void backPage() {
-		System.out.println("┌─────────────────────────────────────┐");
-		System.out.println("|     이전 화면으로 돌아가시겠습니까?(Y/N) <");
-		System.out.println("└─────────────────────────────────────┘");
+		System.out.println("┌───────────────────────────────────────┐");
+		System.out.println("|	이전 화면으로 돌아가시겠습니까?(Y/N) 	|");
+		System.out.println("└───────────────────────────────────────┘");
 		System.out.print("■ 입력 :\t■");
 	}
 	

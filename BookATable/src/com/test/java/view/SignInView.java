@@ -13,7 +13,7 @@ public class SignInView {
 		System.out.println();
 		System.out.println();
 		System.out.println("┌───────────────────────────────────────────────────────┐");
-		System.out.println("|              회원 가입 - 회원 그룹을 선택해주세요              ■");
+		System.out.println("|              회원 가입 - 회원 그룹을 선택해주세요              |");
 		System.out.println("└───────────────────────────────────────────────────────┘");
 		System.out.println("==========================================================================================");
 		System.out.println();

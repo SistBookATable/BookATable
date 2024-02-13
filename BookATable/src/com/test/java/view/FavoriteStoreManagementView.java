@@ -16,10 +16,9 @@ public class FavoriteStoreManagementView {
 		System.out.println();
 		System.out.println("==========================================================================================");
 		System.out.println();
-		System.out.println("■           1. 작성 리뷰 조회		   ■");
-		System.out.println("■           2. 즐겨찾기 조회 및 삭제		   ■");
-//		System.out.println("■           3. 즐겨찾기 삭제		   ■");
-		System.out.println("■           0. 이전 화면			   ■");
+		System.out.println("■           1. 작성 리뷰 조회	  \t■");
+		System.out.println("■           2. 즐겨찾기 조회 및 삭제\t\t■");
+		System.out.println("■           0. 이전 화면		 \t■");
 		System.out.println();
 		System.out.println("==========================================================================================");
 		System.out.println();

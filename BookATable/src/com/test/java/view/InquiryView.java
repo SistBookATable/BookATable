@@ -48,9 +48,9 @@ public class InquiryView {
 
 
 		System.out.println();
-		System.out.println();
+		System.out.println();														
 		System.out.println("┌───────────────────────────────────────────────────────┐");
-		System.out.println("|               문의사항 관리 - 문의 사항 조회                <");
+		System.out.println("|               문의사항 관리 - 문의 사항 조회              	|");
 		System.out.println("└───────────────────────────────────────────────────────┘");
 		System.out.println();
 		
@@ -88,8 +88,8 @@ public class InquiryView {
 	public void showSelectBox() {
 		System.out.println("==========================================================================================");
 		System.out.println();
-		System.out.println("■           1. 문의 내용 보기              ■");
-		System.out.println("■           0. 뒤로 가기                  ■");
+		System.out.println("■           1. 문의 내용 보기              \t■");
+		System.out.println("■           0. 뒤로 가기                  \t■");
 		System.out.println();
 		System.out.println("==========================================================================================");
 		System.out.println();

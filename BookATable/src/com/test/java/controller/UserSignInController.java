@@ -125,7 +125,7 @@ public class UserSignInController {
 		}
 		
 		MemberRepository.add(id, pw, name, phone, jumin, 0, 0, 0, bank, account, "null", now, "null");
-		
+		System.out.println("회원가입이 완료되었습니다.");
 		UserSignInView.pause();
 		return true;
 	}

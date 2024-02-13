@@ -11,7 +11,7 @@ public class AnswerView {
 		System.out.println();
 		System.out.println();
 		System.out.println("┌───────────────────────────────────────────────────────┐");
-		System.out.println("|         문의사항 관리 - 문의 사항 조회 - 문의 내용 보기         <");
+		System.out.println("|         문의사항 관리 - 문의 사항 조회 - 문의 내용 보기        	|");
 		System.out.println("└───────────────────────────────────────────────────────┘");
 		System.out.println();
 		

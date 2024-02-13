@@ -6,7 +6,7 @@ public class CustomerManagementView {
 		System.out.println();
 		System.out.println();
 		System.out.println("┌───────────────────────────────────────────────────────┐");
-		System.out.println("|                   업체 회원 - 고객 관리                   <");
+		System.out.println("|                   업체 회원 - 고객 관리                  	|");
 		System.out.println("└───────────────────────────────────────────────────────┘");
 	}
 	public void showSelectBox() {
@@ -57,7 +57,7 @@ public class CustomerManagementView {
 		System.out.println();
 		System.out.println();
 		System.out.println("┌───────────────────────────────────────────────────────┐");
-		System.out.println("|           업체 회원 - 고객 관리 - 단골 고객 리스트            <");
+		System.out.println("|           업체 회원 - 고객 관리 - 단골 고객 리스트            	|");
 		System.out.println("└───────────────────────────────────────────────────────┘");
 		System.out.println();
 		System.out.printf("\t%s\t%s\t%s\n", "이용횟수","회원명","최다 주문 메뉴");	
@@ -81,7 +81,7 @@ public class CustomerManagementView {
 		System.out.println();
 		System.out.println();
 		System.out.println("┌───────────────────────────────────────────────────────┐");
-		System.out.println("|              업체 회원 - 고객 관리 - 블랙리스트              <");
+		System.out.println("|              업체 회원 - 고객 관리 - 블랙리스트              	|");
 		System.out.println("└───────────────────────────────────────────────────────┘");
 		System.out.println();
 		System.out.printf("\t%s\t%s\t%s\n", "노쇼횟수","회원ID","사용 제한 여부");	

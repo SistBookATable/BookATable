@@ -27,9 +27,9 @@ public class StoreView {
 	
 	public void title() {
 		System.out.println("┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐");
-		System.out.println("|                                                             음식점 리스트                                                                   <");
+		System.out.println("|                                                             음식점 리스트                                                                	  |");
 		System.out.println("└─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘");
-	}
+		}
 	
 	public void show(Store store, int index) {
 		System.out.println("==========================================================================================================================================");
@@ -116,9 +116,9 @@ public class StoreView {
 
 	public void noneMemberAvailable() {
 		System.out.println();
-		System.out.println("┌───────────────────────────────────────────────────────────┐");
-		System.out.println("| 비회원은 회원 가입 후 이용가능합니다. 회원가입 페이지로 이동하시겠습니까?(y/n) <");
-		System.out.println("└───────────────────────────────────────────────────────────┘");
+		System.out.println("┌─────────────────────────────────────────────────────────────────┐");
+		System.out.println("|   비회원은 회원 가입 후 이용가능합니다. 회원가입 페이지로 이동하시겠습니까?(y/n) 	  |");
+		System.out.println("└─────────────────────────────────────────────────────────────────┘");
 		System.out.println();
 		System.out.print("■ 입력 :\t■");
 	}
@@ -126,7 +126,7 @@ public class StoreView {
 	public void noneBusinessUserAvailable() {
 		System.out.println();
 		System.out.println("┌───────────────────────────────────────────────────────────┐");
-		System.out.println("|                    업체회원은 예약이 불가능합니다.                 <");
+		System.out.println("|                    업체회원은 예약이 불가능합니다.                	|");
 		System.out.println("└───────────────────────────────────────────────────────────┘");
 		System.out.println();
 	}

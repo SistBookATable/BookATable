@@ -13,7 +13,7 @@ public class UserInquiryView {
 		System.out.println();
 		System.out.println();
 		System.out.println("┌───────────────────────────────────────────────────────┐");
-		System.out.printf("|                    %s - 문의사항                   <\n",member);
+		System.out.printf("|                    %s - 문의사항          	      	|\n",member);
 		System.out.println("└───────────────────────────────────────────────────────┘");
 		
 	}
@@ -35,7 +35,7 @@ public class UserInquiryView {
 		System.out.println();
 		System.out.println();
 		System.out.println("┌───────────────────────────────────────────────────────┐");
-		System.out.println("|            업체 회원 - 문의사항 - 문의 사항 등록              <");
+		System.out.println("|            업체 회원 - 문의사항 - 문의 사항 등록              	|");
 		System.out.println("└───────────────────────────────────────────────────────┘");
 		
 	}
@@ -81,7 +81,7 @@ public class UserInquiryView {
 		System.out.println();
 		System.out.println();
 		System.out.println("┌───────────────────────────────────────────────────────┐");
-		System.out.println("|         문의사항 - 문의 사항 조회 - 문의 내용 보기         <");
+		System.out.println("|         문의사항 - 문의 사항 조회 - 문의 내용 보기     		|");
 		System.out.println("└───────────────────────────────────────────────────────┘");
 		System.out.println();
 		
@@ -149,7 +149,7 @@ public class UserInquiryView {
 		System.out.println();
 		System.out.println();
 		System.out.println("┌───────────────────────────────────────────────────────┐");
-		System.out.printf("|             %s - 문의사항 - 문의 내역 조회             <\n",member);
+		System.out.printf("|        	 %s - 문의사항 - 문의 내역 조회        	|\n",member);
 		System.out.println("└───────────────────────────────────────────────────────┘");
 		System.out.println();
 		

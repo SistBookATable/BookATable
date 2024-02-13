@@ -22,7 +22,7 @@ public class InquiryReservationStatusView {
 		System.out.println();
 		System.out.println();
 		System.out.println("┌───────────────────────────────────────────────────────┐");
-		System.out.printf("|                 %s님 현재 예약 현황              	  <\n", userName);
+		System.out.printf("|                 %s님 현재 예약 현황              	  	|\n", userName);
 		System.out.println("└───────────────────────────────────────────────────────┘");
 		System.out.println();
 		
@@ -54,8 +54,8 @@ public class InquiryReservationStatusView {
 		System.out.println();
 		System.out.println("------------------------------------------------------------------------------------------");
 		System.out.println();
-		System.out.println("■           1. 예약 취소		   ■");
-		System.out.println("■           0. 이전 화면		   ■");
+		System.out.println("■           1. 예약 취소	\t■");
+		System.out.println("■           0. 이전 화면	\t■");
 		System.out.println();
 		System.out.println("------------------------------------------------------------------------------------------");
 		

@@ -53,9 +53,9 @@ public class BookmarkHistoryView {
 		System.out
 				.println("------------------------------------------------------------------------------------------");
 		System.out.println();
-		System.out.println("■           1. 상세페이지 이동		   ■");
-		System.out.println("■           2. 즐겨찾기 삭제		   ■");
-		System.out.println("■           0. 이전 화면			   ■");
+		System.out.println("■           1. 상세페이지 이동	   \t■");
+		System.out.println("■           2. 즐겨찾기 삭제	   \t■");
+		System.out.println("■           0. 이전 화면		   \t■");
 		System.out.println();
 		System.out
 				.println("------------------------------------------------------------------------------------------");

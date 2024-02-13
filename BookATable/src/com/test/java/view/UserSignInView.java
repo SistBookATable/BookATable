@@ -106,7 +106,7 @@ public class UserSignInView {
 		
 		Scanner scan = new Scanner(System.in);
 		String tmp = "";
-		System.out.println("“-”를 제외하고 숫자만 작성하십시오.");
+		System.out.println("계좌번호를 “-”를 제외하고 숫자만 작성하십시오.");
 		tmp = scan.nextLine();		
 		return tmp;
 	}

@@ -295,7 +295,7 @@ public class ReservationView {
         System.out.println();
         System.out.println();
         System.out.println("┌───────────────────────────────────────────────────────┐");
-        System.out.println("|                   업체 회원 - 예약관리                   <");
+        System.out.println("|                   업체 회원 - 예약관리                   	|");
         System.out.println("└───────────────────────────────────────────────────────┘");
     }
     
@@ -325,7 +325,7 @@ public class ReservationView {
         System.out.println();
         System.out.println();
         System.out.println("┌───────────────────────────────────────────────────────┐");
-        System.out.println("|                 예약 관리 - 예약 현황 조회                 <");
+        System.out.println("|                 예약 관리 - 예약 현황 조회                 	|");
         System.out.println("└───────────────────────────────────────────────────────┘");
         System.out.println();
         
@@ -371,7 +371,7 @@ public class ReservationView {
         System.out.println();
         System.out.println();
         System.out.println("┌───────────────────────────────────────────────────────┐");
-        System.out.println("|                 예약 관리 - 방문 고객 조회                 <");
+        System.out.println("|                 예약 관리 - 방문 고객 조회                 	|");
         System.out.println("└───────────────────────────────────────────────────────┘");
         System.out.println();
         

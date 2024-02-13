@@ -17,10 +17,10 @@ public class BusinessUserReviewView {
 		System.out.println();
 		System.out.println("==========================================================================================");
 		System.out.println();
-		System.out.println("■            1. 다음 페이지        \t■");
-		System.out.println("■            2. 이전 페이지        \t■");
-		System.out.println("■            3. 리뷰 삭제 요청      \t■");
-		System.out.println("■            0. 이전 화면	         \t■");
+		System.out.println("■            1. 다음 페이지     	 \t■");
+		System.out.println("■            2. 이전 페이지     	 \t■");
+		System.out.println("■            3. 리뷰 삭제 요청  	  \t■");
+		System.out.println("■            0. 이전 화면	    	  \t■");
 		System.out.println();
 		System.out.println("==========================================================================================");
 		System.out.println();

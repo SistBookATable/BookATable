@@ -9,7 +9,7 @@ public class RevenueManagementView {
 		System.out.println();
 		System.out.println();
 		System.out.println("┌───────────────────────────────────────────────────────┐");
-		System.out.println("|                    업체 회원 - 수익 관리                  <");
+		System.out.println("|                    업체 회원 - 수익 관리                  	|");
 		System.out.println("└───────────────────────────────────────────────────────┘");
 		
 		
@@ -20,7 +20,7 @@ public class RevenueManagementView {
 		System.out.println();
 		System.out.println();
 		System.out.println("┌───────────────────────────────────────────────────────┐");
-		System.out.println("|                  업체 회원 - 예상 매출 조회                <");
+		System.out.println("|                  업체 회원 - 예상 매출 조회                	|");
 		System.out.println("└───────────────────────────────────────────────────────┘");
 		
 		
@@ -31,7 +31,7 @@ public class RevenueManagementView {
 		System.out.println();
 		System.out.println();
 		System.out.println("┌───────────────────────────────────────────────────────┐");
-		System.out.println("|                 업체 회원 - 정산 예약금 조회                <");
+		System.out.println("|                 업체 회원 - 정산 예약금 조회                	|");
 		System.out.println("└───────────────────────────────────────────────────────┘");
 		
 		

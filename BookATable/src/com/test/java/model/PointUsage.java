@@ -1,5 +1,9 @@
 package com.test.java.model;
 
+/**
+ * 포인트 사용 내역을 저장하는 클래스입니다.
+ */
+
 public class PointUsage {
 	
 	private static int COUNT = 1;
@@ -18,6 +22,14 @@ public class PointUsage {
 //	}
 
 	
+	/**
+	 * 
+	 * @param usageNumber 번호
+	 * @param usagePoint 사용 포인트
+	 * @param useTime 사용 시간
+	 * @param content 사용 내용
+	 * @param userId 사용자 ID
+	 */
 	public PointUsage(int usageNumber,int usagePoint,String useTime, String content, String userId) {
 		super();
 		this.usageNumber = COUNT++;

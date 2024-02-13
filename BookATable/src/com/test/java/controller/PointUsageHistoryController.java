@@ -11,8 +11,14 @@ import com.test.java.repository.PointRepository;
 import com.test.java.view.PointManagementView;
 import com.test.java.view.PointUsageHistoryView;
 
+/**
+ * 포인트 사용 내역 조회를 담당하는 Controller 클래스입니다.
+ */
 public class PointUsageHistoryController {
 	
+	/**
+	 * 포인트 사용 내역을 조회하는 메서드입니다.
+	 */
 	public void pointUsageHistory() {
 		
 		String userId = Member.id; 

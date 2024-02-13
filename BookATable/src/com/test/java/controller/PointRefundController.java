@@ -12,7 +12,15 @@ import com.test.java.repository.MemberRepository;
 import com.test.java.repository.PointRepository;
 import com.test.java.view.PointRefundView;
 
+/**
+ * 포인트 환불 기능을 관리하는 Controller 클래스입니다.
+ */
+
 public class PointRefundController {
+	
+	/**
+	 * 포인트 환불을 처리하는 메서드입니다.
+	 */
 
 	public void pointRefund() {
 

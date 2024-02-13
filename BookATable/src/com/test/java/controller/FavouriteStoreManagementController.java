@@ -4,6 +4,10 @@ import java.util.Scanner;
 
 import com.test.java.view.FavoriteStoreManagementView;
 
+/**
+ * 사용자가 즐겨찾는 매장을 관리하는 메뉴를 처리하는 Controller 클래스입니다. 
+ * 사용자가 메뉴를 선택할 때마다 해당하는 기능을 실행합니다.
+ */
 public class FavouriteStoreManagementController {
 
 	public void favouriteStoreManagement() {
@@ -29,7 +33,7 @@ public class FavouriteStoreManagementController {
 				BookmarkHistoryController bookmarkHistoryController = new BookmarkHistoryController();
 				bookmarkHistoryController.bookmarkHistory();
 				break;
-//			// 즐겨찾기 삭제
+			// 즐겨찾기 삭제
 //			case 3:
 //				DeleteBookmarkController deleteBookmarkController = new DeleteBookmarkController();
 //				deleteBookmarkController.deleteBookmark();

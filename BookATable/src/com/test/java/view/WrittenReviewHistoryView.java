@@ -9,12 +9,19 @@ import com.test.java.model.Review;
 import com.test.java.model.Store;
 import com.test.java.repository.Data;
 
+/**
+ * 작성한 리뷰를 출력하는 View 클래스입니다.
+ */
 public class WrittenReviewHistoryView {
 	
 	public static ArrayList<Review> reviewList = new ArrayList<>();
 	public static ArrayList<Store> storeList = new ArrayList<>();
 	
 	
+	/**
+	 * 사용자가 작성한 리뷰를 조회하여 출력하는 메서드입니다. 
+	 * @param name 사용자 이름
+	 */
 	public void showWrittenReviewHistory(String name) {
 		
 		System.out.println("------------------------------------------------------------------------------------------");

@@ -14,8 +14,14 @@ import com.test.java.repository.Data;
 import com.test.java.repository.PointRepository;
 import com.test.java.view.DeleteBookmarkView;
 
+/**
+ * 즐겨찾기를 삭제하는 기능을 담당하는 Controller 클래스입니다
+ */
 public class DeleteBookmarkController {
 
+	/**
+	 * 즐겨찾기를 삭제하는 메서드입니다
+	 */
 	public void deleteBookmark() {
 
 		

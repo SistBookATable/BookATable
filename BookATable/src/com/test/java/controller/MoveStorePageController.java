@@ -12,8 +12,15 @@ import com.test.java.repository.Data;
 import com.test.java.repository.StoreRepository;
 import com.test.java.view.MoveStorePageView;
 
+/**
+ * 상세페이지 이동을 처리하는 Controller 클래스입니다.
+ */
 public class MoveStorePageController {
 
+	/**
+	 * 상세페이지로 이동하는 메서드입니다.
+	 * 사용자로부터 상호명을 입력받아 해당 음식점의 상세정보를 출력합니다. 
+	 */
 	public void moveStorePage() {
 
 		MoveStorePageView moveStorePageView = new MoveStorePageView();

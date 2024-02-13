@@ -8,23 +8,42 @@ import com.test.java.model.Member;
 import com.test.java.model.User;
 import com.test.java.repository.Data;
 
+/**
+ * InquiryView 클래스는 1:1문의사항을 통해 요청된 내역의 정보를 출력하는 클래스입니다.
+ */
 public class InquiryView {
 	
+	/**
+	 * 단일 문의 정보를 출력하는 메서드입니다.
+	 * @param Inquiry inquiry
+	 */
 	public void show(Inquiry inquiry) {
 		
 	}
 	
-	
+	/**
+	 * 여러 개의 문의 정보를 출력하는 메서드입니다.
+	 * @param ArrayList<Inquiry> inquiry
+	 */
 	public void show(ArrayList<Inquiry> inquiry) {
 		
 	}
 	
+	/**
+	 * 문의에 대한 답변을 가져오는 메서드입니다.
+	 * @return null
+	 */
 	public ArrayList<String> getAnswer(){
 		return null;
 		
 	}
 
 
+	/**
+	 * 모든 문의 사항을 조회하고, 헤더의 형식으로 출력하는 메서드입니다.
+	 * 문의내역의 유무와 답변 작성 유무, 회원타입 따라 다른 메세지가 출력됩니다.
+	 * @param inquiryList
+	 */
 	public void FindAllInquiry(ArrayList<Inquiry> inquiryList) {
 
 
@@ -63,7 +82,9 @@ public class InquiryView {
 		}
 	}
 
-
+	/**
+     * 선택 옵션을 출력하는 메서드입니다.
+     */
 	public void showSelectBox() {
 		System.out.println("==========================================================================================");
 		System.out.println();
@@ -75,11 +96,18 @@ public class InquiryView {
 		System.out.println("선택(번호) : ");
 	}
 	
+	/**
+     * 사용자가 선택한 번호를 반환하는 메서드입니다.
+     * @return 선택 번호
+     */
 	public int getSelectType() {
 		return View.getSelectType();
 	}
 
-
+	/**
+     * 사용자가 선택한 문의번호를 입력받는 메서드입니다.
+     * @return 문의 번호
+     */
 	public String getInquiryNumber() {
 		System.out.println("확인할 문의 번호 입력하세요");
 		System.out.print("선택(문의번호) : ");
@@ -90,6 +118,9 @@ public class InquiryView {
 	}
 
 
+	/**
+	 * 유효하지 않은 값을 입력한 경우 출력되는 메세지입니다.
+	 */
 	public void incorrectInputMessage() {
 
 

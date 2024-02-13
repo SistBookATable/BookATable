@@ -11,7 +11,7 @@ public class ReviewManagementView {
 		System.out.println();
 		System.out.println();
 		System.out.println("┌───────────────────────────────────────────────────────┐");
-		System.out.println("|        리뷰 관리 - 리뷰 삭제 요청 조회 - 리뷰 내용 보기         <");
+		System.out.println("|        리뷰 관리 - 리뷰 삭제 요청 조회 - 리뷰 내용 보기         	|");
 		System.out.println("└───────────────────────────────────────────────────────┘");
 		System.out.println();
 		

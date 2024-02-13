@@ -66,7 +66,7 @@ public class SignOutUserManagementView {
 		System.out.println();
 		System.out.println();
 		System.out.println("┌───────────────────────────────────────────────────────┐");
-		System.out.println("|                  회원 관리 - 탈퇴 회원 조회                <");
+		System.out.println("|                  회원 관리 - 탈퇴 회원 조회                	|");
 		System.out.println("└───────────────────────────────────────────────────────┘");
 		System.out.println();
 		

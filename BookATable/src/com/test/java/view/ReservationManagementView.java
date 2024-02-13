@@ -12,9 +12,9 @@ public class ReservationManagementView {
 		System.out.println("└───────────────────────────────────────────────────────┘");
 		System.out.println("==========================================================================================");
 		System.out.println();
-		System.out.println("■           1. 예약 현황 조회		   ■");
-		System.out.println("■           2. 이용완료 내역 조회	   	   ■");
-		System.out.println("■           0. 이전 화면			   ■");
+		System.out.println("■           1. 예약 현황 조회		■");
+		System.out.println("■           2. 이용완료 내역 조회		■");
+		System.out.println("■           0. 이전 화면			■");
 		System.out.println();
 		System.out.println("==========================================================================================");
 		System.out.println();

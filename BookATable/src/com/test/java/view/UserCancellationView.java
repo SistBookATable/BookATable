@@ -8,7 +8,7 @@ public class UserCancellationView {
 		System.out.println();
 		System.out.println();
 		System.out.println("┌───────────────────────────────────────────────────────┐");
-		System.out.println("|        회원탈퇴 - 비밀번호를 입력해주세요			<");
+		System.out.println("|    	    	회원탈퇴 - 비밀번호를 입력해주세요		|");
 		System.out.println("└───────────────────────────────────────────────────────┘");
 		System.out.println();
 	}

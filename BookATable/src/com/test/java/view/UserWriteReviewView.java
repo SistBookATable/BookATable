@@ -17,7 +17,7 @@ public class UserWriteReviewView {
 		System.out.println();
 		System.out.println();
 		System.out.println("┌───────────────────────────────────────────────────────┐");
-		System.out.printf("|                 %s님 리뷰 미작성 예약 리스트              	  <\n", userName);
+		System.out.printf("|              %s님 리뷰 미작성 예약 리스트             	|\n", userName);
 		System.out.println("└───────────────────────────────────────────────────────┘");
 		System.out.println();
 		

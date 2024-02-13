@@ -8,7 +8,7 @@ public class UpdateUserInformationView {
 		System.out.println();
 		System.out.println();
 		System.out.println("┌───────────────────────────────────────────────────────┐");
-		System.out.println("|        개인정보 수정 - 원하시는 항목을 선택해주세요				<");
+		System.out.println("|        개인정보 수정 - 원하시는 항목을 선택해주세요				|");
 		System.out.println("└───────────────────────────────────────────────────────┘");
 		System.out.println();
 	}

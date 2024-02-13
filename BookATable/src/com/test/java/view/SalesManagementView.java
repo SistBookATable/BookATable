@@ -7,7 +7,7 @@ public class SalesManagementView {
 		System.out.println();
 		System.out.println();
 		System.out.println("┌───────────────────────────────────────────────────────┐");
-		System.out.println("|                    업체 회원 - 영업 관리                  <");
+		System.out.println("|                    업체 회원 - 영업 관리                  	|");
 		System.out.println("└───────────────────────────────────────────────────────┘");
 		
 		

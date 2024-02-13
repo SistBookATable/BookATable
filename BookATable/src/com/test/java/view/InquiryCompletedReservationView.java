@@ -17,7 +17,7 @@ public class InquiryCompletedReservationView {
 		System.out.println();
 		System.out.println();
 		System.out.println("┌───────────────────────────────────────────────────────┐");
-		System.out.printf("|                 %s님 이용 완료 예약 조회          	  <\n", userName);
+		System.out.printf("|                 %s님 이용 완료 예약 조회          	 	|\n", userName);
 		System.out.println("└───────────────────────────────────────────────────────┘");
 		System.out.println();
 		

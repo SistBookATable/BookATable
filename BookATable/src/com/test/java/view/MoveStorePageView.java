@@ -6,8 +6,15 @@ import com.test.java.model.Bookmark;
 import com.test.java.model.Store;
 import com.test.java.repository.Data;
 
+/**
+ * 상세페이지 이동 화면을 출력하는 View 클래스입니다.
+ */
 public class MoveStorePageView {
 
+	/**
+	 * 사용자로부터 상호명을 입력받는 메서드입니다.
+	 * @return 사용자가 입력한 상호명
+	 */
 	public static String getStoreName() {
 		Scanner scan = new Scanner(System.in);
 		String tmp = "";
@@ -23,6 +30,16 @@ public class MoveStorePageView {
 
 	// Store store
 
+	/**
+	 * 상세페이지를 출력하는 메서드입니다.
+	 * @param name 음식점 이름 
+	 * @param telNumber 전화번호
+	 * @param address 주소
+	 * @param menuCategory 음식 분류
+	 * @param menu 메뉴
+	 * @param table 테이블 수 
+	 * @param score 평점
+	 */
 	public void showStorePage(String name, String telNumber, String address, String menuCategory, String menu,
 			int table, double score) {
 		System.out.println();

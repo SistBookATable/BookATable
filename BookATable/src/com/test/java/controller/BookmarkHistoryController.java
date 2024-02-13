@@ -14,8 +14,14 @@ import com.test.java.repository.StoreRepository;
 import com.test.java.view.BookmarkHistoryView;
 import com.test.java.view.MoveStorePageView;
 
+/**
+ * 즐겨찾기 조회와 관리를 담당하는 Controller 클래스입니다.
+ */
 public class BookmarkHistoryController {
 
+	/**
+	 * 사용자의 즐겨찾기 리스트를 조회하고 상세페이지 이동, 삭제할 수 있는 메서드입니다. 
+	 */
 	public void bookmarkHistory() {
 
 		boolean loop = true;

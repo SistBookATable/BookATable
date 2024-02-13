@@ -29,32 +29,33 @@ import com.test.java.model.Store;
 import com.test.java.model.Table;
 import com.test.java.model.User;
 import com.test.java.model.WriteReview;
-
+/**
+ * Data 클래스는 프로젝트의 Data 파일의 경로를 선언합니다.
+ * 관련 개체에 대한 ArrayList를 선언한 후에, 읽어온 Data를 ArrayList에 추가하여 Load하는 클래스입니다.
+ */
 public class Data {
 
+	//파일의 경로를 선언합니다.
+	private final static String VIP = "dat\\Vip.txt";// Vip(단골) 회원 파일 경로
+	private final static String RESERVATIONMENU = "dat\\ReservationMenu.txt";// 예약 메뉴 파일 경로
+	private final static String USER = "dat"+File.separator+"user.txt";// 일반회원 파일 경로
+	private final static String BUSINESSUSER = "dat"+File.separator+"businessUser.txt";// 업체회원 파일 경로
+	private final static String ADMIN = "dat"+File.separator+"admin.txt";// 관리자 파일 경로
+	private final static String STORE = "dat"+File.separator+"store.txt";// 음식점 파일 경로
+	private final static String BLACKLIST = "dat"+File.separator+"blackList.txt";// 블랙리스트 파일 경로
+	private final static String TABLE = "dat"+File.separator+"table.txt";// 테이블 정보 파일 경로
+	private final static String MENU = "dat"+File.separator+"menu.txt";// 메뉴 정보 파일 경로
+	private final static String OPERATINGHOURS = "dat"+File.separator+"operatinghours.txt";// 영업 시간 정보 파일 경로
+	private final static String RESERVATION = "dat"+File.separator+"reservation.txt";// 예약 정보 파일 경로
+	private final static String POINTUSAGE = "dat"+File.separator+"pointUsage.txt";// 포인트 사용 내역 파일 경로
+	private final static String REVIEW = "dat"+File.separator+"review.txt";// 리뷰 작성 내역 파일 경로
+	private final static String FAQ = "dat"+File.separator+"faq.txt";// FAQ 파일 경로
+	private final static String INQUIRY = "dat"+File.separator+"inquiry.txt";// 1:1 문의 파일 경로
+	private final static String REQUEST = "dat"+File.separator+"request.txt";// 리뷰 삭제 요청내역 파일 경로
+	private final static String BOOKMARK = "dat"+File.separator+"bookmark.txt";// 즐겨찾기 정보 파일 경로
+	private final static String POINTREFUND = "dat"+File.separator+"pointRefund.txt";// 포인트 환급 내역 파일 경로
 	
-	//여러개면 Path 클래스를 만들어서 넣는게 좋음
-	private final static String VIP = "dat\\Vip.txt";
-	private final static String RESERVATIONMENU = "dat\\ReservationMenu.txt";
-	private final static String USER = "dat"+File.separator+"user.txt";
-	private final static String BUSINESSUSER = "dat"+File.separator+"businessUser.txt";
-	private final static String ADMIN = "dat"+File.separator+"admin.txt";	
-	private final static String STORE = "dat"+File.separator+"store.txt";
-	private final static String BLACKLIST = "dat"+File.separator+"blackList.txt";
-	private final static String TABLE = "dat"+File.separator+"table.txt";
-	private final static String MENU = "dat"+File.separator+"menu.txt";
-	private final static String OPERATINGHOURS = "dat"+File.separator+"operatinghours.txt";
-	private final static String RESERVATION = "dat"+File.separator+"reservation.txt";
-	private final static String POINTUSAGE = "dat"+File.separator+"pointUsage.txt";
-	private final static String REVIEW = "dat"+File.separator+"review.txt";
-	private final static String FAQ = "dat"+File.separator+"faq.txt";
-	private final static String INQUIRY = "dat"+File.separator+"inquiry.txt";
-	private final static String REQUEST = "dat"+File.separator+"request.txt";
-	private final static String BOOKMARK = "dat"+File.separator+"bookmark.txt";
-	private final static String POINTREFUND = "dat"+File.separator+"pointRefund.txt";
-	
-	
-	//필요한 자료들
+	//필요한 개체의 ArrayList를 선언합니다.
 	public static ArrayList<Member> memberList = new ArrayList<>();
 	public static ArrayList<Store> storeList = new ArrayList<>();
 	public static ArrayList<Menu> menuList = new ArrayList<>();
@@ -66,20 +67,18 @@ public class Data {
 	public static ArrayList<Bookmark> bookmarkList = new ArrayList<>();
 	public static ArrayList<PointRefund> pointRefundList = new ArrayList<>();
 	public static ArrayList<PointUsage> pointList = new ArrayList<>();
-//	public static ArrayList<CompletedList> compleatedList = new ArrayList<>();
 	public static ArrayList<Request> requestList = new ArrayList<>();
-//	public static ArrayList<ReservationCancel> reservationCancelList = new ArrayList<>();
 	public static ArrayList<Review> reviewList = new ArrayList<>();
 	public static ArrayList<Review> reviewCountList = new ArrayList<>();
-	//public static ArrayList<StopUser> stopUserList = new ArrayList<>();
 	public static ArrayList<Table> tableList = new ArrayList<>();
-
 	public static ArrayList<WriteReview> writeReviewList = new ArrayList<>();
+
 	public static String path1 = "dat\review.txt";
-    public static String path2 = "dat\store.txt";
-    
+	public static String path2 = "dat\store.txt";
 	
-	
+	/**
+	 * 포인트 환급 데이터를 로드하는 메서드입니다.
+	 */
 	public static void loadPointRefund() {
 		try {
 			BufferedReader reader = new BufferedReader(new FileReader(Data.POINTREFUND));
@@ -92,7 +91,6 @@ public class Data {
 
 //				pointRefundList.add(pointRefund);
 
-
 			}
 			
 			reader.close();
@@ -102,7 +100,9 @@ public class Data {
 		}
 	}
 	
-	
+	/**
+	 * 포인트 환급 데이터를 로드하는 메서드입니다.
+	 */
 	public static void loadBookmark() {
 		try {
 			BufferedReader reader = new BufferedReader(new FileReader(Data.BOOKMARK));
@@ -192,8 +192,7 @@ public class Data {
 			e.printStackTrace();
 		}
 	}
-	
-	//TODO PointUsage 개체 완성하고, loadPointUsage() 마무리.... 
+	//
 	public static void loadPointUsage() {
 		try {
 			BufferedReader reader

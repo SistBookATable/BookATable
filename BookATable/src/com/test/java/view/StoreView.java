@@ -6,6 +6,9 @@ import java.util.Scanner;
 import com.test.java.model.Menu;
 import com.test.java.model.Store;
 
+/**
+ * 음식점 리스트들을 출력하는 StoreView 클래스
+ */
 public class StoreView {
 
 	public void searchMenu() {
@@ -20,16 +23,6 @@ public class StoreView {
 		Scanner sc = new Scanner(System.in);
 		System.out.println(prompt + ": ");
 		return sc.nextLine();
-	}
-
-
-
-	public void showMenu(Menu menu) {
-		System.out.println("=================================================================================================================");
-		System.out.println("\t\t\t\t\t\t메뉴 리스트\t\t\t\t\t\t\t\t\t\t");
-		System.out.println("=================================================================================================================");
-		System.out.printf("\t사업자번호\t\t메뉴\t\t가격\n");
-		System.out.printf("%18s\t%s\t%d\n", menu.getLicenseNumber(), menu.getMenuName(), menu.getPrice());
 	}
 	
 	public void title() {
@@ -47,48 +40,31 @@ public class StoreView {
 	    System.out.printf(dataFormat + "%n", index, store.getLicenseNumber(), store.getStoreName(), store.getStoreTelNumber(), store.getMenuCategory(), store.getAddress(), store.getScore(), store.getReviewCount());
 	    System.out.println("==========================================================================================================================================");
 	}
-
-
-	public boolean showMenu(ArrayList<Menu> menuList) {
-
-		
-		boolean success = true;
-
-//		if(menuList.size() == 0) {
-//			System.out.println("음식점이 없습니다.");
-//			success = false;
-//		} else {
-			for(Menu menu : menuList) {
-				showMenu(menu);
-			}
-			//         return success;
-//		}
-		View.pause();
-		return success;
-	}
-
+	
+	/**
+	 * list의 크기만큼 반복하고 음식점 리스트를 출력하고 넘버링 하는 show 메서드
+	 */
 	public boolean show(ArrayList<Store> storeList) {
 
 		boolean success = true;
-
-//		if(storeList.size() == 0) {
-//			System.out.println("음식점이 없습니다.");
-//			success = false;
-//		}
-//		else {
 		title();
 			for (int i=0; i<storeList.size(); i++) {
 				show(storeList.get(i), i+1);
 			}
 			return success;
 		}
-
 	
-
+	/**
+	 * 사용자로부터 정수값을 입력받아오고 반환하는 get메서드
+	 */
 	public static int get() {
 		return View.getSelectType();
 	}
 	
+	/**
+	 * 사용자로부터 문자열을 입력받고 반환하는 getTxt메서드
+	 * @return txt
+	 */
 	public static String getTxt() {
 		Scanner sc = new Scanner(System.in);
 		String txt = "";
@@ -172,6 +148,12 @@ public class StoreView {
 		
 	}
 	
+	/**
+	 * 즐겨찾는 음식점 목록을 보여주는 showBookmarkedStores 메서드
+	 * list의 크기만큼 돌아 store 객체에 저장하고 1. 음식점명으로 출력 후
+	 * 음식점 리스트를 출력하는 show 메서드 호출
+	 * @param bookmarkedStores 즐겨찾는 음식점 목록이 담긴 ArrayList
+	 */
 	public void showBookmarkedStores(ArrayList<Store> bookmarkedStores) {
 	    if (bookmarkedStores.isEmpty()) {
 	        System.out.println("현재 즐겨찾기된 음식점이 없습니다.");
@@ -184,11 +166,4 @@ public class StoreView {
 	        }
 	    }
 	}
-
-	//   public int reservationNumber() {
-	//	   Scanner sc = new Scanner(System.in);
-	//	   System.out.println("예약할 음식점 선택(번호): ");
-	//	   int choice = sc.nextInt();
-	//	   return choice;
-	//   }
 }

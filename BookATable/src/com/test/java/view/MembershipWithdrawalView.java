@@ -2,6 +2,9 @@ package com.test.java.view;
 
 import java.util.Scanner;
 
+/**
+ * 회원 탈퇴 메뉴를 출력하는 MembershipWithdrawalView 클래스
+ */
 public class MembershipWithdrawalView {
 	
 	public void showdrawalLogo() {
@@ -19,10 +22,7 @@ public class MembershipWithdrawalView {
 	}
 	
 	public void inputPw() {
-//		Scanner sc = new Scanner(System.in);
 		System.out.println("비밀번호 입력: ");
-//		String inputPassword = sc.nextLine();
-//		return inputPassword;
 	}
 	
 	public void withDrawal() {
@@ -40,6 +40,10 @@ public class MembershipWithdrawalView {
 		System.out.print("■ 입력 :\t■");
 	}
 	
+	/**
+	 * 사용자로부터 문자열을 반환받는 get 메서드
+	 * @return 
+	 */
 	public String get() {
 		Scanner sc = new Scanner(System.in);
 		String input = sc.nextLine();	//**

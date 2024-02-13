@@ -37,6 +37,7 @@ public class BusinessUserMyPageController {
 				businessUserInquiryController.showChoice();
 				break;
 			case 6:
+				// 업체회원 탈퇴
 				MembershipWithdrawalController membershipWithdrawalController = new MembershipWithdrawalController();
 				membershipWithdrawalController.membershipWithdrawal();
 				loop = false;

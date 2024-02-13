@@ -88,9 +88,7 @@ public class Data {
 			while((line = reader.readLine()) != null) {
 				String[] tmp = line.split(",");
 				PointRefund pointRefund = new PointRefund(tmp[0], Integer.parseInt(tmp[1]),tmp[2]);
-
 //				pointRefundList.add(pointRefund);
-
 			}
 			
 			reader.close();
@@ -101,7 +99,7 @@ public class Data {
 	}
 	
 	/**
-	 * 포인트 환급 데이터를 로드하는 메서드입니다.
+	 * 즐겨찾기(bookmark) 데이터를 로드하는 메서드입니다.
 	 */
 	public static void loadBookmark() {
 		try {
@@ -126,7 +124,9 @@ public class Data {
 	
 	
 	
-	
+	/**
+	 * 리뷰삭제 요청 데이터를 로드하는 메서드입니다.
+	 */
 	public static void loadRequest() {
 		try {
 			BufferedReader reader
@@ -155,7 +155,9 @@ public class Data {
 		}
 	}
 	
-  
+	/**
+	 * 리뷰 작성 내역 데이터를 로드하는 메서드입니다.
+	 */
 	public static void loadReview() {
 		try {
 			BufferedReader reader = new BufferedReader(new FileReader(Data.REVIEW));
@@ -172,6 +174,9 @@ public class Data {
 		}
 	}
 	
+	/**
+	 * 음식점의 운영시간 데이터를 로드하는 메서드입니다.
+	 */
 	public static void loadOperatingHours() {
 		try {
 			BufferedReader reader
@@ -192,7 +197,10 @@ public class Data {
 			e.printStackTrace();
 		}
 	}
-	//
+	
+	/**
+	 * 일반회원의 포인트 사용내역 데이터를 로드하는 메서드입니다.
+	 */
 	public static void loadPointUsage() {
 		try {
 			BufferedReader reader
@@ -214,7 +222,9 @@ public class Data {
 		}
 	}
 
-	
+	/**
+	 * 자주묻는질문(faq) 데이터를 로드하는 메서드입니다.
+	 */
 	public static void loadFaq() {
 		try {
 			BufferedReader reader
@@ -226,7 +236,6 @@ public class Data {
 				
 				String[] tmp = line.split(",");
 				Faq faq = new Faq(Integer.parseInt(tmp[0]),tmp[1],tmp[2],tmp[3]);
-//				System.out.println(faq);
 				faqList.add(faq);
 			}
 			
@@ -237,6 +246,9 @@ public class Data {
 		}
 	}
 	
+	/**
+	 * blacklist 회원의 데이터를 로드하는 메서드입니다.
+	 */
 	public static void loadBlackList() {
 		try {
 			BufferedReader reader
@@ -259,6 +271,9 @@ public class Data {
 		
 	}
 	
+	/**
+	 * 1:1 문의내역 데이터를 로드하는 메서드입니다.
+	 */
 	public static void loadInquiry() {
 		try {
 			BufferedReader reader
@@ -282,6 +297,9 @@ public class Data {
 		
 	}
 	
+	/**
+	 * 업체회원이 등록한 blacklist 회원의 데이터를 저장하는 메서드입니다.
+	 */
 	public static void saveBlackList() {
 		try {
 			BufferedWriter writer = new BufferedWriter(new FileWriter(Data.BLACKLIST));
@@ -300,6 +318,9 @@ public class Data {
 		}		
 	}
 	
+	/**
+	 * 에약 내역을 로드하는 메서드입니다.
+	 */
 	public static void loadReservation() {
 		try {
 			BufferedReader reader
@@ -326,6 +347,10 @@ public class Data {
 			// TODO: handle exception
 		}
 	}
+	
+	/**
+	 * 에약 내역을 저장하는 메서드입니다.
+	 */
 	public static void saveReservation() {
 		try {
 			BufferedWriter writer = new BufferedWriter(new FileWriter(Data.RESERVATION));
@@ -357,6 +382,9 @@ public class Data {
 		
 	}
 
+	/**
+	 * 음식점별 메뉴 데이터를 로드하는 메서드입니다.
+	 */
 	public static void loadMenu() {
 		try {
 			BufferedReader reader = new BufferedReader(new FileReader(Data.MENU));
@@ -377,6 +405,10 @@ public class Data {
 			e.printStackTrace();
 		}
 	}
+	
+	/**
+	 * 수정된 메뉴 데이터를 저장하는 메서드입니다.
+	 */
 	public static void saveMenu() {
 		try {
 			BufferedWriter writer = new BufferedWriter(new FileWriter(Data.MENU));
@@ -395,7 +427,10 @@ public class Data {
 		}
 		
 	}
-	//프로그램을 시작할 때 file의 내용을 모두 메모리에 넣는 작업
+	
+	/**
+	 * 음식점 정보 데이터를 로드하는 메서드입니다.
+	 */
 	public static void loadStore() {
 		try {
 			BufferedReader reader
@@ -418,6 +453,9 @@ public class Data {
 		}
 	}
 	
+	/**
+	 * 음식점 정보 데이터를 저장하는 메서드입니다.
+	 */
 	public static void saveStore() {
 		try {
 			BufferedWriter writer = new BufferedWriter(new FileWriter(Data.STORE));
@@ -438,6 +476,9 @@ public class Data {
 	
 	}
 	
+	/**
+	 * 관리자 정보 데이터를 로드하는 메서드입니다.
+	 */
 	public static void loadAdmin() {
 		try {
 			BufferedReader reader
@@ -460,7 +501,9 @@ public class Data {
 		}
 		
 	}
-
+	/**
+	 * 일반회원 정보 데이터를 로드하는 메서드입니다.
+	 */
 	public static void loadUser() {
 		try {
 			BufferedReader reader
@@ -485,7 +528,10 @@ public class Data {
 		}
 		
 	}
-
+	
+	/**
+	 * 업체회원 정보 데이터를 로드하는 메서드입니다.
+	 */
 	public static void loadBusinessUser() {
 		try {
 			BufferedReader reader
@@ -511,7 +557,9 @@ public class Data {
 		
 	}
 	
-	//프로그램을 끝낼 때 메모리의 내용을 모두 file에 넣는 작업
+	/**
+	 * 일반회원 정보 데이터를 저장하는 메서드입니다.
+	 */
 	public static void saveUser() {
 		try {
 			BufferedWriter writer = new BufferedWriter(new FileWriter(Data.USER));
@@ -537,7 +585,9 @@ public class Data {
 		}
 
 	}
-
+	/**
+	 * 업체회원 정보 데이터를 저장하는 메서드입니다.
+	 */
 	public static void saveBusinessUser() {
 		try {
 			BufferedWriter writer = new BufferedWriter(new FileWriter(Data.BUSINESSUSER));
@@ -565,7 +615,9 @@ public class Data {
 		}
 		
 	}
-	
+	/**
+	 *음식점의 테이블 정보 데이터를 로드하는 메서드입니다.
+	 */
 	public static void loadTable() {
 		try {
 			BufferedReader reader = new BufferedReader(new FileReader(Data.TABLE));
@@ -586,7 +638,10 @@ public class Data {
 	}
 	
 	
-	
+	/**
+	 * 일반회원 데이터 경로를 문자열로 반환하는 메서드입니다.
+	 * @return Data.USER
+	 */
 	public static String getUser() {
 		return USER;
 	}

@@ -34,7 +34,6 @@ public class View {
 		
 	}
 	private static boolean isNotValid(String tmp) {
-		// TODO Auto-generated method stub
 		return false;
 	}
 }

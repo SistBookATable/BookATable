@@ -107,17 +107,17 @@ public class Store {
 		return count;
 	}
 
-//	public Store(String licenseNumber, String storeName, String storeTelNumber, String address, String menuCategory) {
-//		super();
-//		this.licenseNumber = licenseNumber;
-//		this.storeName = storeName;
-//		this.storeTelNumber = storeTelNumber;
-//		this.address = address;
-//		this.menuCategory = menuCategory;
-//
-//		this.score = score;
-//		this.distanceFrom = 0;
-//	}
+	public Store(String licenseNumber, String storeName, String storeTelNumber, String address, String menuCategory) {
+		super();
+		this.licenseNumber = licenseNumber;
+		this.storeName = storeName;
+		this.storeTelNumber = storeTelNumber;
+		this.address = address;
+		this.menuCategory = menuCategory;
+
+		this.score = score;
+		this.distanceFrom = 0;
+	}
 	
 	/**
 	 * 평점을 얻어오는 getScore 메서드

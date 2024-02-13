@@ -8,10 +8,15 @@ import com.test.java.model.Inquiry;
 import com.test.java.model.Member;
 import com.test.java.repository.Data;
 import com.test.java.view.FaqView;
-
+/**
+ * FaqController 클래스입니다.
+ * FaqView 객체를 호출합니다.
+ */
 public class FaqController {
 	
-
+	/**
+	 * FaqController 메서드입니다.
+	 */
 	public static void faqController() {
 		System.out.println("FaqController");
 		
@@ -22,6 +27,9 @@ public class FaqController {
 		
 	}
 	
+	/**
+	 * faqViewController 메서드입니다.
+	 */
 	private static void faqViewController() {
 		UserMyPageController userMyPage = new UserMyPageController();
 		
@@ -56,6 +64,11 @@ public class FaqController {
 		}
 	}
 	
+	/**
+	 * faqNumber에 따라 Faq를 찾는 메서드
+	 * @param faqNumber Faq 번호
+	 * @return 해당 번호의 Faq 객체, 없으면 null 반환
+	 */
 	private static Faq findByNum(int faqNumber) {
 		for(Faq f: Data.faqList) {
 			if(f.getFaqNumber()==faqNumber ) {

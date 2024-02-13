@@ -6,8 +6,14 @@ import com.test.java.repository.Data;
 import com.test.java.repository.MemberRepository;
 import com.test.java.view.PointManagementView;
 
+/**
+ * 포인트 관리 기능을 제어하는 Controller 클래스입니다.
+ */
 public class PointManagementController {
 	
+	/**
+	 * 포인트 관리 메뉴를 실행하는 메서드입니다.
+	 */
 	public void pointManagement() {
 		boolean loop = true;
 		

@@ -12,9 +12,15 @@ import com.test.java.repository.PointRepository;
 import com.test.java.view.PointGiftView;
 import com.test.java.view.View;
 
+/**
+ * 포인트를 선물하는 기능을 관리하는 Controller 클래스입니다.
+ */
+
 public class PointGiftController {
 
-	
+	/**
+	 * 포인트를 선물하는 기능의 메서드입니다.
+	 */
 	public void pointGift() {
 		
 		PointGiftView pointGiftView = new PointGiftView();

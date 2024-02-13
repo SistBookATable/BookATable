@@ -5,8 +5,17 @@ import java.util.Scanner;
 import com.test.java.model.Member;
 import com.test.java.model.User;
 
+/**
+ * 포인트 관리 메뉴를 출력하는 View 클래스입니다.
+ */
 public class PointManagementView {
 	
+	/**
+	 * 포인트 관리 메뉴를 출력하는 메서드입니다. 
+	 * @param name 사용자 이름
+	 * @param account 사용자 계좌번호 
+	 * @param balance 사용자 포인트잔액
+	 */
 	public static void showPointManagement(String name, String account, int balance) {
 		System.out.println();
 		System.out.println();
@@ -29,6 +38,10 @@ public class PointManagementView {
 		System.out.print("선택(번호) : ");
 	}
 	
+	/**
+	 * 사용자로부터 메뉴 선택을 입력받는 메서드
+	 * @return 사용자가 선택한 메뉴 번호
+	 */
 	public static int get() {
 		
 		Scanner scan = new Scanner(System.in);

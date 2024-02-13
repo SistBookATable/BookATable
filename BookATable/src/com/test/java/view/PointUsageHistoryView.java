@@ -8,11 +8,13 @@ import com.test.java.model.Review;
 import com.test.java.model.User;
 import com.test.java.repository.Data;
 
+/**
+ * 포인트 사용 내역 조회를 담당하는 View 클래스입니다.
+ */
+
 public class PointUsageHistoryView {
 	
 	public static ArrayList<PointUsage> pointList = new ArrayList<>();
-	
-	
 	
 	private int findBalanceById(String userId) {
 		
@@ -36,6 +38,10 @@ public class PointUsageHistoryView {
 		return null;
 	}
 
+	/**
+	 * 사용자의 포인트 사용 내역의 타이틀을 출력하는 메서드입니다.
+	 * @param name 사용자 이름
+	 */
 	public void showTitle(String name) {
 		
 		System.out.println("------------------------------------------------------------------------------------------");
@@ -54,6 +60,9 @@ public class PointUsageHistoryView {
 
 
 
+	/**
+	 * 포인트 사용내역이 없을 때 출력하는 메서드입니다.
+	 */
 	public void noHistoryMessage() {
 		System.out.println();
 		System.out.println("■           포인트 사용내역이 없습니다.		   ■");
@@ -63,6 +72,10 @@ public class PointUsageHistoryView {
 
 
 
+	/**
+	 * 포인트 사용 내역을 출력하는 메서드입니다. 
+	 * @param usageList 포인트 사용 내역 리스트
+	 */
 	public void showPointUsageHistoryView(ArrayList<PointUsage> usageList) {
 		
 		for(PointUsage p : usageList) {

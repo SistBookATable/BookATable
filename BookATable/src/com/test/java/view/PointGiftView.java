@@ -2,7 +2,16 @@ package com.test.java.view;
 
 import java.util.Scanner;
 
+/**
+ * 포인트 선물 관련 View 클래스입니다.
+ */
+
 public class PointGiftView {
+	
+	/**
+	 * 선물할 대상의 ID 입력받는 메서드입니다.
+	 * @return 사용자가 입력한 ID
+	 */
 	
 	public static String getId() {
 		
@@ -19,6 +28,10 @@ public class PointGiftView {
 		return tmp;	
 	}
 	
+	/**
+	 * 선물할 포인트 금액 입력받는 메서드입니다.
+	 * @return 사용자가 입력한 포인트 금액
+	 */
 	public static int getAmountGift() {
 		
 		Scanner scan = new Scanner(System.in);
@@ -35,6 +48,9 @@ public class PointGiftView {
 		return tmp;
 	}
 
+	/**
+	 * 존재하지 않는 회원일 경우 메시지를 출력하는 메서드입니다.
+	 */
 	public void withDrawal() {
 
 			System.out.println();
@@ -44,6 +60,9 @@ public class PointGiftView {
 			
 		}
 
+	/**
+	 * 현재 보유한 포인트 금액을 초과할 경우 메시지를 출력하는 메서드입니다.
+	 */
 	public void overAmount() {
 		
 		System.out.println();
@@ -54,6 +73,10 @@ public class PointGiftView {
 		
 	}
 
+	/**
+	 * 포인트 선물 완료 메시지를 출력하는 메서드입니다.
+	 * @param name 선물 받을 대상의 이름
+	 */
 	public void showPointGift(String name) {
 		
 		System.out.println();

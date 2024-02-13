@@ -12,9 +12,17 @@ import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+/**
+ * 포인트 충전을 관리하는 Controller 클래스입니다.
+ */
+
 public class PointChargingController {
 	
+	/**
+	 * 포인트 충전 기능을 수행하는 메서드입니다. 
+	 */
 	public void pointCharging() {
+		
 		
 		PointChargingView pointChargingView = new PointChargingView();		 
 		

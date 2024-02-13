@@ -4,7 +4,7 @@ import com.test.java.model.Menu;
 import com.test.java.repository.Data;
 import com.test.java.view.MenuRemoveView;
 
-import java.util.Scanner;
+
 
 public class MenuRemoveController {
 
@@ -37,12 +37,7 @@ public class MenuRemoveController {
             }
         } while (!foundMenu);
 
-        // TODO 데이터 세이브.
-        for (Menu n : Data.menuList) {
-            if (licenseNumber.equals(n.getLicenseNumber())) {
-                System.out.println(n.getMenuName());
-            }
-        }
+        
 
         MenuManagementController back = new MenuManagementController();
         back.showMenuManagement(licenseNumber);

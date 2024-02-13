@@ -1,8 +1,8 @@
 package com.test.java.controller;
 
 import com.test.java.view.MenuManagementView;
-import com.test.java.view.OperationalInfoManagementView;
 
+// 메뉴 관리 선택 컨트롤러
 public class MenuManagementController {
 
 	public void showMenuManagement(String licenseNumber) {

@@ -1,9 +1,9 @@
 package com.test.java.view;
 
 import java.util.Scanner;
-
+//메뉴 관리 화면 보여주는 class
 public class MenuManagementView {
-
+// 선택 화면 보여주는 메서드
 public void showChoice(){
 		
 		System.out.println("==========================================================================================");
@@ -17,7 +17,7 @@ public void showChoice(){
 		System.out.println();
 		System.out.print("선택(번호) : ");
 	}
-
+	// 숫자 입력 받는 메서드
 	public static int get() {
 		Scanner scan = new Scanner(System.in);
 		int temp = scan.nextInt();

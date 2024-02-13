@@ -1,7 +1,7 @@
 package com.test.java.model;
 
 /**
- * Inquiry 클래스는 사용자의 문의에 관련한 모델 클래스입니다.
+ * Inquiry 클래스는 1:1 사용자의 문의에 관련한 모델 클래스입니다.
  */
 public class Inquiry {
 	public static int COUNT = 1;

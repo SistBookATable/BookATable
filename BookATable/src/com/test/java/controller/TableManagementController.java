@@ -1,8 +1,8 @@
 package com.test.java.controller;
 
-import com.test.java.view.OperationalInfoManagementView;
-import com.test.java.view.TableManagementView;
 
+import com.test.java.view.TableManagementView;
+// 테이블 관리 선택 컨트롤러
 public class TableManagementController {
 	
 public void showTableManagement(String licenseNumber) {

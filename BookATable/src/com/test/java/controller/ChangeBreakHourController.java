@@ -4,18 +4,27 @@ import com.test.java.model.OperatingHours;
 import com.test.java.repository.Data;
 import com.test.java.view.ChangeBreakHourView;
 
+/**
+ * 업무 휴식 시간을 변경하는 컨트롤러 클래스입니다.
+ */
 public class ChangeBreakHourController {
 
+    /**
+     * 특정 라이선스 번호에 해당하는 업체의 휴식 시간을 변경합니다.
+     *
+     * @param licenseNumber 변경할 업체의 라이선스 번호
+     */
     public void changeBreakHour(String licenseNumber) {
         ChangeBreakHourView changeBreakHourView = new ChangeBreakHourView();
 
+        // 휴식 시간 변경 뷰를 인스턴스화하고 호출합니다.
         changeBreakHourView.changeBreakHour(licenseNumber);
 
         String changeDay;
         String changeBreakStart;
         String changeBreakEnd;
 
-        // 올바른 요일 값이 입력될 때까지 반복
+        // 올바른 요일이 입력될 때까지 반복
         while (true) {
             changeDay = ChangeBreakHourView.getDay();
             if (isValidDay(changeDay)) {
@@ -35,7 +44,7 @@ public class ChangeBreakHourController {
                 System.out.println("올바른 시간 형식을 입력하세요 (HHmm).");
             }
         }
-
+       
         for (OperatingHours o : Data.operatingHoursList) {
             if (licenseNumber.equals(o.getLicenseNumber()) && o.getDayOfWeek().equalsIgnoreCase(changeDay)) {
                 System.out.println(o.toString());
@@ -55,7 +64,12 @@ public class ChangeBreakHourController {
 
     }
 
-    // 올바른 요일 형식인지 확인하는 메서드
+    /**
+     * 주어진 문자열이 올바른 요일 형식인지 확인합니다.
+     *
+     * @param day 확인할 요일 문자열
+     * @return 올바른 요일 형식인 경우 true를 반환하고, 그렇지 않으면 false를 반환합니다.
+     */
     private boolean isValidDay(String day) {
         String[] validDays = {"월", "화", "수", "목", "금", "토", "일","공휴일"};
         for (String validDay : validDays) {
@@ -66,7 +80,12 @@ public class ChangeBreakHourController {
         return false;
     }
 
-    // 올바른 시간 형식인지 확인하는 메서드
+    /**
+     * 주어진 문자열이 올바른 시간 형식인지 확인합니다.
+     *
+     * @param time 확인할 시간 문자열
+     * @return 올바른 시간 형식인 경우 true를 반환하고, 그렇지 않으면 false를 반환합니다.
+     */
     private boolean isValidTime(String time) {
         return time.matches("^([01]?[0-9]|2[0-3])[0-5][0-9]$");
     }

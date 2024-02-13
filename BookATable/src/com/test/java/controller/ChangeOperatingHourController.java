@@ -4,20 +4,27 @@ import com.test.java.model.OperatingHours;
 import com.test.java.repository.Data;
 import com.test.java.view.ChangeOperatingHourView;
 
-import java.util.Scanner;
-
+/**
+ * 업무 운영 시간을 변경하는 컨트롤러 클래스입니다.
+ */
 public class ChangeOperatingHourController {
 
+    /**
+     * 특정 라이선스 번호에 해당하는 업체의 운영 시간을 변경합니다.
+     *
+     * @param licenseNumber 변경할 업체의 라이선스 번호
+     */
     public void changeOperatingHour(String licenseNumber) {
         ChangeOperatingHourView changeOperatingHourView = new ChangeOperatingHourView();
 
+        // 운영 시간 변경 뷰를 호출합니다.
         changeOperatingHourView.changeOperatingHour(licenseNumber);
 
         String changeDay;
         String changeOpenHour;
         String changeCloseHour;
 
-        // 올바른 요일 값이 입력될 때까지 반복
+        // 올바른 요일이 입력될 때까지 반복
         while (true) {
             changeDay = ChangeOperatingHourView.getDay();
             if (isValidDay(changeDay)) {
@@ -57,7 +64,12 @@ public class ChangeOperatingHourController {
 
     }
 
-    // 올바른 요일 형식인지 확인하는 메서드
+    /**
+     * 주어진 문자열이 올바른 요일 형식인지 확인합니다.
+     *
+     * @param day 확인할 요일 문자열
+     * @return 올바른 요일 형식인 경우 true를 반환하고, 그렇지 않으면 false를 반환합니다.
+     */
     private boolean isValidDay(String day) {
         String[] validDays = {"월", "화", "수", "목", "금", "토", "일"};
         for (String validDay : validDays) {
@@ -68,7 +80,12 @@ public class ChangeOperatingHourController {
         return false;
     }
 
-    // 올바른 시간 형식인지 확인하는 메서드
+    /**
+     * 주어진 문자열이 올바른 시간 형식인지 확인합니다.
+     *
+     * @param time 확인할 시간 문자열
+     * @return 올바른 시간 형식인 경우 true를 반환하고, 그렇지 않으면 false를 반환합니다.
+     */
     private boolean isValidTime(String time) {
         return time.matches("^([01]?[0-9]|2[0-3])[0-5][0-9]$");
     }

@@ -8,9 +8,9 @@ import com.test.java.model.Menu;
 import com.test.java.model.OperatingHours;
 import com.test.java.model.Store;
 import com.test.java.repository.Data;
-
+//운영 시간 관리 화면 출력하는 class
 public class OperatingHourView {
-	
+// 해당 음식점의 운영 시간 보여주는 메서드
 public void showOperatingHour(String licenseNumber) {
 		
 		 Map<Integer, Menu> menuMap = new HashMap<>();
@@ -35,7 +35,7 @@ public void showOperatingHour(String licenseNumber) {
 		
 		
 	}
-
+// 선택 입력 받는 메서드
 public static int get() {
 	Scanner scan = new Scanner(System.in);
 	System.out.println("1. 영업 시간 관리");

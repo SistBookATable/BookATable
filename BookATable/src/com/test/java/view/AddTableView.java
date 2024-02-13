@@ -1,9 +1,9 @@
 package com.test.java.view;
 
 import java.util.Scanner;
-
+//테이블 등록 화면을 보여주는 class
 public class AddTableView {
-    
+    // 테이블 정원을 입력받는 메서드
     public static int getTableCapacity() {
         Scanner scan = new Scanner(System.in);
         int temp = 0;
@@ -23,9 +23,10 @@ public class AddTableView {
                 scan.next(); // discard invalid input
             }
         }
+        scan.close();
         return temp;
     }
-    
+    // 테이블 개수를 입력받는 메서드
     public static int getTableNum() {
         Scanner scan = new Scanner(System.in);
         int temp = 0;
@@ -45,6 +46,7 @@ public class AddTableView {
                 scan.next(); // discard invalid input
             }
         }
+        scan.close();
         return temp;
     }
 }

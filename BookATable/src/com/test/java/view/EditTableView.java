@@ -1,9 +1,9 @@
 package com.test.java.view;
 
 import java.util.Scanner;
-
+//테이블 수정 화면 보여주는 class
 public class EditTableView {
-    
+    //수정할 테이블 사이즈 입력받는 메서드
     public static int getTableCapacity() {
     	Scanner scan = new Scanner(System.in);
         int temp = 0;
@@ -23,9 +23,10 @@ public class EditTableView {
                 scan.next(); // discard invalid input
             }
         }
+        scan.close();
         return temp;
     }
-    
+    //수정할 테이블 개수 입력 받는 메서드
     public static int getTableNum() {
         Scanner scan = new Scanner(System.in);
         int temp = 0;
@@ -41,6 +42,7 @@ public class EditTableView {
                 scan.next(); // discard invalid input
             }
         }
+        scan.close();
         return temp;
     }
 }

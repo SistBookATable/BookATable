@@ -16,19 +16,24 @@ import com.test.java.view.StoreView;
  * 음식점을 검색하는 기능을 제공하는 StoreController 클래스
  */
 public class StoreController {
-
+	
+	/**
+	 * StoreController에 필요한 멤버 변수 선언
+	 */
     private StoreView storeView;
     private Store store;
-    private ArrayList<Store> bookmarkedStores; // 즐겨찾기 목록
+    private ArrayList<Store> bookmarkedStores; 
     
     /**
-     * StoreController의 생성자
+     * StoreController의 생성자, 각 객체들을 초기화
      */
     public StoreController() {
         this.storeView = new StoreView();
         this.bookmarkedStores = new ArrayList<>();
     }
-
+    /**
+     * 음식점과 리뷰를 저장하는 ArrayList
+     */
     ArrayList<Store> searched = new ArrayList<>();
     ArrayList<Review> reviewCount = new ArrayList<>();
     
@@ -165,8 +170,11 @@ public class StoreController {
         }
         return true;
     }
-
-    private void bookmarkStore(ArrayList<Store> searched) {	// 즐겨찾기 등록, 넘버링은 1부터 시작하므로 get으로 가져올 때 -1을 뺌
+    /**
+     * 즐겨찾기 등록, 넘버링은 1부터 시작하므로 get으로 가져올 때 -1을 뺌
+     * @param searched
+     */
+    private void bookmarkStore(ArrayList<Store> searched) {
         Scanner scanner = new Scanner(System.in);
         storeView.show(searched);
         System.out.print("즐겨찾기에 추가할 음식점 번호를 선택하세요: ");
@@ -177,7 +185,11 @@ public class StoreController {
         System.out.println(store.getStoreName() + "이(가) 즐겨찾기에 추가되었습니다.");
     }
     
-    private void removeBookmark(ArrayList<Store> bookmarkedStores) { // 즐겨찾기 삭제
+    /**
+     * 즐겨찾기 삭제 메서드
+     * @param bookmarkedStores
+     */
+    private void removeBookmark(ArrayList<Store> bookmarkedStores) {
         if (bookmarkedStores.isEmpty()) {
             System.out.println("현재 즐겨찾기된 음식점이 없습니다.");
             return;
@@ -199,7 +211,11 @@ public class StoreController {
         System.out.println(store.getStoreName() + "의 즐겨찾기가 삭제되었습니다.");
     }
     
-    public void showBookmarkedStores(ArrayList<Store> searched) { // 즐겨찾기 조회
+    /**
+     * 즐겨찾기 조회 메서드
+     * @param searched
+     */
+    public void showBookmarkedStores(ArrayList<Store> searched) {
         if (bookmarkedStores.isEmpty()) {
             System.out.println("즐겨찾는 음식점이 없습니다.");
         } else {

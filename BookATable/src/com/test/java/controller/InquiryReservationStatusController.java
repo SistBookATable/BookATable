@@ -10,15 +10,18 @@ import com.test.java.view.InquiryReservationStatusView;
 import com.test.java.view.View;
 
 /**
- * 
+ * 사용자의 예약 현황을 조회하는 컨트롤러 클래스입니다.
  */
 public class InquiryReservationStatusController {
-
+	
+	/**
+     * 사용자의 예약 현황을 조회하는 메서드입니다.
+     */
 	public void inquiryReservationStatus() {
 
 		boolean loop = true;
 		while (loop) {
-
+			
 			ArrayList<Reservation> userReservationList = findAllReservation(Member.id);// 사용자의 모든 예약 정보를 가져옴
 
 			String userName = findNameById(Member.id);// 사용자 이름을 아이디로부터 찾음

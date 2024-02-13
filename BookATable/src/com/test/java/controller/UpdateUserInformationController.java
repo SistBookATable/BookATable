@@ -6,8 +6,14 @@ import com.test.java.repository.Validation;
 import com.test.java.view.UpdateUserInformationView;
 import com.test.java.view.View;
 
+/**
+ * UpdateUserInformationController는 사용자 정보 수정에 관련된 기능을 담당하는 클래스입니다.
+ */
 public class UpdateUserInformationController {
 
+	/**
+     * 사용자 정보 수정 화면을 제어하는 메서드입니다.
+     */
 	public void updateUserInformation() {
 		
 		boolean loop = true;

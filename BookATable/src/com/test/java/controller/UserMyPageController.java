@@ -4,13 +4,21 @@ import com.test.java.model.Member;
 import com.test.java.repository.Data;
 import com.test.java.view.UserMyPageView;
 
+/**
+ * 사용자 마이페이지를 관리하는 컨트롤러 클래스입니다.
+ */
 public class UserMyPageController {
-
+	
+	/**
+     * 사용자 마이페이지를 표시하고 사용자의 선택에 따라 다양한 기능을 수행합니다.
+     */
 	public void userMyPage() {
 		boolean loop = true;
 		while (loop) {
-			UserMyPageView.showUserMyPage();
-			int choice = UserMyPageView.get();
+			UserMyPageView.showUserMyPage();	// 사용자 마이페이지를 보여주는 메서드 호출
+			int choice = UserMyPageView.get();	// 사용자의 선택을 입력받는 메서드 호출
+
+			// 회원 탈퇴 여부를 확인하는 메서드를 호출하고 결과에 따라 loop 변수 설정
 			if (!findSignOutById(Member.id).equals("null")) {
 				loop = true;
 			} else {
@@ -59,7 +67,12 @@ public class UserMyPageController {
 		}
 
 	}
-
+	
+	 /**
+     * 주어진 아이디에 해당하는 회원의 탈퇴 여부를 확인합니다.
+     * @param id 확인하려는 회원의 아이디
+     * @return 회원의 탈퇴 여부를 나타내는 문자열. 탈퇴한 경우 "null"을 반환합니다.
+     */
 	private String findSignOutById(String id) {
 		for(Member u : Data.memberList) {
 			if (u.getId().equals(id)) {

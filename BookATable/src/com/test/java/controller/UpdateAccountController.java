@@ -7,7 +7,14 @@ import com.test.java.view.UpdateAccountView;
 import com.test.java.view.UpdatePwView;
 import com.test.java.view.View;
 
+/**
+ * UpdateAccountController는 사용자의 계좌 정보를 변경하는 클래스입니다.
+ */
 public class UpdateAccountController {
+	
+	/**
+     * 사용자의 계좌 정보를 변경하는 메서드입니다.
+     */
 	public void updateAccount() {
 
 		boolean loop = true;
@@ -36,10 +43,22 @@ public class UpdateAccountController {
 		}//while(loop)
 	}
 
+	/**
+     * 입력된 계좌번호의 유효성을 검사하는 메서드입니다.
+     *
+     * @param toUpdateAccount 변경하려는 계좌번호
+     * @return 계좌번호의 유효성 여부
+     */
 	private boolean isValidOfAccount(String toUpdateAccount) {
 		return false;
 	}
 
+	/**
+     * 계좌번호를 입력된 계좌번호로 변경하는 메서드입니다.
+     *
+     * @param id              사용자 ID
+     * @param toUpdateAccount 변경하려는 계좌번호
+     */
 	private void updateAccountToInputAccount(String id, String toUpdateAccount) {
 		for (Member u : Data.memberList) {
 			if (u.getId().equals(id)) {

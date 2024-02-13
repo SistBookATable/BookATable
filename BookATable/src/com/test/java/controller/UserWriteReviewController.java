@@ -13,8 +13,15 @@ import com.test.java.repository.StoreRepository;
 import com.test.java.view.UserWriteReviewView;
 import com.test.java.view.View;
 
+/**
+ * UserWriteReviewController는 사용자의 리뷰 작성에 관련된 기능을 처리하는 클래스입니다.
+ */
 public class UserWriteReviewController {
-
+	
+	/**
+     * 사용자에게 리뷰 작성 기회를 제공하고 작성된 리뷰를 저장하는 메서드입니다.
+     * @param reservations 사용자의 예약 목록
+     */
 	public void userWriteReview(ArrayList<Reservation> reservations) {
 		ArrayList<Reservation> noReviewReservation = findAllNoReviewReservation(reservations, Member.id);
 
@@ -32,11 +39,11 @@ public class UserWriteReviewController {
 		String reviewState = findReviewState(Member.id);
 
 		for (Reservation r : noReviewReservation) {
-			UserWriteReviewView.showOneReserVation(r,
-					StoreRepository.findOneByLicenseNumber(r.getLicenseNumber()).getStoreName());
+			UserWriteReviewView.showOneReserVation(r,storeName, cancelState, noShowState, reviewState);
+			StoreRepository.findOneByLicenseNumber(r.getLicenseNumber()).getStoreName();
 		}
 
-		int reservationNumber = UserWriteReviewView.getStoreName();
+		int reservationNumber = UserWriteReviewView.getReservationNumber();
 
 		Reservation selected = isValid(reservationNumber, reservations);
 
@@ -51,7 +58,7 @@ public class UserWriteReviewController {
 		}
 
 		String lisenceNumber = selected.getLicenseNumber();
-		double score = UserWriteReviewView.getScore();
+		double score = UserWriteReviewView.getReviewScore();
 		String reviewContent = UserWriteReviewView.getReviewContent();
 
 		Calendar cur = Calendar.getInstance();
@@ -59,10 +66,37 @@ public class UserWriteReviewController {
 
 		ReviewRepository.add(0, Member.id, lisenceNumber, today, reviewContent, score, reservationNumber);
 
-		System.out.println("리뷰 작성이 완료되었습니다.");
+		UserWriteReviewView.showCompleteMessage();
 
 	}
+	
+	 /**
+     * 사용자가 입력한 예약 번호가 유효한지 확인하는 메서드입니다.
+     * @param reservationNumber 사용자가 입력한 예약 번호
+     * @param reservations 사용자의 예약 목록
+     * @return 선택된 예약 정보
+     */
+	private String findReviewState(String id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 
+	private String findCancelState(String id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	private String findNoShowState(String id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	private String findStoreName(String id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
 	private Reservation isValid(int reservationNumber, ArrayList<Reservation> reservations) {
 
 		for (Reservation r : reservations) {
@@ -76,13 +110,13 @@ public class UserWriteReviewController {
 			//noReviewReservation 추가
 			ArrayList<Reservation> noReviewReservation = findAllNoReviewReservation(reservations, Member.id);
 			ArrayList<Integer> stringArr = new ArrayList<>();
-			for (Reservation r : noReviewReservation) {
+			for (Reservation rv : noReviewReservation) {
 				String storeName = StoreRepository.findNameOneByLicenseNumber(r.getLicenseNumber());
-				stringArr.add(r.getReservationNumber());
-				String cancelState = r.getState().equals("취소") == true ? "O" : "X";
-				String noShowState = r.getState().equals("노쇼") == true ? "O" : "X";
-				String reviewState = ReviewRepository.findOneById(Member.id, r.getLicenseNumber()) == true ? "O" : "X";
-				UserWriteReviewView.showOneReserVation(r, storeName, cancelState, noShowState, reviewState);
+				stringArr.add(rv.getReservationNumber());
+				String cancelState = rv.getState().equals("취소") == true ? "O" : "X";
+				String noShowState = rv.getState().equals("노쇼") == true ? "O" : "X";
+				String reviewState = ReviewRepository.findOneById(Member.id, rv.getLicenseNumber()) == true ? "O" : "X";
+				UserWriteReviewView.showOneReserVation(rv, storeName, cancelState, noShowState, reviewState);
 			}
 
 			int inputReservationNumber = UserWriteReviewView.getReservationNumber();
@@ -92,7 +126,7 @@ public class UserWriteReviewController {
 				addReview(reviewContent, inputReservationNumber, score);
 				System.out.println("리뷰 작성이 완료되었습니다.");
 				View.pause();
-				loop = false;
+//				loop = false;
 			}
 		}
 		return null;
@@ -126,6 +160,7 @@ public class UserWriteReviewController {
 		return null;
 	}
 
+	
 	private ArrayList<Reservation> findAllNoReviewReservation(ArrayList<Reservation> reservations, String id) {
 		ArrayList<Reservation> tmp = new ArrayList<Reservation>();
 

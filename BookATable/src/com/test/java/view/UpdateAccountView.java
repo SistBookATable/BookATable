@@ -2,8 +2,16 @@ package com.test.java.view;
 
 import java.util.Scanner;
 
+/**
+ * UpdateAccountView는 사용자의 출금계좌 정보 변경과 관련된 뷰를 담당하는 클래스입니다.
+ */
 public class UpdateAccountView {
 
+	 /**
+     * 사용자가 변경하려는 은행을 선택하는 메서드입니다.
+     *
+     * @return 선택한 은행
+     */
 	public static String getBank() {
 		Scanner scan = new Scanner(System.in);
 		String tmp = "";
@@ -24,6 +32,11 @@ public class UpdateAccountView {
 		return tmp;
 	}
 
+	/**
+     * 사용자로부터 새로운 계좌번호를 입력받는 메서드입니다.
+     *
+     * @return 새로운 계좌번호
+     */
 	public static String getAccount() {
 		System.out.print("새 계좌번호 입력: ");
 		Scanner scan = new Scanner(System.in);
@@ -31,10 +44,20 @@ public class UpdateAccountView {
 		return temp;
 	}
 
+	 /**
+     * 변경하려는 출금계좌가 맞는지 확인하는 메서드입니다.
+     *
+     * @param toUpdateAccount 변경하려는 출금계좌번호
+     */
 	public static void showUpdateAccount(String toUpdateAccount) {
 		System.out.printf("변경할 출금계좌가 [%s]가 맞습니까?\n", toUpdateAccount);
 	}
 
+	 /**
+     * 사용자가 변경을 계속할지 여부를 입력받는 메서드입니다.
+     *
+     * @return 사용자의 입력 (Y/N)
+     */
 	public static String getAnswer() {
 		System.out.print("입력 (Y/N): ");
 		Scanner scan = new Scanner(System.in);

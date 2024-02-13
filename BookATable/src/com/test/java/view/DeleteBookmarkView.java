@@ -35,7 +35,7 @@ public class DeleteBookmarkView {
 	 */
 	public void deleteFail() {
 		System.out.println();
-		System.out.println("■           해당 상호명을 즐겨찾기에서 찾을 수 없습니다.			   ■");
+		System.out.println("■        해당 상호명을 즐겨찾기에서 찾을 수 없습니다.	  ■");
 		System.out.println();
 		View.pause();
 

@@ -11,13 +11,13 @@ public class FindAccountView {
 		System.out.println();
 		System.out.println();
 		System.out.println("┌───────────────────────────────────────────────────────┐");
-		System.out.println("|              계정 찾기 - 찾으실 계정 정보를 선택하세요			■");
+		System.out.println("|      	 	계정 찾기 - 찾으실 계정 정보를 선택하세요		|");
 		System.out.println("└───────────────────────────────────────────────────────┘");
 		System.out.println("==========================================================================================");
 		System.out.println();
-		System.out.println("■           1. ID 찾기              ■");
-		System.out.println("■           2. PW 찾기              ■");
-		System.out.println("■           0. 돌아가기              ■");
+		System.out.println("■           1. ID 찾기      \t■");
+		System.out.println("■           2. PW 찾기      \t■");
+		System.out.println("■           0. 돌아가기      \t■");
 		System.out.println();
 		System.out.println("==========================================================================================");
 		System.out.println();
@@ -96,7 +96,7 @@ public class FindAccountView {
 		System.out.println();
 		System.out.println();
 		System.out.println("┌───────────────────────────────────────────────────────┐");
-		System.out.println("|         ID 찾기 - 이름/대표자명 , 전화번호를 입력해주세요         ■");
+		System.out.println("|      	 ID 찾기 - 이름/대표자명 , 전화번호를 입력해주세요        	|");
 		System.out.println("└───────────────────────────────────────────────────────┘");
 		
 	}
@@ -105,7 +105,7 @@ public class FindAccountView {
 		System.out.println();
 		System.out.println();
 		System.out.println("┌───────────────────────────────────────────────────────┐");
-		System.out.println("|             PW 찾기 - ID , 전화번호를 입력해주세요            ■");
+		System.out.println("|             PW 찾기 - ID , 전화번호를 입력해주세요           	|");
 		System.out.println("└───────────────────────────────────────────────────────┘");
 		
 	}

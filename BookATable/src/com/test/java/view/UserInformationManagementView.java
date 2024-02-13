@@ -8,7 +8,7 @@ public class UserInformationManagementView {
 		System.out.println();
 		System.out.println();
 		System.out.println("┌───────────────────────────────────────────────────────┐");
-		System.out.printf("	|		%s 회원님	개인정보 조회			<\n", userName);
+		System.out.printf("|		%s 회원님	개인정보 조회		|\n", userName);
 		System.out.println("└───────────────────────────────────────────────────────┘");
 		System.out.println();
 		System.out.println();
@@ -30,8 +30,8 @@ public class UserInformationManagementView {
 	public static void showSelectBox() {
 		System.out.println("==========================================================================================");
 		System.out.println();
-		System.out.println("■           1. 개인정보 수정		   ■");
-		System.out.println("■           0. 이전 화면			   ■");
+		System.out.println("■           1. 개인정보 수정	  ■");
+		System.out.println("■           0. 이전 화면		  ■");
 		System.out.println();
 		System.out.println("==========================================================================================");
 		System.out.println();

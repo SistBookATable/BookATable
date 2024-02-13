@@ -9,7 +9,7 @@ public class BusinessUserMyPageView {
 		System.out.println();
 		System.out.println();
 		System.out.println("┌───────────────────────────────────────────────────────┐");
-		System.out.println("|                    업체 회원 - MyPage                   <");
+		System.out.println("|                    업체 회원 - MyPage                 	|");
 		System.out.println("└───────────────────────────────────────────────────────┘");
 	}
 

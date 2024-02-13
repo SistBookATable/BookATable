@@ -1,10 +1,14 @@
 package com.test.java.model;
 
-import com.test.java.controller.FindByNameController;
 import com.test.java.repository.Data;
 
-public class Store {
+/**
+ * 매장의 정보를 가지고 있는 Store 클래스
+ * 
+ */
 
+public class Store {
+	
 	private String licenseNumber;
 	private String storeName;
 	private String storeTelNumber;
@@ -13,36 +17,10 @@ public class Store {
 	private double score;
 	private int distanceFrom;
 	private int reviewCount;
-
 	private String menuName;
-
 	private String tablecount;
 	private boolean bookmark;
 	private double averageScore;
-
-	/*
-	 * public Store(String licenseNumber, String storeName, String storeTelNumber,
-	 * String menuCategory, String address, double averageScore, int distanceFrom) {
-	 * 
-	 * /* public Store(String licenseNumber, String storeName, String
-	 * storeTelNumber, String address) { super(); this.licenseNumber =
-	 * licenseNumber; this.storeName = storeName; this.storeTelNumber =
-	 * storeTelNumber; this.address = address;
-	 * 
-	 * // TODO distanceFrom 주소 사용해서 구하기 this.score = 0 ; this.menuCategory = null;
-	 * this.distanceFrom = 0;
-	 * 
-	 * }
-	 * 
-	 * public Store(String licenseNumber, String storeName, String storeTelNumber,
-	 * String address, String menuCategory) { super(); this.licenseNumber =
-	 * licenseNumber; this.storeName = storeName; this.storeTelNumber =
-	 * storeTelNumber; this.address = address; this.menuCategory = menuCategory;
-	 * 
-	 * // TODO distanceFrom 주소 사용해서 구하기 this.score = 0; this.distanceFrom = 0; }
-	 * 
-	 * }
-	 */
 
 	public String getAddress() {
 		return address;
@@ -55,7 +33,19 @@ public class Store {
 	public double getAverageScore() {
 		return averageScore;
 	}
-
+	
+	/**
+	 * 
+	 * @param licenseNumber		사업자번호
+	 * @param storeName			매장 이름
+	 * @param storeTelNumber	매장 전화번호
+	 * @param menuCategory		메뉴 유형
+	 * @param address			주소
+	 * @param score				평점
+	 * @param reviewCount		리뷰 갯수
+	 * 
+	 * Store 클래스의 생성자
+	 */
 	public Store(String licenseNumber, String storeName, String storeTelNumber, String menuCategory, String address,
 			double score, int reviewCount) {
 		this.licenseNumber = licenseNumber;
@@ -66,11 +56,7 @@ public class Store {
 		this.score = score;
 		this.distanceFrom = distanceFrom;
 		this.reviewCount = reviewCount;
-		// this.distanceFrom = distanceFrom;
 	}
-
-//      return sum/count;
-//   }
 
 	public String getStoreName() {
 		return storeName;
@@ -105,7 +91,12 @@ public class Store {
 	public boolean checkName(String storeName) {
 		return true;
 	}
-
+	
+	/**
+	 * Data클래스의 reviewList에 들어있는 리뷰들을 모두 반복하여 저장하고
+	 * Review 객체에 있는 r 변수의 사업자번호와 현재 Store 클래스의 사업자 번호가 같으면 리뷰 갯수를 1 증가 시킴
+	 * @return count
+	 */
 	public int getReviewCount() {
 		int count = 0;
 		for(Review r : Data.reviewList) {
@@ -124,11 +115,17 @@ public class Store {
 		this.address = address;
 		this.menuCategory = menuCategory;
 
-		// TODO distanceFrom 주소 사용해서 구하기
 		this.score = score;
 		this.distanceFrom = 0;
 	}
-
+	
+	/**
+	 * 평점을 얻어오는 getScore 메서드
+	 * getReviewCount 메서드와 로직 동일
+	 * 리뷰 갯수가 0일때 점수를 매길 수 없으므로 
+	 * @return 0.0 반환
+	 * 리뷰가 있으면 누적변수 sum과 count 변수의 몫을 반환
+	 */
 	public double getScore() {
 		double sum = 0;
 		int count = 0;

@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import com.test.java.model.Request;
 import com.test.java.model.Review;
 import com.test.java.repository.Data;
-import com.test.java.repository.ReqeustRepository;
+import com.test.java.repository.RequestRepository;
 import com.test.java.view.RequestView;
 
 public class RequestController {
@@ -16,7 +16,7 @@ public class RequestController {
 		boolean loop = true;
 		while(loop) {
 			
-			ArrayList<Request> requestList = ReqeustRepository.findAll();
+			ArrayList<Request> requestList = RequestRepository.findAll();
 			if(requestList.isEmpty()) {
 				requestView.hasNoHistory();
 				return;

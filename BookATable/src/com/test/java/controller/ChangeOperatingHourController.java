@@ -17,8 +17,6 @@ public class ChangeOperatingHourController {
     public void changeOperatingHour(String licenseNumber) {
         ChangeOperatingHourView changeOperatingHourView = new ChangeOperatingHourView();
 
-        // 운영 시간 변경 뷰를 호출합니다.
-        changeOperatingHourView.changeOperatingHour(licenseNumber);
 
         String changeDay;
         String changeOpenHour;

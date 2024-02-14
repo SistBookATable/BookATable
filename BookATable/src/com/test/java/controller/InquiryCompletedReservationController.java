@@ -17,7 +17,6 @@ public class InquiryCompletedReservationController {
 	/**
      * 완료된 예약을 조회하는 메서드입니다.
      * 또한, 사용자의 입력에 따라서 리뷰 작성 컨트롤러를 호출하여 리뷰작성 화면으로 이동할 수 있습니다.
-     * 
      */
 	public void inquiryCompletedReservation() {
 		boolean loop = true;

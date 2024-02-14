@@ -6,8 +6,14 @@ import com.test.java.repository.Data;
 import com.test.java.repository.Validation;
 import com.test.java.view.UpdatePwView;
 
+/**
+ * UpdatePwController는 사용자의 비밀번호를 변경하는 기능을 담당하는 클래스입니다.
+ */
 public class UpdatePwController {
 
+	/**
+     * 사용자의 비밀번호를 변경하는 메서드입니다.
+     */
 	public void updatePw() {
 		
 		boolean loop = true;
@@ -26,6 +32,12 @@ public class UpdatePwController {
 		}
 	}
 
+	 /**
+     * 사용자의 비밀번호를 입력한 비밀번호로 변경하는 메서드입니다.
+     *
+     * @param id          사용자 ID
+     * @param toUpdatePw 변경할 비밀번호
+     */
 	private void updatePwToInputPW(String id, String toUpdatePw) {
 		for(Member u : Data.memberList) {
 			if (u.getId().equals(id)) {

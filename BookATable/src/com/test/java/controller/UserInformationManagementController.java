@@ -8,8 +8,14 @@ import com.test.java.repository.Data;
 import com.test.java.repository.MemberRepository;
 import com.test.java.view.UserInformationManagementView;
 
+/**
+ * UserInformationManagementController는 사용자 정보 관리와 관련된 화면 출력 및 기능을 담당하는 클래스입니다.
+ */
 public class UserInformationManagementController {
 
+	/**
+     * 사용자 정보를 관리하는 메서드입니다.
+     */
 	public void userInformationManagement() {
 
 		boolean loop = true;
@@ -31,6 +37,7 @@ public class UserInformationManagementController {
 
 			switch (choice) {
 			case 1:
+				 // 사용자 정보 수정 컨트롤러 호출
 				UpdateUserInformationController updateUserInformationController = new UpdateUserInformationController();
 				updateUserInformationController.updateUserInformation();
 				break;

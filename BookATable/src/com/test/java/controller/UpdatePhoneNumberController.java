@@ -10,8 +10,14 @@ import com.test.java.repository.Validation;
 import com.test.java.view.UpdatePhoneNumberView;
 import com.test.java.view.View;
 
+/**
+ * UpdatePhoneNumberController는 사용자의 전화번호 변경과 관련된 작업을 처리하는 클래스입니다.
+ */
 public class UpdatePhoneNumberController {
 
+	/**
+     * 사용자의 전화번호를 변경하는 메서드입니다.
+     */
 	public void updatePhoneNumber() {
 		boolean loop = true;
 		while (loop) {
@@ -39,6 +45,12 @@ public class UpdatePhoneNumberController {
 
 	}
 
+	/**
+    * 사용자의 전화번호를 입력받은 전화번호로 변경하는 메서드입니다.
+    *
+    * @param id                  사용자 ID
+    * @param toUpdatePhoneNumber 변경할 전화번호
+    */
 	private void updatePhoneNumberToInputPhoneNumber(String id, String toUpdatePhoneNumber) {
 		for (Member u : Data.memberList) {
 			if (u.getId().equals(id)) {

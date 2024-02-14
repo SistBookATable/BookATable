@@ -18,8 +18,6 @@ public class FaqController {
 	 * FaqController 메서드입니다.
 	 */
 	public static void faqController() {
-		System.out.println("FaqController");
-		
 		FaqView faqview = new FaqView();
 		faqview.showFaq();
 		FaqController.faqViewController();

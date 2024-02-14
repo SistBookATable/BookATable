@@ -18,7 +18,7 @@ public class BusinessUserMyPageController {
 			switch(choice) {
 			case 1:
 				ReservationController reservationController = new ReservationController();
-				reservationController.BusinessUserReservationManagement();
+				reservationController.businessUserReservationManagement();
 				break;
 			case 2:
 				RevenueManagementController revenueManagementController = new RevenueManagementController();

@@ -58,6 +58,11 @@ public class DeleteBookmarkController {
         }
     }
     
+	/**
+	 * 사용자 ID로 즐겨찾기 목록을 조회하는 메서드입니다. 
+	 * @param id 사용자 ID
+	 * @return 사용자 ID에 해당하는 즐겨찾기 목록을 반환합니다. 
+	 */
     private ArrayList<Bookmark> findAllBook(String id) {
         ArrayList<Bookmark> tmp = new ArrayList<>();
         for (Bookmark m : Data.bookmarkList) {
@@ -68,7 +73,11 @@ public class DeleteBookmarkController {
         return tmp;
     }
 
-    // 사업자 등록 번호로 상호명 찾기
+    /**
+     * 사업자등록번호로 상호명을 조회하는 메서드입니다. 
+     * @param licenseNumber 사업자등록번호
+     * @return 사업자등록번호에 해당하는 상호명을 반환합니다. 없는 경우, null을 반환합니다. 
+     */
     private String findStoreNameByLicense(String licenseNumber) {
         for (Store s : Data.storeList) {
             if (s.getLicenseNumber().equals(licenseNumber)) {

@@ -36,7 +36,11 @@ public class WrittenReviewHistoryController {
 	}
 
 
-	// 이름
+	/**
+	 * 사용자 ID로 이름을 찾는 메서드입니다.
+	 * @param id 사용자 ID
+	 * @return 사용자 ID에 해당하는 이름을 반환합니다. 없을 경우, null을 반환합니다.
+	 */
 	private String findNameById(String id) {
 		
 		String name = "";

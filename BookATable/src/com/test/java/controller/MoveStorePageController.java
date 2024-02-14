@@ -52,6 +52,11 @@ public class MoveStorePageController {
 
 	}
 
+	/**
+	 * 사업자번호를 기반으로 메뉴 정보를 조회하는 메서드입니다. 
+	 * @param licenseNumber 사업자번호
+	 * @return 사업자번호에 해당하는 메뉴를 반환합니다. 없는 경우, null을 반환합니다.
+	 */
 	private String findMenu(String licenseNumber) {
 		for (Menu menu : Data.menuList) {
 			if (menu.getLicenseNumber().equals(licenseNumber)) {
@@ -61,6 +66,11 @@ public class MoveStorePageController {
 		return null;
 	}
 
+	/**
+	 * 사업자번호를 기반으로 테이블 정보를 조회하는 메서드입니다. 
+	 * @param licenseNumber 사업자번호 
+	 * @return 사업자번호에 해당하는 테이블을 반환합니다. 없는 경우, 0을 반환합니다. 
+	 */
 	private int findTable(String licenseNumber) {
 		for (Table table : Data.tableList) {
 			if (table.getLicenseNumber().equals(licenseNumber)) {

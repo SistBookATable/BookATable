@@ -60,6 +60,11 @@ public class BookmarkHistoryController {
 		}
 	}
 
+	/**
+	 * 사용자 ID로 즐겨찾기 목록을 조회하는 메서드입니다. 
+	 * @param id 사용자 ID
+	 * @return 사용자ID에 해당하는 즐겨찾기 목록을 반환합니다. 
+	 */
 	private ArrayList<Bookmark> findAllBook(String id) {
 
 		ArrayList<Bookmark> tmp = new ArrayList<>();
@@ -71,7 +76,11 @@ public class BookmarkHistoryController {
 		return tmp;
 	}
 
-	// 메뉴
+	/**
+	 * 사업자등록번호로 메뉴를 조회하는 메서드입니다. 
+	 * @param licenseNumber 사업자등록번호
+	 * @return 사업자등록번호에 해당하는 메뉴를 반환합니다. 없는 경우, null을 반환합니다.
+	 */
 	private String findMenuByLisence(String licenseNumber) {
 		for (Menu m : Data.menuList) {
 			if (m.getLicenseNumber().equals(licenseNumber)) {
@@ -81,7 +90,11 @@ public class BookmarkHistoryController {
 		return null;
 	}
 
-	// 전화번호
+	/**
+	 * 사업자등록번호로 전화번호를 조회하는 메서드입니다. 
+	 * @param licenseNumber 사업자등록번호
+	 * @return 사업자등록번호에 해당하는 전화번호를 반환합니다. 없는 경우, null을 반환합니다.
+	 */
 	private String findStoreTelByLisence(String licenseNumber) {
 		for (Store s : Data.storeList) {
 			if (s.getLicenseNumber().equals(licenseNumber)) {
@@ -91,7 +104,11 @@ public class BookmarkHistoryController {
 		return null;
 	}
 
-	// 이름
+	/**
+	 * 사업자등록번호로 상호명을 조회하는 메서드입니다. 
+	 * @param licenseNumber 사업자등록번호
+	 * @return 사업자등록번호에 해당하는 상호명을 반환합니다. 없는 경우, null을 반환합니다.
+	 */
 	private String findStoreNameByLisence(String licenseNumber) {
 		for (Store s : Data.storeList) {
 			if (s.getLicenseNumber().equals(licenseNumber)) {

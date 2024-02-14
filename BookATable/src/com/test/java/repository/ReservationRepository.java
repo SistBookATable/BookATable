@@ -6,8 +6,17 @@ import java.util.List;
 
 import com.test.java.model.Reservation;
 
+/**
+ * 예약 정보를 조회하고 검색하는 기능을 담당하는 클래스입니다.
+ */
+
 public class ReservationRepository {
 
+	/**
+	 * 사용자 ID 로 예약 정보를 조회하는 메서드입니다.
+	 * @param id 사용자 ID
+	 * @return 사용자 ID에 해당하는 예약 정보를 반환합니다. 없으면 null을 반환합니다.
+	 */
 	public static Reservation findOneById(String id) {
 
 		for(Reservation r : Data.reservationList) {
@@ -18,6 +27,11 @@ public class ReservationRepository {
 		return null;
 	}
 	
+	/**
+	 * 사용자 ID로 예약 정보를 모두 조회하는 메서드입니다.
+	 * @param id 사용자 ID
+	 * @return 사용자 ID에 해당하는 모든 예약 정보를 ArrayList로 반환합니다.
+	 */
 	public static ArrayList<Reservation> findAllById(String id) {
 
 		ArrayList<Reservation> tmp = new ArrayList<>();
@@ -29,6 +43,12 @@ public class ReservationRepository {
 		}
 		return tmp;
 	}
+	
+	/**
+	 * 예약 번호를 기반으로 메뉴별 예약 횟수를 조회하는 메서드입니다.
+	 * @param reservationNumber 예약번호
+	 * @return 예약 번호에 해당하는 메뉴별 예약 횟수를 반환합니다.
+	 */
 
 	public static HashMap<String, Integer> findMenuCountByReservationNumber(int reservationNumber) {
 		
@@ -53,6 +73,12 @@ public class ReservationRepository {
 		return tmp;
 	}
 	
+	/**
+	 * 사업자등록번호와 오늘 날짜를 기반으로 메뉴별 예약 횟수를 조회하는 메서드입니다.
+	 * @param lisenceNumber 사업자등록번호
+	 * @param today 오늘 날짜
+	 * @param menuCount 메뉴별 예약 횟수를 저장
+	 */
 	public static void findMenuCount(String lisenceNumber, String today, HashMap<String, Integer> menuCount) {
 		
 		for(Reservation r : Data.reservationList) {
@@ -73,6 +99,12 @@ public class ReservationRepository {
 		
 	}
 
+	/**
+	 * 사업자등록번호와 상태에 따른 예약 횟수를 조회하는 메서드입니다.
+	 * @param lisenceNumber 사업자등록번호
+	 * @param state 예약 상태
+	 * @return 사업자등록번호와 상태에 따른 예약 횟수를 반환합니다.
+	 */
 	public static HashMap<String, Integer> findAllCountByState(String lisenceNumber, String state) {
 		HashMap<String, Integer> tmp = new HashMap<>();
 		
@@ -95,6 +127,12 @@ public class ReservationRepository {
 		return tmp;
 	}
 
+	/**
+	 * 사업자 등록 번호와 사용자 ID에 따른 메뉴별 예약 횟수를 조회하는 메서드입니다.
+	 * @param lisenceNumber 사업자등록번호
+	 * @param ID 사용자 ID
+	 * @return 사업자등록번호와 사용자 ID에 따른 메뉴별 예약 횟수를 반환합니다. 
+	 */
 	public static HashMap<String, Integer> findMenuByUserId(String lisenceNumber, String key) {
 		HashMap<String, Integer> tmp = new HashMap<>();
 		for(Reservation r : Data.reservationList) {
@@ -114,6 +152,11 @@ public class ReservationRepository {
 		return tmp;
 	}
 
+	/**
+	 * 사업자등록번호에 해당하는 모든 예약 정보를 조회하는 메서드입니다.
+	 * @param lisenceNumber 사업자등록번호
+	 * @return 사업자등록번호에 해당하는 모든 예약 정보를 ArrayListe로 반환합니다.
+	 */
 	public static ArrayList<Reservation> findAllByLisenceNumber(String lisenceNumber) {
 		
 		ArrayList<Reservation> tmp = new ArrayList<>();
@@ -128,6 +171,12 @@ public class ReservationRepository {
 		return tmp;
 	}
 
+	/**
+	 * 사업자등록번호와 상태에 해당하는 모든 예약 정보를 조회하는 메서드입니다. 
+	 * @param lisenceNumber 사업자등록번호
+	 * @param state 예약 상태
+	 * @return 사업자 등록번호와 상태에 해당하는 모든 예약 정보를 ArrayList로 반환합니다.
+	 */
 	public static ArrayList<Reservation> findAllByLisenceNumberState(String lisenceNumber, String string) {
 		ArrayList<Reservation> tmp = new ArrayList<>();
 		
@@ -141,6 +190,12 @@ public class ReservationRepository {
 		return tmp;
 	}
 
+	/**
+	 * 오늘 날짜에 해당하는 예약 정보를 조회하는 메서드입니다.
+	 * @param lisence 사업자등록번호
+	 * @param today 오늘 날짜
+	 * @return 오늘 날짜에 해당하는 예약 정보를 반환합니다. 없으면 null을 반환합니다.
+	 */
 	public static Reservation findOneByToday(String lisence, String today) {
 		
 		for(Reservation r : Data.reservationList) {
@@ -153,6 +208,13 @@ public class ReservationRepository {
 		return null;
 	}
 
+	/**
+	 * 예약 번호와 사용자 ID에 해당하는 예약 정보를 조회하는 메서드입니다
+	 * 
+	 * @param reservationNumber 예약 번호
+	 * @param id 사용자 ID
+	 * @return 에약 번호와 사용자 ID에 해당하는 예약 정보를 반환합니다. 없으면 null을 반환합니다.
+	 */
 	public static Reservation findOneByReservationNumber(int reservationNumber, String id) {
 		for(Reservation r : Data.reservationList) {
 			

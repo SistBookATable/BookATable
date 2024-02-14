@@ -42,6 +42,11 @@ public class PointUsageHistoryController {
 		
 	}
 
+	/**
+	 * 사용자 ID로 보유포인트를 찾는 메서드입니다.
+	 * @param userId 사용자ID
+	 * @return 사용자 ID에 해당하는 포인트를 반환합니다. 없을 경우, 0을 반환합니다.
+	 */
 	private int findPointById(String userId) {
 		
 		for(Member u : Data.memberList) {
@@ -53,6 +58,11 @@ public class PointUsageHistoryController {
 		return 0;
 	}
 
+	/**
+	 * 사용자 ID에 계좌를 찾는 메서드입니다. 
+	 * @param userId 사용자ID
+	 * @return 사용자 ID에 해당하는 계좌를 반환합니다. 없을 경우, null을 반환합니다.  
+	 */
 	private String findAccountById(String userId) {
 		
 		for(Member u : Data.memberList) {
@@ -63,6 +73,11 @@ public class PointUsageHistoryController {
 		return null;
 	}
 
+	/**
+	 * 사용자 ID로 이름을 찾는 메서드입니다.
+	 * @param userId 사용자ID
+	 * @return 사용자 ID에 해당하는 이름을 반환합니다. 없을 경우, null을 반환합니다. 
+	 */
 	private String findNameById(String userId) {
 		String name = "";
 		for(Member u : Data.memberList) {

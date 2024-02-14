@@ -4,9 +4,16 @@ import com.test.java.model.Inquiry;
 import com.test.java.model.Member;
 import com.test.java.view.AnswerView;
 
+/**
+ * 문의사항에 대한 답변을 관리하는 컨트롤러 클래스입니다.
+ */
 public class AnswerController {
 	
-	
+	/**
+     * 선택된 문의사항에 대한 답변을 관리합니다.
+     *
+     * @param selected 답변을 관리할 문의사항 객체
+     */
 	public void answerManage(Inquiry selected) {
 
 		AnswerView answerView = new AnswerView();

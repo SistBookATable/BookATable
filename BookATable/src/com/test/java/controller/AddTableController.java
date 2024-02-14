@@ -5,8 +5,16 @@ import com.test.java.model.Table;
 import com.test.java.repository.Data;
 import com.test.java.view.AddTableView;
 
+/**
+ * 테이블을 추가하는 기능을 담당하는 컨트롤러 클래스입니다.
+ */
 public class AddTableController {
 	
+	/**
+     * 주어진 라이선스 번호에 대한 테이블을 추가합니다.
+     *
+     * @param licenseNumber 추가할 테이블이 속한 사업자의 라이선스 번호
+     */
 	public void addTable(String licenseNumber) {
 		
 AddTableView addTableView = new AddTableView();

@@ -1,8 +1,18 @@
 package com.test.java.view;
 
 import java.util.Scanner;
+
+/**
+ * 테이블 등록 화면을 보여주는 클래스입니다.
+ */
 //테이블 등록 화면을 보여주는 class
 public class AddTableView {
+	
+	/**
+     * 테이블 정원을 입력받는 메서드입니다.
+     *
+     * @return 입력받은 테이블 정원
+     */
     // 테이블 정원을 입력받는 메서드
     public static int getTableCapacity() {
         Scanner scan = new Scanner(System.in);
@@ -26,7 +36,12 @@ public class AddTableView {
         scan.close();
         return temp;
     }
-    // 테이블 개수를 입력받는 메서드
+    
+    /**
+     * 테이블 개수를 입력받는 메서드입니다.
+     *
+     * @return 입력받은 테이블 개수
+     */
     public static int getTableNum() {
         Scanner scan = new Scanner(System.in);
         int temp = 0;

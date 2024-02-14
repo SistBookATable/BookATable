@@ -1,10 +1,18 @@
 package com.test.java.view;
 
 import java.util.Scanner;
-//테이블 삭제 화면 보여주는 class
+
+/**
+ * 테이블 삭제 화면을 보여주는 클래스
+ */
 public class RemoveTableView {
-	//테이블 정원 입력 받는 메서드
-	public static int findTableCapacity() {
+    
+    /**
+     * 삭제할 테이블의 정원을 입력 받는 메서드
+     * 
+     * @return 삭제할 테이블의 정원
+     */
+    public static int findTableCapacity() {
         Scanner scan = new Scanner(System.in);
         int temp = 0;
         boolean validInput = false;
@@ -21,7 +29,12 @@ public class RemoveTableView {
         }
         return temp;
     }
-    //삭제 확인 하는 메서드
+    
+    /**
+     * 삭제를 확인하는 메서드
+     * 
+     * @return 삭제를 원하면 1, 아니면 2
+     */
     public static int removeCheck() {
         Scanner scan = new Scanner(System.in);
         int temp = 0;
@@ -43,7 +56,12 @@ public class RemoveTableView {
         }
         return temp;
     }
-    //삭제 개수 입력 받는 메서드
+    
+    /**
+     * 삭제할 테이블의 개수를 입력 받는 메서드
+     * 
+     * @return 삭제할 테이블의 개수
+     */
     public static int getRemoveTableNum() {
         Scanner scan = new Scanner(System.in);
         int temp = 0;

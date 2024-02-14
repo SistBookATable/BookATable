@@ -18,7 +18,7 @@ public class ChangeBreakHourController {
         ChangeBreakHourView changeBreakHourView = new ChangeBreakHourView();
 
         // 휴식 시간 변경 뷰를 인스턴스화하고 호출합니다.
-        changeBreakHourView.changeBreakHour(licenseNumber);
+     
 
         String changeDay;
         String changeBreakStart;

@@ -1,14 +1,20 @@
 package com.test.java.view;
 
 import java.util.Scanner;
-//테이블 수정 화면 보여주는 class
+
+// 테이블 수정 화면을 보여주는 class
 public class EditTableView {
-    //수정할 테이블 사이즈 입력받는 메서드
+
+    /**
+     * 수정할 테이블 사이즈를 입력받는 메서드
+     * 
+     * @return 입력받은 테이블 사이즈
+     */
     public static int getTableCapacity() {
-    	Scanner scan = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
         int temp = 0;
         boolean validInput = false;
-        
+
         while (!validInput) {
             System.out.print("1. 수정할 테이블 사이즈 (숫자) : ");
             if (scan.hasNextInt()) {
@@ -26,12 +32,17 @@ public class EditTableView {
         scan.close();
         return temp;
     }
-    //수정할 테이블 개수 입력 받는 메서드
+
+    /**
+     * 수정할 테이블 개수를 입력받는 메서드
+     * 
+     * @return 입력받은 테이블 개수
+     */
     public static int getTableNum() {
         Scanner scan = new Scanner(System.in);
         int temp = 0;
         boolean validInput = false;
-        
+
         while (!validInput) {
             System.out.print("2. 수정할 테이블 개수 (숫자) : ");
             if (scan.hasNextInt()) {

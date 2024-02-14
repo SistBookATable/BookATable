@@ -22,17 +22,6 @@ public class Store {
 	private boolean bookmark;
 	private double averageScore;
 
-	public String getAddress() {
-		return address;
-	}
-
-	public String getTablecount() {
-		return tablecount;
-	}
-
-	public double getAverageScore() {
-		return averageScore;
-	}
 	
 	/**
 	 * 
@@ -57,7 +46,23 @@ public class Store {
 		this.distanceFrom = distanceFrom;
 		this.reviewCount = reviewCount;
 	}
+	
+	/**
+	 * getter > 각 멤버변수들의 값을 반환
+	 * @return
+	 */
 
+	public String getAddress() {
+		return address;
+	}
+
+	public String getTablecount() {
+		return tablecount;
+	}
+
+	public double getAverageScore() {
+		return averageScore;
+	}
 	public String getStoreName() {
 		return storeName;
 	}
@@ -78,18 +83,24 @@ public class Store {
 		return menuCategory;
 	}
 
-//   public Menu getMenuList() {
-//      return menuList;
-//   }
-//   public OperatingHours getOperatingHours() {
-//      return operatingHours;
-//   }
 	public int getDistanceFrom() {
 		return distanceFrom;
 	}
 
 	public boolean checkName(String storeName) {
 		return true;
+	}
+	/**
+	 * setter > 멤버 변수의 값을 설정
+	 * @param bookmark
+	 */
+	public void setBookmark(boolean bookmark) {
+		this.bookmark = bookmark;
+	}
+
+	public boolean isBookmark() {
+		// TODO Auto-generated method stub
+		return this.bookmark;
 	}
 	
 	/**
@@ -106,6 +117,7 @@ public class Store {
 		}
 		return count;
 	}
+<<<<<<< Updated upstream
 
 	public Store(String licenseNumber, String storeName, String storeTelNumber, String address, String menuCategory) {
 		super();
@@ -118,6 +130,8 @@ public class Store {
 		this.score = score;
 		this.distanceFrom = 0;
 	}
+=======
+>>>>>>> Stashed changes
 	
 	/**
 	 * 평점을 얻어오는 getScore 메서드
@@ -149,14 +163,6 @@ public class Store {
 				+ storeTelNumber + ", menuCategory=" + menuCategory + ", address=" + address + ", score=" + score
 				+ ", distanceFrom=" + distanceFrom + "]";
 	}
-
-	public void setBookmark(boolean bookmark) {
-		this.bookmark = bookmark;
-	}
-
-	public boolean isBookmark() {
-		// TODO Auto-generated method stub
-		return this.bookmark;
-	}
+	
 }
 	

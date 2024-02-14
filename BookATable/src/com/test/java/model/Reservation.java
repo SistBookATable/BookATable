@@ -4,7 +4,9 @@ package com.test.java.model;
 import java.util.ArrayList;
 import java.util.Calendar;
 
-
+/**
+ * 예약 정보를 관리하는 Reservation 클래스
+ */
 public class Reservation {
 	
 	private static int COUNT=1;
@@ -16,10 +18,21 @@ public class Reservation {
 	private int numOfPeople;
 	private int tableCapacity;
 	private String state;
-
+	
 	private ArrayList<String> menulist = new ArrayList<>();
 	
-
+	/**
+	 * Reservation클래스의 객체를 생성하는 생성자
+	 * @param reservationNumber	예약 번호
+	 * @param userId			사용자 ID
+	 * @param licenseNumber		사업자 번호
+	 * @param reservationTime	예약 시간
+	 * @param reservationDate	예약 날짜
+	 * @param numOfPeople		예약 인원
+	 * @param tableCapacity		테이블 용량
+	 * @param state				예약 상태
+	 * @param menulist 			메뉴리스트를 담는 ArrayList
+	 */
 	public Reservation (int reservationNumber, String userId, String licenseNumber, String reservationTime,String reservationDate
 			, int numOfPeople, int tableCapacity, String state, ArrayList<String> menulist) {
 		super();
@@ -33,7 +46,12 @@ public class Reservation {
 		this.state = state;
 		this.menulist = menulist;
 	}
-
+	
+	/**
+	 * getter > 각 멤버 변수의 값을 반환
+	 * setter > 각 멤버 변수들의 값을 설정
+	 * @param name
+	 */
 	public void addmenu(String name) {
 		menulist.add(name);
 	}

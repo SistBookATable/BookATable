@@ -2,6 +2,10 @@ package com.test.java.model;
 
 import java.util.Calendar;
 
+/**
+ * Member 클래스를 상속받는 User 클래스
+ * User의 정보를 담고 있음
+ */
 public class User extends Member{
 	
 	private int userType = 1; //[1:일반회원,2,3]
@@ -20,7 +24,23 @@ public class User extends Member{
 	private String signOut;
 	
 	
-	
+	/**
+	 * User 클래스의 생성자
+	 * @param userType			회원타입
+	 * @param id				사용자 id
+	 * @param pw				사용자 p/w
+	 * @param name				사용자 이름
+	 * @param phoneNumber		휴대전화 번호
+	 * @param jumin				주민 번호
+	 * @param bank				은행
+	 * @param account			계좌 번호
+	 * @param balance			계좌 잔액
+	 * @param reservationCount	예약횟수
+	 * @param noshowCount		노쇼횟수
+	 * @param checkStop			정지 여부
+	 * @param signIn			회원 가입
+	 * @param signOut			회원 탈퇴
+	 */
 	public User(int userType, String id, String pw, String name, String phoneNumber, String jumin, String bank, String account, int balance, int reservationCount,
 			int noshowCount,  String checkStop, String signIn,
 			String signOut) {
@@ -60,7 +80,10 @@ public class User extends Member{
 		this.signOut = signOut;
 	}
 	
-
+	/**
+	 * getter > 각 멤버 변수들의 값을 반환
+	 * setter > 각 멤버 변수들의 값을 설정
+	 */
 	public int getUserType() {
 		return userType;
 	}
@@ -158,7 +181,9 @@ public class User extends Member{
 	public void setSignOut(String signOut) {
 		this.signOut = signOut;
 	}
-
+	/**
+	 * 사용자 정보 출력
+	 */
 	@Override
 	public void print() {
 
@@ -173,7 +198,10 @@ public class User extends Member{
 				(this.getNoshowCount() >= 10)? "정지회원":" ");
 		System.out.println(tmp);	
 	}
-
+	
+	/**
+	 * 회원 가입 정보를 나타내는 printSignIn 메서드
+	 */
 	@Override
 	public void printSignIn() {
 

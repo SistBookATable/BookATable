@@ -7,12 +7,18 @@ import java.util.Scanner;
  */
 public class MembershipWithdrawalView {
 	
+	/**
+	 * 회원 탈퇴 화면 출력
+	 */
 	public void showdrawalLogo() {
 		System.out.println("┌───────────────────────────────────────────────────────┐");
 		System.out.println("|                         회원 탈퇴                       	|");
 		System.out.println("└───────────────────────────────────────────────────────┘");
 	}
 	
+	/**
+	 * 회원 탈퇴 창에서 비밀번호 입력받는 화면 출력
+	 */
 	public void inputInfo() {
 		System.out.println("====================================================================");
 		System.out.println();

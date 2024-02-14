@@ -1,3 +1,4 @@
+
 package com.test.java.view;
 
 import java.util.ArrayList;
@@ -12,7 +13,7 @@ import com.test.java.model.Store;
 import com.test.java.model.User;
 import com.test.java.repository.Data;
 
-// 예약화면을 보여주는 클래스
+// 예약 화면을 보여주는 클래스
 public class ReservationView {
     
     // 달력을 보여주는 메서드
@@ -24,12 +25,12 @@ public class ReservationView {
         int lastDay = calendar.getActualMaximum(Calendar.DAY_OF_MONTH);
         int startDay = calendar.get(Calendar.DAY_OF_WEEK);
         
-        System.out.printf("\t\t2024년 %s월 \n", Calendar.MONTH);
+        System.out.printf("\t\t2024년 %d월 \n", Calendar.MONTH); // 해당 달의 달력 출력
         System.out.println("일\t월\t화\t수\t목\t금\t토");
         
         int currentDay = 1;
         
-        for (int i = 0; i <= 42; i++) {
+        for (int i = 0; i <= 42; i++) { // 한 주에 해당하는 달력 출력
             if (i < startDay) {
                 System.out.print("\t");
             } else {
@@ -49,6 +50,11 @@ public class ReservationView {
     }
     
     // 예약 인원을 입력받는 메서드
+    /**
+     * 사용자로부터 예약할 인원 수를 입력받는 메서드
+     * 
+     * @return 입력된 인원 수
+     */
     public int getReservationNum() {
         Scanner scan = new Scanner(System.in);
         int tmp;
@@ -56,7 +62,7 @@ public class ReservationView {
             System.out.print("1. 인원 수(1~10명) : ");
             try {
                 tmp = Integer.parseInt(scan.nextLine());
-                if (tmp >= 1 && tmp <= 10) {
+                if (tmp >= 1 && tmp <= 10) { // 인원 수가 1에서 10 사이인지 확인
                     break;
                 } else {
                     System.out.println("인원 수는 1에서 10 사이여야 합니다.");
@@ -69,6 +75,12 @@ public class ReservationView {
     }
     
     // 예약 날짜를 입력받는 메서드
+    /**
+     * 사용자로부터 예약할 날짜를 입력받는 메서드
+     * 
+     * @param licenseNumber 라이선스 번호
+     * @return 입력된 예약 날짜
+     */
     public String getReservationDate(String licenseNumber) {
         System.out.println();
         Scanner scan = new Scanner(System.in);
@@ -80,7 +92,7 @@ public class ReservationView {
             tmp = scan.nextLine();
             
             // 유효성 검사
-            if ((tmp = isValidDate(tmp)) != null) {
+            if ((tmp = isValidDate(tmp)) != null) { // 입력된 날짜가 유효한지 확인
                 break;
             } else {
                 System.out.println("올바른 날짜 형식이 아닙니다. 다시 입력하세요.");
@@ -91,7 +103,47 @@ public class ReservationView {
     }
     
     // 예약 날짜의 유효성을 검사하는 메서드
+    /**
+     * 예약 날짜의 유효성을 검사하는 메서드
+     * 
+     * @param date 예약 날짜
+     * @return 유효한 날짜인 경우 해당 날짜, 그렇지 않은 경우 null
+     */
     private String isValidDate(String date) {
+        // 예약 날짜 형식(MMDD)에 맞는지 확인
+        if (date.matches("^\\d{4}$")) {
+            // 2024년 기준으로 월은 01부터 12까지, 일은 01부터 31까지 유효한 범위 내에 있어야 함
+            int month = Integer.parseInt(date.substring(0, 2));
+            int day = Integer.parseInt(date.substring(2));
+            
+            Calendar cur = Calendar.getInstance();
+            String today = String.format("%tF", cur);
+            cur.set(Calendar.YEAR, 2024);
+            cur.set(Calendar.MONTH, month - 1);
+            cur.set(Calendar.DAY_OF_MONTH, day);
+            String thatDay = String.format("%tF", cur);
+            
+            if (today.compareTo(thatDay) > 0) {
+                System.out.println("오늘 이후 날짜를 입력해주세요");
+                return null;
+            }
+            
+            if (month >= 1 && month <= 12 && day >= 1 && day <= 31) {
+                return thatDay;
+            }
+        }
+        
+        return null;
+    }
+    
+    // 예약 날짜의 유효성을 검사하는 메서드
+    /**
+     * 예약 날짜의 유효성을 검사하는 메서드
+     * 
+     * @param date 예약 날짜
+     * @return 유효한 날짜인 경우 해당 날짜, 그렇지 않은 경우 null
+     */
+    private String isValidDate2(String date) {
         // 예약 날짜 형식(MMDD)에 맞는지 확인
         if (date.matches("^\\d{4}$")) {
             // 2024년 기준으로 월은 01부터 12까지, 일은 01부터 31까지 유효한 범위 내에 있어야 함
@@ -117,13 +169,20 @@ public class ReservationView {
     }
     
     // 예약 시간을 입력받는 메서드
+    /**
+     * 사용자로부터 예약할 시간을 입력받는 메서드
+
+
+     * 
+     * @return 입력된 시간
+     */
     public String getReservationTime() {
         Scanner scan = new Scanner(System.in);
         String tmp;
         while (true) {
             System.out.print("3. 예약 시간(24시간제, 예: 1500) : ");
             tmp = scan.nextLine();
-            if (tmp.matches("^([01]?[0-9]|2[0-3])[0-5][0-9]$")) {
+            if (tmp.matches("^([01]?[0-9]|2[0-3])[0-5][0-9]$")) { // 시간 형식이 올바른지 확인
                 break;
             } else {
                 System.out.println("올바른 시간 형식이 아닙니다. (24시간제, 예: 1500)");
@@ -133,6 +192,12 @@ public class ReservationView {
     }
     
     // 선택된 메뉴 이름을 받는 메서드
+    /**
+     * 사용자로부터 선택된 메뉴의 이름을 입력받는 메서드
+     * 
+     * @param licenseNumber 라이선스 번호
+     * @return 선택된 메뉴의 이름 목록
+     */
     public ArrayList<String> getSelectedMenuName(String licenseNumber) {
         ArrayList<String> selectedMenuList = new ArrayList<>();
         Scanner scan = new Scanner(System.in);
@@ -204,6 +269,11 @@ public class ReservationView {
     boolean printedStoreName = false; // 가게 이름 출력 여부를 나타내는 변수
     
     // 메뉴 목록을 출력하는 메서드
+    /**
+     * 라이선스 번호에 해당하는 가게의 메뉴 목록을 출력하는 메서드
+     * 
+     * @param licenseNumber 라이선스 번호
+     */
     public void showMenu(String licenseNumber) {
         Map<Integer, Menu> menuMap = new HashMap<>();
         for (Store store : Data.storeList) {
@@ -229,6 +299,15 @@ public class ReservationView {
     }
     
     // 예약 정보를 출력하는 메서드
+    /**
+     * 예약 정보를 문자열로 반환하는 메서드
+     * 
+     * @param num       예약 인원 수
+     * @param date      예약 날짜
+     * @param time      예약 시간
+     * @param menuList  선택된 메뉴 목록
+     * @return          예약 정보 문자열
+     */
     public String showReservation(int num, String date, String time, ArrayList<String> menuList) {
         StringBuilder tmp = new StringBuilder();
         String txt = "인원 수 \t 예약 날짜 \t 예약 시간 \t 예약 메뉴 ";
@@ -253,6 +332,11 @@ public class ReservationView {
     }
     
     // 결제 여부를 입력받는 메서드
+    /**
+     * 사용자로부터 결제 동의 여부를 입력받는 메서드
+     * 
+     * @return 결제 동의 여부 (Y/y: 동의, N/n: 비동의)
+     */
     public String get() {
         Scanner scan = new Scanner(System.in);
         String tmp;
@@ -260,7 +344,9 @@ public class ReservationView {
             System.out.print("포인트에서 예약금 [3000원]을 결제하겠습니까? 동의하시면 Y/y, 동의하지 않으시면 N/n을 입력하세요: ");
             tmp = scan.nextLine();
             if (tmp.equalsIgnoreCase("Y") || tmp.equalsIgnoreCase("N")) {
-                break;
+               
+
+ break;
             } else {
                 System.out.println("잘못된 입력입니다. 다시 입력하세요.");
             }
@@ -269,11 +355,22 @@ public class ReservationView {
     }
     
     // 결제 후 포인트 잔액을 보여주는 메서드
+    /**
+     * 결제 후 사용자의 포인트 잔액을 출력하는 메서드
+     * 
+     * @param user 사용자 객체
+     */
     public void showPay(User user) {
         System.out.printf("포인트 잔액: [%d]\n", user.getBalance());
     }
     
     // 테이블 인원 수를 입력받는 메서드
+    /**
+     * 사용자로부터 예약할 테이블의 인원 수를 입력받는 메서드
+     * 
+     * @param num 선택된 테이블의 현재 예약 인원 수
+     * @return 입력된 테이블의 최종 예약 인원 수
+     */
     public int getTableNum(int num) {
         if (num >= 1 && num <= 2) {
             return 2;
@@ -313,6 +410,11 @@ public class ReservationView {
     }
     
     // 선택 타입을 입력받는 메서드
+    /**
+     * 사용자로부터 선택한 작업 번호를 입력받는 메서드
+     * 
+     * @return 사용자가 선택한 번호
+     */
     public int getSelectType() {
         Scanner scan = new Scanner(System.in);
         int tmp = scan.nextInt();
@@ -321,6 +423,11 @@ public class ReservationView {
     }
     
     // 예약 목록을 출력하는 메서드
+    /**
+     * 현재 예약 상태를 출력하는 메서드
+     * 
+     * @param cur 예약 목록
+     */
     public void showReservationList(ArrayList<Reservation> cur) {
         System.out.println();
         System.out.println();
@@ -398,3 +505,4 @@ public class ReservationView {
     }
     
 }
+

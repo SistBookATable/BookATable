@@ -9,6 +9,16 @@ public class OperatingHours {
 	private String breakStart;
 	private String breakEnd;
 	
+	
+	/**
+	 * OperatingHours 객체를 생성하는 생성자
+	 * @param licenseNumber	사업자 번호
+	 * @param dayOfWeek		요일
+	 * @param open			영업 시작 시간
+	 * @param close			영업 종료 시간
+	 * @param breakStart	브레이크타임 시작
+	 * @param breakEnd		브레이크타임 종료
+	 */
 	public OperatingHours(String licenseNumber, String dayOfWeek, String open, String close, String breakStart,
 			String breakEnd) {
 		super();
@@ -25,7 +35,11 @@ public class OperatingHours {
 		return "OperatingHours [licenseNumber=" + licenseNumber + ", dayOfWeek=" + dayOfWeek + ", open=" + open
 				+ ", close=" + close + ", breakStart=" + breakStart + ", breakEnd=" + breakEnd + "]";
 	}
-
+	
+	/**
+	 * setter > 각 멤버변수들의 값 설정
+	 * @param open
+	 */
 	public void setOpen(String open) {
 		this.open = open;
 	}
@@ -41,7 +55,12 @@ public class OperatingHours {
 	public void setBreakEnd(String breakEnd) {
 		this.breakEnd = breakEnd;
 	}
-
+	
+	/**
+	 * getter > 각 멤버변수들의 값 반환,
+	 * null이면 해당 문자열 반환
+	 * @return
+	 */
 	public String getLicenseNumber() {
 		return licenseNumber;
 	}

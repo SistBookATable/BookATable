@@ -32,7 +32,7 @@ public class UserWriteReviewController {
 
 		String userName = findNameById(Member.id);
 		UserWriteReviewView.showNoReviewReservation(userName);
-
+		
 		String storeName = findStoreName(Member.id);
 		String cancelState = findCancelState(Member.id);	
 		String noShowState = findNoShowState(Member.id);

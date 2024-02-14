@@ -5,7 +5,7 @@ import com.test.java.repository.Data;
 import com.test.java.view.ChangeBreakHourView;
 
 /**
- * 업무 휴식 시간을 변경하는 컨트롤러 클래스입니다.
+ * 업무 휴식 시간을 변경하는 컨트롤러 클래스입니다.	
  */
 public class ChangeBreakHourController {
 
